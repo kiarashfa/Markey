@@ -1,0 +1,24 @@
+# --- Build output ---
+.astro/
+node_modules/
+
+# --- Logs ---
+
+
+# --- Environment ---
+.env
+.env.*
+
+# --- Editor / OS cruft ---
+.idea/
+.claude/
+
+# --- Working notes ---
+DATA_SOURCES.md
+SPEC.md
+Instruction.md
+HANDOFF.md
+START_HERE.md
+
+# --- Others ---
+reference/
