@@ -28,7 +28,17 @@ interface Props {
   onColor?: boolean;
 }
 
-const { logo, brandName, size = 'md', onColor = false } = Astro.props;
+const { logo, brandName, size = 'md', onColor = false } = Astro.props as Props;
+
+/**
+ * The plate stays white in both themes — brand marks are drawn for a light
+ * ground, and recolouring one is the modification SPEC.md §11.2 rules out.
+ *
+ * The *border* has to be theme-aware, though: a white-on-white edge vanishes
+ * against a light hero wash. Mixing from the ink token gives a grey edge in
+ * light mode and a faint bright edge in dark, from one declaration.
+ */
+const plateBorder = `border-color: color-mix(in oklab, var(--color-ink) ${onColor ? 18 : 14}%, transparent);`;
 
 const box = {
   sm: 'size-8 p-1',
@@ -39,10 +49,11 @@ const box = {
 
 <span
   class:list={[
-    'inline-flex shrink-0 items-center justify-center rounded-lg border',
+    'inline-flex shrink-0 items-center justify-center rounded-lg border bg-white',
     box,
-    onColor ? 'border-white/25 bg-white shadow-sm' : 'border-line bg-white',
+    onColor ? 'shadow-sm' : '',
   ]}
+  style={plateBorder}
   title={`${brandName} logo`}
 >
   <img

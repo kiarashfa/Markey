@@ -7,6 +7,7 @@
  * (apple-design §16, "direct, specific labels"): "Browse" would tell a visitor
  * nothing that "Body styles" doesn't tell them better.
  */
+import ThemeToggle from '../islands/ThemeToggle.svelte';
 import { href, taxonomyHref } from '../../lib/content/href.ts';
 
 const nav = [
@@ -31,12 +32,12 @@ const current = Astro.url.pathname;
     Skip to content
   </a>
 
-  <div class="mx-auto flex w-full max-w-5xl items-center gap-5 px-5 py-3 sm:px-8">
+  <div class="mx-auto flex w-full max-w-5xl flex-wrap items-center gap-x-5 gap-y-2 px-5 py-3 sm:px-8">
     <a href={href()} class="pressable type-title shrink-0 text-lg tracking-tight">
       Markey
     </a>
 
-    <nav aria-label="Primary" class="min-w-0 flex-1">
+    <nav aria-label="Primary" class="min-w-0 flex-1 order-3 basis-full sm:order-none sm:basis-auto">
       <ul class="flex items-center gap-1 overflow-x-auto text-sm [scrollbar-width:none] sm:gap-2">
         {
           nav.map((item) => (
@@ -53,5 +54,11 @@ const current = Astro.url.pathname;
         }
       </ul>
     </nav>
+
+    {/* `client:load` — a theme control that only works after scrolling would be
+        worse than none, and it is the first thing some visitors reach for. */}
+    <div class="ml-auto shrink-0 sm:ml-0">
+      <ThemeToggle client:load />
+    </div>
   </div>
 </header>

@@ -12,6 +12,7 @@
 import Header from './Header.astro';
 import Footer from './Footer.astro';
 import { absoluteHref } from '../../lib/content/href.ts';
+import { THEME_INIT_SCRIPT } from '../../lib/theme.ts';
 import '../../styles/global.css';
 
 interface Props {
@@ -35,6 +36,13 @@ const fullTitle = title === 'Markey' ? title : `${title} — Markey`;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/*
+      Applies the stored theme before anything paints. It must be inline and it
+      must come before the stylesheet, or the page renders in the default theme
+      and then snaps to the stored one — the flash of wrong theme.
+      `is:inline` keeps Astro from bundling and deferring it.
+    */}
+    <script is:inline set:html={THEME_INIT_SCRIPT} />
     <title>{fullTitle}</title>
     {description && <meta name="description" content={description} />}
     <link rel="canonical" href={canonical} />

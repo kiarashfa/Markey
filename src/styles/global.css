@@ -26,29 +26,64 @@
   --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", Menlo,
     Consolas, monospace;
 
-  /* Surfaces, light theme. */
+  /*
+   * Surfaces, light theme.
+   *
+   * The steps between them are wider than they first were. At 99% / 97.2% a
+   * card sat at 1.05:1 against the page — a separation that measured as
+   * present and read as absent, leaving the border doing all the work.
+   */
   --color-surface-0: oklch(99% 0.002 260);
-  --color-surface-1: oklch(97.2% 0.003 260);
-  --color-surface-2: oklch(94.5% 0.004 260);
-  --color-surface-3: oklch(90% 0.006 260);
+  --color-surface-1: oklch(96.4% 0.004 260);
+  --color-surface-2: oklch(93% 0.005 260);
+  --color-surface-3: oklch(88% 0.007 260);
 
-  /* Text. */
+  /*
+   * Text.
+   *
+   * `ink-muted` is 51%, not the 58% it started at. Measured against the card
+   * surface it actually sits on, 58% gave 3.97:1 — below the 4.5:1 WCAG AA
+   * needs for normal text, and it is used for captions, source notes and
+   * footnotes, which are exactly the small text that can least afford it.
+   */
   --color-ink: oklch(22% 0.012 260);
   --color-ink-secondary: oklch(44% 0.011 260);
-  --color-ink-muted: oklch(58% 0.010 260);
+  --color-ink-muted: oklch(51% 0.011 260);
 
-  --color-line: oklch(89% 0.005 260);
-  --color-line-strong: oklch(80% 0.007 260);
+  /* Borders carry real structural weight in light mode, so they are visible. */
+  --color-line: oklch(85% 0.006 260);
+  --color-line-strong: oklch(74% 0.009 260);
 
-  /* Status colours for the data-trust badges (SPEC.md §5.5). */
-  --color-status-verified: oklch(52% 0.12 155);
-  --color-status-estimated: oklch(58% 0.13 75);
-  --color-status-placeholder: oklch(60% 0.008 260);
-  --color-status-conflicting: oklch(55% 0.16 25);
+  /*
+   * Status colours for the data-trust badges (SPEC.md §5.5).
+   *
+   * Amber is the hard one: at 58% it measured 4.03:1 on the card surface and
+   * failed AA. These are the darkest each hue can go while still reading as
+   * that colour rather than as brown or maroon.
+   */
+  --color-status-verified: oklch(48% 0.13 155);
+  --color-status-estimated: oklch(50% 0.12 70);
+  --color-status-placeholder: oklch(51% 0.010 260);
+  --color-status-conflicting: oklch(50% 0.17 25);
 }
 
+/*
+ * Dark values, defined once and applied through two selectors.
+ *
+ * `@media (prefers-color-scheme: dark)` handles "follow the system", and it is
+ * guarded by `:not([data-theme='light'])` so an explicit *light* choice still
+ * wins on a machine set to dark. `[data-theme='dark']` handles an explicit dark
+ * choice on a machine set to light. Both are needed: with only the media query
+ * the toggle cannot override the OS, and with only the attribute the site stops
+ * following the OS for the visitors who never touch the toggle.
+ *
+ * Every token below also has a light definition on bare `:root` above. No
+ * colour gets its *only* definition inside a theme block — that is what makes a
+ * missing token show up as an obvious fallback rather than as an invisible
+ * inheritance from whatever the browser felt like.
+ */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme='light']) {
     --color-surface-0: oklch(17% 0.009 260);
     --color-surface-1: oklch(21% 0.010 260);
     --color-surface-2: oklch(25.5% 0.012 260);
@@ -68,6 +103,25 @@
   }
 }
 
+:root[data-theme='dark'] {
+  --color-surface-0: oklch(17% 0.009 260);
+  --color-surface-1: oklch(21% 0.010 260);
+  --color-surface-2: oklch(25.5% 0.012 260);
+  --color-surface-3: oklch(31% 0.014 260);
+
+  --color-ink: oklch(96% 0.004 260);
+  --color-ink-secondary: oklch(77% 0.008 260);
+  --color-ink-muted: oklch(63% 0.009 260);
+
+  --color-line: oklch(30% 0.011 260);
+  --color-line-strong: oklch(40% 0.013 260);
+
+  --color-status-verified: oklch(72% 0.14 155);
+  --color-status-estimated: oklch(78% 0.13 78);
+  --color-status-placeholder: oklch(62% 0.008 260);
+  --color-status-conflicting: oklch(70% 0.15 25);
+}
+
 :root {
   /*
    * Easing curves. The browser built-ins are too weak to read as deliberate
@@ -81,7 +135,33 @@
   /* Fallback accent for anything rendered outside a brand context. */
   --brand-accent: oklch(55% 0.13 250);
 
+  /*
+   * Set here as the no-JavaScript default and overwritten inline by the head
+   * script. It makes the browser's own surfaces — scrollbars, form controls,
+   * date pickers — follow the theme too. Omitting it is the classic half-done
+   * dark mode: the page goes dark and the scrollbar stays white.
+   */
   color-scheme: light dark;
+}
+
+/*
+ * Theme changes are instant, never animated.
+ *
+ * A colour crossfade across the whole page reads as lag, not polish, and the
+ * toggle is a keyboard-reachable control someone may hit repeatedly. The one
+ * concession is that we do not want a *jarring* jump either, so the small
+ * number of large surfaces get a very short tint transition — and even that is
+ * dropped under reduced motion, where an abrupt brightness change is exactly
+ * what the setting exists to avoid.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  html.theme-ready body,
+  html.theme-ready header,
+  html.theme-ready footer {
+    transition:
+      background-color 120ms var(--ease-out-strong),
+      border-color 120ms var(--ease-out-strong);
+  }
 }
 
 @layer base {

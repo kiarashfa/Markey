@@ -295,7 +295,8 @@
                 <div class="min-w-0">
                   <div class="flex items-center gap-3">
                     <span
-                      class="inline-flex size-12 shrink-0 items-center justify-center rounded-lg border border-white/25 bg-white p-1.5 shadow-sm"
+                      class="inline-flex size-12 shrink-0 items-center justify-center rounded-lg border bg-white p-1.5 shadow-sm"
+                      style="border-color: color-mix(in oklab, var(--color-ink) 18%, transparent);"
                       title={`${car.brandName} logo`}
                     >
                       <img
