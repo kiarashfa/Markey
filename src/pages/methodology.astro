@@ -2,18 +2,36 @@
 /**
  * `/methodology/` — SPEC.md §6, §8.
  *
- * The public home of every formula the site computes with. Deliberately says
- * what it does not yet contain rather than presenting an empty page as a
- * finished one — the physics formulae land with the math engine, and the wind
- * tunnel's validation numbers land with the solver.
+ * The public home of every formula the site computes with. The constants table
+ * is generated from `allConstants()` rather than retyped here, so the published
+ * methodology cannot drift away from the numbers the model actually uses — the
+ * failure mode where a site documents one thing and computes another.
  */
 import Section from '../components/blocks/Section.astro';
 import BaseLayout from '../components/ui/BaseLayout.astro';
+import { allConstants } from '../lib/math/dynamics/constants.ts';
+import { RISK_DISCLAIMER, RISK_WEIGHTS } from '../lib/math/riskIndex.ts';
+import { SCORE_METHODOLOGY_NOTE, SCORE_WEIGHTS } from '../lib/math/score.ts';
+import { DECAY_BY_POSITIONING } from '../lib/math/depreciation.ts';
+
+const constants = allConstants();
+
+const formulae = [
+  { name: 'Drag force', formula: 'F_d = ½ · ρ · Cd · A · v²' },
+  { name: 'Rolling resistance', formula: 'F_r = Crr · m · g' },
+  { name: 'Top speed', formula: 'solve P_wheel = ½ρ·Cd·A·v³ + Crr·m·g·v for v' },
+  { name: 'Braking distance', formula: 'd = v² / (2 · μ · g)' },
+  { name: 'Power-to-weight', formula: 'P / m' },
+  { name: 'Drag coefficient from force', formula: 'Cd = 2F / (ρ · U² · A)' },
+  { name: 'Frontal area (estimated)', formula: 'A ≈ 0.85 · width · height' },
+  { name: 'Steady-state consumption', formula: '(F_d + F_r) · v ÷ (η_drivetrain · η_powertrain)' },
+  { name: 'Depreciation', formula: 'value(t) = price · (1 − rate)^t · mileageFactor · conditionFactor' },
+];
 ---
 
 <BaseLayout
   title="Methodology"
-  description="Every formula Markey computes with, published rather than hidden."
+  description="Every formula Markey computes with, published rather than hidden — including where the model is weakest."
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Methodology</h1>
@@ -23,41 +41,202 @@ import BaseLayout from '../components/ui/BaseLayout.astro';
     </p>
   </header>
 
+  <Section
+    title="What “modelled” means"
+    lede="The most important thing on this page."
+  >
+    <div class="type-body flex max-w-prose flex-col gap-3 py-5 text-sm text-ink-secondary">
+      <p>
+        Where a manufacturer published a figure, that is what the spec sheet
+        shows. A modelled figure never overwrites a real one — it appears
+        alongside it, labelled as the model's output, which incidentally makes
+        the comparison interesting in its own right. A car that beats its own
+        published 0–100, or badly misses it, is telling you something.
+      </p>
+      <p>
+        Where an input the physics needs is missing, you get a gap rather than a
+        guess. A car with no published drag coefficient anywhere gets no
+        aerodynamic panel at all.
+      </p>
+      <p class="text-ink">
+        <strong>How accurate is it?</strong> Checked against published figures
+        for cars across the range, the acceleration model lands within roughly
+        20% in both directions, and the top-speed model within about 5% for
+        cars that are not electronically limited. It is useful for comparing
+        cars on a consistent basis. It is not a substitute for a road test.
+      </p>
+    </div>
+  </Section>
+
   <Section title="Units">
-    <div class="type-body flex flex-col gap-3 py-5 text-sm text-ink-secondary">
+    <div class="type-body flex max-w-prose flex-col gap-3 py-5 text-sm text-ink-secondary">
       <p>
         Everything is stored in SI. Imperial figures are computed for display
-        when you ask for them and are never stored or indexed, so the two can't
+        when you ask for them and are never stored or indexed, so the two cannot
         drift apart. The schema only accepts SI units, which means a horsepower
         figure cannot physically be saved into the database by mistake.
       </p>
+      <p>
+        Power converts to <strong class="text-ink">metric horsepower (PS)</strong>
+        by default rather than mechanical bhp, because the overwhelming majority
+        of published figures for European and Japanese cars are PS. The two
+        differ by about 1.4%, and quoting one as the other is a small error
+        repeated endlessly elsewhere.
+      </p>
     </div>
+  </Section>
+
+  <Section title="Formulae" lede="All standard, textbook automotive physics.">
+    <dl class="flex flex-col gap-3 py-5">
+      {
+        formulae.map((item) => (
+          <div class="grid gap-1 border-b border-line pb-3 last:border-b-0 last:pb-0 sm:grid-cols-[14rem_1fr] sm:gap-4">
+            <dt class="text-sm text-ink-secondary">{item.name}</dt>
+            <dd class="font-mono text-sm break-words">{item.formula}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </Section>
+
+  <Section
+    title="Default constants"
+    lede="Every one of these is a reasoned default, not a measurement. Each carries the reasoning that justifies it, and each is a candidate for revision as the catalog grows."
+  >
+    <dl class="flex flex-col gap-4 py-5">
+      {
+        constants.map((constant) => (
+          <div class="border-b border-line pb-4 last:border-b-0 last:pb-0">
+            <dt class="flex flex-wrap items-baseline gap-x-3">
+              <span class="type-heading text-sm">{constant.name}</span>
+              <span class="type-data text-sm tabular-nums text-ink-secondary">
+                {constant.value}
+                {constant.unit ? ` ${constant.unit}` : ''}
+              </span>
+            </dt>
+            <dd class="mt-1 max-w-prose text-xs leading-relaxed text-ink-muted">
+              {constant.basis}
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+  </Section>
+
+  <Section
+    title="Known limitations of the dynamics model"
+    lede="Stated plainly, because a model whose weaknesses are hidden is worse than no model."
+  >
+    <ul class="flex list-disc flex-col gap-2 py-5 pl-5 text-sm text-ink-secondary">
+      <li>
+        <strong class="text-ink">It does not know about gearing.</strong> Top
+        speed is where power balances drag. A car geared out below that point
+        will never reach it.
+      </li>
+      <li>
+        <strong class="text-ink">Electronic limiters are invisible unless
+        recorded.</strong> Many EVs and most German cars are limited well below
+        the speed the physics allows. Where a limiter is known it is used; where
+        it is not, the figure shown is what the car could do unrestricted, and
+        it will exceed the published number — sometimes by a lot.
+      </li>
+      <li>
+        <strong class="text-ink">It has no torque curve.</strong> Acceleration
+        assumes a fixed fraction of peak power is available throughout the run
+        rather than modelling an engine sweeping its rev range and losing time
+        to shifts. That fraction is the model's largest single approximation and
+        it is listed in the constants above.
+      </li>
+      <li>
+        <strong class="text-ink">Consumption is a steady cruise, not a drive
+        cycle.</strong> It models holding a constant speed on level ground, so
+        it is not comparable with a WLTP or EPA figure and must not be read as
+        one.
+      </li>
+      <li>
+        <strong class="text-ink">Braking is the physical floor.</strong> It
+        assumes every tyre is at peak grip for the whole stop, and ignores fade,
+        weight transfer and whether the brakes could actually reach the tyres'
+        limit — which for many older cars they could not.
+      </li>
+      <li>
+        <strong class="text-ink">Air density is standard.</strong> No correction
+        for altitude or temperature, both of which move real drag by several
+        percent.
+      </li>
+    </ul>
+  </Section>
+
+  <Section title="The Markey Score" lede={SCORE_METHODOLOGY_NOTE}>
+    <dl class="flex flex-col gap-2 py-5 text-sm">
+      {
+        Object.entries(SCORE_WEIGHTS).map(([factor, weight]) => (
+          <div class="flex justify-between gap-4 border-b border-line pb-2 last:border-b-0 last:pb-0">
+            <dt class="capitalize text-ink-secondary">{factor.replace(/([A-Z])/g, ' $1')}</dt>
+            <dd class="type-data font-medium tabular-nums">{(weight * 100).toFixed(0)}%</dd>
+          </div>
+        ))
+      }
+    </dl>
+    <p class="max-w-prose pb-5 text-xs leading-relaxed text-ink-muted">
+      A car is never scored on data it does not have. Missing sub-factors are
+      excluded and the remaining weights renormalised, and where fewer than half
+      the factors have data behind them the blended number is withheld entirely
+      rather than shown with false confidence. Scoring a missing figure as zero
+      would rank the least-documented cars last, which measures our research
+      rather than the car.
+    </p>
+  </Section>
+
+  <Section
+    title="Depreciation"
+    lede="A projection from a published formula. Not market data, and not a valuation."
+  >
+    <dl class="flex flex-col gap-3 py-5 text-sm">
+      {
+        Object.entries(DECAY_BY_POSITIONING).map(([tier, decay]) => (
+          <div class="border-b border-line pb-3 last:border-b-0 last:pb-0">
+            <dt class="flex justify-between gap-4">
+              <span class="capitalize">{tier.replace('-', ' ')}</span>
+              <span class="type-data font-medium tabular-nums">
+                {(decay.rate * 100).toFixed(0)}% / yr
+              </span>
+            </dt>
+            <dd class="mt-1 max-w-prose text-xs leading-relaxed text-ink-muted">{decay.basis}</dd>
+          </div>
+        ))
+      }
+    </dl>
+    <p class="max-w-prose pb-5 text-xs leading-relaxed text-ink-muted">
+      Decay is exponential — a percentage of remaining value each year — because
+      that is how cars actually behave. A linear model would reach zero on a
+      specific date, which no car does. If you log real valuations against a car
+      in your garage, they are plotted on the same chart as points, and the
+      curve is deliberately <em>not</em> refitted to them: the divergence is the
+      interesting part.
+    </p>
+  </Section>
+
+  <Section title="Insurance risk" lede={RISK_DISCLAIMER}>
+    <dl class="flex flex-col gap-2 py-5 text-sm">
+      {
+        Object.entries(RISK_WEIGHTS).map(([factor, weight]) => (
+          <div class="flex justify-between gap-4 border-b border-line pb-2 last:border-b-0 last:pb-0">
+            <dt class="capitalize text-ink-secondary">{factor.replace(/([A-Z])/g, ' $1')}</dt>
+            <dd class="type-data font-medium tabular-nums">{(weight * 100).toFixed(0)}%</dd>
+          </div>
+        ))
+      }
+    </dl>
   </Section>
 
   <Section title="Still to be published here">
     <ul class="flex list-disc flex-col gap-2 py-5 pl-5 text-sm text-ink-secondary">
       <li>
-        The vehicle-dynamics model — drag, rolling resistance, top speed,
-        0–100 km/h, braking distance and steady-state consumption — together
-        with every default constant it uses and where that constant came from.
-      </li>
-      <li>
-        The Markey Score: its sub-factors and their exact weights.
-      </li>
-      <li>
-        The depreciation curve, stated plainly as a projection rather than a
-        market-data claim.
-      </li>
-      <li>
-        The wind tunnel's validation numbers against published drag
-        coefficients for canonical shapes — sphere, cube, flat plate and
-        teardrop — so its accuracy can be judged rather than trusted.
+        The wind tunnel's validation numbers against published drag coefficients
+        for canonical shapes — sphere, cube, flat plate and teardrop — so its
+        accuracy can be judged rather than trusted.
       </li>
     </ul>
-    <p class="pb-5 text-sm text-ink-muted">
-      These are listed rather than omitted because a methodology page that
-      quietly covers only the easy parts is worse than one that admits what is
-      still missing.
-    </p>
   </Section>
 </BaseLayout>

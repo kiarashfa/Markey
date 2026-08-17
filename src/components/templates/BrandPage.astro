@@ -10,7 +10,6 @@ import Breadcrumbs from '../blocks/Breadcrumbs.astro';
 import CarCard from '../blocks/CarCard.astro';
 import FactRow from '../blocks/FactRow.astro';
 import HeroBand from '../blocks/HeroBand.astro';
-import ImageCredits from '../blocks/ImageCredits.astro';
 import Section from '../blocks/Section.astro';
 import BaseLayout from '../ui/BaseLayout.astro';
 
@@ -132,7 +131,24 @@ const stats = [
           </div>
         </dl>
 
-        <ImageCredits images={[data.logo, ...(data.logoMonochrome ? [data.logoMonochrome] : [])]} />
+        {/*
+          The logo's basis is stated in prose rather than behind an info icon.
+          A brand has exactly one mark, so this is not the scale problem that
+          photography is — and the trademark position deserves a sentence a
+          reader will actually see, not one they have to go looking for.
+        */}
+        <p class="max-w-prose text-xs leading-relaxed text-ink-muted">
+          <span class="text-ink-secondary">Logo:</span>{' '}
+          <a
+            class="underline decoration-line underline-offset-2 hover:text-ink"
+            href={data.logo.credit.sourceUrl}
+            rel="nofollow noopener"
+            target="_blank"
+          >
+            {data.logo.credit.title ?? data.logo.alt}
+          </a>
+          {data.logo.credit.author && <> &middot; {data.logo.credit.author}</>}. {data.logo.credit.licenseNote}
+        </p>
 
         {
           data.accentColorNote && (

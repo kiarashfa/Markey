@@ -12,7 +12,7 @@ import Breadcrumbs from '../blocks/Breadcrumbs.astro';
 import CarCard from '../blocks/CarCard.astro';
 import FactRow from '../blocks/FactRow.astro';
 import HeroBand from '../blocks/HeroBand.astro';
-import ImageCredits from '../blocks/ImageCredits.astro';
+import ImageFigure from '../blocks/ImageFigure.astro';
 import Section from '../blocks/Section.astro';
 import SpecRow from '../blocks/SpecRow.astro';
 import TagList from '../blocks/TagList.astro';
@@ -27,7 +27,7 @@ import {
   type JoinedBrand,
   type JoinedCar,
 } from '../../lib/content/entries.ts';
-import { brandHref, carHref, href, imageSrc } from '../../lib/content/href.ts';
+import { brandHref, carHref, href } from '../../lib/content/href.ts';
 import { formatValue, formatYears } from '../../lib/render/format.ts';
 import { eras, labelFor, segments } from '../../schemas/taxonomy.ts';
 
@@ -254,22 +254,10 @@ const description =
           <div class="-mx-4 py-4 sm:-mx-5">
             <div class="grid gap-3 px-4 sm:grid-cols-2 sm:px-5">
               {data.gallery.map((image) => (
-                <figure class="min-w-0">
-                  <img
-                    src={imageSrc(image.src)}
-                    alt={image.alt}
-                    width={image.width}
-                    height={image.height}
-                    loading="lazy"
-                    decoding="async"
-                    class="aspect-[3/2] w-full rounded-lg border border-line bg-surface-2 object-cover"
-                  />
-                  {image.caption && (
-                    <figcaption class="mt-1.5 text-xs leading-relaxed text-ink-muted">
-                      {image.caption}
-                    </figcaption>
-                  )}
-                </figure>
+                <ImageFigure
+                  image={image}
+                  imgClass="aspect-[3/2] w-full rounded-lg border border-line bg-surface-2 object-cover"
+                />
               ))}
             </div>
           </div>
@@ -292,7 +280,17 @@ const description =
             <dd class="font-medium">{data.reviewStatus}</dd>
           </div>
         </dl>
-        {creditedImages.length > 0 && <ImageCredits images={creditedImages} />}
+        {
+          creditedImages.length > 0 && (
+            <p class="text-xs leading-relaxed text-ink-muted">
+              Photography on this page is credited on each image — tap the
+              <span class="mx-1 inline-flex size-4 items-center justify-center rounded-full border border-line align-[-2px] text-[0.5625rem] font-semibold">
+                i
+              </span>
+              on a photograph for its author, licence and source.
+            </p>
+          )
+        }
       </div>
     </Section>
   </div>

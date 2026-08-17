@@ -16,7 +16,7 @@
  * absent, the same discipline the spec tables follow.
  */
 import BrandBadge from './BrandBadge.astro';
-import { imageSrc } from '../../lib/content/href.ts';
+import ImageFigure from './ImageFigure.astro';
 import type { ImageRef } from '../../schemas/primitives.ts';
 
 interface Stat {
@@ -108,17 +108,12 @@ const { title, eyebrow, subtitle, accentColor, brandName, brandUrl, brandLogo, h
 
       {
         hero && (
-          <figure class="min-w-0">
-            <img
-              src={imageSrc(hero.src)}
-              alt={hero.alt}
-              width={hero.width}
-              height={hero.height}
-              fetchpriority="high"
-              decoding="async"
-              class="w-full rounded-xl border border-line/60 bg-surface-1 object-cover shadow-lg"
-            />
-          </figure>
+          <ImageFigure
+            image={hero}
+            priority
+            showCaption={false}
+            imgClass="w-full rounded-xl border border-line/60 bg-surface-1 object-cover shadow-lg"
+          />
         )
       }
     </div>

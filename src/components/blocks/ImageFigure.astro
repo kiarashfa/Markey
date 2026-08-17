@@ -1,0 +1,262 @@
+---
+/**
+ * An image with its attribution attached to the image itself — SPEC.md §10.
+ *
+ * Replaces the earlier approach of listing every image's credit in a block at
+ * the bottom of the page. That does not survive contact with scale: at
+ * thousands of images the list becomes a wall nobody reads, and the credit
+ * ends up nowhere near the photograph it belongs to. Attaching it to the image
+ * keeps the connection obvious at any catalog size, and is the same pattern
+ * Commons and stock libraries use.
+ *
+ * Built on the **native Popover API** — no JavaScript, no island, no
+ * per-image hydration cost. That matters here more than anywhere: this
+ * component will eventually render tens of thousands of times, and a Svelte
+ * island per photograph would be an absurd amount of client work to show a
+ * photographer's name. The platform gives light-dismiss, Escape-to-close and
+ * top-layer stacking for free.
+ *
+ * The credit text is always in the HTML, merely collapsed — so it is present
+ * for screen readers, for Pagefind, and for anyone auditing the licensing,
+ * whether or not the popover is ever opened.
+ */
+import { imageSrc } from '../../lib/content/href.ts';
+import { ATTRIBUTION_REQUIRED, type ImageRef } from '../../schemas/primitives.ts';
+
+interface Props {
+  image: ImageRef;
+  /** Tailwind classes for the <img> itself. */
+  imgClass?: string;
+  /** Above-the-fold images opt out of lazy loading. */
+  priority?: boolean;
+  showCaption?: boolean;
+  class?: string;
+}
+
+const {
+  image,
+  imgClass = 'w-full rounded-lg border border-line bg-surface-2 object-cover',
+  priority = false,
+  showCaption = true,
+  class: className = '',
+} = Astro.props;
+
+const LICENSE_LABELS: Record<string, string> = {
+  cc0: 'CC0 1.0 — public domain dedication',
+  'public-domain': 'Public domain',
+  'cc-by': 'CC BY',
+  'cc-by-sa': 'CC BY-SA',
+  'cc-by-nc': 'CC BY-NC',
+  'cc-by-nd': 'CC BY-ND',
+  gfdl: 'GFDL',
+  'manufacturer-press-grant': 'Manufacturer press grant',
+  'fair-use-editorial': 'Editorial fair use',
+  'trademark-nominative-use': 'Trademark, nominative use',
+};
+
+const { credit } = image;
+const licenseLabel = credit.licenseVersion
+  ? `${LICENSE_LABELS[credit.licenseType] ?? credit.licenseType} ${credit.licenseVersion}`
+  : (LICENSE_LABELS[credit.licenseType] ?? credit.licenseType);
+
+const needsAuthor = ATTRIBUTION_REQUIRED.has(credit.licenseType);
+
+/** Stable per-image id — the popover needs one and the src is already unique. */
+const popoverId = `credit-${image.src.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '')}`;
+---
+
+<figure class:list={['relative min-w-0', className]}>
+  <img
+    src={imageSrc(image.src)}
+    alt={image.alt}
+    width={image.width}
+    height={image.height}
+    loading={priority ? 'eager' : 'lazy'}
+    fetchpriority={priority ? 'high' : undefined}
+    decoding="async"
+    class={imgClass}
+  />
+
+  <button
+    type="button"
+    popovertarget={popoverId}
+    class="credit-trigger absolute bottom-2 right-2 inline-flex size-6 items-center justify-center rounded-full border border-white/30 bg-black/55 text-[0.6875rem] font-semibold text-white backdrop-blur-sm transition-[background-color,transform] duration-150 hover:bg-black/75"
+    aria-label={`Image credit and licence${credit.author ? ` — ${credit.author}` : ''}`}
+  >
+    <span aria-hidden="true">i</span>
+  </button>
+
+  <div id={popoverId} popover class="credit-popover">
+    <p class="type-heading text-sm">Image credit</p>
+
+    <dl class="mt-3 flex flex-col gap-2 text-sm">
+      {
+        credit.title && (
+          <div>
+            <dt class="text-xs text-ink-muted">File</dt>
+            <dd class="break-words">{credit.title}</dd>
+          </div>
+        )
+      }
+      {
+        credit.author && (
+          <div>
+            <dt class="text-xs text-ink-muted">
+              {needsAuthor ? 'Author (attribution required)' : 'Author'}
+            </dt>
+            <dd class="break-words">{credit.author}</dd>
+          </div>
+        )
+      }
+      <div>
+        <dt class="text-xs text-ink-muted">Licence</dt>
+        <dd class="break-words">
+          {
+            credit.licenseUrl ? (
+              <a
+                class="underline decoration-line underline-offset-2"
+                href={credit.licenseUrl}
+                rel="nofollow noopener"
+                target="_blank"
+              >
+                {licenseLabel}
+              </a>
+            ) : (
+              licenseLabel
+            )
+          }
+        </dd>
+      </div>
+      <div>
+        <dt class="text-xs text-ink-muted">Source</dt>
+        <dd class="break-words">
+          <a
+            class="underline decoration-line underline-offset-2"
+            href={credit.sourceUrl}
+            rel="nofollow noopener"
+            target="_blank"
+          >
+            {credit.sourceUrl.replace(/^https?:\/\//, '')}
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+    {
+      credit.licenseNote && (
+        <p class="mt-3 border-t border-line pt-3 text-xs leading-relaxed text-ink-secondary">
+          {credit.licenseNote}
+        </p>
+      )
+    }
+
+    <button
+      type="button"
+      popovertarget={popoverId}
+      popovertargetaction="hide"
+      class="pressable mt-4 w-full rounded-md border border-line bg-surface-2 px-3 py-2 text-sm font-medium"
+    >
+      Close
+    </button>
+  </div>
+
+  {
+    showCaption && image.caption && (
+      <figcaption class="mt-1.5 text-xs leading-relaxed text-ink-muted">
+        {image.caption}
+      </figcaption>
+    )
+  }
+</figure>
+
+<style>
+  /*
+   * A native popover lands in the top layer, so it is centred by the UA rather
+   * than positioned against the trigger. That is the right call here: CSS
+   * anchor positioning is still uneven across browsers, and a small centred
+   * card is a pattern apple-design §7 explicitly exempts from origin-anchoring
+   * ("modals appear centred in the viewport"). It also behaves better on a
+   * phone than a tooltip pinned to the corner of a photograph.
+   */
+  .credit-popover {
+    /*
+     * `margin: auto` is what centres a popover in the top layer, and it comes
+     * from the UA stylesheet — which Tailwind's preflight then resets to 0,
+     * dropping the card into the top-left corner. Restating it here is the fix.
+     */
+    inset: 0;
+    margin: auto;
+    width: min(24rem, calc(100vw - 2rem));
+    height: fit-content;
+    padding: 1rem;
+    border: 1px solid var(--color-line);
+    border-radius: 0.75rem;
+    background-color: var(--color-surface-1);
+    color: var(--color-ink);
+    box-shadow: 0 24px 48px -12px rgb(0 0 0 / 0.45);
+
+    /* Never scale from 0 — nothing in the real world appears from nothing. */
+    opacity: 0;
+    transform: scale(0.96);
+    transition:
+      opacity 160ms var(--ease-out-strong),
+      transform 160ms var(--ease-out-strong),
+      overlay 160ms allow-discrete,
+      display 160ms allow-discrete;
+  }
+
+  .credit-popover:popover-open {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Entry needs a starting style, or the popover jumps straight to its end state. */
+  @starting-style {
+    .credit-popover:popover-open {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+  }
+
+  .credit-popover::backdrop {
+    background-color: rgb(0 0 0 / 0.4);
+    opacity: 0;
+    transition:
+      opacity 160ms var(--ease-out-strong),
+      overlay 160ms allow-discrete,
+      display 160ms allow-discrete;
+  }
+
+  .credit-popover:popover-open::backdrop {
+    opacity: 1;
+  }
+
+  @starting-style {
+    .credit-popover:popover-open::backdrop {
+      opacity: 0;
+    }
+  }
+
+  /* Hover motion only where hovering is real — a tap fires a false hover. */
+  @media (hover: hover) and (pointer: fine) {
+    .credit-trigger:hover {
+      transform: scale(1.08);
+    }
+  }
+
+  .credit-trigger:active {
+    transform: scale(0.94);
+  }
+
+  /* Reduced motion keeps the fade, drops the scale (apple-design §14). */
+  @media (prefers-reduced-motion: reduce) {
+    .credit-popover,
+    .credit-popover:popover-open {
+      transform: none;
+    }
+    .credit-trigger:hover,
+    .credit-trigger:active {
+      transform: none;
+    }
+  }
+</style>
