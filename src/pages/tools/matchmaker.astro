@@ -1,0 +1,40 @@
+---
+/**
+ * `/tools/matchmaker/` — SPEC.md §6, §9.3.
+ *
+ * Dealbreakers first, then weighted preference ranking within what survives.
+ * Composed from the same filter primitives Guided Browse uses.
+ */
+import Matchmaker from '../../components/islands/Matchmaker.svelte';
+import BaseLayout from '../../components/ui/BaseLayout.astro';
+import { buildCatalogue } from '../../lib/content/catalogue.ts';
+import { href } from '../../lib/content/href.ts';
+import { bodyStyles, powertrains } from '../../schemas/taxonomy.ts';
+
+const catalogue = await buildCatalogue();
+const terms = (list: { id: string; label: string }[]) => list.map((t) => ({ id: t.id, label: t.label }));
+---
+
+<BaseLayout
+  title="Matchmaker"
+  description="Set your dealbreakers, then weight what matters to you, and see the catalog ranked accordingly."
+>
+  <header>
+    <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Matchmaker</h1>
+    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+      Dealbreakers rule cars out; preferences put what is left in an order. The
+      percentage compares the survivors against each other, not against an
+      abstract ideal. For filtering without an opinion about the order, use{' '}
+      <a class="underline decoration-line underline-offset-4 hover:text-ink" href={href('tools', 'guided-browse')}>Guided Browse</a>.
+    </p>
+  </header>
+
+  <div class="mt-8">
+    <Matchmaker
+      client:load
+      cars={catalogue}
+      bodyStyleTerms={terms(bodyStyles.terms)}
+      powertrainTerms={terms(powertrains.terms)}
+    />
+  </div>
+</BaseLayout>

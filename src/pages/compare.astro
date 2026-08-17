@@ -1,0 +1,30 @@
+---
+/**
+ * `/compare/` — SPEC.md §6, §9.7.
+ *
+ * Client-side and URL-shareable; owns no content of its own.
+ */
+import CompareTool from '../components/islands/CompareTool.svelte';
+import BaseLayout from '../components/ui/BaseLayout.astro';
+import { buildCatalogue } from '../lib/content/catalogue.ts';
+
+const catalogue = await buildCatalogue();
+---
+
+<BaseLayout
+  title="Compare"
+  description="Compare up to four cars side by side. The comparison lives in the URL, so it is shareable and bookmarkable."
+>
+  <header>
+    <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Compare</h1>
+    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+      Up to four cars, row by row. Your selection is written into this page's
+      address as you choose, so a comparison can be bookmarked or sent to
+      someone without an account or a saved file.
+    </p>
+  </header>
+
+  <div class="mt-8">
+    <CompareTool client:load cars={catalogue} />
+  </div>
+</BaseLayout>

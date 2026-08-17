@@ -1,71 +1,86 @@
 ---
 /**
- * `/cars/` — the full catalog index.
+ * `/cars/` — the full catalog.
  *
- * Not in SPEC.md §6's table, which lists only `/cars/<slug>/`. Added because
- * the header nav and every car page's breadcrumb need somewhere real to point,
- * and because an indexable, crawlable list of every nameplate is exactly the
- * kind of page SPEC.md §12 wants to exist.
- *
- * This is a static list. The filtered/sorted reactive catalog with facets
- * (SPEC.md §9.1) is Phase 4 work and replaces the body of this page.
+ * The faceted list is an island; the page itself still server-renders the
+ * complete set inside it, so the catalog is crawlable and readable without
+ * JavaScript. `client:load` rather than `client:visible` because this is the
+ * page's entire purpose — waiting for it to scroll into view would mean the
+ * controls are dead at the moment the visitor first reaches for them.
  */
+import Catalog from '../../components/islands/Catalog.svelte';
 import CarCard from '../../components/blocks/CarCard.astro';
 import Section from '../../components/blocks/Section.astro';
 import BaseLayout from '../../components/ui/BaseLayout.astro';
+import { buildCatalogue } from '../../lib/content/catalogue.ts';
 import { getBrands, getCars } from '../../lib/content/entries.ts';
+import { assetHref } from '../../lib/content/href.ts';
+import {
+  bodyStyles,
+  drivetrains,
+  positioning,
+  powertrains,
+  segments,
+} from '../../schemas/taxonomy.ts';
 
-const [cars, brands] = await Promise.all([getCars(), getBrands()]);
+const [catalogue, cars, brands] = await Promise.all([buildCatalogue(), getCars(), getBrands()]);
 const brandsById = new Map(brands.map((b) => [b.id, b]));
 
 const models = cars
   .filter((c) => c.data.kind === 'model')
   .sort((a, b) => a.data.name.localeCompare(b.data.name));
 
-const generations = cars
-  .filter((c) => c.data.kind !== 'model')
-  .sort((a, b) => a.data.productionYears.start - b.data.productionYears.start);
+const terms = (list: { id: string; label: string }[]) =>
+  list.map((t) => ({ id: t.id, label: t.label }));
 ---
 
 <BaseLayout
   title="Cars"
-  description="Every nameplate and generation in the Markey catalog, with sourced specifications."
+  description="Every generation in the Markey catalog, filterable by body style, powertrain, drivetrain, segment and market positioning."
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Cars</h1>
     <p class="type-body mt-3 max-w-prose text-ink-secondary">
-      Every nameplate, and every generation underneath it. A nameplate page is
-      the overview; a generation page is where the specifications live.
+      Generations and halo trims — the entries that carry the specifications.
+      Filter and sort them here; the nameplate hubs are listed underneath.
     </p>
   </header>
 
-  {
-    models.length > 0 ? (
-      <>
-        <Section title={`Nameplates (${models.length})`}>
-          <div class="-mx-4 py-4 sm:-mx-5">
-            <div class="grid gap-3 px-4 sm:px-5 md:grid-cols-2">
-              {models.map((car) => (
-                <CarCard car={car} brand={brandsById.get(car.data.brandRef)} />
-              ))}
-            </div>
-          </div>
-        </Section>
+  <div class="mt-8">
+    <Catalog
+      client:load
+      cars={catalogue}
+      bodyStyleTerms={terms(bodyStyles.terms)}
+      powertrainTerms={terms(powertrains.terms)}
+      drivetrainTerms={terms(drivetrains.terms)}
+      segmentTerms={terms(segments.terms)}
+      positioningTerms={terms(positioning.terms)}
+    />
+  </div>
 
-        <Section title={`Generations & halo trims (${generations.length})`}>
-          <div class="-mx-4 py-4 sm:-mx-5">
-            <div class="grid gap-3 px-4 sm:px-5 md:grid-cols-2">
-              {generations.map((car) => (
-                <CarCard car={car} brand={brandsById.get(car.data.brandRef)} />
-              ))}
-            </div>
+  {
+    models.length > 0 && (
+      <Section
+        title={`Nameplates (${models.length})`}
+        lede="A nameplate page is the overview across a car's whole history; its generations are where the specifications live."
+      >
+        <div class="-mx-4 py-4 sm:-mx-5">
+          <div class="grid gap-3 px-4 sm:px-5 md:grid-cols-2">
+            {models.map((car) => (
+              <CarCard car={car} brand={brandsById.get(car.data.brandRef)} />
+            ))}
           </div>
-        </Section>
-      </>
-    ) : (
-      <Section title="Nameplates">
-        <p class="py-5 text-sm text-ink-muted">No cars have been written up yet.</p>
+        </div>
       </Section>
     )
   }
+
+  <p class="mt-8 text-sm">
+    <a
+      class="underline decoration-line underline-offset-4 hover:text-ink"
+      href={assetHref('catalogue.json')}
+    >
+      Machine-readable export &rarr;
+    </a>
+  </p>
 </BaseLayout>

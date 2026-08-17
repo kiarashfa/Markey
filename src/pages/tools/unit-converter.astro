@@ -1,0 +1,29 @@
+---
+/**
+ * `/tools/unit-converter/` — SPEC.md §6.
+ *
+ * Backed by the same `lib/math/units.ts` the spec tables use, so it cannot
+ * give a different answer from a car page.
+ */
+import UnitConverter from '../../components/islands/UnitConverter.svelte';
+import BaseLayout from '../../components/ui/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Unit converter"
+  description="Convert between the SI units car specifications are stored in and their imperial equivalents."
+>
+  <header>
+    <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Unit converter</h1>
+    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+      The same conversions the spec tables use. Power shows metric horsepower
+      and mechanical horsepower separately, because they differ by 1.4% and
+      quoting one as the other is the most common unit error in published car
+      specifications.
+    </p>
+  </header>
+
+  <div class="mt-8 max-w-2xl">
+    <UnitConverter client:load />
+  </div>
+</BaseLayout>

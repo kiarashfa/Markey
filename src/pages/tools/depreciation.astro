@@ -1,0 +1,27 @@
+---
+/**
+ * `/tools/depreciation/` — SPEC.md §6, §8.1.
+ */
+import DepreciationCalculator from '../../components/islands/DepreciationCalculator.svelte';
+import BaseLayout from '../../components/ui/BaseLayout.astro';
+import { href } from '../../lib/content/href.ts';
+---
+
+<BaseLayout
+  title="Depreciation"
+  description="A transparent projection of what a car might be worth, from a published formula — not market data."
+>
+  <header>
+    <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Depreciation</h1>
+    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+      A projection from a formula you can read on the{' '}
+      <a class="underline decoration-line underline-offset-4 hover:text-ink" href={href('methodology')}>methodology page</a>,
+      not a valuation and not market data. It shows its working, because a
+      number without its derivation invites more trust than it has earned.
+    </p>
+  </header>
+
+  <div class="mt-8 max-w-3xl">
+    <DepreciationCalculator client:load />
+  </div>
+</BaseLayout>

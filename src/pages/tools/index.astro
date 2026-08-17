@@ -1,0 +1,46 @@
+---
+/**
+ * `/tools/` — index of the interactive tools.
+ *
+ * Added so the nav and the tool cross-links have a hub, and so the tools are
+ * discoverable rather than only reachable by knowing the URL.
+ */
+import Section from '../../components/blocks/Section.astro';
+import BaseLayout from '../../components/ui/BaseLayout.astro';
+import { href } from '../../lib/content/href.ts';
+
+const tools = [
+  { name: 'Guided Browse', url: href('tools', 'guided-browse'), blurb: 'Narrow the catalog step by step to what meets your requirements. No ranking.' },
+  { name: 'Matchmaker', url: href('tools', 'matchmaker'), blurb: 'Dealbreakers, then weighted preferences, producing a ranked list.' },
+  { name: 'Compare', url: href('compare'), blurb: 'Up to four cars side by side. The comparison lives in the URL.' },
+  { name: 'Unit converter', url: href('tools', 'unit-converter'), blurb: 'SI to imperial, using the same conversions as the spec tables.' },
+  { name: 'Fuel cost', url: href('tools', 'fuel-cost'), blurb: 'Running cost at the price you actually pay.' },
+  { name: 'Depreciation', url: href('tools', 'depreciation'), blurb: 'A transparent projection from a published formula.' },
+];
+---
+
+<BaseLayout title="Tools" description="Interactive tools for browsing, comparing and costing cars.">
+  <header>
+    <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Tools</h1>
+    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+      Everything here runs in your browser. Nothing you type is sent anywhere,
+      because there is nowhere to send it.
+    </p>
+  </header>
+
+  <Section title="All tools">
+    <ul class="-mx-4 grid gap-3 px-4 py-4 sm:-mx-5 sm:px-5 md:grid-cols-2">
+      {tools.map((tool) => (
+        <li class="min-w-0">
+          <a
+            href={tool.url}
+            class="pressable flex h-full flex-col rounded-lg border border-line bg-surface-2 p-4 transition-colors duration-150 hover:border-line-strong"
+          >
+            <span class="type-heading text-base">{tool.name}</span>
+            <span class="mt-1.5 text-sm leading-relaxed text-ink-muted">{tool.blurb}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </Section>
+</BaseLayout>
