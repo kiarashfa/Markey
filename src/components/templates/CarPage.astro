@@ -1,0 +1,299 @@
+---
+/**
+ * One template for all three `kind`s — SPEC.md §5.1, Instruction.md Phase 2.
+ *
+ * A `model` hub renders its narrative overview and lists its generations as
+ * real links. A `generation` or `trim` renders the full spec block. Sharing one
+ * template is what keeps the two presentations honest about being the same
+ * content type; the differences are the two `kind === 'model'` branches below
+ * and nothing else.
+ */
+import Breadcrumbs from '../blocks/Breadcrumbs.astro';
+import CarCard from '../blocks/CarCard.astro';
+import FactRow from '../blocks/FactRow.astro';
+import HeroBand from '../blocks/HeroBand.astro';
+import ImageCredits from '../blocks/ImageCredits.astro';
+import Section from '../blocks/Section.astro';
+import SpecRow from '../blocks/SpecRow.astro';
+import TagList from '../blocks/TagList.astro';
+import BaseLayout from '../ui/BaseLayout.astro';
+
+import {
+  aggregateTags,
+  erasFor,
+  generationsOf,
+  haloTrimsOf,
+  parentChain,
+  type JoinedBrand,
+  type JoinedCar,
+} from '../../lib/content/entries.ts';
+import { brandHref, carHref, href, imageSrc } from '../../lib/content/href.ts';
+import { formatValue, formatYears } from '../../lib/render/format.ts';
+import { eras, labelFor, segments } from '../../schemas/taxonomy.ts';
+
+interface Props {
+  car: JoinedCar;
+  brand: JoinedBrand;
+  allCars: JoinedCar[];
+}
+
+const { car, brand, allCars } = Astro.props;
+const { data } = car;
+
+const byId = new Map(allCars.map((c) => [c.id, c]));
+const chain = parentChain(car, byId);
+const generations = data.kind === 'model' ? generationsOf(car.id, allCars) : [];
+const haloTrims = data.kind === 'generation' ? haloTrimsOf(car.id, allCars) : [];
+const tags = aggregateTags(car, allCars);
+const entryEras = erasFor(car, allCars);
+
+const kindLabel = { model: 'Nameplate', generation: 'Generation', trim: 'Halo trim' }[data.kind];
+
+const crumbs = [
+  { label: 'Cars', url: href('cars') },
+  { label: brand.data.name, url: brandHref(brand.id) },
+  ...chain.map((entry) => ({ label: entry.data.name, url: carHref(entry.id) })),
+];
+
+/**
+ * Hero stats stay to three, and only ones we actually hold. A hero band padded
+ * out with "not yet available" would spend the page's most prominent space
+ * advertising what is missing.
+ */
+const heroStats: { label: string; value: string }[] = [
+  { label: 'Produced', value: formatYears(data.productionYears) },
+];
+if (data.generationCode) heroStats.push({ label: 'Code', value: data.generationCode });
+if (data.kind === 'model' && generations.length > 0) {
+  heroStats.push({
+    label: 'Generations',
+    value: String(generations.length),
+  });
+}
+if (data.designer) heroStats.push({ label: 'Designer', value: data.designer });
+
+const segmentTerm = data.segment ? segments.terms.find((t) => t.id === data.segment) : undefined;
+
+const creditedImages = [...(data.hero ? [data.hero] : []), ...data.gallery];
+
+const description =
+  data.kind === 'model'
+    ? `${data.name} — every generation, with specifications, sources and confidence for each.`
+    : `${data.name} specifications, ${formatYears(data.productionYears)}. Sourced figures with their citations, and honest gaps where a figure is not yet available.`;
+---
+
+<BaseLayout
+  title={data.fullName ?? data.name}
+  description={description}
+  accentColor={brand.data.accentColor}
+  bleed
+>
+  <HeroBand
+    title={data.name}
+    eyebrow={kindLabel}
+    subtitle={data.fullName && data.fullName !== data.name ? data.fullName : undefined}
+    accentColor={brand.data.accentColor}
+    brandName={brand.data.name}
+    brandUrl={brandHref(brand.id)}
+    brandLogo={brand.data.logo}
+    hero={data.hero}
+    stats={heroStats}
+  />
+
+  <div class="mx-auto w-full max-w-5xl px-5 py-8 sm:px-8 sm:py-10">
+    <Breadcrumbs crumbs={crumbs} />
+
+    <div class="mt-6 flex flex-col gap-3">
+      <TagList
+        label="Body style"
+        axis="body-style"
+        terms={tags.bodyStyles.map((id) => ({ id, label: labelFor('body-style', id) ?? id }))}
+      />
+      <TagList
+        label="Powertrain"
+        axis="powertrain"
+        terms={tags.powertrains.map((id) => ({ id, label: labelFor('powertrain', id) ?? id }))}
+      />
+      <TagList
+        label="Drivetrain"
+        axis="drivetrain"
+        terms={tags.drivetrains.map((id) => ({ id, label: labelFor('drivetrain', id) ?? id }))}
+      />
+      <TagList
+        label="Era"
+        axis="era"
+        terms={entryEras.map((id) => ({
+          id,
+          label: eras.terms.find((t) => t.id === id)?.label ?? id,
+        }))}
+      />
+    </div>
+
+    <article class="type-body mt-8 max-w-prose text-[0.975rem] leading-relaxed text-ink-secondary">
+      <slot />
+    </article>
+
+    {
+      data.kind === 'model' && (
+        <Section
+          title="Generations"
+          lede="Each generation is its own entry, with its own specifications and sources."
+        >
+          <div class="-mx-4 py-4 sm:-mx-5">
+            <div class="grid gap-3 px-4 sm:px-5 md:grid-cols-2">
+              {generations.map((generation) => (
+                <CarCard car={generation} brand={brand} />
+              ))}
+            </div>
+          </div>
+        </Section>
+      )
+    }
+
+    {
+      haloTrims.length > 0 && (
+        <Section
+          title="Halo trims"
+          lede="Trims distinctive enough to warrant their own entry. Ordinary trims are listed in the table below."
+        >
+          <div class="-mx-4 py-4 sm:-mx-5">
+            <div class="grid gap-3 px-4 sm:px-5 md:grid-cols-2">
+              {haloTrims.map((trim) => (
+                <CarCard car={trim} brand={brand} />
+              ))}
+            </div>
+          </div>
+        </Section>
+      )
+    }
+
+    {
+      data.kind !== 'model' && (
+        <Section title="Overview" as="dl">
+          <FactRow label="Manufacturer" values={[brand.data.name]} />
+          <FactRow label="Produced" values={[formatYears(data.productionYears)]} />
+          {data.generationCode && <FactRow label="Model code" values={[data.generationCode]} />}
+          {data.designer && <FactRow label="Designer" values={[data.designer]} />}
+          {segmentTerm && (
+            <FactRow
+              label="Segment"
+              values={[
+                segmentTerm.labels
+                  ? `${segmentTerm.labels.europe} (Europe) / ${segmentTerm.labels.us} (US)`
+                  : segmentTerm.label,
+              ]}
+            />
+          )}
+          {data.positioning && (
+            <FactRow
+              label="Positioning"
+              values={[labelFor('positioning', data.positioning) ?? data.positioning]}
+            />
+          )}
+          <FactRow label="Assembly" values={data.assembly} />
+        </Section>
+      )
+    }
+
+    {
+      data.kind !== 'model' && data.dimensions && (
+        <Section title="Dimensions" as="dl">
+          <SpecRow label="Length" value={data.dimensions.length} />
+          <SpecRow label="Width" value={data.dimensions.width} />
+          <SpecRow label="Height" value={data.dimensions.height} />
+          <SpecRow label="Wheelbase" value={data.dimensions.wheelbase} />
+          <SpecRow label="Kerb weight" value={data.dimensions.kerbWeight} />
+        </Section>
+      )
+    }
+
+    {
+      data.trims.map((trim) => (
+        <Section
+          title={trim.name}
+          lede={`Trim · ${formatYears(trim.productionYears)}${trim.engine?.code ? ` · ${trim.engine.code}` : ''}`}
+          as="dl"
+        >
+          <SpecRow label="Power" value={trim.power} />
+          <SpecRow label="Torque" value={trim.torque} />
+          <SpecRow label="Kerb weight" value={trim.mass} />
+          <SpecRow label="0–100 km/h" value={trim.zeroToHundredKph} />
+          <SpecRow label="Top speed" value={trim.topSpeed} />
+          <SpecRow label="Fuel economy" value={trim.fuelEconomy} />
+          <SpecRow label="Drag coefficient" value={trim.dragCoefficient} />
+          <SpecRow label="Frontal area" value={trim.frontalArea} />
+          <FactRow
+            label="Engine"
+            values={[
+              [trim.engine?.configuration, trim.engine?.code].filter(Boolean).join(' · '),
+            ].filter(Boolean)}
+          />
+          <FactRow
+            label="Drivetrain"
+            values={[labelFor('drivetrain', trim.drivetrain) ?? trim.drivetrain]}
+          />
+          {trim.marketVariants.map((variant) => (
+            <FactRow
+              label={`${variant.market} market`}
+              values={[
+                variant.alsoKnownAs ? `Sold as ${variant.alsoKnownAs}` : '',
+                variant.overrides.dimensions?.length
+                  ? `Length ${formatValue(variant.overrides.dimensions.length)}`
+                  : '',
+                variant.overrides.power ? `Power ${formatValue(variant.overrides.power)}` : '',
+              ].filter(Boolean)}
+            />
+          ))}
+        </Section>
+      ))
+    }
+
+    {
+      data.gallery.length > 0 && (
+        <Section title="Gallery">
+          <div class="-mx-4 py-4 sm:-mx-5">
+            <div class="grid gap-3 px-4 sm:grid-cols-2 sm:px-5">
+              {data.gallery.map((image) => (
+                <figure class="min-w-0">
+                  <img
+                    src={imageSrc(image.src)}
+                    alt={image.alt}
+                    width={image.width}
+                    height={image.height}
+                    loading="lazy"
+                    decoding="async"
+                    class="aspect-[3/2] w-full rounded-lg border border-line bg-surface-2 object-cover"
+                  />
+                  {image.caption && (
+                    <figcaption class="mt-1.5 text-xs leading-relaxed text-ink-muted">
+                      {image.caption}
+                    </figcaption>
+                  )}
+                </figure>
+              ))}
+            </div>
+          </div>
+        </Section>
+      )
+    }
+
+    <Section
+      title="Sources & confidence"
+      lede="Every figure above carries a status. Nothing on this page is estimated without saying so, and nothing missing has been filled in with a guess."
+    >
+      <div class="flex flex-col gap-4 py-4">
+        <dl class="type-data grid gap-2 text-sm sm:grid-cols-2">
+          <div class="flex gap-2">
+            <dt class="text-ink-secondary">Last verified</dt>
+            <dd class="font-medium">{data.lastVerified}</dd>
+          </div>
+          <div class="flex gap-2">
+            <dt class="text-ink-secondary">Review status</dt>
+            <dd class="font-medium">{data.reviewStatus}</dd>
+          </div>
+        </dl>
+        {creditedImages.length > 0 && <ImageCredits images={creditedImages} />}
+      </div>
+    </Section>
+  </div>
+</BaseLayout>

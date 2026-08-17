@@ -1,0 +1,55 @@
+---
+/**
+ * Site chrome — a translucent layer content scrolls under rather than an
+ * opaque strip that permanently eats a band of the viewport (apple-design §12).
+ *
+ * Nav labels name their contents rather than hiding behind generic umbrellas
+ * (apple-design §16, "direct, specific labels"): "Browse" would tell a visitor
+ * nothing that "Body styles" doesn't tell them better.
+ */
+import { href, taxonomyHref } from '../../lib/content/href.ts';
+
+const nav = [
+  { label: 'Cars', url: href('cars') },
+  { label: 'Brands', url: href('brands') },
+  { label: 'Body styles', url: taxonomyHref('body-style') },
+  { label: 'Eras', url: taxonomyHref('era') },
+];
+
+const current = Astro.url.pathname;
+---
+
+<header
+  class="material sticky top-0 z-50 border-b border-line bg-surface-0/75 backdrop-blur-xl backdrop-saturate-150"
+>
+  <a
+    href="#main"
+    class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-50 focus:rounded-md focus:bg-surface-2 focus:px-3 focus:py-2 focus:text-sm"
+  >
+    Skip to content
+  </a>
+
+  <div class="mx-auto flex w-full max-w-5xl items-center gap-5 px-5 py-3 sm:px-8">
+    <a href={href()} class="pressable type-title shrink-0 text-lg tracking-tight">
+      Markey
+    </a>
+
+    <nav aria-label="Primary" class="min-w-0 flex-1">
+      <ul class="flex items-center gap-1 overflow-x-auto text-sm [scrollbar-width:none] sm:gap-2">
+        {
+          nav.map((item) => (
+            <li>
+              <a
+                href={item.url}
+                aria-current={current.startsWith(item.url) ? 'page' : undefined}
+                class="block whitespace-nowrap rounded-md px-2.5 py-1.5 text-ink-secondary transition-colors duration-150 hover:bg-surface-2 hover:text-ink aria-[current=page]:bg-surface-2 aria-[current=page]:text-ink"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>

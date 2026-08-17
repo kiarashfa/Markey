@@ -1,0 +1,57 @@
+---
+/**
+ * The brand mark in its frame — SPEC.md §11.2.
+ *
+ * The split here is deliberate and legal, not stylistic:
+ *
+ *   **The frame is ours** — size, radius, border, padding, the neutral plate
+ *   behind the mark. Style it freely.
+ *
+ *   **The mark is theirs and stays unmodified** — official colours, official
+ *   proportions. No recolour, no monochrome knockout, no re-cut. Recolouring a
+ *   trademark is a modification, and modification weakens exactly the
+ *   nominative-fair-use position SPEC.md §10 depends on.
+ *
+ * Contrast against a dark or photographic background is therefore solved by
+ * the plate behind the mark, never by altering the mark. Where a brand
+ * publishes its own monochrome variant, that variant is passed in as
+ * `logoMonochrome` and used as-is — still the official mark, not one we recut.
+ */
+import { imageSrc } from '../../lib/content/href.ts';
+import type { ImageRef } from '../../schemas/primitives.ts';
+
+interface Props {
+  logo: ImageRef;
+  brandName: string;
+  size?: 'sm' | 'md' | 'lg';
+  /** Sits on a photo or accent wash — the plate goes opaque for legibility. */
+  onColor?: boolean;
+}
+
+const { logo, brandName, size = 'md', onColor = false } = Astro.props;
+
+const box = {
+  sm: 'size-8 p-1',
+  md: 'size-12 p-1.5',
+  lg: 'size-16 p-2',
+}[size];
+---
+
+<span
+  class:list={[
+    'inline-flex shrink-0 items-center justify-center rounded-lg border',
+    box,
+    onColor ? 'border-white/25 bg-white shadow-sm' : 'border-line bg-white',
+  ]}
+  title={`${brandName} logo`}
+>
+  <img
+    src={imageSrc(logo.src)}
+    alt={logo.alt}
+    width={logo.width}
+    height={logo.height}
+    loading="lazy"
+    decoding="async"
+    class="size-full object-contain"
+  />
+</span>

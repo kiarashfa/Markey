@@ -1,0 +1,42 @@
+---
+/**
+ * A label/value row for facts that are not measurements — designer, assembly
+ * plants, generation code. No status badge, because these are not the kind of
+ * claim `PropertyValue` exists to qualify.
+ *
+ * Same grid as `SpecRow` so the two interleave in one table without the
+ * columns shifting.
+ */
+interface Props {
+  label: string;
+  /** Rendered as a list when several values apply (assembly plants, markets). */
+  values?: string[];
+}
+
+const { label, values } = Astro.props;
+const list = (values ?? []).filter(Boolean);
+---
+
+<div
+  class="type-data grid grid-cols-[minmax(7.5rem,11rem)_1fr] gap-x-4 gap-y-1 border-b border-line py-2.5 last:border-b-0 sm:grid-cols-[14rem_1fr]"
+>
+  <dt class="text-sm text-ink-secondary">{label}</dt>
+  {/* `break-words` is load-bearing, not decoration: an unbroken value like a
+      URL or a plant name pushes the whole page into horizontal scroll on a
+      narrow viewport otherwise. */}
+  <dd class="min-w-0 text-sm break-words">
+    {
+      list.length === 0 ? (
+        <span class="text-ink-muted italic">Not yet available</span>
+      ) : list.length === 1 ? (
+        <span class="font-medium"><slot>{list[0]}</slot></span>
+      ) : (
+        <ul class="flex flex-col gap-0.5 font-medium">
+          {list.map((v) => (
+            <li>{v}</li>
+          ))}
+        </ul>
+      )
+    }
+  </dd>
+</div>

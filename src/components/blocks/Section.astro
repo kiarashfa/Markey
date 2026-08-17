@@ -1,0 +1,26 @@
+---
+/**
+ * A titled content region. Calm by construction — SPEC.md §11.1 scopes the
+ * drama to the hero, and everything below it is reference material where
+ * legibility and scan-ability come first.
+ */
+interface Props {
+  title: string;
+  /** One line under the heading, for context the table itself can't carry. */
+  lede?: string;
+  id?: string;
+  /** `dl` when the body is label/value rows, so the pairing is real markup. */
+  as?: 'div' | 'dl';
+}
+
+const { title, lede, id, as = 'div' } = Astro.props as Props;
+const Body = as;
+---
+
+<section id={id} class="mt-10 first:mt-0">
+  <h2 class="type-heading text-lg">{title}</h2>
+  {lede && <p class="mt-1 max-w-prose text-sm leading-relaxed text-ink-secondary">{lede}</p>}
+  <Body class="mt-4 rounded-lg border border-line bg-surface-1 px-4 sm:px-5">
+    <slot />
+  </Body>
+</section>

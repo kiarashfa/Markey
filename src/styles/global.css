@@ -1,9 +1,186 @@
 @import "tailwindcss";
 
 /*
- * SPEC.md §11 — the design-token layer lives here as Tailwind v4 `@theme`
- * variables (display/body type registers, brand-neutral surface scale).
- * Deliberately empty at Phase 0: tokens get defined in Phase 2 alongside the
- * first real components, so they're chosen against actual UI rather than
- * guessed at scaffold time.
+ * Design tokens — SPEC.md §11.
+ *
+ * Registered in `@theme` so Tailwind generates real utilities (`bg-surface-1`,
+ * `text-ink-muted`) rather than every component reaching for an arbitrary
+ * value. Dark mode redefines the same variables further down: because the
+ * utilities compile to `var(--color-…)`, overriding the variable is all that's
+ * needed — no `dark:` variant on every element.
  */
+@theme {
+  /*
+   * Two type registers (SPEC.md §11.3). Both resolve to the platform's own
+   * font today: per apple-design §15, the system face already ships optical
+   * sizing, tracking tables and legibility tuning, and overriding it needs a
+   * reason. The registers are therefore distinguished by weight, size,
+   * tracking and leading — which is where the hierarchy actually lives.
+   * Selecting a bespoke display face is still open (SPEC.md §16); when it
+   * lands it changes this one line and nothing else.
+   */
+  --font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI Variable Display",
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI Variable Text",
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", Menlo,
+    Consolas, monospace;
+
+  /* Surfaces, light theme. */
+  --color-surface-0: oklch(99% 0.002 260);
+  --color-surface-1: oklch(97.2% 0.003 260);
+  --color-surface-2: oklch(94.5% 0.004 260);
+  --color-surface-3: oklch(90% 0.006 260);
+
+  /* Text. */
+  --color-ink: oklch(22% 0.012 260);
+  --color-ink-secondary: oklch(44% 0.011 260);
+  --color-ink-muted: oklch(58% 0.010 260);
+
+  --color-line: oklch(89% 0.005 260);
+  --color-line-strong: oklch(80% 0.007 260);
+
+  /* Status colours for the data-trust badges (SPEC.md §5.5). */
+  --color-status-verified: oklch(52% 0.12 155);
+  --color-status-estimated: oklch(58% 0.13 75);
+  --color-status-placeholder: oklch(60% 0.008 260);
+  --color-status-conflicting: oklch(55% 0.16 25);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-surface-0: oklch(17% 0.009 260);
+    --color-surface-1: oklch(21% 0.010 260);
+    --color-surface-2: oklch(25.5% 0.012 260);
+    --color-surface-3: oklch(31% 0.014 260);
+
+    --color-ink: oklch(96% 0.004 260);
+    --color-ink-secondary: oklch(77% 0.008 260);
+    --color-ink-muted: oklch(63% 0.009 260);
+
+    --color-line: oklch(30% 0.011 260);
+    --color-line-strong: oklch(40% 0.013 260);
+
+    --color-status-verified: oklch(72% 0.14 155);
+    --color-status-estimated: oklch(78% 0.13 78);
+    --color-status-placeholder: oklch(62% 0.008 260);
+    --color-status-conflicting: oklch(70% 0.15 25);
+  }
+}
+
+:root {
+  /*
+   * Easing curves. The browser built-ins are too weak to read as deliberate
+   * (review-animations/STANDARDS.md); these are the strong equivalents.
+   * `ease-in` is deliberately absent — it delays the exact moment the user is
+   * watching, and is never correct for UI.
+   */
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-strong: cubic-bezier(0.77, 0, 0.175, 1);
+
+  /* Fallback accent for anything rendered outside a brand context. */
+  --brand-accent: oklch(55% 0.13 250);
+
+  color-scheme: light dark;
+}
+
+@layer base {
+  html {
+    /* Spacing scales with the user's text size rather than fighting it. */
+    font-family: var(--font-sans);
+    background-color: var(--color-surface-0);
+    color: var(--color-ink);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    min-height: 100dvh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /*
+   * Optical sizing discipline (apple-design §15): tracking tightens as display
+   * text grows, leading tightens with it, and body/table text sits near zero.
+   * A single global `letter-spacing` would be wrong at one end or the other.
+   */
+  .type-display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    font-optical-sizing: auto;
+    text-wrap: balance;
+  }
+
+  .type-title {
+    font-family: var(--font-display);
+    font-weight: 650;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  .type-heading {
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+
+  .type-body {
+    line-height: 1.6;
+    letter-spacing: 0;
+  }
+
+  /* Dense data rows want tighter leading than prose, not looser. */
+  .type-data {
+    line-height: 1.4;
+    letter-spacing: 0;
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--brand-accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  /*
+   * Press feedback, on any pressable thing. 0.97 and 140ms per
+   * review-animations/STANDARDS.md — subtle, and on pointer-down rather than
+   * on release, which is the difference between responsive and dead.
+   */
+  .pressable {
+    transition: transform 140ms var(--ease-out-strong);
+  }
+  .pressable:active {
+    transform: scale(0.97);
+  }
+}
+
+/*
+ * Reduced motion is a gentler equivalent, not the absence of feedback
+ * (apple-design §14). Transform-based movement goes; opacity and colour
+ * changes that aid comprehension stay.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+  .pressable:active {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .material {
+    background-color: var(--color-surface-0) !important;
+    backdrop-filter: none !important;
+  }
+}

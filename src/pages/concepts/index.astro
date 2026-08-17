@@ -1,0 +1,59 @@
+---
+/**
+ * `/concepts/` — index of concept cars and prototypes.
+ *
+ * Added alongside `/cars/` and `/brands/` so the concept breadcrumb resolves.
+ * Empty until the first concept is authored, and it says so plainly rather
+ * than rendering an empty grid that reads as a broken page.
+ */
+import Section from '../../components/blocks/Section.astro';
+import BaseLayout from '../../components/ui/BaseLayout.astro';
+import { getBrands, getConcepts } from '../../lib/content/entries.ts';
+import { conceptHref } from '../../lib/content/href.ts';
+
+const [concepts, brands] = await Promise.all([getConcepts(), getBrands()]);
+const brandsById = new Map(brands.map((b) => [b.id, b]));
+
+const sorted = [...concepts].sort((a, b) => a.data.unveiledYear - b.data.unveiledYear);
+---
+
+<BaseLayout
+  title="Concepts"
+  description="Historically significant concept cars and prototypes."
+>
+  <header>
+    <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Concepts</h1>
+    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+      Concept cars and prototypes are a separate, lighter content type — no
+      trims, no markets, no price. What matters instead is what became of them.
+    </p>
+  </header>
+
+  {
+    sorted.length > 0 ? (
+      <Section title={`${sorted.length} ${sorted.length === 1 ? 'concept' : 'concepts'}`}>
+        <ul class="-mx-4 grid gap-3 px-4 py-4 sm:-mx-5 sm:px-5 md:grid-cols-2">
+          {sorted.map((concept) => (
+            <li class="min-w-0">
+              <a
+                href={conceptHref(concept.id)}
+                class="pressable block rounded-lg border border-line bg-surface-2 p-4 transition-colors duration-150 hover:border-line-strong"
+              >
+                <span class="type-heading block text-base">{concept.data.name}</span>
+                <span class="type-data mt-1 block text-sm text-ink-secondary">
+                  {brandsById.get(concept.data.brandRef)?.data.name} · {concept.data.unveiledYear}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </Section>
+    ) : (
+      <Section title="Concepts">
+        <p class="py-5 text-sm text-ink-muted">
+          No concept cars have been written up yet. They arrive with the pilot content batch.
+        </p>
+      </Section>
+    )
+  }
+</BaseLayout>

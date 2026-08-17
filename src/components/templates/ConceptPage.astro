@@ -1,0 +1,128 @@
+---
+/**
+ * Concept / prototype page — SPEC.md §5.3.
+ *
+ * A genuinely lighter content type: no trims, no market variants, no price.
+ * Its distinctive field is `fate`, which is the thing a reader actually wants
+ * to know about a concept car — whether it became something, survived, or was
+ * crushed.
+ */
+import Breadcrumbs from '../blocks/Breadcrumbs.astro';
+import FactRow from '../blocks/FactRow.astro';
+import HeroBand from '../blocks/HeroBand.astro';
+import ImageCredits from '../blocks/ImageCredits.astro';
+import Section from '../blocks/Section.astro';
+import SpecRow from '../blocks/SpecRow.astro';
+import TagList from '../blocks/TagList.astro';
+import BaseLayout from '../ui/BaseLayout.astro';
+
+import type { JoinedBrand, JoinedCar, JoinedConcept } from '../../lib/content/entries.ts';
+import { brandHref, carHref, conceptHref, href } from '../../lib/content/href.ts';
+import { labelFor } from '../../schemas/taxonomy.ts';
+
+interface Props {
+  concept: JoinedConcept;
+  brand: JoinedBrand;
+  relatedCar?: JoinedCar;
+}
+
+const { concept, brand, relatedCar } = Astro.props;
+const { data } = concept;
+
+const FATE_LABELS: Record<string, string> = {
+  production: 'Reached production',
+  'one-off-surviving': 'One-off, still exists',
+  destroyed: 'Destroyed',
+  unknown: 'Fate unknown',
+};
+
+const creditedImages = [...(data.hero ? [data.hero] : []), ...data.gallery];
+---
+
+<BaseLayout
+  title={data.name}
+  description={`${data.name} — concept car unveiled at ${data.unveiledAt}, ${data.unveiledYear}.`}
+  accentColor={brand.data.accentColor}
+  bleed
+>
+  <HeroBand
+    title={data.name}
+    eyebrow="Concept"
+    accentColor={brand.data.accentColor}
+    brandName={brand.data.name}
+    brandUrl={brandHref(brand.id)}
+    brandLogo={brand.data.logo}
+    hero={data.hero}
+    stats={[
+      { label: 'Unveiled', value: String(data.unveiledYear) },
+      { label: 'Shown at', value: data.unveiledAt },
+      { label: 'Fate', value: FATE_LABELS[data.fate] ?? data.fate },
+    ]}
+  />
+
+  <div class="mx-auto w-full max-w-5xl px-5 py-8 sm:px-8 sm:py-10">
+    <Breadcrumbs
+      crumbs={[
+        { label: 'Concepts', url: href('concepts') },
+        { label: brand.data.name, url: brandHref(brand.id) },
+        { label: data.name, url: conceptHref(concept.id) },
+      ]}
+    />
+
+    <div class="mt-6 flex flex-col gap-3">
+      <TagList
+        label="Body style"
+        axis="body-style"
+        terms={data.bodyStyles.map((id) => ({ id, label: labelFor('body-style', id) ?? id }))}
+      />
+      <TagList
+        label="Powertrain"
+        axis="powertrain"
+        terms={data.powertrains.map((id) => ({ id, label: labelFor('powertrain', id) ?? id }))}
+      />
+    </div>
+
+    <article class="type-body mt-8 max-w-prose text-[0.975rem] leading-relaxed text-ink-secondary">
+      <slot />
+    </article>
+
+    <Section title="Overview" as="dl">
+      <FactRow label="Manufacturer" values={[brand.data.name]} />
+      <FactRow label="Unveiled at" values={[`${data.unveiledAt}, ${data.unveiledYear}`]} />
+      {data.designer && <FactRow label="Designer" values={[data.designer]} />}
+      <FactRow label="Fate" values={[FATE_LABELS[data.fate] ?? data.fate]} />
+      {
+        relatedCar && (
+          <FactRow label="Led to">
+            <a class="underline decoration-line underline-offset-2" href={carHref(relatedCar.id)}>
+              {relatedCar.data.name}
+            </a>
+          </FactRow>
+        )
+      }
+    </Section>
+
+    <Section
+      title="Claimed figures"
+      lede="Concept figures are usually manufacturer claims that were never independently tested. Each one's status says how far it can be trusted."
+      as="dl"
+    >
+      <SpecRow label="Power" value={data.power} />
+      <SpecRow label="Torque" value={data.torque} />
+      <SpecRow label="Mass" value={data.mass} />
+      <SpecRow label="0–100 km/h" value={data.zeroToHundredKph} />
+      <SpecRow label="Top speed" value={data.topSpeed} />
+      <SpecRow label="Drag coefficient" value={data.dragCoefficient} />
+    </Section>
+
+    {
+      creditedImages.length > 0 && (
+        <Section title="Sources & attribution">
+          <div class="py-4">
+            <ImageCredits images={creditedImages} />
+          </div>
+        </Section>
+      )
+    }
+  </div>
+</BaseLayout>

@@ -1,0 +1,135 @@
+---
+/**
+ * One template, reused across all seven axes — Instruction.md Phase 2.
+ *
+ * Renders both shapes a taxonomy route needs: the axis index (every term that
+ * has entries) and a single term's view. They share a template because they
+ * are the same idea at two depths, and because seven axes × two shapes is
+ * fourteen chances for them to drift apart if they don't.
+ *
+ * These pages own no content (SPEC.md §2 principle 2). Nothing is stored here;
+ * everything is derived at build time from tagged entries.
+ */
+import Breadcrumbs from '../blocks/Breadcrumbs.astro';
+import CarCard from '../blocks/CarCard.astro';
+import Section from '../blocks/Section.astro';
+import BaseLayout from '../ui/BaseLayout.astro';
+
+import type { JoinedBrand } from '../../lib/content/entries.ts';
+import { href, taxonomyHref } from '../../lib/content/href.ts';
+import type { AxisConfig, TermView } from '../../lib/content/taxonomy-views.ts';
+
+interface Props {
+  config: AxisConfig;
+  /** Present when rendering one term; absent on the axis index. */
+  term?: TermView;
+  /** All terms with entries — the index list, or siblings of the shown term. */
+  terms: TermView[];
+  brandsById: Map<string, JoinedBrand>;
+}
+
+const { config, term, terms, brandsById } = Astro.props;
+
+const title = term ? `${term.label} — ${config.title}` : config.title;
+const heading = term ? term.label : config.title;
+
+const crumbs = [
+  { label: config.title, url: taxonomyHref(config.axis) },
+  ...(term ? [{ label: term.label, url: taxonomyHref(config.axis, term.id) }] : []),
+];
+
+const description = term
+  ? `Every car classified as ${term.label.toLowerCase()} — ${config.title.toLowerCase()}.`
+  : config.description;
+---
+
+<BaseLayout title={title} description={description}>
+  <Breadcrumbs crumbs={[{ label: 'Browse', url: href() }, ...crumbs]} />
+
+  <header class="mt-6">
+    <p class="text-xs font-medium uppercase tracking-[0.14em] text-ink-muted">
+      {term ? config.title : 'Browse by'}
+      {!config.authored && <span class="text-ink-secondary"> · computed</span>}
+    </p>
+    <h1 class="type-title mt-2 text-[clamp(1.75rem,5vw,2.5rem)]">{heading}</h1>
+    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+      {term ? (term.description ?? config.description) : config.description}
+    </p>
+  </header>
+
+  {
+    term ? (
+      <>
+        <Section
+          title={`${term.cars.length} ${term.cars.length === 1 ? 'entry' : 'entries'}`}
+          lede="Generations and halo trims — the entries that carry the tags. Their nameplate hubs are one breadcrumb up."
+        >
+          <div class="-mx-4 py-4 sm:-mx-5">
+            <div class="grid gap-3 px-4 sm:px-5 md:grid-cols-2">
+              {term.cars.map((car) => (
+                <CarCard car={car} brand={brandsById.get(car.data.brandRef)} />
+              ))}
+            </div>
+          </div>
+        </Section>
+
+        {terms.length > 1 && (
+          <Section title={`Other ${config.title.toLowerCase()} views`}>
+            <ul class="flex flex-wrap gap-2 py-4">
+              {terms
+                .filter((t) => t.id !== term.id)
+                .map((t) => (
+                  <li>
+                    <a
+                      href={taxonomyHref(config.axis, t.id)}
+                      class="pressable inline-flex items-baseline gap-1.5 rounded-full border border-line bg-surface-2 px-3 py-1.5 text-sm transition-colors duration-150 hover:border-line-strong"
+                    >
+                      <span>{t.label}</span>
+                      <span class="text-xs text-ink-muted tabular-nums">{t.cars.length}</span>
+                    </a>
+                  </li>
+                ))}
+            </ul>
+          </Section>
+        )}
+      </>
+    ) : terms.length > 0 ? (
+      <Section title="Terms in use" lede="Only terms with at least one entry are listed.">
+        <ul class="grid gap-2 py-4 sm:grid-cols-2">
+          {terms.map((t) => (
+            /*
+              `min-w-0` on the grid item is required, not cosmetic: a grid item
+              defaults to `min-width: auto`, which refuses to shrink below its
+              content's max-content width — so the `truncate` below silently
+              does nothing and the description pushes the page into horizontal
+              scroll on a narrow viewport.
+            */
+            <li class="min-w-0">
+              <a
+                href={taxonomyHref(config.axis, t.id)}
+                class="pressable flex items-baseline justify-between gap-3 rounded-lg border border-line bg-surface-2 px-4 py-3 transition-colors duration-150 hover:border-line-strong"
+              >
+                <span class="min-w-0 flex-1">
+                  <span class="type-heading block truncate text-sm">{t.label}</span>
+                  {t.description && (
+                    <span class="mt-0.5 block truncate text-xs text-ink-muted">
+                      {t.description}
+                    </span>
+                  )}
+                </span>
+                <span class="shrink-0 text-sm text-ink-muted tabular-nums">{t.cars.length}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </Section>
+    ) : (
+      <Section title="Terms in use">
+        <p class="py-5 text-sm text-ink-muted">
+          Nothing is classified under this axis yet. Terms appear here as soon as an entry uses
+          one — this page is a view over tagged entries, not a list maintained by hand.
+        </p>
+      </Section>
+    )
+  }
+</BaseLayout>

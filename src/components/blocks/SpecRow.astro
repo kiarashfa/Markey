@@ -1,0 +1,72 @@
+---
+/**
+ * One row of the spec table: a label, a `PropertyValue`, and its provenance.
+ *
+ * This component is where SPEC.md §2 principles 3 and 5 become visible. A
+ * missing figure says so in words — never an em-dash, a zero, or a blank cell
+ * that reads as a rendering bug. An estimate says it is an estimate and shows
+ * how it was arrived at. A verified figure links to what verified it.
+ */
+import StatusBadge from './StatusBadge.astro';
+import { formatValue } from '../../lib/render/format.ts';
+import type { PropertyValue } from '../../schemas/primitives.ts';
+
+interface Props {
+  label: string;
+  value?: PropertyValue;
+  /** Rendered instead of a PropertyValue, for facts that aren't measurements. */
+  text?: string;
+}
+
+const { label, value, text } = Astro.props;
+
+const formatted = text ?? formatValue(value);
+const missing = formatted === null || formatted === undefined;
+---
+
+<div
+  class="type-data grid grid-cols-[minmax(7.5rem,11rem)_1fr] gap-x-4 gap-y-1 border-b border-line py-2.5 last:border-b-0 sm:grid-cols-[14rem_1fr]"
+>
+  <dt class="text-sm text-ink-secondary">{label}</dt>
+  <dd class="min-w-0 text-sm break-words">
+    <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
+      {
+        missing ? (
+          <span class="text-ink-muted italic">Not yet available</span>
+        ) : (
+          <span class="font-medium tabular-nums">{formatted}</span>
+        )
+      }
+      {/*
+        The badge is suppressed when the value is already absent: the empty
+        state and a "Not yet available" badge say the same thing twice, and the
+        repetition makes the genuinely informative badges (Estimated, Sources
+        disagree) harder to spot.
+      */}
+      {value && !missing && <StatusBadge status={value.status} note={value.sourceNote} />}
+    </div>
+
+    {
+      value?.sourceNote && (
+        <p class="mt-1 max-w-prose text-xs leading-relaxed text-ink-muted">
+          {value.sourceNote}
+        </p>
+      )
+    }
+
+    {
+      value?.sourceUrl && (
+        <p class="mt-1 text-xs">
+          <a
+            class="text-ink-muted underline decoration-line underline-offset-2 hover:text-ink"
+            href={value.sourceUrl}
+            rel="nofollow noopener"
+            target="_blank"
+          >
+            Source
+          </a>
+        </p>
+      )
+    }
+  </dd>
+</div>

@@ -41,6 +41,20 @@ export function assetHref(...segments: (string | number)[]): string {
   return `/${all.join('/')}`.replace(/\/{2,}/g, '/');
 }
 
+/**
+ * An `ImageRef.src` resolved for use in `<img src>`.
+ *
+ * Images live in `public/` and are stored with a root-relative path, so they
+ * need the base prefix — the exact class of link that works in dev and 404s
+ * only once deployed under `/Markey/`. A remote URL is passed through
+ * untouched, which is the escape hatch for a source we genuinely cannot
+ * mirror.
+ */
+export function imageSrc(src: string): string {
+  if (/^(https?:)?\/\//.test(src) || src.startsWith('data:')) return src;
+  return assetHref(src);
+}
+
 /** Absolute URL, for canonicals, JSON-LD and the sitemap. */
 export function absoluteHref(site: URL | undefined, path: string): string {
   if (!site) return path;

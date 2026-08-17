@@ -1,0 +1,103 @@
+---
+/**
+ * `/about/` — SPEC.md §6.
+ *
+ * Written now rather than in a later phase because the footer links to it from
+ * every page, and a site whose first promise is honesty should not ship a
+ * broken link to the page explaining that promise.
+ */
+import Section from '../components/blocks/Section.astro';
+import BaseLayout from '../components/ui/BaseLayout.astro';
+import { href } from '../lib/content/href.ts';
+---
+
+<BaseLayout
+  title="About"
+  description="What Markey is, what it refuses to do, and how to read the confidence marks on every figure."
+>
+  <header>
+    <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">About Markey</h1>
+    <p class="type-body mt-3 max-w-prose text-lg text-ink-secondary">
+      A free, non-profit, ad-free, login-free encyclopedia of production cars.
+    </p>
+  </header>
+
+  <div class="type-body mt-8 flex max-w-prose flex-col gap-4 text-ink-secondary">
+    <p>
+      There is no account to make and nothing to subscribe to. There are no ads,
+      no trackers, and no cookies. Anything you save — a garage, a comparison, a
+      car you built — stays in your own browser or travels in a link you choose
+      to share. None of it is ever sent anywhere, because there is no server to
+      send it to.
+    </p>
+    <p>
+      Every number you see is either sourced or computed, and it says which. The
+      site would rather show you a gap than a plausible-looking guess, so a
+      figure we haven't found yet reads "not yet available" instead of quietly
+      appearing as a number someone made up.
+    </p>
+  </div>
+
+  <Section
+    title="How to read a figure"
+    lede="Every measurement on the site carries one of four confidence marks."
+  >
+    <dl class="flex flex-col gap-4 py-5 text-sm">
+      <div>
+        <dt class="type-heading">Verified</dt>
+        <dd class="mt-1 text-ink-secondary">
+          Taken from a cited source, linked on the page. This is the default
+          expectation, so it carries no badge — the other three do.
+        </dd>
+      </div>
+      <div>
+        <dt class="type-heading">Estimated</dt>
+        <dd class="mt-1 text-ink-secondary">
+          Calculated or approximated rather than measured. The basis is always
+          stated next to the figure — for example, a frontal area derived from
+          width × height rather than published by the manufacturer.
+        </dd>
+      </div>
+      <div>
+        <dt class="type-heading">Not yet available</dt>
+        <dd class="mt-1 text-ink-secondary">
+          We don't have it. The field is deliberately left empty; the schema
+          itself forbids a placeholder from carrying a number.
+        </dd>
+      </div>
+      <div>
+        <dt class="type-heading">Sources disagree</dt>
+        <dd class="mt-1 text-ink-secondary">
+          Published sources conflict, and rather than silently picking one, the
+          page says so and explains the conflict.
+        </dd>
+      </div>
+    </dl>
+  </Section>
+
+  <Section title="What this site will not do">
+    <ul class="flex list-disc flex-col gap-2 py-5 pl-5 text-sm text-ink-secondary">
+      <li>
+        <strong class="text-ink">No AI-generated car imagery.</strong> Image
+        models get generation- and trim-level details wrong, which is exactly
+        what this site exists to get right. Every photograph here is a real
+        photograph, credited to the person who took it.
+      </li>
+      <li>
+        <strong class="text-ink">No invented numbers.</strong> Not as a
+        placeholder, not to fill a table, not to make a page look finished.
+      </li>
+      <li>
+        <strong class="text-ink">No insurance quotes or investment advice.</strong>
+        Insurance is personal, actuarial and regulated; a static site cannot
+        responsibly estimate a real premium, so it doesn't try.
+      </li>
+    </ul>
+  </Section>
+
+  <p class="mt-8 text-sm">
+    <a class="underline decoration-line underline-offset-4 hover:text-ink" href={href('methodology')}>
+      How the calculated figures work &rarr;
+    </a>
+  </p>
+</BaseLayout>

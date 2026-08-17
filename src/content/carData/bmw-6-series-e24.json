@@ -14,6 +14,52 @@
   "positioning": "premium",
   "designer": "Paul Bracq",
   "assembly": ["Karmann, West Germany (1976–1977)", "Dingolfing, West Germany (1977–1989)"],
+  "spotlight": true,
+  "hero": {
+    "src": "/images/cars/bmw-6-series-e24/hero-front-three-quarter.jpg",
+    "alt": "White BMW 6 Series E24 coupé photographed from the front three-quarter angle, showing the shark-nose front and the large impact bumpers of a US-market car",
+    "width": 1920,
+    "height": 1074,
+    "caption": "A US-market E24, identifiable by the deeper federally mandated impact bumpers.",
+    "credit": {
+      "author": "IFCAR",
+      "title": "File:BMW 6-Series E24-1.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_6-Series_E24-1.jpg",
+      "licenseType": "public-domain",
+      "licenseNote": "Released into the public domain by the photographer. Photographed in College Park, Maryland."
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/bmw-6-series-e24/front-three-quarter-left.jpg",
+      "alt": "White BMW 6 Series E24 seen from the front three-quarter angle on the driver's side, in a car park",
+      "width": 1280,
+      "height": 677,
+      "caption": "The same US-market car from the opposite front quarter.",
+      "credit": {
+        "author": "IFCAR",
+        "title": "File:BMW 6-Series E24-2.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_6-Series_E24-2.jpg",
+        "licenseType": "public-domain",
+        "licenseNote": "Released into the public domain by the photographer."
+      }
+    },
+    {
+      "src": "/images/cars/bmw-6-series-e24/rear.jpg",
+      "alt": "Rear view of a dark grey BMW 6 Series E24 in a grass field at a car meet, with the driver's door open",
+      "width": 1280,
+      "height": 960,
+      "caption": "A European-specification car at a BMW meet in Toruń, Poland — note the shallower rear bumper compared with the US cars above.",
+      "credit": {
+        "author": "Beemwej",
+        "title": "File:BMW 6-er rear PL.JPG",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_6-er_rear_PL.JPG",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    }
+  ],
   "dimensions": {
     "length": {
       "value": 4755,

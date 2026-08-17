@@ -1,0 +1,35 @@
+---
+/**
+ * `/concepts/<slug>/` — SPEC.md §5.3, §6.
+ *
+ * Flat and type-prefixed, deliberately never nested under `/cars/`: a concept
+ * that led to a production car is *related to* it, not a child of it.
+ */
+import ConceptPage from '../../components/templates/ConceptPage.astro';
+import { getBrands, getCars, getConcepts } from '../../lib/content/entries.ts';
+import { render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const [concepts, brands, cars] = await Promise.all([getConcepts(), getBrands(), getCars()]);
+  const brandsById = new Map(brands.map((b) => [b.id, b]));
+  const carsById = new Map(cars.map((c) => [c.id, c]));
+
+  return concepts.map((concept) => ({
+    params: { slug: concept.id },
+    props: {
+      concept,
+      brand: brandsById.get(concept.data.brandRef)!,
+      relatedCar: concept.data.relatedProductionCar
+        ? carsById.get(concept.data.relatedProductionCar)
+        : undefined,
+    },
+  }));
+}
+
+const { concept, brand, relatedCar } = Astro.props;
+const { Content } = await render(concept.narrative);
+---
+
+<ConceptPage concept={concept} brand={brand} relatedCar={relatedCar}>
+  <Content />
+</ConceptPage>

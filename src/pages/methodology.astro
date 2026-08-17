@@ -1,0 +1,63 @@
+---
+/**
+ * `/methodology/` — SPEC.md §6, §8.
+ *
+ * The public home of every formula the site computes with. Deliberately says
+ * what it does not yet contain rather than presenting an empty page as a
+ * finished one — the physics formulae land with the math engine, and the wind
+ * tunnel's validation numbers land with the solver.
+ */
+import Section from '../components/blocks/Section.astro';
+import BaseLayout from '../components/ui/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Methodology"
+  description="Every formula Markey computes with, published rather than hidden."
+>
+  <header>
+    <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Methodology</h1>
+    <p class="type-body mt-3 max-w-prose text-lg text-ink-secondary">
+      Every figure this site calculates is published as a formula, not asserted
+      as a result. If you disagree with a number here, you can check the working.
+    </p>
+  </header>
+
+  <Section title="Units">
+    <div class="type-body flex flex-col gap-3 py-5 text-sm text-ink-secondary">
+      <p>
+        Everything is stored in SI. Imperial figures are computed for display
+        when you ask for them and are never stored or indexed, so the two can't
+        drift apart. The schema only accepts SI units, which means a horsepower
+        figure cannot physically be saved into the database by mistake.
+      </p>
+    </div>
+  </Section>
+
+  <Section title="Still to be published here">
+    <ul class="flex list-disc flex-col gap-2 py-5 pl-5 text-sm text-ink-secondary">
+      <li>
+        The vehicle-dynamics model — drag, rolling resistance, top speed,
+        0–100 km/h, braking distance and steady-state consumption — together
+        with every default constant it uses and where that constant came from.
+      </li>
+      <li>
+        The Markey Score: its sub-factors and their exact weights.
+      </li>
+      <li>
+        The depreciation curve, stated plainly as a projection rather than a
+        market-data claim.
+      </li>
+      <li>
+        The wind tunnel's validation numbers against published drag
+        coefficients for canonical shapes — sphere, cube, flat plate and
+        teardrop — so its accuracy can be judged rather than trusted.
+      </li>
+    </ul>
+    <p class="pb-5 text-sm text-ink-muted">
+      These are listed rather than omitted because a methodology page that
+      quietly covers only the easy parts is worse than one that admits what is
+      still missing.
+    </p>
+  </Section>
+</BaseLayout>

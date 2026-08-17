@@ -1,0 +1,64 @@
+---
+/**
+ * The document shell every page renders through.
+ *
+ * Centralised because three things must be true on *every* page and are easy
+ * to get wrong one page at a time: a canonical URL under the base path
+ * (SPEC.md §6/§12), `noindex` where the page holds user state (SPEC.md §12),
+ * and Pagefind's body marker — a narrative `.mdx` rendered without a layout
+ * emits no `<html>` element at all and is silently dropped from the search
+ * index.
+ */
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import { absoluteHref } from '../../lib/content/href.ts';
+import '../../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** SPEC.md §12 — noindex, never a robots.txt disallow. */
+  noindex?: boolean;
+  /** Brand accent to theme this page's hero band with (SPEC.md §11.2). */
+  accentColor?: string;
+  /** Pages that are their own full-bleed composition skip the content gutter. */
+  bleed?: boolean;
+}
+
+const { title, description, noindex = false, accentColor, bleed = false } = Astro.props;
+
+const canonical = absoluteHref(Astro.site, Astro.url.pathname);
+const fullTitle = title === 'Markey' ? title : `${title} — Markey`;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta name="generator" content={Astro.generator} />
+    <slot name="head" />
+  </head>
+  <body
+    class="flex min-h-dvh flex-col bg-surface-0 text-ink"
+    style={accentColor ? `--brand-accent: ${accentColor};` : undefined}
+  >
+    <Header />
+    <main id="main" class="flex-1">
+      {
+        bleed ? (
+          <slot />
+        ) : (
+          <div class="mx-auto w-full max-w-5xl px-5 py-10 sm:px-8 sm:py-14">
+            <slot />
+          </div>
+        )
+      }
+    </main>
+    <Footer />
+  </body>
+</html>

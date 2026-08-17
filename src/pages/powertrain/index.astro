@@ -1,0 +1,16 @@
+---
+/**
+ * Axis index for /powertrain/ — one of the seven computed taxonomy views
+ * fixed by SPEC.md §6.
+ *
+ * The file is deliberately this thin. Every axis shares one template and one
+ * loader, so no axis can quietly start behaving differently from the other six;
+ * all this route declares is which axis it is.
+ */
+import TaxonomyPage from '../../components/templates/TaxonomyPage.astro';
+import { loadAxis } from '../../lib/content/taxonomy-routes.ts';
+
+const { config, terms, brandsById } = await loadAxis('powertrain');
+---
+
+<TaxonomyPage config={config} terms={terms} brandsById={brandsById} />

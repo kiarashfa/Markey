@@ -1,0 +1,30 @@
+---
+import { href } from '../../lib/content/href.ts';
+
+const year = new Date().getUTCFullYear();
+---
+
+<footer class="mt-16 border-t border-line bg-surface-1">
+  <div
+    class="mx-auto flex w-full max-w-5xl flex-col gap-6 px-5 py-10 text-sm text-ink-secondary sm:px-8"
+  >
+    <div class="flex flex-wrap gap-x-6 gap-y-2">
+      <a class="hover:text-ink" href={href('about')}>About</a>
+      <a class="hover:text-ink" href={href('methodology')}>Methodology</a>
+      <a class="hover:text-ink" href={href('attributions')}>Attributions</a>
+    </div>
+
+    <p class="max-w-prose type-body">
+      A free, non-profit, ad-free, login-free encyclopedia of production cars.
+      No accounts, no tracking, no cookies — anything you save stays in your own
+      browser. Every figure carries its source and its confidence, and a figure
+      we don't have is shown as missing rather than guessed.
+    </p>
+
+    <p class="text-xs text-ink-muted">
+      &copy; {year} Markey. Vehicle data and photography are credited to their
+      sources on each page. Manufacturer names and logos are the trademarks of
+      their respective owners, used here only to identify their vehicles.
+    </p>
+  </div>
+</footer>

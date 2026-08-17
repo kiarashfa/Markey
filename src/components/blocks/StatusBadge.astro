@@ -1,0 +1,39 @@
+---
+/**
+ * The visible half of SPEC.md §2 principle 3 — every number carries its
+ * confidence where the reader can see it, not buried in a data file.
+ *
+ * `verified` renders nothing: it is the baseline expectation, and badging every
+ * correct row would drown the rows that actually need a caveat.
+ */
+import { STATUS_EXPLANATIONS, STATUS_LABELS } from '../../lib/render/format.ts';
+import type { ValueStatus } from '../../schemas/primitives.ts';
+
+interface Props {
+  status: ValueStatus;
+  note?: string;
+}
+
+const { status, note } = Astro.props;
+
+const tone: Record<string, string> = {
+  estimated: 'text-status-estimated border-status-estimated/35 bg-status-estimated/10',
+  placeholder: 'text-status-placeholder border-line bg-surface-2',
+  'conflicting-sources':
+    'text-status-conflicting border-status-conflicting/35 bg-status-conflicting/10',
+};
+---
+
+{
+  status !== 'verified' && (
+    <span
+      class:list={[
+        'inline-flex shrink-0 items-center rounded border px-1.5 py-0.5 text-[0.6875rem] font-medium leading-none',
+        tone[status],
+      ]}
+      title={note ? `${STATUS_EXPLANATIONS[status]} ${note}` : STATUS_EXPLANATIONS[status]}
+    >
+      {STATUS_LABELS[status]}
+    </span>
+  )
+}

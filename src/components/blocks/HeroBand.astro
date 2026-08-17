@@ -1,0 +1,126 @@
+---
+/**
+ * The brand-themed hero band — SPEC.md §11.1, §11.2.
+ *
+ * The toned-down half of the showroom treatment: brand badge, background tint
+ * mixed from the brand's `accentColor`, large hero image, display title, a
+ * couple of key stats. Built once here and reused on car pages, brand pages
+ * and concept pages, so hundreds of entries inherit a cohesive identity with
+ * no per-entry design work.
+ *
+ * No carousel choreography — a single static page doesn't need it, and the
+ * drama budget belongs to the homepage (SPEC.md §11.1).
+ *
+ * When there is no hero image the band renders the accent wash alone. It does
+ * **not** substitute a placeholder graphic: an image we don't have is shown as
+ * absent, the same discipline the spec tables follow.
+ */
+import BrandBadge from './BrandBadge.astro';
+import { imageSrc } from '../../lib/content/href.ts';
+import type { ImageRef } from '../../schemas/primitives.ts';
+
+interface Stat {
+  label: string;
+  value: string;
+}
+
+interface Props {
+  title: string;
+  eyebrow?: string;
+  subtitle?: string;
+  accentColor: string;
+  brandName?: string;
+  brandUrl?: string;
+  brandLogo?: ImageRef;
+  hero?: ImageRef;
+  stats?: Stat[];
+}
+
+const { title, eyebrow, subtitle, accentColor, brandName, brandUrl, brandLogo, hero, stats = [] } =
+  Astro.props;
+---
+
+<div
+  class="relative overflow-hidden border-b border-line"
+  style={`--brand-accent: ${accentColor};`}
+>
+  {/*
+    The tint is mixed against the page surface rather than being the raw brand
+    colour, so a hero band reads as *themed by* the brand instead of flooded by
+    it — and so the same value works in light and dark without a second token.
+  */}
+  <div
+    aria-hidden="true"
+    class="pointer-events-none absolute inset-0"
+    style="background: linear-gradient(160deg, color-mix(in oklab, var(--brand-accent) 26%, var(--color-surface-0)) 0%, var(--color-surface-0) 72%);"
+  >
+  </div>
+
+  <div class="relative mx-auto w-full max-w-5xl px-5 py-10 sm:px-8 sm:py-14">
+    <div class="grid gap-8 lg:grid-cols-[1fr_minmax(0,22rem)] lg:items-center">
+      <div class="min-w-0">
+        <div class="flex items-center gap-3">
+          {
+            brandLogo && brandName && (
+              <>
+                {brandUrl ? (
+                  <a href={brandUrl} class="pressable" aria-label={brandName}>
+                    <BrandBadge logo={brandLogo} brandName={brandName} size="md" onColor />
+                  </a>
+                ) : (
+                  <BrandBadge logo={brandLogo} brandName={brandName} size="md" onColor />
+                )}
+              </>
+            )
+          }
+          {
+            eyebrow && (
+              <p class="text-xs font-medium uppercase tracking-[0.14em] text-ink-secondary">
+                {eyebrow}
+              </p>
+            )
+          }
+        </div>
+
+        <h1 class="type-display mt-5 text-[clamp(2rem,7vw,3.5rem)]">{title}</h1>
+
+        {
+          subtitle && (
+            <p class="type-body mt-3 max-w-prose text-base text-ink-secondary sm:text-lg">
+              {subtitle}
+            </p>
+          )
+        }
+
+        {
+          stats.length > 0 && (
+            <dl class="mt-7 flex flex-wrap gap-x-8 gap-y-4">
+              {stats.map((stat) => (
+                <div class="min-w-0">
+                  <dt class="text-xs uppercase tracking-wide text-ink-muted">{stat.label}</dt>
+                  <dd class="type-data mt-1 text-lg font-semibold tabular-nums">{stat.value}</dd>
+                </div>
+              ))}
+            </dl>
+          )
+        }
+      </div>
+
+      {
+        hero && (
+          <figure class="min-w-0">
+            <img
+              src={imageSrc(hero.src)}
+              alt={hero.alt}
+              width={hero.width}
+              height={hero.height}
+              fetchpriority="high"
+              decoding="async"
+              class="w-full rounded-xl border border-line/60 bg-surface-1 object-cover shadow-lg"
+            />
+          </figure>
+        )
+      }
+    </div>
+  </div>
+</div>

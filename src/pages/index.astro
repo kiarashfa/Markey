@@ -1,40 +1,159 @@
 ---
 /**
- * PHASE 0 SMOKE TEST — replaced in Phase 2 by the real homepage
- * (spotlight carousel + search-first catalog, SPEC.md §11.1 / §9.1).
- * It exists to prove the four scaffold layers actually work together.
+ * Homepage — SPEC.md §11.1: the spotlight carousel as a "wow" moment, then
+ * straight into practical search-first browsing directly beneath it.
+ *
+ * The catalog below the fold is a static list for now. Pagefind full-text
+ * search (Phase 8) and the faceted, reactive catalog (Phase 4, SPEC.md §9.1)
+ * both slot into this page without moving it.
  */
-import '../styles/global.css';
-import ScaffoldCheck from '../components/islands/ScaffoldCheck.svelte';
+import CarCard from '../components/blocks/CarCard.astro';
+import Section from '../components/blocks/Section.astro';
+import SpotlightCarousel from '../components/islands/SpotlightCarousel.svelte';
+import BaseLayout from '../components/ui/BaseLayout.astro';
 
-const base = import.meta.env.BASE_URL;
+import { getBrands, getCars } from '../lib/content/entries.ts';
+import { carHref, href, imageSrc, taxonomyHref } from '../lib/content/href.ts';
+import { AXES, buildTermViews } from '../lib/content/taxonomy-views.ts';
+import { formatYears } from '../lib/render/format.ts';
+
+const [cars, brands] = await Promise.all([getCars(), getBrands()]);
+const brandsById = new Map(brands.map((b) => [b.id, b]));
+
+/**
+ * The curated spotlight set. A halo trim or generation flagged `spotlight` in
+ * its data file — never an automatic "most recent", which would put whatever
+ * was authored last in the most prominent place on the site.
+ */
+const spotlight = cars
+  .filter((car) => car.data.spotlight)
+  .map((car) => {
+    const brand = brandsById.get(car.data.brandRef)!;
+    const stats: { label: string; value: string }[] = [
+      { label: 'Produced', value: formatYears(car.data.productionYears) },
+    ];
+    if (car.data.generationCode) stats.push({ label: 'Code', value: car.data.generationCode });
+    if (car.data.designer) stats.push({ label: 'Designer', value: car.data.designer });
+
+    return {
+      id: car.id,
+      name: car.data.name,
+      kicker: brand.data.name,
+      url: carHref(car.id),
+      brandName: brand.data.name,
+      accentColor: brand.data.accentColor,
+      logoSrc: imageSrc(brand.data.logo.src),
+      logoAlt: brand.data.logo.alt,
+      heroSrc: car.data.hero ? imageSrc(car.data.hero.src) : undefined,
+      heroAlt: car.data.hero?.alt,
+      stats,
+    };
+  });
+
+const recent = cars
+  .filter((car) => car.data.kind !== 'model')
+  .sort((a, b) => b.data.productionYears.start - a.data.productionYears.start)
+  .slice(0, 6);
+
+/** Browse entry points, each showing how much is actually behind it. */
+const browseAxes = AXES.map((axis) => ({
+  ...axis,
+  count: buildTermViews(axis.axis, cars, brands).length,
+})).filter((axis) => axis.count > 0);
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
-    <title>Markey — scaffold check</title>
-  </head>
-  <body class="min-h-screen bg-neutral-950 text-neutral-100 antialiased">
-    <main class="mx-auto flex max-w-2xl flex-col gap-6 px-6 py-16">
-      <h1 class="text-4xl font-semibold tracking-tight sm:text-5xl">Markey</h1>
-      <p class="text-neutral-400">
-        Phase 0 scaffold. Nothing here is the real site — this page only proves
-        the stack is wired up correctly.
+<BaseLayout
+  title="Markey"
+  description="A free, ad-free, login-free encyclopedia of production cars. Every figure carries its source and its confidence — and a figure we don't have is shown as missing, never guessed."
+  bleed
+>
+  {/*
+    The carousel's slide titles are h2s, because which car is showing changes as
+    you swipe and a document's h1 should not. The page still needs one heading
+    that names it, so it lives here — visually redundant next to the wordmark,
+    but not redundant to a screen reader or a crawler landing on the homepage.
+  */}
+  {
+    spotlight.length > 0 && (
+      <>
+        <h1 class="sr-only">Markey — an encyclopedia of production cars</h1>
+        <SpotlightCarousel client:load cars={spotlight} />
+      </>
+    )
+  }
+
+  <div class="mx-auto w-full max-w-5xl px-5 py-10 sm:px-8 sm:py-14">
+    {
+      spotlight.length === 0 && (
+        <header class="mb-10">
+          <h1 class="type-display text-[clamp(2rem,7vw,3.5rem)]">Markey</h1>
+          <p class="type-body mt-4 max-w-prose text-lg text-ink-secondary">
+            A free, ad-free, login-free encyclopedia of production cars.
+          </p>
+        </header>
+      )
+    }
+
+    <section>
+      <h2 class="type-title text-xl">Browse</h2>
+      <p class="type-body mt-2 max-w-prose text-sm text-ink-secondary">
+        Every browse axis is a view computed over tagged entries, so nothing
+        breaks when a car is reclassified. Two of them — origin and era — are
+        never tagged by hand at all.
       </p>
 
-      <ul class="flex flex-col gap-2 text-sm text-neutral-300">
-        <li>Astro — you are reading a page it rendered.</li>
-        <li>Tailwind v4 — these styles come from <code>@import "tailwindcss"</code>.</li>
-        <li>MDX — <a class="underline" href={`${base}scaffold-check/`}>/scaffold-check/</a></li>
-        <li>Base path — resolved to <code>{base}</code></li>
-      </ul>
+      {
+        browseAxes.length > 0 ? (
+          <ul class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {browseAxes.map((axis) => (
+              <li>
+                <a
+                  href={taxonomyHref(axis.axis)}
+                  class="pressable flex h-full flex-col rounded-lg border border-line bg-surface-1 p-4 transition-colors duration-150 hover:border-line-strong hover:bg-surface-2"
+                >
+                  <span class="flex items-baseline justify-between gap-2">
+                    <span class="type-heading text-base">{axis.title}</span>
+                    <span class="text-xs text-ink-muted tabular-nums">{axis.count}</span>
+                  </span>
+                  <span class="mt-1.5 text-xs leading-relaxed text-ink-muted">
+                    {axis.description}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="mt-5 text-sm text-ink-muted">
+            Browse axes appear as soon as there are tagged entries behind them.
+          </p>
+        )
+      }
+    </section>
 
-      <div>
-        <ScaffoldCheck client:load />
-      </div>
-    </main>
-  </body>
-</html>
+    {
+      recent.length > 0 && (
+        <Section
+          title="In the catalog"
+          lede="Generations and halo trims — the entries that carry the specifications."
+        >
+          <div class="-mx-4 py-4 sm:-mx-5">
+            <div class="grid gap-3 px-4 sm:px-5 md:grid-cols-2">
+              {recent.map((car) => (
+                <CarCard car={car} brand={brandsById.get(car.data.brandRef)} />
+              ))}
+            </div>
+          </div>
+        </Section>
+      )
+    }
+
+    <p class="mt-8 text-sm">
+      <a
+        class="underline decoration-line underline-offset-4 hover:text-ink"
+        href={href('cars')}
+      >
+        See every car &rarr;
+      </a>
+    </p>
+  </div>
+</BaseLayout>

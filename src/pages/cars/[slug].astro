@@ -1,0 +1,35 @@
+---
+/**
+ * `/cars/<slug>/` — model hub, generation, or halo trim (SPEC.md §5.1, §6).
+ *
+ * One flat route for all three `kind`s. This is the canonical-URL promise of
+ * SPEC.md §2 principle 1 in practice: the path is type-prefixed and flat, so
+ * re-parenting a generation or reclassifying a trim never moves its URL.
+ */
+import CarPage from '../../components/templates/CarPage.astro';
+import { getBrands, getCars } from '../../lib/content/entries.ts';
+import { render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const [cars, brands] = await Promise.all([getCars(), getBrands()]);
+  const brandsById = new Map(brands.map((b) => [b.id, b]));
+
+  return cars.map((car) => ({
+    params: { slug: car.id },
+    props: {
+      car,
+      // Integrity guarantees this resolves — `brand-ref/unresolved` fails the
+      // build otherwise, so there is no fallback to write here.
+      brand: brandsById.get(car.data.brandRef)!,
+      allCars: cars,
+    },
+  }));
+}
+
+const { car, brand, allCars } = Astro.props;
+const { Content } = await render(car.narrative);
+---
+
+<CarPage car={car} brand={brand} allCars={allCars}>
+  <Content />
+</CarPage>

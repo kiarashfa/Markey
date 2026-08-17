@@ -1,0 +1,35 @@
+---
+/**
+ * `/brands/<slug>/` — SPEC.md §5.4, §6.
+ *
+ * Corporate ownership is resolved in both directions here: the brand's own
+ * `parentCompany`, and every brand that names it as theirs. The second list is
+ * computed rather than authored, so a subsidiary added later shows up on its
+ * owner's page without anyone remembering to edit it.
+ */
+import BrandPage from '../../components/templates/BrandPage.astro';
+import { getBrands, getCars } from '../../lib/content/entries.ts';
+import { render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const [brands, cars] = await Promise.all([getBrands(), getCars()]);
+  const byId = new Map(brands.map((b) => [b.id, b]));
+
+  return brands.map((brand) => ({
+    params: { slug: brand.id },
+    props: {
+      brand,
+      cars,
+      parent: brand.data.parentCompany ? byId.get(brand.data.parentCompany) : undefined,
+      owned: brands.filter((b) => b.data.parentCompany === brand.id),
+    },
+  }));
+}
+
+const { brand, cars, parent, owned } = Astro.props;
+const { Content } = await render(brand.narrative);
+---
+
+<BrandPage brand={brand} cars={cars} parent={parent} owned={owned}>
+  <Content />
+</BrandPage>

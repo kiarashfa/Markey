@@ -1,0 +1,18 @@
+---
+/**
+ * One term of the era axis — SPEC.md §6.
+ *
+ * A computed view over tagged entries. It owns no content, so re-tagging a car
+ * changes which of these pages list it and never breaks a link to the car.
+ */
+import TaxonomyPage from '../../components/templates/TaxonomyPage.astro';
+import { axisTermPaths } from '../../lib/content/taxonomy-routes.ts';
+
+export async function getStaticPaths() {
+  return axisTermPaths('era');
+}
+
+const { config, term, terms, brandsById } = Astro.props;
+---
+
+<TaxonomyPage config={config} term={term} terms={terms} brandsById={brandsById} />

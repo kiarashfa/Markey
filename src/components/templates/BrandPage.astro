@@ -1,0 +1,147 @@
+---
+/**
+ * Brand page — SPEC.md §5.4.
+ *
+ * Partially content-owning: the narrative and identity are authored, but the
+ * list of models under the brand is always computed from `brandRef` and never
+ * hand-maintained, so it cannot fall out of date with the catalog.
+ */
+import Breadcrumbs from '../blocks/Breadcrumbs.astro';
+import CarCard from '../blocks/CarCard.astro';
+import FactRow from '../blocks/FactRow.astro';
+import HeroBand from '../blocks/HeroBand.astro';
+import ImageCredits from '../blocks/ImageCredits.astro';
+import Section from '../blocks/Section.astro';
+import BaseLayout from '../ui/BaseLayout.astro';
+
+import type { JoinedBrand, JoinedCar } from '../../lib/content/entries.ts';
+import { brandHref, href, taxonomyHref } from '../../lib/content/href.ts';
+import { countrySlug } from '../../lib/content/taxonomy-views.ts';
+
+interface Props {
+  brand: JoinedBrand;
+  cars: JoinedCar[];
+  parent?: JoinedBrand;
+  owned: JoinedBrand[];
+}
+
+const { brand, cars, parent, owned } = Astro.props;
+const { data } = brand;
+
+const models = cars
+  .filter((c) => c.data.brandRef === brand.id && c.data.kind === 'model')
+  .sort((a, b) => a.data.productionYears.start - b.data.productionYears.start);
+
+const stats = [
+  { label: 'Founded', value: String(data.founded) },
+  { label: 'Origin', value: data.countryOfOrigin },
+  { label: 'Nameplates', value: String(models.length) },
+];
+---
+
+<BaseLayout
+  title={data.name}
+  description={`${data.name} — nameplates, generations and specifications, with sources for every figure.`}
+  accentColor={data.accentColor}
+  bleed
+>
+  <HeroBand
+    title={data.name}
+    eyebrow="Brand"
+    subtitle={data.legalName && data.legalName !== data.name ? data.legalName : undefined}
+    accentColor={data.accentColor}
+    brandName={data.name}
+    brandLogo={data.logo}
+    stats={stats}
+  />
+
+  <div class="mx-auto w-full max-w-5xl px-5 py-8 sm:px-8 sm:py-10">
+    <Breadcrumbs
+      crumbs={[
+        { label: 'Brands', url: href('brands') },
+        { label: data.name, url: brandHref(brand.id) },
+      ]}
+    />
+
+    <article class="type-body mt-6 max-w-prose text-[0.975rem] leading-relaxed text-ink-secondary">
+      <slot />
+    </article>
+
+    <Section title="Identity" as="dl">
+      <FactRow label="Country of origin" values={[data.countryOfOrigin]} />
+      <FactRow label="Founded" values={[String(data.founded)]} />
+      {data.defunct && <FactRow label="Dissolved" values={[String(data.defunct)]} />}
+      {parent && <FactRow label="Parent company" values={[parent.data.name]} />}
+      {owned.length > 0 && <FactRow label="Owns" values={owned.map((b) => b.data.name)} />}
+      {
+        data.website && (
+          <FactRow label="Website" values={[data.website]}>
+            <a
+              class="underline decoration-line underline-offset-2 hover:text-ink"
+              href={data.website}
+              rel="nofollow noopener"
+              target="_blank"
+            >
+              {new URL(data.website).hostname}
+            </a>
+          </FactRow>
+        )
+      }
+    </Section>
+
+    {
+      models.length > 0 ? (
+        <Section
+          title="Nameplates"
+          lede="Computed from every entry that names this brand — never a hand-maintained list."
+        >
+          <div class="-mx-4 py-4 sm:-mx-5">
+            <div class="grid gap-3 px-4 sm:px-5 md:grid-cols-2">
+              {models.map((car) => (
+                <CarCard car={car} brand={brand} />
+              ))}
+            </div>
+          </div>
+        </Section>
+      ) : (
+        <Section title="Nameplates">
+          <p class="py-5 text-sm text-ink-muted">
+            No nameplates from this brand have been written up yet.
+          </p>
+        </Section>
+      )
+    }
+
+    <Section title="Sources & attribution">
+      <div class="flex flex-col gap-4 py-4">
+        <dl class="type-data grid gap-2 text-sm sm:grid-cols-2">
+          <div class="flex gap-2">
+            <dt class="text-ink-secondary">Last verified</dt>
+            <dd class="font-medium">{data.lastVerified}</dd>
+          </div>
+          <div class="flex gap-2">
+            <dt class="text-ink-secondary">Origin axis</dt>
+            <dd>
+              <a
+                class="font-medium underline decoration-line underline-offset-2 hover:text-ink"
+                href={taxonomyHref('origin', countrySlug(data.countryOfOrigin))}
+              >
+                {data.countryOfOrigin}
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <ImageCredits images={[data.logo, ...(data.logoMonochrome ? [data.logoMonochrome] : [])]} />
+
+        {
+          data.accentColorNote && (
+            <p class="max-w-prose text-xs leading-relaxed text-ink-muted">
+              <span class="text-ink-secondary">Accent colour:</span> {data.accentColorNote}
+            </p>
+          )
+        }
+      </div>
+    </Section>
+  </div>
+</BaseLayout>

@@ -1,0 +1,56 @@
+---
+/**
+ * One entry in any list of cars — catalog grid, taxonomy view, a hub's
+ * generation list. The brand badge is reused here so recognition is consistent
+ * from the homepage down (SPEC.md §11.2).
+ */
+import BrandBadge from './BrandBadge.astro';
+import { carHref } from '../../lib/content/href.ts';
+import { formatYears } from '../../lib/render/format.ts';
+import type { JoinedBrand, JoinedCar } from '../../lib/content/entries.ts';
+
+interface Props {
+  car: JoinedCar;
+  brand?: JoinedBrand;
+}
+
+const { car, brand } = Astro.props;
+const { data } = car;
+
+const kindLabel = { model: 'Nameplate', generation: 'Generation', trim: 'Halo trim' }[data.kind];
+---
+
+<a
+  href={carHref(car.id)}
+  class="pressable group flex min-w-0 gap-4 rounded-lg border border-line bg-surface-1 p-4 transition-colors duration-150 hover:border-line-strong hover:bg-surface-2"
+  style={brand ? `--brand-accent: ${brand.data.accentColor};` : undefined}
+>
+  {
+    brand && (
+      <div class="shrink-0">
+        <BrandBadge logo={brand.data.logo} brandName={brand.data.name} size="sm" />
+      </div>
+    )
+  }
+
+  <div class="min-w-0 flex-1">
+    <p class="text-[0.6875rem] font-medium uppercase tracking-[0.12em] text-ink-muted">
+      {kindLabel}
+      {data.generationCode && <span class="text-ink-secondary"> · {data.generationCode}</span>}
+    </p>
+    <h3 class="type-heading mt-1 truncate text-base group-hover:underline">
+      {data.name}
+    </h3>
+    <p class="type-data mt-1 text-sm text-ink-secondary">
+      {formatYears(data.productionYears)}
+    </p>
+  </div>
+
+  {/* A thin accent rule is as far as brand colour goes in a dense list —
+      SPEC.md §11.1 keeps reference content calm. */}
+  <span
+    aria-hidden="true"
+    class="w-1 shrink-0 self-stretch rounded-full opacity-70"
+    style="background-color: var(--brand-accent);"
+  ></span>
+</a>

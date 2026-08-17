@@ -1,0 +1,66 @@
+---
+/**
+ * `/brands/` — index of every manufacturer.
+ *
+ * Like `/cars/`, not in SPEC.md §6's table; added so the nav and the brand
+ * breadcrumbs resolve, and because a brand index is a genuinely useful
+ * crawlable entry point.
+ */
+import BrandBadge from '../../components/blocks/BrandBadge.astro';
+import Section from '../../components/blocks/Section.astro';
+import BaseLayout from '../../components/ui/BaseLayout.astro';
+import { getBrands, getCars } from '../../lib/content/entries.ts';
+import { brandHref } from '../../lib/content/href.ts';
+
+const [brands, cars] = await Promise.all([getBrands(), getCars()]);
+
+const rows = brands
+  .map((brand) => ({
+    brand,
+    models: cars.filter((c) => c.data.brandRef === brand.id && c.data.kind === 'model').length,
+  }))
+  .sort((a, b) => a.brand.data.name.localeCompare(b.brand.data.name));
+---
+
+<BaseLayout title="Brands" description="Every manufacturer covered by Markey.">
+  <header>
+    <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Brands</h1>
+    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+      Each brand page carries its identity and history; the list of nameplates
+      underneath it is computed, never hand-maintained.
+    </p>
+  </header>
+
+  {
+    rows.length > 0 ? (
+      <Section title={`${rows.length} ${rows.length === 1 ? 'brand' : 'brands'}`}>
+        <ul class="-mx-4 grid gap-3 px-4 py-4 sm:-mx-5 sm:px-5 md:grid-cols-2">
+          {rows.map(({ brand, models }) => (
+            <li class="min-w-0">
+              <a
+                href={brandHref(brand.id)}
+                class="pressable flex items-center gap-4 rounded-lg border border-line bg-surface-2 p-4 transition-colors duration-150 hover:border-line-strong"
+                style={`--brand-accent: ${brand.data.accentColor};`}
+              >
+                <BrandBadge logo={brand.data.logo} brandName={brand.data.name} size="sm" />
+                <span class="min-w-0 flex-1">
+                  <span class="type-heading block truncate text-base">{brand.data.name}</span>
+                  <span class="type-data mt-0.5 block text-sm text-ink-secondary">
+                    {brand.data.countryOfOrigin} · founded {brand.data.founded}
+                  </span>
+                </span>
+                <span class="shrink-0 text-sm text-ink-muted tabular-nums">
+                  {models} {models === 1 ? 'nameplate' : 'nameplates'}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </Section>
+    ) : (
+      <Section title="Brands">
+        <p class="py-5 text-sm text-ink-muted">No brands have been written up yet.</p>
+      </Section>
+    )
+  }
+</BaseLayout>

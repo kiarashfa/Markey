@@ -1,0 +1,42 @@
+---
+/**
+ * Wayfinding (apple-design §16): every page answers "where am I, and how do I
+ * get back out". On a car page the trail is the real content hierarchy —
+ * model hub → generation → halo trim — walked by `parentChain()`.
+ */
+interface Crumb {
+  label: string;
+  url?: string;
+}
+
+interface Props {
+  crumbs: Crumb[];
+}
+
+const { crumbs } = Astro.props;
+---
+
+<nav aria-label="Breadcrumb" class="min-w-0">
+  <ol class="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-sm text-ink-secondary">
+    {
+      crumbs.map((crumb, i) => (
+        <li class="flex min-w-0 items-center gap-1.5">
+          {i > 0 && (
+            <span aria-hidden="true" class="text-ink-muted">
+              /
+            </span>
+          )}
+          {crumb.url && i < crumbs.length - 1 ? (
+            <a class="truncate hover:text-ink hover:underline" href={crumb.url}>
+              {crumb.label}
+            </a>
+          ) : (
+            <span class="truncate text-ink" aria-current={i === crumbs.length - 1 ? 'page' : undefined}>
+              {crumb.label}
+            </span>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>
