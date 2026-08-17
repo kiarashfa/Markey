@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/*
+ * SPEC.md §11 — the design-token layer lives here as Tailwind v4 `@theme`
+ * variables (display/body type registers, brand-neutral surface scale).
+ * Deliberately empty at Phase 0: tokens get defined in Phase 2 alongside the
+ * first real components, so they're chosen against actual UI rather than
+ * guessed at scaffold time.
+ */

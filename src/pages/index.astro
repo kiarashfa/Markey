@@ -1,0 +1,40 @@
+---
+/**
+ * PHASE 0 SMOKE TEST — replaced in Phase 2 by the real homepage
+ * (spotlight carousel + search-first catalog, SPEC.md §11.1 / §9.1).
+ * It exists to prove the four scaffold layers actually work together.
+ */
+import '../styles/global.css';
+import ScaffoldCheck from '../components/islands/ScaffoldCheck.svelte';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+    <title>Markey — scaffold check</title>
+  </head>
+  <body class="min-h-screen bg-neutral-950 text-neutral-100 antialiased">
+    <main class="mx-auto flex max-w-2xl flex-col gap-6 px-6 py-16">
+      <h1 class="text-4xl font-semibold tracking-tight sm:text-5xl">Markey</h1>
+      <p class="text-neutral-400">
+        Phase 0 scaffold. Nothing here is the real site — this page only proves
+        the stack is wired up correctly.
+      </p>
+
+      <ul class="flex flex-col gap-2 text-sm text-neutral-300">
+        <li>Astro — you are reading a page it rendered.</li>
+        <li>Tailwind v4 — these styles come from <code>@import "tailwindcss"</code>.</li>
+        <li>MDX — <a class="underline" href={`${base}scaffold-check/`}>/scaffold-check/</a></li>
+        <li>Base path — resolved to <code>{base}</code></li>
+      </ul>
+
+      <div>
+        <ScaffoldCheck client:load />
+      </div>
+    </main>
+  </body>
+</html>
