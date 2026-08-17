@@ -1,0 +1,74 @@
+name: Deploy to GitHub Pages
+
+# SPEC.md §13 — three jobs, in order:
+#   verify  → the integrity checks must still catch known-bad content, + type check
+#   build   → withastro/action, which runs the gated `npm run build`
+#   deploy  → actions/deploy-pages
+#
+# Repo Settings → Pages → Source must be set to "GitHub Actions" for the
+# deploy job to succeed. That is a UI change; it cannot be done from here.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Least privilege: only the deploy job needs pages/id-token.
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  # The gate that proves the integrity checks themselves still work.
+  # If `check:self` ever passes silently because the checks stopped catching
+  # problems, this job is what turns that into a red build.
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Unit tests
+        run: npm run test
+
+      - name: Integrity self-test (known-bad fixtures must still fail)
+        run: npm run check:self
+
+      - name: Type check
+        run: npm run check
+
+  build:
+    needs: verify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      # Runs `npm run build` — the full gated pipeline from SPEC.md §13
+      # (test → check:content → astro build → postbuild:index → check:site)
+      # and uploads dist/ as the Pages artifact.
+      - uses: withastro/action@v6
+        with:
+          node-version: 24
+          package-manager: npm
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

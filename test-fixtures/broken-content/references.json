@@ -1,0 +1,11 @@
+{
+  "note": "Fixture bibliography. Deliberately small: it contains 'fixture-ref' and nothing else, so a citation of any other key is an unresolved citation.",
+  "entries": [
+    {
+      "key": "fixture-ref",
+      "type": "web",
+      "title": "Fixture reference",
+      "url": "https://example.invalid/fixture"
+    }
+  ]
+}

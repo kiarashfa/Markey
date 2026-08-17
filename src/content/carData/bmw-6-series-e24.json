@@ -1,0 +1,105 @@
+{
+  "id": "bmw-6-series-e24",
+  "name": "BMW 6 Series (E24)",
+  "fullName": "BMW 6 Series (E24), 1976–1989",
+  "kind": "generation",
+  "parent": "bmw-6-series",
+  "brandRef": "bmw",
+  "generationCode": "E24",
+  "productionYears": { "start": 1976, "end": 1989 },
+  "bodyStyles": ["coupe"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "premium",
+  "designer": "Paul Bracq",
+  "assembly": ["Karmann, West Germany (1976–1977)", "Dingolfing, West Germany (1977–1989)"],
+  "dimensions": {
+    "length": {
+      "value": 4755,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-6-series-e24",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_6_Series_(E24)",
+      "sourceNote": "European specification. US-market cars were 4923 mm over larger impact bumpers — recorded as a market variant rather than overwriting this figure."
+    },
+    "width": {
+      "value": 1725,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-6-series-e24",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_6_Series_(E24)"
+    },
+    "height": {
+      "value": 1365,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-6-series-e24",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_6_Series_(E24)"
+    },
+    "wheelbase": {
+      "value": 2630,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-6-series-e24",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_6_Series_(E24)"
+    }
+  },
+  "trims": [
+    {
+      "id": "635csi",
+      "name": "635CSi",
+      "productionYears": { "start": 1978, "end": 1989 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "M30B34",
+        "configuration": "inline-6",
+        "cylinders": 6,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": null,
+        "unit": "kW",
+        "status": "placeholder",
+        "sourceNote": "Output varied by market and model year across the M90/M30B34/M30B35 engines. Not yet sourced per variant — a single figure here would be a guess, so the field stays empty (SPEC.md §2.3)."
+      },
+      "torque": { "value": null, "unit": "Nm", "status": "placeholder" },
+      "mass": {
+        "value": null,
+        "unit": "kg",
+        "status": "placeholder",
+        "sourceNote": "The generation spans 1450–1619 kg across all trims and markets; the figure for this specific trim has not been sourced. A range cannot be stored in a single PropertyValue."
+      },
+      "zeroToHundredKph": { "value": null, "unit": "s", "status": "placeholder" },
+      "topSpeed": { "value": null, "unit": "km/h", "status": "placeholder" },
+      "frontalArea": {
+        "value": 2.0,
+        "unit": "m2",
+        "status": "estimated",
+        "sourceNote": "Estimated as 0.85 × width × height = 0.85 × 1.725 m × 1.365 m ≈ 2.00 m², the standing approximation documented in SPEC.md §8.2. Not a measured figure."
+      },
+      "prices": [],
+      "marketVariants": [
+        {
+          "market": "US",
+          "overrides": {
+            "dimensions": {
+              "length": {
+                "value": 4923,
+                "unit": "mm",
+                "status": "verified",
+                "source": "wikipedia-bmw-6-series-e24",
+                "sourceUrl": "https://en.wikipedia.org/wiki/BMW_6_Series_(E24)",
+                "sourceNote": "US-market cars carried larger federally mandated impact bumpers."
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "draft",
+  "references": ["wikipedia-bmw-6-series-e24"]
+}

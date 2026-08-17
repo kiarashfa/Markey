@@ -1,0 +1,21 @@
+{
+  "axis": "segment",
+  "urlPrefix": "segment",
+  "authored": true,
+  "note": "Starter vocabulary — SPEC.md §16. One canonical internal tier per SPEC.md §7, displayed with region-specific labels so the site never has to pick a side between European letter-segments and US size classes. `labels.europe` / `labels.us` are what templates render; `id` is what content authors tag.",
+  "terms": [
+    { "id": "a-segment", "label": "A-segment / City car", "labels": { "europe": "A-segment", "us": "Minicompact" }, "description": "Smallest passenger cars, typically under 3.7 m." },
+    { "id": "b-segment", "label": "B-segment / Subcompact", "labels": { "europe": "B-segment", "us": "Subcompact" }, "description": "Supermini class, roughly 3.7–4.1 m." },
+    { "id": "c-segment", "label": "C-segment / Compact", "labels": { "europe": "C-segment", "us": "Compact" }, "description": "Small family class, roughly 4.1–4.6 m." },
+    { "id": "d-segment", "label": "D-segment / Mid-size", "labels": { "europe": "D-segment", "us": "Mid-size" }, "description": "Large family class, roughly 4.6–4.9 m." },
+    { "id": "e-segment", "label": "E-segment / Full-size", "labels": { "europe": "E-segment", "us": "Full-size" }, "description": "Executive class." },
+    { "id": "f-segment", "label": "F-segment / Full-size luxury", "labels": { "europe": "F-segment", "us": "Full-size luxury" }, "description": "Flagship saloons." },
+    { "id": "s-segment", "label": "S-segment / Sports car", "labels": { "europe": "S-segment", "us": "Sports car" }, "description": "Sports coupés, roadsters and GTs, where size class is not the organising idea." },
+    { "id": "suv-small", "label": "Small SUV", "labels": { "europe": "B-SUV", "us": "Subcompact SUV" }, "description": "High-riding body on a B-segment footprint." },
+    { "id": "suv-compact", "label": "Compact SUV", "labels": { "europe": "C-SUV", "us": "Compact SUV" }, "description": "High-riding body on a C-segment footprint." },
+    { "id": "suv-mid", "label": "Mid-size SUV", "labels": { "europe": "D-SUV", "us": "Mid-size SUV" }, "description": "High-riding body on a D-segment footprint, often with a third row." },
+    { "id": "suv-large", "label": "Full-size SUV", "labels": { "europe": "E-SUV", "us": "Full-size SUV" }, "description": "Largest SUVs, frequently body-on-frame." },
+    { "id": "mpv", "label": "MPV", "labels": { "europe": "M-segment", "us": "Minivan" }, "description": "One-box people carriers of any size." },
+    { "id": "pickup", "label": "Pickup", "labels": { "europe": "Pickup", "us": "Pickup truck" }, "description": "Cab-and-bed vehicles sold at retail." }
+  ]
+}

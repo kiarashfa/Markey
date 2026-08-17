@@ -1,18 +1,28 @@
 #!/usr/bin/env node
 /**
- * `npm run check:content` — the content-integrity gate.
+ * `npm run check:content` — the content-integrity gate (SPEC.md §13).
  *
- * PHASE 0 PLACEHOLDER. The real checks (SPEC.md §13, Instruction.md Phase 1)
- * live in `src/integrations/integrity.ts` and enforce:
- *   - narrative .mdx ↔ data .json pairing, 1:1
- *   - every `id` matching its filename
- *   - every `parent` resolving to a real entry of a valid `kind`
- *   - every citation key resolving into the bibliography
- *   - every image carrying a `licenseType`
- * ...reporting the COMPLETE list of violations, never just the first.
- *
- * It exists now, exiting 0, so the gated pipeline in package.json has its
- * final shape from day one. There is no content to check yet, so passing
- * here means "nothing to do", NOT "content verified".
+ * Runs the same checks `astro build` runs, but standalone and ahead of it, so
+ * a content error costs a second rather than a full build. Reports every
+ * violation at once and exits non-zero if there are any.
  */
-console.log('[check:content] STUB — no content collections exist yet. Real checks land in Phase 1.');
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+import { formatViolations, runIntegrityChecks } from '../../src/integrations/integrity-checks.ts';
+
+const root = path.resolve(fileURLToPath(new URL('../..', import.meta.url)));
+
+const violations = await runIntegrityChecks({
+  contentRoot: path.join(root, 'src', 'content'),
+  bibliographyPath: path.join(root, 'src', 'data', 'references.json'),
+  displayRoot: root,
+});
+
+if (violations.length > 0) {
+  console.error(`\n${formatViolations(violations)}`);
+  console.error('check:content FAILED');
+  process.exit(1);
+}
+
+console.log('[check:content] passed — no integrity violations.');

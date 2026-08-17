@@ -1,0 +1,23 @@
+{
+  "id": "dangling-citation",
+  "name": "Dangling Citation",
+  "kind": "generation",
+  "parent": "fixture-model",
+  "brandRef": "fixturebrand",
+  "productionYears": { "start": 1995, "end": 2000 },
+  "bodyStyles": ["saloon"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["fwd"],
+  "dimensions": {
+    "length": {
+      "value": 4500,
+      "unit": "mm",
+      "status": "verified",
+      "source": "no-such-citation-key"
+    }
+  },
+  "trims": [],
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "draft",
+  "references": ["also-not-a-real-key"]
+}

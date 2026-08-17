@@ -1,0 +1,18 @@
+{
+  "id": "fixturebrand",
+  "name": "Fixture Brand",
+  "countryOfOrigin": "Nowhere",
+  "founded": 1950,
+  "logo": {
+    "src": "/fixtures/logo.svg",
+    "alt": "Fixture Brand logo",
+    "credit": {
+      "sourceUrl": "https://example.invalid/logo",
+      "licenseType": "trademark-nominative-use"
+    }
+  },
+  "accentColor": "#336699",
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "draft",
+  "references": []
+}

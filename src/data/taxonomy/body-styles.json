@@ -1,0 +1,23 @@
+{
+  "axis": "body-style",
+  "urlPrefix": "body-style",
+  "authored": true,
+  "note": "Starter vocabulary — SPEC.md §16 leaves the exact term set open. Expected to grow as the catalog does. What matters is the mechanism: an unlisted tag fails the build naming the file to fix. A generation may carry more than one term (a range spanning saloon + estate + coupe).",
+  "terms": [
+    { "id": "saloon", "label": "Saloon", "aka": ["Sedan"], "description": "Three-box body with a separate boot compartment." },
+    { "id": "hatchback", "label": "Hatchback", "description": "Two-box body with a rear liftgate opening into the cabin." },
+    { "id": "liftback", "label": "Liftback", "description": "Saloon-like profile with a hatch-style rear opening." },
+    { "id": "estate", "label": "Estate", "aka": ["Wagon", "Touring", "Avant"], "description": "Extended roofline over a full-height load bay." },
+    { "id": "coupe", "label": "Coupé", "description": "Two-door fixed-roof body, typically with a lower roofline than the saloon it derives from." },
+    { "id": "convertible", "label": "Convertible", "aka": ["Cabriolet", "Spider"], "description": "Folding soft or hard roof over a full body." },
+    { "id": "roadster", "label": "Roadster", "description": "Two-seat open body, minimal weather equipment." },
+    { "id": "targa", "label": "Targa", "description": "Removable roof panel with a fixed rear structure or roll hoop." },
+    { "id": "shooting-brake", "label": "Shooting brake", "description": "Coupé profile with an estate-style extended roof." },
+    { "id": "suv", "label": "SUV", "description": "High-riding body, traditionally body-on-frame or with genuine off-road intent." },
+    { "id": "crossover", "label": "Crossover", "description": "High-riding body on a unibody car platform." },
+    { "id": "mpv", "label": "MPV", "aka": ["Minivan", "People carrier"], "description": "Tall one-box body prioritising interior volume and seating rows." },
+    { "id": "pickup", "label": "Pickup", "description": "Cab with an open cargo bed." },
+    { "id": "van", "label": "Van", "description": "Passenger or combi derivative of a commercial van body." },
+    { "id": "microcar", "label": "Microcar", "aka": ["Kei car", "Bubble car"], "description": "Body sized to a regulatory class rather than a market segment." }
+  ]
+}

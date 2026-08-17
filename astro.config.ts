@@ -5,6 +5,8 @@ import sitemap from '@astrojs/sitemap';
 import svelte from '@astrojs/svelte';
 import tailwindcss from '@tailwindcss/vite';
 
+import integrity from './src/integrations/integrity.ts';
+
 /**
  * SPEC.md §6 — while the site lives on the github.io subdomain, `site` is the
  * user domain and `base` is the repo name. Moving to a custom domain later is
@@ -22,7 +24,9 @@ export default defineConfig({
   trailingSlash: 'always',
   // GitHub Pages cannot run a server; static is the only valid output.
   output: 'static',
-  integrations: [mdx(), svelte(), sitemap()],
+  // `integrity` first: SPEC.md §13 wants the build to stop on bad content
+  // before anything else has spent time on it.
+  integrations: [integrity(), mdx(), svelte(), sitemap()],
   vite: {
     // Tailwind v4 is a Vite plugin, not an Astro integration (SPEC.md §3).
     plugins: [tailwindcss()],

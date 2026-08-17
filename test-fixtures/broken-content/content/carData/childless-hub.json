@@ -1,0 +1,12 @@
+{
+  "id": "childless-hub",
+  "name": "Childless Hub",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "fixturebrand",
+  "productionYears": { "start": 1995, "end": 2000 },
+  "trims": [],
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "draft",
+  "references": []
+}

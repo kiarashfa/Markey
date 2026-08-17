@@ -1,0 +1,14 @@
+{
+  "id": "bmw-6-series",
+  "name": "BMW 6 Series",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "bmw",
+  "productionYears": { "start": 1976, "end": 2023 },
+  "segment": "s-segment",
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "draft",
+  "references": ["wikipedia-bmw-6-series"]
+}

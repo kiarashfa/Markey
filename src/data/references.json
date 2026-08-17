@@ -1,0 +1,48 @@
+{
+  "note": "The bibliography every citation key resolves into (SPEC.md §5.5). Wikipedia entries record the revision they were read at, because the article will have changed by the time anyone verifies the claim.",
+  "entries": [
+    {
+      "key": "wikipedia-bmw",
+      "type": "wikipedia",
+      "title": "BMW",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BMW",
+      "revision": "1369778433",
+      "accessed": "2026-08-17",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "wikipedia-bmw-6-series",
+      "type": "wikipedia",
+      "title": "BMW 6 Series",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BMW_6_Series",
+      "revision": "1363256463",
+      "accessed": "2026-08-17",
+      "license": "CC BY-SA 4.0",
+      "note": "The nameplate article, thin by design — 6 infobox fields. Generation-level specs come from the E24 article instead (DATA_SOURCES.md)."
+    },
+    {
+      "key": "wikipedia-bmw-6-series-e24",
+      "type": "wikipedia",
+      "title": "BMW 6 Series (E24)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BMW_6_Series_(E24)",
+      "revision": "1358361056",
+      "accessed": "2026-08-17",
+      "license": "CC BY-SA 4.0",
+      "note": "Wikipedia in turn cites BMW's 'BMW 628 CSi 635CSi Technische Beschreibung' for the dimension figures. That primary document has not been read directly, so it is not cited here as though it had been."
+    },
+    {
+      "key": "commons-file-bmw-svg",
+      "type": "commons",
+      "title": "File:BMW.svg",
+      "author": "BMW",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:BMW.svg",
+      "accessed": "2026-08-17",
+      "license": "Public domain (copyright); mark is trademarked",
+      "note": "Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction. Copyright status and trademark status are separate questions — the basis on which Markey displays it is nominative fair use (SPEC.md §10, §11.2)."
+    }
+  ]
+}

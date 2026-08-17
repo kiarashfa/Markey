@@ -1,0 +1,26 @@
+{
+  "id": "bmw",
+  "name": "BMW",
+  "legalName": "Bayerische Motoren Werke AG",
+  "countryOfOrigin": "Germany",
+  "founded": 1916,
+  "website": "https://www.bmw.com/",
+  "logo": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg",
+    "alt": "BMW roundel",
+    "width": 1015,
+    "height": 1015,
+    "credit": {
+      "author": "BMW",
+      "title": "File:BMW.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify BMW's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file itself as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#3396c8",
+  "accentColorNote": "Sampled from the blue in the official roundel on Wikimedia Commons. BMW does not publish a public brand-colour specification, so this is an editorial approximation of the marque's identity colour and is not presented as an official brand asset.",
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "draft",
+  "references": ["wikipedia-bmw", "commons-file-bmw-svg"]
+}

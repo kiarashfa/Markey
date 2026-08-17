@@ -1,0 +1,15 @@
+{
+  "id": "fixture-model-gen1",
+  "name": "Fixture Model Gen 1",
+  "kind": "generation",
+  "parent": "fixture-model",
+  "brandRef": "fixturebrand",
+  "productionYears": { "start": 1990, "end": 2000 },
+  "bodyStyles": ["saloon"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["fwd"],
+  "trims": [],
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "draft",
+  "references": []
+}

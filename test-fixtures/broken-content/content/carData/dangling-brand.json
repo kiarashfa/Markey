@@ -1,0 +1,15 @@
+{
+  "id": "dangling-brand",
+  "name": "Dangling Brand",
+  "kind": "generation",
+  "parent": "fixture-model",
+  "brandRef": "no-such-brand",
+  "productionYears": { "start": 1995, "end": 2000 },
+  "bodyStyles": ["saloon"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["fwd"],
+  "trims": [],
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "draft",
+  "references": []
+}

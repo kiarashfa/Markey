@@ -1,0 +1,70 @@
+{
+  "note": "The contract `npm run check:self` enforces (SPEC.md §13). Each entry names a deliberately-broken fixture and the rule id that must fire on it. If a rule stops firing, the check that rule belongs to has rotted and check:self exits non-zero. `why` is there so whoever sees the failure knows what the fixture was defending, not just which assertion broke.",
+  "expected": [
+    {
+      "file": "test-fixtures/broken-content/content/cars/orphan-narrative.mdx",
+      "rules": ["pairing/missing-data"],
+      "why": "a narrative file with no structured-data sibling must not build — the two-file pattern is the whole content model (SPEC.md §5.1)"
+    },
+    {
+      "file": "test-fixtures/broken-content/content/carData/orphan-data.json",
+      "rules": ["pairing/missing-narrative"],
+      "why": "a data file with no narrative sibling would render as a page with no prose"
+    },
+    {
+      "file": "test-fixtures/broken-content/content/cars/wrong-id.mdx",
+      "rules": ["id/filename-mismatch"],
+      "why": "the filename is the URL slug; an id that disagrees with it makes every cross-reference ambiguous"
+    },
+    {
+      "file": "test-fixtures/broken-content/content/carData/wrong-id.json",
+      "rules": ["id/filename-mismatch"],
+      "why": "same rule, enforced on the data side of the pair as well as the narrative side"
+    },
+    {
+      "file": "test-fixtures/broken-content/content/cars/identity-drift.mdx",
+      "rules": ["id/narrative-data-mismatch"],
+      "why": "the paired files must agree on identity, or the page's title and its specs describe different cars"
+    },
+    {
+      "file": "test-fixtures/broken-content/content/carData/dangling-parent.json",
+      "rules": ["parent/unresolved"],
+      "why": "an unresolved parent breaks breadcrumbs, the parent-chain walker, and the model hub's generation list"
+    },
+    {
+      "file": "test-fixtures/broken-content/content/carData/misparented-trim.json",
+      "rules": ["parent/wrong-kind"],
+      "why": "the kind/parent discriminator is the load-bearing piece of SPEC.md §5.1 — a trim hangs off a generation, never off a model hub"
+    },
+    {
+      "file": "test-fixtures/broken-content/content/carData/childless-hub.json",
+      "rules": ["hub/no-generation"],
+      "why": "SPEC.md §5.1 requires every model hub to have at least one generation, even for a nameplate that only ever had one version, so templates never special-case a childless hub"
+    },
+    {
+      "file": "test-fixtures/broken-content/content/carData/dangling-brand.json",
+      "rules": ["brand-ref/unresolved"],
+      "why": "brandRef drives the Origin taxonomy axis and the hero band's logo and accent colour — an unresolved one renders a car with no brand identity"
+    },
+    {
+      "file": "test-fixtures/broken-content/content/carData/dangling-citation.json",
+      "rules": ["citation/unresolved"],
+      "why": "SPEC.md §2 principle 3 — every number has a citation. A citation key pointing at nothing is a number with no provenance, which is the same thing as an uncited number"
+    },
+    {
+      "file": "test-fixtures/broken-content/content/carData/fabricated-placeholder.json",
+      "rules": ["schema/invalid"],
+      "why": "THE important one: a plausible-looking invented figure hiding behind status 'placeholder', an 'estimated' value that never says how it was estimated, and a 'verified' value with no source. This is precisely the failure mode 'no fabricated data, ever' exists to stop"
+    },
+    {
+      "file": "test-fixtures/broken-content/content/carData/invalid-tag.json",
+      "rules": ["schema/invalid"],
+      "why": "an unlisted taxonomy tag must fail the build naming the vocabulary file to fix, rather than silently creating an orphan taxonomy page (SPEC.md §7)"
+    },
+    {
+      "file": "test-fixtures/broken-content/content/brandData/unlicensed-logo.json",
+      "rules": ["image/missing-license", "schema/invalid"],
+      "why": "every image's legal basis must be auditable rather than assumed (SPEC.md §10) — an image with no recorded licence must never reach the site"
+    }
+  ]
+}

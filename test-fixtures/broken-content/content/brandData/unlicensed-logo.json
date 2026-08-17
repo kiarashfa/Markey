@@ -1,0 +1,17 @@
+{
+  "id": "unlicensed-logo",
+  "name": "Unlicensed Logo",
+  "countryOfOrigin": "Nowhere",
+  "founded": 1960,
+  "logo": {
+    "src": "/fixtures/unlicensed.svg",
+    "alt": "A logo with no recorded legal basis",
+    "credit": {
+      "sourceUrl": "https://example.invalid/unlicensed"
+    }
+  },
+  "accentColor": "#aabbcc",
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "draft",
+  "references": []
+}

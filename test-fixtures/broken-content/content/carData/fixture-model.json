@@ -1,0 +1,12 @@
+{
+  "id": "fixture-model",
+  "name": "Fixture Model",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "fixturebrand",
+  "productionYears": { "start": 1990, "end": 2010 },
+  "trims": [],
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "draft",
+  "references": []
+}

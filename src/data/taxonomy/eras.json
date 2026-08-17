@@ -1,0 +1,21 @@
+{
+  "axis": "era",
+  "urlPrefix": "era",
+  "authored": false,
+  "note": "NOT an authored tag. SPEC.md §7: era is computed from each entry's `productionYears`, never written by a content author — which is why it costs nothing to offer as a browse axis. This file only defines the bucket boundaries and their display labels; `src/schemas/taxonomy.ts` does the derivation. A car in production 1976–1989 lands in three buckets, not one.",
+  "terms": [
+    { "id": "1900s", "label": "1900s", "start": 1900, "end": 1909 },
+    { "id": "1910s", "label": "1910s", "start": 1910, "end": 1919 },
+    { "id": "1920s", "label": "1920s", "start": 1920, "end": 1929 },
+    { "id": "1930s", "label": "1930s", "start": 1930, "end": 1939 },
+    { "id": "1940s", "label": "1940s", "start": 1940, "end": 1949 },
+    { "id": "1950s", "label": "1950s", "start": 1950, "end": 1959 },
+    { "id": "1960s", "label": "1960s", "start": 1960, "end": 1969 },
+    { "id": "1970s", "label": "1970s", "start": 1970, "end": 1979 },
+    { "id": "1980s", "label": "1980s", "start": 1980, "end": 1989 },
+    { "id": "1990s", "label": "1990s", "start": 1990, "end": 1999 },
+    { "id": "2000s", "label": "2000s", "start": 2000, "end": 2009 },
+    { "id": "2010s", "label": "2010s", "start": 2010, "end": 2019 },
+    { "id": "2020s", "label": "2020s", "start": 2020, "end": 2029 }
+  ]
+}
