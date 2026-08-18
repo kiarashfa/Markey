@@ -221,6 +221,19 @@
       </p>
     {/if}
 
+    <!--
+      The gap the methodology page names as this model's largest, closed for
+      anything that supplies gearing: a car geared out below its aerodynamic
+      ceiling never reaches it, however much power is left.
+    -->
+    {#if top?.gearLimited}
+      <p class="rounded-lg border border-status-estimated/40 bg-status-estimated/10 p-3 text-sm">
+        Geared out at {fmt(top.kmh, 0)} km/h — the engine reaches its limit in
+        top gear before the car reaches the {fmt(top.unrestrictedKmh, 0)} km/h at
+        which power and drag would balance. Power is not what stops this car.
+      </p>
+    {/if}
+
     <!-- Acceleration -->
     {#if accelCurve}
       {@const maxT = Math.max(...accelCurve.map((p) => p.t))}

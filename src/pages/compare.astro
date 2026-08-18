@@ -7,6 +7,7 @@
 import CompareTool from '../components/islands/CompareTool.svelte';
 import BaseLayout from '../components/ui/BaseLayout.astro';
 import { buildCatalogue } from '../lib/content/catalogue.ts';
+import { href } from '../lib/content/href.ts';
 
 const catalogue = await buildCatalogue();
 ---
@@ -20,11 +21,12 @@ const catalogue = await buildCatalogue();
     <p class="type-body mt-3 max-w-prose text-ink-secondary">
       Up to four cars, row by row. Your selection is written into this page's
       address as you choose, so a comparison can be bookmarked or sent to
-      someone without an account or a saved file.
+      someone without an account or a saved file. One of the four can be a car
+      you built yourself.
     </p>
   </header>
 
   <div class="mt-8">
-    <CompareTool client:load cars={catalogue} />
+    <CompareTool client:load cars={catalogue} buildUrl={href('build')} />
   </div>
 </BaseLayout>

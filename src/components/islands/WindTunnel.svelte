@@ -35,9 +35,35 @@
     widthM: number | null;
     heightM: number | null;
     publishedCd: number | null;
+    /**
+     * Who the subject is.
+     *
+     * `car` measures a shape family fitted to a real car's published
+     * dimensions, and everything it says is framed against that car's own
+     * published Cd, which stays authoritative. `build` measures a shape the
+     * visitor is inventing (SPEC.md §9.6), where there is no published figure
+     * to defer to and the solver's number is the only one there is — which is
+     * exactly why SPEC.md §9.5.1 rule 2 forbids calling it validated.
+     */
+    variant?: 'car' | 'build';
+    /**
+     * Hands a completed measurement back to the caller — the closed loop of
+     * SPEC.md §9.6. Cd and frontal area travel together because they are one
+     * measurement of one shape.
+     */
+    onMeasure?: (cd: number, frontalAreaM2: number) => void;
   }
 
-  let { carName, bodyStyles, lengthM, widthM, heightM, publishedCd }: Props = $props();
+  let {
+    carName,
+    bodyStyles,
+    lengthM,
+    widthM,
+    heightM,
+    publishedCd,
+    variant = 'car',
+    onMeasure,
+  }: Props = $props();
 
   // --- lifecycle state -----------------------------------------------------
   let canvas = $state<HTMLCanvasElement | null>(null);
@@ -52,6 +78,8 @@
 
   // --- readouts ------------------------------------------------------------
   let solverCd = $state<number | null>(null);
+  let solverAreaM2 = $state<number | null>(null);
+  let handedOff = $state(false);
   let steps = $state(0);
   let reynolds = $state(0);
   let cellSizeMm = $state(0);
@@ -99,6 +127,33 @@
   const QUALITIES = ['low', 'medium', 'high'] as const;
 
   const canModel = $derived(lengthM !== null && widthM !== null && heightM !== null);
+
+  /**
+   * The shape the *running* solver was built from, against the shape the props
+   * describe now.
+   *
+   * Dimensions are fixed for a car and editable for a build, and a body cannot
+   * be restretched in place: the fit is compiled into the shaders. So when they
+   * diverge the panel says the picture is of the old shape and offers to build
+   * the new one — which is honest, where silently leaving a stale body on
+   * screen beside a live-looking readout would not be.
+   */
+  const shape = $derived(`${bodyStyles.join(',')}|${lengthM}|${widthM}|${heightM}`);
+
+  /**
+   * Steps before a drag figure is steady enough to hand to another model.
+   *
+   * The force is a rolling mean of thirty samples taken every twenty-four
+   * steps, so the averaging window is not even full until about seven hundred
+   * steps, and the field itself is still starting up well past that. Watching
+   * the number settle on screen is fine — it is labelled as a live reading —
+   * but committing a transient into the performance model would put a figure
+   * behind a top speed that nothing on screen still supports.
+   */
+  const SETTLED_STEPS = 1500;
+  const settled = $derived(steps >= SETTLED_STEPS);
+  let builtShape = $state('');
+  const stale = $derived(started && builtShape !== '' && builtShape !== shape);
   const activeMode = $derived(flowModes.find((m) => m.id === flowMode) ?? null);
 
   function view() {
@@ -142,6 +197,9 @@
       // Spend the featureless first few hundred steps behind the loading state.
       tunnel.prime();
 
+      builtShape = shape;
+      solverAreaM2 = tunnel.stats().frontalAreaM2;
+      handedOff = false;
       started = true;
       running = true;
       loading = false;
@@ -164,6 +222,7 @@
       tunnel.sampleForce();
       const after = tunnel.stats();
       solverCd = after.cd;
+      solverAreaM2 = after.frontalAreaM2;
       reynolds = after.reynolds;
       disturbed = after.disturbed;
       if (after.diverged) {
@@ -238,6 +297,27 @@
     running = true;
     lastFrameTime = performance.now();
     loop();
+  }
+
+  /**
+   * Throws the current solve away and builds the new shape.
+   *
+   * A full teardown rather than a patch: the fit is baked into the compiled
+   * GLSL, so there is nothing to update in place, and a fresh lattice is also
+   * the only way to be sure no momentum from the old body survives into the
+   * new body's drag figure.
+   */
+  async function rebuild() {
+    pause();
+    tunnel?.dispose();
+    tunnel = null;
+    started = false;
+    diverged = false;
+    solverCd = null;
+    solverAreaM2 = null;
+    builtShape = '';
+    steps = 0;
+    await start();
   }
 
   function pause() {
@@ -392,8 +472,10 @@
   <div class="rounded-lg border border-dashed border-line bg-surface-1 p-6">
     <h3 class="type-heading text-base">No dimensions to build a body from</h3>
     <p class="mt-2 max-w-prose text-sm text-ink-secondary">
-      The tunnel fits a representative body to the car's length, width and
-      height, and we haven't sourced all three for {carName} yet.
+      The tunnel fits a representative body to a length, a width and a height.
+      {variant === 'build'
+        ? 'Give the build all three and it will run.'
+        : `We haven't sourced all three for ${carName} yet.`}
     </p>
   </div>
 {:else}
@@ -761,6 +843,20 @@
           A fan is running — the drag below is for this disturbed flow.
         </span>
       {/if}
+      {#if stale}
+        <span
+          class="flex flex-wrap items-center gap-2 rounded-md border border-status-estimated/40 bg-status-estimated/10 px-2.5 py-1.5 text-xs"
+        >
+          The dimensions changed. This is still the old shape.
+          <button
+            type="button"
+            class="pressable rounded border border-line-strong bg-surface-2 px-2 py-1 font-medium"
+            onclick={rebuild}
+          >
+            Build the new one
+          </button>
+        </span>
+      {/if}
     </div>
 
     {#if error}
@@ -783,23 +879,85 @@
     <!-- Solver Cd beside the published one, never instead of it -->
     <div class="grid gap-3 sm:grid-cols-2">
       <div class="min-w-0 rounded-lg border border-line bg-surface-1 p-4">
-        <p class="text-xs uppercase tracking-wide text-ink-muted">Published Cd</p>
+        <p class="text-xs uppercase tracking-wide text-ink-muted">
+          {variant === 'build' ? 'The build’s Cd' : 'Published Cd'}
+        </p>
         <p class="type-data mt-1 text-2xl font-semibold tabular-nums">
           {publishedCd !== null ? publishedCd.toFixed(2) : '—'}
         </p>
         <p class="mt-2 text-xs leading-relaxed text-ink-muted">
-          The manufacturer's figure for the real car. This stays authoritative.
+          {variant === 'build'
+            ? 'What the performance model is using right now. Yours to set, and yours to replace with the measurement on the right.'
+            : "The manufacturer's figure for the real car. This stays authoritative."}
         </p>
       </div>
       <div class="min-w-0 rounded-lg border border-line bg-surface-1 p-4">
         <p class="text-xs uppercase tracking-wide text-ink-muted">This solver, on a fitted shape</p>
-        <p class="type-data mt-1 text-2xl font-semibold tabular-nums">
-          {solverCd !== null ? solverCd.toFixed(2) : '—'}
+        <p class="type-data mt-1 flex flex-wrap items-baseline gap-x-3 text-2xl font-semibold tabular-nums">
+          <span>{solverCd !== null ? solverCd.toFixed(2) : '—'}</span>
+          {#if solverAreaM2 !== null && solverAreaM2 > 0}
+            <span class="text-sm font-normal text-ink-muted">
+              over {solverAreaM2.toFixed(2)} m²
+            </span>
+          {/if}
         </p>
         <p class="mt-2 text-xs leading-relaxed text-ink-muted">
-          Measured on a {modelLabel || 'representative shape'}, not on {carName}.
-          Not comparable with the figure on the left.
+          {#if variant === 'build'}
+            Measured on a {modelLabel || 'representative shape'} fitted to the
+            dimensions you set. Nobody has published a Cd for a shape you just
+            invented, so there is nothing to validate it against and none is
+            claimed — it is what this solver, at this resolution, measured.
+          {:else}
+            Measured on a {modelLabel || 'representative shape'}, not on {carName}.
+            Not comparable with the figure on the left.
+          {/if}
         </p>
+
+        <!--
+          The closed loop of SPEC.md §9.6, and the one control on this panel that
+          changes something outside it. Withheld while the run is unusable: a
+          diverged solve reports nothing, and a figure taken in a running fan's
+          wake describes the shape in that wake rather than in clean air.
+        -->
+        {#if onMeasure}
+          <button
+            type="button"
+            class="pressable mt-3 w-full rounded-md border border-line-strong bg-surface-2 px-3 py-2 text-sm font-medium transition-colors duration-150 hover:bg-surface-3 disabled:cursor-not-allowed disabled:opacity-40"
+            disabled={solverCd === null ||
+              solverAreaM2 === null ||
+              diverged ||
+              disturbed ||
+              stale ||
+              !settled}
+            onclick={() => {
+              if (solverCd === null || solverAreaM2 === null) return;
+              onMeasure(solverCd, solverAreaM2);
+              handedOff = true;
+              setTimeout(() => (handedOff = false), 2500);
+            }}
+          >
+            Use this Cd and area in the build
+          </button>
+          {#if handedOff}
+            <p class="mt-2 text-xs leading-relaxed text-status-verified">
+              Applied. Every figure below the tunnel is now computed from the
+              shape rather than from a typed coefficient.
+            </p>
+          {/if}
+          {#if disturbed}
+            <p class="mt-2 text-xs leading-relaxed text-ink-muted">
+              Turn the fans off first — drag measured in disturbed air describes
+              the shape in that air, not on a road.
+            </p>
+          {:else if started && !settled && !diverged}
+            <p class="mt-2 text-xs leading-relaxed text-ink-muted">
+              Still settling — {steps.toLocaleString('en-GB')} of about {SETTLED_STEPS.toLocaleString(
+                'en-GB',
+              )} steps. The reading above is live and still moving; it can be
+              handed to the build once the wake has developed.
+            </p>
+          {/if}
+        {/if}
       </div>
     </div>
 
@@ -810,11 +968,13 @@
         by the velocity field it computes, not a decorative particle effect, and
         turning the car re-rasterises the body the fluid sees. But the body is a
         <strong class="text-ink">{modelLabel || 'representative shape'}</strong>
-        stretched onto {carName}'s published dimensions, not a scan of the car. At
+        stretched onto {variant === 'build'
+          ? 'the dimensions you set'
+          : `${carName}'s published dimensions`}, not a scan of a car. At
         {cellSizeMm || '—'} mm per cell it resolves large-scale separation and the shape
         of the wake; it does not resolve the near-wall boundary layer, the gap between
         tyre and arch, or absolute drag to engineering tolerance. Treat the number
-        above as a property of the shape, not of the car.
+        above as a property of the shape at this scale, not of a car.
       </p>
     </div>
   </div>

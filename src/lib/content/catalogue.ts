@@ -84,6 +84,9 @@ export interface CatalogueCar {
    * is faster would be exactly the failure the shared builder exists to stop.
    */
   powerKwMax: number | null;
+  torqueNmMax: number | null;
+  /** Lowest published Cd across the trims — lower is better, so a minimum. */
+  dragCoefficientMin: number | null;
   zeroToHundredMinS: number | null;
   topSpeedMaxKmh: number | null;
   consumptionMinL100km: number | null;
@@ -169,6 +172,8 @@ export function toCatalogueCar(
     trims,
 
     powerKwMax: maxOf(trims.map((t) => t.powerKw)),
+    torqueNmMax: maxOf(trims.map((t) => t.torqueNm)),
+    dragCoefficientMin: minOf(trims.map((t) => t.dragCoefficient)),
     zeroToHundredMinS: minOf(trims.map((t) => t.zeroToHundredS)),
     topSpeedMaxKmh: maxOf(trims.map((t) => t.topSpeedKmh)),
     consumptionMinL100km: minOf(trims.map((t) => t.consumptionL100km)),

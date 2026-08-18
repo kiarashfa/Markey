@@ -27,6 +27,7 @@ import {
   powerAvailability,
 } from './constants.ts';
 import { dragForce } from './aero.ts';
+import { gearedTopSpeed, type Gearing } from './gearing.ts';
 
 export interface VehicleInputs {
   /** Kerb mass, kg. */
@@ -48,6 +49,15 @@ export interface VehicleInputs {
   airDensity?: number;
   /** Occupant + fuel allowance, kg. Real tests carry a driver. */
   payloadKg?: number;
+  /**
+   * Gearing, where it is known.
+   *
+   * Optional, and absent for every car in the collections today — the model's
+   * documented blind spot is that it does not know whether a car has a gear
+   * tall enough to reach the speed at which power balances drag. Supply this
+   * and it does; leave it out and every figure is unchanged.
+   */
+  gearing?: Gearing;
   /**
    * Manufacturer's electronic speed limiter, km/h, where one exists.
    *
@@ -78,12 +88,16 @@ export function resistiveForce(speedMs: number, inputs: VehicleInputs): number {
 }
 
 export interface TopSpeedResult {
-  /** The figure to show, km/h — the limiter where one applies. */
+  /** The figure to show, km/h — whichever ceiling binds first. */
   kmh: number;
-  /** Where power and drag balance, ignoring any limiter. */
+  /** Where power and drag balance, ignoring gearing and any limiter. */
   unrestrictedKmh: number;
+  /** The geared ceiling, km/h, or null when no gearing was supplied. */
+  gearedKmh: number | null;
   /** True when an electronic limiter, not physics, sets the number. */
   limited: boolean;
+  /** True when the car runs out of gears before it runs out of power. */
+  gearLimited: boolean;
 }
 
 /**
@@ -95,10 +109,10 @@ export interface TopSpeedResult {
  * precision the inputs justify. Robustness beats speed here — this runs once
  * per car, not per frame.
  *
- * **What this figure is, and is not.** It is the speed at which available power
- * balances drag and rolling resistance. It does **not** know about gearing (a
- * car geared out below this speed will never reach it), nor about electronic
- * limiters unless one is supplied. That gap is real and sometimes large: with
+ * **What this figure is, and is not.** `unrestrictedKmh` is the speed at which
+ * available power balances drag and rolling resistance, and nothing else. It
+ * knows about gearing and about electronic limiters only when they are
+ * supplied — and for every car in the collections today, neither is. That gap is real and sometimes large: with
  * no limiter given, a Tesla Model 3 Long Range models at ~336 km/h against a
  * published 233 km/h, because the published figure is a limiter and this one is
  * aerodynamics. Supply `speedLimiterKmh` where it is known, and read the
@@ -126,12 +140,23 @@ export function topSpeedDetailed(inputs: VehicleInputs): TopSpeedResult | null {
   }
   const unrestrictedKmh = msToKmh((low + high) / 2);
 
+  // Three ceilings, and the lowest one is the answer: aerodynamics, gearing,
+  // and the limiter. Reporting which one binds matters more than the number —
+  // "geared out at 233" and "limited to 233" are different cars.
+  const gearedKmh = gearedTopSpeed(inputs.gearing);
   const limiter = inputs.speedLimiterKmh;
-  const limited = limiter !== undefined && limiter > 0 && limiter < unrestrictedKmh;
+  const hasLimiter = limiter !== undefined && limiter > 0;
+
+  let kmh = unrestrictedKmh;
+  if (gearedKmh !== null && gearedKmh < kmh) kmh = gearedKmh;
+  if (hasLimiter && limiter < kmh) kmh = limiter;
+
   return {
-    kmh: limited ? limiter : unrestrictedKmh,
+    kmh,
     unrestrictedKmh,
-    limited,
+    gearedKmh,
+    limited: hasLimiter && limiter === kmh && kmh < unrestrictedKmh,
+    gearLimited: gearedKmh !== null && gearedKmh === kmh && kmh < unrestrictedKmh,
   };
 }
 
@@ -172,6 +197,12 @@ export function accelerationTo(
   if (inputs.powerKw <= 0 || inputs.massKg <= 0 || inputs.tyreGrip <= 0) return null;
   if (inputs.dragCoefficient <= 0 || inputs.frontalAreaM2 <= 0) return null;
   if (targetKmh <= 0) return null;
+
+  // A car geared out below the target never reaches it, however much power it
+  // has. Without this the integrator would happily accelerate past a speed the
+  // gearbox cannot deliver.
+  const geared = gearedTopSpeed(inputs.gearing);
+  if (geared !== null && targetKmh > geared) return null;
 
   const mass = totalMass(inputs);
   // Peak power is not available throughout a standing start — see

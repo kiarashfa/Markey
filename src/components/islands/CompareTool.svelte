@@ -15,23 +15,53 @@
    * `/catalogue.json` use, so a figure here always matches the figure there.
    */
   import type { CatalogueCar } from '../../lib/content/catalogue.ts';
+  import {
+    BUILD_ID,
+    MODELLED_ROWS,
+    buildColumn,
+    type CompareRowKey,
+  } from '../../lib/build/compare.ts';
+  import { clearBuildParams, readBuildParams, writeBuildParams } from '../../lib/build/url.ts';
+  import type { BuildSpec } from '../../lib/build/spec.ts';
 
-  let { cars }: { cars: CatalogueCar[] } = $props();
+  let { cars, buildUrl }: { cars: CatalogueCar[]; buildUrl: string } = $props();
 
   const MAX = 4;
 
   let selected = $state<string[]>([]);
   let picking = $state(false);
+  /**
+   * A build from the URL — SPEC.md §9.7's fourth slot.
+   *
+   * It arrives the same way the car selection does, in the address bar, so a
+   * comparison of three real cars against something you invented is one link
+   * with nothing behind it.
+   */
+  let spec = $state<BuildSpec | null>(null);
 
-  const chosen = $derived(
-    selected.map((id) => cars.find((car) => car.id === id)).filter((c): c is CatalogueCar => !!c),
-  );
-  const isFull = $derived(selected.length >= MAX);
+  const build = $derived(spec ? buildColumn(spec, `${buildUrl}?${buildQuery(spec)}`) : null);
+
+  function buildQuery(current: BuildSpec): string {
+    const params = new URLSearchParams();
+    writeBuildParams(params, current);
+    return params.toString();
+  }
+
+  /** The build occupies a slot, so it counts against the four. */
+  const chosen = $derived([
+    ...(build ? [build.car] : []),
+    ...selected
+      .map((id) => cars.find((car) => car.id === id))
+      .filter((c): c is CatalogueCar => !!c),
+  ]);
+  const isFull = $derived(chosen.length >= MAX);
 
   function syncUrl() {
     const url = new URL(window.location.href);
     if (selected.length > 0) url.searchParams.set('cars', selected.join(','));
     else url.searchParams.delete('cars');
+    clearBuildParams(url.searchParams);
+    if (spec) writeBuildParams(url.searchParams, spec);
     window.history.replaceState({}, '', url);
   }
 
@@ -42,12 +72,14 @@
   }
 
   function remove(id: string) {
-    selected = selected.filter((x) => x !== id);
+    if (id === BUILD_ID) spec = null;
+    else selected = selected.filter((x) => x !== id);
     syncUrl();
   }
 
   function clearAll() {
     selected = [];
+    spec = null;
     syncUrl();
   }
 
@@ -60,12 +92,19 @@
       .split(',')
       .map((s) => s.trim())
       .filter(Boolean);
-    const known = requested.filter((id) => cars.some((car) => car.id === id)).slice(0, MAX);
+    // Held in a local, never read back off `spec` — an effect that reads the
+    // state it also writes re-triggers itself, and `readBuildParams` allocates
+    // a fresh object every run, so it would never settle.
+    const fromUrl = readBuildParams(params);
+    spec = fromUrl;
+    const room = fromUrl ? MAX - 1 : MAX;
+    const known = requested.filter((id) => cars.some((car) => car.id === id)).slice(0, room);
     if (known.length > 0) selected = known;
-    picking = known.length === 0;
+    picking = known.length === 0 && fromUrl === null;
   });
 
   interface Row {
+    key: CompareRowKey;
     label: string;
     unit?: string;
     /** Which direction is "better", for highlighting. Absent = no winner. */
@@ -74,21 +113,40 @@
     get: (car: CatalogueCar) => number | string | null;
   }
 
+  /** Nothing about a build was produced or made by anyone, so those rows stay empty. */
+  const notForBuild = <T,>(fn: (car: CatalogueCar) => T) => (car: CatalogueCar) =>
+    car.id === BUILD_ID ? null : fn(car);
+
   const rows: Row[] = [
-    { label: 'Brand', get: (c) => c.brandName },
-    { label: 'Produced', get: (c) => (c.yearEnd === null ? `${c.yearStart}–present` : `${c.yearStart}–${c.yearEnd}`) },
-    { label: 'Power', unit: 'kW', better: 'higher', get: (c) => c.powerKwMax },
-    { label: '0–100 km/h', unit: 's', better: 'lower', decimals: 1, get: (c) => c.zeroToHundredMinS },
-    { label: 'Top speed', unit: 'km/h', better: 'higher', get: (c) => c.topSpeedMaxKmh },
-    { label: 'Consumption', unit: 'L/100 km', better: 'lower', decimals: 1, get: (c) => c.consumptionMinL100km },
-    { label: 'Kerb weight', unit: 'kg', better: 'lower', get: (c) => c.massMinKg },
-    { label: 'Length', unit: 'mm', get: (c) => c.lengthMm },
-    { label: 'Width', unit: 'mm', get: (c) => c.widthMm },
-    { label: 'Height', unit: 'mm', get: (c) => c.heightMm },
-    { label: 'Body style', get: (c) => c.bodyStyles.join(', ') || null },
-    { label: 'Drivetrain', get: (c) => c.drivetrains.join(', ') || null },
-    { label: 'Powertrain', get: (c) => c.powertrains.join(', ') || null },
+    { key: 'brand', label: 'Brand', get: notForBuild((c) => c.brandName) },
+    {
+      key: 'produced',
+      label: 'Produced',
+      get: notForBuild((c) =>
+        c.yearEnd === null ? `${c.yearStart}–present` : `${c.yearStart}–${c.yearEnd}`,
+      ),
+    },
+    { key: 'power', label: 'Power', unit: 'kW', better: 'higher', get: (c) => c.powerKwMax },
+    { key: 'torque', label: 'Torque', unit: 'N⋅m', better: 'higher', get: (c) => c.torqueNmMax },
+    { key: 'zero-to-hundred', label: '0–100 km/h', unit: 's', better: 'lower', decimals: 1, get: (c) => c.zeroToHundredMinS },
+    { key: 'top-speed', label: 'Top speed', unit: 'km/h', better: 'higher', get: (c) => c.topSpeedMaxKmh },
+    { key: 'consumption', label: 'Consumption', unit: 'L/100 km', better: 'lower', decimals: 1, get: (c) => c.consumptionMinL100km },
+    { key: 'mass', label: 'Kerb weight', unit: 'kg', better: 'lower', get: (c) => c.massMinKg },
+    { key: 'cd', label: 'Drag coefficient', better: 'lower', decimals: 2, get: (c) => c.dragCoefficientMin },
+    { key: 'length', label: 'Length', unit: 'mm', get: (c) => c.lengthMm },
+    { key: 'width', label: 'Width', unit: 'mm', get: (c) => c.widthMm },
+    { key: 'height', label: 'Height', unit: 'mm', get: (c) => c.heightMm },
+    { key: 'body', label: 'Body style', get: (c) => c.bodyStyles.join(', ') || null },
+    { key: 'drivetrain', label: 'Drivetrain', get: (c) => c.drivetrains.join(', ') || null },
+    { key: 'powertrain', label: 'Powertrain', get: (c) => c.powertrains.join(', ') || null },
   ];
+
+  /**
+   * True where a cell holds a figure the model produced rather than one anyone
+   * published — which today is only ever the build's performance rows.
+   */
+  const isModelled = (row: Row, car: CatalogueCar) =>
+    car.id === BUILD_ID && MODELLED_ROWS.includes(row.key);
 
   /**
    * The winning value for a row, or null when there is no meaningful winner.
@@ -100,6 +158,11 @@
   function bestValue(row: Row): number | null {
     if (!row.better) return null;
     const values = chosen
+      // A modelled figure is excluded from the contest. A build "beating" a
+      // manufacturer's published 0-100 would be a statement about the model's
+      // ±20% band, not about the car, and a badge saying "best" would read as
+      // the opposite.
+      .filter((car) => !isModelled(row, car))
       .map((car) => row.get(car))
       .filter((v): v is number => typeof v === 'number');
     if (values.length < 2) return null;
@@ -151,10 +214,17 @@
       aria-expanded={picking}
       disabled={isFull && !picking}
     >
-      {picking ? 'Done choosing' : `Add a car (${selected.length}/${MAX})`}
+      {picking ? 'Done choosing' : `Add a car (${chosen.length}/${MAX})`}
     </button>
 
-    {#if selected.length > 0}
+    <a
+      href={build ? build.car.url : buildUrl}
+      class="pressable rounded-full border border-dashed border-line px-3 py-1.5 text-sm text-ink-secondary transition-colors duration-150 hover:border-line-strong hover:text-ink"
+    >
+      {build ? 'Edit your build' : 'Build one instead'}
+    </a>
+
+    {#if chosen.length > 0}
       <button
         type="button"
         class="pressable rounded-full px-3 py-1.5 text-sm text-ink-muted transition-colors duration-150 hover:text-ink"
@@ -203,7 +273,11 @@
       </p>
       <p class="mt-2 text-xs text-ink-muted">
         Your selection goes into this page's address, so you can bookmark a
-        comparison or send it to someone.
+        comparison or send it to someone. A car you
+        <a class="underline decoration-line underline-offset-4 hover:text-ink" href={buildUrl}>
+          built yourself
+        </a>
+        can take one of the four slots.
       </p>
     </div>
   {:else}
@@ -217,7 +291,9 @@
             {#each chosen as car (car.id)}
               <th scope="col" class="min-w-[9rem] px-3 py-2.5 text-left font-medium">
                 <a class="hover:underline" href={car.url}>{car.name}</a>
-                <span class="block text-xs font-normal text-ink-muted">{car.brandName}</span>
+                <span class="block text-xs font-normal text-ink-muted">
+                  {car.id === BUILD_ID ? 'Your build · not a real car' : car.brandName}
+                </span>
               </th>
             {/each}
           </tr>
@@ -234,13 +310,19 @@
               </th>
               {#each chosen as car (car.id)}
                 {@const raw = row.get(car)}
-                {@const isBest = best !== null && raw === best}
+                {@const modelled = isModelled(row, car)}
+                {@const isBest = best !== null && raw === best && !modelled}
                 <td
                   class="px-3 py-2 tabular-nums"
                   class:font-semibold={isBest}
                   class:text-ink-muted={raw === null}
                 >
                   {render(row, car)}
+                  {#if modelled && raw !== null}
+                    <span class="ml-1 text-[0.625rem] uppercase tracking-wide text-status-estimated">
+                      modelled
+                    </span>
+                  {/if}
                   {#if isBest}
                     <span class="ml-1 text-[0.625rem] uppercase tracking-wide text-status-verified">
                       best
@@ -254,10 +336,20 @@
       </table>
     </div>
 
-    <p class="text-xs leading-relaxed text-ink-muted">
+    <p class="max-w-prose text-xs leading-relaxed text-ink-muted">
       An em dash means we do not have that figure yet — it is not a zero, and a
       car is never marked "best" on a row where it is the only one with data.
       Figures are the best available across each entry's trims.
+      {#if build}
+        A real car's performance figures are <strong class="text-ink-secondary"
+          >published</strong
+        >; your build's are <strong class="text-ink-secondary">modelled</strong>, so they
+        are marked and never win a row — a model that lands within about 20% of a
+        manufacturer's own claim cannot settle which car is quicker. Consumption is
+        blank for a build on purpose: the model can only give steady-state use at
+        a chosen speed, and a published figure is a drive cycle. The two are not
+        the same measurement.
+      {/if}
     </p>
   {/if}
 </div>

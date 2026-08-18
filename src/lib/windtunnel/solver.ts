@@ -46,6 +46,15 @@ export interface SolverStats {
   force: number;
   cd: number | null;
   frontalAreaCells: number;
+  /**
+   * The projected frontal area in square metres — the GPU silhouette
+   * measurement SPEC.md §9.5.1 wanted, in the units the §8.2 physics takes.
+   *
+   * Derived here rather than at the call site so there is one definition of
+   * what "the area this drag was measured over" means: the same count of cells
+   * that divided the force, times the size of a cell.
+   */
+  frontalAreaM2: number;
   reynolds: number;
   /** Metres per lattice cell — the resolution limit, stated in real units. */
   cellSizeM: number;
@@ -411,6 +420,7 @@ export class Solver {
       force,
       cd,
       frontalAreaCells: this.frontalAreaCells,
+      frontalAreaM2: this.frontalAreaCells * this.map.dx * this.map.dx,
       reynolds: (velocity * diameter) / this.cfg.viscosity,
       cellSizeM: this.map.dx,
       diverged: this.diverged,

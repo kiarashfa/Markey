@@ -95,15 +95,24 @@ if (solverChunks.length === 0) {
     );
   }
 
-  // No page other than a test-drive page may reference the solver chunk.
+  /**
+   * Only a page that actually offers the tunnel may reference its chunk.
+   *
+   * Two do: Test Drive, and — since Phase 7 — Build Car, which runs the solver
+   * over the shape the visitor is inventing and feeds the measured Cd and
+   * frontal area back into the performance model (SPEC.md §9.6, the closed
+   * loop). The rule this check exists to enforce is unchanged: a visitor who
+   * only reads spec pages must never pay for the heaviest thing on the site.
+   */
+  const TUNNEL_PAGES = ['test-drive', 'build'];
   const solverBasenames = solverChunks.map((c) => path.basename(c));
   for (const file of html) {
     const rel = path.relative(dist, file).split(path.sep).join('/');
     const body = await readFile(file, 'utf8');
     const referenced = solverBasenames.filter((name) => body.includes(name));
-    if (referenced.length > 0 && !rel.includes('test-drive')) {
+    if (referenced.length > 0 && !TUNNEL_PAGES.some((page) => rel.includes(page))) {
       failures.push(
-        `${rel} eagerly references the wind-tunnel chunk (${referenced.join(', ')}). Only a Test Drive page may.`,
+        `${rel} eagerly references the wind-tunnel chunk (${referenced.join(', ')}). Only a page that offers the wind tunnel may: ${TUNNEL_PAGES.join(', ')}.`,
       );
     }
   }
@@ -111,7 +120,7 @@ if (solverChunks.length === 0) {
   let bytes = 0;
   for (const chunk of solverChunks) bytes += (await stat(path.join(dist, chunk))).size;
   notes.push(
-    `Wind-tunnel solver isolated in ${solverChunks.length} chunk(s), ${(bytes / 1024).toFixed(1)} kB, referenced only by Test Drive pages.`,
+    `Wind-tunnel solver isolated in ${solverChunks.length} chunk(s), ${(bytes / 1024).toFixed(1)} kB, referenced only by ${TUNNEL_PAGES.join(' / ')} pages.`,
   );
 }
 
