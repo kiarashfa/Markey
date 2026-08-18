@@ -7,17 +7,23 @@
  * search (Phase 8) and the faceted, reactive catalog (Phase 4, SPEC.md §9.1)
  * both slot into this page without moving it.
  */
-import CarCard from '../components/blocks/CarCard.astro';
 import Section from '../components/blocks/Section.astro';
+import EntryTable from '../components/islands/EntryTable.svelte';
 import SpotlightCarousel from '../components/islands/SpotlightCarousel.svelte';
 import BaseLayout from '../components/ui/BaseLayout.astro';
 
+import { buildCatalogue } from '../lib/content/catalogue.ts';
 import { getBrands, getCars } from '../lib/content/entries.ts';
 import { carHref, href, imageSrc, taxonomyHref } from '../lib/content/href.ts';
 import { AXES, buildTermViews } from '../lib/content/taxonomy-views.ts';
 import { formatYears } from '../lib/render/format.ts';
+import {
+  bodyStyles as bodyStyleVocab,
+  eras as eraVocab,
+  powertrains as powertrainVocab,
+} from '../schemas/taxonomy.ts';
 
-const [cars, brands] = await Promise.all([getCars(), getBrands()]);
+const [cars, brands, catalogue] = await Promise.all([getCars(), getBrands(), buildCatalogue()]);
 const brandsById = new Map(brands.map((b) => [b.id, b]));
 
 /**
@@ -50,10 +56,20 @@ const spotlight = cars
     };
   });
 
-const recent = cars
-  .filter((car) => car.data.kind !== 'model')
-  .sort((a, b) => b.data.productionYears.start - a.data.productionYears.start)
-  .slice(0, 6);
+/**
+ * Only the terms the catalogue actually uses.
+ *
+ * A filter row of fourteen body styles above four cars, twelve of them
+ * disabled, advertises the vocabulary rather than the catalogue. These grow as
+ * the catalogue does, with no editing.
+ */
+const usedTerms = (
+  field: 'bodyStyles' | 'powertrains' | 'eras',
+  vocab: { terms: { id: string; label: string }[] },
+) => {
+  const used = new Set(catalogue.flatMap((car) => car[field]));
+  return vocab.terms.filter((term) => used.has(term.id)).map(({ id, label }) => ({ id, label }));
+};
 
 /** Browse entry points, each showing how much is actually behind it. */
 const browseAxes = AXES.map((axis) => ({
@@ -82,12 +98,12 @@ const browseAxes = AXES.map((axis) => ({
     )
   }
 
-  <div class="mx-auto w-full max-w-5xl px-5 py-10 sm:px-8 sm:py-14">
+  <div class="mx-auto w-full max-w-6xl px-5 py-10 sm:px-8 sm:py-14">
     {
       spotlight.length === 0 && (
         <header class="mb-10">
           <h1 class="type-display text-[clamp(2rem,7vw,3.5rem)]">Markey</h1>
-          <p class="type-body mt-4 max-w-prose text-lg text-ink-secondary">
+          <p class="type-body mt-4 max-w-lede text-lg text-ink-secondary">
             A free, ad-free, login-free encyclopedia of production cars.
           </p>
         </header>
@@ -96,7 +112,7 @@ const browseAxes = AXES.map((axis) => ({
 
     <section>
       <h2 class="type-title text-xl">Browse</h2>
-      <p class="type-body mt-2 max-w-prose text-sm text-ink-secondary">
+      <p class="type-body mt-2 max-w-readable text-sm text-ink-secondary">
         Every browse axis is a view computed over tagged entries, so nothing
         breaks when a car is reclassified. Two of them — origin and era — are
         never tagged by hand at all.
@@ -131,17 +147,27 @@ const browseAxes = AXES.map((axis) => ({
     </section>
 
     {
-      recent.length > 0 && (
+      catalogue.length > 0 && (
         <Section
           title="In the catalog"
-          lede="Generations and halo trims — the entries that carry the specifications."
+          lede="Generations and halo trims — the entries that carry the specifications. Filter it, or sort by any column."
         >
-          <div class="-mx-4 py-4 sm:-mx-5">
-            <div class="grid gap-3 px-4 sm:px-5 md:grid-cols-2">
-              {recent.map((car) => (
-                <CarCard car={car} brand={brandsById.get(car.data.brandRef)} />
-              ))}
-            </div>
+          <div class="py-5">
+            {/*
+              `client:visible` — the table is below the carousel, so a visitor
+              who never scrolls never pays for it. It hydrates in time either
+              way, because it only becomes interactive once it is on screen.
+            */}
+            <EntryTable
+              client:visible
+              cars={catalogue}
+              caption="Every car in the catalog"
+              facets={[
+                { label: 'Body style', field: 'bodyStyles', terms: usedTerms('bodyStyles', bodyStyleVocab) },
+                { label: 'Powertrain', field: 'powertrains', terms: usedTerms('powertrains', powertrainVocab) },
+                { label: 'Era', field: 'eras', terms: usedTerms('eras', eraVocab) },
+              ]}
+            />
           </div>
         </Section>
       )
@@ -152,7 +178,7 @@ const browseAxes = AXES.map((axis) => ({
         class="underline decoration-line underline-offset-4 hover:text-ink"
         href={href('cars')}
       >
-        See every car &rarr;
+        The full catalog, with every facet &rarr;
       </a>
     </p>
   </div>

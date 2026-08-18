@@ -1,0 +1,147 @@
+---
+/**
+ * `/test-drive/` — pick a car to model (SPEC.md §9.5).
+ *
+ * Test Drive was previously reachable only from a car page, which is the wrong
+ * way round for someone who arrived wanting to *use* it: they had to already
+ * know which car they wanted and find its page first. This is the front door.
+ *
+ * **It lists only cars the physics can actually model**, by the same
+ * `hasTestDrive()` predicate that decides which Test Drive routes get built and
+ * which car pages offer the link. Three places, one predicate — so a link here
+ * can never lead to a page that was not built, and a car that *could* be
+ * modelled can never be missing from this list.
+ *
+ * Cars that cannot be modelled are shown too, greyed, saying what is missing.
+ * That is the honest version: hiding them would imply the catalogue is smaller
+ * than it is, and naming the gap is how someone knows what sourcing would fix.
+ */
+import Section from '../components/blocks/Section.astro';
+import BaseLayout from '../components/ui/BaseLayout.astro';
+import { getBrands, getCars } from '../lib/content/entries.ts';
+import { carHref, href, testDriveHref } from '../lib/content/href.ts';
+import { buildTestDriveData } from '../lib/content/testDrive.ts';
+import { formatYears } from '../lib/render/format.ts';
+
+const [cars, brands] = await Promise.all([getCars(), getBrands()]);
+const brandsById = new Map(brands.map((b) => [b.id, b]));
+
+const entries = cars
+  .filter((car) => car.data.kind !== 'model')
+  .map((car) => ({
+    car,
+    brand: brandsById.get(car.data.brandRef)!,
+    testDrive: buildTestDriveData(car.data),
+  }))
+  .sort((a, b) => a.car.data.name.localeCompare(b.car.data.name));
+
+const modellable = entries.filter((entry) => entry.testDrive.inputs !== null);
+const gaps = entries.filter((entry) => entry.testDrive.inputs === null);
+---
+
+<BaseLayout
+  searchKind="Cars"
+  title="Test Drive"
+  description="Model any car in the catalogue: acceleration, top speed, drag and energy use computed from its published specifications, plus a real wind tunnel running on your GPU."
+>
+  <header>
+    <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Test Drive</h1>
+    <p class="type-body mt-3 max-w-lede text-ink-secondary">
+      Put a car through the physics: acceleration and top speed integrated from
+      its own published specifications, the drag it has to push through, and
+      what it costs to hold a speed. Then open the wind tunnel and watch the air
+      go over it — a real lattice-Boltzmann solve on your GPU, not an animation.
+    </p>
+    <p class="type-body mt-3 max-w-readable text-sm text-ink-muted">
+      Every figure is <strong class="text-ink-secondary">modelled</strong>, and
+      shown beside the manufacturer's own where one exists. How it is computed,
+      and where it is weakest, is on the
+      <a class="underline decoration-line underline-offset-4 hover:text-ink" href={href('methodology')}>
+        methodology page</a
+      >.
+    </p>
+  </header>
+
+  <Section
+    title="Cars the model can run"
+    lede="A car needs power, mass, a drag coefficient and a frontal area before any of this means anything."
+  >
+    {
+      modellable.length > 0 ? (
+        <ul class="grid gap-3 py-5 md:grid-cols-2">
+          {modellable.map(({ car, brand, testDrive }) => (
+            <li class="min-w-0">
+              <a
+                href={testDriveHref(car.id)}
+                class="pressable flex h-full flex-col rounded-lg border border-line bg-surface-1 p-4 transition-colors duration-150 hover:border-line-strong hover:bg-surface-2"
+                style={`--brand-accent: ${brand.data.accentColor};`}
+              >
+                <span class="flex items-baseline justify-between gap-3">
+                  <span class="type-heading min-w-0 truncate text-base">{car.data.name}</span>
+                  <span
+                    aria-hidden="true"
+                    class="size-2 shrink-0 rounded-full"
+                    style="background-color: var(--brand-accent);"
+                  />
+                </span>
+                <span class="mt-1 text-xs text-ink-muted">
+                  {brand.data.name} · {formatYears(car.data.productionYears)}
+                </span>
+                <span class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-ink-secondary">
+                  {testDrive.published.zeroToHundredS !== null && (
+                    <span class="type-data tabular-nums">
+                      0–100 in {testDrive.published.zeroToHundredS} s
+                      <span class="text-ink-muted"> published</span>
+                    </span>
+                  )}
+                  {testDrive.published.topSpeedKmh !== null && (
+                    <span class="type-data tabular-nums">
+                      {testDrive.published.topSpeedKmh} km/h
+                      <span class="text-ink-muted"> published</span>
+                    </span>
+                  )}
+                </span>
+                <span class="mt-3 text-xs font-medium">Test Drive this car &rarr;</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="py-5 text-sm text-ink-muted">
+          No car in the catalogue has enough sourced data to model yet.
+        </p>
+      )
+    }
+  </Section>
+
+  {
+    gaps.length > 0 && (
+      <Section
+        title="Not yet"
+        lede="These are in the catalogue but cannot be modelled. What each one is missing is stated rather than implied — it is a gap in our sourcing, not a judgement about the car."
+      >
+        <ul class="flex flex-col gap-2 py-5">
+          {gaps.map(({ car, brand, testDrive }) => (
+            <li class="min-w-0 rounded-lg border border-dashed border-line px-4 py-3">
+              <p class="flex flex-wrap items-baseline gap-x-2 text-sm">
+                <a class="font-medium hover:underline" href={carHref(car.id)}>
+                  {car.data.name}
+                </a>
+                <span class="text-xs text-ink-muted">{brand.data.name}</span>
+              </p>
+              <p class="mt-1 text-xs text-ink-muted">
+                Needs {testDrive.missing.join(', ')}.
+              </p>
+            </li>
+          ))}
+        </ul>
+      </Section>
+    )
+  }
+
+  <p class="mt-8 text-sm">
+    <a class="underline decoration-line underline-offset-4 hover:text-ink" href={href('build')}>
+      Or build a car that does not exist and model that instead &rarr;
+    </a>
+  </p>
+</BaseLayout>

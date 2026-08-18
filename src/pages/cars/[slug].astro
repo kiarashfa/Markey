@@ -27,9 +27,15 @@ export async function getStaticPaths() {
 }
 
 const { car, brand, allCars } = Astro.props;
-const { Content } = await render(car.narrative);
+
+/**
+ * `remarkPluginFrontmatter` carries what the Markdown plugins wrote — here,
+ * the citation numbering `rehype-citations.ts` assigned to this entry's prose
+ * (SPEC.md §5.5). The template needs it to build the page's reference list.
+ */
+const { Content, remarkPluginFrontmatter } = await render(car.narrative);
 ---
 
-<CarPage car={car} brand={brand} allCars={allCars}>
+<CarPage car={car} brand={brand} allCars={allCars} proseFrontmatter={remarkPluginFrontmatter}>
   <Content />
 </CarPage>

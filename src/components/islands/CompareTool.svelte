@@ -336,7 +336,7 @@
       </table>
     </div>
 
-    <p class="max-w-prose text-xs leading-relaxed text-ink-muted">
+    <p class="max-w-readable text-xs leading-relaxed text-ink-muted">
       An em dash means we do not have that figure yet — it is not a zero, and a
       car is never marked "best" on a row where it is the only one with data.
       Figures are the best available across each entry's trims.

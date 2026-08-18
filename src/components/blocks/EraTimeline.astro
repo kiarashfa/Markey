@@ -1,0 +1,149 @@
+---
+/**
+ * The eras axis, as a timeline rather than a list of links.
+ *
+ * Every other browse axis is a set: coupé, saloon, estate — no order, so a grid
+ * of equal tiles is the right shape. Era is the one axis whose terms are
+ * *sequential*, and rendering a sequence as an unordered grid throws away the
+ * only structure it has. A decade means something in relation to the decade
+ * before it, and that is what a spine and a rail can show and a grid cannot.
+ *
+ * ## What it does not do
+ *
+ * **It does not draw decades nobody built a car in.** An empty stretch of rail
+ * between 1900 and 1970 would be a graph of our sourcing presented as a graph
+ * of automotive history. Where the catalogue skips decades, the gap is marked
+ * as a gap and says how many years it covers — honest about being absent
+ * rather than silently continuous.
+ *
+ * **It does not rank.** Entries shown per decade are the earliest ones, so the
+ * choice is a property of the data rather than an editorial judgement nobody
+ * made.
+ */
+import { carHref, taxonomyHref } from '../../lib/content/href.ts';
+import { formatYears } from '../../lib/render/format.ts';
+import type { JoinedBrand } from '../../lib/content/entries.ts';
+import type { TermView } from '../../lib/content/taxonomy-views.ts';
+
+interface Props {
+  terms: TermView[];
+  brandsById: Map<string, JoinedBrand>;
+  /** How many entries to show per decade before "and N more". */
+  preview?: number;
+}
+
+const { terms, brandsById, preview = 4 } = Astro.props;
+
+/** Oldest first: a timeline read top to bottom is read forwards. */
+const decades = [...terms].sort((a, b) => a.id.localeCompare(b.id));
+
+const decadeStart = (id: string) => Number.parseInt(id, 10);
+
+/**
+ * Each decade with the size of the gap that precedes it.
+ *
+ * Computed here rather than in the markup so the "no entries for N years"
+ * marker is a fact about the data, not a rendering trick.
+ */
+const rows = decades.map((term, index) => {
+  const previous = decades[index - 1];
+  const gapYears = previous ? decadeStart(term.id) - decadeStart(previous.id) - 10 : 0;
+  return {
+    term,
+    gapYears,
+    shown: [...term.cars].sort(
+      (a, b) => a.data.productionYears.start - b.data.productionYears.start,
+    ),
+  };
+});
+---
+
+<ol class="relative flex flex-col">
+  {
+    rows.map(({ term, gapYears, shown }) => (
+      <li class="group/decade relative min-w-0">
+        {gapYears > 0 && (
+          <div class="flex items-center gap-3 py-4 pl-[1.375rem]">
+            {/* A dashed spine, so the break in the record is visible as a break. */}
+            <span
+              aria-hidden="true"
+              class="absolute left-[0.4375rem] top-0 h-full w-px border-l border-dashed border-line"
+            />
+            <span class="ml-3 rounded-full border border-dashed border-line px-2.5 py-1 text-xs text-ink-muted">
+              {gapYears} years with nothing in the catalog yet
+            </span>
+          </div>
+        )}
+
+        <div class="relative grid grid-cols-[1.375rem_minmax(0,1fr)] gap-x-3 pb-8">
+          {/* The rail. It stops at the last decade rather than running off the
+              end of the list into nothing — hence the named group, since the
+              element that is last is the `<li>`, not this span. */}
+          <span
+            aria-hidden="true"
+            class="absolute bottom-0 left-[0.4375rem] top-3 w-px bg-line group-last/decade:hidden"
+          />
+          <span
+            aria-hidden="true"
+            class="relative z-10 mt-1.5 size-[0.9375rem] rounded-full border-2 border-[var(--color-surface-0)] bg-line-strong"
+          />
+
+          <div class="min-w-0">
+            <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <a
+                href={taxonomyHref('era', term.id)}
+                class="type-title text-xl hover:underline decoration-line underline-offset-4"
+              >
+                {term.label}
+              </a>
+              <span class="type-data text-xs tabular-nums text-ink-muted">
+                {term.cars.length} {term.cars.length === 1 ? 'entry' : 'entries'}
+              </span>
+            </div>
+
+            <ul class="mt-3 grid gap-2 sm:grid-cols-2">
+              {shown.slice(0, preview).map((car) => {
+                const brand = brandsById.get(car.data.brandRef);
+                return (
+                  <li class="min-w-0">
+                    <a
+                      href={carHref(car.id)}
+                      class="pressable flex min-w-0 flex-col rounded-lg border border-line bg-surface-1 p-3 transition-colors duration-150 hover:border-line-strong hover:bg-surface-2"
+                      style={brand ? `--brand-accent: ${brand.data.accentColor};` : undefined}
+                    >
+                      <span class="flex items-baseline gap-2">
+                        {brand && (
+                          <span
+                            aria-hidden="true"
+                            class="size-2 shrink-0 rounded-full"
+                            style="background-color: var(--brand-accent);"
+                          />
+                        )}
+                        <span class="min-w-0 truncate text-sm font-medium">{car.data.name}</span>
+                      </span>
+                      <span class="type-data mt-0.5 pl-4 text-xs tabular-nums text-ink-muted">
+                        {formatYears(car.data.productionYears)}
+                      </span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+
+            <p class="mt-3 text-sm">
+              <a
+                href={taxonomyHref('era', term.id)}
+                class="underline decoration-line underline-offset-4 text-ink-secondary hover:text-ink"
+              >
+                {shown.length > preview
+                  ? `All ${shown.length} entries from the ${term.label}`
+                  : `The ${term.label} in full`}
+                {' '}&rarr;
+              </a>
+            </p>
+          </div>
+        </div>
+      </li>
+    ))
+  }
+</ol>

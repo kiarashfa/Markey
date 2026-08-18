@@ -1,0 +1,94 @@
+---
+/**
+ * A page's numbered reference list — SPEC.md §5.5.
+ *
+ * The counterpart to the `[1]` markers in the prose and the `[7]` markers in
+ * the spec tables. Every row is here because something on this page points at
+ * it, and every row carries what makes the claim checkable: the revision for a
+ * Wikipedia article, the date it was read, the licence it is used under.
+ *
+ * The numbering is not decoration. A reader who wants to check one figure
+ * should be able to go from the figure to the exact document in one movement,
+ * which is what a footnote number has always been for and what a page-long
+ * "Sources" paragraph never achieves.
+ */
+import { referenceDetails, type PageReference } from '../../lib/render/citations.ts';
+
+interface Props {
+  references: PageReference[];
+  /** Overrides the standing explanation where a page needs its own. */
+  lede?: string;
+}
+
+const { references, lede } = Astro.props;
+
+const TYPE_LABEL: Record<string, string> = {
+  wikipedia: 'Wikipedia',
+  wikidata: 'Wikidata',
+  commons: 'Wikimedia Commons',
+  web: 'Web',
+  book: 'Book',
+  periodical: 'Periodical',
+  dataset: 'Dataset',
+  'press-release': 'Press release',
+  'manufacturer-spec': "Manufacturer's specification",
+};
+---
+
+{
+  references.length > 0 && (
+    <section class="mt-14 border-t border-line pt-8" aria-labelledby="references-heading">
+      <h2 id="references-heading" class="type-title text-lg">
+        References
+      </h2>
+      <p class="type-body mt-2 max-w-readable text-sm text-ink-muted">
+        {lede ??
+          'Every sourced figure and every cited claim on this page, numbered. Wikipedia articles record the revision they were read at, because the article will have changed by the time you check it.'}
+      </p>
+
+      <ol class="mt-6 flex flex-col gap-3">
+        {references.map((reference) => (
+          <li
+            id={`ref-${reference.number}`}
+            class="grid scroll-mt-24 grid-cols-[2.25rem_minmax(0,1fr)] gap-x-2 border-b border-line/60 pb-3 last:border-b-0"
+          >
+            <span class="type-data pt-0.5 text-sm tabular-nums text-ink-muted">
+              [{reference.number}]
+            </span>
+            <div class="min-w-0">
+              <p class="text-sm leading-relaxed">
+                {reference.entry.url ? (
+                  <a
+                    class="font-medium underline decoration-line underline-offset-4 hover:text-ink"
+                    href={reference.entry.url}
+                    rel="nofollow noopener"
+                    target="_blank"
+                  >
+                    {reference.entry.title}
+                  </a>
+                ) : (
+                  <span class="font-medium">{reference.entry.title}</span>
+                )}
+                <span class="text-ink-muted"> — {referenceDetails(reference.entry)}</span>
+              </p>
+
+              <p class="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-ink-muted">
+                <span class="rounded-full border border-line px-2 py-0.5">
+                  {TYPE_LABEL[reference.entry.type] ?? reference.entry.type}
+                </span>
+                {reference.entry.license && <span>{reference.entry.license}</span>}
+                {reference.fromDataOnly && <span>Cited by the specifications</span>}
+              </p>
+
+              {reference.entry.note && (
+                <p class="mt-1.5 max-w-readable text-xs leading-relaxed text-ink-muted">
+                  {reference.entry.note}
+                </p>
+              )}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}

@@ -1,0 +1,65 @@
+---
+/**
+ * The four taxonomy axes as one horizontal card.
+ *
+ * Previously four stacked rows of `TagList`, each a label and some pills. That
+ * read as four unrelated things when it is one thing: how this entry is
+ * classified. One card with four columns says so structurally, and the dividers
+ * do the work a heading would otherwise have to.
+ *
+ * SPEC.md §2 principle 2 is unchanged — every term links to a *view over*
+ * tagged entries, never to a place the car "lives", so re-tagging changes which
+ * lists an entry appears in and never breaks a link to the entry itself.
+ *
+ * **The dividers are the grid's own background showing through a 1px gap.** The
+ * alternative — a left border switched off for the first cell of each row —
+ * needs `nth-child` arithmetic that has to change every time the column count
+ * changes at a breakpoint, and is wrong the moment an axis is missing. A hairline
+ * gap over a coloured backing draws every divider, in both directions, at any
+ * column count, with no arithmetic at all.
+ */
+import { taxonomyHref } from '../../lib/content/href.ts';
+
+export interface StripAxis {
+  label: string;
+  axis: string;
+  terms: { id: string; label: string }[];
+}
+
+interface Props {
+  axes: StripAxis[];
+}
+
+const { axes } = Astro.props;
+
+/** An axis with nothing tagged is left out rather than shown as an empty column. */
+const present = axes.filter((axis) => axis.terms.length > 0);
+---
+
+{
+  present.length > 0 && (
+    <div class="overflow-hidden rounded-xl border border-line bg-line">
+      <div class="grid grid-cols-2 gap-px sm:grid-cols-4">
+        {present.map((axis) => (
+          <div class="min-w-0 bg-surface-1 px-4 py-3.5">
+            <p class="text-[0.6875rem] font-medium uppercase tracking-[0.1em] text-ink-muted">
+              {axis.label}
+            </p>
+            <ul class="mt-2 flex flex-wrap gap-1.5">
+              {axis.terms.map((term) => (
+                <li class="min-w-0">
+                  <a
+                    href={taxonomyHref(axis.axis, term.id)}
+                    class="pressable inline-block rounded-full border border-line bg-surface-2 px-2.5 py-1 text-xs font-medium text-ink-secondary transition-colors duration-150 hover:border-line-strong hover:text-ink"
+                  >
+                    {term.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}

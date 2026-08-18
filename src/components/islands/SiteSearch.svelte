@@ -15,10 +15,8 @@
    * box that swallows what you type — a search field that silently does
    * nothing is the most frustrating possible failure.
    *
-   * The import is a runtime `import(/* @vite-ignore *\/ url)` on a path built
-   * at call time. Vite must not try to resolve it: the file is not in `src/`,
-   * does not exist during the build that would bundle it, and is fetched from
-   * the deployed site like any other asset.
+   * The index is fetched at runtime from a path the page hands over — see
+   * `load()` for why that import is written the way it is.
    */
 
   interface Props {
@@ -74,7 +72,19 @@
   async function load(): Promise<PagefindModule | null> {
     if (pagefind) return pagefind;
     try {
-      const module = (await import(/* @vite-ignore */ indexUrl)) as PagefindModule;
+      /*
+       * Copied to a plain local *before* the import.
+       *
+       * `indexUrl` is a `$props()` getter, and Svelte wraps a reactive read
+       * inside an `await` in its reactivity-loss tracker — which put the
+       * `/* @vite-ignore *\/` comment outside the `import()` call in the
+       * compiled output, so Vite never saw it and warned on every dev start
+       * that it could not analyse the import. It cannot: the file is not in
+       * `src/`, does not exist during the build that would bundle it, and is
+       * fetched from the deployed site like any other asset.
+       */
+      const url = indexUrl;
+      const module = (await import(/* @vite-ignore */ url)) as PagefindModule;
       await module.init();
       pagefind = module;
       available = true;
@@ -205,12 +215,12 @@
   {#if available === false}
     <div class="rounded-lg border border-dashed border-line bg-surface-1 p-6">
       <h2 class="type-heading text-base">The search index isn't here</h2>
-      <p class="mt-2 max-w-prose text-sm text-ink-secondary">
+      <p class="mt-2 max-w-readable text-sm text-ink-secondary">
         Full-text search reads an index built from the finished pages, after the
         site is built. During local development that index does not exist yet,
         so there is nothing to search rather than something searching badly.
       </p>
-      <p class="mt-3 max-w-prose text-sm text-ink-secondary">
+      <p class="mt-3 max-w-readable text-sm text-ink-secondary">
         Everything is still reachable without it: the catalog's own filters work
         on structured data and need no index at all.
       </p>
@@ -224,7 +234,7 @@
       <p class="text-sm text-ink-secondary">
         Nothing on the site matches <strong class="text-ink">{query.trim()}</strong>.
       </p>
-      <p class="mt-2 max-w-prose text-xs text-ink-muted">
+      <p class="mt-2 max-w-readable text-xs text-ink-muted">
         The catalog is deliberately small while the model and the sourcing
         pipeline are proven. A missing car is a gap in our research, not a
         statement that the car is unimportant.

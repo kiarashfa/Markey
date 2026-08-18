@@ -36,7 +36,7 @@ const formulae = [
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Methodology</h1>
-    <p class="type-body mt-3 max-w-prose text-lg text-ink-secondary">
+    <p class="type-body mt-3 max-w-lede text-lg text-ink-secondary">
       Every figure this site calculates is published as a formula, not asserted
       as a result. If you disagree with a number here, you can check the working.
     </p>
@@ -46,7 +46,7 @@ const formulae = [
     title="What “modelled” means"
     lede="The most important thing on this page."
   >
-    <div class="type-body flex max-w-prose flex-col gap-3 py-5 text-sm text-ink-secondary">
+    <div class="type-body flex max-w-readable flex-col gap-3 py-5 text-sm text-ink-secondary">
       <p>
         Where a manufacturer published a figure, that is what the spec sheet
         shows. A modelled figure never overwrites a real one — it appears
@@ -70,7 +70,7 @@ const formulae = [
   </Section>
 
   <Section title="Units">
-    <div class="type-body flex max-w-prose flex-col gap-3 py-5 text-sm text-ink-secondary">
+    <div class="type-body flex max-w-readable flex-col gap-3 py-5 text-sm text-ink-secondary">
       <p>
         Everything is stored in SI. Imperial figures are computed for display
         when you ask for them and are never stored or indexed, so the two cannot
@@ -115,7 +115,7 @@ const formulae = [
                 {constant.unit ? ` ${constant.unit}` : ''}
               </span>
             </dt>
-            <dd class="mt-1 max-w-prose text-xs leading-relaxed text-ink-muted">
+            <dd class="mt-1 max-w-readable text-xs leading-relaxed text-ink-muted">
               {constant.basis}
             </dd>
           </div>
@@ -179,7 +179,7 @@ const formulae = [
         ))
       }
     </dl>
-    <p class="max-w-prose pb-5 text-xs leading-relaxed text-ink-muted">
+    <p class="max-w-readable pb-5 text-xs leading-relaxed text-ink-muted">
       A car is never scored on data it does not have. Missing sub-factors are
       excluded and the remaining weights renormalised, and where fewer than half
       the factors have data behind them the blended number is withheld entirely
@@ -203,12 +203,12 @@ const formulae = [
                 {(decay.rate * 100).toFixed(0)}% / yr
               </span>
             </dt>
-            <dd class="mt-1 max-w-prose text-xs leading-relaxed text-ink-muted">{decay.basis}</dd>
+            <dd class="mt-1 max-w-readable text-xs leading-relaxed text-ink-muted">{decay.basis}</dd>
           </div>
         ))
       }
     </dl>
-    <p class="max-w-prose pb-5 text-xs leading-relaxed text-ink-muted">
+    <p class="max-w-readable pb-5 text-xs leading-relaxed text-ink-muted">
       Decay is exponential — a percentage of remaining value each year — because
       that is how cars actually behave. A linear model would reach zero on a
       specific date, which no car does. If you log real valuations against a car
@@ -235,7 +235,7 @@ const formulae = [
     title="The wind tunnel, and what its numbers are worth"
     lede="A real lattice-Boltzmann solver, and an honest account of the one place the obvious validation turned out to be meaningless."
   >
-    <div class="type-body flex max-w-prose flex-col gap-3 py-5 text-sm text-ink-secondary">
+    <div class="type-body flex max-w-readable flex-col gap-3 py-5 text-sm text-ink-secondary">
       <p>
         The solver is a D3Q19 lattice-Boltzmann method with two-relaxation-time
         collision, halfway bounce-back walls, and drag measured by momentum
@@ -276,7 +276,7 @@ const formulae = [
       </div>
       <div class="border-b border-line pb-3">
         <dt class="type-heading text-sm">Is that bias a bug?</dt>
-        <dd class="mt-1 max-w-prose leading-relaxed text-ink-secondary">
+        <dd class="mt-1 max-w-readable leading-relaxed text-ink-secondary">
           It does not appear to be. Staircase bounce-back walls over-predict
           drag at low resolution — the modelled wall is rougher than the shape
           it stands for. Measured across two grid sizes the ratio held at 1.37
@@ -286,7 +286,7 @@ const formulae = [
       </div>
       <div>
         <dt class="type-heading text-sm">What the gate actually asserts</dt>
-        <dd class="mt-1 max-w-prose leading-relaxed text-ink-secondary">
+        <dd class="mt-1 max-w-readable leading-relaxed text-ink-secondary">
           That the solver stays finite; that drag opposes the flow; that force
           scales with the square of velocity, as the definition of Cd requires;
           that a streamlined body has less drag than a bluff one at matched
@@ -296,7 +296,7 @@ const formulae = [
       </div>
     </dl>
 
-    <p class="max-w-prose pb-5 text-xs leading-relaxed text-ink-muted">
+    <p class="max-w-readable pb-5 text-xs leading-relaxed text-ink-muted">
       <strong class="text-ink-secondary">Not yet claimed:</strong> absolute
       agreement with the four published high-Reynolds figures. That needs the
       GPU solver at full grid resolution, and the numbers will be published here

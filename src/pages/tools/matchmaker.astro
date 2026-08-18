@@ -12,7 +12,9 @@ import { href } from '../../lib/content/href.ts';
 import { bodyStyles, powertrains } from '../../schemas/taxonomy.ts';
 
 const catalogue = await buildCatalogue();
-const terms = (list: { id: string; label: string }[]) => list.map((t) => ({ id: t.id, label: t.label }));
+/** Descriptions travel too: they are what turns a pill into a decision. */
+const terms = (list: { id: string; label: string; description?: string }[]) =>
+  list.map((t) => ({ id: t.id, label: t.label, description: t.description }));
 ---
 
 <BaseLayout
@@ -22,7 +24,7 @@ const terms = (list: { id: string; label: string }[]) => list.map((t) => ({ id: 
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Matchmaker</h1>
-    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+    <p class="type-body mt-3 max-w-lede text-ink-secondary">
       Dealbreakers rule cars out; preferences put what is left in an order. The
       percentage compares the survivors against each other, not against an
       abstract ideal. For filtering without an opinion about the order, use{' '}

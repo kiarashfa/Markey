@@ -7,29 +7,63 @@
  * hand-maintained, so it cannot fall out of date with the catalog.
  */
 import Breadcrumbs from '../blocks/Breadcrumbs.astro';
-import CarCard from '../blocks/CarCard.astro';
+import EntryTable from '../islands/EntryTable.svelte';
 import FactRow from '../blocks/FactRow.astro';
 import HeroBand from '../blocks/HeroBand.astro';
+import References from '../blocks/References.astro';
 import Section from '../blocks/Section.astro';
 import BaseLayout from '../ui/BaseLayout.astro';
 
+import type { CatalogueCar } from '../../lib/content/catalogue.ts';
 import type { JoinedBrand, JoinedCar } from '../../lib/content/entries.ts';
-import { brandHref, href, taxonomyHref } from '../../lib/content/href.ts';
+import { bodyStyles as bodyStyleVocab, eras as eraVocab } from '../../schemas/taxonomy.ts';
+import { brandHref, carHref, href, taxonomyHref } from '../../lib/content/href.ts';
+import { formatYears } from '../../lib/render/format.ts';
 import { countrySlug } from '../../lib/content/taxonomy-views.ts';
+import {
+  buildPageReferences,
+  dataCitationsOf,
+  proseCitationsOf,
+} from '../../lib/render/citations.ts';
+import { BIBLIOGRAPHY } from '../../lib/content/bibliography.ts';
 
 interface Props {
   brand: JoinedBrand;
   cars: JoinedCar[];
+  /** This brand's generations and halo trims, flattened (SPEC.md §9.1). */
+  entries: CatalogueCar[];
   parent?: JoinedBrand;
   owned: JoinedBrand[];
+  proseFrontmatter?: unknown;
 }
 
-const { brand, cars, parent, owned } = Astro.props;
+const { brand, cars, entries, parent, owned, proseFrontmatter } = Astro.props;
 const { data } = brand;
+
+/** This page's own numbered references — SPEC.md §5.5. */
+const { list: references } = buildPageReferences(
+  proseCitationsOf(proseFrontmatter),
+  dataCitationsOf(data),
+  BIBLIOGRAPHY,
+);
 
 const models = cars
   .filter((c) => c.data.brandRef === brand.id && c.data.kind === 'model')
   .sort((a, b) => a.data.productionYears.start - b.data.productionYears.start);
+
+/**
+ * Only the terms this brand's own cars actually use.
+ *
+ * The full vocabulary would put fourteen body-style filters above a brand with
+ * two, most of them disabled — a control that is mostly unusable reads as
+ * broken rather than as complete.
+ */
+const usedTerms = (field: 'bodyStyles' | 'eras', vocab: { terms: { id: string; label: string }[] }) => {
+  const used = new Set(entries.flatMap((car) => car[field]));
+  return vocab.terms.filter((term) => used.has(term.id)).map(({ id, label }) => ({ id, label }));
+};
+const bodyStyleTerms = usedTerms('bodyStyles', bodyStyleVocab);
+const eraTerms = usedTerms('eras', eraVocab);
 
 const stats = [
   { label: 'Founded', value: String(data.founded) },
@@ -55,7 +89,7 @@ const stats = [
     stats={stats}
   />
 
-  <div class="mx-auto w-full max-w-5xl px-5 py-8 sm:px-8 sm:py-10">
+  <div class="mx-auto w-full max-w-6xl px-5 py-8 sm:px-8 sm:py-10">
     <Breadcrumbs
       crumbs={[
         { label: 'Brands', url: href('brands') },
@@ -63,7 +97,7 @@ const stats = [
       ]}
     />
 
-    <article class="prose type-body mt-6 max-w-prose text-[0.975rem] leading-relaxed text-ink-secondary">
+    <article class="prose type-body mt-6 max-w-readable text-[0.975rem] leading-relaxed text-ink-secondary">
       <slot />
     </article>
 
@@ -90,27 +124,61 @@ const stats = [
     </Section>
 
     {
-      models.length > 0 ? (
+      models.length > 0 && (
         <Section
-          title="Nameplates"
-          lede="Computed from every entry that names this brand — never a hand-maintained list."
+          title={`Nameplates (${models.length})`}
+          lede="Computed from every entry that names this brand — never a hand-maintained list. Each nameplate is a hub over its own generations."
         >
-          <div class="-mx-4 py-4 sm:-mx-5">
-            <div class="grid gap-3 px-4 sm:px-5 md:grid-cols-2">
-              {models.map((car) => (
-                <CarCard car={car} brand={brand} />
-              ))}
-            </div>
-          </div>
-        </Section>
-      ) : (
-        <Section title="Nameplates">
-          <p class="py-5 text-sm text-ink-muted">
-            No nameplates from this brand have been written up yet.
-          </p>
+          {/*
+            Nameplates stay a plain row of links rather than a table: a hub
+            spans decades and several body styles, so it has no power, no
+            0–100 and no weight — every column the table exists to sort on
+            would be empty. The generations underneath them are where the
+            specifications live, and that is what the table below shows.
+          */}
+          <ul class="flex flex-wrap gap-2 py-5">
+            {models.map((car) => (
+              <li>
+                <a
+                  href={carHref(car.id)}
+                  class="pressable inline-flex items-baseline gap-2 rounded-full border border-line bg-surface-1 px-3.5 py-1.5 text-sm transition-colors duration-150 hover:border-line-strong hover:bg-surface-2"
+                >
+                  <span class="font-medium">{car.data.name}</span>
+                  <span class="type-data text-xs tabular-nums text-ink-muted">
+                    {formatYears(car.data.productionYears)}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </Section>
       )
     }
+
+    <Section
+      title={`Cars (${entries.length})`}
+      lede="Every generation and halo trim from this brand, with the figures each one carries. Sort by any column; a car we have not sourced a figure for sorts last rather than as a zero."
+    >
+      <div class="py-5">
+        {entries.length > 0 ? (
+          <EntryTable
+            client:visible
+            cars={entries}
+            showBrand={false}
+            caption={`Cars from ${data.name}`}
+            facets={[
+              { label: 'Body style', field: 'bodyStyles', terms: bodyStyleTerms },
+              { label: 'Era', field: 'eras', terms: eraTerms },
+            ]}
+            emptyNote="No car from this brand matches those filters."
+          />
+        ) : (
+          <p class="text-sm text-ink-muted">
+            No generation from this brand has been written up yet.
+          </p>
+        )}
+      </div>
+    </Section>
 
     <Section title="Sources & attribution">
       <div class="flex flex-col gap-4 py-4">
@@ -138,7 +206,7 @@ const stats = [
           photography is — and the trademark position deserves a sentence a
           reader will actually see, not one they have to go looking for.
         */}
-        <p class="max-w-prose text-xs leading-relaxed text-ink-muted">
+        <p class="max-w-readable text-xs leading-relaxed text-ink-muted">
           <span class="text-ink-secondary">Logo:</span>{' '}
           <a
             class="underline decoration-line underline-offset-2 hover:text-ink"
@@ -153,12 +221,13 @@ const stats = [
 
         {
           data.accentColorNote && (
-            <p class="max-w-prose text-xs leading-relaxed text-ink-muted">
+            <p class="max-w-readable text-xs leading-relaxed text-ink-muted">
               <span class="text-ink-secondary">Accent colour:</span> {data.accentColorNote}
             </p>
           )
         }
       </div>
     </Section>
+    <References references={references} />
   </div>
 </BaseLayout>

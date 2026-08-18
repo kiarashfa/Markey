@@ -6,21 +6,45 @@
  * Nav labels name their contents rather than hiding behind generic umbrellas
  * (apple-design §16, "direct, specific labels"): "Browse" would tell a visitor
  * nothing that "Body styles" doesn't tell them better.
+ *
+ * **The nav is split into two groups.** The catalogue — the things the site is
+ * *about* — and the tools you do something with. They were one undifferentiated
+ * row of seven, which is where a visitor stops reading and starts scanning.
+ *
+ * The right cluster is search and theme, both reduced to a single icon each.
+ * Between them they used to occupy four slots; Test Drive and My Garage now
+ * have those, and neither was reachable from the chrome at all before.
  */
+import SearchPopover from '../islands/SearchPopover.svelte';
 import ThemeToggle from '../islands/ThemeToggle.svelte';
-import { href, taxonomyHref } from '../../lib/content/href.ts';
+import { assetHref, href, taxonomyHref } from '../../lib/content/href.ts';
 
-const nav = [
+/** The catalogue: what the site holds. */
+const browse = [
   { label: 'Cars', url: href('cars') },
   { label: 'Brands', url: href('brands') },
-  { label: 'Compare', url: href('compare') },
-  { label: 'Build', url: href('build') },
-  { label: 'Tools', url: href('tools') },
   { label: 'Body styles', url: taxonomyHref('body-style') },
   { label: 'Eras', url: taxonomyHref('era') },
 ];
 
+/** The tools: what you can do with it. */
+const tools = [
+  { label: 'Compare', url: href('compare') },
+  { label: 'Test Drive', url: href('test-drive') },
+  { label: 'Build', url: href('build') },
+  { label: 'Garage', url: href('garage') },
+  { label: 'Tools', url: href('tools') },
+];
+
 const current = Astro.url.pathname;
+
+/**
+ * Marks the section a page belongs to, not just an exact URL match.
+ *
+ * `/cars/toyota-86-zn6/` should light up "Cars". The homepage is excluded
+ * because `/Markey/` is a prefix of literally every page.
+ */
+const isCurrent = (url: string) => url !== href() && current.startsWith(url);
 ---
 
 <header
@@ -33,19 +57,38 @@ const current = Astro.url.pathname;
     Skip to content
   </a>
 
-  <div class="mx-auto flex w-full max-w-5xl flex-wrap items-center gap-x-5 gap-y-2 px-5 py-3 sm:px-8">
-    <a href={href()} class="pressable type-title shrink-0 text-lg tracking-tight">
-      Markey
-    </a>
+  <div class="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 px-5 py-3 sm:px-8">
+    <a href={href()} class="pressable type-title shrink-0 text-lg tracking-tight"> Markey </a>
 
-    <nav aria-label="Primary" class="min-w-0 flex-1 order-3 basis-full sm:order-none sm:basis-auto">
-      <ul class="flex items-center gap-1 overflow-x-auto text-sm [scrollbar-width:none] sm:gap-2">
+    <nav
+      aria-label="Primary"
+      class="order-3 min-w-0 flex-1 basis-full sm:order-none sm:basis-auto"
+    >
+      <ul class="flex items-center gap-0.5 overflow-x-auto text-sm [scrollbar-width:none]">
         {
-          nav.map((item) => (
+          browse.map((item) => (
             <li>
               <a
                 href={item.url}
-                aria-current={current.startsWith(item.url) ? 'page' : undefined}
+                aria-current={isCurrent(item.url) ? 'page' : undefined}
+                class="block whitespace-nowrap rounded-md px-2.5 py-1.5 text-ink-secondary transition-colors duration-150 hover:bg-surface-2 hover:text-ink aria-[current=page]:bg-surface-2 aria-[current=page]:text-ink"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+
+        {/* A hairline, not a gap: the two groups are different in kind, and a
+            wider gap alone reads as an accident of spacing. */}
+        <li aria-hidden="true" class="mx-1.5 h-4 w-px shrink-0 bg-line"></li>
+
+        {
+          tools.map((item) => (
+            <li>
+              <a
+                href={item.url}
+                aria-current={isCurrent(item.url) ? 'page' : undefined}
                 class="block whitespace-nowrap rounded-md px-2.5 py-1.5 text-ink-secondary transition-colors duration-150 hover:bg-surface-2 hover:text-ink aria-[current=page]:bg-surface-2 aria-[current=page]:text-ink"
               >
                 {item.label}
@@ -57,36 +100,20 @@ const current = Astro.url.pathname;
     </nav>
 
     {/*
-      Search sits in the right cluster rather than in the nav list: the nav
-      scrolls horizontally on a narrow screen and search is the one thing that
-      must never scroll out of reach. A plain link, not a box — the box lives
-      on the page it leads to, where its index is loaded and its results have
-      room, and a header box that cannot search until an index downloads would
-      be a control that lies about being ready.
+      `client:load` on both. A theme control that only works after scrolling
+      would be worse than none, and it is the first thing some visitors reach
+      for; the search popover binds a global `/` shortcut, which has to exist
+      before the first keypress rather than after an observer fires.
 
-      `client:load` on the theme control — a toggle that only works after
-      scrolling would be worse than none, and it is the first thing some
-      visitors reach for.
+      Neither costs much: the theme island is tiny, and the search index — the
+      expensive part — is only fetched when the panel is opened.
     */}
-    <div class="ml-auto flex shrink-0 items-center gap-1 sm:ml-0">
-      <a
-        href={href('search')}
-        aria-current={current.startsWith(href('search')) ? 'page' : undefined}
-        class="flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-sm text-ink-secondary transition-colors duration-150 hover:bg-surface-2 hover:text-ink aria-[current=page]:bg-surface-2 aria-[current=page]:text-ink"
-      >
-        <svg
-          aria-hidden="true"
-          viewBox="0 0 16 16"
-          class="size-4"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.6"
-        >
-          <circle cx="7" cy="7" r="4.5"></circle>
-          <path d="M10.5 10.5 14 14" stroke-linecap="round"></path>
-        </svg>
-        <span class="max-sm:sr-only">Search</span>
-      </a>
+    <div class="ml-auto flex shrink-0 items-center gap-1.5 sm:ml-0">
+      <SearchPopover
+        client:load
+        indexUrl={assetHref('pagefind/pagefind.js')}
+        searchUrl={href('search')}
+      />
       <ThemeToggle client:load />
     </div>
   </div>

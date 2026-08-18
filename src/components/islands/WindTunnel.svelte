@@ -462,7 +462,7 @@
 {#if supported === false}
   <div class="rounded-lg border border-dashed border-line bg-surface-1 p-6">
     <h3 class="type-heading text-base">The wind tunnel can't run on this device</h3>
-    <p class="mt-2 max-w-prose text-sm text-ink-secondary">
+    <p class="mt-2 max-w-readable text-sm text-ink-secondary">
       It needs WebGL2 with floating-point render targets, which this browser
       doesn't provide. Nothing else on the page depends on it — the instrumented
       readout is the baseline and is unaffected.
@@ -471,7 +471,7 @@
 {:else if !canModel}
   <div class="rounded-lg border border-dashed border-line bg-surface-1 p-6">
     <h3 class="type-heading text-base">No dimensions to build a body from</h3>
-    <p class="mt-2 max-w-prose text-sm text-ink-secondary">
+    <p class="mt-2 max-w-readable text-sm text-ink-secondary">
       The tunnel fits a representative body to a length, a width and a height.
       {variant === 'build'
         ? 'Give the build all three and it will run.'
@@ -867,7 +867,7 @@
 
     {#if diverged}
       <p
-        class="max-w-prose rounded-lg border border-status-conflicting/40 bg-status-conflicting/10 p-3 text-sm leading-relaxed"
+        class="max-w-readable rounded-lg border border-status-conflicting/40 bg-status-conflicting/10 p-3 text-sm leading-relaxed"
       >
         <strong>The solve went unstable and has been stopped.</strong> A
         lattice-Boltzmann run can go non-finite, and when it does everything
@@ -962,7 +962,7 @@
     </div>
 
     <div class="rounded-lg border border-line bg-surface-2 p-4">
-      <p class="max-w-prose text-xs leading-relaxed text-ink-secondary">
+      <p class="max-w-readable text-xs leading-relaxed text-ink-secondary">
         <strong class="text-ink">What you are looking at, stated plainly.</strong>
         A real lattice-Boltzmann solver running on your GPU — the smoke is carried
         by the velocity field it computes, not a decorative particle effect, and

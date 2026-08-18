@@ -4,15 +4,17 @@
  *
  * Not deferrable. The moment the site publishes anything derived from
  * CC BY-SA sources, attribution is a licence obligation rather than a courtesy.
- * The per-figure citations on each page do the specific work; this page is the
- * site-wide acknowledgement, and it is generated from the real bibliography so
- * it cannot fall behind the content.
+ *
+ * This page carries only what is genuinely **site-wide**: the licences the data
+ * is used under, the trademark position, and the software and methods the wind
+ * tunnel is built from. The specific work — which document supports which
+ * figure — belongs on the page making the claim, as a numbered reference list
+ * (SPEC.md §5.5). A single list of every source behind a thousand cars would
+ * separate each citation from the sentence it supports, which is exactly the
+ * failure the per-image photo credits already avoid.
  */
 import Section from '../components/blocks/Section.astro';
 import BaseLayout from '../components/ui/BaseLayout.astro';
-import bibliography from '../data/references.json' with { type: 'json' };
-
-const entries = [...bibliography.entries].sort((a, b) => a.title.localeCompare(b.title));
 ---
 
 <BaseLayout
@@ -22,7 +24,7 @@ const entries = [...bibliography.entries].sort((a, b) => a.title.localeCompare(b
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Attributions</h1>
-    <p class="type-body mt-3 max-w-prose text-lg text-ink-secondary">
+    <p class="type-body mt-3 max-w-lede text-lg text-ink-secondary">
       This site is assembled from other people's work. Here is whose.
     </p>
   </header>
@@ -66,7 +68,7 @@ const entries = [...bibliography.entries].sort((a, b) => a.title.localeCompare(b
     title="Software and methods"
     lede="This project attributes every photograph and every cited number, so a whole solver belongs in the list too."
   >
-    <div class="type-body flex max-w-prose flex-col gap-3 py-5 text-sm text-ink-secondary">
+    <div class="type-body flex max-w-readable flex-col gap-3 py-5 text-sm text-ink-secondary">
       <p>
         Markey's wind tunnel is our own implementation, but its structure
         follows <strong class="text-ink">Aeolus T-1</strong>, a browser
@@ -95,42 +97,34 @@ const entries = [...bibliography.entries].sort((a, b) => a.title.localeCompare(b
     </div>
   </Section>
 
-  <Section title={`Bibliography (${entries.length})`}>
-    <ul class="flex flex-col gap-4 py-5 text-sm">
-      {
-        entries.map((entry) => (
-          <li>
-            <p class="type-heading text-[0.9375rem]">
-              {entry.url ? (
-                <a
-                  class="underline decoration-line underline-offset-2 hover:text-ink"
-                  href={entry.url}
-                  rel="nofollow noopener"
-                  target="_blank"
-                >
-                  {entry.title}
-                </a>
-              ) : (
-                entry.title
-              )}
-            </p>
-            <p class="type-data mt-1 text-xs text-ink-muted">
-              {[
-                entry.publisher,
-                entry.author,
-                entry.revision ? `revision ${entry.revision}` : null,
-                entry.accessed ? `read ${entry.accessed}` : null,
-                entry.license,
-              ]
-                .filter(Boolean)
-                .join(' · ')}
-            </p>
-            {entry.note && (
-              <p class="mt-1 max-w-prose text-xs leading-relaxed text-ink-muted">{entry.note}</p>
-            )}
-          </li>
-        ))
-      }
-    </ul>
+  <Section
+    title="Where the citations live"
+    lede="Not here. Every page carries its own numbered reference list, covering exactly the sources that page rests on."
+  >
+    <div class="type-body flex max-w-readable flex-col gap-3 py-5 text-sm text-ink-secondary">
+      <p>
+        A single site-wide bibliography was the first thing built here, and it
+        was the wrong shape. With four cars it held eight entries; at a thousand
+        cars it would hold thousands, and a reader checking one figure on one
+        car page would have to search the whole list to find the two documents
+        that page actually depends on.
+      </p>
+      <p>
+        So citations work the way they do in print. A claim in the prose carries
+        a number — <span class="citation-ref"><span class="text-ink">[1]</span></span> —
+        and so does every sourced figure in the specification tables. Both point
+        at a <strong class="text-ink">References</strong> section at the foot of
+        that page, listing only what that page cites, with the revision and the
+        date each source was read at. It is the same reasoning that puts a
+        photograph's credit on the photograph.
+      </p>
+      <p>
+        The bibliography those numbers resolve into is a single checked file,
+        <code class="text-ink">src/data/references.json</code>. A citation
+        pointing at a key that is not in it fails the build rather than
+        rendering a number with nothing behind it.
+      </p>
+    </div>
   </Section>
+
 </BaseLayout>

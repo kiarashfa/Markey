@@ -17,11 +17,13 @@
    * the UI, because "94% match" invites being read as "94% good".
    */
   import { matchmake, type Candidate, type Preferences } from '../../lib/math/matchmaker.ts';
+  import OptionCards, { type Option } from './OptionCards.svelte';
   import type { CatalogueCar } from '../../lib/content/catalogue.ts';
 
   interface VocabTerm {
     id: string;
     label: string;
+    description?: string;
   }
 
   interface Props {
@@ -53,6 +55,25 @@
   }));
 
   const carsById = new Map(cars.map((c) => [c.id, c]));
+
+  /**
+   * Each dealbreaker option, with what it means and how many cars carry it.
+   *
+   * The count is the useful half: a filter that would empty the list is worth
+   * knowing about *before* pressing it, and a term with nothing behind it is
+   * shown disabled rather than hidden — the catalogue being small is a fact
+   * about our sourcing, not something to conceal by trimming the vocabulary.
+   */
+  const optionsFor = (terms: VocabTerm[], field: 'bodyStyles' | 'powertrains'): Option[] =>
+    terms.map((term) => ({
+      id: term.id,
+      label: term.label,
+      detail: term.description,
+      count: cars.filter((car) => car[field].includes(term.id)).length,
+    }));
+
+  const bodyStyleOptions = $derived(optionsFor(bodyStyleTerms, 'bodyStyles'));
+  const powertrainOptions = $derived(optionsFor(powertrainTerms, 'powertrains'));
 
   // --- dealbreakers ---
   let bodyStyles = $state<string[]>([]);
@@ -91,7 +112,7 @@
   const WEIGHT_LABELS = ['Not important', 'Slightly', 'Quite', 'Very important'];
 </script>
 
-<div class="grid gap-6 lg:grid-cols-[minmax(0,18rem)_1fr] lg:items-start">
+<div class="grid gap-6 lg:grid-cols-[minmax(0,22rem)_1fr] lg:items-start">
   <div class="flex flex-col gap-4">
     <fieldset class="rounded-lg border border-line bg-surface-1 p-4">
       <legend class="px-1 text-xs font-medium uppercase tracking-wide text-ink-muted">
@@ -102,38 +123,26 @@
         excluded rather than assumed to pass.
       </p>
 
-      <p class="mt-3 text-sm font-medium">Body style</p>
-      <div class="mt-2 flex flex-wrap gap-1.5">
-        {#each bodyStyleTerms as term (term.id)}
-          <button
-            type="button"
-            class="pressable rounded-full border px-2.5 py-1 text-xs transition-colors duration-150"
-            class:border-line-strong={bodyStyles.includes(term.id)}
-            class:border-line={!bodyStyles.includes(term.id)}
-            style={bodyStyles.includes(term.id) ? 'background-color: var(--color-surface-3);' : ''}
-            aria-pressed={bodyStyles.includes(term.id)}
-            onclick={() => (bodyStyles = toggle(bodyStyles, term.id))}
-          >
-            {term.label}
-          </button>
-        {/each}
+      <p class="mt-4 text-sm font-medium">Body style</p>
+      <div class="mt-2">
+        <OptionCards
+          label="Body style"
+          columns={1}
+          options={bodyStyleOptions}
+          selected={bodyStyles}
+          onToggle={(id) => (bodyStyles = toggle(bodyStyles, id))}
+        />
       </div>
 
-      <p class="mt-4 text-sm font-medium">Powertrain</p>
-      <div class="mt-2 flex flex-wrap gap-1.5">
-        {#each powertrainTerms as term (term.id)}
-          <button
-            type="button"
-            class="pressable rounded-full border px-2.5 py-1 text-xs transition-colors duration-150"
-            class:border-line-strong={powertrains.includes(term.id)}
-            class:border-line={!powertrains.includes(term.id)}
-            style={powertrains.includes(term.id) ? 'background-color: var(--color-surface-3);' : ''}
-            aria-pressed={powertrains.includes(term.id)}
-            onclick={() => (powertrains = toggle(powertrains, term.id))}
-          >
-            {term.label}
-          </button>
-        {/each}
+      <p class="mt-5 text-sm font-medium">Powertrain</p>
+      <div class="mt-2">
+        <OptionCards
+          label="Powertrain"
+          columns={1}
+          options={powertrainOptions}
+          selected={powertrains}
+          onToggle={(id) => (powertrains = toggle(powertrains, id))}
+        />
       </div>
 
       <label class="mt-4 block text-sm font-medium">
@@ -250,7 +259,7 @@
       </ol>
 
       {#if anyPreference}
-        <p class="mt-4 max-w-prose text-xs leading-relaxed text-ink-muted">
+        <p class="mt-4 max-w-readable text-xs leading-relaxed text-ink-muted">
           The percentage compares these cars <em>against each other</em> on the
           preferences you set — it is not a quality score, and a 100% does not
           mean a car is perfect. A car with no figure for one of your

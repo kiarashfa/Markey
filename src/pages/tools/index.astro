@@ -14,6 +14,8 @@ const tools = [
   { name: 'Matchmaker', url: href('tools', 'matchmaker'), blurb: 'Dealbreakers, then weighted preferences, producing a ranked list.' },
   { name: 'Compare', url: href('compare'), blurb: 'Up to four cars side by side. The comparison lives in the URL.' },
   { name: 'Build a car', url: href('build'), blurb: 'Spec a car that does not exist and run it through the same physics as the real ones.' },
+  { name: 'Test Drive', url: href('test-drive'), blurb: 'Model a real car’s acceleration, top speed and drag — then put its shape in a wind tunnel.' },
+  { name: 'My Garage', url: href('garage'), blurb: 'Park the cars you like into numbered bays. Everything stays in your browser.' },
   { name: 'Unit converter', url: href('tools', 'unit-converter'), blurb: 'SI to imperial, using the same conversions as the spec tables.' },
   { name: 'Fuel cost', url: href('tools', 'fuel-cost'), blurb: 'Running cost at the price you actually pay.' },
   { name: 'Depreciation', url: href('tools', 'depreciation'), blurb: 'A transparent projection from a published formula.' },
@@ -27,7 +29,7 @@ const tools = [
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Tools</h1>
-    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+    <p class="type-body mt-3 max-w-lede text-ink-secondary">
       Everything here runs in your browser. Nothing you type is sent anywhere,
       because there is nowhere to send it.
     </p>

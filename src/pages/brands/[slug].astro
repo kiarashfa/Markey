@@ -8,11 +8,12 @@
  * owner's page without anyone remembering to edit it.
  */
 import BrandPage from '../../components/templates/BrandPage.astro';
+import { buildCatalogue } from '../../lib/content/catalogue.ts';
 import { getBrands, getCars } from '../../lib/content/entries.ts';
 import { render } from 'astro:content';
 
 export async function getStaticPaths() {
-  const [brands, cars] = await Promise.all([getBrands(), getCars()]);
+  const [brands, cars, catalogue] = await Promise.all([getBrands(), getCars(), buildCatalogue()]);
   const byId = new Map(brands.map((b) => [b.id, b]));
 
   return brands.map((brand) => ({
@@ -20,16 +21,27 @@ export async function getStaticPaths() {
     props: {
       brand,
       cars,
+      /* The flattened records for this brand's spec-carrying entries — the
+         same shape the catalog and the comparison tool read, so the brand
+         page cannot disagree with either about a figure (SPEC.md §9.1). */
+      entries: catalogue.filter((car) => car.brandId === brand.id),
       parent: brand.data.parentCompany ? byId.get(brand.data.parentCompany) : undefined,
       owned: brands.filter((b) => b.data.parentCompany === brand.id),
     },
   }));
 }
 
-const { brand, cars, parent, owned } = Astro.props;
-const { Content } = await render(brand.narrative);
+const { brand, cars, entries, parent, owned } = Astro.props;
+const { Content, remarkPluginFrontmatter } = await render(brand.narrative);
 ---
 
-<BrandPage brand={brand} cars={cars} parent={parent} owned={owned}>
+<BrandPage
+  brand={brand}
+  cars={cars}
+  entries={entries}
+  parent={parent}
+  owned={owned}
+  proseFrontmatter={remarkPluginFrontmatter}
+>
   <Content />
 </BrandPage>

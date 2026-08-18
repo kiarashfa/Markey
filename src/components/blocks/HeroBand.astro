@@ -40,23 +40,30 @@ const { title, eyebrow, subtitle, accentColor, brandName, brandUrl, brandLogo, h
   Astro.props;
 ---
 
-<div
-  class="relative overflow-hidden border-b border-line"
-  style={`--brand-accent: ${accentColor};`}
->
+<div class="relative overflow-hidden" style={`--brand-accent: ${accentColor};`}>
   {/*
     The tint is mixed against the page surface rather than being the raw brand
     colour, so a hero band reads as *themed by* the brand instead of flooded by
     it — and so the same value works in light and dark without a second token.
+
+    **Two gradients, and the second one is the point.** The diagonal wash gives
+    the band its brand identity; the vertical one fades the whole thing out
+    against the page. Without it the band ended on a hard horizontal edge — a
+    ruled line across every page, drawn by nothing but where the div stopped.
+    Fading to `transparent` rather than to a colour is what makes it work in
+    both themes: what shows through is whatever the page background is, so
+    there is no second value to keep in step with the palette.
   */}
   <div
     aria-hidden="true"
     class="pointer-events-none absolute inset-0"
-    style="background: linear-gradient(160deg, color-mix(in oklab, var(--brand-accent) 26%, var(--color-surface-0)) 0%, var(--color-surface-0) 72%);"
+    style="background: linear-gradient(160deg, color-mix(in oklab, var(--brand-accent) 26%, var(--color-surface-0)) 0%, var(--color-surface-0) 72%);
+           -webkit-mask-image: linear-gradient(to bottom, black 0%, black 45%, transparent 100%);
+           mask-image: linear-gradient(to bottom, black 0%, black 45%, transparent 100%);"
   >
   </div>
 
-  <div class="relative mx-auto w-full max-w-5xl px-5 py-10 sm:px-8 sm:py-14">
+  <div class="relative mx-auto w-full max-w-6xl px-5 py-10 sm:px-8 sm:py-14">
     <div class="grid gap-8 lg:grid-cols-[1fr_minmax(0,22rem)] lg:items-center">
       <div class="min-w-0">
         <div class="flex items-center gap-3">
@@ -86,7 +93,7 @@ const { title, eyebrow, subtitle, accentColor, brandName, brandUrl, brandLogo, h
 
         {
           subtitle && (
-            <p class="type-body mt-3 max-w-prose text-base text-ink-secondary sm:text-lg">
+            <p class="type-body mt-3 max-w-readable text-base text-ink-secondary sm:text-lg">
               {subtitle}
             </p>
           )

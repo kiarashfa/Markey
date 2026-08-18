@@ -12,6 +12,7 @@
  */
 import Breadcrumbs from '../blocks/Breadcrumbs.astro';
 import CarCard from '../blocks/CarCard.astro';
+import EraTimeline from '../blocks/EraTimeline.astro';
 import Section from '../blocks/Section.astro';
 import BaseLayout from '../ui/BaseLayout.astro';
 
@@ -52,7 +53,7 @@ const description = term
       {!config.authored && <span class="text-ink-secondary"> · computed</span>}
     </p>
     <h1 class="type-title mt-2 text-[clamp(1.75rem,5vw,2.5rem)]">{heading}</h1>
-    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+    <p class="type-body mt-3 max-w-lede text-ink-secondary">
       {term ? (term.description ?? config.description) : config.description}
     </p>
   </header>
@@ -93,6 +94,20 @@ const description = term
           </Section>
         )}
       </>
+    ) : config.axis === 'era' && terms.length > 0 ? (
+      /*
+        Era is the one axis whose terms are a sequence rather than a set, so it
+        gets a shape that shows the sequence. Every other axis keeps the grid,
+        which is the right rendering for an unordered vocabulary.
+      */
+      <Section
+        title="The catalog, by decade"
+        lede="A car in production across a decade boundary appears in both decades — the buckets are computed from production years, never tagged by hand."
+      >
+        <div class="py-6">
+          <EraTimeline terms={terms} brandsById={brandsById} />
+        </div>
+      </Section>
     ) : terms.length > 0 ? (
       <Section title="Terms in use" lede="Only terms with at least one entry are listed.">
         <ul class="grid gap-2 py-4 sm:grid-cols-2">

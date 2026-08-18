@@ -13,22 +13,37 @@ import HeroBand from '../blocks/HeroBand.astro';
 import Gallery from '../islands/Gallery.svelte';
 import Section from '../blocks/Section.astro';
 import SpecRow from '../blocks/SpecRow.astro';
-import TagList from '../blocks/TagList.astro';
+import TaxonomyStrip from '../blocks/TaxonomyStrip.astro';
+import References from '../blocks/References.astro';
 import BaseLayout from '../ui/BaseLayout.astro';
 
 import type { JoinedBrand, JoinedCar, JoinedConcept } from '../../lib/content/entries.ts';
 import { brandHref, carHref, conceptHref, href } from '../../lib/content/href.ts';
 import { toGalleryImages } from '../../lib/render/images.ts';
 import { labelFor } from '../../schemas/taxonomy.ts';
+import {
+  buildPageReferences,
+  dataCitationsOf,
+  proseCitationsOf,
+} from '../../lib/render/citations.ts';
+import { BIBLIOGRAPHY } from '../../lib/content/bibliography.ts';
 
 interface Props {
   concept: JoinedConcept;
   brand: JoinedBrand;
   relatedCar?: JoinedCar;
+  proseFrontmatter?: unknown;
 }
 
-const { concept, brand, relatedCar } = Astro.props;
+const { concept, brand, relatedCar, proseFrontmatter } = Astro.props;
 const { data } = concept;
+
+/** This page's own numbered references — SPEC.md §5.5. */
+const { list: references, numbers: citationNumbers } = buildPageReferences(
+  proseCitationsOf(proseFrontmatter),
+  dataCitationsOf(data),
+  BIBLIOGRAPHY,
+);
 
 const FATE_LABELS: Record<string, string> = {
   production: 'Reached production',
@@ -61,7 +76,7 @@ const FATE_LABELS: Record<string, string> = {
     ]}
   />
 
-  <div class="mx-auto w-full max-w-5xl px-5 py-8 sm:px-8 sm:py-10">
+  <div class="mx-auto w-full max-w-6xl px-5 py-8 sm:px-8 sm:py-10">
     <Breadcrumbs
       crumbs={[
         { label: 'Concepts', url: href('concepts') },
@@ -70,20 +85,24 @@ const FATE_LABELS: Record<string, string> = {
       ]}
     />
 
-    <div class="mt-6 flex flex-col gap-3">
-      <TagList
-        label="Body style"
-        axis="body-style"
-        terms={data.bodyStyles.map((id) => ({ id, label: labelFor('body-style', id) ?? id }))}
-      />
-      <TagList
-        label="Powertrain"
-        axis="powertrain"
-        terms={data.powertrains.map((id) => ({ id, label: labelFor('powertrain', id) ?? id }))}
+    <div class="mt-6">
+      <TaxonomyStrip
+        axes={[
+          {
+            label: 'Body style',
+            axis: 'body-style',
+            terms: data.bodyStyles.map((id) => ({ id, label: labelFor('body-style', id) ?? id })),
+          },
+          {
+            label: 'Powertrain',
+            axis: 'powertrain',
+            terms: data.powertrains.map((id) => ({ id, label: labelFor('powertrain', id) ?? id })),
+          },
+        ]}
       />
     </div>
 
-    <article class="prose type-body mt-8 max-w-prose text-[0.975rem] leading-relaxed text-ink-secondary">
+    <article class="prose type-body mt-8 max-w-readable text-[0.975rem] leading-relaxed text-ink-secondary">
       <slot />
     </article>
 
@@ -108,12 +127,12 @@ const FATE_LABELS: Record<string, string> = {
       lede="Concept figures are usually manufacturer claims that were never independently tested. Each one's status says how far it can be trusted."
       as="dl"
     >
-      <SpecRow label="Power" value={data.power} />
-      <SpecRow label="Torque" value={data.torque} />
-      <SpecRow label="Mass" value={data.mass} />
-      <SpecRow label="0–100 km/h" value={data.zeroToHundredKph} />
-      <SpecRow label="Top speed" value={data.topSpeed} />
-      <SpecRow label="Drag coefficient" value={data.dragCoefficient} />
+      <SpecRow label="Power" value={data.power} citations={citationNumbers} />
+      <SpecRow label="Torque" value={data.torque} citations={citationNumbers} />
+      <SpecRow label="Mass" value={data.mass} citations={citationNumbers} />
+      <SpecRow label="0–100 km/h" value={data.zeroToHundredKph} citations={citationNumbers} />
+      <SpecRow label="Top speed" value={data.topSpeed} citations={citationNumbers} />
+      <SpecRow label="Drag coefficient" value={data.dragCoefficient} citations={citationNumbers} />
     </Section>
 
     {
@@ -128,5 +147,6 @@ const FATE_LABELS: Record<string, string> = {
         </Section>
       )
     }
+    <References references={references} />
   </div>
 </BaseLayout>

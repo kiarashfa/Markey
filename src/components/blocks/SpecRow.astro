@@ -16,12 +16,23 @@ interface Props {
   value?: PropertyValue;
   /** Rendered instead of a PropertyValue, for facts that aren't measurements. */
   text?: string;
+  /**
+   * The page's citation numbering — SPEC.md §5.5.
+   *
+   * When present, a sourced figure carries the number of its entry in the
+   * page's References list instead of an anonymous "Source" link. That link
+   * repeated the same URL a dozen times down a table and never let a reader see
+   * that the whole page rested on two documents.
+   */
+  citations?: Map<string, number>;
 }
 
-const { label, value, text } = Astro.props;
+const { label, value, text, citations } = Astro.props;
 
 const formatted = text ?? formatValue(value);
 const missing = formatted === null || formatted === undefined;
+
+const citationNumber = value?.source ? citations?.get(value.source) : undefined;
 ---
 
 <div
@@ -48,24 +59,35 @@ const missing = formatted === null || formatted === undefined;
 
     {
       value?.sourceNote && (
-        <p class="mt-1 max-w-prose text-xs leading-relaxed text-ink-muted">
+        <p class="mt-1 max-w-readable text-xs leading-relaxed text-ink-muted">
           {value.sourceNote}
         </p>
       )
     }
 
     {
-      value?.sourceUrl && (
+      citationNumber !== undefined ? (
         <p class="mt-1 text-xs">
           <a
             class="text-ink-muted underline decoration-line underline-offset-2 hover:text-ink"
-            href={value.sourceUrl}
-            rel="nofollow noopener"
-            target="_blank"
+            href={`#ref-${citationNumber}`}
           >
-            Source
+            [{citationNumber}]
           </a>
         </p>
+      ) : (
+        value?.sourceUrl && (
+          <p class="mt-1 text-xs">
+            <a
+              class="text-ink-muted underline decoration-line underline-offset-2 hover:text-ink"
+              href={value.sourceUrl}
+              rel="nofollow noopener"
+              target="_blank"
+            >
+              Source
+            </a>
+          </p>
+        )
       )
     }
   </dd>

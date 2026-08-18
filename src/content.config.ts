@@ -6,12 +6,47 @@
  * property Zod cannot see, so it is enforced by `src/integrations/integrity.ts`
  * at `astro:build:start` (SPEC.md §13).
  */
+import { existsSync, readdirSync } from 'node:fs';
+import path from 'node:path';
+
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 import { brandDataSchema, brandNarrativeSchema } from './schemas/brand.ts';
 import { carDataSchema, carNarrativeSchema } from './schemas/car.ts';
 import { conceptDataSchema, conceptNarrativeSchema } from './schemas/concept.ts';
+
+/**
+ * `glob()`, but silent about a collection nobody has authored yet.
+ *
+ * Astro's glob loader warns on every dev-server start when a pattern matches
+ * nothing. For `concepts` that warning is not news — the collection is empty on
+ * purpose until Phase 10 authors the first entry — and a warning that fires
+ * every single start is how you train yourself to stop reading the log.
+ *
+ * It only stays quiet for a directory with **no matching files at all**, which
+ * is exactly the "not written yet" case. A directory with files in it goes
+ * through the real loader and warns about anything wrong with them, and the
+ * `.mdx`/`.json` pairing is checked separately by `integrations/integrity.ts`.
+ */
+function globWhenAuthored(options: { base: string; pattern: string }) {
+  const inner = glob(options);
+  const extension = path.extname(options.pattern);
+  const directory = path.resolve(options.base);
+
+  return {
+    ...inner,
+    load: async (context: Parameters<typeof inner.load>[0]) => {
+      const authored =
+        existsSync(directory) && readdirSync(directory).some((file) => file.endsWith(extension));
+      if (!authored) {
+        context.store.clear();
+        return;
+      }
+      return inner.load(context);
+    },
+  };
+}
 
 const cars = defineCollection({
   loader: glob({ base: './src/content/cars', pattern: '**/*.mdx' }),
@@ -24,12 +59,12 @@ const carData = defineCollection({
 });
 
 const concepts = defineCollection({
-  loader: glob({ base: './src/content/concepts', pattern: '**/*.mdx' }),
+  loader: globWhenAuthored({ base: './src/content/concepts', pattern: '**/*.mdx' }),
   schema: conceptNarrativeSchema,
 });
 
 const conceptData = defineCollection({
-  loader: glob({ base: './src/content/conceptData', pattern: '**/*.json' }),
+  loader: globWhenAuthored({ base: './src/content/conceptData', pattern: '**/*.json' }),
   schema: conceptDataSchema,
 });
 

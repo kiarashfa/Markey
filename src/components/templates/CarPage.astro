@@ -15,7 +15,8 @@ import HeroBand from '../blocks/HeroBand.astro';
 import Section from '../blocks/Section.astro';
 import Gallery from '../islands/Gallery.svelte';
 import SpecRow from '../blocks/SpecRow.astro';
-import TagList from '../blocks/TagList.astro';
+import TaxonomyStrip from '../blocks/TaxonomyStrip.astro';
+import References from '../blocks/References.astro';
 import BaseLayout from '../ui/BaseLayout.astro';
 
 import {
@@ -31,6 +32,12 @@ import { absoluteHref, brandHref, carHref, href, imageSrc, testDriveHref } from 
 import { formatValue, formatYears } from '../../lib/render/format.ts';
 import { toGalleryImages } from '../../lib/render/images.ts';
 import { carJsonLd, serialiseJsonLd } from '../../lib/render/jsonld.ts';
+import {
+  buildPageReferences,
+  dataCitationsOf,
+  proseCitationsOf,
+} from '../../lib/render/citations.ts';
+import { BIBLIOGRAPHY } from '../../lib/content/bibliography.ts';
 import { hasTestDrive } from '../../lib/content/testDrive.ts';
 import { eras, labelFor, segments } from '../../schemas/taxonomy.ts';
 
@@ -38,9 +45,11 @@ interface Props {
   car: JoinedCar;
   brand: JoinedBrand;
   allCars: JoinedCar[];
+  /** What the prose cited, as `rehype-citations.ts` numbered it. */
+  proseFrontmatter?: unknown;
 }
 
-const { car, brand, allCars } = Astro.props;
+const { car, brand, allCars, proseFrontmatter } = Astro.props;
 const { data } = car;
 
 const byId = new Map(allCars.map((c) => [c.id, c]));
@@ -87,6 +96,19 @@ const description =
     : `${data.name} specifications, ${formatYears(data.productionYears)}. Sourced figures with their citations, and honest gaps where a figure is not yet available.`;
 
 /**
+ * This page's own numbered reference list — SPEC.md §5.5.
+ *
+ * The prose numbers come first, in the order an author cited them; the sources
+ * behind the specifications continue from there, in the order they are first
+ * met walking the data. A key cited by both appears once.
+ */
+const { list: references, numbers: citationNumbers } = buildPageReferences(
+  proseCitationsOf(proseFrontmatter),
+  dataCitationsOf(data),
+  BIBLIOGRAPHY,
+);
+
+/**
  * `schema.org/Car` for this entry — SPEC.md §12, and the §16 type choice.
  *
  * Built from the same `data` the page renders and the same description the meta
@@ -126,32 +148,36 @@ const structuredData = serialiseJsonLd(
     stats={heroStats}
   />
 
-  <div class="mx-auto w-full max-w-5xl px-5 py-8 sm:px-8 sm:py-10">
+  <div class="mx-auto w-full max-w-6xl px-5 py-8 sm:px-8 sm:py-10">
     <Breadcrumbs crumbs={crumbs} />
 
-    <div class="mt-6 flex flex-col gap-3">
-      <TagList
-        label="Body style"
-        axis="body-style"
-        terms={tags.bodyStyles.map((id) => ({ id, label: labelFor('body-style', id) ?? id }))}
-      />
-      <TagList
-        label="Powertrain"
-        axis="powertrain"
-        terms={tags.powertrains.map((id) => ({ id, label: labelFor('powertrain', id) ?? id }))}
-      />
-      <TagList
-        label="Drivetrain"
-        axis="drivetrain"
-        terms={tags.drivetrains.map((id) => ({ id, label: labelFor('drivetrain', id) ?? id }))}
-      />
-      <TagList
-        label="Era"
-        axis="era"
-        terms={entryEras.map((id) => ({
-          id,
-          label: eras.terms.find((t) => t.id === id)?.label ?? id,
-        }))}
+    <div class="mt-6">
+      <TaxonomyStrip
+        axes={[
+          {
+            label: 'Body style',
+            axis: 'body-style',
+            terms: tags.bodyStyles.map((id) => ({ id, label: labelFor('body-style', id) ?? id })),
+          },
+          {
+            label: 'Powertrain',
+            axis: 'powertrain',
+            terms: tags.powertrains.map((id) => ({ id, label: labelFor('powertrain', id) ?? id })),
+          },
+          {
+            label: 'Drivetrain',
+            axis: 'drivetrain',
+            terms: tags.drivetrains.map((id) => ({ id, label: labelFor('drivetrain', id) ?? id })),
+          },
+          {
+            label: 'Era',
+            axis: 'era',
+            terms: entryEras.map((id) => ({
+              id,
+              label: eras.terms.find((t) => t.id === id)?.label ?? id,
+            })),
+          },
+        ]}
       />
     </div>
 
@@ -172,7 +198,7 @@ const structuredData = serialiseJsonLd(
       )
     }
 
-    <article class="prose type-body mt-8 max-w-prose text-[0.975rem] leading-relaxed text-ink-secondary">
+    <article class="prose type-body mt-8 max-w-readable text-[0.975rem] leading-relaxed text-ink-secondary">
       <slot />
     </article>
 
@@ -241,11 +267,11 @@ const structuredData = serialiseJsonLd(
     {
       data.kind !== 'model' && data.dimensions && (
         <Section title="Dimensions" as="dl">
-          <SpecRow label="Length" value={data.dimensions.length} />
-          <SpecRow label="Width" value={data.dimensions.width} />
-          <SpecRow label="Height" value={data.dimensions.height} />
-          <SpecRow label="Wheelbase" value={data.dimensions.wheelbase} />
-          <SpecRow label="Kerb weight" value={data.dimensions.kerbWeight} />
+          <SpecRow label="Length" value={data.dimensions.length} citations={citationNumbers} />
+          <SpecRow label="Width" value={data.dimensions.width} citations={citationNumbers} />
+          <SpecRow label="Height" value={data.dimensions.height} citations={citationNumbers} />
+          <SpecRow label="Wheelbase" value={data.dimensions.wheelbase} citations={citationNumbers} />
+          <SpecRow label="Kerb weight" value={data.dimensions.kerbWeight} citations={citationNumbers} />
         </Section>
       )
     }
@@ -257,14 +283,14 @@ const structuredData = serialiseJsonLd(
           lede={`Trim · ${formatYears(trim.productionYears)}${trim.engine?.code ? ` · ${trim.engine.code}` : ''}`}
           as="dl"
         >
-          <SpecRow label="Power" value={trim.power} />
-          <SpecRow label="Torque" value={trim.torque} />
-          <SpecRow label="Kerb weight" value={trim.mass} />
-          <SpecRow label="0–100 km/h" value={trim.zeroToHundredKph} />
-          <SpecRow label="Top speed" value={trim.topSpeed} />
-          <SpecRow label="Fuel economy" value={trim.fuelEconomy} />
-          <SpecRow label="Drag coefficient" value={trim.dragCoefficient} />
-          <SpecRow label="Frontal area" value={trim.frontalArea} />
+          <SpecRow label="Power" value={trim.power} citations={citationNumbers} />
+          <SpecRow label="Torque" value={trim.torque} citations={citationNumbers} />
+          <SpecRow label="Kerb weight" value={trim.mass} citations={citationNumbers} />
+          <SpecRow label="0–100 km/h" value={trim.zeroToHundredKph} citations={citationNumbers} />
+          <SpecRow label="Top speed" value={trim.topSpeed} citations={citationNumbers} />
+          <SpecRow label="Fuel economy" value={trim.fuelEconomy} citations={citationNumbers} />
+          <SpecRow label="Drag coefficient" value={trim.dragCoefficient} citations={citationNumbers} />
+          <SpecRow label="Frontal area" value={trim.frontalArea} citations={citationNumbers} />
           <FactRow
             label="Engine"
             values={[
@@ -335,5 +361,6 @@ const structuredData = serialiseJsonLd(
         }
       </div>
     </Section>
+    <References references={references} />
   </div>
 </BaseLayout>

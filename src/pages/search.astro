@@ -19,7 +19,7 @@ import { assetHref, href } from '../lib/content/href.ts';
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Search</h1>
-    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+    <p class="type-body mt-3 max-w-lede text-ink-secondary">
       Full text, across every page. This searches what the pages actually say —
       including prose the catalog has no column for. To filter cars by their
       specifications instead, the <a
@@ -29,11 +29,11 @@ import { assetHref, href } from '../lib/content/href.ts';
     </p>
   </header>
 
-  <div class="mt-8 max-w-3xl">
+  <div class="mt-8 max-w-4xl">
     <SiteSearch client:load indexUrl={assetHref('pagefind/pagefind.js')} />
   </div>
 
-  <p class="mt-10 max-w-prose text-xs leading-relaxed text-ink-muted">
+  <p class="mt-10 max-w-readable text-xs leading-relaxed text-ink-muted">
     The index is built from the finished pages and runs entirely in your
     browser — what you type is never sent anywhere, because there is nowhere to
     send it.

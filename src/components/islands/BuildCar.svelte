@@ -19,6 +19,7 @@
    * it says so. A missing input produces a gap and a plain explanation of what
    * to fill in, never a defaulted number dressed up as a result.
    */
+  import OptionCards, { type Option } from './OptionCards.svelte';
   import TestDrive2D from './TestDrive2D.svelte';
   import WindTunnel from './WindTunnel.svelte';
   import {
@@ -54,6 +55,24 @@
   let solverApplied = $state<{ cd: number; areaM2: number } | null>(null);
 
   const preset = $derived(spec.segment ? presetById(spec.segment) : undefined);
+
+  /**
+   * The presets as choosable cards.
+   *
+   * A row of capsules made every class look identical and told the visitor
+   * nothing about what pressing one would do. The three numbers that actually
+   * separate these classes — mass, power and drag — are on the card, so the
+   * choice is visible before it is made and the difference between a compact
+   * and a full-size SUV is a fact rather than a word.
+   */
+  const presetOptions = $derived<Option[]>(
+    SEGMENT_PRESETS.map((option) => ({
+      id: option.id,
+      label: option.label,
+      meta: `${option.spec.massKg} kg · ${option.spec.powerKw} kW · Cd ${option.spec.dragCoefficient}`,
+      detail: option.basis,
+    })),
+  );
   const missing = $derived(missingInputs(spec));
   const inputs = $derived(toVehicleInputs(spec));
   const area = $derived(resolveBuildArea(spec));
@@ -194,32 +213,27 @@
   <!-- Start from something plausible -------------------------------------- -->
   <section class="rounded-lg border border-line bg-surface-1 p-5">
     <h2 class="type-heading text-sm">Start from</h2>
-    <div class="mt-3 flex flex-wrap gap-2">
-      {#each SEGMENT_PRESETS as option (option.id)}
-        <button
-          type="button"
-          class="pressable rounded-full border px-3 py-1.5 text-sm transition-colors duration-150"
-          class:border-line-strong={spec.segment === option.id}
-          class:bg-surface-3={spec.segment === option.id}
-          class:border-line={spec.segment !== option.id}
-          onclick={() => applyPreset(option.id)}
-          aria-pressed={spec.segment === option.id}
-        >
-          {option.label}
-        </button>
-      {/each}
-    </div>
-
-    <p class="mt-3 max-w-prose text-xs leading-relaxed text-ink-muted">
-      {#if preset}
-        <span class="text-ink-secondary">{preset.label}:</span>
-        {preset.basis}
-      {:else}
-        These are starting positions for a car you are inventing, not figures
-        about a car anyone built. Nothing here is sourced, and nothing here is
-        meant to be — change any of it.
+    <p class="mt-1.5 max-w-readable text-xs leading-relaxed text-ink-muted">
+      Starting positions for a car you are inventing, not figures about a car
+      anyone built. Nothing here is sourced and nothing here is meant to be —
+      pick the nearest one and change all of it.
+      {#if !preset}
+        <span class="text-ink-secondary">
+          This build has drifted away from every preset, which is the point.
+        </span>
       {/if}
     </p>
+
+    <div class="mt-4">
+      <OptionCards
+        label="Starting point"
+        multiple={false}
+        columns={3}
+        options={presetOptions}
+        selected={spec.segment ? [spec.segment] : []}
+        onToggle={applyPreset}
+      />
+    </div>
   </section>
 
   <!-- The specification ----------------------------------------------------- -->
@@ -270,7 +284,7 @@
         </label>
       </div>
 
-      <p class="mt-4 max-w-prose text-xs leading-relaxed text-ink-muted">{TORQUE_NOTE}</p>
+      <p class="mt-4 max-w-readable text-xs leading-relaxed text-ink-muted">{TORQUE_NOTE}</p>
     </div>
 
     <div class="rounded-lg border border-line bg-surface-1 p-5">
@@ -312,7 +326,7 @@
         </label>
       </div>
 
-      <p class="mt-4 max-w-prose text-xs leading-relaxed text-ink-muted">
+      <p class="mt-4 max-w-readable text-xs leading-relaxed text-ink-muted">
         {#if solverApplied}
           <span class="text-status-estimated">From the wind tunnel:</span>
           Cd {solverApplied.cd.toFixed(3)} over {solverApplied.areaM2.toFixed(2)} m², measured
@@ -337,7 +351,7 @@
   <!-- Gearing --------------------------------------------------------------- -->
   <section class="rounded-lg border border-line bg-surface-1 p-5">
     <h2 class="type-heading text-sm">Gearing</h2>
-    <p class="mt-1 max-w-prose text-xs leading-relaxed text-ink-secondary">
+    <p class="mt-1 max-w-readable text-xs leading-relaxed text-ink-secondary">
       Road speed at 1000 rpm in top gear, and the engine speed the run ends at.
       One number each, both readable off a tachometer — which is why the model
       asks for these rather than for a ratio, a final drive and a tyre size.
@@ -378,7 +392,7 @@
   -->
   <section class="rounded-lg border border-line bg-surface-1 p-5">
     <h2 class="type-heading text-sm">Measure the shape</h2>
-    <p class="mt-1 max-w-prose text-xs leading-relaxed text-ink-secondary">
+    <p class="mt-1 max-w-readable text-xs leading-relaxed text-ink-secondary">
       The dimensions above are a body, and the wind tunnel will run it and
       report what it measures. Send that back into the build and every figure
       below recomputes from a Cd nobody typed — a lower roof, a tighter wake, a
@@ -421,7 +435,7 @@
       </div>
     </div>
 
-    <p class="mt-2 max-w-prose text-xs leading-relaxed text-ink-muted">
+    <p class="mt-2 max-w-readable text-xs leading-relaxed text-ink-muted">
       This build is written into the page's address as you type. Nothing is
       saved anywhere, so the link is the only copy — and it is enough.
     </p>
@@ -439,7 +453,7 @@
       {:else}
         <div class="rounded-lg border border-dashed border-line bg-surface-1 p-6">
           <h3 class="type-heading text-base">Not enough to model yet</h3>
-          <p class="mt-2 max-w-prose text-sm text-ink-secondary">
+          <p class="mt-2 max-w-readable text-sm text-ink-secondary">
             The physics needs a few more figures before it can say anything. It
             will not fill them in for you — a defaulted number presented as a
             result is the one thing this site never does.

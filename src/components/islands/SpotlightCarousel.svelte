@@ -290,7 +290,7 @@
             aria-hidden={i !== index ? 'true' : undefined}
             inert={i !== index ? true : undefined}
           >
-            <div class="mx-auto w-full max-w-5xl px-5 py-10 sm:px-8 sm:py-14">
+            <div class="mx-auto w-full max-w-6xl px-5 py-10 sm:px-8 sm:py-14">
               <div class="grid gap-8 lg:grid-cols-[1fr_minmax(0,24rem)] lg:items-center">
                 <div class="min-w-0">
                   <div class="flex items-center gap-3">
@@ -365,7 +365,7 @@
     </div>
 
     {#if multiple}
-      <div class="mx-auto flex w-full max-w-5xl items-center gap-3 px-5 pb-6 sm:px-8">
+      <div class="mx-auto flex w-full max-w-6xl items-center gap-3 px-5 pb-6 sm:px-8">
         <button
           type="button"
           class="pressable inline-flex size-9 items-center justify-center rounded-full border border-line bg-surface-0/80 backdrop-blur transition-colors duration-150 hover:bg-surface-1 disabled:opacity-40"
