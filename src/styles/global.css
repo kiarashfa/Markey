@@ -228,6 +228,30 @@
 
 @layer components {
   /*
+   * Links inside authored narrative.
+   *
+   * Scoped to `.prose`, which is only on the three narrative `<article>`
+   * elements, because everywhere else on the site a link carries its own
+   * classes and a blanket `a { }` rule would style it twice. Two kinds of link
+   * land here and both need to look like links: the ones an author wrote in
+   * Markdown, and the ones the cross-link plugin derived (SPEC.md §12).
+   *
+   * Underlined rather than coloured. The accent is the *brand's* colour on
+   * these pages, and a paragraph of BMW-blue words would read as decoration
+   * before it read as navigation.
+   */
+  .prose a {
+    text-decoration: underline;
+    text-decoration-color: var(--color-line-strong);
+    text-underline-offset: 4px;
+    transition: color 150ms var(--ease-out-strong), text-decoration-color 150ms var(--ease-out-strong);
+  }
+  .prose a:hover {
+    color: var(--color-ink);
+    text-decoration-color: var(--brand-accent);
+  }
+
+  /*
    * Press feedback, on any pressable thing. 0.97 and 140ms per
    * review-animations/STANDARDS.md — subtle, and on pointer-down rather than
    * on release, which is the difference between responsive and dead.

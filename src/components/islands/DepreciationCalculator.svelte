@@ -113,7 +113,7 @@
 
     <label class="block">
       <span class="text-sm text-ink-secondary">Market tier</span>
-      <select
+      <select data-pagefind-ignore
         bind:value={positioning}
         class="mt-1.5 w-full rounded-lg border border-line bg-surface-1 px-3 py-2.5 text-sm focus:border-line-strong focus:outline-none"
       >
@@ -127,7 +127,7 @@
 
     <label class="block">
       <span class="text-sm text-ink-secondary">Powertrain</span>
-      <select
+      <select data-pagefind-ignore
         bind:value={powertrain}
         class="mt-1.5 w-full rounded-lg border border-line bg-surface-1 px-3 py-2.5 text-sm focus:border-line-strong focus:outline-none"
       >

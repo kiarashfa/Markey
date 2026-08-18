@@ -56,9 +56,37 @@ const current = Astro.url.pathname;
       </ul>
     </nav>
 
-    {/* `client:load` — a theme control that only works after scrolling would be
-        worse than none, and it is the first thing some visitors reach for. */}
-    <div class="ml-auto shrink-0 sm:ml-0">
+    {/*
+      Search sits in the right cluster rather than in the nav list: the nav
+      scrolls horizontally on a narrow screen and search is the one thing that
+      must never scroll out of reach. A plain link, not a box — the box lives
+      on the page it leads to, where its index is loaded and its results have
+      room, and a header box that cannot search until an index downloads would
+      be a control that lies about being ready.
+
+      `client:load` on the theme control — a toggle that only works after
+      scrolling would be worse than none, and it is the first thing some
+      visitors reach for.
+    */}
+    <div class="ml-auto flex shrink-0 items-center gap-1 sm:ml-0">
+      <a
+        href={href('search')}
+        aria-current={current.startsWith(href('search')) ? 'page' : undefined}
+        class="flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-sm text-ink-secondary transition-colors duration-150 hover:bg-surface-2 hover:text-ink aria-[current=page]:bg-surface-2 aria-[current=page]:text-ink"
+      >
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 16 16"
+          class="size-4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+        >
+          <circle cx="7" cy="7" r="4.5"></circle>
+          <path d="M10.5 10.5 14 14" stroke-linecap="round"></path>
+        </svg>
+        <span class="max-sm:sr-only">Search</span>
+      </a>
       <ThemeToggle client:load />
     </div>
   </div>

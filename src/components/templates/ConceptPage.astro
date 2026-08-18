@@ -40,6 +40,7 @@ const FATE_LABELS: Record<string, string> = {
 ---
 
 <BaseLayout
+  searchKind="Concepts"
   title={data.name}
   description={`${data.name} — concept car unveiled at ${data.unveiledAt}, ${data.unveiledYear}.`}
   accentColor={brand.data.accentColor}
@@ -82,7 +83,7 @@ const FATE_LABELS: Record<string, string> = {
       />
     </div>
 
-    <article class="type-body mt-8 max-w-prose text-[0.975rem] leading-relaxed text-ink-secondary">
+    <article class="prose type-body mt-8 max-w-prose text-[0.975rem] leading-relaxed text-ink-secondary">
       <slot />
     </article>
 

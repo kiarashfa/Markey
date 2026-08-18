@@ -138,7 +138,7 @@
 
       <label class="mt-4 block text-sm font-medium">
         Maximum consumption
-        <select
+        <select data-pagefind-ignore
           class="mt-1.5 w-full rounded-md border border-line bg-surface-2 px-2 py-1.5 text-sm focus:border-line-strong focus:outline-none"
           value={maxConsumption ?? ''}
           onchange={(e) => {

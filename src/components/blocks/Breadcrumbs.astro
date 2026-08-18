@@ -3,7 +3,15 @@
  * Wayfinding (apple-design §16): every page answers "where am I, and how do I
  * get back out". On a car page the trail is the real content hierarchy —
  * model hub → generation → halo trim — walked by `parentChain()`.
+ *
+ * It also emits its own `BreadcrumbList` structured data (SPEC.md §12), from
+ * the same array it renders. Putting the markup here rather than in each page's
+ * head is what makes the two impossible to disagree: there is one trail, and
+ * both the visible list and the machine-readable one are built from it.
  */
+import { absoluteHref } from '../../lib/content/href.ts';
+import { breadcrumbJsonLd, serialiseJsonLd } from '../../lib/render/jsonld.ts';
+
 interface Crumb {
   label: string;
   url?: string;
@@ -14,7 +22,26 @@ interface Props {
 }
 
 const { crumbs } = Astro.props;
+
+/**
+ * The trail as absolute URLs, with the last item unlinked.
+ *
+ * The last crumb is the page you are on. It is rendered as text rather than a
+ * link, and the structured data has to agree — a `BreadcrumbList` whose final
+ * item links to itself describes a trail that does not end.
+ */
+const structured = breadcrumbJsonLd(
+  crumbs.map((crumb, index) => ({
+    label: crumb.label,
+    url:
+      index === crumbs.length - 1 || !crumb.url || crumb.url === '#'
+        ? undefined
+        : absoluteHref(Astro.site, crumb.url),
+  })),
+);
 ---
+
+{structured && <script type="application/ld+json" is:inline set:html={serialiseJsonLd(structured)} />}
 
 <nav aria-label="Breadcrumb" class="min-w-0">
   <ol class="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-sm text-ink-secondary">

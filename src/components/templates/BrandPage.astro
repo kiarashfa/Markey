@@ -39,6 +39,7 @@ const stats = [
 ---
 
 <BaseLayout
+  searchKind="Brands"
   title={data.name}
   description={`${data.name} — nameplates, generations and specifications, with sources for every figure.`}
   accentColor={data.accentColor}
@@ -62,7 +63,7 @@ const stats = [
       ]}
     />
 
-    <article class="type-body mt-6 max-w-prose text-[0.975rem] leading-relaxed text-ink-secondary">
+    <article class="prose type-body mt-6 max-w-prose text-[0.975rem] leading-relaxed text-ink-secondary">
       <slot />
     </article>
 

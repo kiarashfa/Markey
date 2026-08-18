@@ -1,0 +1,41 @@
+---
+/**
+ * `/search/` — full-text search (SPEC.md §9.1, §12).
+ *
+ * The page is a shell. The index it reads is written by `postbuild:index` into
+ * `dist/pagefind/` after Astro has finished, so nothing here can be resolved at
+ * build time — the island fetches it at runtime from a path this page hands it,
+ * built through `assetHref` so it carries the base path.
+ */
+import SiteSearch from '../components/islands/SiteSearch.svelte';
+import BaseLayout from '../components/ui/BaseLayout.astro';
+import { assetHref, href } from '../lib/content/href.ts';
+---
+
+<BaseLayout
+  searchKind="Tools"
+  title="Search"
+  description="Search every page on Markey — cars, brands, concepts, and the methodology behind the modelled figures."
+>
+  <header>
+    <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Search</h1>
+    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+      Full text, across every page. This searches what the pages actually say —
+      including prose the catalog has no column for. To filter cars by their
+      specifications instead, the <a
+        class="underline decoration-line underline-offset-4 hover:text-ink"
+        href={href('cars')}>catalog</a
+      > does that on structured data, and needs no index at all.
+    </p>
+  </header>
+
+  <div class="mt-8 max-w-3xl">
+    <SiteSearch client:load indexUrl={assetHref('pagefind/pagefind.js')} />
+  </div>
+
+  <p class="mt-10 max-w-prose text-xs leading-relaxed text-ink-muted">
+    The index is built from the finished pages and runs entirely in your
+    browser — what you type is never sent anywhere, because there is nowhere to
+    send it.
+  </p>
+</BaseLayout>

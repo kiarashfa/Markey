@@ -27,9 +27,10 @@ import {
   type JoinedBrand,
   type JoinedCar,
 } from '../../lib/content/entries.ts';
-import { brandHref, carHref, href, testDriveHref } from '../../lib/content/href.ts';
+import { absoluteHref, brandHref, carHref, href, imageSrc, testDriveHref } from '../../lib/content/href.ts';
 import { formatValue, formatYears } from '../../lib/render/format.ts';
 import { toGalleryImages } from '../../lib/render/images.ts';
+import { carJsonLd, serialiseJsonLd } from '../../lib/render/jsonld.ts';
 import { hasTestDrive } from '../../lib/content/testDrive.ts';
 import { eras, labelFor, segments } from '../../schemas/taxonomy.ts';
 
@@ -84,14 +85,35 @@ const description =
   data.kind === 'model'
     ? `${data.name} — every generation, with specifications, sources and confidence for each.`
     : `${data.name} specifications, ${formatYears(data.productionYears)}. Sourced figures with their citations, and honest gaps where a figure is not yet available.`;
+
+/**
+ * `schema.org/Car` for this entry — SPEC.md §12, and the §16 type choice.
+ *
+ * Built from the same `data` the page renders and the same description the meta
+ * tag carries, so the structured data cannot describe a different car from the
+ * one on screen. Everything about what it does and does not claim is in
+ * `lib/render/jsonld.ts`.
+ */
+const structuredData = serialiseJsonLd(
+  carJsonLd({
+    car: data,
+    brandName: brand.data.name,
+    url: absoluteHref(Astro.site, carHref(car.id)),
+    imageUrl: data.hero ? absoluteHref(Astro.site, imageSrc(data.hero.src)) : undefined,
+    description,
+  }),
+);
 ---
 
 <BaseLayout
+  searchKind="Cars"
   title={data.fullName ?? data.name}
   description={description}
   accentColor={brand.data.accentColor}
   bleed
 >
+  <script slot="jsonld" type="application/ld+json" is:inline set:html={structuredData} />
+
   <HeroBand
     title={data.name}
     eyebrow={kindLabel}
@@ -150,7 +172,7 @@ const description =
       )
     }
 
-    <article class="type-body mt-8 max-w-prose text-[0.975rem] leading-relaxed text-ink-secondary">
+    <article class="prose type-body mt-8 max-w-prose text-[0.975rem] leading-relaxed text-ink-secondary">
       <slot />
     </article>
 

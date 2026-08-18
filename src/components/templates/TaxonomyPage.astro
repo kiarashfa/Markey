@@ -43,7 +43,7 @@ const description = term
   : config.description;
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} searchKind="Browse">
   <Breadcrumbs crumbs={[{ label: 'Browse', url: href() }, ...crumbs]} />
 
   <header class="mt-6">

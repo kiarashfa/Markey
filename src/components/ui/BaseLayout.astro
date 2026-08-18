@@ -2,12 +2,12 @@
 /**
  * The document shell every page renders through.
  *
- * Centralised because three things must be true on *every* page and are easy
+ * Centralised because four things must be true on *every* page and are easy
  * to get wrong one page at a time: a canonical URL under the base path
  * (SPEC.md §6/§12), `noindex` where the page holds user state (SPEC.md §12),
- * and Pagefind's body marker — a narrative `.mdx` rendered without a layout
- * emits no `<html>` element at all and is silently dropped from the search
- * index.
+ * Pagefind's body marker — a narrative `.mdx` rendered without a layout emits
+ * no `<html>` element at all and is silently dropped from the search index —
+ * and the JSON-LD slot, so structured data can never end up in the body.
  */
 import Header from './Header.astro';
 import Footer from './Footer.astro';
@@ -24,9 +24,24 @@ interface Props {
   accentColor?: string;
   /** Pages that are their own full-bleed composition skip the content gutter. */
   bleed?: boolean;
+  /**
+   * The search filter this page belongs under — SPEC.md §9.1.
+   *
+   * Pagefind indexes `<main>` and nothing else (see below), and this is the one
+   * facet the results page offers. Omitted means the page is still found, just
+   * not filed under a section.
+   */
+  searchKind?: string;
 }
 
-const { title, description, noindex = false, accentColor, bleed = false } = Astro.props;
+const {
+  title,
+  description,
+  noindex = false,
+  accentColor,
+  bleed = false,
+  searchKind,
+} = Astro.props;
 
 const canonical = absoluteHref(Astro.site, Astro.url.pathname);
 const fullTitle = title === 'Markey' ? title : `${title} — Markey`;
@@ -49,6 +64,8 @@ const fullTitle = title === 'Markey' ? title : `${title} — Markey`;
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
     {noindex && <meta name="robots" content="noindex, follow" />}
     <meta name="generator" content={Astro.generator} />
+    {/* Structured data (SPEC.md §12). A named slot so it lands in <head>. */}
+    <slot name="jsonld" />
     <slot name="head" />
   </head>
   <body
@@ -56,7 +73,25 @@ const fullTitle = title === 'Markey' ? title : `${title} — Markey`;
     style={accentColor ? `--brand-accent: ${accentColor};` : undefined}
   >
     <Header />
-    <main id="main" class="flex-1">
+    {/*
+      `data-pagefind-body` on <main> rather than nowhere.
+
+      Without it Pagefind indexes every <body>, which means the nav, the footer
+      and the theme toggle are part of the text of all forty-odd pages —
+      searching for "compare" then matches the nav link on every page rather
+      than the page about comparing. Marking one element makes Pagefind index
+      only marked elements, so the index becomes the page's own content.
+
+      A `noindex` page is excluded from search for the same reason it is
+      excluded from the sitemap: it holds the visitor's own state and has
+      nothing to find.
+    */}
+    <main
+      id="main"
+      class="flex-1"
+      data-pagefind-body={noindex ? undefined : true}
+      data-pagefind-filter={searchKind ? `section:${searchKind}` : undefined}
+    >
       {
         bleed ? (
           <slot />

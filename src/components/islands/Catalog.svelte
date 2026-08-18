@@ -277,7 +277,7 @@
     <div class="flex flex-wrap items-center gap-2">
       <label class="flex items-center gap-2 text-xs text-ink-secondary">
         Sort by
-        <select
+        <select data-pagefind-ignore
           bind:value={sortField}
           class="rounded-md border border-line bg-surface-1 px-2 py-1.5 text-xs text-ink focus:border-line-strong focus:outline-none"
         >

@@ -147,6 +147,16 @@
     'type-data w-full rounded-l-lg border border-r-0 border-line bg-surface-1 px-3 py-2.5 tabular-nums focus:border-line-strong focus:outline-none';
   const UNIT_CLASS =
     'inline-flex shrink-0 items-center rounded-r-lg border border-line bg-surface-2 px-2.5 text-xs text-ink-muted';
+  /**
+   * `data-pagefind-ignore` on every `<select>`.
+   *
+   * The island renders server-side, so its `<option>` text is in the HTML that
+   * Pagefind indexes — and Pagefind joins adjacent inline text with nothing
+   * between it, which turned this form's three dropdowns into the single token
+   * "SaloonHatchbackLiftbackEstateCoupé…" in the index. It matched nothing
+   * anyone would search for and overflowed the result card when it did.
+   * A control's vocabulary is not the page's content.
+   */
   const SELECT_CLASS =
     'mt-1.5 w-full rounded-lg border border-line bg-surface-1 px-3 py-2.5 text-sm focus:border-line-strong focus:outline-none';
 </script>
@@ -243,7 +253,7 @@
 
         <label class="block min-w-0">
           <span class="text-sm text-ink-secondary">Drivetrain</span>
-          <select bind:value={spec.drivetrain} class={SELECT_CLASS}>
+          <select data-pagefind-ignore bind:value={spec.drivetrain} class={SELECT_CLASS}>
             {#each drivetrains as option (option.id)}
               <option value={option.id}>{option.label}</option>
             {/each}
@@ -252,7 +262,7 @@
 
         <label class="block min-w-0">
           <span class="text-sm text-ink-secondary">Powertrain</span>
-          <select bind:value={spec.powertrain} class={SELECT_CLASS}>
+          <select data-pagefind-ignore bind:value={spec.powertrain} class={SELECT_CLASS}>
             {#each powertrains as option (option.id)}
               <option value={option.id}>{option.label}</option>
             {/each}
@@ -294,7 +304,7 @@
 
         <label class="block min-w-0 sm:col-span-2">
           <span class="text-sm text-ink-secondary">Body style</span>
-          <select bind:value={spec.bodyStyle} class={SELECT_CLASS}>
+          <select data-pagefind-ignore bind:value={spec.bodyStyle} class={SELECT_CLASS}>
             {#each bodyStyles as option (option.id)}
               <option value={option.id}>{option.label}</option>
             {/each}

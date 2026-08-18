@@ -22,7 +22,11 @@ const rows = brands
   .sort((a, b) => a.brand.data.name.localeCompare(b.brand.data.name));
 ---
 
-<BaseLayout title="Brands" description="Every manufacturer covered by Markey.">
+<BaseLayout
+  title="Brands"
+  description="Every manufacturer covered by Markey."
+  searchKind="Browse"
+>
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Brands</h1>
     <p class="type-body mt-3 max-w-prose text-ink-secondary">

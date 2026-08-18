@@ -55,15 +55,123 @@ for (const file of html) {
   }
 }
 
-// --- /garage/ must be noindex, and must NOT be robots-blocked --------------
-const garage = path.join(dist, 'garage', 'index.html');
+// --- SPEC.md §12: noindex, never a robots.txt disallow ---------------------
+/**
+ * The rule this enforces is a trio, and all three parts have to hold together:
+ * the page says `noindex`, the sitemap does not list it, and `robots.txt` does
+ * **not** block it. Blocking is what makes the other two pointless — a URL that
+ * is never fetched never has its `noindex` read.
+ */
+const NOINDEX_PATHS = ['/garage/'];
+
+let robots = null;
 try {
-  const body = await readFile(garage, 'utf8');
-  if (!/name="robots"[^>]*noindex/i.test(body)) {
-    failures.push('/garage/ is missing its noindex meta (SPEC.md §12).');
-  }
+  robots = await readFile(path.join(dist, 'robots.txt'), 'utf8');
 } catch {
-  notes.push('/garage/ not built — skipping its noindex check.');
+  failures.push('robots.txt was not built (SPEC.md §12).');
+}
+
+const sitemapFiles = files.filter((f) => path.basename(f).startsWith('sitemap'));
+let sitemapText = '';
+for (const file of sitemapFiles) sitemapText += await readFile(file, 'utf8');
+if (sitemapFiles.length === 0) failures.push('No sitemap was generated (SPEC.md §12).');
+
+for (const noindexPath of NOINDEX_PATHS) {
+  const page = path.join(dist, noindexPath.replace(/^\/|\/$/g, ''), 'index.html');
+  try {
+    const body = await readFile(page, 'utf8');
+    if (!/name="robots"[^>]*noindex/i.test(body)) {
+      failures.push(`${noindexPath} is missing its noindex meta (SPEC.md §12).`);
+    }
+    if (/data-pagefind-body/.test(body)) {
+      failures.push(`${noindexPath} is marked for the search index but must not be indexed.`);
+    }
+  } catch {
+    notes.push(`${noindexPath} not built — skipping its noindex check.`);
+  }
+
+  if (sitemapText.includes(`${BASE.replace(/\/$/, '')}${noindexPath}<`)) {
+    failures.push(`${noindexPath} is listed in the sitemap but carries noindex (SPEC.md §12).`);
+  }
+  if (robots && new RegExp(`^\s*Disallow:.*${noindexPath}`, 'im').test(robots)) {
+    failures.push(
+      `robots.txt disallows ${noindexPath}. It must not: a blocked page is never fetched, so its noindex is never read (SPEC.md §12).`,
+    );
+  }
+}
+
+if (robots) {
+  if (!/^Sitemap:\s*https?:\/\/\S+/m.test(robots)) {
+    failures.push('robots.txt has no absolute Sitemap: line (SPEC.md §12).');
+  } else {
+    const declared = /^Sitemap:\s*(\S+)/m.exec(robots)?.[1] ?? '';
+    if (!declared.includes(BASE)) {
+      failures.push(`robots.txt points at ${declared}, which is outside the base path ${BASE}.`);
+    }
+  }
+}
+
+// --- the search index (SPEC.md §9.1) --------------------------------------
+/**
+ * Pagefind indexes only elements marked `data-pagefind-body` once any exist.
+ * If the marker were dropped it would silently fall back to indexing every
+ * `<body>`, which puts the nav and the footer into the text of all forty pages
+ * — search still "works", and every result is wrong for the same reason.
+ */
+{
+  const unmarked = [];
+  for (const file of html) {
+    const rel = path.relative(dist, file).split(path.sep).join('/');
+    const body = await readFile(file, 'utf8');
+    const isNoindex = /name="robots"[^>]*noindex/i.test(body);
+    if (!isNoindex && !body.includes('data-pagefind-body')) unmarked.push(rel);
+  }
+  if (unmarked.length > 0) {
+    failures.push(
+      `${unmarked.length} page(s) carry no data-pagefind-body and would fall out of search: ${unmarked.slice(0, 3).join(', ')}`,
+    );
+  }
+}
+
+// --- structured data (SPEC.md §12) ----------------------------------------
+{
+  let carPages = 0;
+  let withCar = 0;
+  let withBreadcrumbs = 0;
+  for (const file of html) {
+    const rel = path.relative(dist, file).split(path.sep).join('/');
+    const body = await readFile(file, 'utf8');
+    const blocks = [...body.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
+    for (const [, json] of blocks) {
+      let parsed;
+      try {
+        parsed = JSON.parse(json.replace(/\u003c/g, '<'));
+      } catch (error) {
+        failures.push(`${rel} has JSON-LD that is not valid JSON: ${error.message}`);
+        continue;
+      }
+      if (parsed['@context'] !== 'https://schema.org') {
+        failures.push(`${rel} has JSON-LD with no schema.org @context.`);
+      }
+      // An offer would make these encyclopedia pages claim to be listings.
+      for (const forbidden of ['offers', 'price', 'aggregateRating']) {
+        if (forbidden in parsed) {
+          failures.push(`${rel} JSON-LD claims "${forbidden}", which no page here can honestly do.`);
+        }
+      }
+      if (parsed['@type'] === 'Car') withCar++;
+      if (parsed['@type'] === 'BreadcrumbList') withBreadcrumbs++;
+    }
+    if (/^cars\/[^/]+\/index\.html$/.test(rel)) {
+      carPages++;
+      if (!blocks.some(([, json]) => json.includes('"Car"'))) {
+        failures.push(`${rel} has no Car structured data (SPEC.md §12).`);
+      }
+    }
+  }
+  notes.push(
+    `Structured data: ${withCar} Car object(s) across ${carPages} car page(s), ${withBreadcrumbs} BreadcrumbList.`,
+  );
 }
 
 // --- the bundle check (SPEC.md §9.5.1) -------------------------------------
