@@ -152,8 +152,15 @@ export const marketVariant = z.object({
   market: z.string().min(1),
   /** Name used in that market, if different. */
   alsoKnownAs: z.string().optional(),
-  /** ONLY the fields that differ — the delta pattern (SPEC.md §5.2). */
-  overrides: trimCore.omit({ id: true }).partial(),
+  /**
+   * ONLY the fields that differ — the delta pattern (SPEC.md §5.2).
+   *
+   * Defaults to empty: plenty of market variants differ by name alone (the
+   * same car sold as a GT86, an FR-S and a BRZ), and forcing an author to
+   * write `"overrides": {}` to say "nothing differs" is friction with no
+   * safety benefit.
+   */
+  overrides: trimCore.omit({ id: true }).partial().default({}),
 });
 export type MarketVariant = z.infer<typeof marketVariant>;
 

@@ -1,0 +1,115 @@
+---
+/**
+ * `/cars/<slug>/test-drive/` — SPEC.md §6, §9.5.
+ *
+ * A tab shell over two panels. The 2D instrumented readout is always the
+ * baseline and is never gated on GPU capability (SPEC.md §9.5.1); the 3D wind
+ * tunnel is an additional tab that is simply absent where it cannot run.
+ *
+ * Only generated for cars the physics can actually model. A Test Drive link
+ * that leads to a page of empty gaps is worse than no link, so `CarPage` only
+ * offers it where `hasTestDrive()` is true — and this route only builds those
+ * pages, so the two cannot disagree.
+ */
+import Breadcrumbs from '../../../components/blocks/Breadcrumbs.astro';
+import TestDrive2D from '../../../components/islands/TestDrive2D.svelte';
+import TestDriveTabs from '../../../components/blocks/TestDriveTabs.astro';
+import WindTunnel from '../../../components/islands/WindTunnel.svelte';
+import BaseLayout from '../../../components/ui/BaseLayout.astro';
+import { getBrands, getCars } from '../../../lib/content/entries.ts';
+import { brandHref, carHref, href } from '../../../lib/content/href.ts';
+import { buildTestDriveData } from '../../../lib/content/testDrive.ts';
+
+export async function getStaticPaths() {
+  const [cars, brands] = await Promise.all([getCars(), getBrands()]);
+  const brandsById = new Map(brands.map((b) => [b.id, b]));
+
+  return cars
+    .filter((car) => car.data.kind !== 'model')
+    .map((car) => ({ car, testDrive: buildTestDriveData(car.data) }))
+    // Only cars the physics can model. `CarPage` gates its link on the same
+    // predicate, so a Test Drive page is never built without a route to it and
+    // a link never leads to a page of empty gaps.
+    .filter(({ testDrive }) => testDrive.inputs !== null)
+    .map(({ car, testDrive }) => ({
+      params: { slug: car.id },
+      props: { car, brand: brandsById.get(car.data.brandRef)!, testDrive },
+    }));
+}
+
+const { car, brand, testDrive } = Astro.props;
+const { data } = car;
+
+/** Dimensions in metres for the proxy body the tunnel shapes. */
+const dim = (v?: { value: number | null } | undefined) =>
+  v && v.value !== null ? v.value / 1000 : null;
+const lengthM = dim(data.dimensions?.length);
+const widthM = dim(data.dimensions?.width);
+const heightM = dim(data.dimensions?.height);
+const publishedCd =
+  data.trims.find((t) => t.dragCoefficient?.value != null)?.dragCoefficient?.value ?? null;
+---
+
+<BaseLayout
+  title={`Test Drive — ${data.name}`}
+  description={`Modelled performance for the ${data.name}: acceleration, top speed, drag and energy use, computed from published specifications and shown alongside the manufacturer's own figures.`}
+  accentColor={brand.data.accentColor}
+>
+  <Breadcrumbs
+    crumbs={[
+      { label: 'Cars', url: href('cars') },
+      { label: brand.data.name, url: brandHref(brand.id) },
+      { label: data.name, url: carHref(car.id) },
+      { label: 'Test Drive', url: '#' },
+    ]}
+  />
+
+  <header class="mt-6">
+    <p class="text-xs font-medium uppercase tracking-[0.14em] text-ink-muted">Test Drive</p>
+    <h1 class="type-title mt-2 text-[clamp(1.75rem,5vw,2.5rem)]">{data.name}</h1>
+    <p class="type-body mt-3 max-w-prose text-ink-secondary">
+      An instrumented readout computed from this car's published specifications.
+      {testDrive.trimName && `Figures are for the ${testDrive.trimName}.`}
+    </p>
+  </header>
+
+  <TestDriveTabs hasWindTunnel={testDrive.inputs !== null}>
+    <div slot="readout">
+      <TestDrive2D
+        client:load
+        inputs={testDrive.inputs}
+        published={testDrive.published}
+        missing={testDrive.missing}
+        frontalAreaEstimated={testDrive.frontalAreaEstimated}
+        frontalAreaNote={testDrive.frontalAreaNote}
+        carName={data.name}
+      />
+    </div>
+    <div slot="tunnel">
+      {/*
+        `client:load`, not `client:visible`. The panel starts `hidden`, so an
+        intersection observer has nothing to observe and the island never
+        hydrates — the controls render from SSR and then do nothing when
+        clicked. Hydrating on load costs almost nothing here because the island
+        itself is small: the solver, the shaders and the model all sit behind a
+        dynamic `import()` that only fires when the visitor presses Start, which
+        is what actually keeps them out of everyone else's bundle.
+      */}
+      <WindTunnel
+        client:load
+        carName={data.name}
+        bodyStyles={data.bodyStyles}
+        lengthM={lengthM}
+        widthM={widthM}
+        heightM={heightM}
+        publishedCd={publishedCd}
+      />
+    </div>
+  </TestDriveTabs>
+
+  <p class="mt-8 text-sm">
+    <a class="underline decoration-line underline-offset-4 hover:text-ink" href={href('methodology')}>
+      How these figures are calculated &rarr;
+    </a>
+  </p>
+</BaseLayout>

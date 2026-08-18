@@ -1,0 +1,87 @@
+---
+/**
+ * The Test Drive tab shell.
+ *
+ * An Astro component with named slots and a few lines of inline JavaScript,
+ * rather than a framework island: switching a tab is toggling `hidden`, and
+ * that does not justify hydrating a component. Both panels stay in the DOM, so
+ * returning to the tunnel does not restart the solver.
+ *
+ * The 2D readout is always present and never gated on GPU capability
+ * (SPEC.md §9.5.1) — it is the baseline. The wind tunnel does its own
+ * capability check inside and says so plainly when a device cannot run it,
+ * which beats hiding the tab and leaving the visitor wondering.
+ */
+interface Props {
+  hasWindTunnel?: boolean;
+}
+const { hasWindTunnel = true } = Astro.props as Props;
+---
+
+<div class="mt-6" data-testdrive-tabs>
+  <div role="tablist" aria-label="Test Drive panels" class="flex gap-1 border-b border-line">
+    <button
+      type="button"
+      role="tab"
+      data-tab="readout"
+      aria-selected="true"
+      aria-controls="panel-readout"
+      class="border-b-2 px-3 py-2 text-sm font-medium transition-colors duration-150"
+    >
+      2D readout
+    </button>
+    {
+      hasWindTunnel && (
+        <button
+          type="button"
+          role="tab"
+          data-tab="tunnel"
+          aria-selected="false"
+          aria-controls="panel-tunnel"
+          class="border-b-2 px-3 py-2 text-sm font-medium transition-colors duration-150"
+        >
+          Wind tunnel
+        </button>
+      )
+    }
+  </div>
+
+  <div id="panel-readout" role="tabpanel" data-panel="readout" class="mt-6">
+    <slot name="readout" />
+  </div>
+
+  {
+    hasWindTunnel && (
+      <div id="panel-tunnel" role="tabpanel" data-panel="tunnel" class="mt-6" hidden>
+        <slot name="tunnel" />
+      </div>
+    )
+  }
+</div>
+
+<style>
+  [role='tab'] {
+    border-color: transparent;
+    color: var(--color-ink-secondary);
+  }
+  [role='tab'][aria-selected='true'] {
+    border-color: var(--brand-accent);
+    color: var(--color-ink);
+  }
+</style>
+
+<script>
+  for (const root of document.querySelectorAll('[data-testdrive-tabs]')) {
+    const tabs = root.querySelectorAll('[data-tab]');
+    const panels = root.querySelectorAll('[data-panel]');
+    for (const tab of tabs) {
+      tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-tab');
+        for (const t of tabs) t.setAttribute('aria-selected', String(t === tab));
+        for (const p of panels) {
+          (p as HTMLElement).hidden = p.getAttribute('data-panel') !== target;
+        }
+      });
+    }
+  }
+</script>

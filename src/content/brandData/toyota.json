@@ -1,0 +1,24 @@
+{
+  "id": "toyota",
+  "name": "Toyota",
+  "legalName": "Toyota Motor Corporation",
+  "countryOfOrigin": "Japan",
+  "founded": 1937,
+  "website": "https://www.toyota.com/",
+  "logo": {
+    "src": "/images/brands/toyota.svg",
+    "alt": "Toyota emblem",
+    "credit": {
+      "author": "Toyota",
+      "title": "File:Toyota carlogo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_carlogo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify Toyota's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#c8102e",
+  "accentColorNote": "An editorial approximation of the red Toyota uses on its emblem and marketing. Toyota does not publish a public brand-colour specification, so this is not presented as an official brand asset.",
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "spot-checked",
+  "references": ["wikipedia-toyota", "commons-file-toyota-carlogo-svg"]
+}

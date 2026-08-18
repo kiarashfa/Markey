@@ -1,0 +1,153 @@
+{
+  "id": "toyota-86-zn6",
+  "name": "Toyota 86 (ZN6)",
+  "fullName": "Toyota 86 / GT86 (ZN6), 2012–2021",
+  "kind": "generation",
+  "parent": "toyota-86",
+  "brandRef": "toyota",
+  "generationCode": "ZN6",
+  "productionYears": { "start": 2012, "end": 2021 },
+  "bodyStyles": ["coupe"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "mainstream",
+  "designer": "Kenji Kido, Tatsuya Sonoda, Kosuke Kubo, Takanori Ito, Ryota Nakai, Hiroyuki Kobayashi, Kouhei Kobayashi",
+  "assembly": ["Ōta, Gunma, Japan (Subaru Gunma Plant)"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4240,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-86",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_86",
+      "sourceNote": "Standard 86/BRZ/FR-S. The Subaru BRZ tS measured 4260 mm."
+    },
+    "width": {
+      "value": 1775,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-86",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_86",
+      "sourceNote": "Standard models. The Toyota 86 GR was 1790 mm."
+    },
+    "height": {
+      "value": 1285,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-86",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_86",
+      "sourceNote": "The generation spans 1285–1320 mm across variants; 1285 mm is the standard coupé."
+    },
+    "wheelbase": {
+      "value": 2570,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-86",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_86"
+    }
+  },
+  "trims": [
+    {
+      "id": "2-0-manual",
+      "name": "2.0 six-speed manual",
+      "productionYears": { "start": 2012, "end": 2021 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual (Aisin AZ6 / Toyota TL70)",
+      "gears": 6,
+      "engine": {
+        "code": "4U-GSE / FA20",
+        "configuration": "flat-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-toyota-86",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_86"
+        }
+      },
+      "power": {
+        "value": 147,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-86",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_86",
+        "sourceNote": "200 PS at 7,000 rpm, converted at 1 PS = 0.73549875 kW. Later and other-market cars ran up to 207 PS."
+      },
+      "torque": {
+        "value": 205,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-86",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_86",
+        "sourceNote": "151 lb⋅ft at 6,400 rpm, converted at 1 lb⋅ft = 1.3558179 N⋅m."
+      },
+      "mass": {
+        "value": 1190,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-toyota-86",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_86",
+        "sourceNote": "Lightest published kerb weight for the generation, which spans 1190–1298 kg across variants and markets. Corresponds to the base manual car."
+      },
+      "zeroToHundredKph": {
+        "value": 7.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-toyota-86",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_86",
+        "sourceNote": "0–62 mph, manufacturer's claim (Toyota UK). Independent testing of the 0–60 mph time reported 6.0–6.2 s."
+      },
+      "topSpeed": {
+        "value": 233,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-toyota-86",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_86",
+        "sourceNote": "145 mph as tested by Top Gear, converted exactly. Not a manufacturer claim."
+      },
+      "dragCoefficient": {
+        "value": 0.27,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-drag-coefficients",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_automobile_drag_coefficients",
+        "sourceNote": "Listed for the Subaru BRZ and Toyota 86, 2012."
+      },
+      "frontalArea": {
+        "value": 1.94,
+        "unit": "m2",
+        "status": "estimated",
+        "sourceNote": "Estimated as 0.85 × width × height = 0.85 × 1.775 m × 1.285 m ≈ 1.94 m², the standing approximation documented in SPEC.md §8.2. Toyota does not publish a frontal area for this car."
+      },
+      "tyreGrip": {
+        "value": 1.0,
+        "unit": "",
+        "status": "estimated",
+        "sourceNote": "Reasoned default for contemporary road tyres on dry asphalt, per the era table on /methodology/. The 86 shipped on deliberately low-grip Michelin Primacy tyres, so this is if anything generous."
+      },
+      "prices": [],
+      "marketVariants": [
+        {
+          "market": "EU",
+          "alsoKnownAs": "Toyota GT86"
+        },
+        {
+          "market": "US",
+          "alsoKnownAs": "Scion FR-S"
+        },
+        {
+          "market": "JP",
+          "alsoKnownAs": "Subaru BRZ"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "spot-checked",
+  "references": ["wikipedia-toyota-86", "wikipedia-drag-coefficients"]
+}

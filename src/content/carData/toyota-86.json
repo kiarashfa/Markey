@@ -1,0 +1,14 @@
+{
+  "id": "toyota-86",
+  "name": "Toyota 86",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "toyota",
+  "productionYears": { "start": 2012, "end": null },
+  "segment": "s-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "spot-checked",
+  "references": ["wikipedia-toyota-86"]
+}

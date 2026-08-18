@@ -34,6 +34,49 @@
       "note": "Wikipedia in turn cites BMW's 'BMW 628 CSi 635CSi Technische Beschreibung' for the dimension figures. That primary document has not been read directly, so it is not cited here as though it had been."
     },
     {
+      "key": "wikipedia-toyota",
+      "type": "wikipedia",
+      "title": "Toyota",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Toyota",
+      "revision": "1366818869",
+      "accessed": "2026-08-17",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "wikipedia-toyota-86",
+      "type": "wikipedia",
+      "title": "Toyota 86",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Toyota_86",
+      "revision": "1367892282",
+      "accessed": "2026-08-17",
+      "license": "CC BY-SA 4.0",
+      "note": "The article in turn cites Toyota UK for the 0–62 mph claim, Top Gear for the tested top speed, and Scion's 2013 FR-S specification sheet for engine output. Those primary sources have not been read directly, so they are not cited here as though they had been."
+    },
+    {
+      "key": "wikipedia-drag-coefficients",
+      "type": "wikipedia",
+      "title": "List of automobile drag coefficients",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_automobile_drag_coefficients",
+      "revision": "1360737555",
+      "accessed": "2026-08-17",
+      "license": "CC BY-SA 4.0",
+      "note": "The aerodynamic source named in DATA_SOURCES.md — several hundred production and concept vehicles, 1921 to 2024."
+    },
+    {
+      "key": "commons-file-toyota-carlogo-svg",
+      "type": "commons",
+      "title": "File:Toyota carlogo.svg",
+      "author": "Toyota",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Toyota_carlogo.svg",
+      "accessed": "2026-08-17",
+      "license": "Public domain (copyright); mark is trademarked",
+      "note": "Same split as the BMW roundel: public domain for copyright purposes, with an explicit 'trademarked' restriction. Displayed under trademark nominative use."
+    },
+    {
       "key": "commons-file-bmw-svg",
       "type": "commons",
       "title": "File:BMW.svg",

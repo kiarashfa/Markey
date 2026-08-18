@@ -61,6 +61,39 @@ const entries = [...bibliography.entries].sort((a, b) => a.title.localeCompare(b
     </div>
   </Section>
 
+  <Section
+    title="Software and methods"
+    lede="This project attributes every photograph and every cited number, so a whole solver belongs in the list too."
+  >
+    <div class="type-body flex max-w-prose flex-col gap-3 py-5 text-sm text-ink-secondary">
+      <p>
+        Markey's wind tunnel is our own implementation, but its structure
+        follows <strong class="text-ink">Aeolus T-1</strong>, a browser
+        lattice-Boltzmann solver whose author gave permission to use or modify
+        it. The arrangement of the D3Q19 velocity set with opposite pairs
+        adjacent, the deviation-form storage that keeps a float32 texture
+        viable, the packing of nineteen distributions into five render targets,
+        and the discipline of generating the GPU shaders from the same table the
+        CPU reference uses — all of that is theirs.
+      </p>
+      <p>
+        So is a warning that saved a day of work: holding the TRT magic
+        parameter fixed while lowering viscosity to raise the Reynolds number
+        drives the antisymmetric relaxation rate toward zero, and the solver
+        quietly diverges. It is documented in our
+        <code class="text-ink">lattice.ts</code> with credit, because the next
+        person to touch it will need it.
+      </p>
+      <p>
+        The underlying methods — Qian–d'Humières–Lallemand D3Q19,
+        Ginzburg–Adler two-relaxation-time collision, Smagorinsky subgrid
+        viscosity, momentum-exchange force integration, and the Clift–Gauvin
+        drag correlation used to validate against — are published science and
+        belong to no one.
+      </p>
+    </div>
+  </Section>
+
   <Section title={`Bibliography (${entries.length})`}>
     <ul class="flex flex-col gap-4 py-5 text-sm">
       {

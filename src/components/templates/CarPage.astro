@@ -27,9 +27,10 @@ import {
   type JoinedBrand,
   type JoinedCar,
 } from '../../lib/content/entries.ts';
-import { brandHref, carHref, href } from '../../lib/content/href.ts';
+import { brandHref, carHref, href, testDriveHref } from '../../lib/content/href.ts';
 import { formatValue, formatYears } from '../../lib/render/format.ts';
 import { toGalleryImages } from '../../lib/render/images.ts';
+import { hasTestDrive } from '../../lib/content/testDrive.ts';
 import { eras, labelFor, segments } from '../../schemas/taxonomy.ts';
 
 interface Props {
@@ -74,6 +75,8 @@ if (data.kind === 'model' && generations.length > 0) {
 if (data.designer) heroStats.push({ label: 'Designer', value: data.designer });
 
 const segmentTerm = data.segment ? segments.terms.find((t) => t.id === data.segment) : undefined;
+
+const testDriveAvailable = data.kind !== 'model' && hasTestDrive(data);
 
 const creditedImages = [...(data.hero ? [data.hero] : []), ...data.gallery];
 
@@ -129,6 +132,23 @@ const description =
         }))}
       />
     </div>
+
+    {
+      /*
+        Only offered where the physics can actually run. A Test Drive link
+        leading to a page of empty gaps is worse than no link — and the route
+        only builds pages for the same set, so the two cannot disagree.
+      */
+      testDriveAvailable && (
+        <a
+          href={testDriveHref(car.id)}
+          class="pressable mt-6 inline-flex items-center gap-2 rounded-lg border border-line-strong bg-surface-2 px-4 py-2.5 text-sm font-medium transition-colors duration-150 hover:bg-surface-3"
+        >
+          Test Drive this car
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      )
+    }
 
     <article class="type-body mt-8 max-w-prose text-[0.975rem] leading-relaxed text-ink-secondary">
       <slot />
