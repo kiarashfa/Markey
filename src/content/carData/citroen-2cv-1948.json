@@ -1,0 +1,329 @@
+{
+  "id": "citroen-2cv-1948",
+  "name": "Citroën 2CV",
+  "fullName": "Citroën 2CV, 1948–1990",
+  "kind": "generation",
+  "parent": "citroen-2cv",
+  "brandRef": "citroen",
+  "productionYears": {
+    "start": 1948,
+    "end": 1990
+  },
+  "bodyStyles": [
+    "saloon"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd",
+    "4wd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "designer": "André Lefèbvre, Flaminio Bertoni, Walter Becchia and Marcel Chinon",
+  "assembly": [
+    "Levallois-Perret, France",
+    "Forest, Belgium",
+    "Mangualde, Portugal",
+    "Vigo, Spain",
+    "Slough, United Kingdom",
+    "Buenos Aires, Argentina",
+    "Koper, Yugoslavia (Cimos)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 3860,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-2cv",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV"
+    },
+    "width": {
+      "value": 1480,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-2cv",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV"
+    },
+    "height": {
+      "value": 1600,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-2cv",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV"
+    },
+    "wheelbase": {
+      "value": 2400,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-2cv",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV"
+    },
+    "kerbWeight": {
+      "value": 600,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-citroen-2cv",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+      "sourceNote": "The single figure the article publishes for the model. It does not say which variant or year it describes, and the car gained weight over forty-two years."
+    }
+  },
+  "trims": [
+    {
+      "id": "type-a-375",
+      "name": "Type A (375 cc)",
+      "productionYears": {
+        "start": 1948,
+        "end": 1954
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "configuration": "air-cooled flat-2",
+        "cylinders": 2,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 375,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-2cv",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV"
+        }
+      },
+      "power": {
+        "value": 6.6,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-2cv",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+        "sourceNote": "9 PS (DIN) at 3,500 rpm, converted at 1 PS = 0.73549875 kW. Deliberately under-tuned: the article notes the inlet tract and carburettor were sized to restrict it well below what the components could take."
+      },
+      "mass": {
+        "value": 600,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-citroen-2cv",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+        "sourceNote": "The model-level kerb weight the article publishes; it does not identify a variant, so this is the best available figure rather than a measurement of this trim."
+      },
+      "topSpeed": {
+        "value": 64,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-2cv",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+        "sourceNote": "The article also records a 0-40 km/h time of 42.4 s for this car. It publishes no 0-100 km/h time, which for a 64 km/h car is not an omission."
+      },
+      "dragCoefficient": {
+        "value": 0.51,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-drag-coefficients",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_automobile_drag_coefficients",
+        "sourceNote": "Listed for the Citroën 2CV and dated 1948 in the source, which is why it is recorded against the earliest trim. The body shape changed very little over the production run, but the list does not say that, so the figure is not copied onto the later trims."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "az-425",
+      "name": "AZ (425 cc)",
+      "productionYears": {
+        "start": 1955,
+        "end": 1970
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "configuration": "air-cooled flat-2",
+        "cylinders": 2,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 425,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-2cv",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV"
+        }
+      },
+      "power": {
+        "value": 9.2,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-2cv",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+        "sourceNote": "12.5 PS at 4,200 rpm from 1955, converted at 1 PS = 0.73549875 kW. Raised to 18 PS by 1963 with no change to the displacement."
+      },
+      "topSpeed": {
+        "value": 80,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-2cv",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+        "sourceNote": "1955 figure; 84 km/h from 1962."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2cv-6-602",
+      "name": "2CV 6 (602 cc)",
+      "productionYears": {
+        "start": 1970,
+        "end": 1979
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "M28",
+        "configuration": "air-cooled flat-2",
+        "cylinders": 2,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 602,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-2cv",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV"
+        }
+      },
+      "power": {
+        "value": 24.3,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-2cv",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+        "sourceNote": "33 PS from the M28 engine, the most powerful ever fitted to a 2CV, converted at 1 PS = 0.73549875 kW. Emissions rules cut it to 25 PS in 1975."
+      },
+      "topSpeed": {
+        "value": 100,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-2cv",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+        "sourceNote": "1970 figure."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2cv-6-charleston",
+      "name": "2CV 6 Charleston",
+      "productionYears": {
+        "start": 1981,
+        "end": 1990
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "M28",
+        "configuration": "air-cooled flat-2",
+        "cylinders": 2,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 602,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-2cv",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV"
+        }
+      },
+      "power": {
+        "value": 21.3,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-2cv",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+        "sourceNote": "29 PS at 5,750 rpm from the revised M28, converted at 1 PS = 0.73549875 kW. Less power than the 33 PS engine and deliberately so: a milder camshaft and carburettor gave better economy and a higher top speed."
+      },
+      "topSpeed": {
+        "value": 115,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-2cv",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+        "sourceNote": "Achieved after the 1981 carburettor change. The fastest the 2CV ever went."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "sahara-4x4",
+      "name": "2CV Sahara (4x4)",
+      "productionYears": {
+        "start": 1958,
+        "end": 1971
+      },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "transmission": "Two 4-speed manual gearboxes, one per axle, on a single lever",
+      "gears": 4,
+      "engine": {
+        "configuration": "two air-cooled flat-2 engines, one per axle",
+        "cylinders": 2,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 425,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-2cv",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+          "sourceNote": "Each of the two engines."
+        }
+      },
+      "power": {
+        "value": null,
+        "unit": "kW",
+        "status": "placeholder",
+        "sourceNote": "Each engine is published at 12 PS, but a combined output for the pair is not, and adding two engine ratings together would be an invention rather than a measurement."
+      },
+      "topSpeed": {
+        "value": 105,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-2cv",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+        "sourceNote": "With both engines running. On the front engine alone the article gives 65 km/h."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/citroen-2cv-1948/hero-front-three-quarter.jpg",
+    "alt": "Grey Citroën 2CV photographed from the front three-quarter angle, showing the corrugated bonnet, round headlamps and rolled canvas roof",
+    "width": 1920,
+    "height": 1358,
+    "caption": "Corrugated steel, a canvas roof and headlamps on a bar: every visible decision follows from the cost target.",
+    "credit": {
+      "author": "Alexander Migl",
+      "title": "File:Citroen 2CV 1X7A7979.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citroen_2CV_1X7A7979.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-08-18",
+  "reviewStatus": "spot-checked",
+  "references": [
+    "wikipedia-citroen-2cv",
+    "wikipedia-drag-coefficients"
+  ]
+}

@@ -1,0 +1,487 @@
+{
+  "id": "volkswagen-golf-mk1",
+  "name": "Volkswagen Golf Mk1",
+  "fullName": "Volkswagen Golf Mk1 (Typ 17), 1974-1993",
+  "kind": "generation",
+  "parent": "volkswagen-golf",
+  "brandRef": "volkswagen",
+  "generationCode": "Typ 17",
+  "productionYears": {
+    "start": 1974,
+    "end": 1993
+  },
+  "bodyStyles": [
+    "hatchback",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Giorgetto Giugiaro at Italdesign",
+  "assembly": [
+    "Wolfsburg, Germany",
+    "Brussels, Belgium",
+    "New Stanton, Pennsylvania, United States (Westmoreland Assembly)",
+    "Uitenhage, South Africa",
+    "Puebla, Mexico",
+    "Sarajevo, Yugoslavia (TAS)",
+    "Clayton, Victoria, Australia"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 3705,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-golf-mk1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+      "sourceNote": "Cars built to August 1978. Later hatchbacks measured 3,815 mm on deeper bumpers, and the US-market Rabbit was published as 155.3 in."
+    },
+    "width": {
+      "value": 1610,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-golf-mk1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+      "sourceNote": "Later cars measured 1,630 mm."
+    },
+    "height": {
+      "value": 1395,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-golf-mk1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+      "sourceNote": "Hatchback. The Cabriolet stood 1,412 mm and the Caddy pickup 1,490 mm."
+    },
+    "wheelbase": {
+      "value": 2400,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-golf-mk1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+      "sourceNote": "Hatchback and Cabriolet. The Caddy pickup used a 2,625 mm wheelbase."
+    },
+    "kerbWeight": {
+      "value": 790,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-golf-mk1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+      "sourceNote": "Lightest published figure. The generation spans 790-930 kg for the hatchback and 905-970 kg for the Cabriolet, so a single scalar cannot describe it; the per-trim figures below are the real data."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-1",
+      "name": "1.1",
+      "productionYears": {
+        "start": 1974,
+        "end": 1983
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "FA/GG/HB",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 1093,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-golf-mk1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1"
+        }
+      },
+      "power": {
+        "value": 36.8,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "50 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 77,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "Published as 7.9 kg-m at 3,000 rpm, converted at 9.80665 N-m per kg-m."
+      },
+      "topSpeed": {
+        "value": 138,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "Published as a 138-140 km/h band; the lower bound is recorded. The Cabriolet on this engine managed 133 km/h."
+      },
+      "zeroToHundredKph": {
+        "value": 17.0,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1"
+      },
+      "fuelEconomy": {
+        "value": 9.0,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "From the article model-range table, which does not name a test cycle. Predates the modern European cycles."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-diesel",
+      "name": "1.6 Diesel",
+      "productionYears": {
+        "start": 1980,
+        "end": 1983
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "CR/JK",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 1588,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-golf-mk1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1"
+        }
+      },
+      "power": {
+        "value": 39.7,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "54 PS at 4,800 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 98,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "98 N-m at 2,300 rpm."
+      },
+      "topSpeed": {
+        "value": 138,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "Published as a 138-142 km/h band; the lower bound is recorded."
+      },
+      "zeroToHundredKph": {
+        "value": 17.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "Published as a 17.5-21.5 s band across markets and gearing; the quickest figure is recorded."
+      },
+      "fuelEconomy": {
+        "value": 6.5,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "From the article model-range table, which does not name a test cycle."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": [
+        {
+          "market": "US",
+          "alsoKnownAs": "Volkswagen Rabbit Diesel",
+          "overrides": {
+            "fuelEconomy": {
+              "value": 6.53,
+              "unit": "L/100km",
+              "status": "verified",
+              "source": "epa-1984-volkswagen-rabbit-diesel",
+              "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/26787",
+              "sourceNote": "EPA combined 36 mpg (US) for the 1984 Rabbit 1.6 diesel with the 5-speed manual, converted at 235.215 L-mi/100km-gal. Within a rounding error of the European figure, which is unusual and worth noting rather than assuming."
+            },
+            "co2": {
+              "value": 175.7,
+              "unit": "g/km",
+              "status": "verified",
+              "source": "epa-1984-volkswagen-rabbit-diesel",
+              "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/26787",
+              "sourceNote": "EPA tailpipe CO2, 282.8 g/mi, converted at 1.609344 km/mi. US test cycle."
+            },
+            "bootVolume": {
+              "value": 396,
+              "unit": "L",
+              "status": "verified",
+              "source": "epa-1984-volkswagen-rabbit-diesel",
+              "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/26787",
+              "sourceNote": "EPA hatchback luggage volume, 14 cu ft, converted at 28.3168 L/cu ft. EPA measures a hatchback to the roof, so this is not comparable with a European seats-up boot figure."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "gti",
+      "name": "GTI",
+      "productionYears": {
+        "start": 1976,
+        "end": 1982
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed close-ratio manual, 5-speed from August 1979",
+      "gears": 4,
+      "engine": {
+        "code": "EG",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 1588,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-golf-mk1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+          "sourceNote": "79.5 x 80 mm bore and stroke, 9.5:1 compression."
+        }
+      },
+      "power": {
+        "value": 80.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "110 PS at 6,100 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 140,
+        "unit": "Nm",
+        "status": "conflicting-sources",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "The article prose gives 140 N-m at 5,000 rpm, citing Volkswagen’s own 40-years brochure; the model-range table in the same article gives 137 N-m at the same speed. The manufacturer-attributed figure is recorded."
+      },
+      "mass": {
+        "value": 810,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "Kerb weight as published in the article prose, citing Volkswagen’s 40-years brochure."
+      },
+      "zeroToHundredKph": {
+        "value": 9.2,
+        "unit": "s",
+        "status": "conflicting-sources",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "The article prose gives 9.2 s, citing Volkswagen’s 40-years brochure; the model-range table in the same article gives 10 s. The manufacturer-attributed figure is recorded."
+      },
+      "topSpeed": {
+        "value": 182,
+        "unit": "km/h",
+        "status": "conflicting-sources",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "The article prose gives 182 km/h, citing Volkswagen’s 40-years brochure; the model-range table gives 183 km/h. A 1 km/h difference, recorded rather than quietly reconciled."
+      },
+      "fuelEconomy": {
+        "value": 10.5,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "From the article model-range table, which does not name a test cycle."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gli-cabriolet",
+      "name": "GLI Cabriolet",
+      "productionYears": {
+        "start": 1982,
+        "end": 1993
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "DX",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 1781,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-golf-mk1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1"
+        }
+      },
+      "power": {
+        "value": 82.4,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "112 PS at 5,800 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 150,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "150 N-m at 3,500 rpm."
+      },
+      "mass": {
+        "value": 905,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "Lightest published Cabriolet kerb weight; the body spans 905-970 kg."
+      },
+      "zeroToHundredKph": {
+        "value": 10.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "Cabriolet figure. The equivalent hatchback managed 9 s."
+      },
+      "topSpeed": {
+        "value": 180,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "Cabriolet figure. The equivalent hatchback reached 187 km/h."
+      },
+      "fuelEconomy": {
+        "value": 11.0,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-golf-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+        "sourceNote": "Cabriolet figure from the article model-range table, which does not name a test cycle."
+      },
+      "dragCoefficient": {
+        "value": 0.48,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-drag-coefficients",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_automobile_drag_coefficients",
+        "sourceNote": "Listed as the Volkswagen Cabriolet (Rabbit Convertible), 1979-1993. No drag coefficient is published for the Mk1 hatchback, which is why only this trim carries one."
+      },
+      "dimensions": {
+        "height": {
+          "value": 1412,
+          "unit": "mm",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-golf-mk1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+          "sourceNote": "Cabriolet, hood up."
+        }
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/volkswagen-golf-mk1/hero-front.jpg",
+    "alt": "Red Volkswagen Golf Mk1 photographed head-on, showing the square headlamps, black grille and upright glasshouse",
+    "width": 1626,
+    "height": 1023,
+    "caption": "The shape Giugiaro drew: three boxes compressed into two, and almost no surface decoration anywhere.",
+    "credit": {
+      "author": "Rudolf Stricker",
+      "title": "File:VW Golf I front 20080208.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:VW_Golf_I_front_20080208.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/volkswagen-golf-mk1/gti-rear.jpg",
+      "alt": "Rear three-quarter view of a red 1979 Volkswagen Golf GTI, showing the black wheel-arch extensions and the GTI badge on the tailgate",
+      "width": 1920,
+      "height": 1177,
+      "caption": "A 1979 GTI. The black arch extensions cover the wider 175/70 tyres that came with the car.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:1979 Volkswagen Golf GTi 1.6 Rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1979_Volkswagen_Golf_GTi_1.6_Rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    },
+    {
+      "src": "/images/cars/volkswagen-golf-mk1/gti-interior.jpg",
+      "alt": "Interior of a 1982 Golf GTI showing the tartan cloth seats, four-spoke steering wheel and golf-ball gear knob",
+      "width": 1920,
+      "height": 1280,
+      "caption": "Gunhild Liljequist’s contribution: tartan cloth and a golf-ball gear knob, the two details everyone remembers.",
+      "credit": {
+        "author": "Tony Harrison",
+        "title": "File:1982 VW Mk1 Golf GTi interior.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1982_VW_Mk1_Golf_GTi_interior.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+      }
+    },
+    {
+      "src": "/images/cars/volkswagen-golf-mk1/cabriolet-front-left.jpg",
+      "alt": "White 1992 Volkswagen Cabriolet seen from the front left with the hood up, showing the integrated roll-over bar",
+      "width": 1920,
+      "height": 1116,
+      "caption": "A 1992 Cabriolet, built by Karmann. The Mk1 body was still in production nine years after the hatchback it came from was replaced.",
+      "credit": {
+        "author": "Mr.choppers",
+        "title": "File:1992 Volkswagen Cabriolet in white, front left.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1992_Volkswagen_Cabriolet_in_white,_front_left.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-08-18",
+  "reviewStatus": "spot-checked",
+  "references": [
+    "wikipedia-volkswagen-golf-mk1",
+    "wikipedia-drag-coefficients",
+    "epa-1984-volkswagen-rabbit-diesel"
+  ]
+}

@@ -44,12 +44,12 @@
     positioning: car.positioning ?? undefined,
     eras: car.eras,
     price: car.priceMin,
-    seats: null,
+    seats: car.seatsMax,
     consumptionPer100km: car.consumptionMinL100km,
     zeroToHundredSeconds: car.zeroToHundredMinS,
     powerToWeightKwPerTonne:
       car.powerKwMax !== null && car.massMinKg ? car.powerKwMax / (car.massMinKg / 1000) : null,
-    bootLitres: null,
+    bootLitres: car.bootLitresMax,
     productionStart: car.yearStart,
     productionEnd: car.yearEnd,
   }));

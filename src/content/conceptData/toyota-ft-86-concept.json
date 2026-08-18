@@ -1,0 +1,49 @@
+{
+  "id": "toyota-ft-86-concept",
+  "name": "Toyota FT-86 Concept",
+  "brandRef": "toyota",
+  "unveiledAt": "Tokyo Motor Show",
+  "unveiledYear": 2009,
+  "designer": "Toyota ED² (European Design and Development), Nice",
+  "fate": "production",
+  "relatedProductionCar": "toyota-86-zn6",
+  "bodyStyles": [
+    "coupe"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "s-segment",
+  "positioning": "mainstream",
+  "power": {
+    "value": null,
+    "unit": "kW",
+    "status": "placeholder",
+    "sourceNote": "Toyota published no output for the concept. It was shown with the D-4S boxer engine that reached production, but a concept's figures are frequently claims rather than measurements, and here there is not even a claim."
+  },
+  "spotlight": false,
+  "hero": {
+    "src": "/images/concepts/toyota-ft-86-concept/hero.jpg",
+    "alt": "Red Toyota FT-86 Concept coupé on a motor-show stand, seen from the front three-quarter angle, with a low nose and heavily flared wheel arches",
+    "width": 1280,
+    "height": 580,
+    "caption": "The FT-86 Concept at the 2009 Tokyo Motor Show. The red was mixed specially for the car, and Toyota said it was based on the colouring of a Japanese macaque.",
+    "credit": {
+      "author": "Tennen-Gas",
+      "title": "File:Toyota FT-86 001.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_FT-86_001.JPG",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-08-18",
+  "reviewStatus": "spot-checked",
+  "references": [
+    "wikipedia-toyota-86"
+  ]
+}

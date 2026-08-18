@@ -1,0 +1,243 @@
+{
+  "id": "range-rover-classic",
+  "name": "Range Rover Classic",
+  "fullName": "Range Rover Classic, 1970-1996",
+  "kind": "generation",
+  "parent": "range-rover",
+  "brandRef": "land-rover",
+  "productionYears": {
+    "start": 1970,
+    "end": 1996
+  },
+  "bodyStyles": [
+    "suv"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "4wd"
+  ],
+  "segment": "suv-large",
+  "positioning": "luxury",
+  "designer": "Spen King, Gordon Bashford and David Bache",
+  "assembly": [
+    "Solihull, United Kingdom (Solihull plant)",
+    "Enfield, New South Wales, Australia (Leyland Australia)",
+    "Las Tejerías, Venezuela (Tracto Agro)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4445,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-range-rover-classic",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Range_Rover_Classic",
+      "sourceNote": "Short-wheelbase car, published as 175 in and converted at 25.4 mm/in. The 1992 long-wheelbase LSE measured 183 in."
+    },
+    "width": {
+      "value": 1781,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-range-rover-classic",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Range_Rover_Classic",
+      "sourceNote": "Published as 70.1 in and converted at 25.4 mm/in."
+    },
+    "height": {
+      "value": 1801,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-range-rover-classic",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Range_Rover_Classic",
+      "sourceNote": "Cars built 1970-1980, published as 70.9 in. Later cars were published as 70.1 in."
+    },
+    "wheelbase": {
+      "value": 2540,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-range-rover-classic",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Range_Rover_Classic",
+      "sourceNote": "Published as 100.0 in and converted at 25.4 mm/in. The LSE used a 108 in wheelbase."
+    },
+    "kerbWeight": {
+      "value": null,
+      "unit": "kg",
+      "status": "placeholder",
+      "sourceNote": "No kerb weight is published for the generation as a whole. A figure for one late four-door car is recorded on the 3.9 V8 trim below, from NHTSA's Canadian Vehicle Specifications; it would be wrong to present that as the generation's weight, since the 1970 two-door was a materially lighter vehicle."
+    }
+  },
+  "trims": [
+    {
+      "id": "3-5-v8",
+      "name": "3.5 V8",
+      "productionYears": {
+        "start": 1970,
+        "end": 1989
+      },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual (BL LT95), dual-range transfer case",
+      "gears": 4,
+      "engine": {
+        "code": "Rover V8",
+        "configuration": "V8",
+        "cylinders": 8,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 3528,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-range-rover-classic",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Range_Rover_Classic"
+        }
+      },
+      "power": {
+        "value": 100.7,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-range-rover-classic",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Range_Rover_Classic",
+        "sourceNote": "Published as a detuned 135 hp, converted at 1 hp = 0.745699872 kW."
+      },
+      "topSpeed": {
+        "value": 153,
+        "unit": "km/h",
+        "status": "conflicting-sources",
+        "source": "wikipedia-range-rover-classic",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Range_Rover_Classic",
+        "sourceNote": "The launch claim was around 100 mph; the article separately reports a tested 95 mph, citing an Autocar road test of November 1970. The tested figure is recorded, converted at 1.609344 km/mi. The article gives 0-60 mph in under 15 s, which is not a 0-100 km/h time and is not recorded as one."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "3-9-v8",
+      "name": "3.9 V8",
+      "productionYears": {
+        "start": 1989,
+        "end": 1994
+      },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "transmission": "4-speed automatic (ZF 4HP22), dual-range transfer case",
+      "gears": 4,
+      "engine": {
+        "code": "Rover V8",
+        "configuration": "V8",
+        "cylinders": 8,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 3947,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-range-rover-classic",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Range_Rover_Classic",
+          "sourceNote": "Enlarged from 3,528 cc for the 1989 model year."
+        }
+      },
+      "power": {
+        "value": null,
+        "unit": "kW",
+        "status": "placeholder",
+        "sourceNote": "The article records the displacement increase but publishes no output for the 3.9 engine in this vehicle."
+      },
+      "mass": {
+        "value": 1996,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-1994-range-rover-county-classic",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1995&Make=land%20rover&units=Metric&format=json",
+        "sourceNote": "Curb weight of the 1994 Canadian-market 4-door County Classic, from NHTSA's Canadian Vehicle Specifications. Wikipedia publishes no kerb weight for this generation in any language; this is a different market and body from the 1970 two-door, so it describes the late four-door car and not the range."
+      },
+      "fuelEconomy": {
+        "value": 18.09,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "epa-1990-land-rover-range-rover",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/7414",
+        "sourceNote": "EPA combined 13 mpg (US) for the 1990 3.9 V8 automatic, converted at 235.215 L-mi/100km-gal. Post-2008 EPA methodology, recalculated for a 1990 car."
+      },
+      "co2": {
+        "value": 424.8,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "epa-1990-land-rover-range-rover",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/7414",
+        "sourceNote": "EPA tailpipe CO2, 683.6 g/mi, converted at 1.609344 km/mi. US test cycle."
+      },
+      "dragCoefficient": {
+        "value": 0.45,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-drag-coefficients",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_automobile_drag_coefficients",
+        "sourceNote": "Listed for the Range Rover Classic, 1990."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-4-turbo-d",
+      "name": "2.4 Turbo D",
+      "productionYears": {
+        "start": 1986,
+        "end": 1989
+      },
+      "drivetrain": "4wd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual (BL LT77), dual-range transfer case",
+      "gears": 5,
+      "engine": {
+        "code": "VM Motori",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "aspiration": "turbocharged",
+        "displacement": {
+          "value": 2393,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-range-rover-classic",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Range_Rover_Classic",
+          "sourceNote": "Enlarged to 2,499 cc in 1989."
+        }
+      },
+      "power": {
+        "value": null,
+        "unit": "kW",
+        "status": "placeholder",
+        "sourceNote": "The article describes the VM diesel and its reception in detail but publishes no output figure for it."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/range-rover-classic/hero-front-three-quarter.jpg",
+    "alt": "Blue 1973 Range Rover photographed from the front three-quarter angle, showing the two-door body, flat glass and castellated bonnet line",
+    "width": 1920,
+    "height": 1159,
+    "caption": "A 1973 car: two doors, rubber floors, and a shape that barely changed for twenty-six years.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:1973 Land Rover Range Rover 3.5.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1973_Land_Rover_Range_Rover_3.5.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-08-18",
+  "reviewStatus": "spot-checked",
+  "references": [
+    "wikipedia-range-rover-classic",
+    "wikipedia-drag-coefficients",
+    "epa-1990-land-rover-range-rover",
+    "nhtsa-cvs-1994-range-rover-county-classic"
+  ]
+}

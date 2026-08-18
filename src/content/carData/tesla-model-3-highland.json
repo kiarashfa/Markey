@@ -1,0 +1,221 @@
+{
+  "id": "tesla-model-3-highland",
+  "name": "Tesla Model 3 (Highland)",
+  "fullName": "Tesla Model 3, 2023 facelift (Highland)",
+  "kind": "generation",
+  "parent": "tesla-model-3",
+  "brandRef": "tesla",
+  "revisionOf": "tesla-model-3-2017",
+  "productionYears": {
+    "start": 2023,
+    "end": null
+  },
+  "bodyStyles": [
+    "saloon"
+  ],
+  "powertrains": [
+    "bev"
+  ],
+  "drivetrains": [
+    "rwd",
+    "awd"
+  ],
+  "segment": "d-segment",
+  "positioning": "premium",
+  "designer": "Franz von Holzhausen",
+  "assembly": [
+    "Fremont, California, United States (Tesla Fremont Factory)",
+    "Shanghai, China (Gigafactory Shanghai)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4720,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+      "sourceNote": "The facelift is published in millimetres rather than inches, and is 26 mm longer than the car it replaced."
+    },
+    "width": {
+      "value": 1849,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+      "sourceNote": "Unchanged from the pre-facelift car; published as 72.8 in and converted at 25.4 mm/in."
+    },
+    "height": {
+      "value": 1441,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3"
+    },
+    "wheelbase": {
+      "value": 2875,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+      "sourceNote": "Unchanged; published as 113.2 in and converted at 25.4 mm/in."
+    }
+  },
+  "trims": [
+    {
+      "id": "rear-wheel-drive",
+      "name": "Rear-Wheel Drive",
+      "productionYears": {
+        "start": 2023,
+        "end": null
+      },
+      "drivetrain": "rwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed fixed reduction",
+      "gears": 1,
+      "engine": {
+        "configuration": "single motor, interior permanent magnet synchronous reluctance",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 192,
+        "unit": "kW",
+        "status": "verified",
+        "source": "epa-2024-tesla-model-3-rwd",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/47909",
+        "sourceNote": "EPA records the motor as 192 kW. Tesla publishes no power figure."
+      },
+      "mass": {
+        "value": 1765,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "sourceNote": "Published as 3,891 lb and converted at 0.45359237 kg/lb."
+      },
+      "topSpeed": {
+        "value": 201,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "sourceNote": "Published as 125 mph and converted exactly. Tesla quotes 0-60 mph in 5.8 s, which is not a 0-100 km/h time."
+      },
+      "batteryCapacity": {
+        "value": 64,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3"
+      },
+      "electricRange": {
+        "value": 438,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "sourceNote": "EPA combined, published as 272 miles and converted at 1.609344 km/mi. The WLTP figure for the same car is 534 km; the cycles are not comparable."
+      },
+      "electricConsumption": {
+        "value": 15.81,
+        "unit": "kWh/100km",
+        "status": "verified",
+        "source": "epa-2024-tesla-model-3-rwd",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/47909",
+        "sourceNote": "EPA combined 25.45 kWh/100 mi, converted at 1.609344 km/mi. Measured at the wall."
+      },
+      "bootVolume": {
+        "value": 425,
+        "unit": "L",
+        "status": "verified",
+        "source": "epa-2024-tesla-model-3-rwd",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/47909",
+        "sourceNote": "EPA luggage volume, 15 cu ft, converted at 28.3168 L/cu ft. EPA measures a saloon boot differently from the European VDA method, so this is not comparable with a European figure, and it excludes the front boot."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "performance-awd",
+      "name": "Performance AWD",
+      "productionYears": {
+        "start": 2024,
+        "end": null
+      },
+      "drivetrain": "awd",
+      "powertrain": "bev",
+      "transmission": "Single-speed fixed reduction, one motor per axle",
+      "gears": 1,
+      "engine": {
+        "configuration": "dual motor - synchronous reluctance rear, induction front",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 380,
+        "unit": "kW",
+        "status": "verified",
+        "source": "nrcan-fcr-bev-2012-2026",
+        "sourceUrl": "https://open.canada.ca/data/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64/resource/026e45b4-eb63-451f-b34f-d9308ea3a3d9/download/my2012-2026-battery-electric-vehicles.csv",
+        "sourceNote": "Natural Resources Canada rates the 2024 Model 3 Performance at 380 kW combined — a single regulator-published system output rather than a sum of motor ratings. Unchanged at 380 kW in the 2025 and 2026 tables."
+      },
+      "mass": {
+        "value": 1851,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "sourceNote": "Fremont-built car, published as 4,081 lb and converted at 0.45359237 kg/lb. Shanghai-built cars are published as 1,839 kg."
+      },
+      "topSpeed": {
+        "value": 262,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "sourceNote": "Published as 163 mph and converted exactly."
+      },
+      "batteryCapacity": {
+        "value": 78.1,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3"
+      },
+      "electricRange": {
+        "value": 497,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "sourceNote": "EPA combined, published as 309 miles."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/tesla-model-3-highland/hero-front-three-quarter.jpg",
+    "alt": "White Tesla Model 3 of the 2023 facelift photographed from the front three-quarter angle, showing the narrowed headlamps and smoothed nose",
+    "width": 1920,
+    "height": 1278,
+    "caption": "The 2023 facelift, known internally as Highland: a new nose, narrower lamps, and a body Tesla claims is slipperier than the car it replaced.",
+    "credit": {
+      "author": "Alexander-93",
+      "title": "File:Tesla Model 3 (2023) Autofruehling Ulm IMG 9282.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_3_(2023)_Autofr%C3%BChling_Ulm_IMG_9282.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-08-18",
+  "reviewStatus": "spot-checked",
+  "references": [
+    "wikipedia-tesla-model-3",
+    "epa-2024-tesla-model-3-rwd",
+    "nrcan-fcr-bev-2012-2026"
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "id": "toyota-prius-xw20",
+  "name": "Toyota Prius (XW20)",
+  "fullName": "Toyota Prius (XW20), 2003-2012",
+  "kind": "generation",
+  "parent": "toyota-prius",
+  "brandRef": "toyota",
+  "generationCode": "XW20",
+  "productionYears": {
+    "start": 2003,
+    "end": 2012
+  },
+  "bodyStyles": [
+    "liftback"
+  ],
+  "powertrains": [
+    "hybrid"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Hiroshi Okamoto",
+  "assembly": [
+    "Toyota, Aichi, Japan (Tsutsumi plant)",
+    "Kariya, Aichi, Japan (Fujimatsu plant)",
+    "Changchun, Jilin, China (Sichuan FAW Toyota)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4450,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-prius-xw20",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW20)"
+    },
+    "width": {
+      "value": 1725,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-prius-xw20",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW20)"
+    },
+    "height": {
+      "value": 1490,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-prius-xw20",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW20)"
+    },
+    "wheelbase": {
+      "value": 2700,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-prius-xw20",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW20)"
+    },
+    "kerbWeight": {
+      "value": 1317,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-toyota-prius-xw20",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW20)"
+    }
+  },
+  "trims": [
+    {
+      "id": "hybrid-synergy-drive",
+      "name": "1.5 Hybrid Synergy Drive",
+      "productionYears": {
+        "start": 2003,
+        "end": 2012
+      },
+      "drivetrain": "fwd",
+      "powertrain": "hybrid",
+      "transmission": "Single-speed planetary power-split device",
+      "gears": 1,
+      "engine": {
+        "code": "1NZ-FXE",
+        "configuration": "inline-4, Atkinson cycle",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 82,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-prius-xw20",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW20)",
+        "sourceNote": "Hybrid system net output, published as 110 hp. The petrol engine alone makes 57 kW at 5,000 rpm and the traction motor 50 kW; those do not add up to the system figure, because the two peak at different points."
+      },
+      "torque": {
+        "value": 115,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-prius-xw20",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW20)",
+        "sourceNote": "Petrol engine torque, at 4,200 rpm. The traction motor makes 400 N-m from zero rpm, but engine and motor torque cannot be summed into one crankshaft figure, so only the engine figure is recorded here."
+      },
+      "mass": {
+        "value": 1317,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-toyota-prius-xw20",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW20)"
+      },
+      "fuelEconomy": {
+        "value": 5.11,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "epa-2004-toyota-prius",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/19813",
+        "sourceNote": "EPA combined 46 mpg (US) for the 2004 car, converted at 235.215 L-mi/100km-gal. This is the current EPA estimate: the methodology changed in 2008 and earlier cars were recalculated, so it is not the figure on the 2004 window sticker."
+      },
+      "co2": {
+        "value": 120.0,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "epa-2004-toyota-prius",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/19813",
+        "sourceNote": "EPA tailpipe CO2, 193.2 g/mi, converted at 1.609344 km/mi. On the European cycle the same car was rated 104 g/km; the two numbers describe different tests, not a disagreement."
+      },
+      "batteryCapacity": {
+        "value": 1.31,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-toyota-prius-xw20",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW20)",
+        "sourceNote": "201.6 V nickel-metal-hydride pack of 28 modules, each six 1.2 V 6.5 Ah cells. The control system keeps the state of charge between roughly 40% and 80%, so about 0.4 kWh of that is usable."
+      },
+      "dragCoefficient": {
+        "value": 0.26,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-toyota-prius-xw20",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW20)",
+        "sourceNote": "Given in the article body for the Kammback body; Wikipedia in turn cites Motor Trend."
+      },
+      "frontalArea": {
+        "value": 2.23,
+        "unit": "m2",
+        "status": "estimated",
+        "sourceNote": "Derived, not published: the drag-coefficient list gives a drag area (CdA) of 6.24 sq ft = 0.580 m2 for the 2004 Prius, and dividing by the published Cd of 0.26 gives 2.23 m2. The site’s standing 0.85 x width x height approximation gives 2.19 m2 for the same car, so the two agree to within 2%."
+      },
+      "bootVolume": {
+        "value": 453,
+        "unit": "L",
+        "status": "verified",
+        "source": "epa-2004-toyota-prius",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/19813",
+        "sourceNote": "EPA hatchback luggage volume, 16 cu ft, converted at 28.3168 L/cu ft. EPA measures a hatchback to the roof, so this is not comparable with a European seats-up boot figure."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": [],
+      "weightDistributionFront": {
+        "value": 0.6,
+        "unit": "",
+        "status": "verified",
+        "source": "nhtsa-cvs-2004-toyota-prius",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2005&Make=toyota&units=Metric&format=json",
+        "sourceNote": "Published as a 60/40 front/rear split by NHTSA's Canadian Vehicle Specifications for the 2004 car, recorded here as the front fraction. The dynamics model would otherwise assume 0.62 for a front-drive car, so this replaces a layout average with the measured figure."
+      }
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-prius-xw20/hero-front-three-quarter.jpg",
+    "alt": "Silver second-generation Toyota Prius photographed from the front three-quarter angle, showing the wedge nose and steeply raked windscreen",
+    "width": 1800,
+    "height": 1164,
+    "caption": "The car that made the shape famous: a one-box wedge chosen for the wind tunnel, not the showroom.",
+    "credit": {
+      "author": "IFCAR",
+      "title": "File:2nd Toyota Prius.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2nd_Toyota_Prius.jpg",
+      "licenseType": "public-domain",
+      "licenseNote": "Released into the public domain by the photographer."
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/toyota-prius-xw20/rear.jpg",
+      "alt": "Rear view of a 2003-2005 Toyota Prius showing the split tailgate glass and the vertical tail lamps",
+      "width": 1920,
+      "height": 924,
+      "caption": "The Kammback tail: cut off abruptly rather than tapered, which is what makes the split rear glass necessary.",
+      "credit": {
+        "author": "TTTNIS",
+        "title": "File:2003-2005 Toyota Prius rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2003-2005_Toyota_Prius_rear.jpg",
+        "licenseType": "cc0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      }
+    },
+    {
+      "src": "/images/cars/toyota-prius-xw20/side.jpg",
+      "alt": "Side view of a silver 2008 Toyota Prius liftback parked at a kerb",
+      "width": 1920,
+      "height": 1440,
+      "caption": "In profile the single arc from windscreen base to tail is unbroken, which is the whole aerodynamic idea.",
+      "credit": {
+        "author": "OSX",
+        "title": "File:2008 Toyota Prius (NHW20R) liftback 02.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Toyota_Prius_(NHW20R)_liftback_02.jpg",
+        "licenseType": "public-domain",
+        "licenseNote": "Released into the public domain by the photographer."
+      }
+    },
+    {
+      "src": "/images/cars/toyota-prius-xw20/hybrid-battery.jpg",
+      "alt": "An opened Toyota Prius hybrid battery pack showing its twenty-eight rectangular nickel-metal-hydride modules connected in series",
+      "width": 1920,
+      "height": 1052,
+      "caption": "The pack, opened: 28 modules in series, 201.6 volts, 1.31 kWh. This one was reinstalled in 2021 after individual modules were replaced.",
+      "credit": {
+        "author": "Ww2censor",
+        "title": "File:Prius 2005 Hybrid battery.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prius_2005_Hybrid_battery.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-08-18",
+  "reviewStatus": "spot-checked",
+  "references": [
+    "wikipedia-toyota-prius-xw20",
+    "wikipedia-drag-coefficients",
+    "epa-2004-toyota-prius",
+    "nhtsa-cvs-2004-toyota-prius"
+  ]
+}

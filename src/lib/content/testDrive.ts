@@ -38,18 +38,31 @@ export interface TestDriveData {
  * is to model something, and picking the trim with the most complete data is
  * the choice most likely to produce a panel at all. The trim used is named in
  * the UI so the reader knows which one they are looking at.
+ *
+ * The three inputs the model *cannot* run without count for far more than the
+ * two published figures it merely compares itself against. Phase 10 found out
+ * why the hard way: the Range Rover Classic has one trim with a power figure
+ * and another with a mass and a drag coefficient. Counting fields flat made
+ * those trims tie, the first won, and the page told the reader it was missing
+ * a mass and a Cd that the entry actually has — naming the wrong gap, which is
+ * its own kind of dishonesty. Published figures still break ties, so a trim
+ * that can be modelled *and* checked is preferred to one that can only be
+ * modelled.
  */
 export function buildTestDriveData(car: CarData): TestDriveData {
+  const REQUIRED_WEIGHT = 10;
   const scored = car.trims
     .map((trim) => {
-      const present = [
+      const required = [
         value(trim.power),
         value(trim.mass),
         value(trim.dragCoefficient),
+      ].filter((v) => v !== null).length;
+      const comparable = [
         value(trim.topSpeed),
         value(trim.zeroToHundredKph),
       ].filter((v) => v !== null).length;
-      return { trim, present };
+      return { trim, present: required * REQUIRED_WEIGHT + comparable };
     })
     .sort((a, b) => b.present - a.present);
 
@@ -106,6 +119,9 @@ export function buildTestDriveData(car: CarData): TestDriveData {
       drivetrain: best.drivetrain,
       tyreGrip: value(best.tyreGrip) ?? tyreGripForYear(car.productionYears.start),
       powertrain: best.powertrain,
+      ...(value(best.weightDistributionFront) !== null
+        ? { frontWeightFraction: value(best.weightDistributionFront)! }
+        : {}),
     },
     missing,
     published,

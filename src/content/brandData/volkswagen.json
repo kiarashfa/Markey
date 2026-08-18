@@ -1,0 +1,27 @@
+{
+  "id": "volkswagen",
+  "name": "Volkswagen",
+  "legalName": "Volkswagen AG",
+  "countryOfOrigin": "Germany",
+  "founded": 1937,
+  "website": "https://www.volkswagen.com/",
+  "logo": {
+    "src": "/images/brands/volkswagen.svg",
+    "alt": "Volkswagen VW roundel",
+    "credit": {
+      "author": "Volkswagen",
+      "title": "File:Volkswagen logo 2019.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_logo_2019.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#001e50",
+  "accentColorNote": "An editorial approximation of the dark blue Volkswagen uses across its 2019-onwards identity. Volkswagen's brand guidelines are not published publicly, so this is not presented as an official brand asset.",
+  "lastVerified": "2026-08-18",
+  "reviewStatus": "spot-checked",
+  "references": [
+    "wikipedia-volkswagen",
+    "commons-file-volkswagen-logo-2019-svg"
+  ]
+}

@@ -40,6 +40,12 @@ export interface VehicleInputs {
   /** Tyre–road friction coefficient. */
   tyreGrip: number;
   /**
+   * Fraction of mass on the front axle at rest, 0–1. Optional: when it is
+   * absent the layout average in `DRIVEN_AXLE_WEIGHT_FRACTION` is used, which
+   * is what every figure on the site was computed with before this existed.
+   */
+  frontWeightFraction?: number;
+  /**
    * Powertrain tag. Only affects how much of peak power is available during
    * acceleration (an EV has far more of it than a geared combustion car) —
    * it does not change top speed, which occurs at peak power by definition.
@@ -71,6 +77,22 @@ export interface VehicleInputs {
 
 /** A driver and a tank of fuel — the condition a published 0–100 is measured in. */
 export const TEST_PAYLOAD_KG = 75;
+
+/**
+ * How much of the car's weight sits over the driven wheels before any load
+ * transfer — the real figure where it is known, the layout average otherwise.
+ *
+ * All-wheel drive is 1.0 either way: every wheel is driven, so the split
+ * between axles does not change how much weight the tyres can work with.
+ */
+export function drivenAxleFraction(inputs: VehicleInputs): number {
+  const layoutAverage = DRIVEN_AXLE_WEIGHT_FRACTION[inputs.drivetrain] ?? 0.5;
+  const front = inputs.frontWeightFraction;
+  if (front === undefined || front <= 0 || front >= 1) return layoutAverage;
+  if (inputs.drivetrain === 'fwd') return front;
+  if (inputs.drivetrain === 'rwd') return 1 - front;
+  return layoutAverage;
+}
 
 function totalMass(inputs: VehicleInputs): number {
   return inputs.massKg + (inputs.payloadKg ?? TEST_PAYLOAD_KG);
@@ -213,7 +235,7 @@ export function accelerationTo(
     drivetrainEfficiency(inputs.drivetrain) *
     powerAvailability(inputs.powertrain ?? 'petrol');
   const targetMs = kmhToMs(targetKmh);
-  const staticFraction = DRIVEN_AXLE_WEIGHT_FRACTION[inputs.drivetrain] ?? 0.5;
+  const staticFraction = drivenAxleFraction(inputs);
   const isFrontDrive = inputs.drivetrain === 'fwd';
   const allWheelsDriven = staticFraction >= 1;
 

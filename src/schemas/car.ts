@@ -141,6 +141,41 @@ const trimCore = z.object({
   frontalArea: propertyValue('m2').optional(),
   /** Tyre grip coefficient, where a defensible figure exists for this car. */
   tyreGrip: propertyValue('').optional(),
+  /**
+   * Fraction of the car's mass carried by the **front** axle at rest, 0–1.
+   *
+   * `dynamics/constants.ts` says outright that its `DRIVEN_AXLE_WEIGHT_FRACTION`
+   * table holds "the conventional layout averages, and any car whose real
+   * distribution is known should override them rather than rely on this". This
+   * is that override: the traction-limited phase of a standing start depends
+   * directly on how much weight sits over the driven wheels, and a 60/40 car
+   * launches differently from the 62/38 the model assumes for front-drive.
+   *
+   * Sourceable: NHTSA's Canadian Vehicle Specifications publishes it as `WD`
+   * (e.g. `60/40`, front/rear) for cars back to 1971 — see DATA_SOURCES.md's
+   * 2026-08-18 addendum. Store the front figure as a fraction: 60/40 → 0.60.
+   */
+  weightDistributionFront: propertyValue('').optional(),
+
+  /**
+   * Practicality — SPEC.md §8.1's Markey Score and §9.3's Matchmaker both
+   * read these, and until Phase 10 nothing in the schema could supply them:
+   * `score.ts` takes `bootLitres`, `matchmaker.ts` takes `seats` for the
+   * `minSeats` dealbreaker, and both islands were passing a hardcoded `null`.
+   *
+   * Sourceable at scale, which is why they were added rather than dropped:
+   * EPA's public-domain vehicle record publishes luggage volume in cubic feet
+   * (`lv4` for a saloon, `hlv` for a hatch) for US-market cars from 1984, and
+   * seat count is stated in the body of most generation articles.
+   *
+   * **Boot figures are not internationally comparable** — EPA measures a
+   * hatchback's load space to the roof, the European VDA figure measures to
+   * the parcel shelf, and the two differ by a large factor on the same car.
+   * The measurement basis therefore belongs in `sourceNote` on every entry,
+   * the same discipline `frontalArea` already carries.
+   */
+  seats: z.number().int().positive().max(12).optional(),
+  bootVolume: propertyValue('L').optional(),
 
   /** Only where it differs from the generation default. */
   dimensions: dimensions.optional(),

@@ -1,0 +1,27 @@
+{
+  "id": "land-rover",
+  "name": "Land Rover",
+  "legalName": "Jaguar Land Rover Automotive PLC",
+  "countryOfOrigin": "United Kingdom",
+  "founded": 1978,
+  "website": "https://www.landrover.com/",
+  "logo": {
+    "src": "/images/brands/land-rover.svg",
+    "alt": "Land Rover oval badge",
+    "credit": {
+      "author": "Jaguar Land Rover Automotive PLC",
+      "title": "File:Land Rover 2023.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Land_Rover_2023.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#005a2b",
+  "accentColorNote": "An editorial approximation of the green Land Rover has used on its oval badge for most of the marque's life. No public brand-colour specification exists, so this is not presented as an official brand asset.",
+  "lastVerified": "2026-08-18",
+  "reviewStatus": "spot-checked",
+  "references": [
+    "wikipedia-land-rover",
+    "commons-file-land-rover-2023-svg"
+  ]
+}

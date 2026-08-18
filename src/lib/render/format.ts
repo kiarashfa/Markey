@@ -58,9 +58,27 @@ const UNIT_DECIMALS: Record<string, number> = {
   L: 0,
 };
 
+/**
+ * Where a fixed decimal count stops telling the truth at the bottom of a
+ * range.
+ *
+ * Manufacturers print kW whole, and for a 147 kW car that is right. Phase 10
+ * authored a 9 PS Citroën 2CV, which converts to 6.6 kW and rendered as
+ * "7 kW" — a 6% error introduced by the formatter, on a page whose entire
+ * argument is that its numbers are exact. Below the threshold the unit gets a
+ * decimal; above it, the whole number is what everyone publishes.
+ */
+const DECIMAL_BELOW: Record<string, number> = {
+  kW: 20,
+  Nm: 20,
+};
+
 export function formatNumber(value: number, unit?: string): string {
-  const decimals =
-    unit !== undefined && unit in UNIT_DECIMALS
+  const scaled =
+    unit !== undefined && unit in DECIMAL_BELOW && Math.abs(value) < DECIMAL_BELOW[unit]!;
+  const decimals = scaled
+    ? 1
+    : unit !== undefined && unit in UNIT_DECIMALS
       ? UNIT_DECIMALS[unit]!
       : Number.isInteger(value)
         ? 0

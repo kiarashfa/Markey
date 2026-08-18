@@ -1,0 +1,27 @@
+{
+  "id": "citroen",
+  "name": "Citroën",
+  "legalName": "Automobiles Citroën",
+  "countryOfOrigin": "France",
+  "founded": 1919,
+  "website": "https://www.citroen.com/",
+  "logo": {
+    "src": "/images/brands/citroen.svg",
+    "alt": "Citroën double-chevron badge",
+    "credit": {
+      "author": "Citroën",
+      "title": "File:Citroen 2022.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citroen_2022.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#96a1a8",
+  "accentColorNote": "An editorial approximation of the grey Citroën adopted with its 2022 badge. No public brand-colour specification exists, so this is not presented as an official brand asset.",
+  "lastVerified": "2026-08-18",
+  "reviewStatus": "spot-checked",
+  "references": [
+    "wikipedia-citroen",
+    "commons-file-citroen-2022-svg"
+  ]
+}

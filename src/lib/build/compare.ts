@@ -129,6 +129,11 @@ export function buildColumn(spec: BuildSpec, editHref: string): BuildColumn {
     consumptionMinL100km: null,
     massMinKg: spec.massKg > 0 ? spec.massKg : null,
     priceMin: null,
+    // A build is a set of physical inputs, not a body with seats and a boot.
+    // Practicality is not something the visitor specified, so it stays absent
+    // rather than being defaulted into a comparison row.
+    seatsMax: null,
+    bootLitresMax: null,
   };
 
   return { car, spec, unmodelled: inputs === null };

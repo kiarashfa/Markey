@@ -1,0 +1,19 @@
+{
+  "id": "range-rover",
+  "name": "Range Rover",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "land-rover",
+  "productionYears": {
+    "start": 1970,
+    "end": null
+  },
+  "segment": "suv-large",
+  "positioning": "luxury",
+  "trims": [],
+  "lastVerified": "2026-08-18",
+  "reviewStatus": "spot-checked",
+  "references": [
+    "wikipedia-range-rover"
+  ]
+}

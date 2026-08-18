@@ -1,0 +1,216 @@
+{
+  "id": "tesla-model-3-2017",
+  "name": "Tesla Model 3 (2017)",
+  "fullName": "Tesla Model 3, 2017-2023 (pre-facelift)",
+  "kind": "generation",
+  "parent": "tesla-model-3",
+  "brandRef": "tesla",
+  "productionYears": {
+    "start": 2017,
+    "end": 2023
+  },
+  "bodyStyles": [
+    "saloon"
+  ],
+  "powertrains": [
+    "bev"
+  ],
+  "drivetrains": [
+    "rwd",
+    "awd"
+  ],
+  "segment": "d-segment",
+  "positioning": "premium",
+  "designer": "Franz von Holzhausen",
+  "assembly": [
+    "Fremont, California, United States (Tesla Fremont Factory)",
+    "Shanghai, China (Gigafactory Shanghai)"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4694,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+      "sourceNote": "Published as 184.8 in and converted at 25.4 mm/in. The 2023 facelift is longer, at 4,720 mm."
+    },
+    "width": {
+      "value": 1849,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+      "sourceNote": "Published as 72.8 in, excluding mirrors, and converted at 25.4 mm/in."
+    },
+    "height": {
+      "value": 1443,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+      "sourceNote": "Published as 56.8 in and converted at 25.4 mm/in."
+    },
+    "wheelbase": {
+      "value": 2875,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+      "sourceNote": "Published as 113.2 in and converted at 25.4 mm/in."
+    }
+  },
+  "trims": [
+    {
+      "id": "long-range-rwd",
+      "name": "Long Range RWD",
+      "productionYears": {
+        "start": 2017,
+        "end": 2019
+      },
+      "drivetrain": "rwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed fixed reduction (9:1)",
+      "gears": 1,
+      "engine": {
+        "configuration": "single motor, interior permanent magnet synchronous reluctance",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 202,
+        "unit": "kW",
+        "status": "verified",
+        "source": "epa-2018-tesla-model-3-long-range",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/39836",
+        "sourceNote": "Tesla publishes no power figure for the Model 3. The EPA vehicle record for the 2018 Long Range gives the motor as 202 kW, which is the only public-domain figure for it."
+      },
+      "mass": {
+        "value": 1726,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "sourceNote": "Published as 3,805 lb and converted at 0.45359237 kg/lb."
+      },
+      "topSpeed": {
+        "value": 225,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "sourceNote": "Published as 140 mph and converted exactly. Tesla quotes 0-60 mph in 5.0 s; that is not a 0-100 km/h time and is deliberately not recorded as one."
+      },
+      "batteryCapacity": {
+        "value": 75,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "sourceNote": "Usable capacity of the pre-2021 Long Range pack. Cars built from 2021 used an 82 kWh pack."
+      },
+      "electricRange": {
+        "value": 499,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "sourceNote": "EPA combined range, published as 310 miles and converted at 1.609344 km/mi. A WLTP figure of 580 km is published for the same car; the two cycles are not comparable."
+      },
+      "electricConsumption": {
+        "value": 16.08,
+        "unit": "kWh/100km",
+        "status": "verified",
+        "source": "epa-2018-tesla-model-3-long-range",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/39836",
+        "sourceNote": "EPA combined 25.88 kWh/100 mi, converted at 1.609344 km/mi. Measured at the wall, so it includes charging losses."
+      },
+      "dragCoefficient": {
+        "value": 0.23,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-drag-coefficients",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_automobile_drag_coefficients",
+        "sourceNote": "Listed for the Tesla Model 3, 2017. The list records it as a manufacturer press-kit figure."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "performance-awd",
+      "name": "Performance AWD",
+      "productionYears": {
+        "start": 2018,
+        "end": 2023
+      },
+      "drivetrain": "awd",
+      "powertrain": "bev",
+      "transmission": "Single-speed fixed reduction, one motor per axle",
+      "gears": 1,
+      "engine": {
+        "configuration": "dual motor - synchronous reluctance rear, induction front",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 358,
+        "unit": "kW",
+        "status": "verified",
+        "source": "nrcan-fcr-bev-2012-2026",
+        "sourceUrl": "https://open.canada.ca/data/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64/resource/026e45b4-eb63-451f-b34f-d9308ea3a3d9/download/my2012-2026-battery-electric-vehicles.csv",
+        "sourceNote": "Natural Resources Canada rates the 2018–2020 Model 3 Long Range AWD Performance at 358 kW combined — a single regulator-published system output, not the sum of two motor ratings, which is why it can be recorded where the EPA per-motor figures could not be. The same table rates the 2021–2023 Performance at 321 kW, so this trim did not hold one output for its whole run; 358 kW describes the earlier car. The non-Performance Long Range AWD is rated 335 kW."
+      },
+      "mass": {
+        "value": 1847,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "sourceNote": "Published as 4,072 lb and converted at 0.45359237 kg/lb."
+      },
+      "topSpeed": {
+        "value": 249,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "sourceNote": "Published as 155 mph and converted exactly."
+      },
+      "batteryCapacity": {
+        "value": 82,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+        "sourceNote": "Cars built from 2021. Earlier Performance cars used the 75 kWh pack."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/tesla-model-3-2017/hero-front-three-quarter.jpg",
+    "alt": "Red Tesla Model 3 Performance photographed from the front three-quarter angle, showing the grille-less nose and flush door handles",
+    "width": 1920,
+    "height": 878,
+    "caption": "A 2019 Model 3 Performance, before the 2023 facelift reshaped the nose.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2019 Tesla Model 3 Performance AWD Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Tesla_Model_3_Performance_AWD_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-08-18",
+  "reviewStatus": "spot-checked",
+  "references": [
+    "wikipedia-tesla-model-3",
+    "wikipedia-drag-coefficients",
+    "epa-2018-tesla-model-3-long-range",
+    "nrcan-fcr-bev-2012-2026"
+  ]
+}

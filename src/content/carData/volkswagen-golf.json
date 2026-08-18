@@ -1,0 +1,19 @@
+{
+  "id": "volkswagen-golf",
+  "name": "Volkswagen Golf",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "volkswagen",
+  "productionYears": {
+    "start": 1974,
+    "end": null
+  },
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-08-18",
+  "reviewStatus": "spot-checked",
+  "references": [
+    "wikipedia-volkswagen-golf"
+  ]
+}

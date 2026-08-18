@@ -86,6 +86,256 @@
       "accessed": "2026-08-17",
       "license": "Public domain (copyright); mark is trademarked",
       "note": "Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction. Copyright status and trademark status are separate questions — the basis on which Markey displays it is nominative fair use (SPEC.md §10, §11.2)."
+    },
+    {
+      "key": "wikipedia-tesla-inc",
+      "type": "wikipedia",
+      "title": "Tesla, Inc.",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tesla,_Inc.",
+      "revision": "1368347298",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "wikipedia-tesla-model-3",
+      "type": "wikipedia",
+      "title": "Tesla Model 3",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tesla_Model_3",
+      "revision": "1369968684",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0",
+      "note": "The Model 3 has no separate per-generation article: one article covers both the 2017 car and the 2023 \"Highland\" facelift, in two specification tables headed \"Currently available\" and \"Discontinued\". Where those tables disagree with the infobox, the tables are the more specific figure and are what is cited here."
+    },
+    {
+      "key": "wikipedia-volkswagen",
+      "type": "wikipedia",
+      "title": "Volkswagen",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Volkswagen",
+      "revision": "1369975311",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "wikipedia-volkswagen-golf",
+      "type": "wikipedia",
+      "title": "Volkswagen Golf",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Volkswagen_Golf",
+      "revision": "1370024728",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0",
+      "note": "The nameplate article, thin by design in exactly the way DATA_SOURCES.md describes. Generation specs come from the Mk1 article."
+    },
+    {
+      "key": "wikipedia-volkswagen-golf-mk1",
+      "type": "wikipedia",
+      "title": "Volkswagen Golf Mk1",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1",
+      "revision": "1368565284",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0",
+      "note": "This article disagrees with itself on the GTI: the prose cites Volkswagen’s own 40-years brochure for 140 N⋅m, 9.2 s and 182 km/h, while the model-range table gives 137 N⋅m, 10 s and 183 km/h. Both figures are recorded on the affected values with status ‘conflicting-sources’."
+    },
+    {
+      "key": "wikipedia-land-rover",
+      "type": "wikipedia",
+      "title": "Land Rover",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Land_Rover",
+      "revision": "1357736984",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "wikipedia-range-rover",
+      "type": "wikipedia",
+      "title": "Range Rover",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Range_Rover",
+      "revision": "1367150739",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "wikipedia-range-rover-classic",
+      "type": "wikipedia",
+      "title": "Range Rover Classic",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Range_Rover_Classic",
+      "revision": "1369494215",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0",
+      "note": "Publishes no kerb weight, in either the infobox or the body, and the German Wikipedia article redirects into a section with no specification table either. The kerb weight is therefore not recorded, which is why this entry has no Test Drive."
+    },
+    {
+      "key": "wikipedia-toyota-prius",
+      "type": "wikipedia",
+      "title": "Toyota Prius",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Toyota_Prius",
+      "revision": "1364895278",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "wikipedia-toyota-prius-xw20",
+      "type": "wikipedia",
+      "title": "Toyota Prius (XW20)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Toyota_Prius_(XW20)",
+      "revision": "1367269329",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0",
+      "note": "The drag coefficient and the battery figures are in the body text rather than the infobox; Wikipedia in turn cites Motor Trend for the 0.26 Cd. That primary source has not been read directly, so it is not cited here as though it had been."
+    },
+    {
+      "key": "wikipedia-citroen",
+      "type": "wikipedia",
+      "title": "Citroën",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Citro%C3%ABn",
+      "revision": "1369937178",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "wikipedia-citroen-2cv",
+      "type": "wikipedia",
+      "title": "Citroën 2CV",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Citro%C3%ABn_2CV",
+      "revision": "1369483970",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0",
+      "note": "One article covers all 42 years: the 2CV never had a second generation, so the nameplate article is also the generation article. Engine outputs are published in metric horsepower and converted here at 1 PS = 0.73549875 kW."
+    },
+    {
+      "key": "commons-file-tesla-t-symbol-svg",
+      "type": "commons",
+      "title": "File:Tesla T symbol.svg",
+      "author": "Tesla (logo), Fry1989 (vectorisation)",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Tesla_T_symbol.svg",
+      "accessed": "2026-08-18",
+      "license": "Public domain (copyright); mark is trademarked",
+      "note": "Commons records it as public domain for copyright with an explicit ‘trademarked’ restriction. Displayed under trademark nominative use."
+    },
+    {
+      "key": "commons-file-volkswagen-logo-2019-svg",
+      "type": "commons",
+      "title": "File:Volkswagen logo 2019.svg",
+      "author": "Volkswagen",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Volkswagen_logo_2019.svg",
+      "accessed": "2026-08-18",
+      "license": "Public domain (copyright); mark is trademarked",
+      "note": "Public domain for copyright, mark trademarked. Displayed under trademark nominative use."
+    },
+    {
+      "key": "commons-file-land-rover-2023-svg",
+      "type": "commons",
+      "title": "File:Land Rover 2023.svg",
+      "author": "Jaguar Land Rover Automotive PLC",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Land_Rover_2023.svg",
+      "accessed": "2026-08-18",
+      "license": "Public domain (copyright); mark is trademarked",
+      "note": "Public domain for copyright, mark trademarked. Displayed under trademark nominative use."
+    },
+    {
+      "key": "commons-file-citroen-2022-svg",
+      "type": "commons",
+      "title": "File:Citroen 2022.svg",
+      "author": "Citroën",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Citroen_2022.svg",
+      "accessed": "2026-08-18",
+      "license": "Public domain (copyright); mark is trademarked",
+      "note": "Public domain for copyright, mark trademarked. Displayed under trademark nominative use."
+    },
+    {
+      "key": "epa-2004-toyota-prius",
+      "type": "dataset",
+      "title": "2004 Toyota Prius — EPA fuel economy record (vehicle 19813)",
+      "publisher": "US EPA / US Department of Energy",
+      "url": "https://www.fueleconomy.gov/ws/rest/vehicle/19813",
+      "accessed": "2026-08-18",
+      "license": "Public domain (US Government work)",
+      "note": "Combined 46 mpg (US). EPA revised its fuel-economy methodology in 2008 and recalculated earlier cars, so this is the current estimate for a 2004 car, not the figure printed on the 2004 window sticker."
+    },
+    {
+      "key": "epa-1984-volkswagen-rabbit-diesel",
+      "type": "dataset",
+      "title": "1984 Volkswagen Rabbit 1.6 diesel, 5-speed manual — EPA fuel economy record (vehicle 26787)",
+      "publisher": "US EPA / US Department of Energy",
+      "url": "https://www.fueleconomy.gov/ws/rest/vehicle/26787",
+      "accessed": "2026-08-18",
+      "license": "Public domain (US Government work)",
+      "note": "The US-market Mk1 Golf was sold as the Rabbit. 1984 is the first model year EPA publishes and the last of Rabbit production, so this record covers the very end of the run."
+    },
+    {
+      "key": "epa-1990-land-rover-range-rover",
+      "type": "dataset",
+      "title": "1990 Land Rover Range Rover 3.9 V8 automatic — EPA fuel economy record (vehicle 7414)",
+      "publisher": "US EPA / US Department of Energy",
+      "url": "https://www.fueleconomy.gov/ws/rest/vehicle/7414",
+      "accessed": "2026-08-18",
+      "license": "Public domain (US Government work)",
+      "note": "Combined 13 mpg (US). Post-2008 EPA methodology, recalculated for a 1990 car."
+    },
+    {
+      "key": "epa-2024-tesla-model-3-rwd",
+      "type": "dataset",
+      "title": "2024 Tesla Model 3 RWD — EPA fuel economy record (vehicle 47909)",
+      "publisher": "US EPA / US Department of Energy",
+      "url": "https://www.fueleconomy.gov/ws/rest/vehicle/47909",
+      "accessed": "2026-08-18",
+      "license": "Public domain (US Government work)",
+      "note": "EPA records the motor as 192 kW. Tesla publishes no power figure for the Model 3, which makes the EPA record the only public-domain source for it."
+    },
+    {
+      "key": "epa-2018-tesla-model-3-long-range",
+      "type": "dataset",
+      "title": "2018 Tesla Model 3 Long Range — EPA fuel economy record (vehicle 39836)",
+      "publisher": "US EPA / US Department of Energy",
+      "url": "https://www.fueleconomy.gov/ws/rest/vehicle/39836",
+      "accessed": "2026-08-18",
+      "license": "Public domain (US Government work)",
+      "note": "EPA records the motor as 202 kW. Range 310 miles combined."
+    },
+    {
+      "key": "nhtsa-cvs-1994-range-rover-county-classic",
+      "type": "dataset",
+      "title": "1994 Range Rover 4DR County Classic 4x4 — NHTSA Canadian Vehicle Specifications",
+      "publisher": "US National Highway Traffic Safety Administration",
+      "url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1995&Make=land%20rover&units=Metric&format=json",
+      "accessed": "2026-08-18",
+      "license": "Public domain (US Government work)",
+      "note": "Found during Phase 10 and not in DATA_SOURCES.md's survey. vPIC's Canadian Vehicle Specifications endpoint publishes curb weight, overall dimensions, track and front/rear weight distribution for cars from 1971 — the one free source found that carries kerb weight for vehicles Wikipedia leaves blank. Queried by model year 1995, which returns records stamped MYR 94 and 95; the County Classic record used here is MYR 94. Cross-checked against two cars with known weights (2004 Prius 1,335 kg, 1995 Discovery 1,990 kg) to confirm CW is curb weight in kilograms."
+    },
+    {
+      "key": "nrcan-fcr-bev-2012-2026",
+      "type": "dataset",
+      "title": "Fuel consumption ratings — battery-electric vehicles, model years 2012–2026 (Natural Resources Canada)",
+      "publisher": "Natural Resources Canada / Government of Canada",
+      "url": "https://open.canada.ca/data/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64/resource/026e45b4-eb63-451f-b34f-d9308ea3a3d9/download/my2012-2026-battery-electric-vehicles.csv",
+      "accessed": "2026-08-18",
+      "license": "Open Government Licence – Canada",
+      "note": "Found during the Phase 10.5 source survey. Publishes a single combined motor output in kilowatts for dual-motor cars, which is exactly what EPA does not: EPA rates each motor separately and Tesla publishes nothing. Metric throughout (kW, km, kWh/100 km, g/km), so no conversion is needed. Canadian-market ratings, so the variant naming follows Canadian trim names."
+    },
+    {
+      "key": "nhtsa-cvs-2004-toyota-prius",
+      "type": "dataset",
+      "title": "2004 Toyota Prius 4DR Hatch FWD — NHTSA Canadian Vehicle Specifications",
+      "publisher": "US National Highway Traffic Safety Administration",
+      "url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2005&Make=toyota&units=Metric&format=json",
+      "accessed": "2026-08-18",
+      "license": "Public domain (US Government work)",
+      "note": "Queried by model year 2005; the record is stamped MYR 04. Publishes a 60/40 front/rear weight distribution, and a Canadian-market curb weight of 1,335 kg against the 1,317 kg Wikipedia gives — different market specification, not a contradiction."
     }
   ]
 }

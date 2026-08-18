@@ -15,6 +15,18 @@ interface Props {
 
 const { label, values } = Astro.props;
 const list = (values ?? []).filter(Boolean);
+
+/**
+ * A caller may pass markup instead of `values` — the concept page's "Led to"
+ * row renders a link to the production car that way.
+ *
+ * That case was broken until the first concept was authored in Phase 11: the
+ * slot was only rendered inside the single-value branch, so a row with slot
+ * content and no `values` fell through to the empty state and said "Not yet
+ * available" about a fact it had been handed. Checking the slot explicitly is
+ * what keeps the empty state meaning "nobody sourced this".
+ */
+const hasSlotContent = Astro.slots.has('default');
 ---
 
 <div
@@ -26,10 +38,14 @@ const list = (values ?? []).filter(Boolean);
       narrow viewport otherwise. */}
   <dd class="min-w-0 text-sm break-words">
     {
-      list.length === 0 ? (
+      hasSlotContent ? (
+        <span class="font-medium">
+          <slot />
+        </span>
+      ) : list.length === 0 ? (
         <span class="text-ink-muted italic">Not yet available</span>
       ) : list.length === 1 ? (
-        <span class="font-medium"><slot>{list[0]}</slot></span>
+        <span class="font-medium">{list[0]}</span>
       ) : (
         <ul class="flex flex-col gap-0.5 font-medium">
           {list.map((v) => (

@@ -1,0 +1,20 @@
+{
+  "id": "citroen-2cv",
+  "name": "Citroën 2CV",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "citroen",
+  "productionYears": {
+    "start": 1948,
+    "end": 1990
+  },
+  "fullName": "Citroën 2CV, 1948–1990",
+  "segment": "a-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-08-18",
+  "reviewStatus": "spot-checked",
+  "references": [
+    "wikipedia-citroen-2cv"
+  ]
+}

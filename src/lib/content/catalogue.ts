@@ -11,6 +11,7 @@
  * server/client boundary, so no schema types, no `Map`s, no functions.
  */
 import { getBrands, getCars, erasFor, type JoinedBrand, type JoinedCar } from './entries.ts';
+import type { MarketVariant } from '../../schemas/car.ts';
 import { carHref, imageSrc } from './href.ts';
 import { countrySlug } from './taxonomy-views.ts';
 import type { PropertyValue } from '../../schemas/primitives.ts';
@@ -36,6 +37,13 @@ export interface CatalogueTrim {
   electricConsumptionKwh100km: number | null;
   dragCoefficient: number | null;
   frontalAreaM2: number | null;
+  seats: number | null;
+  bootLitres: number | null;
+  /**
+   * Fields whose value came from a market variant rather than the base trim,
+   * as `field (market)`. Empty for the overwhelming majority of trims.
+   */
+  marketSourced: string[];
   price: number | null;
   priceCurrency: string | null;
 }
@@ -92,10 +100,58 @@ export interface CatalogueCar {
   consumptionMinL100km: number | null;
   massMinKg: number | null;
   priceMin: number | null;
+  /** Most seats offered across the trims — the Matchmaker's `minSeats` reads this. */
+  seatsMax: number | null;
+  /** Largest published boot across the trims, litres. */
+  bootLitresMax: number | null;
+}
+
+/**
+ * Resolves a trim field, falling back to a market variant that has it.
+ *
+ * Phase 10 authored the Golf Mk1's boot volume on its US market variant,
+ * because the only source for it is the EPA's record of the US-market Rabbit.
+ * The figure rendered on the car page and was then **invisible** to the
+ * comparison tool, the Matchmaker and the Markey Score, because this builder
+ * only ever read base-trim fields. A sourced figure that no tool can see is
+ * barely better than no figure.
+ *
+ * So: base trim first, then the first market variant that carries the field.
+ * The fallback is never silent — every field resolved this way is named in
+ * `marketSourced`, so a consumer can say where the number came from instead of
+ * quietly blending two markets into one row.
+ */
+function resolveField<K extends keyof MarketVariant['overrides']>(
+  trim: JoinedCar['data']['trims'][number],
+  field: K,
+): { value: NonNullable<MarketVariant['overrides'][K]> | undefined; market: string | null } {
+  const base = trim[field as keyof typeof trim] as MarketVariant['overrides'][K];
+  if (base !== undefined) return { value: base as NonNullable<typeof base>, market: null };
+  for (const variant of trim.marketVariants) {
+    const override = variant.overrides[field];
+    if (override !== undefined) {
+      return { value: override as NonNullable<typeof override>, market: variant.market };
+    }
+  }
+  return { value: undefined, market: null };
 }
 
 function toTrim(trim: JoinedCar['data']['trims'][number]): CatalogueTrim {
   const firstPrice = trim.prices[0];
+
+  // Only the fields a tool actually consumes are worth resolving across
+  // markets. Everything else stays base-trim, because the catalogue describes
+  // the base specification and a market variant is shown on the car page.
+  const marketSourced: string[] = [];
+  const resolved = <K extends keyof MarketVariant['overrides']>(field: K) => {
+    const { value: found, market } = resolveField(trim, field);
+    if (market !== null) marketSourced.push(`${String(field)} (${market})`);
+    return found;
+  };
+  const seats = resolved('seats');
+  const bootVolume = resolved('bootVolume');
+  const fuelEconomy = resolved('fuelEconomy');
+
   return {
     id: trim.id,
     name: trim.name,
@@ -108,10 +164,13 @@ function toTrim(trim: JoinedCar['data']['trims'][number]): CatalogueTrim {
     massKg: value(trim.mass),
     zeroToHundredS: value(trim.zeroToHundredKph),
     topSpeedKmh: value(trim.topSpeed),
-    consumptionL100km: value(trim.fuelEconomy),
+    consumptionL100km: value(fuelEconomy),
     electricConsumptionKwh100km: value(trim.electricConsumption),
     dragCoefficient: value(trim.dragCoefficient),
     frontalAreaM2: value(trim.frontalArea),
+    seats: seats ?? null,
+    bootLitres: value(bootVolume),
+    marketSourced,
     price: firstPrice?.amount ?? null,
     priceCurrency: firstPrice?.currency ?? null,
   };
@@ -179,6 +238,8 @@ export function toCatalogueCar(
     consumptionMinL100km: minOf(trims.map((t) => t.consumptionL100km)),
     massMinKg: minOf(trims.map((t) => t.massKg)),
     priceMin: minOf(trims.map((t) => t.price)),
+    seatsMax: maxOf(trims.map((t) => t.seats)),
+    bootLitresMax: maxOf(trims.map((t) => t.bootLitres)),
   };
 }
 

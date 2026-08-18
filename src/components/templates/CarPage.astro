@@ -277,7 +277,22 @@ const structuredData = serialiseJsonLd(
     }
 
     {
-      data.trims.map((trim) => (
+      data.trims.map((trim) => {
+        /*
+         * Which spec rows this trim can meaningfully have.
+         *
+         * SpecRow renders an absent value as "Not yet available", which is the
+         * right answer for a figure nobody has sourced yet and the wrong one
+         * for a figure that cannot exist: a 2CV has no battery capacity and a
+         * Model 3 has no engine displacement, and printing "Not yet available"
+         * against either implies someone should go and find it. Phase 10 hit
+         * this the moment the first electric car was authored.
+         */
+        const electrified = ['bev', 'phev', 'hybrid', 'mild-hybrid', 'range-extender', 'fcev'].includes(
+          trim.powertrain,
+        );
+        const burnsFuel = trim.powertrain !== 'bev' && trim.powertrain !== 'fcev';
+        return (
         <Section
           title={trim.name}
           lede={`Trim · ${formatYears(trim.productionYears)}${trim.engine?.code ? ` · ${trim.engine.code}` : ''}`}
@@ -288,9 +303,38 @@ const structuredData = serialiseJsonLd(
           <SpecRow label="Kerb weight" value={trim.mass} citations={citationNumbers} />
           <SpecRow label="0–100 km/h" value={trim.zeroToHundredKph} citations={citationNumbers} />
           <SpecRow label="Top speed" value={trim.topSpeed} citations={citationNumbers} />
-          <SpecRow label="Fuel economy" value={trim.fuelEconomy} citations={citationNumbers} />
+          {burnsFuel && (
+            <SpecRow label="Fuel economy" value={trim.fuelEconomy} citations={citationNumbers} />
+          )}
+          {electrified && (
+            <SpecRow
+              label="Electric consumption"
+              value={trim.electricConsumption}
+              citations={citationNumbers}
+            />
+          )}
+          {electrified && (
+            <SpecRow
+              label="Battery capacity"
+              value={trim.batteryCapacity}
+              citations={citationNumbers}
+            />
+          )}
+          {electrified && (
+            <SpecRow label="Electric range" value={trim.electricRange} citations={citationNumbers} />
+          )}
+          {burnsFuel && <SpecRow label="CO₂" value={trim.co2} citations={citationNumbers} />}
           <SpecRow label="Drag coefficient" value={trim.dragCoefficient} citations={citationNumbers} />
           <SpecRow label="Frontal area" value={trim.frontalArea} citations={citationNumbers} />
+          {burnsFuel && (
+            <SpecRow
+              label="Displacement"
+              value={trim.engine?.displacement}
+              citations={citationNumbers}
+            />
+          )}
+          <SpecRow label="Boot volume" value={trim.bootVolume} citations={citationNumbers} />
+          {trim.seats && <FactRow label="Seats" values={[String(trim.seats)]} />}
           <FactRow
             label="Engine"
             values={[
@@ -314,7 +358,8 @@ const structuredData = serialiseJsonLd(
             />
           ))}
         </Section>
-      ))
+        );
+      })
     }
 
     {

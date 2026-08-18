@@ -18,6 +18,7 @@ import {
 import { consumptionAtSpeed, dragCrossoverSpeed } from './consumption.ts';
 import {
   accelerationTo,
+  drivenAxleFraction,
   topSpeed,
   topSpeedDetailed,
   zeroToHundred,
@@ -343,5 +344,50 @@ describe('sanity check against real cars', () => {
     assert.ok(topSpeed(e24)! > topSpeed(golf)!);
     assert.ok(zeroToHundred(nineEleven)!.seconds < zeroToHundred(e24)!.seconds);
     assert.ok(zeroToHundred(e24)!.seconds < zeroToHundred(golf)!.seconds);
+  });
+});
+
+describe('drivenAxleFraction — the real weight distribution when it is known', () => {
+  const base: VehicleInputs = {
+    massKg: 1317,
+    powerKw: 82,
+    dragCoefficient: 0.26,
+    frontalAreaM2: 2.23,
+    drivetrain: 'fwd',
+    tyreGrip: 1.0,
+  };
+
+  it('falls back to the layout average when no figure is authored', () => {
+    // Unchanged behaviour: every figure published before this field existed
+    // was computed with the 0.62 front-drive average.
+    assert.equal(drivenAxleFraction(base), 0.62);
+  });
+
+  it('uses the published front fraction for a front-drive car', () => {
+    assert.equal(drivenAxleFraction({ ...base, frontWeightFraction: 0.6 }), 0.6);
+  });
+
+  it('uses the rear share for a rear-drive car', () => {
+    const rwd = { ...base, drivetrain: 'rwd', frontWeightFraction: 0.53 };
+    assert.ok(Math.abs(drivenAxleFraction(rwd) - 0.47) < 1e-9);
+  });
+
+  it('keeps all-wheel drive at 1.0 — every wheel is driven either way', () => {
+    assert.equal(drivenAxleFraction({ ...base, drivetrain: 'awd', frontWeightFraction: 0.55 }), 1);
+    assert.equal(drivenAxleFraction({ ...base, drivetrain: '4wd', frontWeightFraction: 0.55 }), 1);
+  });
+
+  it('ignores a nonsensical fraction rather than producing a nonsensical launch', () => {
+    assert.equal(drivenAxleFraction({ ...base, frontWeightFraction: 0 }), 0.62);
+    assert.equal(drivenAxleFraction({ ...base, frontWeightFraction: 1.4 }), 0.62);
+  });
+
+  it('changes the modelled 0-100 when the real figure differs from the average', () => {
+    const withAverage = accelerationTo(100, base);
+    const withReal = accelerationTo(100, { ...base, frontWeightFraction: 0.6 });
+    assert.ok(withAverage !== null && withReal !== null);
+    // Less weight over the driven axle than the 0.62 average means a slower
+    // traction-limited launch, so the time must not improve.
+    assert.ok(withReal.seconds >= withAverage.seconds);
   });
 });
