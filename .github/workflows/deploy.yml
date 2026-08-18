@@ -5,28 +5,50 @@ name: Deploy to GitHub Pages
 #   build   → withastro/action, which runs the gated `npm run build`
 #   deploy  → actions/deploy-pages
 #
-# Repo Settings → Pages → Source must be set to "GitHub Actions" for the
-# deploy job to succeed. That is a UI change; it cannot be done from here.
+# ── One thing must be done by hand, once ────────────────────────────────────
+# Repo Settings → Pages → Source must be set to "GitHub Actions" (not "Deploy
+# from a branch"). Until it is, `verify` and `build` pass and `deploy` fails
+# with "Not Found" or "Pages site not configured" — a confusing error for a
+# correct workflow. It is a UI change and cannot be made from here.
 
 on:
   push:
     branches: [main]
+  # The verify gate runs on branches too, so a mistake is caught before it
+  # reaches main. `build` and `deploy` are skipped there — see their `if:`.
+  pull_request:
+    branches: [main]
+  # Lets a deploy be re-run without a commit, which is exactly what is needed
+  # when the fix was the Pages setting rather than the code.
   workflow_dispatch:
 
-# Least privilege: only the deploy job needs pages/id-token.
+# Least privilege: only the deploy job gets pages/id-token, granted there.
 permissions:
   contents: read
 
+# Serialised per branch rather than globally: two pushes to main must not
+# deploy over each other, but a pull-request check has no reason to hold up a
+# deploy of main. `cancel-in-progress: false` because a half-finished deploy is
+# worse than a queued one.
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   # The gate that proves the integrity checks themselves still work.
-  # If `check:self` ever passes silently because the checks stopped catching
-  # problems, this job is what turns that into a red build.
+  #
+  # `check:self` runs the checks against `test-fixtures/broken-content/`, a set
+  # of deliberately broken entries, and fails if any of them is *not* caught.
+  # A check that has silently stopped catching problems is worse than no check,
+  # because the green build is then a claim nobody is testing.
+  #
+  # `npm run test` also runs inside the gated build below. The duplication is
+  # deliberate and cheap (~25 s): it keeps this job a complete, readable answer
+  # to "is this code sound", and stops a failing test from ever reaching a
+  # build attempt.
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
 
@@ -48,13 +70,18 @@ jobs:
 
   build:
     needs: verify
+    # A pull request is verified, not published. Nothing is deployed until the
+    # change is on main.
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v7
 
       # Runs `npm run build` — the full gated pipeline from SPEC.md §13
-      # (test → check:content → astro build → postbuild:index → check:site)
-      # and uploads dist/ as the Pages artifact.
+      # (test → check:content → astro build → postbuild:index → check:site) —
+      # and uploads dist/ as the Pages artifact. `npm run build` is this
+      # action's default command for npm, so the gate is not bypassed.
       - uses: withastro/action@v6
         with:
           node-version: 24
@@ -62,7 +89,9 @@ jobs:
 
   deploy:
     needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       pages: write
       id-token: write
