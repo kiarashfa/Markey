@@ -83,6 +83,17 @@ export async function categoryMembers(category, type) {
 }
 
 /** Licence and size metadata for a batch of Commons files. */
+/**
+ * Commons titles carry the `File:` namespace, and a title without it resolves
+ * to nothing — which the API reports identically to a file that genuinely does
+ * not exist. The first free-model trial spent thirty-five of its eighty
+ * requests retrying `FiatLogo1921.jpg`, `Fiat logo 1899.png` and a dozen other
+ * inventions, because "is not on Commons" was the only thing it was told.
+ * Normalise instead: the namespace is a syntax detail, not a judgement.
+ */
+export const asFileTitle = (title) =>
+  /^file:/i.test(String(title).trim()) ? String(title).trim() : `File:${String(title).trim()}`;
+
 export async function fileMetadata(titles) {
   const out = new Map();
   for (let i = 0; i < titles.length; i += 20) {
@@ -182,14 +193,21 @@ async function cmdCat(category) {
   for (const f of files.slice(0, 60)) console.log('  ', f);
 }
 
-async function cmdLicence(file) {
+async function cmdLicence(rawFile) {
+  const file = asFileTitle(rawFile);
   const meta = await fileMetadata([file]);
   console.log(JSON.stringify(meta.get(file) ?? { onCommons: false }, null, 2));
 }
 
-async function cmdDownload(file, carSlug, basename) {
+async function cmdDownload(rawFile, carSlug, basename) {
+  const file = asFileTitle(rawFile);
   const meta = (await fileMetadata([file])).get(file);
-  if (!meta?.onCommons) throw new Error(`${file} is not on Commons — do not use it.`);
+  if (!meta?.onCommons) {
+    throw new Error(
+      `${file} is not on Commons — do not use it. If you guessed this filename, ` +
+        'stop guessing: run `commons.mjs find "<Article title>"` and download only a file it listed.',
+    );
+  }
   if (!meta.licenseType) throw new Error(`${file}: licence "${meta.licenseShortName}" is not in the schema enum — resolve by hand.`);
 
   const extension = path.extname(file).toLowerCase().replace('.jpeg', '.jpg') || '.jpg';
@@ -207,9 +225,33 @@ async function cmdDownload(file, carSlug, basename) {
   const source = isVector ? meta.originalUrl : (meta.thumbUrl ?? meta.originalUrl);
   const actualExtension = path.extname(new URL(source).pathname).toLowerCase().replace('.jpeg', '.jpg');
 
-  const destination = path.join('public', 'images', 'cars', carSlug,
-    `${basename}${actualExtension || extension}`);
+  /*
+   * Brand logos do not live beside car photographs — they are
+   * `public/images/brands/<brand>.<ext>`, one flat file per marque. Without a
+   * form for that, every agent downloads the logo into the car folder and
+   * either leaves it there or has to move it by hand; the first free-model
+   * trial left a Fiat roundel at `public/images/cars/fiat/brand.png`.
+   */
+  const brand = /^brand:(.+)$/.exec(carSlug);
+  const destination = brand
+    ? path.join('public', 'images', 'brands', `${brand[1]}${actualExtension || extension}`)
+    : path.join('public', 'images', 'cars', carSlug, `${basename}${actualExtension || extension}`);
   await mkdir(path.dirname(destination), { recursive: true });
+
+  /*
+   * The basename is a filename, and a second download under the same one used
+   * to overwrite the first in silence. The first free-model trial run did
+   * exactly that — three `gallery` downloads, one surviving file, two authored
+   * `imageRef`s pointing at a picture of something else. Refuse instead.
+   */
+  const existing = await stat(destination).catch(() => null);
+  if (existing) {
+    throw new Error(
+      `${destination} already exists (${Math.round(existing.size / 1024)} kB). ` +
+        'The last argument is a filename, not a folder — use hero, gallery-1, gallery-2… ' +
+        'Delete the file first if you really meant to replace it.',
+    );
+  }
 
   const response = await get(source, { timeoutMs: 120000 });
   await pipeline(Readable.fromWeb(response.body), createWriteStream(destination));
@@ -221,8 +263,11 @@ async function cmdDownload(file, carSlug, basename) {
   const imageRef = {
     src: `/${destination.replace(/\\/g, '/').replace(/^public\//, '')}`,
     alt: 'TODO — describe what is visible, for a reader who cannot see it',
-    width: size?.width ?? null,
-    height: size?.height ?? null,
+    // Omitted rather than nulled when unmeasurable: `measure` reads JPEG and
+    // PNG headers only, so an SVG has no pixel size, and the schema takes an
+    // absent width over a null one. Printing `null` handed an author a field
+    // that fails validation.
+    ...(size ? { width: size.width, height: size.height } : {}),
     caption: 'TODO',
     credit: {
       author: meta.author || undefined,
@@ -233,7 +278,17 @@ async function cmdDownload(file, carSlug, basename) {
       ...(meta.licenseUrl ? { licenseUrl: meta.licenseUrl } : {}),
     },
   };
-  console.error(`wrote ${destination}  ${size?.width}x${size?.height}  ${Math.round(bytes / 1024)} kB  ${meta.licenseShortName}`);
+  const measured = size ? `${size.width}x${size.height}` : 'vector (no pixel size)';
+  console.error(`wrote ${destination}  ${measured}  ${Math.round(bytes / 1024)} kB  ${meta.licenseShortName}`);
+  if (brand) {
+    // The Commons licence describes the file's copyright. A marque badge is
+    // used here on trademark nominative fair use, which is a different basis
+    // with different obligations, and the schema requires the honest one.
+    console.error(
+      `NOTE: this is a brand mark. Set licenseType 'trademark-nominative-use' with a licenseNote, ` +
+        `not '${meta.licenseType}' — see PLAYBOOK §1.4 rule 9.`,
+    );
+  }
   console.log(JSON.stringify(imageRef, null, 2));
 }
 
@@ -244,7 +299,7 @@ try {
   else if (command === 'licence' || command === 'license') await cmdLicence(args[0]);
   else if (command === 'download') await cmdDownload(args[0], args[1], args[2] ?? 'hero');
   else {
-    console.error('usage: commons.mjs find "Article" | cat "Category" | licence "File:X.jpg" | download "File:X.jpg" <car-slug> <basename>');
+    console.error('usage: commons.mjs find "Article" | cat "Category" | licence "File:X.jpg" | download "File:X.jpg" <car-slug> <basename>  (basename is a filename: hero, gallery-1, gallery-2; for a marque logo pass brand:<brand-id> as the slug)');
     process.exitCode = 1;
   }
 } catch (error) {

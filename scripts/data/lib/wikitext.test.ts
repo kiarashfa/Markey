@@ -276,7 +276,12 @@ describe('GLOSSARY', () => {
   });
 
   it('covers every sourcing language the plan uses', () => {
-    for (const lang of ['de', 'fr', 'it', 'nl', 'ru', 'ja']) {
+    // `as const` rather than a bare string[]: it keeps `lang` a union of the
+    // literal keys, so indexing GLOSSARY type-checks *and* a language added
+    // here without a glossary becomes a compile error rather than a runtime
+    // one. `astro check` is not part of `npm run build`, so a type error in
+    // this file only surfaces in CI's verify job.
+    for (const lang of ['de', 'fr', 'it', 'nl', 'ru', 'ja'] as const) {
       assert.ok(Object.keys(GLOSSARY[lang]).length > 0, `${lang} has no glossary`);
     }
   });

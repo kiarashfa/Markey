@@ -20,8 +20,6 @@
 import { getJson, withQuery } from './lib/http.mjs';
 import { GLOSSARY, infoboxFields, plain, readField, toSi, vehicleInfobox } from './lib/wikitext.mjs';
 
-const API = 'https://en.wikipedia.org/w/api.php';
-
 /** Fetches the wikitext of an article plus the revision it was read at. */
 export async function fetchArticle(title, lang = 'en') {
   const api = `https://${lang}.wikipedia.org/w/api.php`;
