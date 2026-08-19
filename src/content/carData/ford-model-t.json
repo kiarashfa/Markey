@@ -1,0 +1,18 @@
+{
+  "id": "ford-model-t",
+  "name": "Ford Model T",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "ford",
+  "productionYears": {
+    "start": 1908,
+    "end": 1927
+  },
+  "fullName": "Ford Model T, 1908–1927",
+  "segment": "a-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-08-19",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-ford-model-t"]
+}

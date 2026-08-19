@@ -1,0 +1,23 @@
+{
+  "id": "mini",
+  "name": "Mini",
+  "countryOfOrigin": "United Kingdom",
+  "founded": 1959,
+  "defunct": 2000,
+  "logo": {
+    "src": "/images/brands/mini.svg",
+    "alt": "The Mini wing badge: a shield-shaped crest with a blue chrome wing on each side of the MINI wordmark",
+    "credit": {
+      "author": "British Leyland",
+      "title": "File:Mini 1969 logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mini_1969_logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this car, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#007cc4",
+  "accentColorNote": "Sampled from the fill colour used for the wings in the badge's own SVG source (#007CC4) rather than guessed — no public brand-colour specification was published for the car; the badge artwork is the only self-consistent source.",
+  "lastVerified": "2026-08-19",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mini", "commons-file-mini-1969-logo-svg"]
+}

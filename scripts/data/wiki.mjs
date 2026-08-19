@@ -18,7 +18,7 @@
  * evolution are all in the article *body*.
  */
 import { getJson, withQuery } from './lib/http.mjs';
-import { infoboxFields, plain, readField, toSi, vehicleInfobox } from './lib/wikitext.mjs';
+import { GLOSSARY, infoboxFields, plain, readField, toSi, vehicleInfobox } from './lib/wikitext.mjs';
 
 const API = 'https://en.wikipedia.org/w/api.php';
 
@@ -75,7 +75,38 @@ async function cmdInfobox(title, lang) {
     }
   }
   const unknown = Object.keys(fields).filter((f) => !CAR_FIELDS.includes(f) && fields[f]);
-  if (unknown.length) console.log(`\nother fields present: ${unknown.join(', ')}`);
+  // Not a footnote: the six non-English editions this project now sources
+  // from use entirely different field names — German writes `länge`,
+  // `gewicht` and `radstand` — so an English-only field list prints nothing
+  // at all for them. Known names come first because they are the common
+  // case; the rest are shown because guessing sixty field names across six
+  // languages would be worse than showing the author what is actually there.
+  if (unknown.length) {
+    console.log(`
+--- other fields in this infobox (${lang}) ---`);
+    for (const field of unknown) {
+      const entries = readField(fields, field);
+      if (entries.length === 0) continue;
+      if (entries.length === 1) console.log(`${field.padEnd(16)} ${describe(entries[0])}`);
+      else {
+        console.log(`${field.padEnd(16)} (${entries.length} values)`);
+        for (const entry of entries) console.log(`${' '.repeat(18)}${describe(entry)}`);
+      }
+    }
+  }
+  if (lang !== 'en') {
+    const hints = GLOSSARY[lang];
+    if (hints) {
+      console.log(`\n--- ${lang} terms that are easy to misread ---`);
+      for (const [term, meaning] of Object.entries(hints)) {
+        console.log(`  ${term.padEnd(26)} ${meaning}`);
+      }
+    }
+    console.log(
+      '\nNUMBERS: this edition may write 1.234,5 for one thousand two hundred thirty-four point five.' +
+        '\nUse parseLocalisedNumber() from lib/wikitext.mjs — a bare "1.200" is ambiguous and it says so.',
+    );
+  }
   console.log(
     '\nReminder: the infobox is never the whole story. Run `grep` over the body for ' +
       'drag coefficient, battery, performance and per-trim figures.',
@@ -84,8 +115,12 @@ async function cmdInfobox(title, lang) {
 
 async function cmdCite(title, lang) {
   const article = await fetchArticle(title, lang);
+  // The language belongs in the key. Without it the German and English
+  // articles for the same car generate the same citation key and the second
+  // one silently overwrites the first in the bibliography.
+  const prefix = article.lang === 'en' ? 'wikipedia' : `wikipedia-${article.lang}`;
   const key =
-    `wikipedia-${article.title}`
+    `${prefix}-${article.title}`
       .toLowerCase()
       .normalize('NFD')
       .replace(/[̀-ͯ]/g, '')
@@ -97,6 +132,7 @@ async function cmdCite(title, lang) {
     title: article.title,
     publisher: 'Wikipedia',
     url: `https://${article.lang}.wikipedia.org/wiki/${encodeURIComponent(article.title.replace(/ /g, '_'))}`,
+    lang: article.lang,
     revision: article.revid,
     accessed: new Date().toISOString().slice(0, 10),
     license: 'CC BY-SA 4.0',

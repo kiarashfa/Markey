@@ -193,10 +193,24 @@ async function cmdDownload(file, carSlug, basename) {
   if (!meta.licenseType) throw new Error(`${file}: licence "${meta.licenseShortName}" is not in the schema enum — resolve by hand.`);
 
   const extension = path.extname(file).toLowerCase().replace('.jpeg', '.jpg') || '.jpg';
-  const destination = path.join('public', 'images', 'cars', carSlug, `${basename}${extension}`);
+  /*
+   * A vector original must be fetched as the original.
+   *
+   * Commons' `imageinfo` returns a *rasterised PNG* as `thumburl` for an SVG
+   * file, so always preferring the thumbnail wrote PNG bytes into a `.svg`
+   * filename — the bytes were right, the extension lied, and nothing checked.
+   * The first Phase 12 agent found this on the Ford roundel. Take the original
+   * for vectors, the thumbnail for photographs, and derive the extension from
+   * the URL actually fetched rather than from the Commons file title.
+   */
+  const isVector = extension === '.svg';
+  const source = isVector ? meta.originalUrl : (meta.thumbUrl ?? meta.originalUrl);
+  const actualExtension = path.extname(new URL(source).pathname).toLowerCase().replace('.jpeg', '.jpg');
+
+  const destination = path.join('public', 'images', 'cars', carSlug,
+    `${basename}${actualExtension || extension}`);
   await mkdir(path.dirname(destination), { recursive: true });
 
-  const source = meta.thumbUrl ?? meta.originalUrl;
   const response = await get(source, { timeoutMs: 120000 });
   await pipeline(Readable.fromWeb(response.body), createWriteStream(destination));
 

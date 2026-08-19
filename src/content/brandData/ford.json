@@ -1,0 +1,24 @@
+{
+  "id": "ford",
+  "name": "Ford",
+  "legalName": "Ford Motor Company",
+  "countryOfOrigin": "United States",
+  "founded": 1903,
+  "website": "https://ford.com",
+  "logo": {
+    "src": "/images/brands/ford.png",
+    "alt": "Ford blue oval logotype",
+    "credit": {
+      "author": "Ford Motor Company",
+      "title": "File:Ford logo flat.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_logo_flat.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify Ford's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2). Commons serves this SVG's imageinfo entry as a rasterised PNG thumbnail rather than the vector original, so the copy stored here is that PNG."
+    }
+  },
+  "accentColor": "#00095b",
+  "accentColorNote": "Sampled directly from the dominant pixel colour of the downloaded logo file (rgb(0,9,91), 740,390 of the opaque non-white pixels) rather than guessed — Ford does not publish a public brand-colour specification, so this is not presented as an official brand asset.",
+  "lastVerified": "2026-08-19",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-ford-motor-company", "commons-file-ford-logo-flat-svg"]
+}

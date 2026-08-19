@@ -9,7 +9,8 @@
       "url": "https://en.wikipedia.org/wiki/BMW",
       "revision": "1369778433",
       "accessed": "2026-08-17",
-      "license": "CC BY-SA 4.0"
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
     },
     {
       "key": "wikipedia-bmw-6-series",
@@ -20,7 +21,8 @@
       "revision": "1363256463",
       "accessed": "2026-08-17",
       "license": "CC BY-SA 4.0",
-      "note": "The nameplate article, thin by design — 6 infobox fields. Generation-level specs come from the E24 article instead (DATA_SOURCES.md)."
+      "note": "The nameplate article, thin by design — 6 infobox fields. Generation-level specs come from the E24 article instead (DATA_SOURCES.md).",
+      "lang": "en"
     },
     {
       "key": "wikipedia-bmw-6-series-e24",
@@ -31,7 +33,8 @@
       "revision": "1358361056",
       "accessed": "2026-08-17",
       "license": "CC BY-SA 4.0",
-      "note": "Wikipedia in turn cites BMW's 'BMW 628 CSi 635CSi Technische Beschreibung' for the dimension figures. That primary document has not been read directly, so it is not cited here as though it had been."
+      "note": "Wikipedia in turn cites BMW's 'BMW 628 CSi 635CSi Technische Beschreibung' for the dimension figures. That primary document has not been read directly, so it is not cited here as though it had been.",
+      "lang": "en"
     },
     {
       "key": "wikipedia-toyota",
@@ -41,7 +44,8 @@
       "url": "https://en.wikipedia.org/wiki/Toyota",
       "revision": "1366818869",
       "accessed": "2026-08-17",
-      "license": "CC BY-SA 4.0"
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
     },
     {
       "key": "wikipedia-toyota-86",
@@ -52,7 +56,8 @@
       "revision": "1367892282",
       "accessed": "2026-08-17",
       "license": "CC BY-SA 4.0",
-      "note": "The article in turn cites Toyota UK for the 0–62 mph claim, Top Gear for the tested top speed, and Scion's 2013 FR-S specification sheet for engine output. Those primary sources have not been read directly, so they are not cited here as though they had been."
+      "note": "The article in turn cites Toyota UK for the 0–62 mph claim, Top Gear for the tested top speed, and Scion's 2013 FR-S specification sheet for engine output. Those primary sources have not been read directly, so they are not cited here as though they had been.",
+      "lang": "en"
     },
     {
       "key": "wikipedia-drag-coefficients",
@@ -63,7 +68,8 @@
       "revision": "1360737555",
       "accessed": "2026-08-17",
       "license": "CC BY-SA 4.0",
-      "note": "The aerodynamic source named in DATA_SOURCES.md — several hundred production and concept vehicles, 1921 to 2024."
+      "note": "The aerodynamic source named in DATA_SOURCES.md — several hundred production and concept vehicles, 1921 to 2024.",
+      "lang": "en"
     },
     {
       "key": "commons-file-toyota-carlogo-svg",
@@ -95,7 +101,8 @@
       "url": "https://en.wikipedia.org/wiki/Tesla,_Inc.",
       "revision": "1368347298",
       "accessed": "2026-08-18",
-      "license": "CC BY-SA 4.0"
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
     },
     {
       "key": "wikipedia-tesla-model-3",
@@ -106,7 +113,8 @@
       "revision": "1369968684",
       "accessed": "2026-08-18",
       "license": "CC BY-SA 4.0",
-      "note": "The Model 3 has no separate per-generation article: one article covers both the 2017 car and the 2023 \"Highland\" facelift, in two specification tables headed \"Currently available\" and \"Discontinued\". Where those tables disagree with the infobox, the tables are the more specific figure and are what is cited here."
+      "note": "The Model 3 has no separate per-generation article: one article covers both the 2017 car and the 2023 \"Highland\" facelift, in two specification tables headed \"Currently available\" and \"Discontinued\". Where those tables disagree with the infobox, the tables are the more specific figure and are what is cited here.",
+      "lang": "en"
     },
     {
       "key": "wikipedia-volkswagen",
@@ -116,7 +124,8 @@
       "url": "https://en.wikipedia.org/wiki/Volkswagen",
       "revision": "1369975311",
       "accessed": "2026-08-18",
-      "license": "CC BY-SA 4.0"
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
     },
     {
       "key": "wikipedia-volkswagen-golf",
@@ -127,7 +136,8 @@
       "revision": "1370024728",
       "accessed": "2026-08-18",
       "license": "CC BY-SA 4.0",
-      "note": "The nameplate article, thin by design in exactly the way DATA_SOURCES.md describes. Generation specs come from the Mk1 article."
+      "note": "The nameplate article, thin by design in exactly the way DATA_SOURCES.md describes. Generation specs come from the Mk1 article.",
+      "lang": "en"
     },
     {
       "key": "wikipedia-volkswagen-golf-mk1",
@@ -138,7 +148,8 @@
       "revision": "1368565284",
       "accessed": "2026-08-18",
       "license": "CC BY-SA 4.0",
-      "note": "This article disagrees with itself on the GTI: the prose cites Volkswagen’s own 40-years brochure for 140 N⋅m, 9.2 s and 182 km/h, while the model-range table gives 137 N⋅m, 10 s and 183 km/h. Both figures are recorded on the affected values with status ‘conflicting-sources’."
+      "note": "This article disagrees with itself on the GTI: the prose cites Volkswagen’s own 40-years brochure for 140 N⋅m, 9.2 s and 182 km/h, while the model-range table gives 137 N⋅m, 10 s and 183 km/h. Both figures are recorded on the affected values with status ‘conflicting-sources’.",
+      "lang": "en"
     },
     {
       "key": "wikipedia-land-rover",
@@ -148,7 +159,8 @@
       "url": "https://en.wikipedia.org/wiki/Land_Rover",
       "revision": "1357736984",
       "accessed": "2026-08-18",
-      "license": "CC BY-SA 4.0"
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
     },
     {
       "key": "wikipedia-range-rover",
@@ -158,7 +170,8 @@
       "url": "https://en.wikipedia.org/wiki/Range_Rover",
       "revision": "1367150739",
       "accessed": "2026-08-18",
-      "license": "CC BY-SA 4.0"
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
     },
     {
       "key": "wikipedia-range-rover-classic",
@@ -169,7 +182,8 @@
       "revision": "1369494215",
       "accessed": "2026-08-18",
       "license": "CC BY-SA 4.0",
-      "note": "Publishes no kerb weight, in either the infobox or the body, and the German Wikipedia article redirects into a section with no specification table either. The kerb weight is therefore not recorded, which is why this entry has no Test Drive."
+      "note": "Publishes no kerb weight, in either the infobox or the body, and the German Wikipedia article redirects into a section with no specification table either. The kerb weight is therefore not recorded, which is why this entry has no Test Drive.",
+      "lang": "en"
     },
     {
       "key": "wikipedia-toyota-prius",
@@ -179,7 +193,8 @@
       "url": "https://en.wikipedia.org/wiki/Toyota_Prius",
       "revision": "1364895278",
       "accessed": "2026-08-18",
-      "license": "CC BY-SA 4.0"
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
     },
     {
       "key": "wikipedia-toyota-prius-xw20",
@@ -190,7 +205,8 @@
       "revision": "1367269329",
       "accessed": "2026-08-18",
       "license": "CC BY-SA 4.0",
-      "note": "The drag coefficient and the battery figures are in the body text rather than the infobox; Wikipedia in turn cites Motor Trend for the 0.26 Cd. That primary source has not been read directly, so it is not cited here as though it had been."
+      "note": "The drag coefficient and the battery figures are in the body text rather than the infobox; Wikipedia in turn cites Motor Trend for the 0.26 Cd. That primary source has not been read directly, so it is not cited here as though it had been.",
+      "lang": "en"
     },
     {
       "key": "wikipedia-citroen",
@@ -200,7 +216,8 @@
       "url": "https://en.wikipedia.org/wiki/Citro%C3%ABn",
       "revision": "1369937178",
       "accessed": "2026-08-18",
-      "license": "CC BY-SA 4.0"
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
     },
     {
       "key": "wikipedia-citroen-2cv",
@@ -211,7 +228,8 @@
       "revision": "1369483970",
       "accessed": "2026-08-18",
       "license": "CC BY-SA 4.0",
-      "note": "One article covers all 42 years: the 2CV never had a second generation, so the nameplate article is also the generation article. Engine outputs are published in metric horsepower and converted here at 1 PS = 0.73549875 kW."
+      "note": "One article covers all 42 years: the 2CV never had a second generation, so the nameplate article is also the generation article. Engine outputs are published in metric horsepower and converted here at 1 PS = 0.73549875 kW.",
+      "lang": "en"
     },
     {
       "key": "commons-file-tesla-t-symbol-svg",
@@ -336,6 +354,102 @@
       "accessed": "2026-08-18",
       "license": "Public domain (US Government work)",
       "note": "Queried by model year 2005; the record is stamped MYR 04. Publishes a 60/40 front/rear weight distribution, and a Canadian-market curb weight of 1,335 kg against the 1,317 kg Wikipedia gives — different market specification, not a contradiction."
+    },
+    {
+      "key": "wikipedia-ford-model-t",
+      "type": "wikipedia",
+      "title": "Ford Model T",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ford_Model_T",
+      "revision": "1368724610",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-ford-motor-company",
+      "type": "wikipedia",
+      "title": "Ford Motor Company",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ford_Motor_Company",
+      "revision": "1369024878",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "commons-file-ford-logo-flat-svg",
+      "type": "commons",
+      "title": "File:Ford logo flat.svg",
+      "author": "Ford Motor Company",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Ford_logo_flat.svg",
+      "accessed": "2026-08-18",
+      "license": "Public domain (copyright); mark is trademarked",
+      "note": "Same split as the Toyota and BMW logos: public domain for copyright purposes, with an explicit 'trademarked' restriction. Displayed under trademark nominative use. Commons serves this SVG's imageinfo thumbnail as a rasterised PNG rather than the vector original, so the file stored locally at public/images/brands/ford.png is that PNG rendering, not the SVG itself, despite the source file being an SVG."
+    },
+    {
+      "key": "wikipedia-volkswagen-beetle",
+      "type": "wikipedia",
+      "title": "Volkswagen Beetle",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+      "revision": "1369140242",
+      "accessed": "2026-08-18",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "nhtsa-cvs-1974-volkswagen-beetle",
+      "type": "dataset",
+      "title": "1974 Volkswagen Beetle and Super Beetle — NHTSA Canadian Vehicle Specifications",
+      "publisher": "US National Highway Traffic Safety Administration",
+      "url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1974&Make=Volkswagen&units=Metric&format=json",
+      "accessed": "2026-08-19",
+      "license": "Public domain (US Government work)",
+      "note": "Queried by model year 1974. Returns separate 'Beetle' and 'Super Beetle' records with distinct curb weights and dimensions — a Canadian-market snapshot within Wikipedia's unattributed 730-930 kg range for the whole model line."
+    },
+    {
+      "key": "rdw-volkswagen-kever",
+      "type": "dataset",
+      "title": "Volkswagen Kever — RDW Gekentekende Voertuigen (Dutch vehicle registration register)",
+      "publisher": "Rijksdienst voor het Wegverkeer (RDW), Netherlands",
+      "url": "https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-ebf2",
+      "accessed": "2026-08-19",
+      "license": "Public domain (Dutch open government data)",
+      "note": "Individual registration records for Dutch-plated 'Kever' (Beetle) cars, not a manufacturer specification. Referenced narratively only: kerb weights across several 1200-badged cars (770-790 kg) roughly agree with the Canadian CVS figure, but seat counts recorded for the same nameplate disagree between registrations (4 vs 5), so this source was not trusted for a structured seats figure."
+    },
+    {
+      "key": "wikipedia-mini",
+      "type": "wikipedia",
+      "title": "Mini",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mini",
+      "revision": "1365814448",
+      "accessed": "2026-08-19",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "commons-file-mini-1969-logo-svg",
+      "type": "commons",
+      "title": "File:Mini 1969 logo.svg",
+      "author": "British Leyland",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Mini_1969_logo.svg",
+      "accessed": "2026-08-19",
+      "license": "Public domain (copyright); mark is trademarked",
+      "note": "The wing badge used on the car from 1969, when Mini became a marque in its own right, until Rover-era classic production ended in 2000. Public domain for copyright purposes with an explicit 'trademarked' restriction; displayed here under trademark nominative use, not a copyright licence."
+    },
+    {
+      "key": "rdw-mini",
+      "type": "dataset",
+      "title": "Austin Mini / Morris Mini — RDW Gekentekende Voertuigen (Dutch vehicle registration register)",
+      "publisher": "Rijksdienst voor het Wegverkeer (RDW), Netherlands",
+      "url": "https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-ebf2",
+      "accessed": "2026-08-19",
+      "license": "Public domain (Dutch open government data)",
+      "note": "Individual registration records for Dutch-plated Austin- and Morris-badged Minis, not a manufacturer specification. Wikipedia gives only a single unattributed model-wide weight range (580-686 kg) for the whole 1959-2000 run, so these dated, badge-specific records are the only per-trim mass figures available and are used structurally where a record's badge and engine size clearly match the trim, with the single-registration caveat stated in each sourceNote. Two 1963 Morris Mini Cooper S records disagree by 22% (535 kg vs 690 kg) despite matching badge/year/displacement, which is why the Cooper S trim here does not use an RDW mass figure."
     }
   ]
 }

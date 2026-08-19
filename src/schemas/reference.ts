@@ -47,12 +47,30 @@ export const referenceEntry = z
      * will have changed by the time anyone checks it.
      */
     revision: z.string().optional(),
+    /**
+     * Language of the source, as a Wikipedia subdomain code.
+     *
+     * Added in Phase 12a, when the plan grew to include the 4,489 cars that
+     * have no English article but do have a German, Russian, French, Italian,
+     * Dutch or Japanese one. A citation that does not say which Wikipedia it
+     * came from cannot be checked, and `en` cannot be assumed once the
+     * catalogue sources from six languages.
+     */
+    lang: z.string().regex(/^[a-z]{2,3}(-[a-z]+)?$/, 'a language code like en, de, ja').optional(),
     /** e.g. 'CC BY-SA 4.0', 'public domain'. */
     license: z.string().optional(),
     note: z.string().optional(),
   })
   .superRefine((ref, ctx) => {
     if (ref.type === 'wikipedia') {
+      if (!ref.lang) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['lang'],
+          message:
+            'a Wikipedia citation must say which language edition it came from — the catalogue sources from six of them and `en` cannot be assumed',
+        });
+      }
       if (!ref.revision) {
         ctx.addIssue({
           code: 'custom',

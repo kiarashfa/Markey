@@ -1,0 +1,18 @@
+{
+  "id": "mini",
+  "name": "Mini",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "mini",
+  "productionYears": {
+    "start": 1959,
+    "end": 2000
+  },
+  "fullName": "Mini, 1959–2000",
+  "segment": "a-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-08-19",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mini"]
+}

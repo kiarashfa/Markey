@@ -310,3 +310,95 @@ export function toSi(value, unit) {
         : `Published as ${value} ${unit}, converted at 1 ${unit} = ${rule.factor} ${rule.unit}.`,
   };
 }
+
+// ---------------------------------------------------------------------------
+// Reading numbers written in another language's convention
+// ---------------------------------------------------------------------------
+
+/** Languages that write 1.234,5 rather than 1,234.5. */
+export const COMMA_DECIMAL_LANGS = new Set(['de', 'ru', 'fr', 'it', 'nl', 'es', 'pt', 'pl', 'cs', 'sv', 'da', 'fi', 'tr']);
+
+/**
+ * Parses a number that may be written in a European convention.
+ *
+ * This exists because of the single most dangerous thing about sourcing from a
+ * non-English Wikipedia: German writes one thousand two hundred as `1.200`,
+ * and read as English that is 1.2. A kerb weight off by a factor of a thousand
+ * looks absurd to a human and completely ordinary to a validator — it is a
+ * number, it is positive, the schema accepts it.
+ *
+ * So this never guesses. `1.234,5` is unambiguous and parses. `1.234` is
+ * genuinely ambiguous — 1234 in German, 1.234 in English — and comes back
+ * flagged, with the reason, for a person to resolve.
+ *
+ * Returns `{ value, ambiguous, note }`, or null when there is no number.
+ */
+export function parseLocalisedNumber(text, lang = 'en') {
+  if (text === null || text === undefined) return null;
+  const raw = String(text).trim().replace(/\u00a0|&nbsp;/g, ' ').replace(/\s+/g, '');
+  if (!/^[+-]?[\d.,]+$/.test(raw) || !/\d/.test(raw)) return null;
+
+  const commas = (raw.match(/,/g) ?? []).length;
+  const dots = (raw.match(/\./g) ?? []).length;
+  const commaDecimal = COMMA_DECIMAL_LANGS.has(lang);
+
+  // Both separators present: the last one is the decimal point, whichever it is.
+  if (commas > 0 && dots > 0) {
+    const decimalIsComma = raw.lastIndexOf(',') > raw.lastIndexOf('.');
+    const cleaned = decimalIsComma
+      ? raw.replace(/\./g, '').replace(',', '.')
+      : raw.replace(/,/g, '');
+    return { value: Number(cleaned), ambiguous: false, note: null };
+  }
+
+  // One separator, used once, with exactly three digits after it: thousands.
+  const only = commas > 0 ? ',' : dots > 0 ? '.' : null;
+  if (!only) return { value: Number(raw), ambiguous: false, note: null };
+
+  const parts = raw.split(only);
+  const tail = parts[parts.length - 1];
+
+  if (parts.length > 2) {
+    // 1.234.567 — can only be grouping.
+    return { value: Number(raw.split(only).join('')), ambiguous: false, note: null };
+  }
+  if (tail.length === 3) {
+    const asThousands = Number(parts.join(''));
+    const asDecimal = Number(`${parts[0]}.${tail}`);
+    const separatorIsDecimalHere = (only === ',') === commaDecimal;
+    return {
+      value: separatorIsDecimalHere ? asDecimal : asThousands,
+      ambiguous: true,
+      note:
+        `"${text}" is ambiguous: ${asThousands} if "${only}" groups thousands, ` +
+        `${asDecimal} if it is a decimal separator. Read as ${separatorIsDecimalHere ? asDecimal : asThousands} ` +
+        `for lang "${lang}" — confirm against the source before recording it.`,
+    };
+  }
+  // Any other tail length is a decimal separator in either convention.
+  return { value: Number(`${parts[0]}.${tail}`), ambiguous: false, note: null };
+}
+
+/** German spec-table terms that are easy to confuse. Getting these wrong is a silent error. */
+export const GLOSSARY = {
+  de: {
+    Leergewicht: 'kerb weight (use this)',
+    Leermasse: 'kerb weight (use this)',
+    Eigengewicht: 'kerb weight (use this)',
+    'zulässiges Gesamtgewicht': 'GROSS weight — NOT kerb weight',
+    Gesamtgewicht: 'GROSS weight — NOT kerb weight',
+    Nutzlast: 'payload — not a weight of the car',
+    Hubraum: 'engine displacement, cc',
+    Leistung: 'power (check whether PS or kW)',
+    Höchstgeschwindigkeit: 'top speed, km/h',
+    Beschleunigung: 'acceleration, usually 0–100 km/h',
+    Radstand: 'wheelbase',
+    Verbrauch: 'fuel consumption (name the cycle)',
+    Drehmoment: 'torque, N⋅m',
+  },
+  fr: { 'poids à vide': 'kerb weight', 'PTAC': 'GROSS weight — NOT kerb', Cylindrée: 'displacement', Puissance: 'power' },
+  it: { 'massa a vuoto': 'kerb weight', Cilindrata: 'displacement', Potenza: 'power' },
+  nl: { Leeggewicht: 'kerb weight', Cilinderinhoud: 'displacement', Vermogen: 'power' },
+  ru: { 'Масса снаряжённая': 'kerb weight', 'Полная масса': 'GROSS weight — NOT kerb', 'Объём двигателя': 'displacement' },
+  ja: { 車両重量: 'kerb weight', 総排気量: 'displacement', 最高出力: 'maximum power' },
+};

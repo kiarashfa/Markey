@@ -8,10 +8,12 @@ import { describe, it } from 'node:test';
 
 import {
   fieldValues,
+  GLOSSARY,
   infoboxes,
   infoboxFields,
   extractConvert,
   parseConvert,
+  parseLocalisedNumber,
   plain,
   readField,
   splitTopLevel,
@@ -221,5 +223,61 @@ describe('toSi', () => {
 
   it('returns null for a unit it does not know, rather than guessing', () => {
     assert.equal(toSi(1, 'furlong'), null);
+  });
+});
+
+describe('parseLocalisedNumber — the 1000x trap', () => {
+  it('reads a German number with both separators', () => {
+    const r = parseLocalisedNumber('1.234,5', 'de');
+    assert.equal(r?.value, 1234.5);
+    assert.equal(r?.ambiguous, false);
+  });
+
+  it('reads an English number with both separators', () => {
+    assert.equal(parseLocalisedNumber('1,234.5', 'en')?.value, 1234.5);
+  });
+
+  it('reads a plain integer unchanged', () => {
+    assert.equal(parseLocalisedNumber('1190', 'de')?.value, 1190);
+  });
+
+  it('reads a German decimal comma', () => {
+    assert.equal(parseLocalisedNumber('0,45', 'de')?.value, 0.45);
+  });
+
+  it('FLAGS the genuinely ambiguous case rather than guessing silently', () => {
+    // "1.200" is 1200 kg in German and 1.2 in English. A validator cannot tell.
+    const r = parseLocalisedNumber('1.200', 'de');
+    assert.equal(r?.value, 1200);
+    assert.equal(r?.ambiguous, true);
+    assert.match(r?.note ?? '', /ambiguous/);
+  });
+
+  it('reads the same ambiguous string the English way for an English source', () => {
+    const r = parseLocalisedNumber('1.200', 'en');
+    assert.equal(r?.value, 1.2);
+    assert.equal(r?.ambiguous, true);
+  });
+
+  it('handles repeated grouping separators', () => {
+    assert.equal(parseLocalisedNumber('1.234.567', 'de')?.value, 1234567);
+  });
+
+  it('returns null for something that is not a number', () => {
+    assert.equal(parseLocalisedNumber('Leergewicht', 'de'), null);
+    assert.equal(parseLocalisedNumber('', 'de'), null);
+  });
+});
+
+describe('GLOSSARY', () => {
+  it('warns that Gesamtgewicht is not kerb weight', () => {
+    assert.match(GLOSSARY.de['zulässiges Gesamtgewicht'], /NOT kerb/);
+    assert.match(GLOSSARY.de.Leergewicht, /kerb weight/);
+  });
+
+  it('covers every sourcing language the plan uses', () => {
+    for (const lang of ['de', 'fr', 'it', 'nl', 'ru', 'ja']) {
+      assert.ok(Object.keys(GLOSSARY[lang]).length > 0, `${lang} has no glossary`);
+    }
   });
 });

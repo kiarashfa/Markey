@@ -1,0 +1,314 @@
+{
+  "id": "ford-model-t-1908",
+  "name": "Ford Model T",
+  "fullName": "Ford Model T, 1908–1927",
+  "kind": "generation",
+  "parent": "ford-model-t",
+  "brandRef": "ford",
+  "productionYears": {
+    "start": 1908,
+    "end": 1927
+  },
+  "bodyStyles": [
+    "convertible",
+    "roadster"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "designer": "Childe Harold Wills, Joseph A. Galamb and Eugene Farkas",
+  "assembly": [
+    "Detroit, Michigan, United States (Piquette Avenue Plant, 1908–1910)",
+    "Highland Park, Michigan, United States (1910–1927)",
+    "Manchester, United Kingdom",
+    "Cork, Ireland",
+    "Berlin, Germany",
+    "Bordeaux and Asnières-sur-Seine, France",
+    "Yokohama, Japan",
+    "Buenos Aires, Argentina"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 3403.6,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-model-t",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+      "sourceNote": "134 in, converted at 25.4 mm/in per the infobox's own {{convert}} template. No qualifier is given, unlike width and height below."
+    },
+    "wheelbase": {
+      "value": 2540,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-model-t",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+      "sourceNote": "100 in, converted at 25.4 mm/in. Constant across the whole 1908–1927 run and every body style."
+    },
+    "kerbWeight": {
+      "value": 544.3,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-ford-model-t",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+      "sourceNote": "The infobox publishes a single range for the whole car, 1,200–1,650 lb, converted at 0.45359237 kg/lb to 544.3–748.4 kg. It is not attributed to a specific body style or year, so the lighter bound is recorded here per the project convention for a published range (record the lower bound, state the full range here) — this is the published floor, not a measurement of any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "runabout",
+      "name": "Runabout",
+      "productionYears": {
+        "start": 1909,
+        "end": 1927
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "Planetary gear, two forward speeds plus reverse — contemporary sources called it a \"three-speed\", counting reverse as a gear",
+      "gears": 2,
+      "engine": {
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 2900,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-model-t",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+          "sourceNote": "177 cu in, converted at 16.387064 cc/cu in; the infobox's own {{convert}} template rounds this to 2.9 L. One engine specification for the entire 1908–1927 run — Ford's stated philosophy was to keep the car itself unchanged."
+        }
+      },
+      "power": {
+        "value": 14.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-model-t",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+        "sourceNote": "20 hp (mechanical horsepower), converted at 1 hp = 0.745699872 kW. The same figure is given for the whole production run; no per-year or per-body-style output is published."
+      },
+      "topSpeed": {
+        "value": 67.6,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ford-model-t",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+        "sourceNote": "42 mph, converted at 1.609344 km/mph. No 0-100 km/h figure is recorded because the car's stated top speed never reaches 100 km/h — omission, not a gap."
+      },
+      "fuelEconomy": {
+        "value": 11.2,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-ford-model-t",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+        "sourceNote": "Ford's published range was 13-21 mpg (US), quoted for the engine rather than for a body style. Recorded as the low end in the unit stored — 21 mpg = 11.20 L/100 km, converted at 235.215 L-mi/100km-gal — with the full range stated here. The other end of the range is 18.09 L/100 km."
+      },
+      "mass": {
+        "value": 544.3,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-ford-model-t",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+        "sourceNote": "The infobox's model-wide 1,200–1,650 lb range, lower bound, converted at 0.45359237 kg/lb. Not attributed to this body style specifically — the two-seat Runabout was almost certainly toward the light end, but the source does not say so."
+      },
+      "dimensions": {
+        "width": {
+          "value": 1676,
+          "unit": "mm",
+          "status": "verified",
+          "source": "wikipedia-ford-model-t",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+          "sourceNote": "Explicitly qualified in the infobox as \"(1912 roadster)\" — the only body style and year Wikipedia gives a width for, which is why it is recorded on this trim rather than at generation level."
+        },
+        "height": {
+          "value": 1860,
+          "unit": "mm",
+          "status": "verified",
+          "source": "wikipedia-ford-model-t",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+          "sourceNote": "Also qualified \"(1912 roadster)\" in the infobox, alongside the width above."
+        }
+      },
+      "frontalArea": {
+        "value": 2.65,
+        "unit": "m2",
+        "status": "estimated",
+        "sourceNote": "Derived, not published: the site's standing approximation of 0.85 x width x height, using the 1912 roadster's own sourced width and height (1,676 x 1,860 mm). No drag coefficient or measured frontal area exists for the Model T to check this estimate against — it predates the era when Wikipedia's automobile drag-coefficient list has data."
+      },
+      "prices": [
+        {
+          "amount": 825,
+          "currency": "USD",
+          "market": "US",
+          "year": 1909,
+          "status": "verified",
+          "source": "wikipedia-ford-model-t",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+          "sourceNote": "Launch-year price, from the article's production/price table."
+        },
+        {
+          "amount": 260,
+          "currency": "USD",
+          "market": "US",
+          "year": 1925,
+          "status": "verified",
+          "source": "wikipedia-ford-model-t",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+          "sourceNote": "The cheapest year of the whole run — a 68% nominal price fall from 1909, which the article attributes to the 1913 moving assembly line and the scale it enabled."
+        },
+        {
+          "amount": 360,
+          "currency": "USD",
+          "market": "US",
+          "year": 1927,
+          "status": "verified",
+          "source": "wikipedia-ford-model-t",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+          "sourceNote": "Final full model year; the price table notes production ended before mid-1927 to allow retooling for the Model A."
+        }
+      ],
+      "marketVariants": []
+    },
+    {
+      "id": "touring",
+      "name": "Touring",
+      "productionYears": {
+        "start": 1909,
+        "end": 1927
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "Planetary gear, two forward speeds plus reverse — contemporary sources called it a \"three-speed\", counting reverse as a gear",
+      "gears": 2,
+      "engine": {
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 2900,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-model-t",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+          "sourceNote": "177 cu in, converted at 16.387064 cc/cu in; the infobox's own {{convert}} template rounds this to 2.9 L. One engine specification for the entire 1908–1927 run."
+        }
+      },
+      "power": {
+        "value": 14.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-model-t",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+        "sourceNote": "20 hp (mechanical horsepower), converted at 1 hp = 0.745699872 kW. The same figure is given for the whole production run."
+      },
+      "topSpeed": {
+        "value": 67.6,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ford-model-t",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+        "sourceNote": "42 mph, converted at 1.609344 km/mph. No 0-100 km/h figure is recorded because the car's top speed never reaches 100 km/h."
+      },
+      "fuelEconomy": {
+        "value": 11.2,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-ford-model-t",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+        "sourceNote": "Ford's published range was 13-21 mpg (US), quoted for the engine rather than for a body style. Recorded as the low end in the unit stored — 21 mpg = 11.20 L/100 km, converted at 235.215 L-mi/100km-gal — with the full range stated here. The other end of the range is 18.09 L/100 km."
+      },
+      "prices": [
+        {
+          "amount": 850,
+          "currency": "USD",
+          "market": "US",
+          "year": 1909,
+          "status": "verified",
+          "source": "wikipedia-ford-model-t",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+          "sourceNote": "Noted in the price table against the same year's $825 Runabout."
+        },
+        {
+          "amount": 290,
+          "currency": "USD",
+          "market": "US",
+          "year": 1925,
+          "status": "verified",
+          "source": "wikipedia-ford-model-t",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
+          "sourceNote": "Noted in the price table against the same year's $260 Runabout — a 66% nominal fall from 1909."
+        }
+      ],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/ford-model-t-1908/hero.jpg",
+    "alt": "A 1925 Ford Model T Touring car in dark green, photographed from the front three-quarter angle with its canvas top raised, brass-trimmed radiator shell and wood-spoke wheels on balloon tyres",
+    "width": 1920,
+    "height": 1440,
+    "caption": "A 1925 Touring car — by this point riding on the balloon tyres and split rims that arrived as options in the Model T's last two years.",
+    "credit": {
+      "author": "ModelTMitch",
+      "title": "File:1925 Ford Model T touring.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1925_Ford_Model_T_touring.jpg",
+      "licenseType": "public-domain",
+      "licenseNote": "Released into the public domain by the photographer."
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/ford-model-t-1908/early.jpg",
+      "alt": "A wide period advertisement illustration of the 1908 Ford Model T Touring car",
+      "width": 1524,
+      "height": 672,
+      "caption": "Ford's own full-page advertisement for the very first Model T, from the October 1, 1908 issue of Life magazine — the car as it looked the week production began.",
+      "credit": {
+        "author": "User Rmhermen on en.wikipedia",
+        "title": "File:1908 Ford Model T.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1908_Ford_Model_T.jpg",
+        "licenseType": "public-domain",
+        "licenseNote": "Released into the public domain; a scan of a 1908 advertisement, itself long out of copyright."
+      }
+    },
+    {
+      "src": "/images/cars/ford-model-t-1908/pedals.jpg",
+      "alt": "Close-up of the Model T's three floor pedals, labelled left to right as clutch, reverse and brake",
+      "width": 1920,
+      "height": 1440,
+      "caption": "The whole control layout in one photograph: left pedal for the planetary clutch, centre for reverse, right for the transmission brake — there were no brakes on the wheels at all.",
+      "credit": {
+        "author": "Rockclaw1030",
+        "title": "File:Model T pedals.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Model_T_pedals.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    },
+    {
+      "src": "/images/cars/ford-model-t-1908/assembly-line.jpg",
+      "alt": "Black-and-white photograph of Ford's 1913 moving assembly line, with rows of Model T chassis under construction",
+      "width": 1920,
+      "height": 1386,
+      "caption": "The 1913 Highland Park moving assembly line — the innovation that did more to define the Model T's history than any single body style did.",
+      "credit": {
+        "author": "Unknown",
+        "title": "File:Ford assembly line - 1913 (restored).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_assembly_line_-_1913_(restored).jpg",
+        "licenseType": "public-domain",
+        "licenseNote": "Public domain; a restored 1913 press photograph of unrecorded authorship."
+      }
+    }
+  ],
+  "lastVerified": "2026-08-19",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-ford-model-t"
+  ]
+}

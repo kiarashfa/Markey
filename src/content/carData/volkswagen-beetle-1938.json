@@ -1,0 +1,419 @@
+{
+  "id": "volkswagen-beetle-1938",
+  "name": "Volkswagen Beetle",
+  "fullName": "Volkswagen Beetle (Type 1), 1938–2003",
+  "kind": "generation",
+  "parent": "volkswagen-beetle",
+  "brandRef": "volkswagen",
+  "generationCode": "Type 1",
+  "productionYears": {
+    "start": 1938,
+    "end": 2003
+  },
+  "bodyStyles": [
+    "saloon",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "designer": "Ferdinand Porsche",
+  "assembly": [
+    "Wolfsburg, Germany (the main plant, from 1938)",
+    "Emden, Germany (from 1964)",
+    "Osnabrück, Germany (Karmann — convertibles only, not the coupe)",
+    "Puebla, Mexico (the last plant standing; built the final car in 2003)",
+    "São Bernardo do Campo, Brazil",
+    "Melbourne (Clayton, Victoria), Australia",
+    "Uitenhage, South Africa"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4079,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-beetle",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+      "sourceNote": "Infobox range 4,079-4,140 mm across the model's trims and years, not attributed to a specific one; recorded here as the shorter figure per project convention. NHTSA's Canadian Vehicle Specifications independently gives a dated 4,140 mm for a 1974 'Beetle' and 4,190 mm for the 1974 'Super Beetle' — both consistent with this range (see the '1200' and '1302S' trims)."
+    },
+    "width": {
+      "value": 1539,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-beetle",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+      "sourceNote": "Infobox range 1,539-1,585 mm, not attributed to a specific trim or year; recorded here as the narrower figure per project convention."
+    },
+    "height": {
+      "value": 1500,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-beetle",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+      "sourceNote": "The infobox gives a single figure, not a range, for the whole model line."
+    },
+    "wheelbase": {
+      "value": 2400,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-beetle",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+      "sourceNote": "Infobox range 2,400-2,420 mm, recorded here as the shorter figure. The 20 mm difference is the 1970 Super Beetle's longer front end, described in the article body as a 2 cm wheelbase increase, and confirmed by NHTSA's Canadian Vehicle Specifications (2,400 mm 'Beetle' vs 2,420 mm 'Super Beetle', both 1974) — see the '1302S' trim."
+    },
+    "kerbWeight": {
+      "value": 730,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-beetle",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+      "sourceNote": "Infobox range 730-930 kg, unattributed to a specific trim, year or market. NHTSA's Canadian Vehicle Specifications gives dated, per-variant figures inside this range for 1974: 860 kg for the 'Beetle' and 920 kg for the 'Super Beetle' (recorded on the matching trims below). Dutch RDW vehicle-registration data for several individually plated 1200-badged cars puts the kerb weight at 770-790 kg, which is lower than the Canadian figure for the same nameplate — plausibly a lighter market specification rather than a contradiction, but registration records are for individual cars, not a manufacturer spec, so it is not used as a structured figure here."
+    }
+  },
+  "trims": [
+    {
+      "id": "1200",
+      "name": "1200",
+      "productionYears": {
+        "start": 1954,
+        "end": 1986
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual transaxle (fully synchronised from 1961)",
+      "gears": 4,
+      "engine": {
+        "code": "Type 122",
+        "configuration": "air-cooled flat-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 1192,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-beetle",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+          "sourceNote": "The Type 122 engine introduced in 1954, bore enlarged to 77 mm, replacing the original 1938-1954 1131 cc unit."
+        }
+      },
+      "power": {
+        "value": 22,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-beetle",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+        "sourceNote": "Published directly in kW for the 1965 '1200A', the badge given to the standard model once numeric designations replaced 'Standard'/'Export'. It is the same Type 122 1192 cc engine introduced in 1954, described there as 30 PS (a 5 PS increase over its 1131 cc predecessor) — 30 PS at 1 PS = 0.73549875 kW is 22.1 kW, consistent with the figure recorded here."
+      },
+      "mass": {
+        "value": 860,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-1974-volkswagen-beetle",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1974&Make=Volkswagen&units=Metric&format=json",
+        "sourceNote": "NHTSA Canadian Vehicle Specifications, 1974 model year 'Beetle' record — a dated Canadian-market curb weight inside Wikipedia's unattributed 730-930 kg range for the whole model line."
+      },
+      "dimensions": {
+        "length": {
+          "value": 4140,
+          "unit": "mm",
+          "status": "verified",
+          "source": "nhtsa-cvs-1974-volkswagen-beetle",
+          "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1974&Make=Volkswagen&units=Metric&format=json"
+        },
+        "width": {
+          "value": 1550,
+          "unit": "mm",
+          "status": "verified",
+          "source": "nhtsa-cvs-1974-volkswagen-beetle",
+          "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1974&Make=Volkswagen&units=Metric&format=json"
+        },
+        "height": {
+          "value": 1500,
+          "unit": "mm",
+          "status": "verified",
+          "source": "nhtsa-cvs-1974-volkswagen-beetle",
+          "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1974&Make=Volkswagen&units=Metric&format=json"
+        },
+        "wheelbase": {
+          "value": 2400,
+          "unit": "mm",
+          "status": "verified",
+          "source": "nhtsa-cvs-1974-volkswagen-beetle",
+          "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1974&Make=Volkswagen&units=Metric&format=json"
+        }
+      },
+      "dragCoefficient": {
+        "value": 0.48,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-drag-coefficients",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_automobile_drag_coefficients",
+        "sourceNote": "Listed there for the 'Volkswagen Beetle (original design)', dated 1938; the main Beetle article states the same 0.48 figure without a date qualifier. Recorded here on the earliest trim in this batch (from 1954) because the body shape changed only incrementally — larger glass in 1965, a reshaped nose on the 1970 Super Beetle — so applying one figure across the range is reasonable but is not itself sourced per trim."
+      },
+      "frontalArea": {
+        "value": 1.98,
+        "unit": "m2",
+        "status": "estimated",
+        "sourceNote": "Derived, not published: the site's standing 0.85 x width x height approximation, using this trim's CVS-sourced width and height (1,550 x 1,500 mm). No drag-area (CdA) figure exists for the Beetle on Wikipedia's drag-coefficients list to check this estimate against."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1300",
+      "name": "1300",
+      "productionYears": {
+        "start": 1965,
+        "end": 1974
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual transaxle",
+      "gears": 4,
+      "engine": {
+        "configuration": "air-cooled flat-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 1285,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-beetle",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+          "sourceNote": "Introduced August 1965, using the longer-stroke crankshaft (64 mm to 69 mm) from the Volkswagen Type 3."
+        }
+      },
+      "power": {
+        "value": 29.4,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-beetle",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+        "sourceNote": "40 PS (DIN) at introduction in August 1965, converted at 1 PS = 0.73549875 kW. Uprated to 44 PS (32.4 kW) in 1971 — the same output the article gives for the contemporary 1302 — but no exact date or intermediate figure is given for the 1300 lineage itself, so only the 1965 introductory figure is recorded here."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1500",
+      "name": "1500",
+      "productionYears": {
+        "start": 1967,
+        "end": 1970
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "3-speed semi-automatic",
+      "gears": 3,
+      "engine": {
+        "configuration": "air-cooled flat-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 1493,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-beetle",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+          "sourceNote": "Introduced September 1967 alongside the three-speed semi-automatic transmission."
+        }
+      },
+      "power": {
+        "value": 32,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-beetle",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+        "sourceNote": "Published directly in kW. Discontinued in 1970 when the 1302 range took over as the larger-engined Beetle."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1302s",
+      "name": "1302S (Super Beetle)",
+      "productionYears": {
+        "start": 1970,
+        "end": 1972
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual transaxle",
+      "gears": 4,
+      "engine": {
+        "configuration": "air-cooled flat-4, twin-port cylinder head",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 1584,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-beetle",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+          "sourceNote": "The more powerful of the two engines introduced with the August 1970 1302 range; the base 1302 kept the 1300's 1,285 cc unit at 44 PS (32.4 kW)."
+        }
+      },
+      "power": {
+        "value": 36.8,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-beetle",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+        "sourceNote": "50 PS (DIN), converted at 1 PS = 0.73549875 kW. Autocar magazine called the 14% power increase over the base 1302 'very modest for the size of the engine'. Superseded by the curved-windscreen 1303 range in August 1972."
+      },
+      "mass": {
+        "value": 920,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-1974-volkswagen-beetle",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1974&Make=Volkswagen&units=Metric&format=json",
+        "sourceNote": "NHTSA Canadian Vehicle Specifications, 1974 model year 'Super Beetle' record."
+      },
+      "dimensions": {
+        "length": {
+          "value": 4190,
+          "unit": "mm",
+          "status": "verified",
+          "source": "nhtsa-cvs-1974-volkswagen-beetle",
+          "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1974&Make=Volkswagen&units=Metric&format=json"
+        },
+        "width": {
+          "value": 1570,
+          "unit": "mm",
+          "status": "verified",
+          "source": "nhtsa-cvs-1974-volkswagen-beetle",
+          "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1974&Make=Volkswagen&units=Metric&format=json"
+        },
+        "height": {
+          "value": 1500,
+          "unit": "mm",
+          "status": "verified",
+          "source": "nhtsa-cvs-1974-volkswagen-beetle",
+          "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1974&Make=Volkswagen&units=Metric&format=json"
+        },
+        "wheelbase": {
+          "value": 2420,
+          "unit": "mm",
+          "status": "verified",
+          "source": "nhtsa-cvs-1974-volkswagen-beetle",
+          "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1974&Make=Volkswagen&units=Metric&format=json",
+          "sourceNote": "20 mm longer than the standard 1200/1300's 2,400 mm, matching the article's own description of a 2 cm wheelbase increase for the Super Beetle's MacPherson-strut front end."
+        }
+      },
+      "frontalArea": {
+        "value": 2.0,
+        "unit": "m2",
+        "status": "estimated",
+        "sourceNote": "Derived, not published: the site's standing 0.85 x width x height approximation, using this trim's CVS-sourced width and height (1,570 x 1,500 mm)."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1600i",
+      "name": "1600i (fuel-injected, final series)",
+      "productionYears": {
+        "start": 1993,
+        "end": 2003
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual transaxle",
+      "gears": 4,
+      "engine": {
+        "configuration": "air-cooled flat-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 1584,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-beetle",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+          "sourceNote": "The same 1,584 cc displacement carried since 1970, now with a Bosch Digifant fuel-injection system, catalytic converter, lambda probe and electric ignition, standardised from late 1992 for the 1993 model year — built in Puebla, Mexico, the only plant still making the car. No power figure is published for this final, catalysed state of tune."
+        }
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/volkswagen-beetle/hero.jpg",
+    "alt": "Cream-coloured Volkswagen Beetle photographed from the front three-quarter angle in a grassy setting, showing the rounded wings, split chrome bumper overriders and a German number plate",
+    "width": 1920,
+    "height": 1280,
+    "caption": "A 1965-1966 Käfer — the model year the larger, curved windows arrived, the single biggest visual change the shape ever received.",
+    "credit": {
+      "author": "Vwexport1300",
+      "title": "File:VW Käfer Baujahr 1966.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:VW_K%C3%A4fer_Baujahr_1966.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/volkswagen-beetle/rear.jpg",
+      "alt": "Pale green Volkswagen Beetle photographed from the rear three-quarter angle, showing the oval rear window, twin engine-lid air vents and a Belgian number plate",
+      "width": 1920,
+      "height": 1372,
+      "caption": "The oval rear window used before the 1958 change to a larger rectangular one — one of the easiest ways to date an early car at a glance.",
+      "credit": {
+        "author": "Charles01",
+        "title": "File:Volkswagen Beetle (ca 1961) rear three quarters.JPG",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Beetle_(ca_1961)_rear_three_quarters.JPG",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    },
+    {
+      "src": "/images/cars/volkswagen-beetle/assembly.jpg",
+      "alt": "Overhead colour photograph of the Wolfsburg assembly line, with dozens of Beetle bodies in various colours moving along overhead conveyor tracks and workers fitting components",
+      "width": 1200,
+      "height": 829,
+      "caption": "Wolfsburg at the plant's peak: annual production passed 1.6 million cars by 1965, averaging 6,800 a day.",
+      "credit": {
+        "author": "Roger Wollstadt",
+        "title": "File:Wolfsburg - Volkswagen Assembly Line.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wolfsburg_-_Volkswagen_Assembly_Line.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+      }
+    },
+    {
+      "src": "/images/cars/volkswagen-beetle/herbie.jpg",
+      "alt": "Cream Volkswagen Beetle with a racing number 53 in a white circle and a red-white-blue centre stripe, styled as the Disney character Herbie",
+      "width": 1600,
+      "height": 1200,
+      "caption": "Herbie, Disney's sentient Beetle, starred in a five-decade run of films from 1968 onward and is credited with helping sales in the late 1960s and early 1970s.",
+      "credit": {
+        "author": "Panamaherbie at English Wikipedia",
+        "title": "File:Herbie car.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbie_car.jpg",
+        "licenseType": "public-domain",
+        "licenseNote": "Released into the public domain by the uploader."
+      }
+    }
+  ],
+  "lastVerified": "2026-08-19",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-volkswagen-beetle",
+    "wikipedia-drag-coefficients",
+    "nhtsa-cvs-1974-volkswagen-beetle",
+    "rdw-volkswagen-kever"
+  ]
+}
