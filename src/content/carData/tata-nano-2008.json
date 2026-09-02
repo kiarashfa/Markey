@@ -1,0 +1,328 @@
+{
+  "id": "tata-nano-2008",
+  "name": "Tata Nano",
+  "fullName": "Tata Nano, 2008–2018",
+  "kind": "generation",
+  "parent": "tata-nano",
+  "brandRef": "tata",
+  "productionYears": {
+    "start": 2008,
+    "end": 2018
+  },
+  "bodyStyles": [
+    "saloon",
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "cng"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "designer": "Justyn Norek (I.DE.A Institute), Pierre Castinel (Tata Design Studio) and Girish Wagh (project manager)",
+  "assembly": [
+    "Sanand, Gujarat, India (Sanand Plant, Tata Motors)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 3099,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tata-nano",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+      "sourceNote": "Original 2008-2015 body. The 2015 GenX facelift grew to 3,164 mm, recorded as a trim-level override."
+    },
+    "width": {
+      "value": 1390,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tata-nano",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano"
+    },
+    "height": {
+      "value": 1652,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tata-nano",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano"
+    },
+    "wheelbase": {
+      "value": 2230,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tata-nano",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano"
+    },
+    "kerbWeight": {
+      "value": 600,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-tata-nano",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+      "sourceNote": "Wikipedia's infobox publishes a single model-wide range of 600-635 kg without naming a trim or year. The lowest value in the range is stored per the site's convention for published ranges; the full range is the article's only figure."
+    }
+  },
+  "trims": [
+    {
+      "id": "standard-petrol",
+      "name": "Standard petrol (624 cc)",
+      "productionYears": {
+        "start": 2008,
+        "end": 2015
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "configuration": "inline-2, rear-mounted, SOHC, multi-point fuel injection",
+        "cylinders": 2,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 624,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-tata-nano",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano"
+        }
+      },
+      "power": {
+        "value": 27.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-tata-nano",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+        "sourceNote": "38 PS (DIN) at 5,500 ± 500 rpm, converted at 1 PS = 0.73549875 kW and rounded to one decimal."
+      },
+      "torque": {
+        "value": 51,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-tata-nano",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+        "sourceNote": "51 N·m at 3,000 ± 500 rpm, as published; already in the site's stored unit, no conversion performed."
+      },
+      "mass": {
+        "value": 600,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-tata-nano",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+        "sourceNote": "Model-wide range of 600-635 kg; this trim, being the base launch specification, is recorded at the low end."
+      },
+      "topSpeed": {
+        "value": 105,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-tata-nano",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano"
+      },
+      "zeroToHundredKph": {
+        "value": 30,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-tata-nano",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+        "sourceNote": "Wikipedia also states a 0-60 km/h split of 10 seconds for the same test run. Both figures are already published in km/h, so this is not the 0-60 mph/0-100 km/h mismatch that elsewhere in this catalogue cannot be converted between."
+      },
+      "fuelEconomy": {
+        "value": 3.94,
+        "unit": "L/100km",
+        "status": "conflicting-sources",
+        "source": "wikipedia-tata-nano",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+        "sourceNote": "The article states fuel efficiency as '25.35 kilometres per litre (4.24 L/100 km)'. The two numbers do not agree: 100 / 25.35 = 3.94 L/100km, not 4.24 (and 100 / 4.24 = 23.58 km/L, not 25.35). This looks like an editing error in the Wikipedia article rather than two independently sourced figures. The value stored here is the direct conversion of the explicitly stated 25.35 km/L rate; both printed numbers are recorded here for the record rather than silently picking one."
+      },
+      "co2": {
+        "value": null,
+        "unit": "g/km",
+        "status": "placeholder",
+        "sourceNote": "No CO2 figure is published for the Nano anywhere in the article. India's Bharat Stage emissions regime, which the car met at BS4, regulates tailpipe pollutants rather than CO2, and Tata did not separately publish a CO2 rating the way EU- or EPA-cycle cars do. The absence is a fact about the market this car was sold in, not a gap in the source."
+      },
+      "frontalArea": {
+        "value": 1.95,
+        "unit": "m2",
+        "status": "estimated",
+        "sourceNote": "The Nano does not appear in Wikipedia's list of automobile drag coefficients, so no drag-area figure exists to derive from. This is the site's standard approximation instead: 0.85 x width (1.390 m) x height (1.652 m) = 1.95 m2."
+      },
+      "bootVolume": {
+        "value": 94,
+        "unit": "L",
+        "status": "verified",
+        "source": "wikipedia-tata-nano",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+        "sourceNote": "Published directly in litres by the source (Autocar India, cited via Wikipedia), so no unit conversion was needed. On this trim the space is not an externally accessible boot at all — the rearmost panel does not open, and the article's own photo of the compartment shows the engine occupying much of it; the cargo space was reachable only by folding the rear seats until the 2015 GenX hatchback."
+      },
+      "seats": 4,
+      "prices": [
+        {
+          "amount": 100000,
+          "currency": "INR",
+          "market": "IN",
+          "year": 2008,
+          "status": "verified",
+          "source": "wikipedia-tata-nano",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+          "sourceNote": "The advertised launch price of one lakh rupees, announced 10 January 2008. The article is explicit that only the earliest customers actually bought at this price; allocation constraints and rising material costs pushed the price up quickly afterward."
+        }
+      ],
+      "marketVariants": []
+    },
+    {
+      "id": "cng-emax",
+      "name": "CNG emax (bi-fuel)",
+      "productionYears": {
+        "start": 2013,
+        "end": 2018
+      },
+      "drivetrain": "rwd",
+      "powertrain": "cng",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "configuration": "inline-2, rear-mounted, bi-fuel CNG/petrol",
+        "cylinders": 2,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 624,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-tata-nano",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+          "sourceNote": "Same 624 cc block as the petrol Nano, run on CNG or petrol."
+        }
+      },
+      "power": {
+        "value": 24.3,
+        "unit": "kW",
+        "status": "estimated",
+        "source": "wikipedia-tata-nano",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+        "sourceNote": "Wikipedia states 33 'horsepower' on CNG without specifying mechanical hp or metric PS. Every other power figure given for this engine family in the same article (the 38 PS petrol rating) is metric, so this is treated as 33 PS and converted at 1 PS = 0.73549875 kW = 24.3 kW. If it were actually 33 mechanical hp the figure would be 24.6 kW instead — about 1.4% higher, which is the size of the uncertainty being flagged here rather than silently resolved."
+      },
+      "torque": {
+        "value": 45,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-tata-nano",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+        "sourceNote": "Maximum torque on CNG, as published; already in the site's stored unit."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "genx",
+      "name": "GenX Nano",
+      "productionYears": {
+        "start": 2015,
+        "end": 2018
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual, with a 5-speed automated manual (AMT) available on higher variants from 2015",
+      "gears": 4,
+      "engine": {
+        "configuration": "inline-2, rear-mounted, SOHC, multi-point fuel injection",
+        "cylinders": 2,
+        "aspiration": "naturally-aspirated",
+        "displacement": {
+          "value": 624,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-tata-nano",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+          "sourceNote": "The article states the engine 'remained' the 2-cylinder 624 cc unit unchanged through the 2015 facelift."
+        }
+      },
+      "power": {
+        "value": 27.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-tata-nano",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+        "sourceNote": "The article states the GenX engine 'remained' at 38 hp (i.e. 38 PS, matching the original car's rating), converted at 1 PS = 0.73549875 kW and rounded to one decimal. No separate GenX-specific dyno figure is published."
+      },
+      "dimensions": {
+        "length": {
+          "value": 3164,
+          "unit": "mm",
+          "status": "verified",
+          "source": "wikipedia-tata-nano",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+          "sourceNote": "Grew from the original 3,099 mm after the front and rear bumpers were redesigned for the 2015 facelift."
+        }
+      },
+      "seats": 5,
+      "prices": [
+        {
+          "amount": 215000,
+          "currency": "INR",
+          "market": "IN",
+          "year": 2017,
+          "status": "verified",
+          "source": "wikipedia-tata-nano",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
+          "sourceNote": "Starting ex-showroom price as of 2017, per Tata Motors' own online price list as cited by Wikipedia — more than double the 2008 launch price."
+        }
+      ],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/tata-nano/hero.jpg",
+    "alt": "Pale blue Tata Nano photographed from the front three-quarter angle, showing its rounded one-box body, single driver's-side mirror and steel wheels",
+    "width": 1920,
+    "height": 1474,
+    "caption": "No boot lid, one wing mirror, three lug nuts a wheel: the shape and the missing details both follow from the price target.",
+    "credit": {
+      "author": "Biswarup Ganguly",
+      "title": "File:Tata - Nano - Kolkata 2011-09-15 5184.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tata_-_Nano_-_Kolkata_2011-09-15_5184.JPG",
+      "licenseType": "cc-by",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/tata-nano/gallery-1.jpg",
+      "alt": "The rear compartment of a Tata Nano opened from inside with the back seats folded down, showing the 624 cc engine mounted where a boot would normally be",
+      "width": 1600,
+      "height": 1067,
+      "caption": "The cost-cutting story in one photo: the rearmost panel didn't open at all, and the engine shares the space with what luggage capacity the car had.",
+      "credit": {
+        "author": "Clayton Tang",
+        "title": "File:Tata Nano Engine.JPG",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tata_Nano_Engine.JPG",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    },
+    {
+      "src": "/images/cars/tata-nano/gallery-2.jpg",
+      "alt": "Red 2015 GenX Tata Nano photographed from the front, showing the revised bumper, door mirrors on both sides and alloy wheels of the facelifted car",
+      "width": 1920,
+      "height": 1280,
+      "caption": "The 2015 GenX facelift: a passenger-side mirror, alloy wheels and — for the first time — a rear hatch that actually opened.",
+      "credit": {
+        "author": "Alexander Gounder",
+        "title": "File:Tata Nano - GenX 01.JPG",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tata_Nano_-_GenX_01.JPG",
+        "licenseType": "cc0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-02",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-tata-nano"
+  ]
+}

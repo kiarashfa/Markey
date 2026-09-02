@@ -450,6 +450,40 @@
       "accessed": "2026-08-19",
       "license": "Public domain (Dutch open government data)",
       "note": "Individual registration records for Dutch-plated Austin- and Morris-badged Minis, not a manufacturer specification. Wikipedia gives only a single unattributed model-wide weight range (580-686 kg) for the whole 1959-2000 run, so these dated, badge-specific records are the only per-trim mass figures available and are used structurally where a record's badge and engine size clearly match the trim, with the single-registration caveat stated in each sourceNote. Two 1963 Morris Mini Cooper S records disagree by 22% (535 kg vs 690 kg) despite matching badge/year/displacement, which is why the Cooper S trim here does not use an RDW mass figure."
+    },
+    {
+      "key": "wikipedia-tata-nano",
+      "type": "wikipedia",
+      "title": "Tata Nano",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tata_Nano",
+      "revision": "1368184462",
+      "accessed": "2026-09-02",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-tata-motors-passenger-vehicles",
+      "type": "wikipedia",
+      "title": "Tata Motors Passenger Vehicles",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tata_Motors_Passenger_Vehicles",
+      "revision": "1372201752",
+      "accessed": "2026-09-02",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Article covering the entity that made the Nano, currently named Tata Motors Passenger Vehicles Limited after a 2025 restructuring split it from the commercial-vehicle business; it traded as Tata Motors Limited for the whole of the Nano's 2008-2018 production run, which is the name recorded as this brand's legalName."
+    },
+    {
+      "key": "commons-file-tata-motors-logo-svg",
+      "type": "commons",
+      "title": "File:Tata Motors Logo.svg",
+      "author": "Tata Motors",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Tata_Motors_Logo.svg",
+      "accessed": "2026-09-02",
+      "license": "Public domain (copyright); mark is trademarked",
+      "note": "Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction. Displayed here under trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
     }
   ]
 }

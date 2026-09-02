@@ -1,0 +1,27 @@
+{
+  "id": "tata",
+  "name": "Tata",
+  "legalName": "Tata Motors Limited",
+  "countryOfOrigin": "India",
+  "founded": 1945,
+  "website": "https://tata.cars/",
+  "logo": {
+    "src": "/images/brands/tata.svg",
+    "alt": "The Tata Motors wordmark in blue capital letters",
+    "credit": {
+      "author": "Tata Motors",
+      "title": "File:Tata Motors Logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tata_Motors_Logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#1467b3",
+  "accentColorNote": "Sampled directly from the fill colour (#1467b3) used consistently across every path in the brand's own wordmark SVG on Commons. Tata does not publish a public brand-colour specification, so the badge artwork is the only self-consistent source — the same method the Mini entry uses.",
+  "lastVerified": "2026-09-02",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-tata-motors-passenger-vehicles",
+    "commons-file-tata-motors-logo-svg"
+  ]
+}

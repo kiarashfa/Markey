@@ -24,8 +24,12 @@ Thumbs.db
 
 # --- Internal working files: never published to GitHub visitors ---
 # How the site is authored is internal
+# CLAUDE.md points at MEMORY.md; MEMORY.md is the live project memory.
 CLAUDE.md
+MEMORY.md
 PLAYBOOK.md
+# agent/ holds the orchestrator's dispatch runbook.
+agent/
 archive/
 evals/
 scripts/agent/
