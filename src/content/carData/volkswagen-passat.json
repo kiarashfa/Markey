@@ -1,0 +1,19 @@
+{
+  "id": "volkswagen-passat",
+  "name": "Volkswagen Passat",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "volkswagen",
+  "productionYears": {
+    "start": 1973,
+    "end": null
+  },
+  "segment": "d-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-volkswagen-passat"
+  ]
+}

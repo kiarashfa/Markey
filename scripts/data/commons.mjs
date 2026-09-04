@@ -4,6 +4,7 @@
  *
  *   node scripts/data/commons.mjs find     "Toyota Prius (XW20)"
  *   node scripts/data/commons.mjs licence  "File:2nd Toyota Prius.jpg"
+ *   node scripts/data/commons.mjs sheet <name> "File:A.jpg" "File:B.jpg" …   # triage grid
  *   node scripts/data/commons.mjs download "File:2nd Toyota Prius.jpg" toyota-prius-xw20 hero
  *
  * Every rule encoded here is a Phase 10 mistake made once already:
@@ -20,14 +21,20 @@
  *    licence metadata is reported as unusable rather than quietly skipped.
  *  - **Wikimedia rate-limits.** Downloads go through the throttled client.
  */
-import { createWriteStream } from 'node:fs';
-import { mkdir, readFile, stat } from 'node:fs/promises';
+import { spawn } from 'node:child_process';
+import { createWriteStream, readFileSync } from 'node:fs';
+import { mkdir, readFile, rm, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { Readable } from 'node:stream';
 import { pipeline } from 'node:stream/promises';
+import { fileURLToPath } from 'node:url';
 
 import { get, getJson, withQuery } from './lib/http.mjs';
 
+// Resolved from this module, not from cwd, so a sheet lands in the repo
+// wherever the command was run from.
+const ROOT = path.resolve(fileURLToPath(new URL('../..', import.meta.url)));
+const CAPS = JSON.parse(readFileSync(path.join(ROOT, 'src', 'data', 'image-caps.json'), 'utf8'));
 const EN = 'https://en.wikipedia.org/w/api.php';
 const COMMONS = 'https://commons.wikimedia.org/w/api.php';
 const WIKIDATA = 'https://www.wikidata.org/w/api.php';
@@ -199,6 +206,36 @@ async function cmdLicence(rawFile) {
   console.log(JSON.stringify(meta.get(file) ?? { onCommons: false }, null, 2));
 }
 
+/**
+ * Byte and pixel caps, by filename. `hero.webp` is the hero; everything else is
+ * gallery — the same rule as the sibling ARMAG project, and it is a rule rather
+ * than a field so nobody has to remember to set one.
+ */
+function capsFor(basename) {
+  return /^hero\./i.test(basename)
+    ? { maxBytes: CAPS.heroMaxBytes, maxPx: CAPS.heroMaxPixels }
+    : { maxBytes: CAPS.galleryMaxBytes, maxPx: CAPS.galleryMaxPixels };
+}
+
+/**
+ * Encode `source` to WebP at `destination`, under that filename's caps.
+ *
+ * Markey stored Commons originals verbatim until now, at a 414 kB mean. Tier 1
+ * alone would have been 1.65 GB against GitHub Pages' 1 GB soft limit; at these
+ * caps the same corpus is ~0.37 GB. `lib/webp.py` searches quality downward and
+ * only resizes when quality alone cannot reach the cap.
+ */
+async function encodeToWebp(source, destination, basename) {
+  const { maxBytes, maxPx } = capsFor(basename);
+  const out = await runPython('webp.py', [
+    source,
+    destination,
+    '--max-px', String(maxPx),
+    '--max-bytes', String(maxBytes),
+  ]);
+  return JSON.parse(out);
+}
+
 async function cmdDownload(rawFile, carSlug, basename) {
   const file = asFileTitle(rawFile);
   const meta = (await fileMetadata([file])).get(file);
@@ -232,10 +269,14 @@ async function cmdDownload(rawFile, carSlug, basename) {
    * either leaves it there or has to move it by hand; the first free-model
    * trial left a Fiat roundel at `public/images/cars/fiat/brand.png`.
    */
+  // Raster always lands as .webp whatever Commons served, because that is what
+  // gets written; a vector keeps the extension of the URL actually fetched.
+  const storedExtension = isVector ? (actualExtension || extension) : '.webp';
+
   const brand = /^brand:(.+)$/.exec(carSlug);
   const destination = brand
-    ? path.join('public', 'images', 'brands', `${brand[1]}${actualExtension || extension}`)
-    : path.join('public', 'images', 'cars', carSlug, `${basename}${actualExtension || extension}`);
+    ? path.join('public', 'images', 'brands', `${brand[1]}${storedExtension}`)
+    : path.join('public', 'images', 'cars', carSlug, `${basename}${storedExtension}`);
   await mkdir(path.dirname(destination), { recursive: true });
 
   /*
@@ -254,17 +295,43 @@ async function cmdDownload(rawFile, carSlug, basename) {
   }
 
   const response = await get(source, { timeoutMs: 120000 });
-  await pipeline(Readable.fromWeb(response.body), createWriteStream(destination));
+
+  /*
+   * A vector is stored as fetched; a photograph is re-encoded to WebP under a
+   * byte cap.
+   *
+   * Markey stored Commons originals verbatim until Round 21, at a 414 kB mean —
+   * Tier 1 alone would have been 1.65 GB against a 1 GB Pages soft limit. SVG is
+   * exempt because it is already the smallest correct form for a wordmark and
+   * Pillow cannot rasterise it anyway.
+   */
+  let webpResult = null;
+  if (isVector) {
+    await pipeline(Readable.fromWeb(response.body), createWriteStream(destination));
+  } else {
+    const temp = `${destination}.download`;
+    await pipeline(Readable.fromWeb(response.body), createWriteStream(temp));
+    try {
+      webpResult = await encodeToWebp(temp, destination, path.basename(destination));
+    } finally {
+      await rm(temp, { force: true });
+    }
+  }
 
   // The whole point: measure what was written, never trust the requested width.
-  const size = await measure(destination);
+  // `measure()` only parses JPEG/PNG headers; every raster download is written
+  // as WebP, so its real dimensions come straight from the Pillow encoder that
+  // just wrote it instead.
+  const size = webpResult
+    ? { width: webpResult.width, height: webpResult.height }
+    : await measure(destination);
   const bytes = (await stat(destination)).size;
 
   const imageRef = {
     src: `/${destination.replace(/\\/g, '/').replace(/^public\//, '')}`,
     alt: 'TODO — describe what is visible, for a reader who cannot see it',
-    // Omitted rather than nulled when unmeasurable: `measure` reads JPEG and
-    // PNG headers only, so an SVG has no pixel size, and the schema takes an
+    // Omitted rather than nulled when unmeasurable: `measure` reads WebP, JPEG
+    // and PNG headers, so an SVG has no pixel size, and the schema takes an
     // absent width over a null one. Printing `null` handed an author a field
     // that fails validation.
     ...(size ? { width: size.width, height: size.height } : {}),
@@ -292,14 +359,98 @@ async function cmdDownload(rawFile, carSlug, basename) {
   console.log(JSON.stringify(imageRef, null, 2));
 }
 
+/**
+ * `sheet <name> "File:A.jpg" "File:B.jpg" …` — one numbered grid, for triage.
+ *
+ * §1.3 has you choose from what `find` listed, and choosing means looking.
+ * Opening three to five candidates at 1600 px each in order to reject most of
+ * them is the expensive way to do that: the sibling recipe site measured 321 k
+ * tokens for 70 subjects before it worked this way. One small sheet is a single
+ * read, and side by side is a better comparison than one after another.
+ *
+ * Writes to `.cache/sheets/`, which is gitignored — a sheet is scratch for
+ * choosing, never an asset. **Triage only**: the tiles cannot show a watermark,
+ * a registration plate, or whether that is the facelift, so `download` the
+ * finalist and look at it properly before using it.
+ *
+ * Pillow rather than `sharp`, for the reason in `lib/sheet.py`.
+ */
+function runPython(scriptName, args, stdin = null) {
+  return new Promise((resolve, reject) => {
+    const script = path.join(ROOT, 'scripts', 'data', 'lib', scriptName);
+    // `python`, not `python3`: this is a Windows-first repo.
+    const child = spawn('python', [script, ...args], {
+      env: { ...process.env, PYTHONIOENCODING: 'utf-8' },
+    });
+    let out = '';
+    let err = '';
+    child.stdout.on('data', (d) => (out += d));
+    child.stderr.on('data', (d) => (err += d));
+    child.on('error', (e) =>
+      reject(new Error(`could not run python (${e.message}). The sheet needs Python with Pillow; it is authoring-time only and no part of the build or CI depends on it.`)),
+    );
+    child.on('close', (code) => (code === 0 ? resolve(out.trim()) : reject(new Error(err.trim() || `python exited ${code}`))));
+    child.stdin.on('error', () => {});
+    if (stdin !== null) child.stdin.end(stdin, 'utf8');
+    else child.stdin.end();
+  });
+}
+
 const [command, ...args] = process.argv.slice(2);
 try {
+async function cmdSheet(name, titles) {
+  if (!name || titles.length === 0) {
+    throw new Error('usage: commons.mjs sheet <name> "File:A.jpg" "File:B.jpg" …');
+  }
+  const meta = await fileMetadata(titles.map(asFileTitle));
+  const tiles = [];
+  const failed = [];
+  for (const [i, raw] of titles.entries()) {
+    const title = asFileTitle(raw);
+    const label = String(i + 1).padStart(2, '0');
+    const info = meta.get(title);
+    const url = info?.thumbUrl ?? info?.originalUrl;
+    if (!url) {
+      failed.push(`  ${label}  ${title} — not on Commons`);
+      continue;
+    }
+    try {
+      const response = await get(url);
+      tiles.push({ label, bytes: Buffer.from(await response.arrayBuffer()) });
+      console.log(`  ${label}  ${title}`);
+    } catch (error) {
+      failed.push(`  ${label}  ${title} — ${error.message}`);
+    }
+  }
+  if (failed.length) {
+    console.log('\ncould not fetch:');
+    for (const line of failed) console.log(line);
+  }
+  if (tiles.length === 0) throw new Error('nothing could be fetched; no sheet written');
+
+  const out = path.join(ROOT, '.cache', 'sheets', `${name}.webp`);
+  await mkdir(path.dirname(out), { recursive: true });
+  const job = JSON.stringify({
+    out,
+    tiles: tiles.map(({ label, bytes }) => ({ label, bytes_b64: bytes.toString('base64') })),
+  });
+  const result = JSON.parse(await runPython('sheet.py', [], job));
+  for (const skip of result.skipped) console.log(`  skipped ${skip}`);
+  console.log(
+    `\n${result.drawn} candidate(s): ${path.relative(ROOT, out)}\n` +
+      'Read the sheet, pick the number worth having, then `download` that one and ' +
+      'look at it properly — the sheet is triage and cannot show a watermark, a ' +
+      'plate, or which facelift it is.',
+  );
+}
+
   if (command === 'find') await cmdFind(args[0]);
   else if (command === 'cat') await cmdCat(args[0]);
   else if (command === 'licence' || command === 'license') await cmdLicence(args[0]);
+  else if (command === 'sheet') await cmdSheet(args[0], args.slice(1));
   else if (command === 'download') await cmdDownload(args[0], args[1], args[2] ?? 'hero');
   else {
-    console.error('usage: commons.mjs find "Article" | cat "Category" | licence "File:X.jpg" | download "File:X.jpg" <car-slug> <basename>  (basename is a filename: hero, gallery-1, gallery-2; for a marque logo pass brand:<brand-id> as the slug)');
+    console.error('usage: commons.mjs find "Article" | sheet <name> "File:A.jpg" … | cat "Category" | licence "File:X.jpg" | download "File:X.jpg" <car-slug> <basename>  (basename is a filename: hero, gallery-1, gallery-2; for a marque logo pass brand:<brand-id> as the slug)');
     process.exitCode = 1;
   }
 } catch (error) {

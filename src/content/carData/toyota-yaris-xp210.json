@@ -1,0 +1,176 @@
+{
+  "id": "toyota-yaris-xp210",
+  "name": "Toyota Yaris (XP210)",
+  "fullName": "Toyota Yaris (XP210), 2020-present",
+  "kind": "generation",
+  "parent": "toyota-yaris",
+  "brandRef": "toyota",
+  "generationCode": "XP210",
+  "productionYears": {
+    "start": 2020,
+    "end": null
+  },
+  "bodyStyles": ["hatchback"],
+  "powertrains": ["petrol", "hybrid"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Mario Majdandžić",
+  "assembly": [
+    "Onnaing, France (Toyota Motor Manufacturing France)",
+    "Kolín, Czech Republic (Toyota Motor Manufacturing Czech Republic)",
+    "Kanegasaki, Iwate, Japan (Toyota Motor East Japan)"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 3940,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-yaris-xp210",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Yaris_(XP210)"
+    },
+    "width": {
+      "value": 1745,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-yaris-xp210",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Yaris_(XP210)",
+      "sourceNote": "Europe-market figure; the Japan/Australasia-market car is narrower at 1,695 mm, held there deliberately to stay within Japan's 'compact car' dimension class."
+    },
+    "height": {
+      "value": 1470,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-yaris-xp210",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Yaris_(XP210)",
+      "sourceNote": "Published as a range for Europe-market cars, 1,470-1,500 mm depending on trim; lowest value in the range is recorded here. Japan/Australasia range is 1,500-1,515 mm."
+    },
+    "wheelbase": {
+      "value": 2560,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-yaris-xp210",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Yaris_(XP210)",
+      "sourceNote": "Europe-market figure; Japan and Australasia ride a 2,550 mm wheelbase."
+    },
+    "kerbWeight": {
+      "value": 940,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-toyota-yaris-xp210",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Yaris_(XP210)",
+      "sourceNote": "Published as a Japan-market range of 940-1,180 kg across trims and powertrains; lowest value in the range is recorded here per the site's convention."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-5-petrol",
+      "name": "1.5 Petrol",
+      "productionYears": { "start": 2020, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual / K120 CVT",
+      "gears": 6,
+      "engine": {
+        "code": "M15A-FKS",
+        "configuration": "inline-3, Dynamic Force",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1490,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-toyota-yaris-xp210",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Yaris_(XP210)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 88,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-yaris-xp210",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Yaris_(XP210)",
+        "sourceNote": "Europe-market MXPA11 figure, published as a range of 88-92 kW at 6,600 rpm depending on market/trim; lowest value in the range is recorded here."
+      },
+      "torque": {
+        "value": 153,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-yaris-xp210",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Yaris_(XP210)",
+        "sourceNote": "At 4,800-5,000 rpm, Europe-market MXPA11 figure."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "hybrid-115",
+      "name": "Hybrid 115",
+      "productionYears": { "start": 2020, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "hybrid",
+      "transmission": "eCVT",
+      "gears": 1,
+      "engine": {
+        "code": "M15A-FXE",
+        "configuration": "inline-3, Atkinson cycle, Hybrid Synergy Drive",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1490,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-toyota-yaris-xp210",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Yaris_(XP210)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 85,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-yaris-xp210",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Yaris_(XP210)",
+        "sourceNote": "Hybrid system combined output for the Europe-market MXPH11 ('Hybrid 115'). The petrol engine alone makes 67-68 kW at 5,500 rpm and the front motor 59 kW; those do not add up to the combined figure and are not summed here."
+      },
+      "torque": {
+        "value": 120,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-yaris-xp210",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Yaris_(XP210)",
+        "sourceNote": "Petrol engine torque only, at 3,600-4,800 rpm. The front motor makes 141 N-m separately; engine and motor torque cannot be summed into one figure, so only the engine figure is recorded, matching the site's convention for other hybrids."
+      },
+      "batteryCapacity": {
+        "value": null,
+        "unit": "kWh",
+        "status": "placeholder",
+        "sourceNote": "The article gives the hybrid battery's voltage (177.6 V lithium-ion) but not its capacity in kWh, so no figure is recorded rather than derive one from an assumed cell count."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-yaris-xp210/hero.webp",
+    "alt": "White Toyota Yaris Hybrid hatchback (XP210) photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 766,
+    "caption": "The fourth-generation Yaris — the first to carry that name in its home Japanese market, replacing the Vitz badge there in 2020.",
+    "credit": {
+      "author": "TTTNIS",
+      "title": "File:2020-2024 Toyota Yaris Hybrid.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020-2024_Toyota_Yaris_Hybrid.jpg",
+      "licenseType": "cc0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-yaris-xp210"
+  ]
+}

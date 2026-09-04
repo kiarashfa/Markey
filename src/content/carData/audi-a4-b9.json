@@ -1,0 +1,132 @@
+{
+  "id": "audi-a4-b9",
+  "name": "Audi A4 (B9)",
+  "fullName": "Audi A4 (B9), 2015-2025",
+  "kind": "generation",
+  "parent": "audi-a4",
+  "brandRef": "audi",
+  "generationCode": "B9",
+  "productionYears": {
+    "start": 2015,
+    "end": 2025
+  },
+  "bodyStyles": ["saloon", "estate"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "d-segment",
+  "positioning": "premium",
+  "designer": "Frank Rimili, Rüdiger Müller (interior)",
+  "assembly": ["Audi, Ingolstadt, Germany"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4726,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#B9_(Typ_8W;_2015)",
+      "sourceNote": "Infobox publishes a range, 4726-4762 mm, across the model run. Stored as the lowest figure."
+    },
+    "width": {
+      "value": 1842,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#B9_(Typ_8W;_2015)",
+      "sourceNote": "Infobox publishes a range, 1842-1847 mm. Stored as the lowest figure."
+    },
+    "height": {
+      "value": 1427,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#B9_(Typ_8W;_2015)"
+    },
+    "wheelbase": {
+      "value": 2820,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#B9_(Typ_8W;_2015)"
+    }
+  },
+  "trims": [
+    {
+      "id": "40-tfsi-quattro",
+      "name": "40 TFSI quattro (2.0 TFSI ultra)",
+      "productionYears": {
+        "start": 2015,
+        "end": 2020
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed S tronic dual-clutch",
+      "gears": 7,
+      "engine": {
+        "code": "EA888",
+        "configuration": "inline-4, turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1984,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The generation's spec table names this engine only as '2.0 TFSI ultra (40 TFSI / 40 TFSI quattro)' without stating an exact displacement figure; 1984 cc is the well-documented capacity of the EA888 2.0 TFSI family used across this generation, but is not itself stated in the cited article section."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 140,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-a4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#Engines_2",
+        "sourceNote": "Published as 190 PS, converted at 1 PS = 0.73549875 kW (139.7 kW, rounded here to 140)."
+      },
+      "torque": {
+        "value": 320,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-a4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#Engines_2",
+        "sourceNote": "At 1,450-4,200 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 7.2,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-audi-a4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#Engines_2",
+        "sourceNote": "Published directly for the saloon, 0-100 km/h."
+      },
+      "topSpeed": {
+        "value": 240,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-audi-a4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#Engines_2"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-a4-b9/hero-front-three-quarter.webp",
+    "alt": "Silver Audi A4 B9 saloon photographed from the front three-quarter angle on a street, with a wide hexagonal single-frame grille and slim LED headlights",
+    "width": 1200,
+    "height": 562,
+    "caption": "The B9 of 2015: the final A4 saloon before Audi folds the nameplate into the A5 name for its 2025 successor.",
+    "credit": {
+      "author": "EurovisionNim",
+      "title": "File:2017 Audi A4 (8W) sport quattro sedan (2018-10-19) 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Audi_A4_(8W)_sport_quattro_sedan_(2018-10-19)_01.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-audi-a4"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "renault-clio",
+  "name": "Renault Clio",
+  "fullName": "Renault Clio, 1990-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "renault",
+  "productionYears": {
+    "start": 1990,
+    "end": null
+  },
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-renault-clio"]
+}

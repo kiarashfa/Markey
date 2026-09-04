@@ -1,0 +1,145 @@
+{
+  "id": "renault-espace-j81",
+  "name": "Renault Espace (Mk4)",
+  "fullName": "Renault Espace (Mk4, J81), 2002-2015",
+  "kind": "generation",
+  "parent": "renault-espace",
+  "brandRef": "renault",
+  "generationCode": "J81",
+  "productionYears": {
+    "start": 2002,
+    "end": 2015
+  },
+  "bodyStyles": ["mpv"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "mpv",
+  "positioning": "mainstream",
+  "designer": "Thierry Métroz",
+  "assembly": ["Sandouville, France (Sandouville Renault Factory)"],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4661,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-espace",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Espace",
+      "sourceNote": "Standard-wheelbase Espace; the long-wheelbase Grand Espace is 4,859 mm."
+    },
+    "width": {
+      "value": 1859,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-espace",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Espace"
+    },
+    "height": {
+      "value": 1730,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-espace",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Espace",
+      "sourceNote": "Standard Espace; the Grand Espace is 1,750 mm."
+    },
+    "wheelbase": {
+      "value": 2803,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-espace",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Espace",
+      "sourceNote": "Standard Espace; the Grand Espace has a longer 2,868 mm wheelbase."
+    },
+    "kerbWeight": {
+      "value": 1665,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-fr-renault-espace-iv",
+      "sourceUrl": "https://fr.wikipedia.org/wiki/Renault_Espace_IV",
+      "sourceNote": "poids = 1665 a 2010 (French Wikipedia infobox, across the full engine/body range); lowest value in the range recorded here. Not published on the English-language article."
+    }
+  },
+  "trims": [
+    {
+      "id": "2-0-16v",
+      "name": "2.0 16V",
+      "productionYears": { "start": 2002, "end": 2015 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "F4R",
+        "configuration": "inline-4, transverse",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The English article names this engine only as '2.0 L F4R'; 1,998 cc is the well-documented displacement of the F4R family. The French infobox gives the same '2.0' designation without a cc figure."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 102.97,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-fr-renault-espace-iv",
+        "sourceUrl": "https://fr.wikipedia.org/wiki/Renault_Espace_IV",
+        "sourceNote": "moteurs: '2.0 F4R 140 ch'. Not published on the English-language article; converted at 1 PS = 0.73549875 kW."
+      },
+      "seats": 7,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-0-dci-150",
+      "name": "2.0 dCi 150",
+      "productionYears": { "start": 2006, "end": 2015 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "M9R",
+        "configuration": "inline-4, transverse, common-rail",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1995,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The English article names this engine only as '2.0 L M9R dCi'; 1,995 cc is the well-documented displacement of the Nissan/Renault M9R family."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 110.32,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-fr-renault-espace-iv",
+        "sourceUrl": "https://fr.wikipedia.org/wiki/Renault_Espace_IV",
+        "sourceNote": "moteurs: '2.0 M9R dCi 130 puis 150 puis 175 ch' — the mid, most widely fitted 150 ch rating recorded here. Not published on the English-language article; converted at 1 PS = 0.73549875 kW."
+      },
+      "seats": 7,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-espace-j81/hero.webp",
+    "alt": "Silver pre-facelift fourth-generation Renault Espace diesel, photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 883,
+    "caption": "The Espace IV: the first generation designed and built entirely in-house by Renault, and the one that pushed the range upmarket.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2002 Renault Espace Expression DCi 2.2 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2002_Renault_Espace_Expression_DCi_2.2_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-renault-espace", "wikipedia-fr-renault-espace-iv"]
+}

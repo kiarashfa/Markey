@@ -1,0 +1,129 @@
+{
+  "id": "audi-a6-c8",
+  "name": "Audi A6 (C8)",
+  "fullName": "Audi A6 (C8), 2018-2025",
+  "kind": "generation",
+  "parent": "audi-a6",
+  "brandRef": "audi",
+  "generationCode": "C8",
+  "productionYears": {
+    "start": 2018,
+    "end": 2025
+  },
+  "bodyStyles": ["saloon", "estate"],
+  "powertrains": ["mild-hybrid", "phev", "diesel"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "e-segment",
+  "positioning": "premium",
+  "designer": "Phillipe Römers, Helmut Jung (Avant)",
+  "assembly": [
+    "Audi, Neckarsulm, Germany",
+    "FAW-VW, Changchun, China (A6L)",
+    "Audi India, Aurangabad, India"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4939,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A6#C8_(Typ_4K,_2018)",
+      "sourceNote": "Standard-wheelbase figure; the long-wheelbase China-market A6L is 5050 mm."
+    },
+    "width": {
+      "value": 1886,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A6#C8_(Typ_4K,_2018)"
+    },
+    "height": {
+      "value": 1457,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A6#C8_(Typ_4K,_2018)",
+      "sourceNote": "Saloon figure; the Avant estate is 1467 mm."
+    },
+    "wheelbase": {
+      "value": 2924,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A6#C8_(Typ_4K,_2018)",
+      "sourceNote": "Standard-wheelbase figure; the long-wheelbase China-market A6L is 3024 mm."
+    }
+  },
+  "trims": [
+    {
+      "id": "45-tfsi-quattro",
+      "name": "45 TFSI quattro",
+      "productionYears": {
+        "start": 2019,
+        "end": 2025
+      },
+      "drivetrain": "awd",
+      "powertrain": "mild-hybrid",
+      "engine": {
+        "code": "EA888",
+        "configuration": "inline-4, turbocharged, 48V mild hybrid",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1984,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-audi-a6",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A6#Engines_3"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 180,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-a6",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A6#Engines_3",
+        "sourceNote": "Published as 245 PS at 5,000-6,500 rpm, converted at 1 PS = 0.73549875 kW (180.2 kW, rounded here to 180)."
+      },
+      "torque": {
+        "value": 370,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-a6",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A6#Engines_3",
+        "sourceNote": "At 1,600-4,300 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 6.0,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-audi-a6",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A6#Engines_3",
+        "sourceNote": "Published directly, 0-100 km/h."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-a6-c8/hero-front-three-quarter.webp",
+    "alt": "Black Audi A6 C8 saloon photographed from the front three-quarter angle on a street, with a wide chrome-edged single-frame grille and slim LED headlights",
+    "width": 1200,
+    "height": 572,
+    "caption": "The C8, on sale from 2018: every engine in the range carries at least 48-volt mild-hybrid assistance as standard.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2018 Audi A6 TDi Quattro Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Audi_A6_TDi_Quattro_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-audi-a6"]
+}

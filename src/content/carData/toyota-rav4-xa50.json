@@ -1,0 +1,206 @@
+{
+  "id": "toyota-rav4-xa50",
+  "name": "Toyota RAV4 (XA50)",
+  "fullName": "Toyota RAV4 (XA50), 2018-2025",
+  "kind": "generation",
+  "parent": "toyota-rav4",
+  "brandRef": "toyota",
+  "generationCode": "XA50",
+  "productionYears": {
+    "start": 2018,
+    "end": 2025
+  },
+  "bodyStyles": ["suv", "crossover"],
+  "powertrains": ["hybrid", "phev"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "suv-compact",
+  "positioning": "mainstream",
+  "designer": "Hideo Koyama, Daisuke Iguchi, Shun Kawaguchi, Junya Furuta, Tatsuya Sonoda",
+  "assembly": [
+    "Toyota, Aichi, Japan (Takaoka plant)",
+    "Georgetown, Kentucky, United States (TMMK)",
+    "Woodstock/Cambridge, Ontario, Canada (TMMC)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4570,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-rav4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+      "sourceNote": "Published as a range of 4,570-4,600 mm across trims/markets; lowest value recorded here."
+    },
+    "width": {
+      "value": 1855,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-rav4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4"
+    },
+    "height": {
+      "value": 1660,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-rav4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4"
+    },
+    "wheelbase": {
+      "value": 2690,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-rav4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4"
+    },
+    "kerbWeight": {
+      "value": 1680,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-toyota-rav4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+      "sourceNote": "Hybrid, low end of a published 1,680-1,720 kg range; the petrol-only range is lighter at 1,530-1,640 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "hybrid-awd",
+      "name": "Hybrid AWD",
+      "productionYears": { "start": 2018, "end": 2025 },
+      "drivetrain": "awd",
+      "powertrain": "hybrid",
+      "transmission": "Aisin T110 eCVT",
+      "engine": {
+        "code": "A25A-FXS",
+        "configuration": "inline-4, Atkinson cycle, hybrid",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2487,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-toyota-rav4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+          "sourceNote": "Article names it '2.5 L'; recorded to the well-documented A25A displacement."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 163,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-rav4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+        "sourceNote": "Published combined system output figure, not a sum performed here. Front motor 88 kW, rear motor 40 kW (AWD-i), plus the combustion engine."
+      },
+      "mass": {
+        "value": 1680,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-toyota-rav4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+        "sourceNote": "Low end of a published 1,680-1,720 kg range for hybrid variants."
+      },
+      "batteryCapacity": {
+        "value": 1.6,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-toyota-rav4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+        "sourceNote": "Nickel-metal hydride pack."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "phev-prime",
+      "name": "PHEV (Prime)",
+      "productionYears": { "start": 2020, "end": 2025 },
+      "drivetrain": "awd",
+      "powertrain": "phev",
+      "transmission": "Aisin T110 eCVT",
+      "engine": {
+        "code": "A25A-FXS",
+        "configuration": "inline-4, Atkinson cycle, plug-in hybrid",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2487,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-toyota-rav4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 225,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-rav4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+        "sourceNote": "Published combined system output, 302 hp, converted at 1 hp = 0.745699872 kW. Not a sum performed here; front motor rated 134 kW alone."
+      },
+      "torque": {
+        "value": 228,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-rav4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+        "sourceNote": "Combustion engine only, published as 168 lb-ft at 2,800 rpm, converted at 1.355818 Nm/lb-ft (uprated over the non-plug-in hybrid's engine tune). No combined system torque figure is published, and motor and engine torque cannot be summed."
+      },
+      "zeroToHundredKph": {
+        "value": 6.2,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-toyota-rav4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+        "sourceNote": "Published directly as a 0-100 km/h figure (Toyota also separately claims 5.8 s 0-60 mph; the two are not the same benchmark and this entry records only the metric figure)."
+      },
+      "batteryCapacity": {
+        "value": 18.1,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-toyota-rav4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+        "sourceNote": "Lithium-ion pack."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-rav4-xa50/hero.webp",
+    "alt": "Grey fifth-generation Toyota RAV4 LE photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 870,
+    "caption": "The XA50: built on the TNGA-K platform shared with the Camry, and the first RAV4 offered with a plug-in hybrid Prime variant.",
+    "credit": {
+      "author": "Kevauto",
+      "title": "File:2019 Toyota RAV4 LE 2.5L front 4.14.19.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Toyota_RAV4_LE_2.5L_front_4.14.19.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/toyota-rav4-xa50/gallery-1.webp",
+      "alt": "Silver Toyota RAV4 Prime XSE plug-in hybrid with a black roof, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 718,
+      "caption": "The RAV4 Prime: a 302 hp combined output that made it, briefly, Toyota's second-quickest model after the GR Supra.",
+      "credit": {
+        "author": "Mr.choppers",
+        "title": "File:2024 Toyota RAV4 Prime XSE Premium in Silver Sky with Midnight Black roof, front left.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Toyota_RAV4_Prime_XSE_Premium_in_Silver_Sky_with_Midnight_Black_roof,_front_left.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-toyota-rav4"]
+}

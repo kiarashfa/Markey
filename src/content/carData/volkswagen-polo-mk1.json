@@ -1,0 +1,121 @@
+{
+  "id": "volkswagen-polo-mk1",
+  "name": "Volkswagen Polo Mk1",
+  "fullName": "Volkswagen Polo Mk1, 1975-1981",
+  "kind": "generation",
+  "parent": "volkswagen-polo",
+  "brandRef": "volkswagen",
+  "generationCode": "Typ 86",
+  "productionYears": {
+    "start": 1975,
+    "end": 1981
+  },
+  "bodyStyles": ["hatchback", "saloon"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["fwd"],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Marcello Gandini (Bertone)",
+  "assembly": [
+    "Wolfsburg, Germany"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "wheelbase": {
+      "value": 2335,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-polo-mk1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk1"
+    }
+  },
+  "trims": [
+    {
+      "id": "895-base",
+      "name": "895",
+      "productionYears": { "start": 1975, "end": 1981 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "HA",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 895,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-polo-mk1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk1"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 29.8,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-polo-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk1",
+        "sourceNote": "Published as 40 bhp, converted at 1 hp = 0.745699872 kW. No torque figure, kerb weight or body dimensions besides wheelbase are given anywhere in the article for this generation — recorded as gaps rather than estimated."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1043-ls",
+      "name": "LS 1043",
+      "productionYears": { "start": 1975, "end": 1981 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "GL",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1043,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-polo-mk1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk1"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 36.8,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-polo-mk1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk1",
+        "sourceNote": "Original launch-spec LS, published as 50 PS, converted at 1 PS = 0.73549875 kW — the same engine shared with the Audi 50. No torque figure is given in the article."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/volkswagen-polo-mk1/hero.webp",
+    "alt": "Green Volkswagen Polo Mk1 hatchback photographed from the front three-quarter angle indoors",
+    "width": 1600,
+    "height": 1161,
+    "caption": "The original Polo — a rebadged Audi 50 hatchback, designed by Bertone and built at Wolfsburg from 1975.",
+    "credit": {
+      "author": "Bruno Kussler Marques",
+      "title": "File:Volkswagen Polo Mk1.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Polo_Mk1.jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-volkswagen-polo-mk1"
+  ]
+}

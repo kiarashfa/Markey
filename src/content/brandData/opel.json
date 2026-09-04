@@ -1,0 +1,24 @@
+{
+  "id": "opel",
+  "name": "Opel",
+  "legalName": "Opel Automobile GmbH",
+  "countryOfOrigin": "Germany",
+  "founded": 1899,
+  "logo": {
+    "src": "/images/brands/opel.svg",
+    "alt": "The Opel emblem: a stylised lightning bolt inside a circular ring, forming the current 'Opel Blitz' badge",
+    "caption": "Opel's 'Blitz' (lightning bolt) badge, redrawn for a 2023 rebrand.",
+    "credit": {
+      "author": "Opel",
+      "title": "File:Opel logo 2023.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Opel_logo_2023.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this car, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#000000",
+  "accentColorNote": "Sampled from the mark's own SVG source, which fills its paths with no colour attribute (default black). Opel's badge is commonly rendered in a yellow ring on official materials, but no specific hex value for that yellow could be sourced from Commons or this file, so the mark's own colour is recorded instead.",
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-opel"]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "toyota-camry-v10",
+  "name": "Toyota Camry (V10)",
+  "fullName": "Toyota Camry (V10), 1982-1986",
+  "kind": "generation",
+  "parent": "toyota-camry",
+  "brandRef": "toyota",
+  "generationCode": "V10",
+  "productionYears": {
+    "start": 1982,
+    "end": 1986
+  },
+  "bodyStyles": ["saloon", "liftback"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "assembly": [
+    "Tsutsumi Plant, Toyota, Aichi, Japan"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4400,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-camry",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry",
+      "sourceNote": "Sedan, published as a range of 4,400-4,435 mm; lowest value in the range recorded here. The liftback is a fixed 4,435 mm."
+    },
+    "width": {
+      "value": 1690,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-camry",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry"
+    },
+    "height": {
+      "value": 1395,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-camry",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry",
+      "sourceNote": "Sedan figure; the liftback is lower, at 1,370 mm."
+    },
+    "wheelbase": {
+      "value": 2600,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-camry",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry",
+      "sourceNote": "150 mm longer than the contemporary Honda Accord, a deliberate design target to out-size Toyota's main rival."
+    },
+    "kerbWeight": {
+      "value": 990,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-toyota-camry",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry",
+      "sourceNote": "Published as a range of 990-1,130 kg across engines and body styles; lowest value in the range recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "2-0-us",
+      "name": "2.0 (US-market)",
+      "productionYears": { "start": 1983, "end": 1986 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual / 4-speed automatic",
+      "gears": 5,
+      "engine": {
+        "code": "2S-ELC",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 68.6,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-camry",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry",
+        "sourceNote": "Published as 92 hp (SAE net), a figure quoted in the article to compare the launch car with the Honda Accord's 86 hp, converted at 1 hp = 0.745699872 kW. No torque figure is given for this generation anywhere in the article."
+      },
+      "dragCoefficient": {
+        "value": 0.36,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-toyota-camry",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry",
+        "sourceNote": "Liftback figure. The sedan is quoted at 0.38; the liftback's smoother roofline is 0.36."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-camry-v10/hero.webp",
+    "alt": "Cream first-generation Toyota Camry saloon photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 800,
+    "caption": "The original Camry, launched in 1982 as Toyota's first transverse front-wheel-drive car, sized specifically to out-wheelbase the Honda Accord.",
+    "credit": {
+      "author": "Mytho88",
+      "title": "File:1982 Toyota Camry 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1982_Toyota_Camry_01.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-camry"
+  ]
+}

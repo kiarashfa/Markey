@@ -1,0 +1,18 @@
+{
+  "id": "skoda-octavia",
+  "name": "Škoda Octavia",
+  "fullName": "Škoda Octavia, 1996-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "skoda-auto",
+  "productionYears": {
+    "start": 1996,
+    "end": null
+  },
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-skoda-octavia"]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "skoda-auto",
+  "name": "Škoda",
+  "legalName": "Škoda Auto a.s.",
+  "countryOfOrigin": "Czech Republic",
+  "founded": 1896,
+  "parentCompany": "volkswagen",
+  "website": "https://www.skoda-auto.com/",
+  "logo": {
+    "src": "/images/brands/skoda-auto.svg",
+    "alt": "The Škoda wordmark in a dark green sans-serif typeface",
+    "caption": "Škoda's wordmark, in use since a 2022 rebrand.",
+    "credit": {
+      "author": "Škoda Auto",
+      "title": "File:Škoda Auto 2022 text logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Škoda_Auto_2022_text_logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this car, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#0d392e",
+  "accentColorNote": "Sampled from the fill colour used in the wordmark's own SVG source (#0D392E), a dark green matching Škoda's current brand identity.",
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-skoda-auto"]
+}

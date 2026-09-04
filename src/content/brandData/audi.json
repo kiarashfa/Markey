@@ -1,0 +1,25 @@
+{
+  "id": "audi",
+  "name": "Audi",
+  "legalName": "AUDI AG",
+  "countryOfOrigin": "Germany",
+  "founded": 1909,
+  "parentCompany": "volkswagen",
+  "website": "https://www.audi.com/",
+  "logo": {
+    "src": "/images/brands/audi.svg",
+    "alt": "The Audi emblem: four interlocking rings in a row",
+    "credit": {
+      "author": "Strichpunkt / KMS Team",
+      "title": "File:Audi logo 2016.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_logo_2016.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#000000",
+  "accentColorNote": "The badge's own SVG source specifies no fill colour on its path, which under SVG defaults renders black; that default is recorded here rather than a guessed 'Audi red'. No public flat brand-colour specification for the four rings was consulted.",
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-audi", "commons-file-audi-logo-2016-svg"]
+}

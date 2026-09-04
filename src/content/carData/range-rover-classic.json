@@ -217,10 +217,10 @@
     }
   ],
   "hero": {
-    "src": "/images/cars/range-rover-classic/hero-front-three-quarter.jpg",
+    "src": "/images/cars/range-rover-classic/hero-front-three-quarter.webp",
     "alt": "Blue 1973 Range Rover photographed from the front three-quarter angle, showing the two-door body, flat glass and castellated bonnet line",
-    "width": 1920,
-    "height": 1159,
+    "width": 1600,
+    "height": 966,
     "caption": "A 1973 car: two doors, rubber floors, and a shape that barely changed for twenty-six years.",
     "credit": {
       "author": "Vauxford",

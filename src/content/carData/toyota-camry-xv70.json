@@ -1,0 +1,178 @@
+{
+  "id": "toyota-camry-xv70",
+  "name": "Toyota Camry (XV70)",
+  "fullName": "Toyota Camry (XV70), 2017-present",
+  "kind": "generation",
+  "parent": "toyota-camry",
+  "brandRef": "toyota",
+  "generationCode": "XV70",
+  "productionYears": {
+    "start": 2017,
+    "end": null
+  },
+  "bodyStyles": ["saloon"],
+  "powertrains": ["petrol", "hybrid"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "d-segment",
+  "positioning": "mainstream",
+  "designer": "Ian Cartabiano (concept lead, US-specification exterior)",
+  "assembly": [
+    "Georgetown, Kentucky, United States (TMMK)",
+    "Tsutsumi Plant, Toyota, Aichi, Japan"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4879,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-camry-xv70",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry_(XV70)",
+      "sourceNote": "Published as a US-market range of 192.1-193.3 in (4,879-4,910 mm) by trim; lowest value in the range recorded here."
+    },
+    "width": {
+      "value": 1839,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-camry-xv70",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry_(XV70)"
+    },
+    "height": {
+      "value": 1445,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-camry-xv70",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry_(XV70)"
+    },
+    "wheelbase": {
+      "value": 2824,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-camry-xv70",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry_(XV70)"
+    },
+    "kerbWeight": {
+      "value": 1480,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-toyota-camry-xv70",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry_(XV70)",
+      "sourceNote": "Published as a US-market range of 3,262-3,659 lb (1,480-1,660 kg) by trim and powertrain; lowest value in the range recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "2-5-petrol",
+      "name": "2.5 (A25A-FKS)",
+      "productionYears": { "start": 2017, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "8-speed UB80E automatic",
+      "gears": 8,
+      "engine": {
+        "code": "A25A-FKS",
+        "configuration": "inline-4, Dynamic Force",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 151.5,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-camry-xv70",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry_(XV70)",
+        "sourceNote": "US-market AXVA70 (FWD) trim table figure."
+      },
+      "torque": {
+        "value": 249,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-camry-xv70",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry_(XV70)"
+      },
+      "fuelEconomy": {
+        "value": 6.92,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "epa-2018-toyota-camry",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/38880",
+        "sourceNote": "EPA combined 34 mpg (US) for the 2018 2.5 L 8-speed automatic, converted at 235.215 L-mi/100km-gal."
+      },
+      "co2": {
+        "value": 164,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "epa-2018-toyota-camry",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/38880",
+        "sourceNote": "EPA tailpipe CO2, 264 g/mi, converted at 1.609344 km/mi. US test cycle only."
+      },
+      "bootVolume": {
+        "value": 396,
+        "unit": "L",
+        "status": "verified",
+        "source": "epa-2018-toyota-camry",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/38880",
+        "sourceNote": "EPA saloon luggage volume, 14 cu ft, converted at 28.3168 L/cu ft. EPA's basis is not the European VDA method."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "hybrid-le",
+      "name": "Hybrid LE",
+      "productionYears": { "start": 2017, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "hybrid",
+      "transmission": "Aisin T110 eCVT",
+      "gears": 1,
+      "engine": {
+        "code": "A25A-FXS",
+        "configuration": "inline-4, Atkinson cycle, Hybrid Synergy Drive",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 155.1,
+        "unit": "kW",
+        "status": "conflicting-sources",
+        "source": "wikipedia-toyota-camry-xv70",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry_(XV70)",
+        "sourceNote": "The article's prose, citing a Car and Driver test, gives the Hybrid LE's combined system output as 208 hp (converted at 1 hp = 0.745699872 kW). The article's own trim table gives the same AXVH70 hybrid a combined figure of 131 kW (176 hp) instead — an internal contradiction of more than 15%, not two different markets. The prose figure is recorded here as it matches Toyota's own published US spec for the LE grade; the table figure is not discarded, just not used."
+      },
+      "batteryCapacity": {
+        "value": 1.0,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-toyota-camry-xv70",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry_(XV70)",
+        "sourceNote": "US-market Hybrid LE uses a 1.0 kWh lithium-ion pack; the SE and XLE Hybrid instead use a 1.6 kWh nickel-metal-hydride pack."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-camry-xv70/hero.webp",
+    "alt": "Black 2022 Toyota Camry Hybrid XLE saloon photographed from the front three-quarter angle in a car park",
+    "width": 1600,
+    "height": 785,
+    "caption": "The current Camry — sold only as a saloon in this generation, after Toyota dropped the wagon and coupe body styles entirely.",
+    "credit": {
+      "author": "Elise240SX",
+      "title": "File:2022 Toyota Camry Hybrid XLE in Midnight Black Metallic, Front Right, 12-25-2021.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Toyota_Camry_Hybrid_XLE_in_Midnight_Black_Metallic,_Front_Right,_12-25-2021.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-camry-xv70",
+    "epa-2018-toyota-camry"
+  ]
+}

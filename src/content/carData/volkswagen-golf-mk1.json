@@ -126,14 +126,14 @@
         "sourceNote": "Published as a 138-140 km/h band; the lower bound is recorded. The Cabriolet on this engine managed 133 km/h."
       },
       "zeroToHundredKph": {
-        "value": 17.0,
+        "value": 17,
         "unit": "s",
         "status": "verified",
         "source": "wikipedia-volkswagen-golf-mk1",
         "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Golf_Mk1"
       },
       "fuelEconomy": {
-        "value": 9.0,
+        "value": 9,
         "unit": "L/100km",
         "status": "verified",
         "source": "wikipedia-volkswagen-golf-mk1",
@@ -385,7 +385,7 @@
         "sourceNote": "Cabriolet figure. The equivalent hatchback reached 187 km/h."
       },
       "fuelEconomy": {
-        "value": 11.0,
+        "value": 11,
         "unit": "L/100km",
         "status": "verified",
         "source": "wikipedia-volkswagen-golf-mk1",
@@ -416,10 +416,10 @@
     }
   ],
   "hero": {
-    "src": "/images/cars/volkswagen-golf-mk1/hero-front.jpg",
+    "src": "/images/cars/volkswagen-golf-mk1/hero-front.webp",
     "alt": "Red Volkswagen Golf Mk1 photographed head-on, showing the square headlamps, black grille and upright glasshouse",
-    "width": 1626,
-    "height": 1023,
+    "width": 1600,
+    "height": 1007,
     "caption": "The shape Giugiaro drew: three boxes compressed into two, and almost no surface decoration anywhere.",
     "credit": {
       "author": "Rudolf Stricker",
@@ -432,10 +432,10 @@
   },
   "gallery": [
     {
-      "src": "/images/cars/volkswagen-golf-mk1/gti-rear.jpg",
+      "src": "/images/cars/volkswagen-golf-mk1/gti-rear.webp",
       "alt": "Rear three-quarter view of a red 1979 Volkswagen Golf GTI, showing the black wheel-arch extensions and the GTI badge on the tailgate",
-      "width": 1920,
-      "height": 1177,
+      "width": 1200,
+      "height": 736,
       "caption": "A 1979 GTI. The black arch extensions cover the wider 175/70 tyres that came with the car.",
       "credit": {
         "author": "Vauxford",
@@ -447,10 +447,10 @@
       }
     },
     {
-      "src": "/images/cars/volkswagen-golf-mk1/gti-interior.jpg",
+      "src": "/images/cars/volkswagen-golf-mk1/gti-interior.webp",
       "alt": "Interior of a 1982 Golf GTI showing the tartan cloth seats, four-spoke steering wheel and golf-ball gear knob",
-      "width": 1920,
-      "height": 1280,
+      "width": 1200,
+      "height": 800,
       "caption": "Gunhild Liljequist’s contribution: tartan cloth and a golf-ball gear knob, the two details everyone remembers.",
       "credit": {
         "author": "Tony Harrison",
@@ -462,10 +462,10 @@
       }
     },
     {
-      "src": "/images/cars/volkswagen-golf-mk1/cabriolet-front-left.jpg",
+      "src": "/images/cars/volkswagen-golf-mk1/cabriolet-front-left.webp",
       "alt": "White 1992 Volkswagen Cabriolet seen from the front left with the hood up, showing the integrated roll-over bar",
-      "width": 1920,
-      "height": 1116,
+      "width": 1200,
+      "height": 698,
       "caption": "A 1992 Cabriolet, built by Karmann. The Mk1 body was still in production nine years after the hatchback it came from was replaced.",
       "credit": {
         "author": "Mr.choppers",

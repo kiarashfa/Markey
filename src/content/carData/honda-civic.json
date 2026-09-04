@@ -1,0 +1,19 @@
+{
+  "id": "honda-civic",
+  "name": "Honda Civic",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "honda",
+  "productionYears": {
+    "start": 1972,
+    "end": null
+  },
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-honda-civic"
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "id": "mercedes-benz-e-class-w214",
+  "name": "Mercedes-Benz E-Class (W214)",
+  "fullName": "Mercedes-Benz E-Class (W214), 2023-present",
+  "kind": "generation",
+  "parent": "mercedes-benz-e-class",
+  "brandRef": "mercedes-benz",
+  "generationCode": "W214",
+  "productionYears": {
+    "start": 2023,
+    "end": null
+  },
+  "bodyStyles": ["saloon", "estate"],
+  "powertrains": ["mild-hybrid", "phev"],
+  "drivetrains": ["rwd", "awd"],
+  "segment": "e-segment",
+  "positioning": "luxury",
+  "designer": "Gorden Wagener (design director)",
+  "assembly": [
+    "Mercedes-Benz, Sindelfingen, Germany",
+    "Beijing Benz, Beijing, China (long-wheelbase)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4949,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-e-class-w214",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_E-Class_(W214)"
+    },
+    "width": {
+      "value": 1880,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-e-class-w214",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_E-Class_(W214)"
+    },
+    "height": {
+      "value": 1480,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-e-class-w214",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_E-Class_(W214)"
+    },
+    "wheelbase": {
+      "value": 2961,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-e-class-w214",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_E-Class_(W214)"
+    },
+    "kerbWeight": {
+      "value": 1825,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-e-class-w214",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_E-Class_(W214)",
+      "sourceNote": "Infobox publishes a range across the whole line, 1825-2265 kg (lightest four-cylinder saloon to heaviest plug-in hybrid estate). Stored as the lowest figure."
+    }
+  },
+  "trims": [
+    {
+      "id": "e200",
+      "name": "E 200",
+      "productionYears": {
+        "start": 2023,
+        "end": null
+      },
+      "drivetrain": "rwd",
+      "powertrain": "mild-hybrid",
+      "transmission": "9-speed automatic (9G-Tronic)",
+      "gears": 9,
+      "engine": {
+        "code": "M 254",
+        "configuration": "inline-4, turbocharged, 48V mild hybrid",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-e-class-w214",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_E-Class_(W214)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 150,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-e-class-w214",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_E-Class_(W214)",
+        "sourceNote": "Published as 204 hp/PS at 5,800 rpm for the combustion engine, converted at 1 PS = 0.73549875 kW. The 48V integrated starter-generator adds a separately-rated 17 kW (23 hp) that assists rather than adds, so it is not summed into this figure."
+      },
+      "torque": {
+        "value": 320,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-e-class-w214",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_E-Class_(W214)",
+        "sourceNote": "Combustion-engine torque at 1,600-4,000 rpm. The starter-generator's own 205 N⋅m is not summed with this figure."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mercedes-benz-e-class-w214/hero-front-three-quarter.webp",
+    "alt": "White Mercedes-Benz E-Class W214 saloon photographed from the front three-quarter angle on a residential street, with a diamond-pattern grille bearing a large central star",
+    "width": 1200,
+    "height": 570,
+    "caption": "The W214 saloon, in production since 2023: every version sold is at least a mild hybrid, and several are plug-ins.",
+    "credit": {
+      "author": "Alexander-93",
+      "title": "File:Mercedes-Benz W214 1X7A1841.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W214_1X7A1841.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/mercedes-benz-e-class-w214/gallery-1.webp",
+      "alt": "Grey-green Mercedes-Benz E-Class S214 estate, badged E 300 e, photographed from the rear three-quarter angle in a car park",
+      "width": 1200,
+      "height": 559,
+      "caption": "The S214 estate, badged here as the E 300 e plug-in hybrid — the W214's other body style, alongside the saloon.",
+      "credit": {
+        "author": "Alexander-93",
+        "title": "File:Mercedes-Benz S214 300e 1X7A1752.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_S214_300e_1X7A1752.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-e-class-w214"]
+}

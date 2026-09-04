@@ -1,0 +1,17 @@
+{
+  "id": "mercedes-benz-e-class",
+  "name": "Mercedes-Benz E-Class",
+  "fullName": "Mercedes-Benz E-Class, 1984-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "mercedes-benz",
+  "productionYears": {
+    "start": 1984,
+    "end": null
+  },
+  "positioning": "luxury",
+  "trims": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-e-class", "wikipedia-mercedes-benz-w124"]
+}

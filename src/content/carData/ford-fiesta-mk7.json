@@ -1,0 +1,182 @@
+{
+  "id": "ford-fiesta-mk7",
+  "name": "Ford Fiesta (Mk7)",
+  "fullName": "Ford Fiesta (Mk7), 2017-2023",
+  "kind": "generation",
+  "parent": "ford-fiesta",
+  "brandRef": "ford",
+  "generationCode": "Mk7",
+  "productionYears": {
+    "start": 2017,
+    "end": 2023
+  },
+  "bodyStyles": ["hatchback"],
+  "powertrains": ["petrol", "mild-hybrid", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Ivan Telesca",
+  "assembly": [
+    "Cologne, Germany (CB&A)"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4040,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-fiesta-seventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(seventh_generation)",
+      "sourceNote": "Published as a range of 4,040-4,068 mm by trim; lowest value in the range recorded here."
+    },
+    "width": {
+      "value": 1734,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-fiesta-seventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(seventh_generation)",
+      "sourceNote": "Published as a range of 1,734-1,783 mm by trim; lowest value in the range recorded here."
+    },
+    "height": {
+      "value": 1483,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-fiesta-seventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(seventh_generation)",
+      "sourceNote": "Published as a range of 1,483-1,498 mm by trim; lowest value in the range recorded here."
+    },
+    "wheelbase": {
+      "value": 2493,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-fiesta-seventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(seventh_generation)"
+    },
+    "kerbWeight": {
+      "value": 1113,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-ford-fiesta-seventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(seventh_generation)",
+      "sourceNote": "Published as a range of 1,113-1,207 kg by trim; lowest value in the range recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0-ecoboost-125",
+      "name": "1.0 EcoBoost 125PS",
+      "productionYears": { "start": 2017, "end": 2023 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "EcoBoost (Fox)",
+        "configuration": "inline-3, turbocharged",
+        "cylinders": 3,
+        "displacement": {
+          "value": 998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-fiesta-seventh-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(seventh_generation)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 91.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-fiesta-seventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(seventh_generation)",
+        "sourceNote": "Published as 125 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 170,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-fiesta-seventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(seventh_generation)"
+      },
+      "co2": {
+        "value": 107,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-ford-fiesta-seventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(seventh_generation)",
+        "sourceNote": "WLTP figure. The article also gives a NEDC figure of 98 g/km for the same trim; the two cycles are not comparable, and only the WLTP figure is recorded."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-5-ecoboost-st",
+      "name": "ST 1.5 EcoBoost 200PS",
+      "productionYears": { "start": 2018, "end": 2022 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "EcoBoost (Dragon)",
+        "configuration": "inline-3, turbocharged, cylinder deactivation",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1497,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-fiesta-seventh-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(seventh_generation)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 147.1,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-fiesta-seventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(seventh_generation)",
+        "sourceNote": "Published as 200 PS / 197 bhp, converted at 1 PS = 0.73549875 kW. Matches the figures of the previous generation's limited-edition ST200, per the article's own note."
+      },
+      "torque": {
+        "value": 290,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-fiesta-seventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(seventh_generation)"
+      },
+      "co2": {
+        "value": 136,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-ford-fiesta-seventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(seventh_generation)",
+        "sourceNote": "WLTP figure, pre-facelift ST (2018-2022, 290 Nm). The 2022-2023 facelifted ST uses a revised engine with 320 Nm and a WLTP figure of 151 g/km, recorded as a separate trim's concern, not blended with this one."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/ford-fiesta-mk7/hero.webp",
+    "alt": "Mint green 2017 Ford Fiesta B&O Play Titanium hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 849,
+    "caption": "The final Fiesta generation, sold from 2017 to 2023, when Ford ended production of the nameplate entirely to focus on SUVs and electric models.",
+    "credit": {
+      "author": "Harvey Bold",
+      "title": "File:2017 Ford Fiesta B&O Play Titanium EcoBoost - 998cc 1.0 (125PS) Petrol - Bohai Bay Mint - 07-2024, Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Ford_Fiesta_B%26O_Play_Titanium_EcoBoost_-_998cc_1.0_(125PS)_Petrol_-_Bohai_Bay_Mint_-_07-2024,_Front.jpg",
+      "licenseType": "cc0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-ford-fiesta-seventh-generation"
+  ]
+}

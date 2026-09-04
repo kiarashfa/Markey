@@ -1,0 +1,18 @@
+{
+  "id": "lamborghini-aventador",
+  "name": "Lamborghini Aventador",
+  "fullName": "Lamborghini Aventador, 2011-2022",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "lamborghini",
+  "productionYears": {
+    "start": 2011,
+    "end": 2022
+  },
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "trims": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-lamborghini-aventador"]
+}

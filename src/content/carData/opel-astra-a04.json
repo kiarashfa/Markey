@@ -1,0 +1,199 @@
+{
+  "id": "opel-astra-a04",
+  "name": "Opel Astra H",
+  "fullName": "Opel Astra H, 2004-2014",
+  "kind": "generation",
+  "parent": "opel-astra",
+  "brandRef": "opel",
+  "generationCode": "A04",
+  "productionYears": {
+    "start": 2004,
+    "end": 2014
+  },
+  "bodyStyles": ["hatchback", "saloon", "estate", "convertible", "coupe"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Friedhelm Engler",
+  "assembly": [
+    "Antwerp, Belgium",
+    "Bochum, Germany",
+    "Ellesmere Port, United Kingdom",
+    "Gliwice, Poland"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4249,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-opel-astra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+      "sourceNote": "5-door hatchback figure; 3-door GTC 4,288 mm, saloon 4,587 mm, wagon 4,515 mm, TwinTop convertible 4,476 mm."
+    },
+    "width": {
+      "value": 1753,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-opel-astra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+    },
+    "height": {
+      "value": 1467,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-opel-astra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+      "sourceNote": "5-door hatchback figure; body styles range from 1,411 mm (TwinTop) to 1,500 mm (wagon)."
+    },
+    "wheelbase": {
+      "value": 2614,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-opel-astra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+      "sourceNote": "Hatchback and TwinTop; saloon and estate use a longer 2,703 mm wheelbase."
+    },
+    "kerbWeight": {
+      "value": 1325,
+      "unit": "kg",
+      "status": "verified",
+      "source": "nhtsa-cvs-2008-saturn-astra",
+      "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2008&Make=saturn&units=Metric&format=json",
+      "sourceNote": "Canadian-market curb weight for the 2008 Saturn Astra XE/XR 5-door hatch, the North American badge of the Astra H, from NHTSA's Canadian Vehicle Specifications. Not published in the Wikipedia article, which gives no generation-level kerb weight."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-6",
+      "name": "1.6",
+      "productionYears": { "start": 2004, "end": 2007 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "Z16XEP",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-opel-astra",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 77.23,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+        "sourceNote": "Published as 105 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 150,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+        "sourceNote": "At 3,900 rpm."
+      },
+      "mass": {
+        "value": 1325,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-2008-saturn-astra",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2008&Make=saturn&units=Metric&format=json",
+        "sourceNote": "Canadian-market curb weight for the Saturn Astra XE/XR 5-door hatch, this generation's North American badge, not necessarily this exact 1.6 engine."
+      },
+      "weightDistributionFront": {
+        "value": 0.61,
+        "unit": "",
+        "status": "verified",
+        "source": "nhtsa-cvs-2008-saturn-astra",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2008&Make=saturn&units=Metric&format=json",
+        "sourceNote": "Published as a 61/40 front/rear split; stored here as the front fraction."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "opc",
+      "name": "OPC / VXR",
+      "productionYears": { "start": 2005, "end": 2009 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "Z20LEH",
+        "configuration": "inline-4, turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-opel-astra",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 177,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+        "sourceNote": "Published directly in kW as 177 kW (240 PS, 237 bhp). GTC-bodied three-door only; sold in the UK as the Astra VXR and in Australia/New Zealand as the HSV VXR."
+      },
+      "torque": {
+        "value": 320,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/opel-astra-a04/hero.webp",
+    "alt": "White Saturn Astra five-door hatchback, the North American badge of the Opel Astra H, photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 916,
+    "caption": "Sold in North America as the Saturn Astra, imported from Opel's Belgian plant for two model years before Saturn's 2009 wind-down ended the deal.",
+    "credit": {
+      "author": "Mr.choppers",
+      "title": "File:2008 Saturn Astra XE 5d, front right.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Saturn_Astra_XE_5d,_front_right.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/opel-astra-a04/gallery-1.webp",
+      "alt": "White Opel Astra H OPC three-door hatchback with a chequered bonnet stripe and dark alloy wheels, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 847,
+      "caption": "The OPC (VXR in the UK): a 240 PS turbocharged four-cylinder in the sporty three-door GTC body.",
+      "credit": {
+        "author": "Thomas doerfer",
+        "title": "File:Opel Astra H OPC Nürburgring Edition.JPG",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Opel_Astra_H_OPC_Nürburgring_Edition.JPG",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-opel-astra", "nhtsa-cvs-2008-saturn-astra"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "toyota-yaris",
+  "name": "Toyota Yaris",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "toyota",
+  "productionYears": {
+    "start": 1999,
+    "end": null
+  },
+  "segment": "b-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-yaris"
+  ]
+}

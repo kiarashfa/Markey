@@ -1,0 +1,171 @@
+{
+  "id": "opel-astra-f",
+  "name": "Opel Astra F",
+  "fullName": "Opel Astra F, 1991-1998",
+  "kind": "generation",
+  "parent": "opel-astra",
+  "brandRef": "opel",
+  "generationCode": "T91",
+  "productionYears": {
+    "start": 1991,
+    "end": 1998
+  },
+  "bodyStyles": ["hatchback", "saloon", "estate", "convertible"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Hans Seer",
+  "assembly": [
+    "Antwerp, Belgium",
+    "Bochum, Germany",
+    "Ellesmere Port, United Kingdom (Vauxhall Ellesmere Port)"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4050,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-opel-astra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+      "sourceNote": "Hatchback figure; saloon 4,239 mm, wagon 4,278 mm, convertible 4,239 mm."
+    },
+    "width": {
+      "value": 1696,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-opel-astra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+    },
+    "height": {
+      "value": 1410,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-opel-astra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+    },
+    "wheelbase": {
+      "value": 2517,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-opel-astra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+    }
+  },
+  "trims": [
+    {
+      "id": "1-6i",
+      "name": "1.6i",
+      "productionYears": { "start": 1991, "end": 1998 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "C16NZ/X16SZR",
+        "configuration": "inline-4, SOHC",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-opel-astra",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 55.16,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+        "sourceNote": "Published as 75 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 125,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gsi",
+      "name": "GSi",
+      "productionYears": { "start": 1991, "end": 1995 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "C20XE",
+        "configuration": "inline-4, DOHC 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-opel-astra",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 110.32,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+        "sourceNote": "Published as 150 PS, converted at 1 PS = 0.73549875 kW. Three-door only; sold as GSi until 1995, then renamed 'SPORT' with the body kit removed."
+      },
+      "torque": {
+        "value": 196,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/opel-astra-f/hero.webp",
+    "alt": "Blue first-generation Opel Astra hatchback parked kerbside, photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1112,
+    "caption": "The Astra F, the car that carried Opel's compact-class nameplate over from the Kadett in 1991.",
+    "credit": {
+      "author": "Rutger van der Maar",
+      "title": "File:1994 Opel Astra 1.6i.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1994_Opel_Astra_1.6i.jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/opel-astra-f/gallery-1.webp",
+      "alt": "Red Opel Astra F GSi with a sports bodykit and alloy wheels, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 846,
+      "caption": "The GSi: a 2.0-litre 16-valve engine and a bodykit, sold three-door only.",
+      "credit": {
+        "author": "Interesting.cars.insta",
+        "title": "File:1991-1994 Opel Astra F GSi 01 Front.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1991-1994_Opel_Astra_F_GSi_01_Front.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-opel-astra"]
+}

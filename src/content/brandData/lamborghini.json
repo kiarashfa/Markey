@@ -1,0 +1,26 @@
+{
+  "id": "lamborghini",
+  "name": "Lamborghini",
+  "legalName": "Automobili Lamborghini S.p.A.",
+  "countryOfOrigin": "Italy",
+  "founded": 1963,
+  "parentCompany": "audi",
+  "website": "https://www.lamborghini.com/",
+  "logo": {
+    "src": "/images/brands/lamborghini.svg",
+    "alt": "The Lamborghini wordmark, in a stylised uppercase serif typeface, with a small tagline beneath it",
+    "caption": "Lamborghini's wordmark, used since the company's founding in 1963.",
+    "credit": {
+      "author": "Self made",
+      "title": "File:Lamborghini - logo wordmark+payoff (Italy, 1963-).svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_-_logo_wordmark+payoff_(Italy,_1963-).svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this car, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#000000",
+  "accentColorNote": "Sampled from the mark's own SVG source, which fills its path with no colour attribute (default black). No official coloured Lamborghini brand-guideline hex could be sourced; the shield/bull crest, which is more commonly associated with the brand's gold, is not available on Commons in a form that identifies a specific hex value either, so the wordmark's own colour is recorded honestly rather than a commonly cited but unsourced gold.",
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-lamborghini"]
+}

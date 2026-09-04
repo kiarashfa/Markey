@@ -1,0 +1,18 @@
+{
+  "id": "renault-espace",
+  "name": "Renault Espace",
+  "fullName": "Renault Espace, 1984-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "renault",
+  "productionYears": {
+    "start": 1984,
+    "end": null
+  },
+  "segment": "mpv",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-renault-espace"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "porsche-911",
+  "name": "Porsche 911",
+  "fullName": "Porsche 911, 1964-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "porsche",
+  "productionYears": {
+    "start": 1964,
+    "end": null
+  },
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-porsche-911-classic", "wikipedia-porsche-911-992"]
+}

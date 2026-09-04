@@ -1,0 +1,171 @@
+{
+  "id": "mercedes-benz-w463-2",
+  "name": "Mercedes-Benz G-Class (W463, second generation)",
+  "fullName": "Mercedes-Benz G-Class (W463, second generation), 2018-2024",
+  "kind": "generation",
+  "parent": "mercedes-benz-g-class",
+  "brandRef": "mercedes-benz",
+  "generationCode": "W463",
+  "predecessor": "mercedes-benz-w463-1",
+  "productionYears": {
+    "start": 2018,
+    "end": 2024
+  },
+  "bodyStyles": ["suv"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["4wd"],
+  "segment": "suv-mid",
+  "positioning": "luxury",
+  "designer": "Balázs Filczer",
+  "assembly": ["Magna Steyr, Graz, Austria"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4725,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-g-class",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#W463,_second_generation_(2018%E2%80%932024)",
+      "sourceNote": "Infobox publishes a range across the line, 4725-4817 mm. Stored as the lowest figure."
+    },
+    "width": {
+      "value": 1931,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-g-class",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#W463,_second_generation_(2018%E2%80%932024)"
+    },
+    "height": {
+      "value": 1969,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-g-class",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#W463,_second_generation_(2018%E2%80%932024)"
+    },
+    "wheelbase": {
+      "value": 2890,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-g-class",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#W463,_second_generation_(2018%E2%80%932024)"
+    },
+    "kerbWeight": {
+      "value": 2354,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-g-class",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#W463,_second_generation_(2018%E2%80%932024)",
+      "sourceNote": "Infobox publishes a range, 2354-2485 kg, across the engine line-up. Stored as the lowest figure."
+    }
+  },
+  "trims": [
+    {
+      "id": "g500",
+      "name": "G 500",
+      "productionYears": {
+        "start": 2018,
+        "end": 2024
+      },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "transmission": "9-speed automatic (9G-Tronic)",
+      "gears": 9,
+      "engine": {
+        "code": "M176",
+        "configuration": "V8, twin-turbocharged",
+        "cylinders": 8,
+        "displacement": {
+          "value": 3982,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-g-class",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#W463,_second_generation_(2018%E2%80%932024)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 310,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#W463,_second_generation_(2018%E2%80%932024)",
+        "sourceNote": "Article body publishes only US hp and lb-ft for this launch trim: 416 hp, converted at 1 hp = 0.745699872 kW (310.2 kW, rounded to 310). This is the same M176 engine as the outgoing first-generation G500 4x4-squared, which the Wikipedia engine table separately records at 310 kW/610 N-m, confirming the conversion."
+      },
+      "torque": {
+        "value": 610,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#W463,_second_generation_(2018%E2%80%932024)",
+        "sourceNote": "Article body publishes 450 lb-ft, converted at 1 lb-ft = 1.3558179483314004 N-m (610.1 N-m, rounded to 610)."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "amg-g63",
+      "name": "Mercedes-AMG G 63",
+      "productionYears": {
+        "start": 2018,
+        "end": 2024
+      },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "transmission": "9-speed automatic (AMG SpeedShift TCT)",
+      "gears": 9,
+      "engine": {
+        "code": "M177",
+        "configuration": "V8, twin-turbocharged",
+        "cylinders": 8,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 430,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#G_63",
+        "sourceNote": "Published as 577 hp, converted at 1 hp = 0.745699872 kW (430.2 kW, rounded to 430)."
+      },
+      "torque": {
+        "value": 850,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#G_63",
+        "sourceNote": "Published as 627 lb-ft, converted at 1 lb-ft = 1.3558179483314004 N-m (850.1 N-m, rounded to 850)."
+      },
+      "topSpeed": {
+        "value": 240,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#G_63",
+        "sourceNote": "Mercedes-AMG's claimed top speed of 149 mph with the optional Driver's Package, converted at 1.609344 km/mi (239.8 km/h, rounded to 240). The article's 0-60 mph claim of 4.4 s is not recorded here — it is not the same quantity as a 0-100 km/h time and no 0-100 km/h figure is published."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mercedes-benz-w463-2/hero-front-three-quarter.webp",
+    "alt": "Black second-generation Mercedes-AMG G 63 photographed from the front three-quarter angle in a car park, with a wide chrome-slat grille, round headlamps and prominent side exhaust pipe",
+    "width": 1200,
+    "height": 900,
+    "caption": "The Mercedes-AMG G 63: visually close to the outgoing G-Class despite an entirely new body, chassis and suspension underneath.",
+    "credit": {
+      "author": "Damian B Oh",
+      "title": "File:Mercedes-AMG G 63 W453A black (1).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_G_63_W453A_black_(1).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-g-class"]
+}

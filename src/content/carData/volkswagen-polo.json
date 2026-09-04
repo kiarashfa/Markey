@@ -1,0 +1,19 @@
+{
+  "id": "volkswagen-polo",
+  "name": "Volkswagen Polo",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "volkswagen",
+  "productionYears": {
+    "start": 1975,
+    "end": null
+  },
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-volkswagen-polo"
+  ]
+}

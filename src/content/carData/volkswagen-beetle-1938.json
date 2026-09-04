@@ -309,7 +309,7 @@
         }
       },
       "frontalArea": {
-        "value": 2.0,
+        "value": 2,
         "unit": "m2",
         "status": "estimated",
         "sourceNote": "Derived, not published: the site's standing 0.85 x width x height approximation, using this trim's CVS-sourced width and height (1,570 x 1,500 mm)."
@@ -348,10 +348,10 @@
     }
   ],
   "hero": {
-    "src": "/images/cars/volkswagen-beetle/hero.jpg",
+    "src": "/images/cars/volkswagen-beetle/hero.webp",
     "alt": "Cream-coloured Volkswagen Beetle photographed from the front three-quarter angle in a grassy setting, showing the rounded wings, split chrome bumper overriders and a German number plate",
-    "width": 1920,
-    "height": 1280,
+    "width": 1600,
+    "height": 1067,
     "caption": "A 1965-1966 Käfer — the model year the larger, curved windows arrived, the single biggest visual change the shape ever received.",
     "credit": {
       "author": "Vwexport1300",
@@ -364,10 +364,10 @@
   },
   "gallery": [
     {
-      "src": "/images/cars/volkswagen-beetle/rear.jpg",
+      "src": "/images/cars/volkswagen-beetle/rear.webp",
       "alt": "Pale green Volkswagen Beetle photographed from the rear three-quarter angle, showing the oval rear window, twin engine-lid air vents and a Belgian number plate",
-      "width": 1920,
-      "height": 1372,
+      "width": 1200,
+      "height": 858,
       "caption": "The oval rear window used before the 1958 change to a larger rectangular one — one of the easiest ways to date an early car at a glance.",
       "credit": {
         "author": "Charles01",
@@ -379,7 +379,7 @@
       }
     },
     {
-      "src": "/images/cars/volkswagen-beetle/assembly.jpg",
+      "src": "/images/cars/volkswagen-beetle/assembly.webp",
       "alt": "Overhead colour photograph of the Wolfsburg assembly line, with dozens of Beetle bodies in various colours moving along overhead conveyor tracks and workers fitting components",
       "width": 1200,
       "height": 829,
@@ -394,10 +394,10 @@
       }
     },
     {
-      "src": "/images/cars/volkswagen-beetle/herbie.jpg",
+      "src": "/images/cars/volkswagen-beetle/herbie.webp",
       "alt": "Cream Volkswagen Beetle with a racing number 53 in a white circle and a red-white-blue centre stripe, styled as the Disney character Herbie",
-      "width": 1600,
-      "height": 1200,
+      "width": 1200,
+      "height": 900,
       "caption": "Herbie, Disney's sentient Beetle, starred in a five-decade run of films from 1968 onward and is credited with helping sales in the late 1960s and early 1970s.",
       "credit": {
         "author": "Panamaherbie at English Wikipedia",

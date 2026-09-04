@@ -1,0 +1,149 @@
+{
+  "id": "volkswagen-passat-b9",
+  "name": "Volkswagen Passat (B9)",
+  "fullName": "Volkswagen Passat (B9), 2023-present",
+  "kind": "generation",
+  "parent": "volkswagen-passat",
+  "brandRef": "volkswagen",
+  "generationCode": "B9",
+  "productionYears": {
+    "start": 2023,
+    "end": null
+  },
+  "bodyStyles": ["estate"],
+  "powertrains": ["petrol", "mild-hybrid", "phev", "diesel"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "d-segment",
+  "positioning": "mainstream",
+  "assembly": [
+    "Bratislava, Slovakia"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4917,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-passat-b9",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B9)"
+    },
+    "width": {
+      "value": 1852,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-passat-b9",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B9)"
+    },
+    "height": {
+      "value": 1506,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-passat-b9",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B9)"
+    },
+    "wheelbase": {
+      "value": 2841,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-passat-b9",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B9)"
+    },
+    "kerbWeight": {
+      "value": 1572,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-passat-b9",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B9)",
+      "sourceNote": "Published as a range of 1,572-1,855 kg across trims and powertrains; lowest value in the range recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-5-etsi",
+      "name": "1.5 eTSI",
+      "productionYears": { "start": 2023, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "mild-hybrid",
+      "transmission": "7-speed DSG",
+      "gears": 7,
+      "engine": {
+        "code": "eTSI",
+        "configuration": "inline-4, turbocharged, mild hybrid",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 110.3,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-passat-b9",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B9)",
+        "sourceNote": "Published as 150 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 250,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-passat-b9",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B9)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-0-tsi-4motion",
+      "name": "2.0 TSI 4MOTION",
+      "productionYears": { "start": 2024, "end": null },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed DSG",
+      "gears": 7,
+      "engine": {
+        "code": "TSI",
+        "configuration": "inline-4, turbocharged",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 194.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-passat-b9",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B9)",
+        "sourceNote": "Published as 265 PS, converted at 1 PS = 0.73549875 kW. The range-topping non-hybrid petrol trim, with 4MOTION all-wheel drive standard."
+      },
+      "torque": {
+        "value": 400,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-passat-b9",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B9)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/volkswagen-passat-b9/hero.webp",
+    "alt": "White 2025 Volkswagen Passat Variant Elegance estate photographed from the front three-quarter angle in a car park",
+    "width": 1600,
+    "height": 806,
+    "caption": "The current Passat — sold in Europe as an estate only, since Volkswagen dropped the saloon body from the mainstream European range with this generation.",
+    "credit": {
+      "author": "© M 93",
+      "title": "File:VW Passat Variant Elegance (B9) – f 18052025.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:VW_Passat_Variant_Elegance_(B9)_–_f_18052025.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-volkswagen-passat-b9"
+  ]
+}

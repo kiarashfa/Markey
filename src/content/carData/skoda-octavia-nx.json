@@ -1,0 +1,235 @@
+{
+  "id": "skoda-octavia-nx",
+  "name": "Škoda Octavia Mk4",
+  "fullName": "Škoda Octavia Mk4 (Typ NX), 2019-present",
+  "kind": "generation",
+  "parent": "skoda-octavia",
+  "brandRef": "skoda-auto",
+  "generationCode": "NX",
+  "productionYears": {
+    "start": 2019,
+    "end": null
+  },
+  "bodyStyles": ["liftback", "estate"],
+  "powertrains": ["petrol", "phev"],
+  "drivetrains": ["fwd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "assembly": [
+    "Mladá Boleslav, Czech Republic",
+    "Nizhny Novgorod, Russia (GAZ)",
+    "Ningbo, China (SAIC-VW)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4689,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-octavia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+      "sourceNote": "European-market figure; the longer, China-market Octavia Pro variant is 4,753 mm."
+    },
+    "width": {
+      "value": 1829,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-octavia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia"
+    },
+    "height": {
+      "value": 1470,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-octavia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+      "sourceNote": "Liftback figure; the estate is 1,468 mm."
+    },
+    "wheelbase": {
+      "value": 2669,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-octavia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+      "sourceNote": "European-market figure; the China-market Octavia Pro has a longer 2,730 mm wheelbase."
+    },
+    "kerbWeight": {
+      "value": 1226,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-skoda-octavia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+      "sourceNote": "Published as a range of 1,226-1,590 kg across the whole engine/trim line-up; lowest value in the range recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0-tsi",
+      "name": "1.0 TSI",
+      "productionYears": { "start": 2019, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "EA211 evo",
+        "configuration": "inline-3, turbocharged",
+        "cylinders": 3,
+        "displacement": {
+          "value": 999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-skoda-octavia",
+          "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+          "sourceNote": "Article names it '1.0 L TSI 110'; recorded to the well-documented EA211 evo 999cc displacement."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 81,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+        "sourceNote": "Published directly in kW as 81 kW (110 hp), at 5,500 rpm."
+      },
+      "torque": {
+        "value": 200,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+        "sourceNote": "At 2,000-3,000 rpm."
+      },
+      "topSpeed": {
+        "value": 202,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia"
+      },
+      "zeroToHundredKph": {
+        "value": 10.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia"
+      },
+      "fuelEconomy": {
+        "value": 4.7,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+        "sourceNote": "WLTP combined."
+      },
+      "co2": {
+        "value": 107,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+        "sourceNote": "WLTP."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "iv-phev",
+      "name": "1.4 TSI iV (PHEV)",
+      "productionYears": { "start": 2020, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "phev",
+      "transmission": "6-speed automatic (DSG)",
+      "engine": {
+        "code": "DGEA",
+        "configuration": "inline-4, turbocharged, plug-in hybrid",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1395,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-skoda-octavia",
+          "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 150,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+        "sourceNote": "Published combined output, 150 kW (204 hp), at 5,000-6,000 rpm. The standalone electric motor is separately rated at 85 kW; this is the published system figure, not a sum performed here."
+      },
+      "torque": {
+        "value": 250,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+        "sourceNote": "At 1,550-3,500 rpm."
+      },
+      "topSpeed": {
+        "value": 220,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia"
+      },
+      "zeroToHundredKph": {
+        "value": 7.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia"
+      },
+      "fuelEconomy": {
+        "value": 0.98,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+        "sourceNote": "Published as a range of 0.98-1.06 L/100km (WLTP, battery-assisted); lowest value in the range recorded here."
+      },
+      "co2": {
+        "value": 20.92,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+        "sourceNote": "Published as a range of 20.92-23.85 g/km (WLTP); lowest value in the range recorded here."
+      },
+      "batteryCapacity": {
+        "value": 13,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+        "sourceNote": "Lithium-ion pack, generation-level infobox figure."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/skoda-octavia-nx/hero.webp",
+    "alt": "Blue fourth-generation Skoda Octavia liftback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 718,
+    "caption": "The current Octavia, built on the Volkswagen Group's MQB Evo platform alongside the Golf Mk8 and Audi A3.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2021 Skoda Octavia SE First Edition TSi e-TEC SA 1.0 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Skoda_Octavia_SE_First_Edition_TSi_e-TEC_SA_1.0_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-skoda-octavia"]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "renault-espace-j11",
+  "name": "Renault Espace (Mk1)",
+  "fullName": "Renault Espace (Mk1, J11), 1984-1991",
+  "kind": "generation",
+  "parent": "renault-espace",
+  "brandRef": "renault",
+  "generationCode": "J11",
+  "productionYears": {
+    "start": 1984,
+    "end": 1991
+  },
+  "bodyStyles": ["mpv"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd", "4wd"],
+  "segment": "mpv",
+  "positioning": "mainstream",
+  "designer": "Fergus Pollock; Antonis Volanis",
+  "assembly": ["Romorantin-Lanthenay, France (Matra)"],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4250,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-espace",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Espace",
+      "sourceNote": "Petrol-engined figure; the longer-nosed turbodiesel is not separately dimensioned in the source."
+    },
+    "width": {
+      "value": 1777,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-espace",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Espace"
+    },
+    "height": {
+      "value": 1660,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-espace",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Espace"
+    },
+    "wheelbase": {
+      "value": 2580,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-espace",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Espace"
+    },
+    "kerbWeight": {
+      "value": 1195,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-fr-renault-espace",
+      "sourceUrl": "https://fr.wikipedia.org/wiki/Renault_Espace",
+      "sourceNote": "poids = 1195 (French Wikipedia infobox for the Espace I); not published on the English-language article. Figure applies to the base 2.0 petrol version."
+    }
+  },
+  "trims": [
+    {
+      "id": "2-0-petrol",
+      "name": "2.0",
+      "productionYears": { "start": 1984, "end": 1991 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "J6R/J7R",
+        "configuration": "inline-4, longitudinal",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1995,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-espace",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Espace"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 80.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-fr-renault-espace",
+        "sourceUrl": "https://fr.wikipedia.org/wiki/Renault_Espace",
+        "sourceNote": "puissance = 110 (DIN); the English-language article gives no certified power figures at all for the launch engines, only displacements, so this is taken from the French infobox and converted at 1 PS = 0.73549875 kW."
+      },
+      "topSpeed": {
+        "value": 179,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-fr-renault-espace",
+        "sourceUrl": "https://fr.wikipedia.org/wiki/Renault_Espace",
+        "sourceNote": "vitesse = 179 (French infobox); not published on the English-language article."
+      },
+      "mass": {
+        "value": 1195,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-fr-renault-espace",
+        "sourceUrl": "https://fr.wikipedia.org/wiki/Renault_Espace",
+        "sourceNote": "poids = 1195 (French infobox)."
+      },
+      "seats": 7,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-1-turbo-d",
+      "name": "2.1 Turbo D",
+      "productionYears": { "start": 1984, "end": 1991 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "J8S-852",
+        "configuration": "inline-4, longitudinal",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2068,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-espace",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Espace"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": null,
+        "unit": "kW",
+        "status": "placeholder",
+        "sourceNote": "No certified power figure for the launch turbodiesel is published on either the English or French Wikipedia articles; only the displacement and that it was a longer-nosed installation are recorded."
+      },
+      "seats": 7,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-espace-j11/hero.webp",
+    "alt": "Blue and grey two-tone first-generation Renault Espace parked on grass, photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 987,
+    "caption": "The Espace that started the segment: a fibreglass body over a galvanised steel spaceframe, designed years earlier for Matra and Chrysler-owned Simca before Renault adopted it.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:1987 Renault Espace TSE 2.0.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1987_Renault_Espace_TSE_2.0.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-renault-espace", "wikipedia-fr-renault-espace"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ferrari-f40",
+  "name": "Ferrari F40",
+  "fullName": "Ferrari F40, 1987-1992",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "ferrari",
+  "productionYears": {
+    "start": 1987,
+    "end": 1992
+  },
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "trims": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-ferrari-f40"]
+}

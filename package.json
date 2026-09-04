@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run test && npm run check:content && astro build && npm run postbuild:index && npm run check:site",
+    "build": "npm run test && npm run check:content && astro build && npm run postbuild:index && npm run check:site && npm run check:assets",
     "build:fast": "astro build",
     "preview": "astro preview",
     "check": "astro check",
@@ -18,7 +18,8 @@
     "check:self": "node scripts/integrity/check-self.mjs",
     "check:site": "node scripts/integrity/check-site.mjs",
     "postbuild:index": "pagefind --site dist",
-    "astro": "astro"
+    "astro": "astro",
+    "check:assets": "node scripts/integrity/check-assets.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^7.0.5",

@@ -1,0 +1,159 @@
+{
+  "id": "honda-civic-first-gen",
+  "name": "Honda Civic (first generation)",
+  "fullName": "Honda Civic (first generation), 1972-1979",
+  "kind": "generation",
+  "parent": "honda-civic",
+  "brandRef": "honda",
+  "generationCode": "SB1/SG/SH/SE/VB",
+  "productionYears": {
+    "start": 1972,
+    "end": 1979
+  },
+  "bodyStyles": ["hatchback", "saloon", "estate"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["fwd"],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Hiroshi Kizawa, Shinya Iwakura",
+  "assembly": [
+    "Suzuka, Mie, Japan"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 3405,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-honda-civic-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(first_generation)",
+      "sourceNote": "Published as a range of 3,405-3,560 mm across hatchback/sedan body styles and years; lowest value in the range recorded here. The wagon is longer still, at 4,065 mm."
+    },
+    "width": {
+      "value": 1505,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-honda-civic-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(first_generation)"
+    },
+    "height": {
+      "value": 1325,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-honda-civic-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(first_generation)",
+      "sourceNote": "Published as a range of 1,325-1,330 mm for hatchback/sedan; lowest value recorded here. The wagon is taller, at 1,360 mm."
+    },
+    "wheelbase": {
+      "value": 2200,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-honda-civic-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(first_generation)",
+      "sourceNote": "Hatchback/sedan figure. The wagon rides a longer 2,280 mm wheelbase."
+    },
+    "kerbWeight": {
+      "value": 600,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-honda-civic-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(first_generation)",
+      "sourceNote": "Published as a range of 600-790 kg for hatchback/sedan across the whole generation's engines and years; lowest value recorded here. The wagon is heavier, at 810 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "1200-launch",
+      "name": "1200 (EB1)",
+      "productionYears": { "start": 1972, "end": 1973 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "EB1",
+        "configuration": "inline-4, transverse",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1169,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-honda-civic-first-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(first_generation)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 37.3,
+        "unit": "kW",
+        "status": "estimated",
+        "sourceNote": "The article itself only says the launch engine produced \"roughly 50 hp\", not an exact certified figure. Converted from that approximate 50 hp at 1 hp = 0.745699872 kW. No torque figure is given anywhere in the article for the launch engine."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1200-rs",
+      "name": "1200 RS",
+      "productionYears": { "start": 1974, "end": 1975 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "EB",
+        "configuration": "inline-4, SOHC, dual carburettors",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1169,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-honda-civic-first-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(first_generation)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 55.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-honda-civic-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(first_generation)",
+        "sourceNote": "Japan-domestic-market-only sport model, published as 76 PS at 5,500 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 101,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-honda-civic-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(first_generation)",
+        "sourceNote": "At 4,000 rpm."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/honda-civic-first-gen/hero.webp",
+    "alt": "Red first-generation Honda Civic two-door photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1281,
+    "caption": "The original Civic, launched in 1972 to replace the N600 — the first Honda car built around a water-cooled, transversely mounted four.",
+    "credit": {
+      "author": "Fletcher6",
+      "title": "File:1977 Honda Civic.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1977_Honda_Civic.JPG",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-honda-civic-first-generation"
+  ]
+}

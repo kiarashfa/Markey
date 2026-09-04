@@ -1,0 +1,143 @@
+{
+  "id": "audi-r8-type42",
+  "name": "Audi R8 (Type 42)",
+  "fullName": "Audi R8 (Type 42), 2006-2015",
+  "kind": "generation",
+  "parent": "audi-r8",
+  "brandRef": "audi",
+  "generationCode": "Type 42",
+  "productionYears": {
+    "start": 2006,
+    "end": 2015
+  },
+  "bodyStyles": ["coupe", "convertible"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["awd"],
+  "segment": "s-segment",
+  "positioning": "luxury",
+  "designer": "Walter de Silva, Frank Lamberty",
+  "assembly": [
+    "Audi, Neckarsulm, Germany",
+    "Audi Böllinger Höfe, Heilbronn, Germany (2014-2015)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4431,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-r8-type-42",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_42)",
+      "sourceNote": "V8 coupé figure; V10 coupé is 4435 mm, V10 Spyder 4434 mm."
+    },
+    "width": {
+      "value": 1904,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-r8-type-42",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_42)",
+      "sourceNote": "V8 coupé and V10 Spyder figure; the wider-bodied V10 coupé is 1930 mm."
+    },
+    "height": {
+      "value": 1244,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-r8-type-42",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_42)",
+      "sourceNote": "V10 Spyder figure, the lowest of the three published (V8 coupé 1249 mm, V10 coupé 1252 mm)."
+    },
+    "wheelbase": {
+      "value": 2650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-r8-type-42",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_42)"
+    }
+  },
+  "trims": [
+    {
+      "id": "5-2-fsi-v10-quattro",
+      "name": "5.2 FSI V10 quattro",
+      "productionYears": {
+        "start": 2008,
+        "end": 2015
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual / 7-speed S tronic dual-clutch",
+      "engine": {
+        "code": "5.2 FSI",
+        "configuration": "V10",
+        "cylinders": 10,
+        "displacement": {
+          "value": 5204,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-audi-r8-type-42",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_42)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 386,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-r8-type-42",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_42)",
+        "sourceNote": "Published as 525 PS, converted at 1 PS = 0.73549875 kW (386.1 kW, rounded here to 386)."
+      },
+      "torque": {
+        "value": 530,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-r8-type-42",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_42)"
+      },
+      "mass": {
+        "value": 1620,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-audi-r8-type-42",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_42)",
+        "sourceNote": "Infobox publishes a range for the V10 coupé, 1620-1625 kg; stored as the lowest figure."
+      },
+      "zeroToHundredKph": {
+        "value": 3.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-audi-r8-type-42",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_42)",
+        "sourceNote": "Audi's claimed 0-100 km/h time, published directly, not derived from a 0-60 mph figure."
+      },
+      "topSpeed": {
+        "value": 316,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-audi-r8-type-42",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_42)"
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-r8-type42/hero-front-three-quarter.webp",
+    "alt": "White first-generation Audi R8 coupe photographed from the front three-quarter angle on a street, with a low wide grille bearing the four-rings badge and LED daytime running lights along the intake",
+    "width": 1200,
+    "height": 542,
+    "caption": "The original R8: a mid-engined coupé that shared its platform with the Lamborghini Gallardo and was, in 2007, the first car to mass-produce full LED headlights.",
+    "credit": {
+      "author": "Alexandre Prévot from Nancy, France",
+      "title": "File:Audi R8 - Flickr - Alexandre Prévot (160) (cropped).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_R8_-_Flickr_-_Alexandre_Pr%C3%A9vot_(160)_(cropped).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-audi-r8-type-42"]
+}

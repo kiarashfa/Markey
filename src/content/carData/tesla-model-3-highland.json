@@ -196,10 +196,10 @@
     }
   ],
   "hero": {
-    "src": "/images/cars/tesla-model-3-highland/hero-front-three-quarter.jpg",
+    "src": "/images/cars/tesla-model-3-highland/hero-front-three-quarter.webp",
     "alt": "White Tesla Model 3 of the 2023 facelift photographed from the front three-quarter angle, showing the narrowed headlamps and smoothed nose",
-    "width": 1920,
-    "height": 1278,
+    "width": 1600,
+    "height": 1065,
     "caption": "The 2023 facelift, known internally as Highland: a new nose, narrower lamps, and a body Tesla claims is slipperier than the car it replaced.",
     "credit": {
       "author": "Alexander-93",

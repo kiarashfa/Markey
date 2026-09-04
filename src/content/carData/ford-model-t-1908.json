@@ -248,10 +248,10 @@
     }
   ],
   "hero": {
-    "src": "/images/cars/ford-model-t-1908/hero.jpg",
+    "src": "/images/cars/ford-model-t-1908/hero.webp",
     "alt": "A 1925 Ford Model T Touring car in dark green, photographed from the front three-quarter angle with its canvas top raised, brass-trimmed radiator shell and wood-spoke wheels on balloon tyres",
-    "width": 1920,
-    "height": 1440,
+    "width": 1152,
+    "height": 864,
     "caption": "A 1925 Touring car — by this point riding on the balloon tyres and split rims that arrived as options in the Model T's last two years.",
     "credit": {
       "author": "ModelTMitch",
@@ -263,10 +263,10 @@
   },
   "gallery": [
     {
-      "src": "/images/cars/ford-model-t-1908/early.jpg",
+      "src": "/images/cars/ford-model-t-1908/early.webp",
       "alt": "A wide period advertisement illustration of the 1908 Ford Model T Touring car",
-      "width": 1524,
-      "height": 672,
+      "width": 1200,
+      "height": 529,
       "caption": "Ford's own full-page advertisement for the very first Model T, from the October 1, 1908 issue of Life magazine — the car as it looked the week production began.",
       "credit": {
         "author": "User Rmhermen on en.wikipedia",
@@ -277,10 +277,10 @@
       }
     },
     {
-      "src": "/images/cars/ford-model-t-1908/pedals.jpg",
+      "src": "/images/cars/ford-model-t-1908/pedals.webp",
       "alt": "Close-up of the Model T's three floor pedals, labelled left to right as clutch, reverse and brake",
-      "width": 1920,
-      "height": 1440,
+      "width": 1200,
+      "height": 900,
       "caption": "The whole control layout in one photograph: left pedal for the planetary clutch, centre for reverse, right for the transmission brake — there were no brakes on the wheels at all.",
       "credit": {
         "author": "Rockclaw1030",
@@ -292,10 +292,10 @@
       }
     },
     {
-      "src": "/images/cars/ford-model-t-1908/assembly-line.jpg",
+      "src": "/images/cars/ford-model-t-1908/assembly-line.webp",
       "alt": "Black-and-white photograph of Ford's 1913 moving assembly line, with rows of Model T chassis under construction",
-      "width": 1920,
-      "height": 1386,
+      "width": 1200,
+      "height": 866,
       "caption": "The 1913 Highland Park moving assembly line — the innovation that did more to define the Model T's history than any single body style did.",
       "credit": {
         "author": "Unknown",

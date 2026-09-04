@@ -1,0 +1,174 @@
+{
+  "id": "ford-mustang-first-gen",
+  "name": "Ford Mustang (first generation)",
+  "fullName": "Ford Mustang (first generation), 1964-1973",
+  "kind": "generation",
+  "parent": "ford-mustang",
+  "brandRef": "ford",
+  "generationCode": "Mustang I",
+  "productionYears": {
+    "start": 1964,
+    "end": 1973
+  },
+  "bodyStyles": ["coupe", "convertible"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "mainstream",
+  "designer": "Gale Halderman",
+  "assembly": [
+    "Dearborn, Michigan, United States (Ford River Rouge Complex)",
+    "Milpitas, California, United States (San Jose Assembly Plant)",
+    "Edison, New Jersey, United States (Edison Assembly)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4613,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mustang-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)",
+      "sourceNote": "1965-66 model years. The car grew substantially at the 1967, 1969 and 1971 facelifts, all folded into Wikipedia's single 'first generation' article; this figure describes only the original 1964½/1965 launch car."
+    },
+    "width": {
+      "value": 1732,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mustang-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)",
+      "sourceNote": "1965-66 model years."
+    },
+    "height": {
+      "value": 1301,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mustang-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)",
+      "sourceNote": "1965-66 model years."
+    },
+    "wheelbase": {
+      "value": 2743,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mustang-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)",
+      "sourceNote": "108 in, unchanged through the whole 1964-1973 run despite the car's growth in every other dimension."
+    },
+    "kerbWeight": {
+      "value": 1109,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-ford-mustang-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)",
+      "sourceNote": "Base 1965-66 six-cylinder hardtop, published as 2,445 lb, converted at 0.45359237 kg/lb."
+    }
+  },
+  "trims": [
+    {
+      "id": "170-i6-1964",
+      "name": "170 (U-code six)",
+      "productionYears": { "start": 1964, "end": 1965 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "3-speed manual",
+      "gears": 3,
+      "engine": {
+        "code": "U",
+        "configuration": "inline-6",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2786,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-mustang-first-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)",
+          "sourceNote": "Published as 170 cu in, converted at 16.3871 cc/cu in."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 78.3,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-mustang-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)",
+        "sourceNote": "Published as 105 bhp (SAE gross, period practice) at 4,400 rpm, converted at 1 hp = 0.745699872 kW."
+      },
+      "torque": {
+        "value": 211.5,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-mustang-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)",
+        "sourceNote": "Published as 156 lb-ft at 2,400 rpm, converted at 1 lb-ft = 1.355818 Nm."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "289-hipo-k-code",
+      "name": "289 HiPo (K-code)",
+      "productionYears": { "start": 1964, "end": 1966 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "K",
+        "configuration": "V8",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4736,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-mustang-first-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)",
+          "sourceNote": "Published as 289 cu in, converted at 16.3871 cc/cu in."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 202.1,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-mustang-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)",
+        "sourceNote": "Published as 271 bhp (SAE gross) at 6,000 rpm, converted at 1 hp = 0.745699872 kW."
+      },
+      "torque": {
+        "value": 423,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-mustang-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(first_generation)",
+        "sourceNote": "Published as 312 lb-ft at 3,400 rpm, converted at 1 lb-ft = 1.355818 Nm."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/ford-mustang-first-gen/hero.webp",
+    "alt": "Red 1965 Ford Mustang two-door hardtop photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1200,
+    "caption": "The original pony car, on sale within Ford dealerships from April 1964 and immediately the fastest-selling new model in the company's history.",
+    "credit": {
+      "author": "Kroelleboelle",
+      "title": "File:1965 Ford Mustang 2D Hardtop Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1965_Ford_Mustang_2D_Hardtop_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-ford-mustang-first-generation"
+  ]
+}

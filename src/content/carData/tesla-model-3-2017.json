@@ -190,10 +190,10 @@
     }
   ],
   "hero": {
-    "src": "/images/cars/tesla-model-3-2017/hero-front-three-quarter.jpg",
+    "src": "/images/cars/tesla-model-3-2017/hero-front-three-quarter.webp",
     "alt": "Red Tesla Model 3 Performance photographed from the front three-quarter angle, showing the grille-less nose and flush door handles",
-    "width": 1920,
-    "height": 878,
+    "width": 1600,
+    "height": 732,
     "caption": "A 2019 Model 3 Performance, before the 2023 facelift reshaped the nose.",
     "credit": {
       "author": "Vauxford",

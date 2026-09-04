@@ -1,0 +1,212 @@
+{
+  "id": "nissan-leaf-ze1",
+  "name": "Nissan Leaf (Mk2)",
+  "fullName": "Nissan Leaf (Mk2, ZE1), 2017-2025",
+  "kind": "generation",
+  "parent": "nissan-leaf",
+  "brandRef": "nissan",
+  "generationCode": "ZE1",
+  "productionYears": {
+    "start": 2017,
+    "end": 2025
+  },
+  "bodyStyles": ["hatchback"],
+  "powertrains": ["bev"],
+  "drivetrains": ["fwd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Kazuhiko Watanabe",
+  "assembly": [
+    "Yokosuka, Kanagawa, Japan (Oppama Plant)",
+    "Smyrna, Tennessee, United States",
+    "Sunderland, United Kingdom (NMUK)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4490,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-leaf",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf"
+    },
+    "width": {
+      "value": 1788,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-leaf",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf"
+    },
+    "height": {
+      "value": 1530,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-leaf",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf"
+    },
+    "wheelbase": {
+      "value": 2700,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-leaf",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf"
+    },
+    "kerbWeight": {
+      "value": 1580,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-nissan-leaf",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf",
+      "sourceNote": "Published as a range of 1,580-1,640 kg across trims and battery sizes; lowest value in the range recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "40kwh",
+      "name": "40 kWh",
+      "productionYears": { "start": 2017, "end": 2025 },
+      "drivetrain": "fwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed fixed",
+      "engine": {
+        "code": "EM57",
+        "configuration": "single motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 110,
+        "unit": "kW",
+        "status": "verified",
+        "source": "epa-2018-nissan-leaf",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/39860",
+        "sourceNote": "Matches Wikipedia's own figure of 110 kW (147 hp)."
+      },
+      "torque": {
+        "value": 320,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-nissan-leaf",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf",
+        "sourceNote": "Published as 236 lb-ft, converted at 1.355818 Nm/lb-ft."
+      },
+      "mass": {
+        "value": 1580,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-nissan-leaf",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf",
+        "sourceNote": "Low end of a published 1,580-1,640 kg range."
+      },
+      "batteryCapacity": {
+        "value": 40,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-nissan-leaf",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf",
+        "sourceNote": "39 kWh usable."
+      },
+      "electricRange": {
+        "value": 243,
+        "unit": "km",
+        "status": "verified",
+        "source": "epa-2018-nissan-leaf",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/39860",
+        "sourceNote": "EPA-rated, 151 mi. A June 2022 facelift slightly reduced the EPA-rated figure to 149 mi (240 km)."
+      },
+      "electricConsumption": {
+        "value": 18.64,
+        "unit": "kWh/100km",
+        "status": "verified",
+        "source": "epa-2018-nissan-leaf",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/39860",
+        "sourceNote": "EPA five-cycle rating, measured at the wall, 30 kWh/100mi."
+      },
+      "bootVolume": {
+        "value": 680,
+        "unit": "L",
+        "status": "verified",
+        "source": "epa-2018-nissan-leaf",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/39860",
+        "sourceNote": "EPA hatchback luggage volume, 24 cu ft, converted at 28.3168 L/cu ft."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "62kwh-e-plus",
+      "name": "62 kWh (e+)",
+      "productionYears": { "start": 2019, "end": 2025 },
+      "drivetrain": "fwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed fixed",
+      "engine": {
+        "code": "EM57",
+        "configuration": "single motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 160,
+        "unit": "kW",
+        "status": "verified",
+        "source": "epa-2019-nissan-leaf-62kwh",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/41276",
+        "sourceNote": "Matches Wikipedia's own figure of 160 kW."
+      },
+      "batteryCapacity": {
+        "value": 62,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-nissan-leaf",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf",
+        "sourceNote": "59 kWh usable. Sold as the Leaf e+ (Leaf Plus in North America)."
+      },
+      "electricRange": {
+        "value": 364,
+        "unit": "km",
+        "status": "verified",
+        "source": "epa-2019-nissan-leaf-62kwh",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/41276",
+        "sourceNote": "EPA-rated, 226 mi, at launch. A June 2022 facelift reduced the EPA-rated figure to 212 mi (341 km)."
+      },
+      "electricConsumption": {
+        "value": 19.26,
+        "unit": "kWh/100km",
+        "status": "verified",
+        "source": "epa-2019-nissan-leaf-62kwh",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/41276",
+        "sourceNote": "EPA five-cycle rating, measured at the wall, 31 kWh/100mi."
+      },
+      "bootVolume": {
+        "value": 680,
+        "unit": "L",
+        "status": "verified",
+        "source": "epa-2019-nissan-leaf-62kwh",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/41276",
+        "sourceNote": "EPA hatchback luggage volume, 24 cu ft, converted at 28.3168 L/cu ft."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/nissan-leaf-ze1/hero.webp",
+    "alt": "Grey second-generation Nissan Leaf hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 878,
+    "caption": "The ZE1: a styling break from the original Leaf's rounded shape, with more power, more range, and eventually a larger 62 kWh e+ option.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2018 Nissan Leaf Tekna Front (1).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Nissan_Leaf_Tekna_Front_(1).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-nissan-leaf", "epa-2018-nissan-leaf", "epa-2019-nissan-leaf-62kwh"]
+}

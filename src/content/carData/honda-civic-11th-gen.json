@@ -1,0 +1,170 @@
+{
+  "id": "honda-civic-11th-gen",
+  "name": "Honda Civic (eleventh generation)",
+  "fullName": "Honda Civic (eleventh generation), 2021-present",
+  "kind": "generation",
+  "parent": "honda-civic",
+  "brandRef": "honda",
+  "generationCode": "FE/FL",
+  "productionYears": {
+    "start": 2021,
+    "end": null
+  },
+  "bodyStyles": ["saloon", "hatchback"],
+  "powertrains": ["petrol", "hybrid"],
+  "drivetrains": ["fwd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Yuki Ishii, Hitomaro Asano",
+  "assembly": [
+    "Alliston, Ontario, Canada (HCM, North America sedan)",
+    "Greensburg, Indiana, United States (HMIN, North America liftback)",
+    "Yorii, Saitama, Japan (Europe and Turkey liftback)"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4549,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-honda-civic-eleventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "sourceNote": "Liftback figure (179.1 in); the sedan is longer at 184 in (4,674 mm)."
+    },
+    "width": {
+      "value": 1801,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-honda-civic-eleventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)"
+    },
+    "height": {
+      "value": 1410,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-honda-civic-eleventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "sourceNote": "Published as a range of 55.5-55.7 in (1,410-1,415 mm) by body style; lowest value in the range recorded here."
+    },
+    "wheelbase": {
+      "value": 2736,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-honda-civic-eleventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)"
+    },
+    "kerbWeight": {
+      "value": 1305,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-honda-civic-eleventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+      "sourceNote": "Published as a range of 2,877-3,218 lb across trims; lowest value in the range recorded here, converted at 0.45359237 kg/lb."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-5-turbo",
+      "name": "1.5 Turbo (EX/Touring)",
+      "productionYears": { "start": 2021, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "CVT",
+      "engine": {
+        "code": "L15B7",
+        "configuration": "inline-4, DOHC VTEC, turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1498,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-honda-civic-eleventh-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+          "sourceNote": "Article names it '1.5 L'; recorded to the well-documented L15B7 displacement."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 134.2,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-honda-civic-eleventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+        "sourceNote": "North America-market EX/Touring trims, published as 180 hp at 5,700 rpm, converted at 1 hp = 0.745699872 kW."
+      },
+      "torque": {
+        "value": 244,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-honda-civic-eleventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+        "sourceNote": "Published as 180 lb-ft at 1,700-4,500 rpm, converted at 1 lb-ft = 1.355818 Nm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-0-na",
+      "name": "2.0 (LX/Sport)",
+      "productionYears": { "start": 2021, "end": 2024 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "CVT",
+      "engine": {
+        "code": "K20C2",
+        "configuration": "inline-4, i-VTEC",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1996,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-honda-civic-eleventh-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+          "sourceNote": "Article names it '2.0 L'; recorded to the well-documented K20C2 displacement."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 117.8,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-honda-civic-eleventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+        "sourceNote": "North America-market LX/Sport trims, published as 158 hp at 6,500 rpm, converted at 1 hp = 0.745699872 kW."
+      },
+      "torque": {
+        "value": 187.1,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-honda-civic-eleventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Civic_(eleventh_generation)",
+        "sourceNote": "Published as 138 lb-ft at 4,200 rpm, converted at 1 lb-ft = 1.355818 Nm. Replaced by the hybrid powertrain for the 2025 model year."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/honda-civic-11th-gen/hero.webp",
+    "alt": "White 2022 Honda Civic Sedan EX photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1024,
+    "caption": "The current, eleventh-generation Civic, sold in North America as a sedan and liftback and, since 2024, with a hybrid replacing the naturally aspirated 2.0-litre base engine.",
+    "credit": {
+      "author": "Mr.choppers",
+      "title": "File:2022 Honda Civic Sedan EX in Platinum White Pearl, front left.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Honda_Civic_Sedan_EX_in_Platinum_White_Pearl,_front_left.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-honda-civic-eleventh-generation"
+  ]
+}

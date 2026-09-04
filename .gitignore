@@ -38,3 +38,6 @@ scripts/agent/
 reference/
 public/_ref/
 plan/
+
+# Authoring scratch: contact sheets for choosing images.
+.cache/

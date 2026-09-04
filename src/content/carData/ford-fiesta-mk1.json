@@ -1,0 +1,151 @@
+{
+  "id": "ford-fiesta-mk1",
+  "name": "Ford Fiesta (Mk1)",
+  "fullName": "Ford Fiesta (Mk1), 1976-1983",
+  "kind": "generation",
+  "parent": "ford-fiesta",
+  "brandRef": "ford",
+  "generationCode": "Mk1",
+  "productionYears": {
+    "start": 1976,
+    "end": 1983
+  },
+  "bodyStyles": ["hatchback"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["fwd"],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Tom Tjaarda",
+  "assembly": [
+    "Almussafes, Spain (Ford Valencia)",
+    "Dagenham, United Kingdom",
+    "Cologne, West Germany",
+    "Saarlouis, West Germany"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 3565,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-fiesta-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(first_generation)"
+    },
+    "width": {
+      "value": 1567,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-fiesta-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(first_generation)"
+    },
+    "height": {
+      "value": 1360,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-fiesta-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(first_generation)"
+    },
+    "wheelbase": {
+      "value": 2286,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-fiesta-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(first_generation)"
+    }
+  },
+  "trims": [
+    {
+      "id": "950-normal-compression",
+      "name": "950",
+      "productionYears": { "start": 1976, "end": 1983 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "Valencia",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 957,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-fiesta-first-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(first_generation)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 32.8,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-fiesta-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(first_generation)",
+        "sourceNote": "Normal-compression 950, published as 44 hp, converted at 1 hp = 0.745699872 kW. No torque figure is given in the article. Top speed is published as 85 mph and 0-60 mph as 16.6 s; neither is stored here, since the schema's speed and acceleration fields are km/h and 0-100 km/h respectively and those are not the same quantities as the published mph figures."
+      },
+      "topSpeed": {
+        "value": null,
+        "unit": "km/h",
+        "status": "placeholder",
+        "sourceNote": "Published only as 85 mph (0-60 mph table). Not converted to km/h because the article's own top-speed figure is itself measured against the mph scale, not independently verified in km/h, and 0-60 mph is not the same quantity as 0-100 km/h that this schema otherwise expects for acceleration."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-xr2",
+      "name": "1.6 XR2",
+      "productionYears": { "start": 1981, "end": 1983 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "Crossflow",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1599,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-fiesta-first-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(first_generation)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 61.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-fiesta-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(first_generation)",
+        "sourceNote": "Published as 83 hp, converted at 1 hp = 0.745699872 kW. No torque figure is given in the article. Published 0-60 mph is 9.5 s, not converted here — see the base trim's note on why 0-60 mph is not stored as 0-100 km/h."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/ford-fiesta-mk1/hero.webp",
+    "alt": "Red 1980 Ford Fiesta L three-door hatchback photographed from the front three-quarter angle at a car show",
+    "width": 1600,
+    "height": 1042,
+    "caption": "The original Fiesta, Ford's first front-wheel-drive small car and its answer to a fast-growing European supermini class.",
+    "credit": {
+      "author": "Kieran White",
+      "title": "File:1980 Ford Fiesta 957 HC L - 20445599040 (cropped).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1980_Ford_Fiesta_957_HC_L_-_20445599040_(cropped).jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-ford-fiesta-first-generation"
+  ]
+}

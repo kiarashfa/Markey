@@ -1,0 +1,19 @@
+{
+  "id": "toyota-camry",
+  "name": "Toyota Camry",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "toyota",
+  "productionYears": {
+    "start": 1982,
+    "end": null
+  },
+  "segment": "d-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-camry"
+  ]
+}

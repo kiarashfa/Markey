@@ -1,0 +1,223 @@
+{
+  "id": "renault-clio-bja",
+  "name": "Renault Clio (Mk5)",
+  "fullName": "Renault Clio (Mk5, BJA), 2019-present",
+  "kind": "generation",
+  "parent": "renault-clio",
+  "brandRef": "renault",
+  "generationCode": "BJA",
+  "productionYears": {
+    "start": 2019,
+    "end": null
+  },
+  "bodyStyles": ["hatchback"],
+  "powertrains": ["petrol", "hybrid"],
+  "drivetrains": ["fwd"],
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "designer": "Pierre Sabas (exterior); Magali Gouraud (interior)",
+  "assembly": [
+    "Nilüfer, Bursa, Turkey (Oyak-Renault)",
+    "Novo Mesto, Slovenia (Revoz)"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4050,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+    },
+    "width": {
+      "value": 1798,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+    },
+    "height": {
+      "value": 1440,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+    },
+    "wheelbase": {
+      "value": 2585,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+    }
+  },
+  "trims": [
+    {
+      "id": "tce-90",
+      "name": "TCe 90",
+      "productionYears": { "start": 2020, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "manual",
+      "engine": {
+        "code": "H5D",
+        "configuration": "inline-3, turbocharged",
+        "cylinders": 3,
+        "displacement": {
+          "value": 999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-clio",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 67,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Published directly in kW as 67 kW (91 PS)."
+      },
+      "torque": {
+        "value": 160,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Manual-transmission figure. The X-tronic CVT version of the same engine is quoted separately at 142 N-m, with correspondingly different top speed (175 vs 180 km/h), 0-100 km/h (12.4 vs 12.2 s), consumption (5.0-5.2 vs 4.9-5.1 L/100km) and CO2 (114-119 vs 112-117 g/km); only the manual figures are recorded here."
+      },
+      "topSpeed": {
+        "value": 180,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+      },
+      "zeroToHundredKph": {
+        "value": 12.2,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+      },
+      "fuelEconomy": {
+        "value": 4.9,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Published as a range of 4.9-5.1 L/100km (WLTP); lowest value in the range recorded here."
+      },
+      "co2": {
+        "value": 112,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Published as a range of 112-117 g/km (WLTP); lowest value in the range recorded here."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "e-tech-145",
+      "name": "E-Tech 145 Hybrid",
+      "productionYears": { "start": 2022, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "hybrid",
+      "transmission": "E-TECH multi-mode automatic",
+      "engine": {
+        "code": "H4M",
+        "configuration": "inline-4, hybrid",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-clio",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 105,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Published system output, 105 kW (143 PS); marketed as '145' despite the 143 PS certified figure."
+      },
+      "torque": {
+        "value": 148,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Only a single torque figure is published for this engine/motor combination in the source; it is not stated whether it is a combustion-engine-only or combined figure, so it is recorded as given without further breakdown."
+      },
+      "topSpeed": {
+        "value": 175,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+      },
+      "zeroToHundredKph": {
+        "value": 9.3,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+      },
+      "fuelEconomy": {
+        "value": 3.6,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Published as a range of 3.6-4.0 L/100km (WLTP); lowest value in the range recorded here."
+      },
+      "co2": {
+        "value": 83,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Published as a range of 83-90 g/km (WLTP); lowest value in the range recorded here."
+      },
+      "batteryCapacity": {
+        "value": 1.2,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "1.2 kWh Li-ion pack, generation-level infobox figure for the E-Tech hybrid."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-clio-bja/hero.webp",
+    "alt": "Blue fifth-generation Renault Clio in RS Line trim, photographed from the front three-quarter angle in a dealer forecourt",
+    "width": 1600,
+    "height": 918,
+    "caption": "The current, fifth-generation Clio, the first to offer a full hybrid (E-Tech) powertrain alongside conventional petrol engines.",
+    "credit": {
+      "author": "Calreyn88",
+      "title": "File:2023 Renault Clio RS Line E-Tech Hybrid.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Renault_Clio_RS_Line_E-Tech_Hybrid.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-renault-clio"]
+}

@@ -1,0 +1,190 @@
+{
+  "id": "toyota-corolla-e210",
+  "name": "Toyota Corolla (E210)",
+  "fullName": "Toyota Corolla (E210), 2018-present",
+  "kind": "generation",
+  "parent": "toyota-corolla",
+  "brandRef": "toyota",
+  "generationCode": "E210",
+  "productionYears": {
+    "start": 2018,
+    "end": null
+  },
+  "bodyStyles": ["saloon", "hatchback", "estate"],
+  "powertrains": ["petrol", "hybrid"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Yoshiki Konishi",
+  "assembly": [
+    "Blue Springs, Mississippi, United States (TMMMS, USDM models)",
+    "Burnaston, Derbyshire, United Kingdom (TMUK, hatchback and estate)",
+    "Toyota, Aichi, Japan (Takaoka and Tsutsumi plants, JDM models)"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4635,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-corolla-e210",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E210)",
+      "sourceNote": "US-market SE/XSE saloon figure. The article publishes several saloon lengths by market: 4,495 mm (Japan), 4,630 mm (international base), 4,640 mm (China Levin) and others; this is the SE/XSE figure, matching the US trim recorded here."
+    },
+    "width": {
+      "value": 1780,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-corolla-e210",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E210)",
+      "sourceNote": "International-market saloon width; the Japan-market saloon is narrower at 1,745 mm."
+    },
+    "height": {
+      "value": 1435,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-corolla-e210",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E210)",
+      "sourceNote": "Published as a range for international-market saloons, 1,435-1,455 mm; lowest value in the range is recorded here per the site's convention. SE/XSE Apex is lower still at 1,420 mm; JDM/TREK is 1,460 mm."
+    },
+    "wheelbase": {
+      "value": 2700,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-corolla-e210",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E210)",
+      "sourceNote": "Saloon/estate figure. The Japan-market hatchback rides a shorter 2,640 mm wheelbase."
+    },
+    "kerbWeight": {
+      "value": 1290,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-toyota-corolla-e210",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E210)",
+      "sourceNote": "Published as a saloon range of 1,290-1,430 kg across trims and markets; lowest value in the range is recorded here per the site's convention."
+    }
+  },
+  "trims": [
+    {
+      "id": "se-2-0",
+      "name": "SE / XSE 2.0",
+      "productionYears": { "start": 2019, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "K120 CVT with physical first gear (6-speed manual, 2019-2023)",
+      "gears": 6,
+      "engine": {
+        "code": "M20A-FKS",
+        "configuration": "inline-4, Dynamic Force",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 126.02,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-corolla-e210",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E210)",
+        "sourceNote": "US-market SE/XSE figure, published as 169 hp (SAE net) at 6,600 rpm, converted at 1 hp = 0.745699872 kW."
+      },
+      "torque": {
+        "value": 204.7,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-corolla-e210",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E210)",
+        "sourceNote": "US-market SE/XSE figure, published as 151 lb-ft at 4,400 rpm, converted at 1 lb-ft = 1.355818 Nm."
+      },
+      "fuelEconomy": {
+        "value": 6.92,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "epa-2020-toyota-corolla",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/41213",
+        "sourceNote": "EPA combined 34 mpg (US) for the 2020 2.0 L CVT car, converted at 235.215 L-mi/100km-gal."
+      },
+      "co2": {
+        "value": 159.7,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "epa-2020-toyota-corolla",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/41213",
+        "sourceNote": "EPA tailpipe CO2, 257 g/mi, converted at 1.609344 km/mi. US test cycle only."
+      },
+      "bootVolume": {
+        "value": 368,
+        "unit": "L",
+        "status": "verified",
+        "source": "epa-2020-toyota-corolla",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/41213",
+        "sourceNote": "EPA saloon luggage volume, 13 cu ft, converted at 28.3168 L/cu ft. EPA's basis is not the European VDA method."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "hybrid-le",
+      "name": "Hybrid LE",
+      "productionYears": { "start": 2019, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "hybrid",
+      "transmission": "Hybrid Synergy Drive (eCVT)",
+      "gears": 1,
+      "engine": {
+        "code": "2ZR-FXE",
+        "configuration": "inline-4, Atkinson cycle, Hybrid Synergy Drive",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 90.23,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-corolla-e210",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E210)",
+        "sourceNote": "Hybrid system net output for the Hybrid LE, published as 121 hp (SAE net), converted at 1 hp = 0.745699872 kW. This is the combined system figure, not the petrol engine alone."
+      },
+      "torque": {
+        "value": 142.36,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-corolla-e210",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E210)",
+        "sourceNote": "Published as 105 lb-ft, converted at 1 lb-ft = 1.355818 Nm. The article does not separate engine and motor torque for this system, so no engine-only figure can be recorded."
+      },
+      "batteryCapacity": {
+        "value": 1.3,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-toyota-corolla-e210",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E210)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-corolla-e210/hero.webp",
+    "alt": "White 2020 Toyota Corolla SE saloon photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 839,
+    "caption": "The US-market 2020 Corolla SE, with the 2.0-litre Dynamic Force engine and 169 hp that replaced the old 1.8-litre base unit.",
+    "credit": {
+      "author": "Kevauto",
+      "title": "File:2020 Toyota Corolla SE, front 2.29.20.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Toyota_Corolla_SE,_front_2.29.20.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-corolla-e210",
+    "epa-2020-toyota-corolla"
+  ]
+}

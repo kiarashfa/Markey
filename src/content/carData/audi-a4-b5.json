@@ -1,0 +1,130 @@
+{
+  "id": "audi-a4-b5",
+  "name": "Audi A4 (B5)",
+  "fullName": "Audi A4 (B5), 1994-2001",
+  "kind": "generation",
+  "parent": "audi-a4",
+  "brandRef": "audi",
+  "generationCode": "B5",
+  "productionYears": {
+    "start": 1994,
+    "end": 2001
+  },
+  "bodyStyles": ["saloon", "estate"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "d-segment",
+  "positioning": "premium",
+  "designer": "Imre Hasanić, Jürgen Albamonte",
+  "assembly": ["Audi, Ingolstadt, Germany"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4520,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#B5_(Typ_8D;_1994)",
+      "sourceNote": "Saloon figure; the Avant estate is 4488 mm."
+    },
+    "width": {
+      "value": 1733,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#B5_(Typ_8D;_1994)"
+    },
+    "height": {
+      "value": 1415,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#B5_(Typ_8D;_1994)",
+      "sourceNote": "Saloon figure; the Avant estate is 1440 mm."
+    },
+    "wheelbase": {
+      "value": 2615,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#B5_(Typ_8D;_1994)"
+    },
+    "kerbWeight": {
+      "value": 1350,
+      "unit": "kg",
+      "status": "verified",
+      "source": "nhtsa-cvs-1996-audi-a4",
+      "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1996&Make=audi&units=Metric&format=json",
+      "sourceNote": "NHTSA's Canadian Vehicle Specifications figure for the front-wheel-drive 1996 model-year 4-door saloon; the Wikipedia generation infobox leaves the weight field blank. The quattro version of the same model year is heavier, 1465 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-8t",
+      "name": "1.8T",
+      "productionYears": {
+        "start": 1995,
+        "end": 2001
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "EA827",
+        "configuration": "inline-4, 20v, turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1781,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article names this engine only as '1.8 L 20v turbo I4' without stating exact displacement; 1781 cc is the well-documented displacement of Volkswagen Group's 1.8T EA827-family engine of this era, but the article itself does not state the figure, hence 'estimated' rather than 'verified'."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 110,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-a4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#B5_(Typ_8D;_1994)",
+        "sourceNote": "Published as 150 PS, converted at 1 PS = 0.73549875 kW (110.3 kW, rounded here to 110)."
+      },
+      "torque": {
+        "value": 210,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-a4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A4#B5_(Typ_8D;_1994)"
+      },
+      "mass": {
+        "value": 1350,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-1996-audi-a4",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1996&Make=audi&units=Metric&format=json",
+        "sourceNote": "NHTSA CVS curb weight for the 1996 front-wheel-drive 4-door saloon."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-a4-b5/hero-front-three-quarter.webp",
+    "alt": "Teal Audi A4 B5 saloon photographed from the front three-quarter angle on a residential street, with a chrome single-frame grille bearing the four-rings badge",
+    "width": 1200,
+    "height": 552,
+    "caption": "The B5 of 1994: the car that renamed the Audi 80 line and set the template — chrome single-frame grille, front-drive base cars, quattro further up — that every A4 since has followed.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:1996 Audi A4 SE 1.8 Front (1).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1996_Audi_A4_SE_1.8_Front_(1).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-audi-a4", "nhtsa-cvs-1996-audi-a4"]
+}

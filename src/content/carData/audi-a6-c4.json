@@ -1,0 +1,121 @@
+{
+  "id": "audi-a6-c4",
+  "name": "Audi A6 (C4)",
+  "fullName": "Audi A6 (C4), 1994-1997",
+  "kind": "generation",
+  "parent": "audi-a6",
+  "brandRef": "audi",
+  "generationCode": "C4",
+  "productionYears": {
+    "start": 1994,
+    "end": 1997
+  },
+  "bodyStyles": ["saloon", "estate"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "e-segment",
+  "positioning": "premium",
+  "designer": "Hartmut Warkuß",
+  "assembly": ["Audi, Neckarsulm, Germany"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4797,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A6#C4_(Typ_4A,_1994)"
+    },
+    "width": {
+      "value": 1783,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A6#C4_(Typ_4A,_1994)"
+    },
+    "height": {
+      "value": 1430,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A6#C4_(Typ_4A,_1994)"
+    },
+    "wheelbase": {
+      "value": 2687,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A6#C4_(Typ_4A,_1994)",
+      "sourceNote": "Front-wheel-drive figure; the quattro version rides on a 2692 mm wheelbase."
+    },
+    "kerbWeight": {
+      "value": 1555,
+      "unit": "kg",
+      "status": "verified",
+      "source": "nhtsa-cvs-1996-audi-a6",
+      "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1996&Make=audi&units=Metric&format=json",
+      "sourceNote": "NHTSA Canadian Vehicle Specifications figure for the front-wheel-drive 4-door saloon (model year 95 record); the Wikipedia generation infobox does not give a weight. The quattro saloon of the same era is 1677 kg, the Avant estate 1624 kg and the quattro Avant 1745 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "2-8-30v",
+      "name": "2.8 30v",
+      "productionYears": {
+        "start": 1994,
+        "end": 1997
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "ACK",
+        "configuration": "V6, 30v DOHC",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2771,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article names this engine only as '2.8 30v (ACK)' without stating exact displacement; 2771 cc is the well-documented capacity of Audi's AAH/ACK 2.8 V6 family, but the article itself does not state the figure."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 142,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-a6",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A6#C4_engines",
+        "sourceNote": "Published directly in kW in the generation's engine table (142 kW = 193 PS). No torque figure is given in the same table, so torque is left unrecorded here rather than estimated."
+      },
+      "mass": {
+        "value": 1555,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-1996-audi-a6",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1996&Make=audi&units=Metric&format=json",
+        "sourceNote": "NHTSA CVS curb weight for the front-wheel-drive 4-door saloon; not specific to the 2.8 engine, which the record does not distinguish."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-a6-c4/hero-front-three-quarter.webp",
+    "alt": "Silver Audi A6 C4 saloon photographed from the front three-quarter angle in a driveway, with a chrome single-frame grille bearing the four-rings badge",
+    "width": 1200,
+    "height": 655,
+    "caption": "The first car actually badged A6: a 1994 facelift and rename of the outgoing Audi 100 (C4), to bring it into Audi's new alphanumeric naming alongside the newly-launched A8.",
+    "credit": {
+      "author": "TheRealTorxion (Diskussion)",
+      "title": "File:AudiA6C4.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:AudiA6C4.jpg",
+      "licenseType": "cc0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-audi-a6", "nhtsa-cvs-1996-audi-a6"]
+}

@@ -1,0 +1,174 @@
+{
+  "id": "skoda-octavia-1u",
+  "name": "Škoda Octavia Mk1",
+  "fullName": "Škoda Octavia Mk1 (Typ 1U), 1996-2010",
+  "kind": "generation",
+  "parent": "skoda-octavia",
+  "brandRef": "skoda-auto",
+  "generationCode": "1U",
+  "productionYears": {
+    "start": 1996,
+    "end": 2010
+  },
+  "bodyStyles": ["liftback", "estate"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd", "4wd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Luc Donckerwolke",
+  "assembly": [
+    "Mladá Boleslav, Czech Republic",
+    "Poznań, Poland",
+    "Aurangabad, India (Škoda India)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4507,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-octavia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+      "sourceNote": "2000-10 liftback figure; the pre-facelift (1996-2000) car was 4,511 mm and the 2000-10 estate 4,513 mm."
+    },
+    "width": {
+      "value": 1731,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-octavia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia"
+    },
+    "height": {
+      "value": 1429,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-octavia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+      "sourceNote": "1996-2000 liftback figure, the lowest of four published body/facelift combinations (1,429-1,457 mm)."
+    },
+    "wheelbase": {
+      "value": 2512,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-octavia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia"
+    }
+  },
+  "trims": [
+    {
+      "id": "1-6-8v",
+      "name": "1.6 8v",
+      "productionYears": { "start": 1996, "end": 2000 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "AEE",
+        "configuration": "inline-4, SOHC",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-skoda-octavia",
+          "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 55.16,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+        "sourceNote": "Published as 75 PS at 4,800 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 135,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+        "sourceNote": "At 2,800-3,600 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "vrs",
+      "name": "RS (vRS)",
+      "productionYears": { "start": 2001, "end": 2005 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "AUQ",
+        "configuration": "inline-4, DOHC, turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1781,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-skoda-octavia",
+          "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 132.39,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+        "sourceNote": "Published as 180 PS at 5,500 rpm, converted at 1 PS = 0.73549875 kW. Sold as 'RS' in most markets, 'vRS' in the UK."
+      },
+      "torque": {
+        "value": 235,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-skoda-octavia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Octavia",
+        "sourceNote": "At 1,950-5,000 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/skoda-octavia-1u/hero.webp",
+    "alt": "Silver first-generation Skoda Octavia liftback parked on a brick surface, photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 846,
+    "caption": "The Octavia Mk1: Skoda's first genuinely modern car under Volkswagen ownership, sharing its platform with the Golf Mk4 and Audi A3.",
+    "credit": {
+      "author": "Rudolf Stricker",
+      "title": "File:Skoda Octavia I front 20080213.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skoda_Octavia_I_front_20080213.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/skoda-octavia-1u/gallery-1.webp",
+      "alt": "Silver Skoda Octavia vRS with a rear roof spoiler, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 539,
+      "caption": "The vRS: a 1.8-litre turbocharged four making 180 PS, the fastest Octavia of its generation.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2005 Skoda Octavia VRS 1.8 Front.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2005_Skoda_Octavia_VRS_1.8_Front.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-skoda-octavia"]
+}

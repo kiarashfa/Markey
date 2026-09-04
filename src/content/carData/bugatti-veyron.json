@@ -1,0 +1,18 @@
+{
+  "id": "bugatti-veyron",
+  "name": "Bugatti Veyron",
+  "fullName": "Bugatti Veyron 16.4, 2005-2015",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "bugatti",
+  "productionYears": {
+    "start": 2005,
+    "end": 2015
+  },
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "trims": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bugatti-veyron"]
+}

@@ -1,0 +1,202 @@
+{
+  "id": "mercedes-benz-w124",
+  "name": "Mercedes-Benz W124",
+  "fullName": "Mercedes-Benz W124, 1984-1997",
+  "kind": "generation",
+  "parent": "mercedes-benz-e-class",
+  "brandRef": "mercedes-benz",
+  "generationCode": "W124",
+  "productionYears": {
+    "start": 1984,
+    "end": 1997
+  },
+  "bodyStyles": ["saloon", "estate", "coupe", "convertible"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["rwd", "awd"],
+  "segment": "e-segment",
+  "positioning": "luxury",
+  "designer": "Joseph Gallitzendörfer and Peter Pfeiffer (initial design), Bruno Sacco (final design)",
+  "assembly": [
+    "Mercedes-Benz, Sindelfingen, West Germany",
+    "Mercedes-Benz, Bremen, West Germany",
+    "Porsche, Zuffenhausen, West Germany (500E/E500)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4740,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-w124",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W124",
+      "sourceNote": "Saloon body figure from the dimensions table. The estate is 4765 mm, the coupé 4655 mm, and the 500E's wider-arch saloon 4750 mm."
+    },
+    "width": {
+      "value": 1740,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-w124",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W124",
+      "sourceNote": "Saloon/estate/coupé figure. The Porsche-widened 500E is 1796 mm."
+    },
+    "height": {
+      "value": 1428,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-w124",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W124",
+      "sourceNote": "Saloon figure; 1451 mm for the taller-riding 4Matic saloon."
+    },
+    "wheelbase": {
+      "value": 2800,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-w124",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W124",
+      "sourceNote": "Saloon, estate and 500E figure; the coupé rides on a shorter 2715 mm wheelbase and a long-wheelbase saloon on 3600 mm."
+    }
+  },
+  "trims": [
+    {
+      "id": "300e",
+      "name": "300E",
+      "productionYears": {
+        "start": 1985,
+        "end": 1993
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual / 4-speed automatic",
+      "engine": {
+        "code": "M103",
+        "configuration": "inline-6",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2962,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-w124",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W124"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 132,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-m103-engine",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_M103_engine",
+        "sourceNote": "Manufacturer's figure of 180 PS at 5,700 rpm for the catalyst-equipped 3.0 L M103, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 255,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-m103-engine",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_M103_engine",
+        "sourceNote": "Catalyst-equipped figure at 4,400 rpm."
+      },
+      "mass": {
+        "value": 1390,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w124",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W124",
+        "sourceNote": "Saloon kerb weight from the dimensions table; not specific to the 300E over other saloon engine variants, which the table does not split out further."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "500e",
+      "name": "500E",
+      "productionYears": {
+        "start": 1991,
+        "end": 1994
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed automatic",
+      "gears": 4,
+      "engine": {
+        "code": "M119",
+        "configuration": "V8, 32-valve DOHC",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4973,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-500-e",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_500_E"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 240,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-500-e",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_500_E",
+        "sourceNote": "Published directly in kW, at 5,700 rpm (240 kW = 326 PS)."
+      },
+      "torque": {
+        "value": 480,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-500-e",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_500_E",
+        "sourceNote": "At 3,900 rpm."
+      },
+      "mass": {
+        "value": 1710,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-500-e",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_500_E"
+      },
+      "zeroToHundredKph": {
+        "value": 6.1,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-500-e",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_500_E",
+        "sourceNote": "0-100 km/h directly published, not derived from a 0-60 mph figure. Independent period tests reported a range of 5.5-6.0 s to 100 km/h; the manufacturer/spec-table figure of 6.1 s is recorded here."
+      },
+      "topSpeed": {
+        "value": 250,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-500-e",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_500_E",
+        "sourceNote": "Electronically/gear-ratio limited to 250 km/h."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mercedes-benz-w124/hero-front-three-quarter.webp",
+    "alt": "Gold-coloured Mercedes-Benz 500E saloon photographed from the front three-quarter angle on grass, with wide fender flares and multi-spoke alloy wheels",
+    "width": 1200,
+    "height": 712,
+    "caption": "A 500E: built at Porsche's Zuffenhausen plant because its Porsche-widened fenders would not fit down Mercedes' own W124 production line.",
+    "credit": {
+      "author": "Mr.choppers",
+      "title": "File:1992 Mercedes-Benz 500E (W124.036), front right.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1992_Mercedes-Benz_500E_(W124.036),_front_right.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-mercedes-benz-w124",
+    "wikipedia-mercedes-benz-500-e",
+    "wikipedia-mercedes-benz-m103-engine"
+  ]
+}

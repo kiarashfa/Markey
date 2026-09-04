@@ -1,0 +1,24 @@
+{
+  "id": "ferrari",
+  "name": "Ferrari",
+  "legalName": "Ferrari S.p.A.",
+  "countryOfOrigin": "Italy",
+  "founded": 1939,
+  "logo": {
+    "src": "/images/brands/ferrari.svg",
+    "alt": "The Ferrari wordmark in a stylised script typeface",
+    "caption": "Ferrari's script wordmark.",
+    "credit": {
+      "author": "Ferrari",
+      "title": "File:Ferrari wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_wordmark.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this car, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#000000",
+  "accentColorNote": "Sampled from the wordmark's own SVG source, which fills its path with #000000. Ferrari is popularly associated with 'Rosso Corsa' racing red, but no specific hex value for that red could be sourced from Commons or this file, so it is not recorded here.",
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-ferrari"]
+}

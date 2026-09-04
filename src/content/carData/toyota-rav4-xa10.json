@@ -1,0 +1,173 @@
+{
+  "id": "toyota-rav4-xa10",
+  "name": "Toyota RAV4 (XA10)",
+  "fullName": "Toyota RAV4 (XA10), 1994-2000",
+  "kind": "generation",
+  "parent": "toyota-rav4",
+  "brandRef": "toyota",
+  "generationCode": "XA10",
+  "productionYears": {
+    "start": 1994,
+    "end": 2000
+  },
+  "bodyStyles": ["suv", "crossover"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["fwd", "4wd"],
+  "segment": "suv-compact",
+  "positioning": "mainstream",
+  "designer": "Hideo Kondo (exterior)",
+  "assembly": [
+    "Toyota, Aichi, Japan (Motomachi plant)",
+    "Tahara, Aichi, Japan (Tahara plant)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4150,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-rav4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+      "sourceNote": "5-door figure, low end of a published 4,150-4,160 mm range; the 3-door is much shorter at 3,740-3,750 mm."
+    },
+    "width": {
+      "value": 1695,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-rav4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4"
+    },
+    "height": {
+      "value": 1650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-rav4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+      "sourceNote": "5-door figure; the 3-door ranges 1,646-1,661 mm."
+    },
+    "wheelbase": {
+      "value": 2410,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-rav4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+      "sourceNote": "5-door figure; the 3-door is markedly shorter at 2,200 mm."
+    }
+  },
+  "trims": [
+    {
+      "id": "2-0-4wd",
+      "name": "2.0 4WD",
+      "productionYears": { "start": 1994, "end": 1997 },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "3S-FE",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-toyota-rav4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 89,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-rav4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+        "sourceNote": "US-market pre-facelift figure, published directly in kW. Increased to 95 kW after the 1997 facelift."
+      },
+      "mass": {
+        "value": 1265,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-1997-toyota-rav4",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1997&Make=toyota&units=Metric&format=json",
+        "sourceNote": "Canadian-market curb weight, 5-door AWD, from NHTSA's Canadian Vehicle Specifications. Not published in the Wikipedia article, which gives no kerb weight for this generation."
+      },
+      "weightDistributionFront": {
+        "value": 0.59,
+        "unit": "",
+        "status": "verified",
+        "source": "nhtsa-cvs-1997-toyota-rav4",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1997&Make=toyota&units=Metric&format=json",
+        "sourceNote": "Published as a 59/41 front/rear split; stored here as the front fraction."
+      },
+      "fuelEconomy": {
+        "value": 11.2,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "epa-1996-toyota-rav4",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/13251",
+        "sourceNote": "EPA combined 21 mpg (US) for the 1996 4WD manual, converted at 235.215 L-mi/100km-gal. Current EPA estimate; the methodology changed in 2008 and earlier cars were recalculated, so this is not the original window-sticker figure."
+      },
+      "co2": {
+        "value": 263,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "epa-1996-toyota-rav4",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/13251",
+        "sourceNote": "EPA tailpipe CO2, 423.2 g/mi, converted at 1.609344 km/mi."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gx-3s-ge",
+      "name": "GX (3S-GE BEAMS)",
+      "productionYears": { "start": 1994, "end": 2000 },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "3S-GE",
+        "configuration": "inline-4, DOHC",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-toyota-rav4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 132,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-rav4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_RAV4",
+        "sourceNote": "Japan-market 'BEAMS' engine, published directly in kW."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-rav4-xa10/hero.webp",
+    "alt": "Blue/purple first-generation Toyota RAV4 five-door photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1052,
+    "caption": "The original RAV4: built on a bespoke platform sharing Carina and Corolla elements, and credited with defining the compact crossover SUV segment.",
+    "credit": {
+      "author": "Cutlass",
+      "title": "File:1996 Toyota RAV4 in Purple Storm Metallic, front right, 07-06-2026.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1996_Toyota_RAV4_in_Purple_Storm_Metallic,_front_right,_07-06-2026.jpg",
+      "licenseType": "cc0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-toyota-rav4", "epa-1996-toyota-rav4", "nhtsa-cvs-1997-toyota-rav4"]
+}

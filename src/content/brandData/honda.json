@@ -1,0 +1,24 @@
+{
+  "id": "honda",
+  "name": "Honda",
+  "legalName": "Honda Motor Co., Ltd.",
+  "countryOfOrigin": "Japan",
+  "founded": 1948,
+  "website": "https://global.honda/",
+  "logo": {
+    "src": "/images/brands/honda.svg",
+    "alt": "The Honda wordmark: a red slab-serif \"HONDA\" logotype",
+    "credit": {
+      "author": "TTTNIS",
+      "title": "File:Honda logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honda_logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify Honda's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#cc0000",
+  "accentColorNote": "Sampled from the fill colour used in the wordmark's own SVG source (#CC0000) rather than guessed — Honda does not publish a public brand-colour specification, so this is not presented as an official brand asset.",
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-honda", "commons-file-honda-logo-svg"]
+}

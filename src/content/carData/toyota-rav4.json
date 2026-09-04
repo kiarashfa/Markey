@@ -1,0 +1,18 @@
+{
+  "id": "toyota-rav4",
+  "name": "Toyota RAV4",
+  "fullName": "Toyota RAV4, 1994-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "toyota",
+  "productionYears": {
+    "start": 1994,
+    "end": null
+  },
+  "segment": "suv-compact",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-toyota-rav4"]
+}

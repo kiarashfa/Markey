@@ -1,0 +1,230 @@
+{
+  "id": "bugatti-veyron-2005",
+  "name": "Bugatti Veyron 16.4",
+  "fullName": "Bugatti Veyron 16.4, 2005-2015",
+  "kind": "generation",
+  "parent": "bugatti-veyron",
+  "brandRef": "bugatti",
+  "productionYears": {
+    "start": 2005,
+    "end": 2015
+  },
+  "bodyStyles": ["coupe", "targa"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["awd"],
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "designer": "Jozef Kaban",
+  "assembly": ["Molsheim, Alsace, France"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4462,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bugatti-veyron",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron"
+    },
+    "width": {
+      "value": 1998,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bugatti-veyron",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron"
+    },
+    "height": {
+      "value": 1204,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bugatti-veyron",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron"
+    },
+    "wheelbase": {
+      "value": 2710,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bugatti-veyron",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron"
+    },
+    "kerbWeight": {
+      "value": 1888,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-bugatti-veyron",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron",
+      "sourceNote": "Bugatti's own published kerb weight figure for the standard 16.4. The infobox separately gives a wider 1,838-1,990 kg range across all variants, but does not attribute the endpoints to specific trims."
+    }
+  },
+  "trims": [
+    {
+      "id": "16-4",
+      "name": "16.4",
+      "productionYears": { "start": 2005, "end": 2011 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed Ricardo dual-clutch automatic",
+      "gears": 7,
+      "engine": {
+        "code": "W16",
+        "configuration": "W16, quad-turbocharged",
+        "cylinders": 16,
+        "displacement": {
+          "value": 7993,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-bugatti-veyron",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 736.23,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bugatti-veyron",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron",
+        "sourceNote": "Certified by TUV Suddeutschland as 1,001 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 1250,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bugatti-veyron",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron"
+      },
+      "mass": {
+        "value": 1888,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-bugatti-veyron",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron"
+      },
+      "topSpeed": {
+        "value": 408.47,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-bugatti-veyron",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron",
+        "sourceNote": "Average measured at Volkswagen Group's Ehra-Lessien test track, 19 April 2005. The car's normal, electronically limited top speed in everyday use is 343 km/h; the full speed requires a separate top-speed key and mode."
+      },
+      "zeroToHundredKph": {
+        "value": 2.46,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-bugatti-veyron",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron"
+      },
+      "dragCoefficient": {
+        "value": 0.41,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-bugatti-veyron",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron",
+        "sourceNote": "Normal ride-height figure; the car lowers itself above 220 km/h, at which point Cd drops to 0.36."
+      },
+      "frontalArea": {
+        "value": 2.07,
+        "unit": "m2",
+        "status": "verified",
+        "source": "wikipedia-bugatti-veyron",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron",
+        "sourceNote": "Published figure, not the site's estimated formula."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "super-sport",
+      "name": "16.4 Super Sport",
+      "productionYears": { "start": 2010, "end": 2011 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed Ricardo dual-clutch automatic",
+      "gears": 7,
+      "engine": {
+        "code": "W16",
+        "configuration": "W16, quad-turbocharged",
+        "cylinders": 16,
+        "displacement": {
+          "value": 7993,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-bugatti-veyron",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 882.3,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bugatti-veyron",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron",
+        "sourceNote": "Published directly in kW as 882.3 kW (1,183.2 PS/hp), at 6,400 rpm."
+      },
+      "torque": {
+        "value": 1500,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bugatti-veyron",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron",
+        "sourceNote": "At 3,000-5,000 rpm."
+      },
+      "topSpeed": {
+        "value": 431.07,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-bugatti-veyron",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron",
+        "sourceNote": "Guinness World Records-confirmed production-car speed record, set 4 July 2010 at Ehra-Lessien; the road-going version is electronically limited to 415 km/h."
+      },
+      "zeroToHundredKph": {
+        "value": 2.46,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-bugatti-veyron",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Bugatti_Veyron",
+        "sourceNote": "Wikipedia's performance table gives this figure jointly for the Standard/Grand Sport and Super Sport/Grand Sport Vitesse pairs, without a distinct Super Sport figure."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/bugatti-veyron/hero.webp",
+    "alt": "Black Bugatti Veyron 16.4 photographed from the front three-quarter angle, showing its horseshoe-shaped chrome grille and twin roof-mounted air intakes",
+    "width": 1600,
+    "height": 1023,
+    "caption": "The standard Veyron 16.4: a mid-mounted, quad-turbocharged W16 driving all four wheels through a 7-speed dual-clutch transmission built specially by Ricardo.",
+    "credit": {
+      "author": "M 93",
+      "title": "File:Bugatti Veyron 16.4 – Frontansicht (1), 5. April 2012, Düsseldorf.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bugatti_Veyron_16.4_%E2%80%93_Frontansicht_(1),_5._April_2012,_D%C3%BCsseldorf.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/bugatti-veyron/gallery-1.webp",
+      "alt": "Black and orange Bugatti Veyron 16.4 Super Sport with a large rear wing, photographed from the front three-quarter angle at a show",
+      "width": 1200,
+      "height": 800,
+      "caption": "The Super Sport: more power, a revised aerodynamic package, and briefly the fastest production car in the world at a Guinness-confirmed 431.07 km/h.",
+      "credit": {
+        "author": "Supermac1961 from CHAFFORD HUNDRED, England",
+        "title": "File:Bugatti Veyron 16.4 Super Sport - Flickr - Supermac1961.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bugatti_Veyron_16.4_Super_Sport_-_Flickr_-_Supermac1961.jpg",
+        "licenseType": "cc-by",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bugatti-veyron"]
+}

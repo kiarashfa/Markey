@@ -1,0 +1,18 @@
+{
+  "id": "opel-astra",
+  "name": "Opel Astra",
+  "fullName": "Opel Astra, 1991-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "opel",
+  "productionYears": {
+    "start": 1991,
+    "end": null
+  },
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-opel-astra"]
+}

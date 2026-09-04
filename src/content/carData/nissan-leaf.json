@@ -1,0 +1,18 @@
+{
+  "id": "nissan-leaf",
+  "name": "Nissan Leaf",
+  "fullName": "Nissan Leaf, 2010-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "nissan",
+  "productionYears": {
+    "start": 2010,
+    "end": null
+  },
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-nissan-leaf"]
+}

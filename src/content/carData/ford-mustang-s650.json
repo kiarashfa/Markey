@@ -1,0 +1,172 @@
+{
+  "id": "ford-mustang-s650",
+  "name": "Ford Mustang (S650)",
+  "fullName": "Ford Mustang (S650), 2023-present",
+  "kind": "generation",
+  "parent": "ford-mustang",
+  "brandRef": "ford",
+  "generationCode": "S650",
+  "productionYears": {
+    "start": 2023,
+    "end": null
+  },
+  "bodyStyles": ["coupe", "convertible"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "mainstream",
+  "designer": "Chris Stevens",
+  "assembly": [
+    "Flat Rock, Michigan, United States (Flat Rock Assembly Plant)",
+    "Markham, Ontario, Canada (Multimatic, GTD only)"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4810,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mustang-seventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)",
+      "sourceNote": "Standard body; the Dark Horse is 10 mm longer at 4,820 mm."
+    },
+    "width": {
+      "value": 1915,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mustang-seventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)",
+      "sourceNote": "Standard body; the Dark Horse is 5 mm wider at 1,920 mm."
+    },
+    "height": {
+      "value": 1395,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mustang-seventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)",
+      "sourceNote": "Published as a standard-body range of 1,395-1,400 mm by trim; lowest value in the range recorded here."
+    },
+    "wheelbase": {
+      "value": 2720,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mustang-seventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)"
+    },
+    "kerbWeight": {
+      "value": 1628,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-ford-mustang-seventh-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)",
+      "sourceNote": "EcoBoost trim, published as a range of 3,588-3,741 lb; lowest value in the range recorded here, converted at 0.45359237 kg/lb. The GT weighs more (3,827-4,012 lb) and the Dark Horse more again."
+    }
+  },
+  "trims": [
+    {
+      "id": "ecoboost",
+      "name": "EcoBoost",
+      "productionYears": { "start": 2023, "end": null },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "10-speed 10R80 automatic",
+      "gears": 10,
+      "engine": {
+        "code": "EcoBoost",
+        "configuration": "inline-4, turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2300,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-mustang-seventh-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)",
+          "sourceNote": "Published as 137.5 cu in, converted at 16.3871 cc/cu in — matches the well-known '2.3-litre' description."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 234.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-mustang-seventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)",
+        "sourceNote": "US-market figure, published as 315 hp at 5,500 rpm, converted at 1 hp = 0.745699872 kW."
+      },
+      "torque": {
+        "value": 474.5,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-mustang-seventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)",
+        "sourceNote": "Published as 350 lb-ft at 3,000 rpm, converted at 1 lb-ft = 1.355818 Nm."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gt-active-exhaust",
+      "name": "GT (active exhaust)",
+      "productionYears": { "start": 2023, "end": null },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed Getrag MT82-D4 manual",
+      "gears": 6,
+      "engine": {
+        "code": "Coyote",
+        "configuration": "V8",
+        "cylinders": 8,
+        "displacement": {
+          "value": 5038,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-mustang-seventh-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)",
+          "sourceNote": "Published as 307.4 cu in, converted at 16.3871 cc/cu in — matches the well-known '5.0-litre' description."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 362.4,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-mustang-seventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)",
+        "sourceNote": "US-market GT with the active-exhaust option, published as 486 hp at 7,250 rpm, converted at 1 hp = 0.745699872 kW. The Europe-market GT and the US GT without active exhaust are both rated lower (448 hp and 480 hp respectively) — a market- and options-specific figure, not a universal GT spec."
+      },
+      "torque": {
+        "value": 566.8,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-mustang-seventh-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)",
+        "sourceNote": "Published as 418 lb-ft at 4,900 rpm, converted at 1 lb-ft = 1.355818 Nm."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/ford-mustang-s650/hero.webp",
+    "alt": "Red 2024 Ford Mustang EcoBoost coupe photographed from the front three-quarter angle in a showroom",
+    "width": 1600,
+    "height": 1200,
+    "caption": "The current, seventh-generation Mustang, launched in 2023 — still front-engine, rear-drive, and still offered with a manual gearbox on V8 models.",
+    "credit": {
+      "author": "Ethan Llamas",
+      "title": "File:2024 Ford Mustang 2.3 EcoBoost in Race Red, front left, 06-26-2024.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Ford_Mustang_2.3_EcoBoost_in_Race_Red,_front_left,_06-26-2024.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-ford-mustang-seventh-generation"
+  ]
+}

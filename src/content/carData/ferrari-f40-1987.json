@@ -1,0 +1,166 @@
+{
+  "id": "ferrari-f40-1987",
+  "name": "Ferrari F40",
+  "fullName": "Ferrari F40, 1987-1992",
+  "kind": "generation",
+  "parent": "ferrari-f40",
+  "brandRef": "ferrari",
+  "productionYears": {
+    "start": 1987,
+    "end": 1992
+  },
+  "bodyStyles": ["coupe"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "designer": "Pietro Camardella under Aldo Brovarone at Pininfarina; Nicola Materazzi (chief engineer)",
+  "assembly": ["Maranello, Italy"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4430,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-f40",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F40"
+    },
+    "width": {
+      "value": 1970,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-f40",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F40"
+    },
+    "height": {
+      "value": 1124,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-f40",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F40"
+    },
+    "wheelbase": {
+      "value": 2450,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-f40",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F40"
+    },
+    "kerbWeight": {
+      "value": 1254,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-ferrari-f40",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F40",
+      "sourceNote": "Europe-market figure; the US-market car is heavier at 1,369 kg, largely due to emissions and impact-safety equipment."
+    }
+  },
+  "trims": [
+    {
+      "id": "f40",
+      "name": "F40",
+      "productionYears": { "start": 1987, "end": 1992 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "Tipo F120A",
+        "configuration": "V8, 90 degrees, twin-turbocharged, intercooled",
+        "cylinders": 8,
+        "displacement": {
+          "value": 2936,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ferrari-f40",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F40"
+        },
+        "aspiration": "twincharged"
+      },
+      "power": {
+        "value": 351.57,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f40",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F40",
+        "sourceNote": "Manufacturer-stated, 478 PS at 7,000 rpm, converted at 1 PS = 0.73549875 kW. Wikipedia notes that gearing, torque curves and actual power output differed among individual cars."
+      },
+      "torque": {
+        "value": 577,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f40",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F40",
+        "sourceNote": "Manufacturer-stated, at 4,000 rpm."
+      },
+      "mass": {
+        "value": 1254,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f40",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F40",
+        "sourceNote": "Europe-market figure."
+      },
+      "topSpeed": {
+        "value": 321,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f40",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F40",
+        "sourceNote": "Measured by Auto, Motor und Sport at Nardo (1988) and matched by Sport Auto's own test the same year; Road & Track later measured 196 mph (315.4 km/h) and Car and Driver 197 mph (317.0 km/h) on different cars. Ferrari's own claimed top speed was never independently matched by any published test."
+      },
+      "zeroToHundredKph": {
+        "value": 4.7,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f40",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F40",
+        "sourceNote": "First independent measurement, published on the cover of Sport Auto, September 1988."
+      },
+      "dragCoefficient": {
+        "value": 0.34,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f40",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F40"
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/ferrari-f40/hero.webp",
+    "alt": "Red Ferrari F40 photographed in motion from the front three-quarter angle, showing its large rear wing and pop-up headlights",
+    "width": 1600,
+    "height": 922,
+    "caption": "The last car Enzo Ferrari personally approved: a twin-turbocharged V8 in a lightweight composite body, built with no concession to comfort.",
+    "credit": {
+      "author": "Will ainsworth",
+      "title": "File:F40 Ferrari 20090509.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:F40_Ferrari_20090509.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/ferrari-f40/gallery-1.webp",
+      "alt": "Interior of a Ferrari F40 showing its exposed carbon-fibre and felt-lined dashboard, plain steering wheel and open gear gate",
+      "width": 1200,
+      "height": 800,
+      "caption": "No carpet, no door handles, no sound deadening: the F40's cabin was built to save weight, not to be comfortable.",
+      "credit": {
+        "author": "Matti Blume",
+        "title": "File:Ferrari, Techno-Classica 2018, Essen (IMG 9434).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari,_Techno-Classica_2018,_Essen_(IMG_9434).jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-ferrari-f40"]
+}

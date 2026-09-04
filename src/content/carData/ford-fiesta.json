@@ -1,0 +1,19 @@
+{
+  "id": "ford-fiesta",
+  "name": "Ford Fiesta",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "ford",
+  "productionYears": {
+    "start": 1976,
+    "end": 2023
+  },
+  "segment": "b-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-ford-fiesta"
+  ]
+}

@@ -275,10 +275,10 @@
     }
   ],
   "hero": {
-    "src": "/images/cars/tata-nano/hero.jpg",
+    "src": "/images/cars/tata-nano/hero.webp",
     "alt": "Pale blue Tata Nano photographed from the front three-quarter angle, showing its rounded one-box body, single driver's-side mirror and steel wheels",
-    "width": 1920,
-    "height": 1474,
+    "width": 1600,
+    "height": 1228,
     "caption": "No boot lid, one wing mirror, three lug nuts a wheel: the shape and the missing details both follow from the price target.",
     "credit": {
       "author": "Biswarup Ganguly",
@@ -291,10 +291,10 @@
   },
   "gallery": [
     {
-      "src": "/images/cars/tata-nano/gallery-1.jpg",
+      "src": "/images/cars/tata-nano/gallery-1.webp",
       "alt": "The rear compartment of a Tata Nano opened from inside with the back seats folded down, showing the 624 cc engine mounted where a boot would normally be",
-      "width": 1600,
-      "height": 1067,
+      "width": 1200,
+      "height": 800,
       "caption": "The cost-cutting story in one photo: the rearmost panel didn't open at all, and the engine shares the space with what luggage capacity the car had.",
       "credit": {
         "author": "Clayton Tang",
@@ -306,10 +306,10 @@
       }
     },
     {
-      "src": "/images/cars/tata-nano/gallery-2.jpg",
+      "src": "/images/cars/tata-nano/gallery-2.webp",
       "alt": "Red 2015 GenX Tata Nano photographed from the front, showing the revised bumper, door mirrors on both sides and alloy wheels of the facelifted car",
-      "width": 1920,
-      "height": 1280,
+      "width": 1200,
+      "height": 800,
       "caption": "The 2015 GenX facelift: a passenger-side mirror, alloy wheels and — for the first time — a rear hatch that actually opened.",
       "credit": {
         "author": "Alexander Gounder",

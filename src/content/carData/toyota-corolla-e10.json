@@ -1,0 +1,141 @@
+{
+  "id": "toyota-corolla-e10",
+  "name": "Toyota Corolla (E10)",
+  "fullName": "Toyota Corolla (E10), 1966-1970",
+  "kind": "generation",
+  "parent": "toyota-corolla",
+  "brandRef": "toyota",
+  "generationCode": "E10",
+  "productionYears": {
+    "start": 1966,
+    "end": 1970
+  },
+  "bodyStyles": ["saloon", "coupe", "estate"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Tatsuo Hasegawa",
+  "assembly": [
+    "Takaoka Plant, Toyota City, Japan"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 3845,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-corolla-e10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E10)"
+    },
+    "width": {
+      "value": 1485,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-corolla-e10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E10)"
+    },
+    "height": {
+      "value": 1380,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-corolla-e10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E10)"
+    },
+    "wheelbase": {
+      "value": 2285,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-corolla-e10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E10)"
+    }
+  },
+  "trims": [
+    {
+      "id": "1100-standard",
+      "name": "1100 (K engine)",
+      "productionYears": { "start": 1966, "end": 1970 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "K",
+        "configuration": "inline-4, OHV, single carburettor",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1077,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-toyota-corolla-e10",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E10)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 44.13,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-corolla-e10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E10)",
+        "sourceNote": "Published as 60 PS, converted at 1 PS = 0.73549875 kW. No dyno rpm or torque figure is given in the article for this engine."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "sl-twin-carb",
+      "name": "SL (K-B engine)",
+      "productionYears": { "start": 1968, "end": 1970 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "K-B",
+        "configuration": "inline-4, OHV, twin carburettor",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1077,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-toyota-corolla-e10",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E10)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 53.69,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-corolla-e10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E10)",
+        "sourceNote": "Published as 73 PS, converted at 1 PS = 0.73549875 kW — 13 PS more than the base K engine's 60 PS, from twin carburettors on the well-equipped SL introduced at the March 1968 facelift. No torque figure is given."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-corolla-e10/hero.webp",
+    "alt": "White 1968 Toyota Corolla 1100 Deluxe two-door saloon photographed from the front three-quarter angle in a museum setting",
+    "width": 1600,
+    "height": 830,
+    "caption": "A 1968 Corolla 1100 Deluxe — the first Corolla, and the car that made Toyota a mass-market exporter rather than a domestic manufacturer.",
+    "credit": {
+      "author": "TTTNIS",
+      "title": "File:1968 Toyota Corolla 1100 Deluxe.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1968_Toyota_Corolla_1100_Deluxe.jpg",
+      "licenseType": "cc0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-corolla-e10"
+  ]
+}

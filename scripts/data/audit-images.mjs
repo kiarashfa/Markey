@@ -25,6 +25,26 @@ const fix = process.argv.includes('--fix');
 /** Real pixel dimensions from the file header — JPEG SOF markers or PNG IHDR. */
 function measure(file) {
   const data = readFileSync(file);
+
+  // WebP first, because it is now the format `download` writes. Dimensions come
+  // from the RIFF header rather than from anything the caller asked for — the
+  // same discipline as the JPEG path below, and for the same Phase-10 reason.
+  if (data.length > 30 && data.toString('ascii', 0, 4) === 'RIFF' && data.toString('ascii', 8, 12) === 'WEBP') {
+    const chunk = data.toString('ascii', 12, 16);
+    if (chunk === 'VP8 ') {
+      return { width: data.readUInt16LE(26) & 0x3fff, height: data.readUInt16LE(28) & 0x3fff };
+    }
+    if (chunk === 'VP8L') {
+      const bits = data.readUInt32LE(21);
+      return { width: (bits & 0x3fff) + 1, height: ((bits >> 14) & 0x3fff) + 1 };
+    }
+    if (chunk === 'VP8X') {
+      const read24 = (o) => data[o] | (data[o + 1] << 8) | (data[o + 2] << 16);
+      return { width: read24(24) + 1, height: read24(27) + 1 };
+    }
+    return null; // an unknown WebP chunk is a gap, never a guess
+  }
+
   if (data[0] === 0x89 && data[1] === 0x50) {
     return { width: data.readUInt32BE(16), height: data.readUInt32BE(20) };
   }

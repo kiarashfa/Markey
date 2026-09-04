@@ -305,10 +305,10 @@
     }
   ],
   "hero": {
-    "src": "/images/cars/citroen-2cv-1948/hero-front-three-quarter.jpg",
+    "src": "/images/cars/citroen-2cv-1948/hero-front-three-quarter.webp",
     "alt": "Grey Citroën 2CV photographed from the front three-quarter angle, showing the corrugated bonnet, round headlamps and rolled canvas roof",
-    "width": 1920,
-    "height": 1358,
+    "width": 1600,
+    "height": 1132,
     "caption": "Corrugated steel, a canvas roof and headlamps on a bar: every visible decision follows from the cost target.",
     "credit": {
       "author": "Alexander Migl",

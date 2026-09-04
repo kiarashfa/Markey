@@ -1,0 +1,213 @@
+{
+  "id": "mercedes-benz-w463-1",
+  "name": "Mercedes-Benz G-Class (W463, first generation)",
+  "fullName": "Mercedes-Benz G-Class (W463, first generation), 1990-2018",
+  "kind": "generation",
+  "parent": "mercedes-benz-g-class",
+  "brandRef": "mercedes-benz",
+  "generationCode": "W463",
+  "productionYears": {
+    "start": 1990,
+    "end": 2018
+  },
+  "bodyStyles": ["suv", "convertible"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["4wd"],
+  "segment": "suv-mid",
+  "positioning": "luxury",
+  "designer": "Bruno Sacco",
+  "assembly": ["Magna Steyr, Graz, Austria"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4661,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-g-class",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#W463,_first_generation_(1990%E2%80%932018)",
+      "sourceNote": "Infobox publishes only in inches, as a range across the model's 28-year run: 183.5 in (pre-2003), 185.6 in (2004-09 LWB), 184.5 in (2010-18). Stored as the lowest, converted at 25.4 mm/in (183.5 in = 4660.9 mm, rounded to 4661)."
+    },
+    "width": {
+      "value": 1760,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-g-class",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#W463,_first_generation_(1990%E2%80%932018)",
+      "sourceNote": "Infobox range in inches, 69.3-73.4 in across body and AMG variants over the run. Stored as the lowest, converted at 25.4 mm/in (69.3 in = 1760.2 mm)."
+    },
+    "height": {
+      "value": 1836,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-g-class",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#W463,_first_generation_(1990%E2%80%932018)",
+      "sourceNote": "Infobox range in inches, 72.3-77.8 in across the run. Stored as the lowest, converted at 25.4 mm/in (72.3 in = 1836.4 mm)."
+    },
+    "wheelbase": {
+      "value": 2400,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-g-class",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#W463,_first_generation_(1990%E2%80%932018)",
+      "sourceNote": "2-door short-wheelbase figure; the 4-door long-wheelbase body sits on a 2850 mm wheelbase."
+    }
+  },
+  "trims": [
+    {
+      "id": "g500",
+      "name": "G 500",
+      "productionYears": {
+        "start": 1998,
+        "end": 2008
+      },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "M 113.965 E 50",
+        "configuration": "V8",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4966,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-g-class",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#Technical_data"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 218,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#Technical_data",
+        "sourceNote": "Published directly in kW, at 5,500 rpm, in the generation's engine data table (218 kW = 296 PS)."
+      },
+      "torque": {
+        "value": 456,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#Technical_data",
+        "sourceNote": "At 2,800-4,000 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 9.7,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#Technical_data",
+        "sourceNote": "Published directly as a 9.7-10.2 s range across markets/transmissions; the lowest figure is stored here."
+      },
+      "topSpeed": {
+        "value": 190,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#Technical_data"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "g55-amg-kompressor",
+      "name": "G 55 AMG Kompressor",
+      "productionYears": {
+        "start": 2004,
+        "end": 2006
+      },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "M 113 E 55 ML",
+        "configuration": "V8, supercharged",
+        "cylinders": 8,
+        "displacement": {
+          "value": 5439,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-g-class",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#Technical_data"
+        },
+        "aspiration": "supercharged"
+      },
+      "power": {
+        "value": 350,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#Technical_data",
+        "sourceNote": "Published directly in kW, at 6,100 rpm, for the 2004-2006 build of the supercharged engine (350 kW = 476 PS). Later 2006-2012 revisions of the same engine reached 368 kW then 373 kW; this trim records the original 2004 launch tune."
+      },
+      "torque": {
+        "value": 700,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#Technical_data",
+        "sourceNote": "At 2,650-4,500 rpm."
+      },
+      "mass": {
+        "value": 2580,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#W463,_first_generation_(1990%E2%80%932018)",
+        "sourceNote": "The only kerb weight the generation infobox gives is for the G 55 AMG specifically."
+      },
+      "zeroToHundredKph": {
+        "value": 5.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#Technical_data"
+      },
+      "topSpeed": {
+        "value": 210,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-g-class",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#Technical_data",
+        "sourceNote": "Electronically limited."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mercedes-benz-w463-1/hero-front-three-quarter.webp",
+    "alt": "Black first-generation Mercedes-Benz G-Class SUV photographed from the front three-quarter angle on a wet street, with a boxy body and a large chrome grille bearing a central star",
+    "width": 1200,
+    "height": 866,
+    "caption": "A G 500: the first-generation W463 moved the G from military utility vehicle to a luxury SUV sold alongside the S-Class.",
+    "credit": {
+      "author": "IFCAR",
+      "title": "File:Mercedes-Benz G500.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_G500.jpg",
+      "licenseType": "public-domain",
+      "licenseNote": "Released into the public domain by the photographer."
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/mercedes-benz-w463-1/gallery-1.webp",
+      "alt": "Green Mercedes-Benz G-Class convertible photographed from the rear three-quarter angle, with a rollover bar, exposed spare wheel and open cargo area",
+      "width": 1200,
+      "height": 855,
+      "caption": "The convertible body style, one of the widest ranges of derivations of any post-war Mercedes-Benz to share a single chassis.",
+      "credit": {
+        "author": "Mr.choppers",
+        "title": "File:MB 230G Cabrio rear.JPG",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MB_230G_Cabrio_rear.JPG",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-g-class"]
+}

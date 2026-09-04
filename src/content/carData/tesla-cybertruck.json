@@ -1,0 +1,18 @@
+{
+  "id": "tesla-cybertruck",
+  "name": "Tesla Cybertruck",
+  "fullName": "Tesla Cybertruck, 2023-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "tesla",
+  "productionYears": {
+    "start": 2023,
+    "end": null
+  },
+  "segment": "pickup",
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-tesla-cybertruck"]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "porsche",
+  "name": "Porsche",
+  "legalName": "Dr. Ing. h.c. F. Porsche AG",
+  "countryOfOrigin": "Germany",
+  "founded": 1931,
+  "parentCompany": "volkswagen",
+  "website": "https://www.porsche.com/",
+  "logo": {
+    "src": "/images/brands/porsche.svg",
+    "alt": "The Porsche crest outline: a shield bearing the rearing horse of Stuttgart, mounted between antler motifs",
+    "credit": {
+      "author": "Majo statt Senf",
+      "title": "File:Porsche Warenzeichen.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_Warenzeichen.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#000000",
+  "accentColorNote": "Sampled from the stroke colour ('black') used in the badge's own SVG source, which is a plain black outline rather than the full-colour crest. No public brand-colour specification was consulted; this is the one self-consistent value the artwork itself provides.",
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-porsche-ag", "commons-file-porsche-warenzeichen-svg"]
+}

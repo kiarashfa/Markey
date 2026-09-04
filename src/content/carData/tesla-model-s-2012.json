@@ -1,0 +1,249 @@
+{
+  "id": "tesla-model-s-2012",
+  "name": "Tesla Model S",
+  "fullName": "Tesla Model S, 2012-2026",
+  "kind": "generation",
+  "parent": "tesla-model-s",
+  "brandRef": "tesla",
+  "productionYears": {
+    "start": 2012,
+    "end": 2026
+  },
+  "bodyStyles": ["liftback"],
+  "powertrains": ["bev"],
+  "drivetrains": ["rwd", "awd"],
+  "segment": "f-segment",
+  "positioning": "luxury",
+  "designer": "Franz von Holzhausen",
+  "assembly": [
+    "Tesla, Fremont, California, United States",
+    "Tesla, Tilburg, Netherlands (final assembly, 2013-2021)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4980,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-s",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S",
+      "sourceNote": "Infobox publishes a range across the whole run, 4980-5021 mm. Stored as the lowest figure."
+    },
+    "width": {
+      "value": 1963,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-s",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S",
+      "sourceNote": "Published as 77.3 in excluding mirrors, converted at 25.4 mm/in."
+    },
+    "height": {
+      "value": 1435,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-s",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S",
+      "sourceNote": "Published as 56.5 in, converted at 25.4 mm/in."
+    },
+    "wheelbase": {
+      "value": 2960,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-s",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S"
+    },
+    "kerbWeight": {
+      "value": 1961,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-s",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S",
+      "sourceNote": "Infobox publishes a range across the whole run, 4323-4960 lb, converted at 0.45359237 kg/lb (1961-2250 kg). Stored as the lowest figure."
+    }
+  },
+  "trims": [
+    {
+      "id": "85",
+      "name": "Model S 85",
+      "productionYears": {
+        "start": 2012,
+        "end": 2014
+      },
+      "drivetrain": "rwd",
+      "powertrain": "bev",
+      "gears": 1,
+      "transmission": "Single-speed reduction gear",
+      "engine": {
+        "configuration": "single motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 270,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S",
+        "sourceNote": "Published as 362 hp for the base Signature model's AC induction motor, converted at 1 hp = 0.745699872 kW (269.9 kW, rounded here to 270)."
+      },
+      "torque": {
+        "value": 439,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S",
+        "sourceNote": "Published as 324 lb-ft, converted at 1 lb-ft = 1.3558179483314004 N-m (439.3 N-m, rounded here to 439)."
+      },
+      "batteryCapacity": {
+        "value": 85,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "p90d",
+      "name": "P90D",
+      "productionYears": {
+        "start": 2015,
+        "end": 2016
+      },
+      "drivetrain": "awd",
+      "powertrain": "bev",
+      "gears": 1,
+      "transmission": "Single-speed reduction gear",
+      "engine": {
+        "configuration": "dual motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 568,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S",
+        "sourceNote": "Published as a combined output of 762 hp for the two motors together, converted at 1 hp = 0.745699872 kW (568.2 kW, rounded here to 568). This is the article's own combined figure, not a sum performed here."
+      },
+      "torque": {
+        "value": 967,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S",
+        "sourceNote": "Published as a combined 713 lb-ft, converted at 1 lb-ft = 1.3558179483314004 N-m (966.7 N-m, rounded here to 967)."
+      },
+      "batteryCapacity": {
+        "value": 90,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S"
+      },
+      "electricRange": {
+        "value": 431,
+        "unit": "km",
+        "status": "estimated",
+        "sourceNote": "Published as 268 mi, converted at 1.609344 km/mi (431.3 km). The article does not name the test cycle; Tesla's US-market spec sheets of this era are standardly EPA-rated, which is the basis for treating this as approximately the EPA figure rather than a WLTP one, but that reading is not stated outright in the source."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "plaid",
+      "name": "Plaid",
+      "productionYears": {
+        "start": 2021,
+        "end": 2026
+      },
+      "drivetrain": "awd",
+      "powertrain": "bev",
+      "gears": 1,
+      "transmission": "Single-speed reduction gear",
+      "engine": {
+        "configuration": "tri-motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 761,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S",
+        "sourceNote": "Published as a combined output of 1020 hp for the three motors together, converted at 1 hp = 0.745699872 kW (760.6 kW, rounded here to 761). The article's own combined figure, not a sum performed here."
+      },
+      "torque": {
+        "value": 1050,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S",
+        "sourceNote": "Published directly in N-m as the combined figure for all three motors."
+      },
+      "batteryCapacity": {
+        "value": 95,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S"
+      },
+      "topSpeed": {
+        "value": 322,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S",
+        "sourceNote": "Published as 200 mph, converted at 1.609344 km/mi (321.9 km/h, rounded here to 322). The article's 0-60 mph time of 1.98 s is not recorded here — it is not the same quantity as a 0-100 km/h time and no 0-100 km/h figure is published."
+      },
+      "dragCoefficient": {
+        "value": 0.208,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S",
+        "sourceNote": "Claimed at the Plaid's 2021 debut as the lowest of any production car at the time. Earlier, pre-2021 Model S cars claimed 0.24."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/tesla-model-s/hero-front-three-quarter.webp",
+    "alt": "White Tesla Model S photographed from the front three-quarter angle at an outdoor event, with a smooth closed front fascia and no visible grille",
+    "width": 1200,
+    "height": 739,
+    "caption": "A post-2021 'Palladium' refresh Model S: the closed nose is a giveaway that there is no engine behind it to cool.",
+    "credit": {
+      "author": "Alexander-93",
+      "title": "File:Tesla Model S (2023) Motorworld Munich 1X7A0025.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_S_(2023)_Motorworld_Munich_1X7A0025.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/tesla-model-s/gallery-1.webp",
+      "alt": "Dark blue Tesla Model S photographed from the rear three-quarter angle on a paved street, showing the liftback's frameless glass roof and full-width tail light bar",
+      "width": 1200,
+      "height": 649,
+      "caption": "The liftback tailgate, one of the Model S's less obvious identity marks — it reads as a three-box saloon but opens like a hatchback.",
+      "credit": {
+        "author": "Alexander-93",
+        "title": "File:Tesla Model S Plaid Autofrühling Ulm IMG 9321 (cropped).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_S_Plaid_Autofr%C3%BChling_Ulm_IMG_9321_(cropped).jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-tesla-model-s"]
+}

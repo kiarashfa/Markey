@@ -156,7 +156,7 @@
         }
       },
       "power": {
-        "value": 41.0,
+        "value": 41,
         "unit": "kW",
         "status": "verified",
         "source": "wikipedia-mini",
@@ -309,10 +309,10 @@
     }
   ],
   "hero": {
-    "src": "/images/cars/mini/hero.jpg",
+    "src": "/images/cars/mini/hero.webp",
     "alt": "Cream-coloured 1959 Morris Mini-Minor photographed from the front three-quarter angle, showing the round headlamps, full-width front grille and registration plate 621 AOK",
-    "width": 1920,
-    "height": 1201,
+    "width": 1600,
+    "height": 1001,
     "caption": "621 AOK — the first Mini built, on display today at the Heritage Motor Centre. Round headlamps, sliding windows and external door hinges all mark it as a pre-1969 Mark I.",
     "credit": {
       "author": "DeFacto",
@@ -325,10 +325,10 @@
   },
   "gallery": [
     {
-      "src": "/images/cars/mini/cooper-s.jpg",
+      "src": "/images/cars/mini/cooper-s.webp",
       "alt": "Red 1964 Mini Cooper S rally car with Monte Carlo Rally number 52 on the bonnet, four spotlights above the grille and the registration AJB 44B",
-      "width": 1920,
-      "height": 1380,
+      "width": 1200,
+      "height": 862,
       "caption": "A 1964 Cooper S in rally trim — the car that won the Monte Carlo Rally outright three times in the 1960s.",
       "credit": {
         "author": "DeFacto",
@@ -340,10 +340,10 @@
       }
     },
     {
-      "src": "/images/cars/mini/cutaway.jpg",
+      "src": "/images/cars/mini/cutaway.webp",
       "alt": "Cutaway display Mini with transparent body panels, showing the transversely mounted engine over the front wheels, the four-seat cabin and the exposed chassis",
-      "width": 1920,
-      "height": 1227,
+      "width": 1200,
+      "height": 767,
       "caption": "The whole idea in one photograph: engine and gearbox packed sideways over the driven wheels, leaving the rest of the floorpan for people.",
       "credit": {
         "author": "geni",
@@ -355,10 +355,10 @@
       }
     },
     {
-      "src": "/images/cars/mini/clubman.jpg",
+      "src": "/images/cars/mini/clubman.webp",
       "alt": "Yellow Mini Clubman photographed from the front three-quarter angle, showing the squared-off nose and rectangular grille that distinguish it from the round-nosed original",
-      "width": 1920,
-      "height": 1340,
+      "width": 1200,
+      "height": 838,
       "caption": "The 1969 Clubman's squared-off nose, styled by Roy Haynes, ran alongside the unchanged round-front original for the rest of the car's life rather than replacing it.",
       "credit": {
         "author": "DeFacto",

@@ -1,0 +1,194 @@
+{
+  "id": "porsche-911-classic",
+  "name": "Porsche 911 (classic)",
+  "fullName": "Porsche 911 (classic), 1964-1989",
+  "kind": "generation",
+  "parent": "porsche-911",
+  "brandRef": "porsche",
+  "productionYears": {
+    "start": 1964,
+    "end": 1989
+  },
+  "bodyStyles": ["coupe", "targa", "convertible"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "premium",
+  "designer": "Ferdinand Alexander Porsche, Erwin Komenda",
+  "assembly": ["Porsche, Stuttgart-Zuffenhausen, West Germany"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4290,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-911-classic",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+    },
+    "width": {
+      "value": 1700,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-911-classic",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(classic)",
+      "sourceNote": "Infobox publishes a range across the run, 1700-1780 mm. Stored as the lowest value; later wide-body Turbo-look cars run to 1780 mm."
+    },
+    "height": {
+      "value": 1300,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-911-classic",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(classic)",
+      "sourceNote": "Infobox publishes a range, 1300-1310 mm. Stored as the lowest value."
+    },
+    "wheelbase": {
+      "value": 2211,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-911-classic",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(classic)",
+      "sourceNote": "Infobox publishes a range, 2211-2268 mm. The wheelbase itself changed mid-production: the B-series of MY1969 moved the rear wheels 57 mm aft to remedy oversteer, taking it from 2211 mm to 2268 mm without lengthening the body. Stored here as the earlier, lower figure."
+    }
+  },
+  "trims": [
+    {
+      "id": "911-2-0",
+      "name": "911 2.0",
+      "productionYears": {
+        "start": 1964,
+        "end": 1968
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "901/01",
+        "configuration": "flat-6",
+        "cylinders": 6,
+        "displacement": {
+          "value": 1991,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-911-classic",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 96,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-911-classic",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(classic)",
+        "sourceNote": "Published as 130 PS, converted at 1 PS = 0.73549875 kW (95.6 kW, rounded here to 96)."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "930-turbo-3-3",
+      "name": "930 Turbo 3.3",
+      "productionYears": {
+        "start": 1978,
+        "end": 1989
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "930/60",
+        "configuration": "flat-6, turbocharged, air-cooled",
+        "cylinders": 6,
+        "displacement": {
+          "value": 3299,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-911-classic",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(classic)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 221,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-911-classic",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(classic)",
+        "sourceNote": "Published as 300 PS DIN at 5,500 rpm, converted at 1 PS = 0.73549875 kW (220.6 kW, rounded here to 221). Sold in North America as the Porsche 930."
+      },
+      "torque": {
+        "value": 412,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-911-930",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(930)",
+        "sourceNote": "DIN figure at 4,000 rpm, published directly in N⋅m."
+      },
+      "mass": {
+        "value": 1210,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-porsche-911-930",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(930)",
+        "sourceNote": "The 930 infobox publishes a weight range of 2,668-3,040 lb across the model's markets and years, converted at 0.45359237 kg/lb. Stored as the lowest figure, 1,210 kg; the heaviest recorded cars reach 1,379 kg."
+      },
+      "zeroToHundredKph": {
+        "value": 5.4,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-porsche-911-930",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(930)",
+        "sourceNote": "Auto, Motor und Sport 9/1978 independent test of the 1978 European 300 PS car, 0-100 km/h directly, not derived from a 0-60 mph figure."
+      },
+      "topSpeed": {
+        "value": 261,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-porsche-911-930",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(930)",
+        "sourceNote": "260.9 km/h, Auto, Motor und Sport 9/1978 test of the 1978 European car."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/porsche-911-classic/hero-front-three-quarter.webp",
+    "alt": "Dark green early Porsche 911 photographed from the front three-quarter angle on grass, with round headlamps and chrome bumpers",
+    "width": 1200,
+    "height": 720,
+    "caption": "A circa-1969 911E: the original shape, before impact bumpers and wide arches changed it.",
+    "credit": {
+      "author": "Charles01",
+      "title": "File:Porsche 911E ca 1969.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_911E_ca_1969.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/porsche-911-classic/gallery-1.webp",
+      "alt": "Rear three-quarter view of a white 1980s Porsche 911 SC Targa, showing the removable roof panel and black targa bar",
+      "width": 1200,
+      "height": 684,
+      "caption": "The Targa: a removable roof panel and a fixed rear roll hoop, introduced in 1966 and sold alongside the coupé for the rest of this generation's life.",
+      "credit": {
+        "author": "Mr.choppers",
+        "title": "File:Eighties 911 SC Targa rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eighties_911_SC_Targa_rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-porsche-911-classic", "wikipedia-porsche-911-930"]
+}

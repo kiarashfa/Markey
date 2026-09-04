@@ -1,0 +1,140 @@
+{
+  "id": "porsche-911-992",
+  "name": "Porsche 911 (992)",
+  "fullName": "Porsche 911 (992), 2019-present",
+  "kind": "generation",
+  "parent": "porsche-911",
+  "brandRef": "porsche",
+  "generationCode": "992",
+  "productionYears": {
+    "start": 2019,
+    "end": null
+  },
+  "bodyStyles": ["coupe", "targa", "convertible"],
+  "powertrains": ["petrol", "mild-hybrid"],
+  "drivetrains": ["rwd", "awd"],
+  "segment": "s-segment",
+  "positioning": "premium",
+  "designer": "Ben Baum under Michael Mauer",
+  "assembly": ["Porsche, Stuttgart-Zuffenhausen, Germany"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4519,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-911-992",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(992)",
+      "sourceNote": "Infobox publishes a range across the line, 4519-4535 mm. Stored as the lowest figure; wide-body Carrera S/4S and GT models run to the longer figure."
+    },
+    "width": {
+      "value": 1852,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-911-992",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(992)",
+      "sourceNote": "Infobox publishes a range, 1852-1900 mm (narrow-body Carrera to wide-body Turbo/GT3). Stored as the lowest figure."
+    },
+    "height": {
+      "value": 1289,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-911-992",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(992)",
+      "sourceNote": "Infobox publishes a range, 1289-1303 mm. Stored as the lowest figure."
+    },
+    "wheelbase": {
+      "value": 2450,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-911-992",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+    },
+    "kerbWeight": {
+      "value": 1380,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-porsche-911-992",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(992)",
+      "sourceNote": "Infobox publishes a range across the whole line, 1380-1710 kg (lightest GT3 to heaviest all-wheel-drive Turbo S). Stored as the lowest figure."
+    }
+  },
+  "trims": [
+    {
+      "id": "carrera-s",
+      "name": "Carrera S",
+      "productionYears": {
+        "start": 2019,
+        "end": 2024
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "8-speed PDK dual-clutch automatic",
+      "gears": 8,
+      "engine": {
+        "code": "MDB.CB",
+        "configuration": "flat-6, twin-turbocharged",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2981,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The 992.1 Carrera S uses the same 3.0-litre twin-turbo unit given for the 992.2 base Carrera (2,981 cc) in the article body; the article does not restate the exact displacement figure specifically for the S variant, only \"3.0-litre\"."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 348,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-911-992",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(992)",
+        "sourceNote": "Published as 473 hp/PS, converted at 1 PS = 0.73549875 kW (347.9 kW, rounded here to 348)."
+      },
+      "torque": {
+        "value": 530,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-911-992",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+      },
+      "zeroToHundredKph": {
+        "value": 3.3,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-porsche-911-992",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(992)",
+        "sourceNote": "0-100 km/h directly published, with the optional Sport Chrono package; 3.5 s without it."
+      },
+      "topSpeed": {
+        "value": 308,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-porsche-911-992",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(992)"
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/porsche-911-992/hero-front-three-quarter.webp",
+    "alt": "White Porsche 911 992-generation Carrera GTS coupe photographed from the front three-quarter angle outside a dealership, with black wheels and a GTS badge on the front wing",
+    "width": 1200,
+    "height": 623,
+    "caption": "A 992-generation Carrera GTS. The silhouette is still legibly a 911, seven generations and six decades after the original.",
+    "credit": {
+      "author": "MrWalkr",
+      "title": "File:Porsche 911 (992) Carrera GTS.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_911_(992)_Carrera_GTS.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-porsche-911-992"]
+}

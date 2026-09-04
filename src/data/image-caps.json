@@ -1,0 +1,10 @@
+{
+  "note": "Image budget. Per-file caps alone do not stop a thousand compliant files overrunning a 1 GB Pages site, so check:assets also enforces a running total and prints usage on every build. Hero and gallery are told apart by filename: hero.webp is the hero, every other file is gallery. Ported from the sibling ARMAG project, where 239 files average 93 kB under these numbers.",
+  "format": "webp",
+  "heroMaxBytes": 204800,
+  "heroMaxPixels": 1600,
+  "galleryMaxBytes": 122880,
+  "galleryMaxPixels": 1200,
+  "totalWarnBytes": 629145600,
+  "totalFailBytes": 786432000
+}

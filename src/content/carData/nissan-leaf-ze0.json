@@ -1,0 +1,146 @@
+{
+  "id": "nissan-leaf-ze0",
+  "name": "Nissan Leaf (Mk1)",
+  "fullName": "Nissan Leaf (Mk1, ZE0), 2010-2017",
+  "kind": "generation",
+  "parent": "nissan-leaf",
+  "brandRef": "nissan",
+  "generationCode": "ZE0",
+  "productionYears": {
+    "start": 2010,
+    "end": 2017
+  },
+  "bodyStyles": ["hatchback"],
+  "powertrains": ["bev"],
+  "drivetrains": ["fwd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Kazuki Yamazaki, Masahide Fujiwara",
+  "assembly": [
+    "Yokosuka, Kanagawa, Japan (Oppama Plant)",
+    "Smyrna, Tennessee, United States",
+    "Sunderland, United Kingdom (NMUK)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4445,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-leaf-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf_(first_generation)"
+    },
+    "width": {
+      "value": 1770,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-leaf-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf_(first_generation)"
+    },
+    "height": {
+      "value": 1550,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-leaf-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf_(first_generation)"
+    },
+    "wheelbase": {
+      "value": 2700,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-leaf-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf_(first_generation)"
+    },
+    "kerbWeight": {
+      "value": 1500,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-nissan-leaf-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf_(first_generation)",
+      "sourceNote": "Published as a range of 3,307-3,354 lb (1,500-1,521 kg) across trims; lowest value in the range recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "24kwh",
+      "name": "24 kWh",
+      "productionYears": { "start": 2010, "end": 2017 },
+      "drivetrain": "fwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed fixed",
+      "engine": {
+        "code": "EM61/EM57",
+        "configuration": "single motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 80,
+        "unit": "kW",
+        "status": "verified",
+        "source": "epa-2011-nissan-leaf",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/30979",
+        "sourceNote": "Matches the 80 kW figure given by both English Wikipedia articles."
+      },
+      "batteryCapacity": {
+        "value": 24,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-nissan-leaf-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf_(first_generation)",
+        "sourceNote": "Nominal capacity; a 30 kWh pack became available for the final (2016) model year."
+      },
+      "electricRange": {
+        "value": 117,
+        "unit": "km",
+        "status": "verified",
+        "source": "epa-2011-nissan-leaf",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/30979",
+        "sourceNote": "EPA-rated, 73 mi, for the 2011 model year. Substantially lower than Nissan's own quoted 160 km (NEDC); the US FTC separately disputed the EPA's methodology at the time, arguing for a range of 96-110 mi. This entry records the EPA figure as the independently regulated one."
+      },
+      "electricConsumption": {
+        "value": 21.13,
+        "unit": "kWh/100km",
+        "status": "verified",
+        "source": "epa-2011-nissan-leaf",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/30979",
+        "sourceNote": "EPA five-cycle rating, measured at the wall, 34 kWh/100mi."
+      },
+      "dragCoefficient": {
+        "value": 0.29,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-nissan-leaf-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Leaf_(first_generation)",
+        "sourceNote": "Nissan's own figure for the 2011 model year, improved to 0.28 from the 2013 model year. Car and Driver's own wind-tunnel test of a 2012 car measured a higher 0.32."
+      },
+      "bootVolume": {
+        "value": 651,
+        "unit": "L",
+        "status": "verified",
+        "source": "epa-2011-nissan-leaf",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/30979",
+        "sourceNote": "EPA hatchback luggage volume, 23 cu ft, converted at 28.3168 L/cu ft. EPA measures a hatchback to the roof, not comparable with a European VDA seats-up figure."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/nissan-leaf-ze0/hero.webp",
+    "alt": "White first-generation Nissan Leaf hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 936,
+    "caption": "The car that made the case for a mass-market, series-produced battery-electric family hatchback rather than a low-volume compliance car.",
+    "credit": {
+      "author": "IFCAR",
+      "title": "File:2011 Nissan Leaf SL -- 10-28-2011.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Nissan_Leaf_SL_--_10-28-2011.jpg",
+      "licenseType": "public-domain"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-nissan-leaf-first-generation", "epa-2011-nissan-leaf"]
+}

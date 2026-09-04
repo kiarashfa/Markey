@@ -1,0 +1,17 @@
+{
+  "id": "audi-r8",
+  "name": "Audi R8",
+  "fullName": "Audi R8, 2006-2024",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "audi",
+  "productionYears": {
+    "start": 2006,
+    "end": 2024
+  },
+  "positioning": "luxury",
+  "trims": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-audi-r8"]
+}

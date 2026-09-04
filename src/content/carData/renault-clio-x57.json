@@ -1,0 +1,234 @@
+{
+  "id": "renault-clio-x57",
+  "name": "Renault Clio (Mk1)",
+  "fullName": "Renault Clio (Mk1, X57), 1990-1998",
+  "kind": "generation",
+  "parent": "renault-clio",
+  "brandRef": "renault",
+  "generationCode": "X57",
+  "productionYears": {
+    "start": 1990,
+    "end": 1998
+  },
+  "bodyStyles": ["hatchback"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["fwd"],
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "assembly": [
+    "Flins-sur-Seine, Yvelines, France (Flins Renault Factory)",
+    "Córdoba, Argentina (Renault Argentina)",
+    "Novo Mesto, Slovenia (Revoz)",
+    "Valladolid, Spain (Renault Valladolid Factory)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3709,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+    },
+    "width": {
+      "value": 1616,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+      "sourceNote": "1990-1996 figure; widened to 1,625 mm for 1996-1998 (Phase 3) cars."
+    },
+    "height": {
+      "value": 1360,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+    },
+    "wheelbase": {
+      "value": 2472,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+    },
+    "kerbWeight": {
+      "value": 930,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+      "sourceNote": "Infobox figure for the range; hot-hatch and Williams variants are heavier but no per-trim figure is published."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-4-rn",
+      "name": "1.4 RN",
+      "productionYears": { "start": 1990, "end": 1998 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4/5-speed manual",
+      "engine": {
+        "code": "E7J",
+        "configuration": "inline-4, SOHC 8v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1390,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-clio",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 55.16,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Published as 75 PS at 5,750 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 107,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "At 3,500 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "16v",
+      "name": "16S / 16V",
+      "productionYears": { "start": 1991, "end": 1995 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "F7P",
+        "configuration": "inline-4, DOHC 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1764,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-clio",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 100.76,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Catalyzed EU market figure, published as 137 PS at 6,500 rpm, converted at 1 PS = 0.73549875 kW. A non-catalyzed version sold in some markets made 140 PS; only the catalyzed figure is recorded here."
+      },
+      "torque": {
+        "value": 158,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "At 4,250 rpm."
+      },
+      "topSpeed": {
+        "value": 209,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "williams",
+      "name": "Clio Williams",
+      "productionYears": { "start": 1993, "end": 1998 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "F7R",
+        "configuration": "inline-4, DOHC 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-clio",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 110.32,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Published as 150 PS at 6,100 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 175,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "At 4,500 rpm."
+      },
+      "topSpeed": {
+        "value": 215,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-clio-x57/hero.webp",
+    "alt": "Dark blue first-generation Renault Clio parked kerbside, photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1039,
+    "caption": "A late Phase 3 Clio 1.4, the everyday version the Williams and 16V were built alongside.",
+    "credit": {
+      "author": "Rutger van der Maar",
+      "title": "File:1993 Renault Clio RN 1.4 (cropped).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1993_Renault_Clio_RN_1.4_(cropped).jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/renault-clio-x57/gallery-1.webp",
+      "alt": "Dark blue Renault Clio Williams with gold alloy wheels, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 900,
+      "caption": "The Clio Williams: 3,800 cars were planned for homologation, and demand kept Renault building them for three more series.",
+      "credit": {
+        "author": "MARC912374",
+        "title": "File:Cliowilliamsfront.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cliowilliamsfront.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-renault-clio"]
+}

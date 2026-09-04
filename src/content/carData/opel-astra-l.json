@@ -1,0 +1,170 @@
+{
+  "id": "opel-astra-l",
+  "name": "Opel Astra L",
+  "fullName": "Opel Astra L, 2021-present",
+  "kind": "generation",
+  "parent": "opel-astra",
+  "brandRef": "opel",
+  "generationCode": "C02",
+  "productionYears": {
+    "start": 2021,
+    "end": null
+  },
+  "bodyStyles": ["hatchback", "estate"],
+  "powertrains": ["petrol", "phev"],
+  "drivetrains": ["fwd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Niels Loeb",
+  "assembly": ["Rüsselsheim, Germany"],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4374,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-opel-astra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+      "sourceNote": "Hatchback figure; the Sports Tourer estate is 4,640 mm."
+    },
+    "width": {
+      "value": 1860,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-opel-astra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+    },
+    "height": {
+      "value": 1441,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-opel-astra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+    },
+    "wheelbase": {
+      "value": 2675,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-opel-astra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+      "sourceNote": "Hatchback figure; the Sports Tourer estate has a longer 2,730 mm wheelbase."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-2-turbo-130",
+      "name": "1.2 Turbo 130",
+      "productionYears": { "start": 2022, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "8-speed automatic",
+      "engine": {
+        "code": "EB2DTS",
+        "configuration": "inline-3, turbocharged",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1199,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-opel-astra",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 95.6,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+        "sourceNote": "Published as 130 PS at 5,500 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 230,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+        "sourceNote": "At 1,750 rpm."
+      },
+      "co2": {
+        "value": 123,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+        "sourceNote": "Published as a range of 123-126 g/km depending on transmission; lowest value in the range recorded here."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "phev-gse",
+      "name": "1.6 Turbo PHEV GSe",
+      "productionYears": { "start": 2022, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "phev",
+      "transmission": "8-speed automatic",
+      "engine": {
+        "code": "EP6FDT",
+        "configuration": "inline-4, turbocharged, plug-in hybrid",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-opel-astra",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 165.49,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+        "sourceNote": "Published whole-drivetrain (system) output, 225 PS, converted at 1 PS = 0.73549875 kW. GSe trim, shared with the Peugeot 508 and 3008."
+      },
+      "torque": {
+        "value": 360,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+        "sourceNote": "Published whole-drivetrain (system) figure, shared with the lower-powered 180 PS version of the same engine."
+      },
+      "batteryCapacity": {
+        "value": 12.3,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-opel-astra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Opel_Astra",
+        "sourceNote": "2022-2025 production; the plug-in hybrid pack grew to 17.2 kWh from 2025."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/opel-astra-l/hero.webp",
+    "alt": "Silver current-generation Opel Astra hatchback photographed from the front three-quarter angle, showing its 'Opel Vizor' front panel",
+    "width": 1600,
+    "height": 812,
+    "caption": "The Astra L: the first Astra engineered under Stellantis, built on PSA's EMP2 platform and shared with the Peugeot 308.",
+    "credit": {
+      "author": "© M 93",
+      "title": "File:Opel Astra 1.2 Turbo Ultimate (L) – f 13122024.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Opel_Astra_1.2_Turbo_Ultimate_(L)_%E2%80%93_f_13122024.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-opel-astra"]
+}

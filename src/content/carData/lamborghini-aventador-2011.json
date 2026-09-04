@@ -1,0 +1,288 @@
+{
+  "id": "lamborghini-aventador-2011",
+  "name": "Lamborghini Aventador",
+  "fullName": "Lamborghini Aventador, 2011-2022",
+  "kind": "generation",
+  "parent": "lamborghini-aventador",
+  "brandRef": "lamborghini",
+  "productionYears": {
+    "start": 2011,
+    "end": 2022
+  },
+  "bodyStyles": ["coupe", "targa"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["awd"],
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "designer": "Filippo Perini (original); Mitja Borkert (Aventador S)",
+  "assembly": ["Sant'Agata Bolognese, Italy"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4780,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-aventador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador"
+    },
+    "width": {
+      "value": 2030,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-aventador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+      "sourceNote": "Body width excluding mirrors; with mirrors the infobox gives 2,265 mm."
+    },
+    "height": {
+      "value": 1136,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-aventador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador"
+    },
+    "wheelbase": {
+      "value": 2700,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-aventador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador"
+    }
+  },
+  "trims": [
+    {
+      "id": "lp700-4",
+      "name": "LP 700-4",
+      "productionYears": { "start": 2011, "end": 2017 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed Graziano ISR automated manual",
+      "gears": 7,
+      "engine": {
+        "code": "L539",
+        "configuration": "V12, 60 degrees",
+        "cylinders": 12,
+        "displacement": {
+          "value": 6498,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-aventador",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 515,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+        "sourceNote": "Published directly in kW as 515 kW (700 PS / 691 bhp), at 8,250 rpm."
+      },
+      "torque": {
+        "value": 689,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+        "sourceNote": "At 5,500 rpm."
+      },
+      "mass": {
+        "value": 1575,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+        "sourceNote": "Coupe figure; the Roadster is heavier at 1,625 kg."
+      },
+      "topSpeed": {
+        "value": 350,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+        "sourceNote": "Official factory figure; Sport Auto magazine measured 354 km/h."
+      },
+      "zeroToHundredKph": {
+        "value": 2.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+        "sourceNote": "Published directly as a 0-100 km/h figure, not converted from a 0-60 mph figure."
+      },
+      "fuelEconomy": {
+        "value": 17.2,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+        "sourceNote": "Manufacturer-published combined figure."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "svj",
+      "name": "SVJ LP 770-4",
+      "productionYears": { "start": 2018, "end": 2021 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed Graziano ISR automated manual",
+      "gears": 7,
+      "engine": {
+        "code": "L539",
+        "configuration": "V12, 60 degrees",
+        "cylinders": 12,
+        "displacement": {
+          "value": 6498,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-aventador",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 566,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+        "sourceNote": "Published directly in kW as 566 kW (770 PS / 759 bhp), at 8,500 rpm."
+      },
+      "torque": {
+        "value": 720,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+        "sourceNote": "Published as 531 lb-ft at 6,750 rpm, converted at 1.355818 Nm/lb-ft."
+      },
+      "mass": {
+        "value": 1525,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+        "sourceNote": "Published as a range of 1,525-1,575 kg across Coupe/Roadster; lowest value in the range recorded here."
+      },
+      "topSpeed": {
+        "value": 350,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador"
+      },
+      "zeroToHundredKph": {
+        "value": 2.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+        "sourceNote": "Published directly as a 0-100 km/h figure. A camouflaged SVJ prototype set a 6:44.97 Nurburgring Nordschleife production-car lap record in July 2018."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "ultimae",
+      "name": "LP 780-4 Ultimae",
+      "productionYears": { "start": 2021, "end": 2022 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed Graziano ISR automated manual",
+      "gears": 7,
+      "engine": {
+        "code": "L539",
+        "configuration": "V12, 60 degrees",
+        "cylinders": 12,
+        "displacement": {
+          "value": 6498,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-aventador",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 573,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+        "sourceNote": "Published directly in kW as 573 kW (780 PS / 769 bhp)."
+      },
+      "torque": {
+        "value": 720,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+        "sourceNote": "Published as 'the same 531 lb-ft of torque as the SVJ', converted at 1.355818 Nm/lb-ft."
+      },
+      "mass": {
+        "value": 1550,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador"
+      },
+      "topSpeed": {
+        "value": 354,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador"
+      },
+      "zeroToHundredKph": {
+        "value": 2.84,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-aventador",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Aventador",
+        "sourceNote": "Published directly as a 0-100 km/h figure. The final Aventador built; production was briefly restarted after 15 Ultimae units were destroyed in the 2022 sinking of the car carrier Felicity Ace."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/lamborghini-aventador/hero.webp",
+    "alt": "Red Lamborghini Aventador LP 700-4 photographed from the front three-quarter angle, showing its angular wedge nose and scissor door",
+    "width": 1600,
+    "height": 842,
+    "caption": "The original LP 700-4: a carbon-fibre monocoque replacing the outgoing Murcielago's steel-and-aluminium space frame.",
+    "credit": {
+      "author": "MrWalkr",
+      "title": "File:2013 Lamborghini Aventador LP700-4 BS O24.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013_Lamborghini_Aventador_LP700-4_BS_O24.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/lamborghini-aventador/gallery-1.webp",
+      "alt": "Yellow Lamborghini Aventador Ultimae Roadster photographed from the rear three-quarter angle inside a dealer showroom",
+      "width": 1200,
+      "height": 711,
+      "caption": "The Ultimae, the last Aventador variant, sent the model out with the highest power figure of any non-hybrid version.",
+      "credit": {
+        "author": "Calreyn88",
+        "title": "File:2023 Lamborghini Aventador Ultimae 1.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Lamborghini_Aventador_Ultimae_1.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-lamborghini-aventador"]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "renault",
+  "name": "Renault",
+  "legalName": "Renault S.A.",
+  "countryOfOrigin": "France",
+  "founded": 1899,
+  "logo": {
+    "src": "/images/brands/renault.svg",
+    "alt": "The Renault diamond, a faceted lozenge outline in dark grey",
+    "caption": "Renault's diamond mark, in use in this outline form since a 2021 redesign.",
+    "credit": {
+      "author": "Renault",
+      "title": "File:Renault 2021.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_2021.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this car, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#231f20",
+  "accentColorNote": "Sampled from the fill colour used in the badge's own SVG source (#231F20). The current diamond mark is a monochrome dark-grey/near-black outline; Renault's motorsport livery uses a bright yellow, but no official brand-guideline hex for that yellow was found, so the mark's own colour is recorded instead.",
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-renault"]
+}

@@ -115,7 +115,7 @@
         "sourceNote": "EPA combined 46 mpg (US) for the 2004 car, converted at 235.215 L-mi/100km-gal. This is the current EPA estimate: the methodology changed in 2008 and earlier cars were recalculated, so it is not the figure on the 2004 window sticker."
       },
       "co2": {
-        "value": 120.0,
+        "value": 120,
         "unit": "g/km",
         "status": "verified",
         "source": "epa-2004-toyota-prius",
@@ -166,10 +166,10 @@
     }
   ],
   "hero": {
-    "src": "/images/cars/toyota-prius-xw20/hero-front-three-quarter.jpg",
+    "src": "/images/cars/toyota-prius-xw20/hero-front-three-quarter.webp",
     "alt": "Silver second-generation Toyota Prius photographed from the front three-quarter angle, showing the wedge nose and steeply raked windscreen",
-    "width": 1800,
-    "height": 1164,
+    "width": 1600,
+    "height": 1035,
     "caption": "The car that made the shape famous: a one-box wedge chosen for the wind tunnel, not the showroom.",
     "credit": {
       "author": "IFCAR",
@@ -181,10 +181,10 @@
   },
   "gallery": [
     {
-      "src": "/images/cars/toyota-prius-xw20/rear.jpg",
+      "src": "/images/cars/toyota-prius-xw20/rear.webp",
       "alt": "Rear view of a 2003-2005 Toyota Prius showing the split tailgate glass and the vertical tail lamps",
-      "width": 1920,
-      "height": 924,
+      "width": 1200,
+      "height": 578,
       "caption": "The Kammback tail: cut off abruptly rather than tapered, which is what makes the split rear glass necessary.",
       "credit": {
         "author": "TTTNIS",
@@ -195,10 +195,10 @@
       }
     },
     {
-      "src": "/images/cars/toyota-prius-xw20/side.jpg",
+      "src": "/images/cars/toyota-prius-xw20/side.webp",
       "alt": "Side view of a silver 2008 Toyota Prius liftback parked at a kerb",
-      "width": 1920,
-      "height": 1440,
+      "width": 1200,
+      "height": 900,
       "caption": "In profile the single arc from windscreen base to tail is unbroken, which is the whole aerodynamic idea.",
       "credit": {
         "author": "OSX",
@@ -209,10 +209,10 @@
       }
     },
     {
-      "src": "/images/cars/toyota-prius-xw20/hybrid-battery.jpg",
+      "src": "/images/cars/toyota-prius-xw20/hybrid-battery.webp",
       "alt": "An opened Toyota Prius hybrid battery pack showing its twenty-eight rectangular nickel-metal-hydride modules connected in series",
-      "width": 1920,
-      "height": 1052,
+      "width": 1200,
+      "height": 658,
       "caption": "The pack, opened: 28 modules in series, 201.6 volts, 1.31 kWh. This one was reinstalled in 2021 after individual modules were replaced.",
       "credit": {
         "author": "Ww2censor",

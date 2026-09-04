@@ -1,0 +1,24 @@
+{
+  "id": "nissan",
+  "name": "Nissan",
+  "legalName": "Nissan Motor Co., Ltd.",
+  "countryOfOrigin": "Japan",
+  "founded": 1933,
+  "logo": {
+    "src": "/images/brands/nissan.svg",
+    "alt": "The Nissan badge: a circular ring around the wordmark, rendered as a flat outline",
+    "caption": "Nissan's badge, redrawn as a flat outline mark since 2020.",
+    "credit": {
+      "author": "Nissan Motor Corporation",
+      "title": "File:Nissan 2020 logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_2020_logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this car, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#000000",
+  "accentColorNote": "Sampled from the badge's own SVG source, which defines no fill colour for its paths and so renders at the SVG default of black. No official coloured Nissan brand-guideline hex could be sourced from this file.",
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-nissan"]
+}

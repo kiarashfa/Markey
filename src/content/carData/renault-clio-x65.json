@@ -1,0 +1,236 @@
+{
+  "id": "renault-clio-x65",
+  "name": "Renault Clio (Mk2)",
+  "fullName": "Renault Clio (Mk2, X65), 1998-2012",
+  "kind": "generation",
+  "parent": "renault-clio",
+  "brandRef": "renault",
+  "generationCode": "X65",
+  "productionYears": {
+    "start": 1998,
+    "end": 2012
+  },
+  "bodyStyles": ["hatchback", "saloon"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "designer": "Patrick Le Quément",
+  "assembly": [
+    "Flins-sur-Seine, Yvelines, France (Flins Renault Factory)",
+    "Valladolid, Spain (Renault Spain)",
+    "Novo Mesto, Slovenia (Revoz, Clio Campus)",
+    "Curitiba, Paraná, Brazil (Renault do Brasil)",
+    "Bursa, Turkey (Oyak-Renault, Clio Symbol)"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 3773,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+      "sourceNote": "1998-2001 hatchback figure; the sedan is longer at 4,150 mm, and the 2001 facelift hatchback lengthened to 3,811 mm (sedan 4,171 mm)."
+    },
+    "width": {
+      "value": 1639,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+    },
+    "height": {
+      "value": 1417,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+      "sourceNote": "Hatchback figure; the sedan is taller at 1,437 mm."
+    },
+    "wheelbase": {
+      "value": 2472,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+    },
+    "kerbWeight": {
+      "value": 990,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-renault-clio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+      "sourceNote": "Infobox figure for the range; the RS and V6 performance variants are considerably heavier but no per-trim figure is published."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-4-rt",
+      "name": "1.4 RT",
+      "productionYears": { "start": 1998, "end": 2001 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "K7J",
+        "configuration": "inline-4, SOHC 8v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1390,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-clio",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 55.16,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Published as 75 PS at 5,500 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 114,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "At 4,250 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "rs-172",
+      "name": "Renault Sport 172",
+      "productionYears": { "start": 1999, "end": 2004 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "F4R 736",
+        "configuration": "inline-4, DOHC 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-clio",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 126.51,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Published as 172 PS (DIN metric horsepower, hence the '172' name) at 6,250 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 200,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "At 5,400 rpm."
+      },
+      "topSpeed": {
+        "value": 220,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "v6-phase1",
+      "name": "Clio V6 Renault Sport (Phase 1)",
+      "productionYears": { "start": 2000, "end": 2002 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "L7X",
+        "configuration": "V6, DOHC 24v, mid-mounted",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2946,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-clio",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 169.16,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "Published as 230 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW. A mid-engined, rear-wheel-drive halo model engineered from a one-make racing series car, built by Tom Walkinshaw Racing, unrelated in layout to the rest of the front-drive Clio range."
+      },
+      "torque": {
+        "value": 300,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio",
+        "sourceNote": "At 3,750 rpm."
+      },
+      "topSpeed": {
+        "value": 235,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-clio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Clio"
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-clio-x65/hero.webp",
+    "alt": "Red pre-facelift second-generation Renault Clio hatchback, photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1014,
+    "caption": "The Clio II at launch: a rounder, more grown-up shape than the Mk1, sold as a hatchback and, in some markets, a saloon.",
+    "credit": {
+      "author": "Makizox",
+      "title": "File:1998 Renault Clio Grande 1.2 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1998_Renault_Clio_Grande_1.2_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/renault-clio-x65/gallery-1.webp",
+      "alt": "Dark blue pre-facelift Renault Sport Clio three-door hatchback with gold-finish alloy wheels, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 802,
+      "caption": "A pre-facelift Renault Sport Clio, badged 172 in most markets for its metric-horsepower output.",
+      "credit": {
+        "author": "OSX",
+        "title": "File:2001 Renault Sport Clio (X65) 3-door hatchback (2015-07-24) 01.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2001_Renault_Sport_Clio_(X65)_3-door_hatchback_(2015-07-24)_01.jpg",
+        "licenseType": "public-domain"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-renault-clio"]
+}

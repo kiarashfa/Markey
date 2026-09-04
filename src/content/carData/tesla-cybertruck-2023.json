@@ -1,0 +1,288 @@
+{
+  "id": "tesla-cybertruck-2023",
+  "name": "Tesla Cybertruck",
+  "fullName": "Tesla Cybertruck, 2023-present",
+  "kind": "generation",
+  "parent": "tesla-cybertruck",
+  "brandRef": "tesla",
+  "productionYears": {
+    "start": 2023,
+    "end": null
+  },
+  "bodyStyles": ["pickup"],
+  "powertrains": ["bev"],
+  "drivetrains": ["rwd", "awd"],
+  "segment": "pickup",
+  "positioning": "premium",
+  "designer": "Franz von Holzhausen",
+  "assembly": ["Austin, Texas, United States (Gigafactory Texas)"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 5683,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-cybertruck",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+      "sourceNote": "Published as 223.74 in, converted at 25.4 mm/in."
+    },
+    "width": {
+      "value": 2032,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-cybertruck",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+      "sourceNote": "Published as 79.99 in, converted at 25.4 mm/in. Excludes mirrors."
+    },
+    "height": {
+      "value": 1796,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-cybertruck",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+      "sourceNote": "Published as 70.7 in, converted at 25.4 mm/in."
+    },
+    "wheelbase": {
+      "value": 3635,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-cybertruck",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+      "sourceNote": "Published as 143.11 in, converted at 25.4 mm/in."
+    }
+  },
+  "trims": [
+    {
+      "id": "rwd-long-range",
+      "name": "Long Range (RWD)",
+      "productionYears": { "start": 2025, "end": 2025 },
+      "drivetrain": "rwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed fixed (15:1)",
+      "engine": {
+        "configuration": "single motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 234.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "Published as up to 315 hp, converted at 1 hp = 0.745699872 kW. Rear permanent-magnet motor."
+      },
+      "topSpeed": {
+        "value": 180,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "Published as 112 mph, converted at 1.609344 km/mi."
+      },
+      "electricRange": {
+        "value": 563,
+        "unit": "km",
+        "status": "conflicting-sources",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "EPA-estimated. The article's launch-specification table (cited to tesla.com and The Verge, November 2023) gives 350 mi = 563 km for this trim, which agrees with both later mentions of this specific trim, so no conflict for RWD itself. The AWD and Cyberbeast rows below do conflict between that same table and a later paragraph in the same article; see their notes."
+      },
+      "batteryCapacity": {
+        "value": 123,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "816 V nominal, 150 Ah structural pack, shared across all trims; not stated whether 123 kWh is usable or gross capacity."
+      },
+      "bootVolume": {
+        "value": 1897,
+        "unit": "L",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "Open cargo bed volume, published as 67 cu ft, converted at 28.3168 L/cu ft. This is an open pickup bed, not an enclosed boot, and is not comparable to a hatchback or saloon boot figure measured on either the EPA or VDA basis."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "awd",
+      "name": "All-Wheel Drive",
+      "productionYears": { "start": 2023, "end": null },
+      "drivetrain": "awd",
+      "powertrain": "bev",
+      "transmission": "Single-speed fixed (15:1)",
+      "engine": {
+        "configuration": "dual motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 447.4,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "Published combined output, up to 600 hp, converted at 1 hp = 0.745699872 kW: a downrated 297 hp permanent-magnet rear motor plus a 303 hp front induction motor. This is a published system figure, not a sum performed here."
+      },
+      "torque": {
+        "value": 1008,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "Published as 743.5 lb-ft of WHEEL torque (post-reduction-gear), not motor shaft torque, converted at 1.355818 Nm/lb-ft. Not directly comparable to a crankshaft or motor-shaft torque figure on a conventional car."
+      },
+      "topSpeed": {
+        "value": 180,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "Published as 112 mph, converted at 1.609344 km/mi. Shared with the RWD trim in the source table."
+      },
+      "electricRange": {
+        "value": 547,
+        "unit": "km",
+        "status": "conflicting-sources",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "The article's launch-specification table (cited to tesla.com and The Verge, November 2023) gives 340 mi = 547 km EPA-estimated, recorded here. A later paragraph in the same article, citing a different Motor Trend source, instead gives 325 mi = 523 km for this trim. Both are presented as current EPA figures; the table is preferred here as the more specific, dated citation."
+      },
+      "mass": {
+        "value": 3021,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "Published as 6,660 lb, converted at 0.45359237 kg/lb."
+      },
+      "batteryCapacity": {
+        "value": 123,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "816 V nominal, 150 Ah structural pack, shared across all trims."
+      },
+      "bootVolume": {
+        "value": 1897,
+        "unit": "L",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "Open cargo bed volume, published as 67 cu ft, converted at 28.3168 L/cu ft. Not comparable to an enclosed boot figure."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "cyberbeast",
+      "name": "Cyberbeast",
+      "productionYears": { "start": 2023, "end": null },
+      "drivetrain": "awd",
+      "powertrain": "bev",
+      "transmission": "Single-speed fixed (15:1)",
+      "engine": {
+        "configuration": "tri motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 630.1,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "Published combined output, up to 845 hp, converted at 1 hp = 0.745699872 kW: a 276 hp permanent-magnet front motor plus two rear induction motors at 284 hp each. Published system figure, not summed here."
+      },
+      "torque": {
+        "value": 1396,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "Published as 1,029.6 lb-ft of WHEEL torque (post-reduction-gear), not motor shaft torque, converted at 1.355818 Nm/lb-ft."
+      },
+      "topSpeed": {
+        "value": 209,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "Published as 130 mph, converted at 1.609344 km/mi."
+      },
+      "electricRange": {
+        "value": 515,
+        "unit": "km",
+        "status": "conflicting-sources",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "The article's launch-specification table (cited to tesla.com and The Verge, November 2023) gives 320 mi = 515 km EPA-estimated, recorded here. A later paragraph in the same article, citing a different Motor Trend source, instead gives 300 mi = 483 km. Both are presented as current EPA figures; the table is preferred here as the more specific, dated citation."
+      },
+      "mass": {
+        "value": 3130,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "Published as 6,901 lb, converted at 0.45359237 kg/lb."
+      },
+      "batteryCapacity": {
+        "value": 123,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "816 V nominal, 150 Ah structural pack, shared across all trims."
+      },
+      "bootVolume": {
+        "value": 1897,
+        "unit": "L",
+        "status": "verified",
+        "source": "wikipedia-tesla-cybertruck",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Cybertruck",
+        "sourceNote": "Open cargo bed volume, published as 67 cu ft, converted at 28.3168 L/cu ft. Not comparable to an enclosed boot figure."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/tesla-cybertruck/hero.webp",
+    "alt": "Silver Tesla Cybertruck with angular, faceted stainless-steel bodywork, photographed from the front three-quarter angle on grass beside a lake",
+    "width": 1600,
+    "height": 949,
+    "caption": "The Cybertruck's unpainted stainless-steel panels and flat-faceted body were the defining, and most divisive, design choice of the whole project.",
+    "credit": {
+      "author": "Mr.choppers",
+      "title": "File:2024 Tesla Cybertruck Foundation Series, front left (Greenwich).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Tesla_Cybertruck_Foundation_Series,_front_left_(Greenwich).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/tesla-cybertruck/gallery-1.webp",
+      "alt": "Interior of a Tesla Cybertruck showing its yoke-style squircle steering wheel and portrait touchscreen at a motor show",
+      "width": 1200,
+      "height": 802,
+      "caption": "The cabin's centrepiece is an 18.5-inch touchscreen; the steering wheel is Tesla's flat-topped-and-bottomed 'squircle' shape, paired with steer-by-wire.",
+      "credit": {
+        "author": "Alexander Migl",
+        "title": "File:Tesla Cybertruck MYLE Festival 2025 DSC 9389.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Cybertruck_MYLE_Festival_2025_DSC_9389.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-tesla-cybertruck"]
+}

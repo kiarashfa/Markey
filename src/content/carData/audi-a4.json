@@ -1,0 +1,17 @@
+{
+  "id": "audi-a4",
+  "name": "Audi A4",
+  "fullName": "Audi A4, 1994-2025",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "audi",
+  "productionYears": {
+    "start": 1994,
+    "end": 2025
+  },
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-audi-a4"]
+}

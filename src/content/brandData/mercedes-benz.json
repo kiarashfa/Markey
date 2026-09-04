@@ -1,0 +1,24 @@
+{
+  "id": "mercedes-benz",
+  "name": "Mercedes-Benz",
+  "legalName": "Mercedes-Benz Group AG",
+  "countryOfOrigin": "Germany",
+  "founded": 1926,
+  "website": "https://www.mercedes-benz.com/",
+  "logo": {
+    "src": "/images/brands/mercedes-benz.svg",
+    "alt": "The Mercedes-Benz three-pointed star, rendered in chrome, inside a circular ring",
+    "credit": {
+      "author": "Khaled",
+      "title": "File:Mercedes-Logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons licenses the vector rendering itself CC BY-SA 4.0, but the star device it depicts is a Mercedes-Benz trademark; the basis for display here is trademark nominative use, not the copyright licence on the rendering (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#71777a",
+  "accentColorNote": "Sampled from the single most frequently used fill colour (#71777a, used 947 times) in the badge's own SVG source — the artwork is a shaded chrome rendering rather than a flat brand colour, so no one hex is 'the' logo colour; this is the dominant grey among its many gradient stops. Mercedes-Benz publishes no public flat brand-colour specification for the star.",
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz", "commons-file-mercedes-logo-svg"]
+}

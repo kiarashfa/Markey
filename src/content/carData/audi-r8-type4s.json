@@ -1,0 +1,125 @@
+{
+  "id": "audi-r8-type4s",
+  "name": "Audi R8 (Type 4S)",
+  "fullName": "Audi R8 (Type 4S), 2015-2024",
+  "kind": "generation",
+  "parent": "audi-r8",
+  "brandRef": "audi",
+  "generationCode": "Type 4S",
+  "predecessor": "audi-r8-type42",
+  "productionYears": {
+    "start": 2015,
+    "end": 2024
+  },
+  "bodyStyles": ["coupe", "convertible"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["awd", "rwd"],
+  "segment": "s-segment",
+  "positioning": "luxury",
+  "designer": "Florian Liese",
+  "assembly": ["Audi Böllinger Höfe, Heilbronn, Germany"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4426,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-r8-type-4s",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_4S)"
+    },
+    "width": {
+      "value": 1940,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-r8-type-4s",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_4S)"
+    },
+    "height": {
+      "value": 1240,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-r8-type-4s",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_4S)"
+    },
+    "wheelbase": {
+      "value": 2650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-r8-type-4s",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_4S)"
+    }
+  },
+  "trims": [
+    {
+      "id": "v10-rwd",
+      "name": "V10 RWD",
+      "productionYears": {
+        "start": 2019,
+        "end": 2021
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "7-speed S tronic dual-clutch",
+      "gears": 7,
+      "engine": {
+        "code": "5.2 FSI",
+        "configuration": "V10",
+        "cylinders": 10,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 397,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-r8-type-4s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_4S)",
+        "sourceNote": "Published as 540 PS, converted at 1 PS = 0.73549875 kW (397.2 kW, rounded here to 397). Same engine and rating as the limited-run R8 RWS it succeeded as a permanent model."
+      },
+      "torque": {
+        "value": 540,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-r8-type-4s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_4S)"
+      },
+      "mass": {
+        "value": 1595,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-audi-r8-type-4s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_4S)",
+        "sourceNote": "Coupé figure, 65 kg lighter than the equivalent quattro all-wheel-drive coupé at 1660 kg. The Spyder is 1695 kg."
+      },
+      "weightDistributionFront": {
+        "value": 0.4,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-audi-r8-type-4s",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_R8_(Type_4S)",
+        "sourceNote": "Published as a 40:60 front/rear split, stored as the front fraction."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-r8-type4s/hero-front-three-quarter.webp",
+    "alt": "White facelifted second-generation Audi R8 coupe photographed from the front three-quarter angle in a showroom, with an angular hexagonal grille bearing a V10 badge on the door sill",
+    "width": 1200,
+    "height": 641,
+    "caption": "The Type 4S after its 2018 facelift: shared underpinnings with the Lamborghini Huracán, and by this point the R8's last few years as a naturally aspirated V10 holdout.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2020 Audi R8 V10 5.2 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Audi_R8_V10_5.2_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-audi-r8-type-4s"]
+}

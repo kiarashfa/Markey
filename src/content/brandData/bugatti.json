@@ -1,0 +1,24 @@
+{
+  "id": "bugatti",
+  "name": "Bugatti",
+  "legalName": "Bugatti Automobiles S.A.S.",
+  "countryOfOrigin": "France",
+  "founded": 1998,
+  "logo": {
+    "src": "/images/brands/bugatti.svg",
+    "alt": "The Bugatti wordmark in a plain uppercase sans-serif typeface",
+    "caption": "The Bugatti wordmark, in use since a 2022 rebrand.",
+    "credit": {
+      "author": "Bugatti Automobiles S.A.S.",
+      "title": "File:2022 Bugatti wordmark.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Bugatti_wordmark.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this car, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#000000",
+  "accentColorNote": "Sampled from the mark's own SVG source, which fills its path with no colour attribute (default black). No official coloured Bugatti brand-guideline hex could be sourced; the marque is popularly associated with a dark blue livery, but no specific hex value for it is published, so it is not recorded here.",
+  "lastVerified": "2026-09-04",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bugatti-automobiles"]
+}

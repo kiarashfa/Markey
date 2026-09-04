@@ -1,0 +1,17 @@
+{
+  "id": "tesla-model-s",
+  "name": "Tesla Model S",
+  "fullName": "Tesla Model S, 2012-2026",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "tesla",
+  "productionYears": {
+    "start": 2012,
+    "end": 2026
+  },
+  "positioning": "luxury",
+  "trims": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-tesla-model-s"]
+}

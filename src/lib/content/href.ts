@@ -9,6 +9,22 @@
 
 const BASE = import.meta.env.BASE_URL;
 
+/**
+ * Where images are served from. Empty means "this repository", which is the
+ * case today and the case this site should stay in for as long as it fits.
+ *
+ * The escape hatch, pre-planned rather than retrofitted. Even at the WebP caps
+ * in `src/data/image-caps.json`, the full 8,102-nameplate plan projects to
+ * ~2.9 GB against GitHub Pages' 1 GB soft limit, so a second assets repository
+ * is eventually unavoidable. Setting this constant to that repository's origin
+ * moves every image on the site — because `imageSrc()` is the only thing that
+ * resolves an `ImageRef.src`, and every template goes through it.
+ *
+ * Written now, with 41 images, because the alternative is 3,000 JSON edits
+ * later. The sibling ARMAG project reserved the same hatch on day one.
+ */
+const ASSET_ORIGIN: string = '';
+
 function trimSlashes(value: string): string {
   return value.replace(/^\/+/, '').replace(/\/+$/, '');
 }
@@ -52,6 +68,7 @@ export function assetHref(...segments: (string | number)[]): string {
  */
 export function imageSrc(src: string): string {
   if (/^(https?:)?\/\//.test(src) || src.startsWith('data:')) return src;
+  if (ASSET_ORIGIN) return `${ASSET_ORIGIN.replace(/\/+$/, '')}/${trimSlashes(src)}`;
   return assetHref(src);
 }
 

@@ -1,0 +1,183 @@
+{
+  "id": "volkswagen-passat-b1",
+  "name": "Volkswagen Passat (B1)",
+  "fullName": "Volkswagen Passat (B1), 1973-1981",
+  "kind": "generation",
+  "parent": "volkswagen-passat",
+  "brandRef": "volkswagen",
+  "generationCode": "B1",
+  "productionYears": {
+    "start": 1973,
+    "end": 1981
+  },
+  "bodyStyles": ["saloon", "hatchback", "estate"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "d-segment",
+  "positioning": "mainstream",
+  "designer": "Giorgetto Giugiaro (Italdesign)",
+  "assembly": [
+    "Wolfsburg, Germany",
+    "Emden, Germany",
+    "Salzgitter, Germany",
+    "Brussels, Belgium"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4190,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-passat-b1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B1)"
+    },
+    "width": {
+      "value": 1600,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-passat-b1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B1)"
+    },
+    "height": {
+      "value": 1360,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-passat-b1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B1)"
+    },
+    "wheelbase": {
+      "value": 2470,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-passat-b1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B1)"
+    },
+    "kerbWeight": {
+      "value": 880,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-passat-b1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B1)",
+      "sourceNote": "Published as a range of 880-995 kg across engines and body styles; lowest value in the range recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-3-base",
+      "name": "1.3 (ZA)",
+      "productionYears": { "start": 1973, "end": 1981 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "ZA",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1297,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-passat-b1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B1)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 40,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-passat-b1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B1)",
+        "sourceNote": "Published directly as 40 kW (55 PS) at 5,500 rpm."
+      },
+      "torque": {
+        "value": 94,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-passat-b1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B1)",
+        "sourceNote": "At 2,500 rpm."
+      },
+      "topSpeed": {
+        "value": 150,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-passat-b1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B1)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-gli",
+      "name": "1.6 GLI (YS)",
+      "productionYears": { "start": 1979, "end": 1981 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "YS",
+        "configuration": "inline-4, fuel injection",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1588,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-passat-b1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B1)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 81,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-passat-b1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B1)",
+        "sourceNote": "Published directly as 81 kW (110 PS) at 6,100 rpm — the range-topping fuel-injected GLI, introduced February 1979."
+      },
+      "torque": {
+        "value": 137,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-passat-b1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B1)",
+        "sourceNote": "At 5,000 rpm."
+      },
+      "topSpeed": {
+        "value": 185,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-passat-b1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Passat_(B1)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/volkswagen-passat-b1/hero.webp",
+    "alt": "Blue Volkswagen Passat B1 five-door hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 961,
+    "caption": "The original Passat, styled by Giorgetto Giugiaro and sold in North America as the Volkswagen Dasher.",
+    "credit": {
+      "author": "Charles01",
+      "title": "File:Volkswagen Passat B1 5d Jesus Lock.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Passat_B1_5d_Jesus_Lock.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-volkswagen-passat-b1"
+  ]
+}

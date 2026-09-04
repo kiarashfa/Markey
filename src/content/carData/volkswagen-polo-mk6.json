@@ -1,0 +1,149 @@
+{
+  "id": "volkswagen-polo-mk6",
+  "name": "Volkswagen Polo Mk6",
+  "fullName": "Volkswagen Polo Mk6, 2017-present",
+  "kind": "generation",
+  "parent": "volkswagen-polo",
+  "brandRef": "volkswagen",
+  "generationCode": "AW",
+  "productionYears": {
+    "start": 2017,
+    "end": null
+  },
+  "bodyStyles": ["hatchback", "saloon"],
+  "powertrains": ["petrol", "diesel", "cng"],
+  "drivetrains": ["fwd"],
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "designer": "Klaus Bischoff, Marco Antonio Pavone, Einar Castillo Aranda",
+  "assembly": [
+    "Pamplona, Spain (2017-2024)",
+    "Uitenhage/Kariega, South Africa (Volkswagen South Africa)",
+    "São Bernardo do Campo, Brazil (2017-2023); Taubaté (2023-present)"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4053,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-polo-mk6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk6",
+      "sourceNote": "Published as a range of 4,053-4,067 mm by trim; lowest value in the range recorded here."
+    },
+    "width": {
+      "value": 1751,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-polo-mk6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk6"
+    },
+    "height": {
+      "value": 1438,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-polo-mk6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk6",
+      "sourceNote": "Published as a range of 1,438-1,461 mm by trim; lowest value in the range recorded here."
+    },
+    "wheelbase": {
+      "value": 2548,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-polo-mk6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk6",
+      "sourceNote": "Published as a range of 2,548-2,564 mm by market variant; lowest value in the range recorded here. The European hatchback specifically is stated elsewhere in the article as 2,564 mm."
+    },
+    "kerbWeight": {
+      "value": 1105,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-polo-mk6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk6",
+      "sourceNote": "Published as a range of 1,105-1,355 kg by trim; lowest value in the range recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0-tsi-95",
+      "name": "1.0 TSI 95PS",
+      "productionYears": { "start": 2017, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "TSI",
+        "configuration": "inline-3, turbocharged",
+        "cylinders": 3,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 69.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-polo-mk6",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk6",
+        "sourceNote": "Europe-market launch trim, published as 95 PS, converted at 1 PS = 0.73549875 kW. No torque figure for this specific engine is given in the article."
+      },
+      "bootVolume": {
+        "value": 351,
+        "unit": "L",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-polo-mk6",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk6",
+        "sourceNote": "Hatchback figure, up from 280 L on the previous generation. The article does not state whether this is measured to the VDA convention, but that is the near-universal European practice and it is not the EPA method used elsewhere on this site."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gti-2-0-tsi",
+      "name": "GTI 2.0 TSI",
+      "productionYears": { "start": 2017, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed DSG",
+      "gears": 6,
+      "engine": {
+        "code": "TSI",
+        "configuration": "inline-4, turbocharged",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 147.1,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-polo-mk6",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk6",
+        "sourceNote": "Published as 200 PS, converted at 1 PS = 0.73549875 kW. No torque figure is given anywhere in the article for the GTI specifically, so none is recorded here rather than assumed from other Polo GTI generations."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/volkswagen-polo-mk6/hero.webp",
+    "alt": "Red 2018 Volkswagen Polo SE hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 844,
+    "caption": "The current Polo, built on the MQB A0 platform shared with the SEAT Ibiza and Škoda Fabia.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2018 Volkswagen Polo SE 1.0 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Volkswagen_Polo_SE_1.0_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-volkswagen-polo-mk6"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "audi-a6",
+  "name": "Audi A6",
+  "fullName": "Audi A6, 1994-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "audi",
+  "productionYears": {
+    "start": 1994,
+    "end": null
+  },
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-audi-a6"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "mercedes-benz-g-class",
+  "name": "Mercedes-Benz G-Class",
+  "fullName": "Mercedes-Benz G-Class, 1979-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "mercedes-benz",
+  "productionYears": {
+    "start": 1979,
+    "end": null
+  },
+  "positioning": "luxury",
+  "trims": [],
+  "lastVerified": "2026-09-03",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-g-class"]
+}
