@@ -1,0 +1,350 @@
+{
+  "id": "mercedes-benz-s-class-w116",
+  "name": "Mercedes-Benz S-Class (W116)",
+  "fullName": "Mercedes-Benz S-Class (W116), 1972-1980",
+  "kind": "generation",
+  "parent": "mercedes-benz-s-class",
+  "brandRef": "mercedes-benz",
+  "generationCode": "W116",
+  "productionYears": {
+    "start": 1972,
+    "end": 1980
+  },
+  "bodyStyles": ["saloon"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["rwd"],
+  "segment": "f-segment",
+  "positioning": "luxury",
+  "designer": "Friedrich Geiger",
+  "assembly": [
+    "Sindelfingen, West Germany",
+    "East London, South Africa",
+    "Barcelona, Venezuela (CKD)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4960,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-w116",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+      "sourceNote": "Standard-wheelbase SD/SE figure; the long-wheelbase SEL was 5,060 mm, and US-bumper cars were longer still (5,220-5,334 mm)."
+    },
+    "width": {
+      "value": 1870,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-w116",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116"
+    },
+    "height": {
+      "value": 1410,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-w116",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116"
+    },
+    "wheelbase": {
+      "value": 2865,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-w116",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+      "sourceNote": "Standard-wheelbase figure; the SEL long-wheelbase version was 2,965 mm."
+    }
+  },
+  "trims": [
+    {
+      "id": "280se",
+      "name": "280 SE",
+      "productionYears": { "start": 1972, "end": 1975 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed automatic",
+      "gears": 4,
+      "engine": {
+        "code": "M110.983",
+        "configuration": "inline-6, DOHC",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2746,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-w116",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 136.07,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "Published as 185 PS at 6,000 rpm (1972-1975 first engine series), converted at 1 PS = 0.73549875 kW. Revised twice more during the run: 177 PS from 1975 and 185 PS again (at a lower 5,800 rpm) from 1978."
+      },
+      "torque": {
+        "value": 238.3,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "Published as 24.3 kp-m at 4,500 rpm, converted at 1 kgf-m = 9.80665 Nm."
+      },
+      "mass": {
+        "value": 1665,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "Short-wheelbase (SE) curb weight; the long-wheelbase SEL was 1,700 kg."
+      },
+      "zeroToHundredKph": {
+        "value": 10.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "SE figure; the SEL was 11.0 s."
+      },
+      "topSpeed": {
+        "value": 200,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "450sel",
+      "name": "450 SEL",
+      "productionYears": { "start": 1972, "end": 1975 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "3-speed automatic",
+      "gears": 3,
+      "engine": {
+        "code": "M117.983",
+        "configuration": "V8, SOHC",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4520,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-w116",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 165.49,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "Published as 225 PS at 5,000 rpm for European and most international markets (1972-1975 first engine series), converted at 1 PS = 0.73549875 kW. The US-market engine was detuned to 190 hp (141.68 kW) for emissions compliance."
+      },
+      "torque": {
+        "value": 377.56,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "Published as 38.5 kp-m at 3,000 rpm, converted at 1 kgf-m = 9.80665 Nm."
+      },
+      "mass": {
+        "value": 1825,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "Long-wheelbase (SEL) curb weight; the short-wheelbase SE was 1,740 kg."
+      },
+      "zeroToHundredKph": {
+        "value": 8.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "SEL figure; the shorter-wheelbase SE was 8.5 s."
+      },
+      "topSpeed": {
+        "value": 210,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "300sd",
+      "name": "300 SD",
+      "productionYears": { "start": 1978, "end": 1980 },
+      "drivetrain": "rwd",
+      "powertrain": "diesel",
+      "transmission": "4-speed automatic",
+      "gears": 4,
+      "engine": {
+        "code": "OM617.950",
+        "configuration": "inline-5, turbocharged",
+        "cylinders": 5,
+        "displacement": {
+          "value": 2998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-w116",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+          "sourceNote": "The world's first turbocharged-diesel passenger car engine, developed from the C111 experimental vehicle and sold only in North America and Japan."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 82.03,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "Published as 110 hp (SAE net) at 4,200 rpm at launch, converted at 1 hp = 0.745699872 kW; revised to 120 hp for model year 1980."
+      },
+      "torque": {
+        "value": 227.51,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "Published as 23.2 kp-m at 2,400 rpm, converted at 1 kgf-m = 9.80665 Nm."
+      },
+      "mass": {
+        "value": 1815,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116"
+      },
+      "zeroToHundredKph": {
+        "value": 17,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "1978-1979 figure; improved to 16.2 s for model year 1980 with the uprated engine."
+      },
+      "topSpeed": {
+        "value": 165,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "450sel-6-9",
+      "name": "450 SEL 6.9",
+      "productionYears": { "start": 1975, "end": 1980 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "3-speed automatic",
+      "gears": 3,
+      "engine": {
+        "code": "M100.985",
+        "configuration": "V8, SOHC",
+        "cylinders": 8,
+        "displacement": {
+          "value": 6834,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-w116",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+          "sourceNote": "Despite the '6.9' model designation, actual displacement is 6,834 cc, not 6,900 cc."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 210.35,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "Published as 286 PS at 4,250 rpm, converted at 1 PS = 0.73549875 kW. The US-market engine was rated 250 hp (186.42 kW) at 4,000 rpm."
+      },
+      "torque": {
+        "value": 549.17,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "Published as 56 kp-m at 3,000 rpm, converted at 1 kgf-m = 9.80665 Nm."
+      },
+      "mass": {
+        "value": 1985,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116"
+      },
+      "zeroToHundredKph": {
+        "value": 7.4,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116"
+      },
+      "topSpeed": {
+        "value": 225,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w116",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W116",
+        "sourceNote": "The largest engine fitted to any post-war Mercedes-Benz up to that time. Standard with the W116's full hydropneumatic self-levelling suspension, unlike the rest of the range where it was optional."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mercedes-benz-s-class-w116/hero.webp",
+    "alt": "Light blue Mercedes-Benz W116 S-Class saloon photographed from the front three-quarter angle in a gravel driveway",
+    "width": 1600,
+    "height": 900,
+    "caption": "The W116: the first Mercedes-Benz saloon officially badged S-Class, introduced in 1972 with ridged tail-lamp lenses designed to shed dirt.",
+    "credit": {
+      "author": "DirebearHugs",
+      "title": "File:1978 Mercedes Benz 280SE in 906 Graublau metallic.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1978_Mercedes_Benz_280SE_in_906_Graublau_metallic.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/mercedes-benz-s-class-w116/gallery-1.webp",
+      "alt": "Dark blue Mercedes-Benz 450 SEL 6.9 saloon on display indoors, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 689,
+      "caption": "The 450 SEL 6.9: a 6.8-litre V8 flagship built on its own line at Sindelfingen, with full hydropneumatic suspension as standard.",
+      "credit": {
+        "author": "Calreyn88",
+        "title": "File:1980 Mercedes 450 SEL 6.9 Auto.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1980_Mercedes_450_SEL_6.9_Auto.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-w116"]
+}

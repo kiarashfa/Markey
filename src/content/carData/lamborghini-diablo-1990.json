@@ -1,0 +1,366 @@
+{
+  "id": "lamborghini-diablo-1990",
+  "name": "Lamborghini Diablo",
+  "fullName": "Lamborghini Diablo, 1990-2001",
+  "kind": "generation",
+  "parent": "lamborghini-diablo",
+  "brandRef": "lamborghini",
+  "productionYears": {
+    "start": 1990,
+    "end": 2001
+  },
+  "bodyStyles": [
+    "coupe",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "rwd",
+    "awd"
+  ],
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "designer": "Marcello Gandini (initial design); Tom Gale at Chrysler Styling Center (final design); Luc Donckerwolke (Diablo VT 6.0)",
+  "assembly": [
+    "Sant'Agata Bolognese, Italy"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4460,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-diablo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo",
+      "sourceNote": "Infobox gives a 4,460-4,470 mm range across the run without attributing each figure to a trim. The lower figure is recorded here."
+    },
+    "width": {
+      "value": 2040,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-diablo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+    },
+    "height": {
+      "value": 1105,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-diablo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo",
+      "sourceNote": "Infobox gives a 1,105-1,115 mm range across the run without attributing each figure to a trim. The lower figure is recorded here."
+    },
+    "wheelbase": {
+      "value": 2650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-diablo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+    },
+    "kerbWeight": {
+      "value": 1576,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-diablo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo",
+      "sourceNote": "Base 1990-1998 rear-wheel-drive Diablo, from the specifications table."
+    }
+  },
+  "trims": [
+    {
+      "id": "diablo",
+      "name": "Diablo",
+      "productionYears": {
+        "start": 1990,
+        "end": 1998
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "V12",
+        "cylinders": 12,
+        "displacement": {
+          "value": 5707,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-diablo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo",
+          "sourceNote": "Published as 5.7 L; the exact 5,707 cc figure is given elsewhere in the article for the mechanically identical Jota racing engine."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 362,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo",
+        "sourceNote": "492 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 580,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+      },
+      "mass": {
+        "value": 1576,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+      },
+      "topSpeed": {
+        "value": 325,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+      },
+      "weightDistributionFront": {
+        "value": 0.41,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo",
+        "sourceNote": "Published as a 41/59 front/rear split."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "diablo-vt",
+      "name": "Diablo VT",
+      "productionYears": {
+        "start": 1993,
+        "end": 1998
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "V12",
+        "cylinders": 12,
+        "displacement": {
+          "value": 5707,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-diablo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 362,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo",
+        "sourceNote": "492 PS, converted at 1 PS = 0.73549875 kW. Unchanged from the base Diablo; the VT's addition was viscous-coupled all-wheel drive, not more power."
+      },
+      "torque": {
+        "value": 580,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+      },
+      "mass": {
+        "value": 1625,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+      },
+      "weightDistributionFront": {
+        "value": 0.43,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo",
+        "sourceNote": "Published as a 43/57 front/rear split — the viscous all-wheel-drive hardware shifted the balance forward slightly from the rear-drive Diablo's 41/59."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "diablo-sv-1999",
+      "name": "Diablo SV (facelift)",
+      "productionYears": {
+        "start": 1998,
+        "end": 1999
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "V12, variable valve timing",
+        "cylinders": 12,
+        "displacement": {
+          "value": 5707,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-diablo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 390,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo",
+        "sourceNote": "530 PS, converted at 1 PS = 0.73549875 kW, for the 1999 facelift with variable valve timing and fixed headlamps. The pre-facelift 1995-1998 SV made 510 PS/375 kW, not recorded as a separate trim here."
+      },
+      "torque": {
+        "value": 605,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+      },
+      "mass": {
+        "value": 1530,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+      },
+      "topSpeed": {
+        "value": 335,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+      },
+      "weightDistributionFront": {
+        "value": 0.41,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo",
+        "sourceNote": "Published as a 41/59 front/rear split."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "diablo-vt-6-0",
+      "name": "Diablo VT 6.0",
+      "productionYears": {
+        "start": 2000,
+        "end": 2001
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "V12, stroked to 6.0 L, variable valve timing",
+        "cylinders": 12,
+        "displacement": {
+          "value": 5992,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article states the block was stroked from 80 mm to 84 mm without giving the resulting cc figure directly; 5,992 cc is the commonly published displacement for this engine, estimated here from the stated stroke change rather than taken from a stated cc figure in this article."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 404,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo",
+        "sourceNote": "550 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 620,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+      },
+      "mass": {
+        "value": 1625,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo"
+      },
+      "weightDistributionFront": {
+        "value": 0.41,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-diablo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Diablo",
+        "sourceNote": "Published as a 41/59 front/rear split for this trim in the specifications table, differing from the earlier VT's 43/57."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/lamborghini-diablo/hero.webp",
+    "alt": "Red Lamborghini Diablo with pop-up headlamps raised, photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 854,
+    "caption": "An early, pre-facelift Diablo with its pop-up headlamps raised — replaced by fixed composite units on the 1999 facelift.",
+    "credit": {
+      "author": "Mr.choppers",
+      "title": "File:Early Lamborghini Diablo in red.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Early_Lamborghini_Diablo_in_red.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/lamborghini-diablo/gallery-1.webp",
+      "alt": "Interior of a 1993 Lamborghini Diablo VT showing the flat dashboard, upright instrument binnacle and tan leather seats",
+      "width": 1200,
+      "height": 800,
+      "caption": "The pre-facelift interior: a separate upright instrument binnacle, replaced from 1999 by an integrated wave-shaped dashboard.",
+      "credit": {
+        "author": "Thesupermat",
+        "title": "File:Paris - Bonhams 2016 - Lamborghini Diablo VT coupé - 1993 - 005.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paris_-_Bonhams_2016_-_Lamborghini_Diablo_VT_coup%C3%A9_-_1993_-_005.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    },
+    {
+      "src": "/images/cars/lamborghini-diablo/gallery-2.webp",
+      "alt": "Yellow 1998 Lamborghini Diablo SV coupé with fixed headlamps, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 800,
+      "caption": "A 1998 SV with the facelift's fixed composite headlamps, licensed from the Nissan 300ZX.",
+      "credit": {
+        "author": "Thesupermat",
+        "title": "File:Paris - Bonhams 2016 - Lamborghini Diablo SV coupé - 1998 - 002.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paris_-_Bonhams_2016_-_Lamborghini_Diablo_SV_coup%C3%A9_-_1998_-_002.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-lamborghini-diablo"
+  ]
+}

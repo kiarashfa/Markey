@@ -1,0 +1,206 @@
+{
+  "id": "peugeot-308-t9",
+  "name": "Peugeot 308 (T9)",
+  "fullName": "Peugeot 308 (T9), 2013-2021",
+  "kind": "generation",
+  "parent": "peugeot-308",
+  "brandRef": "peugeot",
+  "generationCode": "T9",
+  "productionYears": {
+    "start": 2013,
+    "end": 2021
+  },
+  "bodyStyles": ["hatchback", "estate", "saloon"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Thomas Röhm",
+  "assembly": [
+    "Mulhouse, France",
+    "Sochaux, France",
+    "Wuhan, China (DPCA)",
+    "Gurun, Malaysia (NAM)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4253,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-308",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#Second_generation_(T9;_2013)",
+      "sourceNote": "Hatchback; the estate was 4,585 mm."
+    },
+    "width": {
+      "value": 1815,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-308",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#Second_generation_(T9;_2013)"
+    },
+    "height": {
+      "value": 1460,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-308",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#Second_generation_(T9;_2013)",
+      "sourceNote": "Hatchback; the estate was 1,471 mm."
+    },
+    "wheelbase": {
+      "value": 2620,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-308",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#Second_generation_(T9;_2013)",
+      "sourceNote": "Hatchback; the estate was 2,730 mm."
+    },
+    "kerbWeight": {
+      "value": 1060,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-peugeot-308",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#Second_generation_(T9;_2013)",
+      "sourceNote": "Lowest of a published 1,060-1,320 kg range; not attributed to one specific trim, so recorded at generation level only. Peugeot stated the new EMP2 platform saved about 140 kg over the outgoing T7."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-5-bluehdi",
+      "name": "1.5 BlueHDi 130",
+      "productionYears": { "start": 2017, "end": 2021 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "DV5 RC",
+        "configuration": "inline-4, turbocharged, 16V",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1499,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-308",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#Facelift_(2017)",
+          "sourceNote": "Joined the range at the 2017 facelift."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 96.94,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-308",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#Facelift_(2017)",
+        "sourceNote": "Published as 130 bhp, converted at 1 hp = 0.745699872 kW. No torque figure, 0-100 km/h time or top speed is published in the source for this engine."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gti-250",
+      "name": "GTi by Peugeot Sport (250)",
+      "productionYears": { "start": 2015, "end": 2021 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "EP6DT",
+        "configuration": "inline-4, turbocharged, direct injection",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-308",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#GTi_by_Peugeot_Sport",
+          "sourceNote": "The lower-output GTi, with full LED headlights, an electronic limited-slip differential, 18-inch alloys and an 11 mm lowered ride height."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 186.42,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-308",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#GTi_by_Peugeot_Sport",
+        "sourceNote": "Published as 250 hp, converted at 1 hp = 0.745699872 kW. No torque figure, 0-100 km/h time or top speed is published in the source for this car."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gti-270",
+      "name": "GTi by Peugeot Sport (270)",
+      "productionYears": { "start": 2015, "end": 2021 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "EP6DT",
+        "configuration": "inline-4, turbocharged, direct injection",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-308",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#GTi_by_Peugeot_Sport",
+          "sourceNote": "The higher-output GTi, adding 380 mm Alcon front brakes, a Torsen limited-slip differential and 19-inch lightweight alloy wheels over the 250 hp car."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 201.34,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-308",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#GTi_by_Peugeot_Sport",
+        "sourceNote": "Published as 270 hp, converted at 1 hp = 0.745699872 kW. No torque figure, 0-100 km/h time or top speed is published in the source for this car."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/peugeot-308-t9/hero.webp",
+    "alt": "White facelifted second-generation Peugeot 308 hatchback photographed from the front three-quarter angle in a car park",
+    "width": 1600,
+    "height": 901,
+    "caption": "The T9: built on PSA's new EMP2 platform, shared with the Citroën C4 Picasso, and around 140 kg lighter than the T7 it replaced.",
+    "credit": {
+      "author": "EurovisionNim",
+      "title": "File:2018 Peugeot 308 (T9 MY18) Allure hatchback (2018-07-19) 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Peugeot_308_(T9_MY18)_Allure_hatchback_(2018-07-19)_01.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/peugeot-308-t9/gallery-1.webp",
+      "alt": "Blue facelifted Peugeot 308 GTi hatchback photographed from the front three-quarter angle beside a hedge, with red brake calipers visible",
+      "width": 1200,
+      "height": 570,
+      "caption": "The 308 GTi by Peugeot Sport: sold in 250 hp and 270 hp forms, the latter adding a Torsen limited-slip differential and larger Alcon brakes.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2018 Peugeot 308 GTi Turbo 1.6 Front.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Peugeot_308_GTi_Turbo_1.6_Front.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-peugeot-308"]
+}

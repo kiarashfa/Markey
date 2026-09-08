@@ -1,0 +1,273 @@
+{
+  "id": "bmw-i3-i01",
+  "name": "BMW i3",
+  "fullName": "BMW i3 (I01), 2013-2022",
+  "kind": "generation",
+  "parent": "bmw-i3",
+  "brandRef": "bmw",
+  "generationCode": "I01",
+  "productionYears": {
+    "start": 2013,
+    "end": 2022
+  },
+  "bodyStyles": ["hatchback"],
+  "powertrains": ["bev", "range-extender"],
+  "drivetrains": ["rwd"],
+  "segment": "b-segment",
+  "positioning": "premium",
+  "designer": "Richard Kim",
+  "assembly": ["Leipzig, Germany (BMW Group Plant Leipzig)"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 3999,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-i3-hatchback",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)"
+    },
+    "width": {
+      "value": 1775,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-i3-hatchback",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+      "sourceNote": "Pre-facelift/standard i3 figure; the i3s (2018 on) is 1,791 mm wide, over a wider track."
+    },
+    "height": {
+      "value": 1578,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-i3-hatchback",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)"
+    },
+    "wheelbase": {
+      "value": 2570,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-i3-hatchback",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)"
+    }
+  },
+  "trims": [
+    {
+      "id": "i3-60ah",
+      "name": "i3 (60 Ah)",
+      "productionYears": { "start": 2013, "end": 2016 },
+      "drivetrain": "rwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed, fixed ratio",
+      "gears": 1,
+      "engine": {
+        "configuration": "single motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 125,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "BMW eDrive synchronous permanent-magnet motor driving the rear axle."
+      },
+      "torque": {
+        "value": 250,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "Peak torque, as stated for the i3 Concept Coupe's identical motor and confirmed for the production i3 elsewhere in the article."
+      },
+      "mass": {
+        "value": 1195,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)"
+      },
+      "topSpeed": {
+        "value": 149.67,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "Published as electronically limited to 93 mph, converted at 1 mph = 1.609344 km/h."
+      },
+      "batteryCapacity": {
+        "value": 18.2,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "Usable capacity of the 60 Ah lithium-ion pack; gross capacity is 22 kWh."
+      },
+      "electricRange": {
+        "value": 130.36,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "EPA-rated range, published as 81 mi, converted at 1 mi = 1.609344 km. The NEDC-cycle figure for the same car was published as 80-100 mi; the two are not averaged here."
+      },
+      "electricConsumption": {
+        "value": 16.9,
+        "unit": "kWh/100km",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "EPA five-cycle test rating for the 2014-2016 model year 60 Ah car, published as 27 kWh/100 mi."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "i3-60ah-rex",
+      "name": "i3 REx (60 Ah)",
+      "productionYears": { "start": 2013, "end": 2016 },
+      "drivetrain": "rwd",
+      "powertrain": "range-extender",
+      "transmission": "Single-speed, fixed ratio",
+      "gears": 1,
+      "engine": {
+        "code": "W20K06U0",
+        "configuration": "inline-2, range extender (generator only, no mechanical drive)",
+        "cylinders": 2,
+        "displacement": {
+          "value": 647,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-bmw-i3-hatchback",
+          "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+          "sourceNote": "Kymco-built engine shared with the BMW C650 GT maxi-scooter, derated here to 25 kW/55 Nm at 4,300 rpm (versus 44 kW/66 Nm in the motorcycle) to meet Euro 6 emissions. It drives a generator only, never the wheels directly."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 125,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "Same 125 kW traction motor as the pure-BEV i3; the petrol engine only recharges the battery and adds no drive power of its own, so it is not summed into this figure."
+      },
+      "mass": {
+        "value": 1315,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "120 kg heavier than the pure-BEV 60 Ah car, due to the range-extender engine, fuel tank and generator."
+      },
+      "batteryCapacity": {
+        "value": 18.2,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)"
+      },
+      "electricRange": {
+        "value": 115.87,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "EPA all-electric range before the generator engages, published as 72 mi, converted at 1 mi = 1.609344 km. Total range with the petrol generator running was published as 150 mi (241.40 km) — a different, combined-mode figure, not stored here as the electric range."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "i3s-120ah",
+      "name": "i3s (120 Ah)",
+      "productionYears": { "start": 2018, "end": 2022 },
+      "drivetrain": "rwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed, fixed ratio",
+      "gears": 1,
+      "engine": {
+        "configuration": "single motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 134.97,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "Published as 181 hp (the upper end of a 170-181 hp i3/i3s range), converted at 1 hp = 0.745699872 kW. The sportier i3s sits at the top of that range; the standard i3 on the same 120 Ah battery is the 170 hp (126.77 kW) car."
+      },
+      "torque": {
+        "value": 269.81,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "Published as 199 lb-ft (the upper end of a 184-199 lb-ft range), converted at 1 lb-ft = 1.35581795 Nm."
+      },
+      "mass": {
+        "value": 1340,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "Unladen EU weight without the range extender; about 20 kg heavier than the equivalent standard i3."
+      },
+      "batteryCapacity": {
+        "value": 37.9,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "Usable capacity of the 120 Ah pack; gross capacity is 42.2 kWh."
+      },
+      "electricRange": {
+        "value": 246.23,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-bmw-i3-hatchback",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
+        "sourceNote": "EPA-rated combined range for the 120 Ah i3/i3s, published as 153 mi, converted at 1 mi = 1.609344 km."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/bmw-i3-i01/hero.webp",
+    "alt": "White and black two-tone BMW i3 hatchback photographed from the front three-quarter angle, parked on gravel",
+    "width": 1600,
+    "height": 982,
+    "caption": "The i3: BMW's first purpose-built electric car, with a carbon-fibre passenger cell over an aluminium chassis.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2018 BMW i3 facelift (1).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_BMW_i3_facelift_(1).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/bmw-i3-i01/gallery-1.webp",
+      "alt": "Black BMW i3 with its front-hinged and rear-hinged coach doors both open, showing the pillarless door aperture and cream interior",
+      "width": 1200,
+      "height": 638,
+      "caption": "No B-pillar: the i3's rear-hinged 'coach doors' only open once the front door is open, a layout the carbon-fibre passenger cell made possible.",
+      "credit": {
+        "author": "philwjan",
+        "title": "File:BMW i3 - Side Doors open (cropped).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_i3_-_Side_Doors_open_(cropped).jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bmw-i3-hatchback"]
+}

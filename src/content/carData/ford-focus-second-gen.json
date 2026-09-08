@@ -1,0 +1,291 @@
+{
+  "id": "ford-focus-second-gen",
+  "name": "Ford Focus (second generation, Europe)",
+  "fullName": "Ford Focus (C307), 2004-2010",
+  "kind": "generation",
+  "parent": "ford-focus",
+  "brandRef": "ford",
+  "generationCode": "C307",
+  "productionYears": {
+    "start": 2004,
+    "end": 2010
+  },
+  "bodyStyles": ["hatchback", "saloon", "estate", "convertible"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Murat Güler",
+  "assembly": [
+    "Saarlouis, Germany",
+    "Valencia, Spain",
+    "Vsevolozhsk, Russia (Ford Sollers)",
+    "Turin, Italy (Pininfarina, coupé-cabriolet)",
+    "Chungli, Taiwan",
+    "General Pacheco, Argentina",
+    "Santa Rosa, Philippines",
+    "Pretoria, South Africa (Samcor)",
+    "Chongqing, China (Changan Ford Mazda)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4340,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-focus-second-generation-europe",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+      "sourceNote": "2004-2007 hatchback figure. The saloon was 4,480 mm, the estate 4,470 mm, the ST 4,360 mm and the coupé cabriolet 4,510 mm; post-2007 facelift figures differ by a few millimetres in each body style."
+    },
+    "width": {
+      "value": 1840,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-focus-second-generation-europe",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+      "sourceNote": "2004-2007 saloon/hatchback/estate figure; the coupé cabriolet was 1,835 mm."
+    },
+    "height": {
+      "value": 1500,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-focus-second-generation-europe",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+      "sourceNote": "2004-2007 hatchback/estate figure. The saloon was 1,495 mm and the coupé cabriolet 1,448 mm; the ST was 1,537 mm."
+    },
+    "wheelbase": {
+      "value": 2640,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-focus-second-generation-europe",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)"
+    },
+    "kerbWeight": {
+      "value": 1229,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-ford-focus-second-generation-europe",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+      "sourceNote": "Lowest of a published 1,229-1,630 kg range across the whole range; not attributed to one specific trim, so recorded at generation level only."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-6-duratec",
+      "name": "1.6 Duratec",
+      "productionYears": { "start": 2004, "end": 2010 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1596,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+          "sourceNote": "The article states only '1.6-L' for this engine's displacement. 1,596 cc is the Duratec/Sigma family's commonly documented exact displacement, not a figure this article itself states, so it is marked estimated rather than verified."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 73.55,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+        "sourceNote": "Published as 100 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 150,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)"
+      },
+      "zeroToHundredKph": {
+        "value": 11.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+        "sourceNote": "With the 5-speed manual; the 4-speed automatic version was slower, at 13.6 s."
+      },
+      "topSpeed": {
+        "value": 180,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+        "sourceNote": "With the manual gearbox; the automatic was 172 km/h."
+      },
+      "fuelEconomy": {
+        "value": 6.7,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+        "sourceNote": "Combined-cycle figure with the manual gearbox."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-0-tdci-136",
+      "name": "2.0 TDCi",
+      "productionYears": { "start": 2004, "end": 2010 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "G6DA/G6DB",
+        "configuration": "inline-4, turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1997,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+          "sourceNote": "The article states only '2.0-L' for this engine's displacement. 1,997 cc is the DW10 Duratorq's commonly documented exact displacement, not a figure this article itself states, so it is marked estimated rather than verified."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 100.03,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+        "sourceNote": "Published as 136 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 340,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)"
+      },
+      "zeroToHundredKph": {
+        "value": 9.3,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+        "sourceNote": "With the manual gearbox; the automatic was 9.6 s."
+      },
+      "topSpeed": {
+        "value": 203,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+        "sourceNote": "With the manual gearbox; the automatic was 200 km/h."
+      },
+      "fuelEconomy": {
+        "value": 5.5,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+        "sourceNote": "Combined-cycle figure with the manual gearbox."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "rs",
+      "name": "RS",
+      "productionYears": { "start": 2009, "end": 2010 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "configuration": "inline-5, turbocharged",
+        "cylinders": 5,
+        "displacement": {
+          "value": 2522,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-focus-second-generation-europe",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)#RS",
+          "sourceNote": "A modified Volvo-derived straight-five, shared with the Focus ST, using a Quaife automatic torque-biasing limited-slip differential and Ford's RevoKnuckle front suspension to control torque steer through the front wheels."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 224.33,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+        "sourceNote": "Published as 305 PS at 6,500 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 440,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)",
+        "sourceNote": "At 2,250-4,500 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 5.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)"
+      },
+      "topSpeed": {
+        "value": 263,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-second-generation-europe",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(second_generation,_Europe)"
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/ford-focus-second-gen/hero.webp",
+    "alt": "Silver facelifted second-generation Ford Focus hatchback photographed from the front three-quarter angle outside a pub",
+    "width": 1600,
+    "height": 946,
+    "caption": "The second Focus: larger and heavier than the Mk1, with a 25 mm longer wheelbase and Ford's 'Kinetic Design' facelift from 2007.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2008 Ford Focus Zetec TD 109 1.6 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Ford_Focus_Zetec_TD_109_1.6_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/ford-focus-second-gen/gallery-1.webp",
+      "alt": "Bright green second-generation Ford Focus RS hatchback photographed from the rear three-quarter angle in a car park, with a large rear wing",
+      "width": 1200,
+      "height": 677,
+      "caption": "The second-generation RS: a 305 PS turbocharged five-cylinder driving the front wheels alone, through a RevoKnuckle suspension designed to fight torque steer.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2010 Ford Focus RS 2.5 Rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010_Ford_Focus_RS_2.5_Rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-ford-focus-second-generation-europe"]
+}

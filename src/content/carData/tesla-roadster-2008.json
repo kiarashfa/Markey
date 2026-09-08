@@ -1,0 +1,234 @@
+{
+  "id": "tesla-roadster-2008",
+  "name": "Tesla Roadster",
+  "fullName": "Tesla Roadster (first generation), 2008-2012",
+  "kind": "generation",
+  "parent": "tesla-roadster",
+  "brandRef": "tesla",
+  "productionYears": {
+    "start": 2008,
+    "end": 2012
+  },
+  "bodyStyles": [
+    "roadster"
+  ],
+  "powertrains": [
+    "bev"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "s-segment",
+  "positioning": "premium",
+  "assembly": [
+    "Hethel, England (Lotus, chassis)",
+    "Menlo Park, California, US (final assembly)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 3946,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-roadster-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)"
+    },
+    "width": {
+      "value": 1873,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-roadster-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)"
+    },
+    "height": {
+      "value": 1127,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-roadster-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)"
+    },
+    "wheelbase": {
+      "value": 2352,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-roadster-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)"
+    },
+    "kerbWeight": {
+      "value": 1305,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-tesla-roadster-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)",
+      "sourceNote": "2,877 lb, converted at 1 lb = 0.45359237 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-5",
+      "name": "1.5",
+      "productionYears": {
+        "start": 2008,
+        "end": 2009
+      },
+      "drivetrain": "rwd",
+      "powertrain": "bev",
+      "transmission": "1-speed, BorgWarner (8.27:1)",
+      "gears": 1,
+      "engine": {
+        "configuration": "single motor, 3-phase 4-pole AC induction"
+      },
+      "power": {
+        "value": 185,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-tesla-roadster-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)",
+        "sourceNote": "248 hp, converted at 1 hp = 0.745699872 kW."
+      },
+      "torque": {
+        "value": 271,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-tesla-roadster-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)",
+        "sourceNote": "200 lb-ft, converted at 1 lb-ft = 1.3558179483 Nm. Constant from 0 to 6,000 rpm, a characteristic of the electric motor rather than a peak-at-one-point figure."
+      },
+      "batteryCapacity": {
+        "value": 53,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-roadster-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)"
+      },
+      "electricRange": {
+        "value": 393,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-tesla-roadster-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)",
+        "sourceNote": "244 mi, EPA cycle, converted at 1 mi = 1.609344 km."
+      },
+      "mass": {
+        "value": 1305,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-tesla-roadster-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)"
+      },
+      "topSpeed": {
+        "value": 201,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-tesla-roadster-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)",
+        "sourceNote": "Published as 125 mph, converted at 1 mph = 1.609344 km/h; a like-for-like speed conversion, not a change of quantity."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-5-sport",
+      "name": "2.5 Sport",
+      "productionYears": {
+        "start": 2010,
+        "end": 2012
+      },
+      "drivetrain": "rwd",
+      "powertrain": "bev",
+      "transmission": "1-speed, BorgWarner (8.27:1)",
+      "gears": 1,
+      "engine": {
+        "configuration": "single motor, 3-phase 4-pole AC induction"
+      },
+      "power": {
+        "value": 215,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-tesla-roadster-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)",
+        "sourceNote": "288 hp, converted at 1 hp = 0.745699872 kW."
+      },
+      "torque": {
+        "value": 400,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-tesla-roadster-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)",
+        "sourceNote": "295 lb-ft, converted at 1 lb-ft = 1.3558179483 Nm."
+      },
+      "batteryCapacity": {
+        "value": 53,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-roadster-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)"
+      },
+      "electricRange": {
+        "value": 393,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-tesla-roadster-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)",
+        "sourceNote": "244 mi, EPA cycle, converted at 1 mi = 1.609344 km. The article does not state a separate range figure for the Sport specifically."
+      },
+      "mass": {
+        "value": 1305,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-tesla-roadster-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)",
+        "sourceNote": "The article does not state a separate weight figure for the Sport specifically; the generation's single published kerb weight is used."
+      },
+      "topSpeed": {
+        "value": 201,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-tesla-roadster-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)",
+        "sourceNote": "Published as 125 mph, converted at 1 mph = 1.609344 km/h; a like-for-like speed conversion, not a change of quantity."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/tesla-roadster-2008/hero.webp",
+    "alt": "White Tesla Roadster photographed from the rear three-quarter angle with its soft top removed",
+    "width": 1600,
+    "height": 1067,
+    "caption": "The first Tesla Roadster, built on a modified Lotus Elise chassis and the first highway-legal series-production car to use lithium-ion cells.",
+    "credit": {
+      "author": "Alexandre Prévot from Nancy, France",
+      "title": "File:Tesla Roadster - Flickr - Alexandre Prévot (1).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Roadster_-_Flickr_-_Alexandre_Pr%C3%A9vot_(1).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/tesla-roadster-2008/gallery-1.webp",
+      "alt": "Rear view of a Tesla Roadster Sport's battery pack and orange high-voltage cabling with the bodywork removed",
+      "width": 800,
+      "height": 1200,
+      "caption": "The 53 kWh lithium-ion battery pack, mounted behind the seats where the Lotus Elise donor chassis carried its engine.",
+      "credit": {
+        "author": "Norio Nakayama",
+        "title": "File:Tesla Roadster Sport battery pack rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Roadster_Sport_battery_pack_rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-tesla-roadster-first-generation"
+  ]
+}

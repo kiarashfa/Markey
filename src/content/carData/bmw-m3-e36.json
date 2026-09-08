@@ -1,0 +1,223 @@
+{
+  "id": "bmw-m3-e36",
+  "name": "BMW M3 (E36)",
+  "fullName": "BMW M3 (E36), 1992-1999",
+  "kind": "generation",
+  "parent": "bmw-m3",
+  "brandRef": "bmw",
+  "generationCode": "E36",
+  "productionYears": {
+    "start": 1992,
+    "end": 1999
+  },
+  "bodyStyles": ["coupe", "convertible", "saloon"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "premium",
+  "designer": "Claus Luthe",
+  "assembly": [
+    "Regensburg, Germany",
+    "Rosslyn, South Africa"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4430,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-m3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36"
+    },
+    "width": {
+      "value": 1710,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-m3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36"
+    },
+    "height": {
+      "value": 1370,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-m3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36"
+    },
+    "wheelbase": {
+      "value": 2700,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-m3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36"
+    }
+  },
+  "trims": [
+    {
+      "id": "m3-euro-pre-facelift",
+      "name": "M3 (Europe, pre-facelift)",
+      "productionYears": { "start": 1992, "end": 1995 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "S50B30",
+        "configuration": "inline-6, DOHC",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2990,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-bmw-m3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36",
+          "sourceNote": "The first M3 to use a straight-six rather than a four-cylinder engine."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 210,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36",
+        "sourceNote": "At 7,000 rpm, published directly in kW for most markets outside North America."
+      },
+      "torque": {
+        "value": 320,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36",
+        "sourceNote": "At 3,600 rpm."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "m3-euro-facelift",
+      "name": "M3 (Europe, facelift)",
+      "productionYears": { "start": 1995, "end": 1999 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "S50B32",
+        "configuration": "inline-6, DOHC",
+        "cylinders": 6,
+        "displacement": {
+          "value": 3201,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-bmw-m3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 236,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36",
+        "sourceNote": "At 7,400 rpm. The facelift also upgraded the manual gearbox from 5 to 6 speeds and introduced an optional 6-speed SMG automated manual."
+      },
+      "torque": {
+        "value": 350,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36",
+        "sourceNote": "At 3,250 rpm."
+      },
+      "mass": {
+        "value": 1515,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36",
+        "sourceNote": "Kerb weight of the 1996 European-specification coupe, cited to a 1996 BMW coupe brochure — the one trim-specific weight the article publishes for the E36, distinct from the US-market Car and Driver test weight recorded at generation level in other sources."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "m3-us",
+      "name": "M3 (North America)",
+      "productionYears": { "start": 1996, "end": 1999 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "S52B32",
+        "configuration": "inline-6, DOHC",
+        "cylinders": 6,
+        "displacement": {
+          "value": 3152,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-bmw-m3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36",
+          "sourceNote": "US and Canadian cars used a lower-output engine throughout the run to keep the car's price down; this is the November 1996-on version, up from the smaller 2,990 cc S50B30US at launch."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 179,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36",
+        "sourceNote": "Published as 240 hp, converted at 1 hp = 0.745699872 kW; the same figure the article gives directly in kW elsewhere. Output was unchanged from the 2,990 cc launch engine."
+      },
+      "torque": {
+        "value": 320,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E36",
+        "sourceNote": "Up from 305 Nm on the 1995-1996 2,990 cc US engine."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/bmw-m3-e36/hero.webp",
+    "alt": "Blue BMW E36 M3 coupe photographed from the front three-quarter angle, parked against a brick wall",
+    "width": 1600,
+    "height": 840,
+    "caption": "The E36: the first M3 with a six-cylinder engine, and the first sold as a saloon and a convertible as well as a coupe.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:1998 BMW M3 Coupe 3.2.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1998_BMW_M3_Coupe_3.2.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/bmw-m3-e36/gallery-1.webp",
+      "alt": "Dark BMW E36 M3 saloon photographed from the rear three-quarter angle, parked on grass",
+      "width": 750,
+      "height": 477,
+      "caption": "The four-door M3: added in December 1994, reportedly to cover the gap between the end of E34 M5 production and the launch of the E39 M5.",
+      "credit": {
+        "author": "Arpingstone at English Wikipedia",
+        "title": "File:BMW-M.M3.arp.750pix.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW-M.M3.arp.750pix.jpg",
+        "licenseType": "public-domain",
+        "licenseNote": "Released into the public domain by the photographer."
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bmw-m3"]
+}

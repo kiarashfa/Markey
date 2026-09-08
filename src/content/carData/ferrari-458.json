@@ -1,0 +1,20 @@
+{
+  "id": "ferrari-458",
+  "name": "Ferrari 458",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "ferrari",
+  "productionYears": {
+    "start": 2009,
+    "end": 2015
+  },
+  "fullName": "Ferrari 458, 2009-2015",
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-ferrari-458"
+  ]
+}

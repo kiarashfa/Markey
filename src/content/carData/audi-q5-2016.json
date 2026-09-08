@@ -1,0 +1,207 @@
+{
+  "id": "audi-q5-2016",
+  "name": "Audi Q5 (FY)",
+  "fullName": "Audi Q5 (FY), 2016-present",
+  "kind": "generation",
+  "parent": "audi-q5",
+  "brandRef": "audi",
+  "generationCode": "FY",
+  "productionYears": {
+    "start": 2016,
+    "end": null
+  },
+  "bodyStyles": [
+    "suv",
+    "crossover"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel",
+    "mild-hybrid",
+    "phev"
+  ],
+  "drivetrains": [
+    "awd"
+  ],
+  "segment": "suv-compact",
+  "positioning": "premium",
+  "designer": "Wolfgang Egger",
+  "assembly": [
+    "San José Chiapa, Mexico (Audi México)",
+    "Changchun, China (Q5L, FAW-VW)",
+    "Aurangabad, India (Audi and Skoda Auto India)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4682,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-q5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5",
+      "sourceNote": "Standard-wheelbase car. The China-market long-wheelbase Q5L is 4,751 mm."
+    },
+    "width": {
+      "value": 1893,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-q5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5"
+    },
+    "height": {
+      "value": 1662,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-q5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5"
+    },
+    "wheelbase": {
+      "value": 2819,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-q5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5",
+      "sourceNote": "Standard wheelbase. The China-market long-wheelbase Q5L is 2,907 mm."
+    },
+    "kerbWeight": {
+      "value": 1835,
+      "unit": "kg",
+      "status": "verified",
+      "source": "nhtsa-cvs-2019-audi-q5",
+      "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2019&Make=audi&units=Metric&format=json",
+      "sourceNote": "The article's own infobox leaves the weight field for this generation blank. NHTSA's Canadian Vehicle Specifications register fills the gap for the 2019 model year."
+    }
+  },
+  "trims": [
+    {
+      "id": "45-tfsi-quattro",
+      "name": "45 TFSI quattro",
+      "productionYears": {
+        "start": 2018,
+        "end": null
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed DSG dual-clutch",
+      "gears": 7,
+      "engine": {
+        "configuration": "inline-4 turbo",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 188,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-q5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5",
+        "sourceNote": "252 hp for the North American launch model, converted at 1 hp = 0.745699872 kW (Wikipedia's own conversion template uses imperial mechanical horsepower here, not metric PS)."
+      },
+      "torque": {
+        "value": 370,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-q5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5",
+        "sourceNote": "273 lb-ft, converted at 1 lb-ft = 1.3558179483 Nm."
+      },
+      "mass": {
+        "value": 1835,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-2019-audi-q5",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2019&Make=audi&units=Metric&format=json"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "55-tfsie-quattro",
+      "name": "55 TFSIe quattro",
+      "productionYears": {
+        "start": 2020,
+        "end": 2025
+      },
+      "drivetrain": "awd",
+      "powertrain": "phev",
+      "engine": {
+        "configuration": "inline-4 turbo, plug-in hybrid",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 270,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-q5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5",
+        "sourceNote": "362 hp combined system output, converted at 1 hp = 0.745699872 kW."
+      },
+      "torque": {
+        "value": 500,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-q5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5",
+        "sourceNote": "369 lb-ft combined system torque, converted at 1 lb-ft = 1.3558179483 Nm."
+      },
+      "batteryCapacity": {
+        "value": 14.1,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-audi-q5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5"
+      },
+      "electricRange": {
+        "value": 32,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-audi-q5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5",
+        "sourceNote": "EPA-estimated 20 miles, converted at 1 mi = 1.609344 km."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-q5-2016/hero.webp",
+    "alt": "Silver Audi Q5 45 TFSI quattro photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 949,
+    "caption": "The second-generation Q5 (Typ FY), launched in 2016 and produced at Audi's Mexico plant for North America.",
+    "credit": {
+      "author": "Mr.choppers",
+      "title": "File:2022 Audi Q5 quattro Premium Plus 45TFSI in Silver, front right.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Audi_Q5_quattro_Premium_Plus_45TFSI_in_Silver,_front_right.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/audi-q5-2016/gallery-1.webp",
+      "alt": "Black Audi SQ5 with larger wheels and quad exhaust tips, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 620,
+      "caption": "The SQ5, the performance flagship of the second-generation range, badged with a supercharged then twin-turbo diesel/petrol V6 depending on market.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2018 Audi SQ5 TFSi Quattro Automatic 3.0 Front.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Audi_SQ5_TFSi_Quattro_Automatic_3.0_Front.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-audi-q5",
+    "nhtsa-cvs-2019-audi-q5"
+  ]
+}

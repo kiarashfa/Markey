@@ -1,0 +1,24 @@
+{
+  "id": "hyundai",
+  "name": "Hyundai",
+  "legalName": "Hyundai Motor Company",
+  "countryOfOrigin": "South Korea",
+  "founded": 1967,
+  "website": "https://hyundai.com",
+  "logo": {
+    "src": "/images/brands/hyundai.svg",
+    "alt": "Hyundai badge: a stylised, slanted letter H inside an oval",
+    "credit": {
+      "author": "Hyundai Motor Company",
+      "title": "File:Hyundai Motor Company logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyundai_Motor_Company_logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#003984",
+  "accentColorNote": "Sampled from the dark blue fill (#003984) used for the H badge in the badge's own SVG source — no public brand-colour specification was found; the badge artwork is the only self-consistent source.",
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-hyundai-motor-company"]
+}

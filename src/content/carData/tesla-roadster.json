@@ -1,0 +1,20 @@
+{
+  "id": "tesla-roadster",
+  "name": "Tesla Roadster",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "tesla",
+  "productionYears": {
+    "start": 2008,
+    "end": 2012
+  },
+  "fullName": "Tesla Roadster (first generation), 2008-2012",
+  "segment": "s-segment",
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-tesla-roadster-first-generation"
+  ]
+}

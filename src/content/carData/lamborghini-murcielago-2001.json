@@ -1,0 +1,378 @@
+{
+  "id": "lamborghini-murcielago-2001",
+  "name": "Lamborghini Murciélago",
+  "fullName": "Lamborghini Murciélago, 2001-2010",
+  "kind": "generation",
+  "parent": "lamborghini-murcielago",
+  "brandRef": "lamborghini",
+  "productionYears": {
+    "start": 2001,
+    "end": 2010
+  },
+  "bodyStyles": [
+    "coupe",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "awd"
+  ],
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "designer": "Luc Donckerwolke (original design); Filippo Perini at Lamborghini Style Center (LP 640 facelift)",
+  "assembly": [
+    "Sant'Agata Bolognese, Italy"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4580,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-murcielago",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+      "sourceNote": "2002-2005 base cars. The 2006-2010 LP 640 grew to 4,610 mm; recorded as an override on that trim."
+    },
+    "width": {
+      "value": 2045,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-murcielago",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+      "sourceNote": "2002-2005 base cars. The 2006-2010 LP 640 grew to 2,057 mm; recorded as an override on that trim."
+    },
+    "height": {
+      "value": 1135,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-murcielago",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago"
+    },
+    "wheelbase": {
+      "value": 2665,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-murcielago",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago"
+    },
+    "kerbWeight": {
+      "value": 1841,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-murcielago",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+      "sourceNote": "4,058 lb as published by Car and Driver via the infobox, converted at 1 lb = 0.45359237 kg. This is a kerb figure for the base coupe only; the roadster and later LP 640 differ and are recorded on their own trims."
+    }
+  },
+  "trims": [
+    {
+      "id": "murcielago",
+      "name": "Murciélago",
+      "productionYears": {
+        "start": 2001,
+        "end": 2006
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or 6-speed e-gear automated manual",
+      "gears": 6,
+      "engine": {
+        "configuration": "V12",
+        "cylinders": 12,
+        "displacement": {
+          "value": 6192,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-murcielago",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 427,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+        "sourceNote": "580 PS at 7,500 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 650,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+        "sourceNote": "Peak at 5,400 rpm."
+      },
+      "mass": {
+        "value": 1841,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+        "sourceNote": "4,058 lb, converted at 1 lb = 0.45359237 kg."
+      },
+      "zeroToHundredKph": {
+        "value": 3.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago"
+      },
+      "topSpeed": {
+        "value": 332,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+        "sourceNote": "Official factory figure, from the comparison table. The article's lead prose gives 207 mph from a different source, which converts to 333 km/h; the two are treated as the same figure to rounding, not a conflict."
+      },
+      "dragCoefficient": {
+        "value": 0.33,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-drag-coefficients",
+        "sourceUrl": "https://en.wikipedia.org/wiki/List_of_automobile_drag_coefficients",
+        "sourceNote": "Listed for the 2001 model year."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "lp640",
+      "name": "LP 640",
+      "productionYears": {
+        "start": 2006,
+        "end": 2010
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or 6-speed e-gear automated manual",
+      "gears": 6,
+      "engine": {
+        "configuration": "V12",
+        "cylinders": 12,
+        "displacement": {
+          "value": 6496,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-murcielago",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+          "sourceNote": "Article body describes it as \"6.5 litres\"; the exact 6,496 cc figure is given for the mechanically related LP 670-4 SV in the same article."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 471,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+        "sourceNote": "640 PS at 8,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 660,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+        "sourceNote": "Peak at 6,000 rpm, from the comparison table."
+      },
+      "mass": {
+        "value": 1746,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+        "sourceNote": "3,850 lb, converted at 1 lb = 0.45359237 kg."
+      },
+      "zeroToHundredKph": {
+        "value": 3.4,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago"
+      },
+      "topSpeed": {
+        "value": 340,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+        "sourceNote": "Official factory figure, coupé."
+      },
+      "seats": 2,
+      "dimensions": {
+        "length": {
+          "value": 4610,
+          "unit": "mm",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-murcielago",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago"
+        },
+        "width": {
+          "value": 2057,
+          "unit": "mm",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-murcielago",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago"
+        }
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "lp670-4-sv",
+      "name": "LP 670-4 SuperVeloce",
+      "productionYears": {
+        "start": 2009,
+        "end": 2010
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed e-gear automated manual",
+      "gears": 6,
+      "engine": {
+        "configuration": "V12",
+        "cylinders": 12,
+        "displacement": {
+          "value": 6496,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-murcielago",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 493,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+        "sourceNote": "670 PS at 8,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 660,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+        "sourceNote": "Peak at 6,500 rpm, from the comparison table."
+      },
+      "mass": {
+        "value": 1746,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+        "sourceNote": "3,850 lb, converted at 1 lb = 0.45359237 kg."
+      },
+      "zeroToHundredKph": {
+        "value": 2.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago"
+      },
+      "topSpeed": {
+        "value": 342,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-murcielago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+        "sourceNote": "Official factory figure without the optional Aeropack wing; with it fitted the article gives 337 km/h."
+      },
+      "seats": 2,
+      "dimensions": {
+        "length": {
+          "value": 4610,
+          "unit": "mm",
+          "status": "estimated",
+          "source": "wikipedia-lamborghini-murcielago",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+          "sourceNote": "Not stated separately for the SV; carried over from the LP 640 it is mechanically based on."
+        },
+        "width": {
+          "value": 2057,
+          "unit": "mm",
+          "status": "estimated",
+          "source": "wikipedia-lamborghini-murcielago",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Murci%C3%A9lago",
+          "sourceNote": "Not stated separately for the SV; carried over from the LP 640 it is mechanically based on."
+        }
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/lamborghini-murcielago/hero.webp",
+    "alt": "Orange Lamborghini Murciélago photographed from the front three-quarter angle, showing the scissor door and angular headlamps",
+    "width": 1600,
+    "height": 881,
+    "caption": "The base Murciélago, styled by Luc Donckerwolke as Lamborghini's first clean-sheet design in eleven years.",
+    "credit": {
+      "author": "Calreyn88",
+      "title": "File:Lamborghini Murcielago 2.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_Murcielago_2.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/lamborghini-murcielago/gallery-1.webp",
+      "alt": "Yellow Lamborghini Murciélago LP670-4 SuperVeloce parked outdoors, showing the enlarged front air intakes and lower front spoiler",
+      "width": 1200,
+      "height": 900,
+      "caption": "The LP 670-4 SuperVeloce: the final and most powerful evolution of the original Lamborghini V12, with enlarged brake-cooling intakes and an extended front spoiler.",
+      "credit": {
+        "author": "MrWalkr",
+        "title": "File:Lamborghini Murcielago LP670-4.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_Murcielago_LP670-4.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    },
+    {
+      "src": "/images/cars/lamborghini-murcielago/gallery-2.webp",
+      "alt": "Interior of a Lamborghini Murciélago LP640 showing the steering wheel, quilted leather seats and centre console with the e-gear paddle",
+      "width": 1200,
+      "height": 900,
+      "caption": "The LP 640 cabin, with the e-gear automated-manual paddles behind the wheel.",
+      "credit": {
+        "author": "JaayJay",
+        "title": "File:Lamborghini Murciélago LP640 innenraum.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_Murci%C3%A9lago_LP640_innenraum.jpg",
+        "licenseType": "public-domain"
+      }
+    },
+    {
+      "src": "/images/cars/lamborghini-murcielago/gallery-3.webp",
+      "alt": "Orange Lamborghini Murciélago LP640 Roadster with its fabric roof removed, parked at the roadside",
+      "width": 1200,
+      "height": 728,
+      "caption": "The LP 640 Roadster, open-topped with the fabric cover stowed. A windshield warning advised against exceeding 100 mph with the roof fitted.",
+      "credit": {
+        "author": "Damian Morys from New York City, United States",
+        "title": "File:LP640 Roadster. (6454849505).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:LP640_Roadster._(6454849505).jpg",
+        "licenseType": "cc-by",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-lamborghini-murcielago",
+    "wikipedia-drag-coefficients"
+  ]
+}

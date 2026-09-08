@@ -1,0 +1,213 @@
+{
+  "id": "audi-tt-1998",
+  "name": "Audi TT (8N)",
+  "fullName": "Audi TT (8N), 1998-2006",
+  "kind": "generation",
+  "parent": "audi-tt",
+  "brandRef": "audi",
+  "generationCode": "8N",
+  "productionYears": {
+    "start": 1998,
+    "end": 2006
+  },
+  "bodyStyles": [
+    "coupe",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd",
+    "awd"
+  ],
+  "segment": "s-segment",
+  "positioning": "premium",
+  "designer": "Freeman Thomas; Peter Schreyer",
+  "assembly": [
+    "Győr, Hungary (engines and final assembly)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4041,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-tt",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT"
+    },
+    "width": {
+      "value": 1764,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-tt",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT"
+    },
+    "height": {
+      "value": 1346,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-tt",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT"
+    },
+    "wheelbase": {
+      "value": 2422,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-tt",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT",
+      "sourceNote": "Front-wheel-drive car. Quattro models are 2,428 mm."
+    },
+    "kerbWeight": {
+      "value": 1455,
+      "unit": "kg",
+      "status": "verified",
+      "source": "nhtsa-cvs-1999-audi-tt",
+      "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2001&Make=audi&units=Metric&format=json",
+      "sourceNote": "The article's own infobox leaves the weight field blank for this generation. NHTSA's Canadian Vehicle Specifications register fills the gap for the 1999 model year quattro coupé."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-8t-quattro-225",
+      "name": "1.8 T quattro",
+      "productionYears": {
+        "start": 1998,
+        "end": 2005
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "AMU, APX, BAM, BEA",
+        "configuration": "inline-4, 20-valve, turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1781,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-audi-tt",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 165,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-tt",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT",
+        "sourceNote": "225 PS at 5,900 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 280,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-tt",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT",
+        "sourceNote": "At 2,200-5,500 rpm."
+      },
+      "mass": {
+        "value": 1455,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-1999-audi-tt",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2001&Make=audi&units=Metric&format=json"
+      },
+      "dragCoefficient": {
+        "value": 0.35,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-audi-tt",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT",
+        "sourceNote": "Stated once for the original TT shape, not broken out per engine."
+      },
+      "weightDistributionFront": {
+        "value": 0.64,
+        "unit": "",
+        "status": "verified",
+        "source": "nhtsa-cvs-1999-audi-tt",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2001&Make=audi&units=Metric&format=json",
+        "sourceNote": "Published as a 64/36 front/rear split for the 1999 model year quattro coupé."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "3-2-vr6-quattro",
+      "name": "3.2 VR6 quattro",
+      "productionYears": {
+        "start": 2003,
+        "end": 2006
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or 6-speed DSG dual-clutch",
+      "gears": 6,
+      "engine": {
+        "code": "BHE",
+        "configuration": "VR6, 24-valve",
+        "cylinders": 6,
+        "displacement": {
+          "value": 3189,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-audi-tt",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 184,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-tt",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT",
+        "sourceNote": "250 PS at 6,300 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 320,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-tt",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT",
+        "sourceNote": "At 2,500-3,000 rpm."
+      },
+      "mass": {
+        "value": 1455,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-1999-audi-tt",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2001&Make=audi&units=Metric&format=json",
+        "sourceNote": "The Canadian register lists the 3.2 quattro coupé under the same 1,455 kg entry as the 1.8T quattro coupé, rather than a separate heavier figure for the six-cylinder engine."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-tt-1998/hero.webp",
+    "alt": "Metallic green first-generation Audi TT quattro coupé photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 797,
+    "caption": "The original TT (Typ 8N), whose Bauhaus-influenced curved bodywork made it an instant design icon in 1998.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2000 Audi TT Quattro 1.8 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2000_Audi_TT_Quattro_1.8_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-audi-tt",
+    "nhtsa-cvs-1999-audi-tt"
+  ]
+}

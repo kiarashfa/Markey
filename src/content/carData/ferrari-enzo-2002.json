@@ -1,0 +1,171 @@
+{
+  "id": "ferrari-enzo-2002",
+  "name": "Ferrari Enzo",
+  "fullName": "Ferrari Enzo, 2002-2004",
+  "kind": "generation",
+  "parent": "ferrari-enzo",
+  "brandRef": "ferrari",
+  "productionYears": {
+    "start": 2002,
+    "end": 2004
+  },
+  "bodyStyles": [
+    "coupe"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "designer": "Ken Okuyama at Pininfarina",
+  "assembly": [
+    "Maranello, Italy"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4702,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-enzo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_Enzo"
+    },
+    "width": {
+      "value": 2035,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-enzo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_Enzo"
+    },
+    "height": {
+      "value": 1147,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-enzo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_Enzo"
+    },
+    "wheelbase": {
+      "value": 2650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-enzo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_Enzo"
+    },
+    "kerbWeight": {
+      "value": 1480,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-ferrari-enzo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_Enzo",
+      "sourceNote": "Kerb weight. The infobox separately gives a 1,255 kg dry weight for the same car; not a conflict, just a different measurement basis."
+    }
+  },
+  "trims": [
+    {
+      "id": "enzo",
+      "name": "Enzo",
+      "productionYears": {
+        "start": 2002,
+        "end": 2004
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed F1 Graziano automated manual",
+      "gears": 6,
+      "engine": {
+        "code": "F140 B",
+        "configuration": "V12, 65-degree, DOHC 4-valve, variable valve timing",
+        "cylinders": 12,
+        "displacement": {
+          "value": 5999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ferrari-enzo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_Enzo",
+          "sourceNote": "Published as 5,998.80 cc, rounded to the nearest cc."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 485,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ferrari-enzo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_Enzo",
+        "sourceNote": "660 PS at 7,800 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 657,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ferrari-enzo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_Enzo"
+      },
+      "mass": {
+        "value": 1480,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-ferrari-enzo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_Enzo",
+        "sourceNote": "Kerb weight; the 1,255 kg figure also published is a dry weight, not stored here."
+      },
+      "topSpeed": {
+        "value": 355,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ferrari-enzo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_Enzo",
+        "sourceNote": "As recorded in independent testing, per the article; no single lower factory-claimed figure is given."
+      },
+      "weightDistributionFront": {
+        "value": 0.44,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-ferrari-enzo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_Enzo",
+        "sourceNote": "Published as a 44/56 front/rear split."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/ferrari-enzo/hero.webp",
+    "alt": "Red Ferrari Enzo photographed from the front three-quarter angle, showing its Formula One-influenced nose and butterfly doors",
+    "width": 1600,
+    "height": 1060,
+    "caption": "The Enzo, named after the company's founder and developed using Formula One-derived carbon-fibre and aerodynamic technology.",
+    "credit": {
+      "author": "Axion23",
+      "title": "File:Orange Enzo Ferrari (7191948164).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orange_Enzo_Ferrari_(7191948164).jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/ferrari-enzo/gallery-1.webp",
+      "alt": "Ferrari Enzo engine bay showing the naturally aspirated V12 with its intake plenums and red cam covers",
+      "width": 1200,
+      "height": 900,
+      "caption": "The F140 B, a 6.0-litre naturally aspirated V12 making 660 PS — the basis for the later Ferrari FXX and Maserati MC12 engines.",
+      "credit": {
+        "author": "No machine-readable author provided. Mobius assumed (based on copyright claims).",
+        "title": "File:Ferrari Enzo Engine.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_Enzo_Engine.jpg",
+        "licenseType": "public-domain"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-ferrari-enzo"
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "id": "audi-a8-2017",
+  "name": "Audi A8 (D5)",
+  "fullName": "Audi A8 (D5), 2017-2026",
+  "kind": "generation",
+  "parent": "audi-a8",
+  "brandRef": "audi",
+  "generationCode": "D5",
+  "productionYears": {
+    "start": 2017,
+    "end": 2026
+  },
+  "bodyStyles": [
+    "saloon"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel",
+    "mild-hybrid",
+    "phev"
+  ],
+  "drivetrains": [
+    "awd"
+  ],
+  "segment": "f-segment",
+  "positioning": "luxury",
+  "designer": "Sascha Heyde, Amar Vaya",
+  "assembly": [
+    "Neckarsulm, Germany"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 5172,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+      "sourceNote": "Short-wheelbase car. The long-wheelbase A8 L is 5,302 mm; the China-market Horch is 5,422 mm."
+    },
+    "width": {
+      "value": 1945,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+    },
+    "height": {
+      "value": 1485,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+    },
+    "wheelbase": {
+      "value": 2998,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+      "sourceNote": "Short-wheelbase car. The long-wheelbase A8 L is 3,128 mm; the China-market Horch is 3,258 mm."
+    },
+    "kerbWeight": {
+      "value": 1995,
+      "unit": "kg",
+      "status": "verified",
+      "source": "nhtsa-cvs-2018-audi-a8",
+      "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2019&Make=audi&units=Metric&format=json",
+      "sourceNote": "The article does not publish a weight figure for this generation at all. NHTSA's Canadian Vehicle Specifications register fills the gap for the 2018 model year, short-wheelbase car; the long-wheelbase A8 L is 2,030 kg in the same register."
+    }
+  },
+  "trims": [
+    {
+      "id": "55-tfsi",
+      "name": "55 TFSI quattro",
+      "productionYears": {
+        "start": 2017,
+        "end": 2018
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "8-speed Tiptronic automatic",
+      "gears": 8,
+      "engine": {
+        "code": "CZSE",
+        "configuration": "V6, biturbo",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2995,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-audi-a8",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 250,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+        "sourceNote": "At 5,000-6,400 rpm."
+      },
+      "torque": {
+        "value": 500,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+        "sourceNote": "At 1,370-4,500 rpm."
+      },
+      "mass": {
+        "value": 1995,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-2018-audi-a8",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2019&Make=audi&units=Metric&format=json"
+      },
+      "fuelEconomy": {
+        "value": 7.5,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+        "sourceNote": "EU-norm combined, low end of the published 7.5-7.8 L/100 km range."
+      },
+      "zeroToHundredKph": {
+        "value": 5.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+        "sourceNote": "Low end of the published 5.6-5.7 second range."
+      },
+      "topSpeed": {
+        "value": 250,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "s8-tfsi",
+      "name": "S8 TFSI quattro",
+      "productionYears": {
+        "start": 2019,
+        "end": 2026
+      },
+      "drivetrain": "awd",
+      "powertrain": "mild-hybrid",
+      "transmission": "8-speed Tiptronic automatic",
+      "gears": 8,
+      "engine": {
+        "configuration": "V8, biturbo, 48-volt mild hybrid",
+        "cylinders": 8,
+        "displacement": {
+          "value": 3996,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-audi-a8",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 420,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+        "sourceNote": "At 6,000 rpm."
+      },
+      "torque": {
+        "value": 800,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+        "sourceNote": "At 2,000-4,500 rpm."
+      },
+      "fuelEconomy": {
+        "value": 11.3,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+        "sourceNote": "EU-norm combined."
+      },
+      "zeroToHundredKph": {
+        "value": 3.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+      },
+      "topSpeed": {
+        "value": 250,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-a8-2017/hero.webp",
+    "alt": "Grey fourth-generation Audi A8 photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 932,
+    "caption": "The current, fourth-generation A8 (Typ 4N), on sale since 2017.",
+    "credit": {
+      "author": "Alexander Migl",
+      "title": "File:Audi A8 D5 (2021) 1X7A0162.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_A8_D5_(2021)_1X7A0162.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-audi-a8",
+    "nhtsa-cvs-2018-audi-a8"
+  ]
+}

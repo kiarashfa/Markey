@@ -1,0 +1,148 @@
+{
+  "id": "peugeot-308-t7",
+  "name": "Peugeot 308 (T7)",
+  "fullName": "Peugeot 308 (T7), 2007-2013",
+  "kind": "generation",
+  "parent": "peugeot-308",
+  "brandRef": "peugeot",
+  "generationCode": "T7",
+  "productionYears": {
+    "start": 2007,
+    "end": 2013
+  },
+  "bodyStyles": ["hatchback", "estate", "convertible", "saloon"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Stéphan Peureux",
+  "assembly": [
+    "Mulhouse, France",
+    "Sochaux, France",
+    "El Palomar, Argentina (PSA Argentina)",
+    "Wuhan, China (DPCA)",
+    "Gurun, Malaysia (NAM)",
+    "Kaluga, Russia (PCMA Rus)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4276,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-308",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#First_generation_(T7;_2007)",
+      "sourceNote": "Hatchback. The estate (SW) was 4,500 mm, the coupé cabriolet (CC) 4,440 mm and the saloon 4,558 mm."
+    },
+    "width": {
+      "value": 1815,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-308",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#First_generation_(T7;_2007)"
+    },
+    "height": {
+      "value": 1498,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-308",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#First_generation_(T7;_2007)",
+      "sourceNote": "Hatchback. The estate was 1,566 mm, the saloon 1,505 mm and the coupé cabriolet 1,426 mm."
+    },
+    "wheelbase": {
+      "value": 2608,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-308",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#First_generation_(T7;_2007)",
+      "sourceNote": "Hatchback. The estate was 2,708 mm and the coupé cabriolet 2,605 mm."
+    }
+  },
+  "trims": [
+    {
+      "id": "hdi-163",
+      "name": "2.0 HDi 163",
+      "productionYears": { "start": 2007, "end": 2013 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "DW10",
+        "configuration": "inline-4, turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1997,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-308",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#First_generation_(T7;_2007)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 121.55,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-308",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#First_generation_(T7;_2007)",
+        "sourceNote": "Published as 163 bhp for the 2.0 HDi coupé cabriolet, converted at 1 hp = 0.745699872 kW. No torque figure, 0-100 km/h time or top speed is published in the source for this engine, so those fields are omitted rather than estimated."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gti-gt",
+      "name": "GTi / GT",
+      "productionYears": { "start": 2010, "end": 2013 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "EP6DT",
+        "configuration": "inline-4, turbocharged, direct injection",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-308",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#First_generation_(T7;_2007)",
+          "sourceNote": "Badged GTi in most markets, GT in the United Kingdom. Introduced in May 2010 to revive the GTI name after a gap."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 149.14,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-308",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_308#First_generation_(T7;_2007)",
+        "sourceNote": "Published as 200 bhp, converted at 1 hp = 0.745699872 kW. No torque figure, 0-100 km/h time or top speed is published in the source for this car."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/peugeot-308-t7/hero.webp",
+    "alt": "White first-generation Peugeot 308 hatchback photographed from the front three-quarter angle on a residential street",
+    "width": 1600,
+    "height": 1070,
+    "caption": "The T7: launched in 2007 as the 307's replacement, with a drag coefficient of 0.29, improved to 0.28 at its 2011 facelift.",
+    "credit": {
+      "author": "OSX",
+      "title": "File:2008 Peugeot 308 (T7) XS HDi 5-door hatchback (2015-07-03) 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Peugeot_308_(T7)_XS_HDi_5-door_hatchback_(2015-07-03)_01.jpg",
+      "licenseType": "public-domain",
+      "licenseNote": "Released into the public domain by the photographer."
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-peugeot-308"]
+}

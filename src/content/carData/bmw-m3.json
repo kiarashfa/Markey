@@ -1,0 +1,18 @@
+{
+  "id": "bmw-m3",
+  "name": "BMW M3",
+  "fullName": "BMW M3, 1986-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "bmw",
+  "productionYears": {
+    "start": 1986,
+    "end": null
+  },
+  "segment": "s-segment",
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bmw-m3"]
+}

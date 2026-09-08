@@ -130,7 +130,7 @@
       "mass": {
         "value": 1210,
         "unit": "kg",
-        "status": "verified",
+        "status": "estimated",
         "source": "wikipedia-porsche-911-930",
         "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_911_(930)",
         "sourceNote": "The 930 infobox publishes a weight range of 2,668-3,040 lb across the model's markets and years, converted at 0.45359237 kg/lb. Stored as the lowest figure, 1,210 kg; the heaviest recorded cars reach 1,379 kg."

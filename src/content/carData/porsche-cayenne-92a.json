@@ -1,0 +1,247 @@
+{
+  "id": "porsche-cayenne-92a",
+  "name": "Porsche Cayenne (92A)",
+  "fullName": "Porsche Cayenne (92A/E2), 2010-2017",
+  "kind": "generation",
+  "parent": "porsche-cayenne",
+  "brandRef": "porsche",
+  "generationCode": "92A",
+  "productionYears": {
+    "start": 2010,
+    "end": 2017
+  },
+  "bodyStyles": ["suv"],
+  "powertrains": ["petrol", "diesel", "phev"],
+  "drivetrains": ["awd"],
+  "segment": "suv-mid",
+  "positioning": "luxury",
+  "designer": "Mitja Borkert",
+  "assembly": [
+    "Bratislava, Slovakia (Volkswagen Bratislava Plant)",
+    "Leipzig, Germany (Porsche Leipzig)",
+    "Osnabrück, Germany (Volkswagen Osnabrück Plant, 2015-2017)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4846,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-cayenne",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)",
+      "sourceNote": "2010-2014 figure; the 2014-2017 facelift was 4,855 mm."
+    },
+    "width": {
+      "value": 1938,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-cayenne",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)",
+      "sourceNote": "2010-2014 figure; the 2014-2017 facelift was 1,939 mm."
+    },
+    "height": {
+      "value": 1705,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-cayenne",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)"
+    },
+    "wheelbase": {
+      "value": 2895,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-cayenne",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)"
+    },
+    "kerbWeight": {
+      "value": 2085,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-porsche-cayenne",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)",
+      "sourceNote": "Lowest of a published 2,085-2,215 kg range across the whole range; not attributed to one specific trim, so recorded at generation level only. The article states the 92A is about 250 kg lighter than the 9PA it replaced, largely from dropping the low-range transfer case."
+    }
+  },
+  "trims": [
+    {
+      "id": "cayenne-v6",
+      "name": "Cayenne",
+      "productionYears": { "start": 2010, "end": 2014 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "EA390",
+        "configuration": "VR6",
+        "cylinders": 6,
+        "displacement": {
+          "value": 3598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-cayenne",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 220.65,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)",
+        "sourceNote": "Published as 300 PS at 6,300 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 400,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)",
+        "sourceNote": "At 3,000 rpm."
+      },
+      "co2": {
+        "value": 236,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "cayenne-diesel",
+      "name": "Cayenne Diesel",
+      "productionYears": { "start": 2010, "end": 2011 },
+      "drivetrain": "awd",
+      "powertrain": "diesel",
+      "transmission": "8-speed automatic",
+      "gears": 8,
+      "engine": {
+        "code": "CNR/CRC/CVV",
+        "configuration": "inline-6, turbocharged",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2967,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-cayenne",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)",
+          "sourceNote": "A Volkswagen Group V6 TDI unit. Model-year 2013-2016 diesel Cayennes are included in the Volkswagen Group diesel emissions scandal."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 176.52,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)",
+        "sourceNote": "Published as 240 PS at 4,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 550,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)",
+        "sourceNote": "At 2,000 rpm."
+      },
+      "co2": {
+        "value": 195,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "cayenne-turbo",
+      "name": "Cayenne Turbo",
+      "productionYears": { "start": 2010, "end": 2014 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "8-speed automatic",
+      "gears": 8,
+      "engine": {
+        "code": "M4851",
+        "configuration": "V8, twin-turbocharged",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4806,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-cayenne",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 367.75,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)",
+        "sourceNote": "Published as 500 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 700,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)",
+        "sourceNote": "At 2,250 rpm."
+      },
+      "co2": {
+        "value": 270,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#Second_generation_(E2_92A;_2010)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/porsche-cayenne-92a/hero.webp",
+    "alt": "White second-generation Porsche Cayenne Diesel SUV photographed from the front three-quarter angle on a residential street",
+    "width": 1600,
+    "height": 783,
+    "caption": "The 92A: about 250 kg lighter than the 9PA it replaced, sharing its platform with the Volkswagen Touareg and Audi Q7.",
+    "credit": {
+      "author": "Makizox",
+      "title": "File:2015 Porsche Cayenne V6 Diesel Triptonic S 3.0 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_Porsche_Cayenne_V6_Diesel_Triptonic_S_3.0_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/porsche-cayenne-92a/gallery-1.webp",
+      "alt": "White facelifted Porsche Cayenne S E-Hybrid plugged into a charging station at an indoor motor show display",
+      "width": 800,
+      "height": 1200,
+      "caption": "The S E-Hybrid: introduced for 2014, the 92A's plug-in hybrid used a supercharged V6 with a 61 kW electric motor and a lithium-ion battery.",
+      "credit": {
+        "author": "Mariordo (Mario Roberto Durán Ortiz)",
+        "title": "File:2017 Porsche Cayenne S E-Hybrid Platinum WAS 2017 1807.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Porsche_Cayenne_S_E-Hybrid_Platinum_WAS_2017_1807.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-porsche-cayenne"]
+}

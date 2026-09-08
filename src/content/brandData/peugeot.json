@@ -1,0 +1,24 @@
+{
+  "id": "peugeot",
+  "name": "Peugeot",
+  "legalName": "Automobiles Peugeot",
+  "countryOfOrigin": "France",
+  "founded": 1896,
+  "website": "https://www.peugeot.com/en/",
+  "logo": {
+    "src": "/images/brands/peugeot.svg",
+    "alt": "Peugeot wordmark with the chrome lion emblem",
+    "credit": {
+      "author": "Unknown (original design); Ssolbergj (vector graphics)",
+      "title": "File:Peugeot Logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peugeot_Logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes; the basis for display here is trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+    }
+  },
+  "accentColor": "#0d224a",
+  "accentColorNote": "Sampled from the dark navy fill (#0d224a) used for the wordmark text in the badge's own SVG source — no public brand-colour specification was found; the badge artwork is the only self-consistent source.",
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-peugeot"]
+}

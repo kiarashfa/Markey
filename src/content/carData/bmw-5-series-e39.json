@@ -1,0 +1,227 @@
+{
+  "id": "bmw-5-series-e39",
+  "name": "BMW 5 Series (E39)",
+  "fullName": "BMW 5 Series (E39), 1995-2003",
+  "kind": "generation",
+  "parent": "bmw-5-series",
+  "brandRef": "bmw",
+  "generationCode": "E39",
+  "productionYears": {
+    "start": 1995,
+    "end": 2003
+  },
+  "bodyStyles": ["saloon", "estate"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["rwd"],
+  "segment": "e-segment",
+  "positioning": "premium",
+  "designer": "Joji Nagashima",
+  "assembly": [
+    "Dingolfing, Germany",
+    "6th of October City, Egypt (BAG)",
+    "Jakarta, Indonesia (Gaya Motor)",
+    "Kaliningrad, Russia (Avtotor)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4775,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-5-series-e39",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)",
+      "sourceNote": "Lowest of a published 4,775-4,805 mm range across trims and body styles."
+    },
+    "width": {
+      "value": 1800,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-5-series-e39",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)"
+    },
+    "height": {
+      "value": 1435,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-5-series-e39",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)",
+      "sourceNote": "Lowest of a published 1,435-1,445 mm range across trims and body styles."
+    },
+    "wheelbase": {
+      "value": 2830,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-5-series-e39",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)"
+    },
+    "kerbWeight": {
+      "value": 1500,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-bmw-5-series-e39",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)",
+      "sourceNote": "Lowest of a published 1,500-1,845 kg range across the whole range; not attributed to one specific trim in the infobox, so recorded at generation level only."
+    }
+  },
+  "trims": [
+    {
+      "id": "523i",
+      "name": "523i",
+      "productionYears": { "start": 1995, "end": 1998 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "M52B25",
+        "configuration": "inline-6",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2494,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-bmw-5-series-e39",
+          "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 125,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-5-series-e39",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)",
+        "sourceNote": "At 5,500 rpm, published directly in kW."
+      },
+      "torque": {
+        "value": 245,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-5-series-e39",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)",
+        "sourceNote": "At 3,950 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "540i",
+      "name": "540i",
+      "productionYears": { "start": 1995, "end": 1998 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "M62B44",
+        "configuration": "V8",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4398,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-bmw-5-series-e39",
+          "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 210,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-5-series-e39",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)",
+        "sourceNote": "At 5,700 rpm, published directly in kW."
+      },
+      "torque": {
+        "value": 420,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-5-series-e39",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)",
+        "sourceNote": "At 3,900 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "530d",
+      "name": "530d",
+      "productionYears": { "start": 2000, "end": 2003 },
+      "drivetrain": "rwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed automatic",
+      "gears": 5,
+      "engine": {
+        "code": "M57D30",
+        "configuration": "inline-6, turbocharged",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2926,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-bmw-5-series-e39",
+          "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)",
+          "sourceNote": "The 530i (petrol) engine of this generation topped Ward's 10 Best Engines list in 2002 and 2003; the 530d is the diesel counterpart recorded here."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 142,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-5-series-e39",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)",
+        "sourceNote": "At 4,000 rpm, published directly in kW. Up from 135 kW in 1998-2000 form."
+      },
+      "torque": {
+        "value": 410,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-5-series-e39",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E39)",
+        "sourceNote": "At 1,750 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/bmw-5-series-e39/hero.webp",
+    "alt": "Silver facelifted BMW E39 5 Series saloon photographed from the front three-quarter angle on a city street",
+    "width": 1600,
+    "height": 1200,
+    "caption": "The E39: widely regarded as one of BMW's best-handling saloons, and the last 5 Series offered without electric power steering.",
+    "credit": {
+      "author": "Damian B Oh",
+      "title": "File:BMW E39 LCI 530i Titanium Silver (1).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_E39_LCI_530i_Titanium_Silver_(1).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/bmw-5-series-e39/gallery-1.webp",
+      "alt": "Dark red pre-facelift BMW E39 540i Touring estate photographed from the front three-quarter angle beside a stone wall",
+      "width": 1200,
+      "height": 606,
+      "caption": "The Touring: the E39's estate body, added to production in November 1996, over a year after the saloon.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:1998 BMW 540i Touring Automatic 4.4.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1998_BMW_540i_Touring_Automatic_4.4.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bmw-5-series-e39"]
+}

@@ -1,0 +1,230 @@
+{
+  "id": "ferrari-f430-2004",
+  "name": "Ferrari F430",
+  "fullName": "Ferrari F430, 2004-2009",
+  "kind": "generation",
+  "parent": "ferrari-f430",
+  "brandRef": "ferrari",
+  "productionYears": {
+    "start": 2004,
+    "end": 2009
+  },
+  "bodyStyles": [
+    "coupe",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "designer": "Frank Stephenson in collaboration with Pininfarina",
+  "assembly": [
+    "Maranello, Italy"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4511,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-f430",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430",
+      "sourceNote": "Published as 177.6 in, converted at 1 in = 25.4 mm."
+    },
+    "width": {
+      "value": 1923,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-f430",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430",
+      "sourceNote": "Published as 75.7 in, converted at 1 in = 25.4 mm."
+    },
+    "height": {
+      "value": 1214,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-f430",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430",
+      "sourceNote": "Coupé, published as 47.8 in, converted at 1 in = 25.4 mm. The Spider is 48.6 in / 1,234 mm."
+    },
+    "wheelbase": {
+      "value": 2601,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-f430",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430",
+      "sourceNote": "Published as 102.4 in, converted at 1 in = 25.4 mm."
+    },
+    "kerbWeight": {
+      "value": 1517,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-ferrari-f430",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430",
+      "sourceNote": "3,344 lb, base coupé, converted at 1 lb = 0.45359237 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "f430",
+      "name": "F430",
+      "productionYears": {
+        "start": 2004,
+        "end": 2009
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or 6-speed Graziano F1 automated manual",
+      "gears": 6,
+      "engine": {
+        "code": "F136 E",
+        "configuration": "V8",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4308,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ferrari-f430",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 360,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f430",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430",
+        "sourceNote": "490 PS at 8,500 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 465,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f430",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430",
+        "sourceNote": "At 5,250 rpm."
+      },
+      "mass": {
+        "value": 1517,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f430",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430",
+        "sourceNote": "3,344 lb, converted at 1 lb = 0.45359237 kg."
+      },
+      "topSpeed": {
+        "value": 315,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f430",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430",
+        "sourceNote": "Published as \"in excess of 196 mph\", converted at 1 mph = 1.609344 km/h; a like-for-like speed conversion, not a change of quantity."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "430-scuderia",
+      "name": "430 Scuderia",
+      "productionYears": {
+        "start": 2007,
+        "end": 2009
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed Graziano F1 automated manual",
+      "gears": 6,
+      "engine": {
+        "code": "F136 E",
+        "configuration": "V8",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4308,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ferrari-f430",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 375,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f430",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430",
+        "sourceNote": "510 PS at 8,500 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 471,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f430",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430",
+        "sourceNote": "At 5,250 rpm."
+      },
+      "mass": {
+        "value": 1440,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f430",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430",
+        "sourceNote": "Kerb weight. The article separately gives a 1,340 kg dry weight for the same car."
+      },
+      "topSpeed": {
+        "value": 319,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ferrari-f430",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_F430",
+        "sourceNote": "Published as 198 mph, converted at 1 mph = 1.609344 km/h; a like-for-like speed conversion, not a change of quantity."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/ferrari-f430/hero.webp",
+    "alt": "Red Ferrari F430 coupé photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 815,
+    "caption": "The F430, the first Ferrari V8 built on the entirely new Ferrari-Maserati F136 engine family rather than the fifty-year-old Dino-derived architecture.",
+    "credit": {
+      "author": "Alexandre Prévot from Nancy, France",
+      "title": "File:Ferrari F430 - Flickr - Alexandre Prévot (4) (cropped).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_F430_-_Flickr_-_Alexandre_Pr%C3%A9vot_(4)_(cropped).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/ferrari-f430/gallery-1.webp",
+      "alt": "Red Ferrari 430 Scuderia with a white racing stripe, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 588,
+      "caption": "The 430 Scuderia, unveiled by Michael Schumacher in 2007 — 100 kg lighter and more powerful than the standard F430.",
+      "credit": {
+        "author": "Alexander-93",
+        "title": "File:Ferrari F430 Scuderia 1X7A7332.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_F430_Scuderia_1X7A7332.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-ferrari-f430"
+  ]
+}

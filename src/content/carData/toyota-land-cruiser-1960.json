@@ -1,0 +1,178 @@
+{
+  "id": "toyota-land-cruiser-1960",
+  "name": "Toyota Land Cruiser (J40)",
+  "fullName": "Toyota Land Cruiser (J40), 1960-1985",
+  "kind": "generation",
+  "parent": "toyota-land-cruiser",
+  "brandRef": "toyota",
+  "generationCode": "J40",
+  "productionYears": {
+    "start": 1960,
+    "end": 1985
+  },
+  "bodyStyles": [
+    "suv",
+    "pickup"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "4wd"
+  ],
+  "segment": "suv-large",
+  "positioning": "mainstream",
+  "assembly": [
+    "Toyota City, Japan",
+    "São Bernardo, Brazil",
+    "Cumaná, Venezuela",
+    "Jakarta, Indonesia",
+    "Sarawak, Malaysia"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 3841,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-land-cruiser",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+      "sourceNote": "Published as 151.2 in, converted at 1 in = 25.4 mm."
+    },
+    "width": {
+      "value": 1666,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-land-cruiser",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+      "sourceNote": "Published as 65.6 in, converted at 1 in = 25.4 mm."
+    },
+    "height": {
+      "value": 1951,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-land-cruiser",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+      "sourceNote": "Softtop, published as 76.8 in, converted at 1 in = 25.4 mm. The hardtop is 78.8 in / 2,002 mm."
+    },
+    "wheelbase": {
+      "value": 2285,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-land-cruiser",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+      "sourceNote": "Shortest of four wheelbases offered across the J40 run (2,285/2,430/2,650/2,950 mm) for different body styles; the shortest is recorded here."
+    },
+    "kerbWeight": {
+      "value": 1480,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-toyota-land-cruiser",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+      "sourceNote": "Softtop, published as 3,263 lb, converted at 1 lb = 0.45359237 kg. The hardtop is 3,427 lb / 1,554 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "fj40",
+      "name": "FJ40",
+      "productionYears": {
+        "start": 1960,
+        "end": 1975
+      },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "transmission": "3-speed manual",
+      "gears": 3,
+      "engine": {
+        "code": "F",
+        "configuration": "inline-6",
+        "cylinders": 6,
+        "displacement": {
+          "value": 3878,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article describes this engine only as \"3.9 L\"; 3,878 cc is the well-documented displacement of the Toyota F engine, not a figure stated directly in this article."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 93,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-land-cruiser",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+        "sourceNote": "New F engine introduced with the 1960 20-Series-to-40-Series upgrade."
+      },
+      "mass": {
+        "value": 1480,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-toyota-land-cruiser",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+        "sourceNote": "Softtop figure."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "bandeirante",
+      "name": "Bandeirante",
+      "productionYears": {
+        "start": 1968,
+        "end": 1985
+      },
+      "drivetrain": "4wd",
+      "powertrain": "diesel",
+      "transmission": "3-speed manual",
+      "gears": 3,
+      "engine": {
+        "configuration": "inline-4, Mercedes-Benz-built",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 58,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-land-cruiser",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+        "sourceNote": "The Brazilian-built Bandeirante's Mercedes-Benz-sourced diesel engine, from 1968."
+      },
+      "mass": {
+        "value": 1480,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-toyota-land-cruiser",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+        "sourceNote": "Generation-level softtop figure; no separate Bandeirante-specific weight is published in this article."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-land-cruiser-1960/hero.webp",
+    "alt": "Beige Toyota Land Cruiser FJ40 hardtop photographed from the rear three-quarter angle",
+    "width": 1600,
+    "height": 1067,
+    "caption": "The FJ40, the archetypal Land Cruiser and the model that established the nameplate's reputation for durability.",
+    "credit": {
+      "author": "Jeremy from Sydney, Australia",
+      "title": "File:1980 Toyota Land Cruiser (FJ40) hardtop (25439621823).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1980_Toyota_Land_Cruiser_(FJ40)_hardtop_(25439621823).jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-land-cruiser"
+  ]
+}

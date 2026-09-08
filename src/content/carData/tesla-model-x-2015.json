@@ -1,0 +1,203 @@
+{
+  "id": "tesla-model-x-2015",
+  "name": "Tesla Model X",
+  "fullName": "Tesla Model X, 2015-2026",
+  "kind": "generation",
+  "parent": "tesla-model-x",
+  "brandRef": "tesla",
+  "productionYears": {
+    "start": 2015,
+    "end": 2026
+  },
+  "bodyStyles": [
+    "suv"
+  ],
+  "powertrains": [
+    "bev"
+  ],
+  "drivetrains": [
+    "awd"
+  ],
+  "segment": "suv-mid",
+  "positioning": "premium",
+  "designer": "Franz von Holzhausen",
+  "assembly": [
+    "Fremont, California, US (Fremont Factory)",
+    "Tilburg, Netherlands (final assembly, 2016-2021)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 5036,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-x",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_X"
+    },
+    "width": {
+      "value": 1999,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-x",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_X"
+    },
+    "height": {
+      "value": 1684,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-x",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_X",
+      "sourceNote": "Published as 66.3 in, converted at 1 in = 25.4 mm."
+    },
+    "wheelbase": {
+      "value": 2965,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-x",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_X"
+    },
+    "kerbWeight": {
+      "value": 2335,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-tesla-model-x",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_X",
+      "sourceNote": "5,148 lb, current dual-motor Long Range, converted at 1 lb = 0.45359237 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "long-range",
+      "name": "Long Range",
+      "productionYears": {
+        "start": 2021,
+        "end": 2026
+      },
+      "drivetrain": "awd",
+      "powertrain": "bev",
+      "transmission": "single-speed transaxle, front and rear",
+      "engine": {
+        "configuration": "dual motor"
+      },
+      "power": {
+        "value": 500,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-x",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_X",
+        "sourceNote": "670 hp, Tesla's own published combined output for this trim, converted at 1 hp = 0.745699872 kW. The article explicitly notes elsewhere, for the older discontinued D-series trims, that the separate front- and rear-motor horsepower figures should not be combined; this 670 hp figure is a directly published system total, not a sum performed by this entry."
+      },
+      "batteryCapacity": {
+        "value": 100,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-x",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_X"
+      },
+      "electricRange": {
+        "value": 566,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-x",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_X",
+        "sourceNote": "352 mi, EPA cycle, converted at 1 mi = 1.609344 km."
+      },
+      "mass": {
+        "value": 2335,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-x",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_X",
+        "sourceNote": "5,148 lb, converted at 1 lb = 0.45359237 kg."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "plaid",
+      "name": "Plaid",
+      "productionYears": {
+        "start": 2021,
+        "end": 2026
+      },
+      "drivetrain": "awd",
+      "powertrain": "bev",
+      "transmission": "single-speed transaxle, tri-motor",
+      "engine": {
+        "configuration": "tri-motor"
+      },
+      "power": {
+        "value": 761,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-x",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_X",
+        "sourceNote": "1,020 hp, Tesla's own published combined output for this trim, converted at 1 hp = 0.745699872 kW."
+      },
+      "batteryCapacity": {
+        "value": 100,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-x",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_X"
+      },
+      "electricRange": {
+        "value": 539,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-x",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_X",
+        "sourceNote": "335 mi, EPA cycle, converted at 1 mi = 1.609344 km."
+      },
+      "mass": {
+        "value": 2380,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-tesla-model-x",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_X",
+        "sourceNote": "5,248 lb, converted at 1 lb = 0.45359237 kg."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/tesla-model-x-2015/hero.webp",
+    "alt": "Grey Tesla Model X 100D photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 809,
+    "caption": "The Model X, developed from the Model S platform and distinguished by its rear falcon-wing doors.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2017 Tesla Model X 100D Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Tesla_Model_X_100D_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/tesla-model-x-2015/gallery-1.webp",
+      "alt": "Interior of a Tesla Model X showing the large portrait touchscreen and minimalist dashboard",
+      "width": 1200,
+      "height": 568,
+      "caption": "The Model X cabin, dominated by Tesla's large central touchscreen.",
+      "credit": {
+        "author": "Grassbag",
+        "title": "File:Tesla Model X Interior.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_X_Interior.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-tesla-model-x"
+  ]
+}

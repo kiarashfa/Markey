@@ -1,0 +1,18 @@
+{
+  "id": "bmw-5-series",
+  "name": "BMW 5 Series",
+  "fullName": "BMW 5 Series, 1972-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "bmw",
+  "productionYears": {
+    "start": 1972,
+    "end": null
+  },
+  "segment": "e-segment",
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bmw-5-series-e12"]
+}

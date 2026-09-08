@@ -1,0 +1,18 @@
+{
+  "id": "peugeot-308",
+  "name": "Peugeot 308",
+  "fullName": "Peugeot 308, 2007-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "peugeot",
+  "productionYears": {
+    "start": 2007,
+    "end": null
+  },
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-peugeot-308"]
+}

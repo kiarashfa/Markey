@@ -1,0 +1,196 @@
+{
+  "id": "audi-q7-2005",
+  "name": "Audi Q7 (4L)",
+  "fullName": "Audi Q7 (4L), 2005-2015",
+  "kind": "generation",
+  "parent": "audi-q7",
+  "brandRef": "audi",
+  "generationCode": "4L",
+  "productionYears": {
+    "start": 2005,
+    "end": 2015
+  },
+  "bodyStyles": [
+    "suv"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "awd"
+  ],
+  "segment": "suv-large",
+  "positioning": "premium",
+  "designer": "Satoshi Wada",
+  "assembly": [
+    "Bratislava, Slovakia (Volkswagen Bratislava Plant)",
+    "Aurangabad, India (Audi India, CKD)",
+    "Kaluga, Russia (Volkswagen Group Rus)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 5085,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-q7",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7"
+    },
+    "width": {
+      "value": 1984,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-q7",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7"
+    },
+    "height": {
+      "value": 1737,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-q7",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7"
+    },
+    "wheelbase": {
+      "value": 3002,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-q7",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7"
+    },
+    "kerbWeight": {
+      "value": 2205,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-audi-q7",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7",
+      "sourceNote": "Infobox gives a 2,205-2,605 kg range across the whole engine line-up without attributing each figure to an engine. The lower figure is recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "3-0-tdi",
+      "name": "3.0 TDI",
+      "productionYears": {
+        "start": 2007,
+        "end": 2009
+      },
+      "drivetrain": "awd",
+      "powertrain": "diesel",
+      "engine": {
+        "configuration": "V6 turbo",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2967,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-audi-q7",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 176,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-q7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7",
+        "sourceNote": "240 PS at 4,000-4,400 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 550,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-q7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7",
+        "sourceNote": "At 2,000-2,250 rpm."
+      },
+      "mass": {
+        "value": 2205,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-audi-q7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7",
+        "sourceNote": "Low end of the generation's published 2,205-2,605 kg weight range, applied here to the lightest engine in the line-up rather than taken from a per-engine figure."
+      },
+      "seats": 7,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "5-9-v12-tdi",
+      "name": "V12 TDI",
+      "productionYears": {
+        "start": 2008,
+        "end": 2012
+      },
+      "drivetrain": "awd",
+      "powertrain": "diesel",
+      "engine": {
+        "configuration": "V12, twin-turbo",
+        "cylinders": 12,
+        "displacement": {
+          "value": 5934,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-audi-q7",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 368,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-q7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7",
+        "sourceNote": "500 PS at 3,750 rpm, converted at 1 PS = 0.73549875 kW. The world's first series-production passenger-car V12 diesel."
+      },
+      "torque": {
+        "value": 1000,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-q7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7",
+        "sourceNote": "At 1,750-3,250 rpm."
+      },
+      "mass": {
+        "value": 2605,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-audi-q7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7",
+        "sourceNote": "High end of the generation's published 2,205-2,605 kg weight range, applied here to the heaviest engine in the line-up rather than taken from a per-engine figure."
+      },
+      "zeroToHundredKph": {
+        "value": 5.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-audi-q7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q7"
+      },
+      "seats": 7,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-q7-2005/hero.webp",
+    "alt": "Silver first-generation Audi Q7 photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1009,
+    "caption": "The 2007 Q7, the first Audi built on the Volkswagen Group PL71 platform shared with the Porsche Cayenne and Volkswagen Touareg.",
+    "credit": {
+      "author": "IFCAR",
+      "title": "File:2007-Audi-Q7.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007-Audi-Q7.jpg",
+      "licenseType": "public-domain"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-audi-q7"
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "id": "audi-a3-2020",
+  "name": "Audi A3 (8Y)",
+  "fullName": "Audi A3 (8Y), 2020-present",
+  "kind": "generation",
+  "parent": "audi-a3",
+  "brandRef": "audi",
+  "generationCode": "8Y",
+  "productionYears": {
+    "start": 2020,
+    "end": null
+  },
+  "bodyStyles": [
+    "hatchback",
+    "saloon"
+  ],
+  "powertrains": [
+    "petrol",
+    "mild-hybrid",
+    "phev"
+  ],
+  "drivetrains": [
+    "fwd",
+    "awd"
+  ],
+  "segment": "c-segment",
+  "positioning": "premium",
+  "designer": "Jakob Hirzel, Juan Carlos Huerta",
+  "assembly": [
+    "Ingolstadt, Germany",
+    "Qingdao, China (FAW-Volkswagen, A3L)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4337,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A3",
+      "sourceNote": "Sportback hatchback. The saloon is 4,495 mm and the China-market A3L is 4,548 mm."
+    },
+    "width": {
+      "value": 1816,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A3"
+    },
+    "height": {
+      "value": 1425,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A3"
+    },
+    "wheelbase": {
+      "value": 2640,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A3",
+      "sourceNote": "Sportback hatchback. The saloon is 2,636 mm and the China-market A3L is 2,680 mm."
+    }
+  },
+  "trims": [
+    {
+      "id": "40-tfsi-quattro",
+      "name": "40 TFSI quattro",
+      "productionYears": {
+        "start": 2020,
+        "end": null
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed S-tronic dual-clutch",
+      "gears": 7,
+      "engine": {
+        "configuration": "inline-4 turbo (EA888 evo 2)",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1984,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article describes it only as \"2.0-litre Quattro version\"; 1,984 cc is the well-documented displacement of the EA888 evo 2 engine family named for this generation's S3, not a figure stated directly for this trim."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 142,
+        "unit": "kW",
+        "status": "estimated",
+        "sourceNote": "Published as 190 hp using Wikipedia's {{convert|190|hp}} template, which denotes mechanical (imperial) horsepower rather than metric PS, converted here at 1 hp = 0.745699872 kW. Read as metric PS instead, the same 190 figure would give 140 kW — a difference of about 2 kW, small enough not to change the rounded figure meaningfully, but the reading taken is stated here as the source itself does not disambiguate which horsepower unit its editors intended."
+      },
+      "torque": {
+        "value": 320,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-a3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A3"
+      },
+      "dragCoefficient": {
+        "value": 0.28,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-audi-a3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A3",
+        "sourceNote": "Stated once for the generation as a whole rather than broken out per trim."
+      },
+      "bootVolume": {
+        "value": 320,
+        "unit": "L",
+        "status": "verified",
+        "source": "wikipedia-audi-a3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A3",
+        "sourceNote": "Manufacturer figure, seats up. Reduced from the 380 L of front-wheel-drive A3 variants because the quattro system's rear differential intrudes into the boot floor."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "rs-3",
+      "name": "RS 3",
+      "productionYears": {
+        "start": 2021,
+        "end": null
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed S-tronic dual-clutch",
+      "gears": 7,
+      "engine": {
+        "configuration": "inline-5 turbo (EA855)",
+        "cylinders": 5,
+        "displacement": {
+          "value": 2480,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-audi-a3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A3"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 294,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-a3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A3",
+        "sourceNote": "400 PS, converted at 1 PS = 0.73549875 kW. The US-market car is stated separately at 401 hp/299 kW, marginally higher because it lacks the petrol particulate filter required in Europe."
+      },
+      "torque": {
+        "value": 500,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-a3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A3"
+      },
+      "mass": {
+        "value": 1651,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-audi-a3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A3",
+        "sourceNote": "3,639 lb, Car and Driver's test weight for the US-market saloon, converted at 1 lb = 0.45359237 kg."
+      },
+      "topSpeed": {
+        "value": 290,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-audi-a3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A3",
+        "sourceNote": "Only reachable with the optional RS Dynamic package that removes the standard speed limiter."
+      },
+      "dragCoefficient": {
+        "value": 0.28,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-audi-a3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A3",
+        "sourceNote": "Stated once for the generation as a whole rather than broken out per trim."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-a3-2020/hero.webp",
+    "alt": "White facelifted Audi A3 Sportback S-Line photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 802,
+    "caption": "The 2024-refreshed A3 Sportback, with revised headlights, grille and bumpers.",
+    "credit": {
+      "author": "Alexander Migl",
+      "title": "File:2024 Audi A3 8Y DSC 7470.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Audi_A3_8Y_DSC_7470.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/audi-a3-2020/gallery-1.webp",
+      "alt": "White pre-facelift Audi A3 S Line Edition 1 photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 582,
+      "caption": "A pre-facelift 8Y, launched in 2020 with styling the article describes as heavily Lamborghini-influenced.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2020 Audi A3 S Line Edition 1 35 TD 2.0.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Audi_A3_S_Line_Edition_1_35_TD_2.0.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-audi-a3"
+  ]
+}

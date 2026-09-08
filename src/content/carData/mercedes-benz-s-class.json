@@ -1,0 +1,18 @@
+{
+  "id": "mercedes-benz-s-class",
+  "name": "Mercedes-Benz S-Class",
+  "fullName": "Mercedes-Benz S-Class, 1972-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "mercedes-benz",
+  "productionYears": {
+    "start": 1972,
+    "end": null
+  },
+  "segment": "f-segment",
+  "positioning": "luxury",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-s-class"]
+}

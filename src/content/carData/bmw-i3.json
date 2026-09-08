@@ -1,0 +1,18 @@
+{
+  "id": "bmw-i3",
+  "name": "BMW i3",
+  "fullName": "BMW i3 (hatchback), 2013-2022",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "bmw",
+  "productionYears": {
+    "start": 2013,
+    "end": 2022
+  },
+  "segment": "b-segment",
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bmw-i3-hatchback"]
+}

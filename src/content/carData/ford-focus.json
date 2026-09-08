@@ -1,0 +1,18 @@
+{
+  "id": "ford-focus",
+  "name": "Ford Focus",
+  "fullName": "Ford Focus, 1998-2025",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "ford",
+  "productionYears": {
+    "start": 1998,
+    "end": 2025
+  },
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-ford-focus-first-generation"]
+}

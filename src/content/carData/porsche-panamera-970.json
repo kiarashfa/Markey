@@ -1,0 +1,281 @@
+{
+  "id": "porsche-panamera-970",
+  "name": "Porsche Panamera (970)",
+  "fullName": "Porsche Panamera (970), 2009-2016",
+  "kind": "generation",
+  "parent": "porsche-panamera",
+  "brandRef": "porsche",
+  "generationCode": "970",
+  "productionYears": {
+    "start": 2009,
+    "end": 2016
+  },
+  "bodyStyles": ["liftback"],
+  "powertrains": ["petrol", "diesel", "phev", "hybrid"],
+  "drivetrains": ["rwd", "awd"],
+  "segment": "f-segment",
+  "positioning": "luxury",
+  "designer": "Michael Mauer",
+  "assembly": ["Leipzig, Germany"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4970,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-panamera",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)",
+      "sourceNote": "Standard wheelbase; the 2013-2016 long-wheelbase version was 5,120 mm."
+    },
+    "width": {
+      "value": 1931,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-panamera",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)"
+    },
+    "height": {
+      "value": 1418,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-panamera",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)",
+      "sourceNote": "Standard wheelbase; the long-wheelbase version was 1,425 mm."
+    },
+    "wheelbase": {
+      "value": 2900,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-panamera",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)",
+      "sourceNote": "Standard wheelbase; the 2013-2016 long-wheelbase version was 3,070 mm."
+    },
+    "kerbWeight": {
+      "value": 1770,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-porsche-panamera",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)",
+      "sourceNote": "Lowest of a published 1,770-2,055 kg range across the whole range; not attributed to one specific trim, so recorded at generation level only."
+    }
+  },
+  "trims": [
+    {
+      "id": "panamera-s",
+      "name": "Panamera S",
+      "productionYears": { "start": 2009, "end": 2016 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "7-speed automatic",
+      "gears": 7,
+      "engine": {
+        "code": "M48.20",
+        "configuration": "V8",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4806,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-panamera",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 294.2,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)",
+        "sourceNote": "Published as 400 PS at 6,500 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 500,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)",
+        "sourceNote": "At 3,500-5,000 rpm."
+      },
+      "topSpeed": {
+        "value": 285,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)"
+      },
+      "co2": {
+        "value": 293,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)",
+        "sourceNote": "Manual-transmission figure."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "panamera-diesel",
+      "name": "Panamera Diesel",
+      "productionYears": { "start": 2011, "end": 2016 },
+      "drivetrain": "rwd",
+      "powertrain": "diesel",
+      "transmission": "8-speed automatic",
+      "gears": 8,
+      "engine": {
+        "configuration": "V6, turbocharged",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2967,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-panamera",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Panamera_Diesel",
+          "sourceNote": "The same Audi-sourced V6 diesel used in the second-generation Porsche Cayenne Diesel; the most fuel-efficient Porsche in the lineup at launch, rated at 6.3 L/100 km."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 183.87,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)",
+        "sourceNote": "Published as 250 PS at 3,800 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 550,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)",
+        "sourceNote": "At 1,750-2,750 rpm."
+      },
+      "topSpeed": {
+        "value": 244,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)",
+        "sourceNote": "A separately quoted 0-62 mph time of 6.8 seconds is not converted to 0-100 km/h here, as it is a different speed threshold."
+      },
+      "fuelEconomy": {
+        "value": 6.3,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Panamera_Diesel"
+      },
+      "co2": {
+        "value": 172,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)"
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "panamera-turbo",
+      "name": "Panamera Turbo",
+      "productionYears": { "start": 2009, "end": 2016 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed automatic",
+      "gears": 7,
+      "engine": {
+        "code": "M48.70",
+        "configuration": "V8, twin-turbocharged",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4806,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-panamera",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 367.75,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)",
+        "sourceNote": "Published as 500 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 700,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)",
+        "sourceNote": "At 2,250-4,500 rpm."
+      },
+      "topSpeed": {
+        "value": 303,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)"
+      },
+      "dragCoefficient": {
+        "value": 0.3,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Panamera_Turbo_S",
+        "sourceNote": "Published for the related Panamera Turbo S, which shares the same body; not confirmed to be identical for the standard Turbo."
+      },
+      "co2": {
+        "value": 270,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#First_generation_(970_Chassis_G1;_2009)"
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/porsche-panamera-970/hero.webp",
+    "alt": "Black facelifted Porsche Panamera Diesel liftback photographed from the front three-quarter angle outside an office building in the rain",
+    "width": 1600,
+    "height": 712,
+    "caption": "The 970: Porsche's first four-door sedan since the stillborn 989 concept, sold as a five-door liftback rather than a conventional saloon.",
+    "credit": {
+      "author": "M 93",
+      "title": "File:Porsche Panamera Diesel (970, Facelift) – Frontansicht, 3. März 2014, Düsseldorf.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_Panamera_Diesel_(970,_Facelift)_–_Frontansicht,_3._März_2014,_Düsseldorf.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/porsche-panamera-970/gallery-1.webp",
+      "alt": "Black pre-facelift Porsche Panamera Turbo liftback photographed from the rear three-quarter angle in a car park",
+      "width": 1200,
+      "height": 535,
+      "caption": "The Panamera Turbo: a twin-turbocharged 4.8-litre V8 with 500 PS, and the fastest way into the range before the Turbo S arrived in 2011.",
+      "credit": {
+        "author": "M 93",
+        "title": "File:Porsche Panamera Turbo (970) – Heckansicht, 18. Juli 2012, Düsseldorf.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_Panamera_Turbo_(970)_–_Heckansicht,_18._Juli_2012,_Düsseldorf.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-porsche-panamera"]
+}

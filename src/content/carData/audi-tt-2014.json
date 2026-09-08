@@ -1,0 +1,186 @@
+{
+  "id": "audi-tt-2014",
+  "name": "Audi TT (8S)",
+  "fullName": "Audi TT (8S), 2014-2023",
+  "kind": "generation",
+  "parent": "audi-tt",
+  "brandRef": "audi",
+  "generationCode": "8S",
+  "productionYears": {
+    "start": 2014,
+    "end": 2023
+  },
+  "bodyStyles": [
+    "coupe",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd",
+    "awd"
+  ],
+  "segment": "s-segment",
+  "positioning": "premium",
+  "designer": "Dany Garand, Jürgen Löffler",
+  "assembly": [
+    "Győr, Hungary (engines and final assembly)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4191,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-tt",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT",
+      "sourceNote": "Coupé. The Roadster is 4,177 mm."
+    },
+    "width": {
+      "value": 1832,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-tt",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT"
+    },
+    "height": {
+      "value": 1343,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-tt",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT",
+      "sourceNote": "Coupé. The Roadster is 1,355 mm."
+    },
+    "wheelbase": {
+      "value": 2505,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-tt",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT"
+    },
+    "kerbWeight": {
+      "value": 1230,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-audi-tt",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT",
+      "sourceNote": "Infobox gives a 1,230-1,425 kg range across the whole engine line-up without attributing each figure to an engine. The lower figure is recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "tt-2-0-tfsi",
+      "name": "TT 2.0 TFSI quattro",
+      "productionYears": {
+        "start": 2014,
+        "end": 2018
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed S tronic dual-clutch",
+      "gears": 6,
+      "engine": {
+        "configuration": "inline-4 turbo (EA888)",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 169,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-tt",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT"
+      },
+      "torque": {
+        "value": 370,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-tt",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT"
+      },
+      "mass": {
+        "value": 1230,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-audi-tt",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT",
+        "sourceNote": "Low end of the generation's published 1,230-1,425 kg weight range, applied here to the lightest mainstream trim rather than taken from a per-engine figure."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "tt-rs",
+      "name": "TT RS",
+      "productionYears": {
+        "start": 2016,
+        "end": 2023
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed S tronic dual-clutch",
+      "gears": 7,
+      "engine": {
+        "configuration": "inline-5 turbo",
+        "cylinders": 5,
+        "displacement": {
+          "value": 2480,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article describes it only as a \"2.5 litre\" engine; 2,480 cc is the well-documented displacement of this EA855 five-cylinder family, not a figure stated directly in this article."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 294,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-tt",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT",
+        "sourceNote": "At 1,700-5,850 rpm for torque; the power peak rpm is not separately stated."
+      },
+      "torque": {
+        "value": 480,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-tt",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT",
+        "sourceNote": "At 1,700-5,850 rpm."
+      },
+      "mass": {
+        "value": 1425,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-audi-tt",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_TT",
+        "sourceNote": "High end of the generation's published 1,230-1,425 kg weight range, applied here to the heaviest, most powerful trim rather than taken from a per-engine figure."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-tt-2014/hero.webp",
+    "alt": "Green Audi TT RS with technical specifications displayed alongside it at a motor show, photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 982,
+    "caption": "The TT RS, the third and final generation's performance flagship, with a turbocharged five-cylinder engine.",
+    "credit": {
+      "author": "Kevauto",
+      "title": "File:2019 Audi TT RS with Technical Specification front NYIAS 2019.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Audi_TT_RS_with_Technical_Specification_front_NYIAS_2019.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-audi-tt"
+  ]
+}

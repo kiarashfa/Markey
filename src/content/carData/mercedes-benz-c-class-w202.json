@@ -1,0 +1,381 @@
+{
+  "id": "mercedes-benz-c-class-w202",
+  "name": "Mercedes-Benz C-Class (W202)",
+  "fullName": "Mercedes-Benz C-Class (W202), 1993-2000",
+  "kind": "generation",
+  "parent": "mercedes-benz-c-class",
+  "brandRef": "mercedes-benz",
+  "generationCode": "W202",
+  "productionYears": {
+    "start": 1993,
+    "end": 2000
+  },
+  "bodyStyles": ["saloon", "estate"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["rwd"],
+  "segment": "d-segment",
+  "positioning": "premium",
+  "designer": "Olivier Boulay, Murat Günak",
+  "assembly": [
+    "Bremen, Germany",
+    "Sindelfingen, Germany",
+    "East London, South Africa",
+    "Santiago Tianguistenco, Mexico",
+    "Toluca, Mexico",
+    "Bogor Regency, Indonesia",
+    "Ho Chi Minh City, Vietnam",
+    "6th October City, Egypt (EGA)",
+    "Samut Prakan, Thailand (TAAP)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4505,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-c-class-w202",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+    },
+    "width": {
+      "value": 1720,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-c-class-w202",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+    },
+    "height": {
+      "value": 1425,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-c-class-w202",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+    },
+    "wheelbase": {
+      "value": 2670,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-c-class-w202",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+    }
+  },
+  "trims": [
+    {
+      "id": "c220",
+      "name": "C 220",
+      "productionYears": { "start": 1993, "end": 1996 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "M111 E22",
+        "configuration": "inline-4, DOHC 16V",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2199,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-c-class-w202",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 110,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)",
+        "sourceNote": "At 5,500 rpm, published directly in kW in the article's engine table."
+      },
+      "torque": {
+        "value": 210,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)",
+        "sourceNote": "At 4,000 rpm."
+      },
+      "mass": {
+        "value": 1430,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-1995-mercedes-benz-c-class",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1995&Make=mercedes-benz&units=Metric&format=json",
+        "sourceNote": "NHTSA Canadian Vehicle Specifications curb weight for the C220 4DR sedan, model year 1994 — a Canadian-market figure, not a German factory spec."
+      },
+      "zeroToHundredKph": {
+        "value": 10.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+      },
+      "topSpeed": {
+        "value": 210,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+      },
+      "fuelEconomy": {
+        "value": 8.7,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+      },
+      "weightDistributionFront": {
+        "value": 0.55,
+        "unit": "",
+        "status": "verified",
+        "source": "nhtsa-cvs-1995-mercedes-benz-c-class",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1995&Make=mercedes-benz&units=Metric&format=json",
+        "sourceNote": "Published as 55/45 front/rear for the C220 sedan, model year 1994."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "c280",
+      "name": "C 280",
+      "productionYears": { "start": 1993, "end": 1997 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed automatic",
+      "gears": 5,
+      "engine": {
+        "code": "M104 E28",
+        "configuration": "inline-6, DOHC 24V",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2799,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-c-class-w202",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 142,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)",
+        "sourceNote": "At 5,500 rpm."
+      },
+      "torque": {
+        "value": 270,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)",
+        "sourceNote": "At 3,750 rpm."
+      },
+      "mass": {
+        "value": 1520,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-1995-mercedes-benz-c-class",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1995&Make=mercedes-benz&units=Metric&format=json",
+        "sourceNote": "NHTSA Canadian Vehicle Specifications curb weight for the C280 4DR sedan, model year 1994."
+      },
+      "zeroToHundredKph": {
+        "value": 8.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+      },
+      "topSpeed": {
+        "value": 230,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+      },
+      "fuelEconomy": {
+        "value": 10.6,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "c220-diesel",
+      "name": "C 220 Diesel",
+      "productionYears": { "start": 1993, "end": 1999 },
+      "drivetrain": "rwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "OM604 D22",
+        "configuration": "inline-4, DOHC 16V",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2155,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-c-class-w202",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 70,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)",
+        "sourceNote": "At 5,000 rpm."
+      },
+      "torque": {
+        "value": 150,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)",
+        "sourceNote": "At 3,100-4,500 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 16.3,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+      },
+      "topSpeed": {
+        "value": 175,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+      },
+      "fuelEconomy": {
+        "value": 6.9,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "c36-amg",
+      "name": "C 36 AMG",
+      "productionYears": { "start": 1993, "end": 1997 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed automatic",
+      "gears": 5,
+      "engine": {
+        "code": "M104 E36",
+        "configuration": "inline-6, DOHC 24V",
+        "cylinders": 6,
+        "displacement": {
+          "value": 3606,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-c-class-w202",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 206,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)",
+        "sourceNote": "At 5,750 rpm. The C-Class's first AMG-developed performance model, built to counter the six-cylinder BMW M3."
+      },
+      "torque": {
+        "value": 385,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)",
+        "sourceNote": "At 4,000-4,750 rpm."
+      },
+      "mass": {
+        "value": 1557,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-1995-mercedes-benz-c-class",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1995&Make=mercedes-benz&units=Metric&format=json",
+        "sourceNote": "NHTSA Canadian Vehicle Specifications curb weight for the C36 AMG 4DR sedan, model year 1995."
+      },
+      "zeroToHundredKph": {
+        "value": 5.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+      },
+      "topSpeed": {
+        "value": 250,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+      },
+      "fuelEconomy": {
+        "value": 10.7,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w202",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W202)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mercedes-benz-c-class-w202/hero.webp",
+    "alt": "Silver first-generation Mercedes-Benz C-Class sedan photographed from the front three-quarter angle in a car park",
+    "width": 1600,
+    "height": 894,
+    "caption": "The W202: the first car to carry the C-Class name, replacing the 190 in 1993 and sharing its upright, chrome-grilled face with the larger E-Class.",
+    "credit": {
+      "author": "Alexander Migl",
+      "title": "File:Mercedes-Benz W202 C 280 DSC 8896.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W202_C_280_DSC_8896.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/mercedes-benz-c-class-w202/gallery-1.webp",
+      "alt": "Green Mercedes-Benz C36 AMG sedan photographed from the front three-quarter angle, with AMG-styled wheels",
+      "width": 1200,
+      "height": 800,
+      "caption": "The C 36 AMG of 1993: the C-Class's first performance model, and the first project badged AMG after the tuner became a Daimler-Benz subsidiary.",
+      "credit": {
+        "author": "davocano",
+        "title": "File:1995 Mercedes-Benz C36 AMG (9674639942).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1995_Mercedes-Benz_C36_AMG_(9674639942).jpg",
+        "licenseType": "cc-by",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-mercedes-benz-c-class-w202",
+    "nhtsa-cvs-1995-mercedes-benz-c-class"
+  ]
+}

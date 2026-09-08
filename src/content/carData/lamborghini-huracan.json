@@ -1,0 +1,20 @@
+{
+  "id": "lamborghini-huracan",
+  "name": "Lamborghini Huracán",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "lamborghini",
+  "productionYears": {
+    "start": 2014,
+    "end": 2024
+  },
+  "fullName": "Lamborghini Huracán, 2014-2024",
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-lamborghini-huracan"
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": "audi-q5-2008",
+  "name": "Audi Q5 (8R)",
+  "fullName": "Audi Q5 (8R), 2008-2017",
+  "kind": "generation",
+  "parent": "audi-q5",
+  "brandRef": "audi",
+  "generationCode": "8R",
+  "productionYears": {
+    "start": 2008,
+    "end": 2017
+  },
+  "bodyStyles": [
+    "suv"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel",
+    "phev"
+  ],
+  "drivetrains": [
+    "fwd",
+    "awd"
+  ],
+  "segment": "suv-compact",
+  "positioning": "premium",
+  "designer": "Christian Winkelmann",
+  "assembly": [
+    "Ingolstadt, Germany",
+    "Kaluga, Russia (Volkswagen Group Russia)",
+    "Changchun, China (FAW-Volkswagen)",
+    "Aurangabad, India (Audi India, CKD)",
+    "Shah Alam, Malaysia (Euromobil)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4639,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-q5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5"
+    },
+    "width": {
+      "value": 1880,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-q5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5"
+    },
+    "height": {
+      "value": 1650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-q5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5"
+    },
+    "wheelbase": {
+      "value": 2807,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-q5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5"
+    },
+    "kerbWeight": {
+      "value": 1850,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-audi-q5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5"
+    }
+  },
+  "trims": [
+    {
+      "id": "2-0-tfsi-quattro-211ps",
+      "name": "2.0 TFSI quattro",
+      "productionYears": {
+        "start": 2008,
+        "end": 2012
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "engine": {
+        "configuration": "inline-4 turbo",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1984,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-audi-q5",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 155,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-q5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5",
+        "sourceNote": "211 PS at 4,300-6,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 350,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-q5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5",
+        "sourceNote": "At 1,500-4,200 rpm."
+      },
+      "mass": {
+        "value": 1850,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-audi-q5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "3-0-tdi-quattro",
+      "name": "3.0 TDI quattro",
+      "productionYears": {
+        "start": 2008,
+        "end": 2012
+      },
+      "drivetrain": "awd",
+      "powertrain": "diesel",
+      "engine": {
+        "configuration": "V6 turbo, common rail",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2967,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-audi-q5",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 177,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-q5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5",
+        "sourceNote": "240 PS at 4,000-4,400 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 500,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-q5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5",
+        "sourceNote": "At 1,500-3,000 rpm."
+      },
+      "mass": {
+        "value": 1850,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-audi-q5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_Q5",
+        "sourceNote": "Generation infobox figure, not broken out per engine; the diesel V6 sits at the heavy end of the range."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-q5-2008/hero.webp",
+    "alt": "White first-generation Audi Q5 photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 899,
+    "caption": "The first-generation Q5 (Typ 8R), launched in 2008 as Audi's first compact SUV.",
+    "credit": {
+      "author": "IFCAR",
+      "title": "File:Audi Q5 -- 03-16-2012.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_Q5_--_03-16-2012.JPG",
+      "licenseType": "public-domain"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-audi-q5"
+  ]
+}

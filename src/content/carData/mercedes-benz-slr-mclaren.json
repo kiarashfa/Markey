@@ -1,0 +1,18 @@
+{
+  "id": "mercedes-benz-slr-mclaren",
+  "name": "Mercedes-Benz SLR McLaren",
+  "fullName": "Mercedes-Benz SLR McLaren, 2003-2010",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "mercedes-benz",
+  "productionYears": {
+    "start": 2003,
+    "end": 2010
+  },
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-slr-mclaren"]
+}

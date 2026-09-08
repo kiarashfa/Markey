@@ -1,0 +1,250 @@
+{
+  "id": "ferrari-458-2009",
+  "name": "Ferrari 458",
+  "fullName": "Ferrari 458, 2009-2015",
+  "kind": "generation",
+  "parent": "ferrari-458",
+  "brandRef": "ferrari",
+  "productionYears": {
+    "start": 2009,
+    "end": 2015
+  },
+  "bodyStyles": [
+    "coupe",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "designer": "Donato Coco at Ferrari Styling Centre in collaboration with Pininfarina",
+  "assembly": [
+    "Maranello, Italy"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4527,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-458",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458"
+    },
+    "width": {
+      "value": 1937,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-458",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458"
+    },
+    "height": {
+      "value": 1213,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-458",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458"
+    },
+    "wheelbase": {
+      "value": 2650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ferrari-458",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458"
+    },
+    "kerbWeight": {
+      "value": 1565,
+      "unit": "kg",
+      "status": "conflicting-sources",
+      "source": "wikipedia-ferrari-458",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458",
+      "sourceNote": "3,450 lb per the infobox, converted at 1 lb = 0.45359237 kg. NHTSA's Canadian Vehicle Specifications register instead gives 1,380 kg for the 2010 458 Italia coupe — a 13% gap, likely a dry-versus-kerb measurement difference common with Ferrari-published figures rather than a real disagreement about the car, but the article does not state which basis its own 3,450 lb figure uses. The manufacturer-facing Wikipedia figure is recorded as the primary value; the CVS figure is noted here rather than silently discarded."
+    }
+  },
+  "trims": [
+    {
+      "id": "458-italia",
+      "name": "458 Italia",
+      "productionYears": {
+        "start": 2009,
+        "end": 2015
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "7-speed Getrag dual-clutch",
+      "gears": 7,
+      "engine": {
+        "code": "F136 F",
+        "configuration": "V8",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4497,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ferrari-458",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 419,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ferrari-458",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458",
+        "sourceNote": "570 PS at 9,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 540,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ferrari-458",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458",
+        "sourceNote": "At 6,000 rpm."
+      },
+      "mass": {
+        "value": 1565,
+        "unit": "kg",
+        "status": "conflicting-sources",
+        "source": "wikipedia-ferrari-458",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458",
+        "sourceNote": "3,450 lb, converted at 1 lb = 0.45359237 kg. NHTSA's Canadian Vehicle Specifications register gives 1,380 kg for the 2010 model year instead; see the generation-level note for discussion of the likely dry/kerb basis difference."
+      },
+      "fuelEconomy": {
+        "value": 13.3,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-ferrari-458",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458",
+        "sourceNote": "Combined cycle (ECE+EUDC)."
+      },
+      "co2": {
+        "value": 307,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-ferrari-458",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458",
+        "sourceNote": "Combined cycle (ECE+EUDC)."
+      },
+      "zeroToHundredKph": {
+        "value": 3.4,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-ferrari-458",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458",
+        "sourceNote": "Ferrari's official factory figure."
+      },
+      "topSpeed": {
+        "value": 325,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ferrari-458",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458",
+        "sourceNote": "Published as \"over 325 km/h\"."
+      },
+      "weightDistributionFront": {
+        "value": 0.42,
+        "unit": "",
+        "status": "verified",
+        "source": "nhtsa-cvs-2010-ferrari-458",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2012&Make=ferrari&units=Metric&format=json",
+        "sourceNote": "Published as a 42/58 front/rear split by NHTSA's Canadian Vehicle Specifications register for the 2010 model year."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "458-speciale",
+      "name": "458 Speciale",
+      "productionYears": {
+        "start": 2013,
+        "end": 2015
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "7-speed Getrag dual-clutch",
+      "gears": 7,
+      "engine": {
+        "code": "F136 F",
+        "configuration": "V8, revised",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4497,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ferrari-458",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 445,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ferrari-458",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458",
+        "sourceNote": "605 PS at 9,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 540,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ferrari-458",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458",
+        "sourceNote": "At 6,000 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 3,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-ferrari-458",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458"
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/ferrari-458/hero.webp",
+    "alt": "Orange Ferrari 458 Italia coupé photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 988,
+    "caption": "The 458 Italia, launched in 2009 with the first direct fuel injection used in a mid-engined Ferrari road car.",
+    "credit": {
+      "author": "Michael Barera",
+      "title": "File:Ferrari 458 Fort Worth June 2016 56 (Ferrari) (cropped-2).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_458_Fort_Worth_June_2016_56_(Ferrari)_(cropped-2).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/ferrari-458/gallery-1.webp",
+      "alt": "Red Ferrari 458 Speciale coupé photographed close from the rear three-quarter angle, showing the finned side sills and vented bonnet",
+      "width": 1200,
+      "height": 502,
+      "caption": "The 458 Speciale, the track-focused 605 PS flagship of the range, limited to 1,309 units.",
+      "credit": {
+        "author": "EurovisionNim",
+        "title": "File:2013-2015 Ferrari 458 Speciale coupe (2017-11-18) 03.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013-2015_Ferrari_458_Speciale_coupe_(2017-11-18)_03.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-ferrari-458",
+    "nhtsa-cvs-2010-ferrari-458"
+  ]
+}

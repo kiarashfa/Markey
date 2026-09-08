@@ -1,0 +1,20 @@
+{
+  "id": "toyota-hilux",
+  "name": "Toyota Hilux",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "toyota",
+  "productionYears": {
+    "start": 1968,
+    "end": null
+  },
+  "fullName": "Toyota Hilux, 1968-present",
+  "segment": "pickup",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-hilux"
+  ]
+}

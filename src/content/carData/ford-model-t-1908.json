@@ -111,7 +111,7 @@
       "mass": {
         "value": 544.3,
         "unit": "kg",
-        "status": "verified",
+        "status": "estimated",
         "source": "wikipedia-ford-model-t",
         "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Model_T",
         "sourceNote": "The infobox's model-wide 1,200–1,650 lb range, lower bound, converted at 0.45359237 kg/lb. Not attributed to this body style specifically — the two-seat Runabout was almost certainly toward the light end, but the source does not say so."

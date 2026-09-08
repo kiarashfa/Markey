@@ -1,0 +1,20 @@
+{
+  "id": "lamborghini-murcielago",
+  "name": "Lamborghini Murciélago",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "lamborghini",
+  "productionYears": {
+    "start": 2001,
+    "end": 2010
+  },
+  "fullName": "Lamborghini Murciélago, 2001-2010",
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-lamborghini-murcielago"
+  ]
+}

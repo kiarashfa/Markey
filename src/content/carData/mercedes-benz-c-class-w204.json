@@ -1,0 +1,223 @@
+{
+  "id": "mercedes-benz-c-class-w204",
+  "name": "Mercedes-Benz C-Class (W204)",
+  "fullName": "Mercedes-Benz C-Class (W204), 2007-2015",
+  "kind": "generation",
+  "parent": "mercedes-benz-c-class",
+  "brandRef": "mercedes-benz",
+  "generationCode": "W204",
+  "productionYears": {
+    "start": 2007,
+    "end": 2015
+  },
+  "bodyStyles": ["saloon", "estate", "coupe"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["rwd", "awd"],
+  "segment": "d-segment",
+  "positioning": "premium",
+  "designer": "Karlheinz Bauer, Peter Pfeiffer",
+  "assembly": [
+    "Bremen, Germany",
+    "Sindelfingen, Germany",
+    "East London, South Africa",
+    "Juiz de Fora, Brazil",
+    "Beijing, China (Beijing Benz)",
+    "Pune, India (MBI)",
+    "Pekan, Malaysia (HICOM)",
+    "Bogor, Indonesia (MBDI)",
+    "Ho Chi Minh City, Vietnam (MBV)",
+    "6th of October City, Egypt (EGA)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4582,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-c-class-w204",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W204)",
+      "sourceNote": "Sedan figure. The estate was 4,596 mm and the coupé 4,590 mm; the C 63 AMG variants ranged 4,701-4,776 mm depending on body and package."
+    },
+    "width": {
+      "value": 1770,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-c-class-w204",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W204)",
+      "sourceNote": "Standard width; the C 63 AMG was 1,795 mm."
+    },
+    "height": {
+      "value": 1447,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-c-class-w204",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W204)"
+    },
+    "wheelbase": {
+      "value": 2760,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-c-class-w204",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W204)"
+    }
+  },
+  "trims": [
+    {
+      "id": "c200-kompressor",
+      "name": "C 200 Kompressor",
+      "productionYears": { "start": 2007, "end": 2010 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "M271 KE 18 ML",
+        "configuration": "inline-4, supercharged, 16V",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1796,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-c-class-w204",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W204)"
+        },
+        "aspiration": "supercharged"
+      },
+      "power": {
+        "value": 135.33,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w204",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W204)",
+        "sourceNote": "Published as 184 PS at 5,500 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 250,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w204",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W204)",
+        "sourceNote": "At 2,800-5,000 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "c220-cdi",
+      "name": "C 220 CDI",
+      "productionYears": { "start": 2007, "end": 2009 },
+      "drivetrain": "rwd",
+      "powertrain": "diesel",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "OM646 DE 22 LA",
+        "configuration": "inline-4, turbocharged, 16V",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2148,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-c-class-w204",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W204)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 125.03,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w204",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W204)",
+        "sourceNote": "Published as 170 PS at 3,800 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 400,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w204",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W204)",
+        "sourceNote": "At 2,000 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "c63-amg",
+      "name": "C 63 AMG",
+      "productionYears": { "start": 2007, "end": 2011 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "7-speed automatic",
+      "gears": 7,
+      "engine": {
+        "code": "M156 KE 63",
+        "configuration": "V8, naturally aspirated, 32V",
+        "cylinders": 8,
+        "displacement": {
+          "value": 6208,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-c-class-w204",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W204)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 336.12,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w204",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W204)",
+        "sourceNote": "Published as 457 PS at 6,800 rpm, converted at 1 PS = 0.73549875 kW. Later Performance Package Plus and P31 versions of this same generation were rated at 487 PS (358.19 kW); this is the standard 2007 launch figure."
+      },
+      "torque": {
+        "value": 600,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-c-class-w204",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class_(W204)",
+        "sourceNote": "At 5,000 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mercedes-benz-c-class-w204/hero.webp",
+    "alt": "Silver third-generation Mercedes-Benz C-Class sedan photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1070,
+    "caption": "The W204: the C-Class's third generation, sold from 2007 as a saloon, estate and, from 2011, a two-door coupé.",
+    "credit": {
+      "author": "OSX",
+      "title": "File:2013 Mercedes-Benz C 200 (W 204) sedan (2015-07-03) 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013_Mercedes-Benz_C_200_(W_204)_sedan_(2015-07-03)_01.jpg",
+      "licenseType": "public-domain",
+      "licenseNote": "Released into the public domain by the photographer."
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/mercedes-benz-c-class-w204/gallery-1.webp",
+      "alt": "Dark blue facelifted Mercedes-Benz C 63 AMG sedan photographed from the rear three-quarter angle, showing quad exhaust tips",
+      "width": 1200,
+      "height": 800,
+      "caption": "The C 63 AMG: a naturally aspirated 6.2-litre V8 in a mid-size saloon, at a time when most rivals had already turbocharged theirs.",
+      "credit": {
+        "author": "Jeremy from Sydney, Australia",
+        "title": "File:2012 Mercedes-Benz C 63 AMG (W 204 MY12) sedan (16701499931).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012_Mercedes-Benz_C_63_AMG_(W_204_MY12)_sedan_(16701499931).jpg",
+        "licenseType": "cc-by",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-c-class-w204"]
+}

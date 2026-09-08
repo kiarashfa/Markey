@@ -1,0 +1,204 @@
+{
+  "id": "toyota-hilux-2015",
+  "name": "Toyota Hilux (AN110/120/130)",
+  "fullName": "Toyota Hilux (AN110/120/130), 2015-present",
+  "kind": "generation",
+  "parent": "toyota-hilux",
+  "brandRef": "toyota",
+  "generationCode": "AN110/AN120/AN130",
+  "productionYears": {
+    "start": 2015,
+    "end": null
+  },
+  "bodyStyles": [
+    "pickup"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel",
+    "mild-hybrid"
+  ],
+  "drivetrains": [
+    "rwd",
+    "4wd"
+  ],
+  "segment": "pickup",
+  "positioning": "mainstream",
+  "designer": "Ryota Naka, Yukihiro Koide, Takuya Watabe, Eishi Suzuki, Yusuke Fukushima",
+  "assembly": [
+    "Ban Pho / Samrong Tai, Thailand (Toyota Motor Thailand)",
+    "Prospecton, South Africa (Toyota South Africa Motors)",
+    "Zárate, Argentina (Toyota Argentina)",
+    "Shah Alam, Malaysia (UMW Toyota Motor)",
+    "Karachi, Pakistan (Indus Motor Company)",
+    "Bidadi, India (Toyota Kirloskar Motors)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4935,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-hilux",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+      "sourceNote": "Low end of the Single Cab's 4,935-5,270 mm range. Crew Cab is 5,320-5,325 mm; Smart Cab is 5,320 mm."
+    },
+    "width": {
+      "value": 1800,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-hilux",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+      "sourceNote": "Low end of a published 1,800-2,020 mm range across body styles and markets."
+    },
+    "height": {
+      "value": 1690,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-hilux",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+      "sourceNote": "Low end of the Single Cab's 1,690-1,855 mm range."
+    },
+    "wheelbase": {
+      "value": 2750,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-hilux",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+      "sourceNote": "Short-wheelbase. Long-wheelbase variants are 3,085 mm."
+    },
+    "kerbWeight": {
+      "value": 1495,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-toyota-hilux",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+      "sourceNote": "Low end of the generation's published 1,495-2,286 kg weight range."
+    }
+  },
+  "trims": [
+    {
+      "id": "2-7-2tr-fe",
+      "name": "2.7 (2TR-FE)",
+      "productionYears": {
+        "start": 2015,
+        "end": null
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or 6-speed automatic",
+      "gears": 6,
+      "engine": {
+        "code": "2TR-FE",
+        "configuration": "inline-4, Dual VVT-i",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2694,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article describes this engine only as \"2.7 L\"; 2,694 cc is the well-documented displacement of the Toyota 2TR-FE engine, not a figure stated directly in this article."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 120,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-hilux",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+        "sourceNote": "At 5,500 rpm."
+      },
+      "torque": {
+        "value": 246,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-hilux",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+        "sourceNote": "At 3,800 rpm."
+      },
+      "mass": {
+        "value": 1495,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-toyota-hilux",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+        "sourceNote": "Low end of the generation's published weight range, applied here to the lighter rear-wheel-drive petrol trim rather than taken from a per-engine figure."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-8-1gd-ftv-facelift",
+      "name": "2.8 (1GD-FTV, 2020 facelift)",
+      "productionYears": {
+        "start": 2020,
+        "end": null
+      },
+      "drivetrain": "4wd",
+      "powertrain": "diesel",
+      "transmission": "6-speed automatic",
+      "gears": 6,
+      "engine": {
+        "code": "1GD-FTV",
+        "configuration": "inline-4, common rail, variable-geometry turbo",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2755,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article describes this engine only as \"2.8 L\"; 2,755 cc is the well-documented displacement of the Toyota 1GD-FTV engine, not a figure stated directly in this article."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 150,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-hilux",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+        "sourceNote": "204 PS at 3,400 rpm, converted at 1 PS = 0.73549875 kW, following the 2020 facelift's power upgrade with the automatic transmission. The pre-facelift automatic made 177 hp; the GR Sport version made 221 hp; neither recorded as separate trims here."
+      },
+      "torque": {
+        "value": 500,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-hilux",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+        "sourceNote": "At 1,400-3,400 rpm, 2020 facelift."
+      },
+      "mass": {
+        "value": 2286,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-toyota-hilux",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+        "sourceNote": "High end of the generation's published weight range, applied here to the heavier four-wheel-drive diesel trim rather than taken from a per-engine figure."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-hilux-2015/hero.webp",
+    "alt": "White Toyota Hilux Invincible double-cab pickup photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 793,
+    "caption": "The eighth-generation Hilux, launched in 2015 on the Toyota IMV platform and sold in most world markets except North America.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2016 Toyota HiLux Invincible D-4D 4WD 2.4 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Toyota_HiLux_Invincible_D-4D_4WD_2.4_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-hilux"
+  ]
+}

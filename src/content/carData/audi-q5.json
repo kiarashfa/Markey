@@ -1,0 +1,20 @@
+{
+  "id": "audi-q5",
+  "name": "Audi Q5",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "audi",
+  "productionYears": {
+    "start": 2008,
+    "end": null
+  },
+  "fullName": "Audi Q5, 2008-present",
+  "segment": "suv-compact",
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-audi-q5"
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "id": "toyota-hilux-1968",
+  "name": "Toyota Hilux (N10)",
+  "fullName": "Toyota Hilux (N10), 1968-1972",
+  "kind": "generation",
+  "parent": "toyota-hilux",
+  "brandRef": "toyota",
+  "generationCode": "N10",
+  "productionYears": {
+    "start": 1968,
+    "end": 1972
+  },
+  "bodyStyles": [
+    "pickup"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "pickup",
+  "positioning": "economy",
+  "designer": "Takayuki Otsuka",
+  "assembly": [
+    "Hamura, Tokyo, Japan (Hino Motors)",
+    "Long Beach, California, US (Atlas Fabricators, final assembly, 1971-1972)",
+    "Durban, South Africa (Motor Assemblies Ltd., from 1969)",
+    "Montevideo, Uruguay (Ayax S.A., from 1971)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4215,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-hilux",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+      "sourceNote": "Short-wheelbase truck. Long-wheelbase variants ranged up to 4,665 mm (box van)."
+    },
+    "width": {
+      "value": 1580,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-hilux",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux"
+    },
+    "height": {
+      "value": 1575,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-hilux",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+      "sourceNote": "Standard truck. The box van variant is 1,830 mm."
+    },
+    "wheelbase": {
+      "value": null,
+      "unit": "mm",
+      "status": "conflicting-sources",
+      "sourceNote": "The infobox states the short-wheelbase figure as 4,215 mm, identical to its own length figure for the same body — almost certainly a transcription error in the source (a wheelbase cannot equal a vehicle's overall length). The long-wheelbase figure of 2,785 mm is given separately and is itself shorter than this \"short\" wheelbase figure, which confirms the two values are swapped or mislabelled in the article. Left as `null` rather than guessing which of the two numbers is correct, since that would be inventing data."
+    },
+    "kerbWeight": {
+      "value": 1025,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-toyota-hilux",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+      "sourceNote": "Low end of the 1,025-1,040 kg short-wheelbase truck range."
+    }
+  },
+  "trims": [
+    {
+      "id": "2r",
+      "name": "1.5 (2R)",
+      "productionYears": {
+        "start": 1968,
+        "end": 1971
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "2R",
+        "configuration": "inline-4, OHV",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1490,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-toyota-hilux",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 51,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-hilux",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+        "sourceNote": "Low end of a published 70-77 PS range, converted at 1 PS = 0.73549875 kW."
+      },
+      "mass": {
+        "value": 1025,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-toyota-hilux",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+        "sourceNote": "Low end of the short-wheelbase truck weight range."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "12r",
+      "name": "1.6 (12R)",
+      "productionYears": {
+        "start": 1971,
+        "end": 1972
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "12R",
+        "configuration": "inline-4, OHV",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1587,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-toyota-hilux",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 61,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-hilux",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+        "sourceNote": "Low end of a published 83-91 PS range, converted at 1 PS = 0.73549875 kW."
+      },
+      "mass": {
+        "value": 1040,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-toyota-hilux",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Hilux",
+        "sourceNote": "High end of the short-wheelbase truck weight range."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-hilux-1968/hero.webp",
+    "alt": "Light blue original Toyota Hilux N10 pickup truck photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1191,
+    "caption": "The N10, the first Hilux, developed and built for Toyota by Hino Motors to replace the smaller Briska.",
+    "credit": {
+      "author": "Andrew Bone",
+      "title": "File:Toyota N10 1600 Pick-up (1974) 02 (cropped).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_N10_1600_Pick-up_(1974)_02_(cropped).jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-hilux"
+  ]
+}

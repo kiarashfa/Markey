@@ -1,0 +1,20 @@
+{
+  "id": "tesla-model-x",
+  "name": "Tesla Model X",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "tesla",
+  "productionYears": {
+    "start": 2015,
+    "end": 2026
+  },
+  "fullName": "Tesla Model X, 2015-2026",
+  "segment": "suv-mid",
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-tesla-model-x"
+  ]
+}

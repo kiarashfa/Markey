@@ -1,0 +1,243 @@
+{
+  "id": "skoda-fabia-6y",
+  "name": "Škoda Fabia Mk1",
+  "fullName": "Škoda Fabia Mk1 (Typ 6Y), 1999-2007",
+  "kind": "generation",
+  "parent": "skoda-fabia",
+  "brandRef": "skoda-auto",
+  "generationCode": "6Y",
+  "productionYears": {
+    "start": 1999,
+    "end": 2007
+  },
+  "bodyStyles": ["hatchback", "saloon", "estate"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "assembly": [
+    "Mladá Boleslav, Czech Republic",
+    "Poznań, Poland",
+    "Sarajevo, Bosnia and Herzegovina",
+    "Nairobi, Kenya (CMC)",
+    "Solomonovo, Ukraine (Eurocar)",
+    "Kaluga, Russia"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 3960,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-fabia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#First_generation_(Type_6Y;_1999)",
+      "sourceNote": "Hatchback; the saloon/estate was 4,220 mm."
+    },
+    "width": {
+      "value": 1650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-fabia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#First_generation_(Type_6Y;_1999)"
+    },
+    "height": {
+      "value": 1450,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-fabia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#First_generation_(Type_6Y;_1999)"
+    },
+    "wheelbase": {
+      "value": 2462,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-fabia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#First_generation_(Type_6Y;_1999)"
+    }
+  },
+  "trims": [
+    {
+      "id": "1-4-16v",
+      "name": "1.4 16V",
+      "productionYears": { "start": 1999, "end": 2007 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "AUB/BBZ",
+        "configuration": "inline-4, DOHC 16V",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1390,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-skoda-fabia",
+          "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#First_generation_(Type_6Y;_1999)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 74,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#First_generation_(Type_6Y;_1999)",
+        "sourceNote": "At 6,000 rpm, published directly in kW in the article's engine table."
+      },
+      "torque": {
+        "value": 126,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#First_generation_(Type_6Y;_1999)",
+        "sourceNote": "At 4,400 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-9-tdi-pd",
+      "name": "1.9 TDI PD",
+      "productionYears": { "start": 2000, "end": 2007 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "ATD/AXR",
+        "configuration": "inline-4, turbocharged, pump-injector (Pumpe-Düse)",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1896,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-skoda-fabia",
+          "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#First_generation_(Type_6Y;_1999)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 73.55,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#First_generation_(Type_6Y;_1999)",
+        "sourceNote": "Published as 100 PS at 4,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 240,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#First_generation_(Type_6Y;_1999)",
+        "sourceNote": "At 1,800-2,400 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "rs",
+      "name": "RS (vRS)",
+      "productionYears": { "start": 2003, "end": 2007 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "ASZ/BLT",
+        "configuration": "inline-4, turbocharged, pump-injector (Pumpe-Düse)",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1896,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-skoda-fabia",
+          "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Fabia_RS",
+          "sourceNote": "The first exclusively diesel hot hatch, sold with no petrol equivalent; named Diesel Car of the Year 2003 by the Scottish Car of the Year Awards."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 95.61,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#First_generation_(Type_6Y;_1999)",
+        "sourceNote": "Published as 130 PS at 4,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 310,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#First_generation_(Type_6Y;_1999)",
+        "sourceNote": "At 1,900 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 9.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Fabia_RS",
+        "sourceNote": "Official Škoda figure. Independent road testers measured faster times (7.0-8.5 s across three UK magazines); the manufacturer's own claim is used here rather than a third-party test."
+      },
+      "topSpeed": {
+        "value": 206,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Fabia_RS",
+        "sourceNote": "Published as 128 mph, converted at 1 mph = 1.609344 km/h."
+      },
+      "fuelEconomy": {
+        "value": 6.2,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Fabia_RS",
+        "sourceNote": "Published as 'better than 6.2 L/100 km'; recorded as the stated figure."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/skoda-fabia-6y/hero.webp",
+    "alt": "Red first-generation Skoda Fabia vRS hatchback photographed from the front three-quarter angle beside a coastal road",
+    "width": 1600,
+    "height": 1179,
+    "caption": "The Fabia vRS: the first exclusively diesel hot hatch, with no petrol equivalent ever offered.",
+    "credit": {
+      "author": "Andrew Bone from Weymouth, England",
+      "title": "File:Skoda Fabia vRS (7914423470) (cropped).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skoda_Fabia_vRS_(7914423470)_(cropped).jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/skoda-fabia-6y/gallery-1.webp",
+      "alt": "Black facelifted first-generation Skoda Fabia hatchback on display at a motor show, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 1005,
+      "caption": "The 6Y: Skoda's first model developed jointly with Volkswagen from the ground up, and the What Car? Car of the Year for 2000.",
+      "credit": {
+        "author": "Gaspa (Francesco Gasparetti) from Senigallia (Italy)",
+        "title": "File:Skoda Fabia flickr.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skoda_Fabia_flickr.jpg",
+        "licenseType": "cc-by",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-skoda-fabia"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "porsche-panamera",
+  "name": "Porsche Panamera",
+  "fullName": "Porsche Panamera, 2009-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "porsche",
+  "productionYears": {
+    "start": 2009,
+    "end": null
+  },
+  "segment": "f-segment",
+  "positioning": "luxury",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-porsche-panamera"]
+}

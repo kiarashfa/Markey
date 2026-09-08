@@ -1,0 +1,223 @@
+{
+  "id": "porsche-panamera-971",
+  "name": "Porsche Panamera (971)",
+  "fullName": "Porsche Panamera (971), 2016-2024",
+  "kind": "generation",
+  "parent": "porsche-panamera",
+  "brandRef": "porsche",
+  "generationCode": "971",
+  "productionYears": {
+    "start": 2016,
+    "end": 2024
+  },
+  "bodyStyles": ["liftback", "shooting-brake"],
+  "powertrains": ["petrol", "diesel", "phev"],
+  "drivetrains": ["rwd", "awd"],
+  "segment": "f-segment",
+  "positioning": "luxury",
+  "designer": "Peter Varga",
+  "assembly": ["Leipzig, Germany"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 5049,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-panamera",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)",
+      "sourceNote": "Standard wheelbase; the long-wheelbase version was 5,199 mm."
+    },
+    "width": {
+      "value": 1937,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-panamera",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)"
+    },
+    "height": {
+      "value": 1423,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-panamera",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)",
+      "sourceNote": "Standard wheelbase; the long-wheelbase version was 1,432 mm."
+    },
+    "wheelbase": {
+      "value": 2950,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-panamera",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)",
+      "sourceNote": "Standard wheelbase; the long-wheelbase version was 3,100 mm."
+    },
+    "kerbWeight": {
+      "value": 1815,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-porsche-panamera",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)",
+      "sourceNote": "Lowest of a published 1,815-2,310 kg range across the whole range; not attributed to one specific trim, so recorded at generation level only."
+    }
+  },
+  "trims": [
+    {
+      "id": "panamera",
+      "name": "Panamera",
+      "productionYears": { "start": 2016, "end": 2020 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "8-speed automatic",
+      "gears": 8,
+      "engine": {
+        "code": "EA839T",
+        "configuration": "V6, turbocharged",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2995,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-panamera",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 242.71,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)",
+        "sourceNote": "Published as 330 PS at 5,400-6,400 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 450,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)",
+        "sourceNote": "At 1,800-5,000 rpm."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "panamera-4s",
+      "name": "Panamera 4S",
+      "productionYears": { "start": 2016, "end": 2020 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "8-speed automatic",
+      "gears": 8,
+      "engine": {
+        "code": "EA839TT",
+        "configuration": "V6, twin-turbocharged",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2894,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-panamera",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 323.62,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)",
+        "sourceNote": "Published as 440 PS at 5,650-6,600 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 549,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)",
+        "sourceNote": "At 1,750-5,500 rpm."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "panamera-turbo",
+      "name": "Panamera Turbo",
+      "productionYears": { "start": 2016, "end": 2020 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "8-speed automatic",
+      "gears": 8,
+      "engine": {
+        "code": "EA825TT",
+        "configuration": "V8, twin-turbocharged",
+        "cylinders": 8,
+        "displacement": {
+          "value": 3996,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-panamera",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)",
+          "sourceNote": "One of only three Porsche models more powerful than this generation's Turbo S E-Hybrid at launch was the 918 Spyder and the 991 GT2 RS, per the article's own claim about that hybrid variant."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 404.52,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)",
+        "sourceNote": "Published as 550 PS at 5,750-6,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 770,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-panamera",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Panamera#Second_generation_(971_Chassis_G2;_2016)",
+        "sourceNote": "At 1,960-4,500 rpm."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/porsche-panamera-971/hero.webp",
+    "alt": "Silver Porsche Panamera 4 E-Hybrid liftback photographed from the front three-quarter angle in a car park, with green brake calipers denoting the hybrid powertrain",
+    "width": 1600,
+    "height": 900,
+    "caption": "The 971: styled with a clearer link to the 911, resolving critics' complaints about the first generation's proportions.",
+    "credit": {
+      "author": "Shirley 501JFW",
+      "title": "File:JAIA18 Porsche Panamera 4 E-Hybrid 97ABE1 1.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:JAIA18_Porsche_Panamera_4_E-Hybrid_97ABE1_1.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/porsche-panamera-971/gallery-1.webp",
+      "alt": "Dark grey Porsche Panamera Turbo liftback photographed from the rear three-quarter angle beside a hedge, with a full-width LED light bar",
+      "width": 1200,
+      "height": 535,
+      "caption": "The Panamera Turbo: a twin-turbocharged 4.0-litre V8 replacing the first generation's 4.8-litre unit, badged with the full-width tail light bar new to this generation.",
+      "credit": {
+        "author": "Alexandre Prévot from Nancy, France",
+        "title": "File:Porsche Panamera Turbo grey.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_Panamera_Turbo_grey.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-porsche-panamera"]
+}

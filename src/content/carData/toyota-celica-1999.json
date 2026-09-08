@@ -1,0 +1,194 @@
+{
+  "id": "toyota-celica-1999",
+  "name": "Toyota Celica (T230)",
+  "fullName": "Toyota Celica (T230), 1999-2006",
+  "kind": "generation",
+  "parent": "toyota-celica",
+  "brandRef": "toyota",
+  "generationCode": "T230",
+  "productionYears": {
+    "start": 1999,
+    "end": 2006
+  },
+  "bodyStyles": [
+    "liftback"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "s-segment",
+  "positioning": "mainstream",
+  "designer": "Alan R. Schneider, Yasuhiko Mizuhata, Hiroyuki Metsugi",
+  "assembly": [
+    "Susono, Shizuoka, Japan (Higashi-Fuji plant, Kanto Auto Works)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4335,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-celica",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica"
+    },
+    "width": {
+      "value": 1735,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-celica",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica"
+    },
+    "height": {
+      "value": 1305,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-celica",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+      "sourceNote": "Published as 51.4 in, converted at 1 in = 25.4 mm."
+    },
+    "wheelbase": {
+      "value": 2600,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-celica",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+      "sourceNote": "Published as 102.4 in, converted at 1 in = 25.4 mm."
+    },
+    "kerbWeight": {
+      "value": 1090,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-toyota-celica",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+      "sourceNote": "Infobox gives a 1,090-1,180 kg range across the generation without attributing each figure to a trim. The lower figure is recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "zzt230-ss-i",
+      "name": "SS-I (ZZT230)",
+      "productionYears": {
+        "start": 1999,
+        "end": 2006
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual or 4-speed automatic",
+      "gears": 5,
+      "engine": {
+        "code": "1ZZ-FE",
+        "configuration": "inline-4, VVT-i",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1794,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article describes this engine only as \"1.8 L\"; 1,794 cc is the well-documented displacement of the Toyota 1ZZ-FE engine, not a figure stated directly in this article."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 107,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-celica",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+        "sourceNote": "145 PS at 6,400 rpm, Japanese-market SS-I, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 170,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-celica",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+        "sourceNote": "At 4,200 rpm."
+      },
+      "mass": {
+        "value": 1090,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-toyota-celica",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+        "sourceNote": "Low end of the generation's published weight range, applied here to the lighter four-cylinder base trim."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "zzt231-ss-ii",
+      "name": "SS-II (ZZT231)",
+      "productionYears": {
+        "start": 1999,
+        "end": 2005
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "2ZZ-GE",
+        "configuration": "inline-4, VVTL-i, co-developed with Yamaha",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1794,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article describes this engine only as \"1.8 L\"; 1,794 cc is the well-documented displacement of the Toyota 2ZZ-GE engine, not a figure stated directly in this article."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 140,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-celica",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+        "sourceNote": "190 PS at 7,600 rpm, Japanese-market SS-II, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 180,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-celica",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+        "sourceNote": "At 6,800 rpm."
+      },
+      "mass": {
+        "value": 1180,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-toyota-celica",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+        "sourceNote": "High end of the generation's published weight range, applied here to the higher-performance trim."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-celica-1999/hero.webp",
+    "alt": "Yellow seventh-generation Toyota Celica GT VVTL-i photographed from the front three-quarter angle",
+    "width": 1360,
+    "height": 822,
+    "caption": "The final Celica generation (T230), sold with front-wheel drive only and, for the first time, no all-wheel-drive GT-Four option.",
+    "credit": {
+      "author": "Calreyn88",
+      "title": "File:2005 Toyota Celica GT VVTL-i.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2005_Toyota_Celica_GT_VVTL-i.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-celica"
+  ]
+}

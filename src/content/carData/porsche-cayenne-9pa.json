@@ -1,0 +1,234 @@
+{
+  "id": "porsche-cayenne-9pa",
+  "name": "Porsche Cayenne (9PA)",
+  "fullName": "Porsche Cayenne (9PA/E1), 2002-2010",
+  "kind": "generation",
+  "parent": "porsche-cayenne",
+  "brandRef": "porsche",
+  "generationCode": "9PA",
+  "productionYears": {
+    "start": 2002,
+    "end": 2010
+  },
+  "bodyStyles": ["suv"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["awd"],
+  "segment": "suv-mid",
+  "positioning": "luxury",
+  "designer": "Steve Murkett; Michael Mauer (facelift)",
+  "assembly": [
+    "Bratislava, Slovakia (Volkswagen Bratislava Plant)",
+    "Leipzig, Germany (Porsche Leipzig)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4782,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-cayenne",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)",
+      "sourceNote": "955-chassis (pre-facelift) standard Cayenne. The 955 Turbo was 4,786 mm, the 957 (facelift) Cayenne 4,798 mm and the 957 GTS/Turbo 4,795 mm."
+    },
+    "width": {
+      "value": 1928,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-cayenne",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)",
+      "sourceNote": "The 957 GTS/Turbo S was 1,957 mm."
+    },
+    "height": {
+      "value": 1699,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-cayenne",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)",
+      "sourceNote": "The 957 GTS was 1,675 mm and the 957 Turbo 1,696 mm."
+    },
+    "wheelbase": {
+      "value": 2855,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-porsche-cayenne",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)"
+    }
+  },
+  "trims": [
+    {
+      "id": "cayenne-v6",
+      "name": "Cayenne",
+      "productionYears": { "start": 2004, "end": 2007 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "EA390",
+        "configuration": "VR6",
+        "cylinders": 6,
+        "displacement": {
+          "value": 3189,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-cayenne",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)",
+          "sourceNote": "Largely a Volkswagen VR6 unit shared with the Touareg, with a Porsche-specific intake manifold."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 183.87,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)",
+        "sourceNote": "Published as 250 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 310,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)",
+        "sourceNote": "At 2,500 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 9.1,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)",
+        "sourceNote": "With the 6-speed manual; 9.7 s with the Tiptronic S automatic."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "cayenne-s",
+      "name": "Cayenne S",
+      "productionYears": { "start": 2002, "end": 2007 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "M4800",
+        "configuration": "V8",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4511,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-cayenne",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)",
+          "sourceNote": "Porsche's first V8-engined production car since the 928 was discontinued in 1995."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 250.07,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)",
+        "sourceNote": "Published as 340 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW. A separately cited 335 hp (249.8 kW) figure for the same engine gives a 0-60 mph time of 6.9 s; that is a different speed threshold and is not converted to 0-100 km/h here."
+      },
+      "torque": {
+        "value": 420,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)",
+        "sourceNote": "At 2,500 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "cayenne-turbo",
+      "name": "Cayenne Turbo",
+      "productionYears": { "start": 2002, "end": 2007 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed automatic",
+      "gears": 6,
+      "engine": {
+        "code": "M4850",
+        "configuration": "V8, twin-turbocharged",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4511,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-porsche-cayenne",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 330.97,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)",
+        "sourceNote": "Published as 450 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 620,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)",
+        "sourceNote": "At 2,250 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 5.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-porsche-cayenne",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Porsche_Cayenne#First_generation_(E1_9PA;_2002)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/porsche-cayenne-9pa/hero.webp",
+    "alt": "Black first-generation Porsche Cayenne Turbo SUV photographed from the front three-quarter angle on a gravel driveway, with red brake calipers visible",
+    "width": 1360,
+    "height": 1020,
+    "caption": "The 9PA: Porsche's first SUV, first V8-engined car since the 928, and first production model with four doors.",
+    "credit": {
+      "author": "The Car Spy",
+      "title": "File:2007 Porsche Cayenne Turbo - Flickr - The Car Spy (25).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Porsche_Cayenne_Turbo_-_Flickr_-_The_Car_Spy_(25).jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/porsche-cayenne-9pa/gallery-1.webp",
+      "alt": "Silver first-generation Porsche Cayenne GTS photographed from the rear three-quarter angle in a car park",
+      "width": 1200,
+      "height": 675,
+      "caption": "The Cayenne GTS: the first Porsche of the modern era to carry the GTS name, offered only in the updated 957 chassis from 2008 to 2010.",
+      "credit": {
+        "author": "MercurySable99",
+        "title": "File:2009 Porsche Cayenne GTS, rear left, 06-13-2023.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009_Porsche_Cayenne_GTS,_rear_left,_06-13-2023.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-porsche-cayenne"]
+}

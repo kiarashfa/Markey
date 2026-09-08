@@ -1,0 +1,18 @@
+{
+  "id": "mercedes-benz-c-class",
+  "name": "Mercedes-Benz C-Class",
+  "fullName": "Mercedes-Benz C-Class, 1993-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "mercedes-benz",
+  "productionYears": {
+    "start": 1993,
+    "end": null
+  },
+  "segment": "d-segment",
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-c-class"]
+}

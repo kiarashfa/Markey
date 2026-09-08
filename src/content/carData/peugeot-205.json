@@ -1,0 +1,18 @@
+{
+  "id": "peugeot-205",
+  "name": "Peugeot 205",
+  "fullName": "Peugeot 205, 1983-1999",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "peugeot",
+  "productionYears": {
+    "start": 1983,
+    "end": 1999
+  },
+  "segment": "b-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-peugeot-205"]
+}

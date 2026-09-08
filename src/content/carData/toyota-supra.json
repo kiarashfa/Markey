@@ -1,0 +1,20 @@
+{
+  "id": "toyota-supra",
+  "name": "Toyota Supra",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "toyota",
+  "productionYears": {
+    "start": 1978,
+    "end": 2026
+  },
+  "fullName": "Toyota Supra, 1978-2002, 2019-2026",
+  "segment": "s-segment",
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-supra"
+  ]
+}

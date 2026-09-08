@@ -1,0 +1,20 @@
+{
+  "id": "lamborghini-urus",
+  "name": "Lamborghini Urus",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "lamborghini",
+  "productionYears": {
+    "start": 2017,
+    "end": null
+  },
+  "fullName": "Lamborghini Urus, 2017-present",
+  "segment": "suv-large",
+  "positioning": "ultra-luxury",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-lamborghini-urus"
+  ]
+}

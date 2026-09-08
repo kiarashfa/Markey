@@ -1,0 +1,235 @@
+{
+  "id": "ford-mondeo-second-gen",
+  "name": "Ford Mondeo (second generation)",
+  "fullName": "Ford Mondeo Mk3, 2000-2007",
+  "kind": "generation",
+  "parent": "ford-mondeo",
+  "brandRef": "ford",
+  "productionYears": {
+    "start": 2000,
+    "end": 2007
+  },
+  "bodyStyles": ["saloon", "liftback", "estate"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "d-segment",
+  "positioning": "mainstream",
+  "designer": "Chris Bird",
+  "assembly": [
+    "Genk, Belgium",
+    "Zhongli, Taiwan (Ford Lio Ho)",
+    "Chongqing, China (Changan Ford)",
+    "Hai Duong, Vietnam (Ford Vietnam)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4731,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mondeo-second-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)",
+      "sourceNote": "Saloon/liftback figure; the estate was 4,804 mm."
+    },
+    "width": {
+      "value": 1812,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mondeo-second-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)",
+      "sourceNote": "Excluding mirrors; 1,958 mm including mirrors."
+    },
+    "height": {
+      "value": 1429,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mondeo-second-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)",
+      "sourceNote": "Saloon/liftback figure; the estate was 1,441 mm."
+    },
+    "wheelbase": {
+      "value": 2754,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mondeo-second-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)"
+    },
+    "kerbWeight": {
+      "value": 1364,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-ford-mondeo-second-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)",
+      "sourceNote": "Lowest of a published 1,364-1,578 kg range across the whole range; not attributed to one specific trim, so recorded at generation level only."
+    }
+  },
+  "trims": [
+    {
+      "id": "2-0",
+      "name": "2.0",
+      "productionYears": { "start": 2000, "end": 2007 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "Mazda LF",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-mondeo-second-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 106.65,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-second-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)",
+        "sourceNote": "Published as 145 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 189.81,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-second-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)",
+        "sourceNote": "Published as 140 lb-ft, converted at 1 lb-ft = 1.35581795 Nm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-0-tdci-130",
+      "name": "2.0 TDCi 130",
+      "productionYears": { "start": 2000, "end": 2007 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "ZSD-420 Duratorq",
+        "configuration": "inline-4, turbocharged, common rail",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-mondeo-second-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 96.35,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-second-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)",
+        "sourceNote": "Published as 131 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 330.82,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-second-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)",
+        "sourceNote": "Published as 244 lb-ft, converted at 1 lb-ft = 1.35581795 Nm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "st220",
+      "name": "ST220",
+      "productionYears": { "start": 2002, "end": 2007 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "Duratec 30",
+        "configuration": "V6",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2967,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-mondeo-second-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)",
+          "sourceNote": "Replaced the first generation's ST200 as the range-topping sports model, sold as saloon, liftback and estate."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 166.22,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-second-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)",
+        "sourceNote": "Published as 226 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 284.72,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-second-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)",
+        "sourceNote": "Published as 210 lb-ft, converted at 1 lb-ft = 1.35581795 Nm."
+      },
+      "topSpeed": {
+        "value": 249.45,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-second-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(second_generation)",
+        "sourceNote": "Published as 155 mph, converted at 1 mph = 1.609344 km/h. A separately published 0-62 mph time of 7.4 seconds is not converted to 0-100 km/h here, as it is a different speed threshold."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/ford-mondeo-second-gen/hero.webp",
+    "alt": "Silver second-generation Ford Mondeo saloon photographed from the front three-quarter angle beside a brick wall",
+    "width": 1600,
+    "height": 836,
+    "caption": "The second Mondeo: sold as a saloon, liftback and estate on a shared platform with the Jaguar X-Type.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2003 Ford Mondeo LX TDCi 2.0.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2003_Ford_Mondeo_LX_TDCi_2.0.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/ford-mondeo-second-gen/gallery-1.webp",
+      "alt": "Dark blue sports-badged second-generation Ford Mondeo saloon photographed from the front three-quarter angle in a car park, with red brake calipers and multi-spoke alloy wheels",
+      "width": 1200,
+      "height": 572,
+      "caption": "A sports-suspension ST-badged Mondeo. The source's file title identifies it as an 'ST220 TDCi' — a diesel-engined sports derivative distinct from the petrol-only ST220 recorded as this entry's halo trim.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2006 Ford Mondeo ST220 TDCi Front.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Ford_Mondeo_ST220_TDCi_Front.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-ford-mondeo-second-generation"]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "toyota-land-cruiser",
+  "name": "Toyota Land Cruiser",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "toyota",
+  "productionYears": {
+    "start": 1951,
+    "end": null
+  },
+  "fullName": "Toyota Land Cruiser, 1951-present",
+  "segment": "suv-large",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-land-cruiser"
+  ]
+}

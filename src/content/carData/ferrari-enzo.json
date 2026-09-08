@@ -1,0 +1,20 @@
+{
+  "id": "ferrari-enzo",
+  "name": "Ferrari Enzo",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "ferrari",
+  "productionYears": {
+    "start": 2002,
+    "end": 2004
+  },
+  "fullName": "Ferrari Enzo, 2002-2004",
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-ferrari-enzo"
+  ]
+}

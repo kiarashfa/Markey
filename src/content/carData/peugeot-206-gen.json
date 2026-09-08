@@ -1,0 +1,299 @@
+{
+  "id": "peugeot-206-gen",
+  "name": "Peugeot 206",
+  "fullName": "Peugeot 206 (T1), 1998-2012",
+  "kind": "generation",
+  "parent": "peugeot-206",
+  "brandRef": "peugeot",
+  "generationCode": "T1",
+  "productionYears": {
+    "start": 1998,
+    "end": 2012
+  },
+  "bodyStyles": ["hatchback", "estate", "convertible", "saloon"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Gérard Welter",
+  "assembly": [
+    "Mulhouse, France",
+    "Poissy, France (206 SW)",
+    "Cerizay, France (Heuliez, 206 CC)",
+    "Ryton, United Kingdom",
+    "Porto Real, Brazil",
+    "Buenos Aires, Argentina (Sevel Argentina)",
+    "Los Andes, Chile",
+    "Tehran, Iran (IKCO)",
+    "Wuhan, China (DPCA)",
+    "Gurun, Malaysia (NAM)",
+    "North Jakarta, Indonesia (Gaya Motor)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 3835,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-206",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206",
+      "sourceNote": "Hatchback figure. The coupé cabriolet was 4,000 mm, the European sedan 4,188 mm, the South American sedan 4,235 mm and the station wagon 4,028 mm."
+    },
+    "width": {
+      "value": 1652,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-206",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206",
+      "sourceNote": "Hatchback/CC figure. The GTI, S16, GTI 180 and RC were 1,673 mm over their wider track."
+    },
+    "height": {
+      "value": 1428,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-206",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206",
+      "sourceNote": "Hatchback figure. The coupé cabriolet was 1,373 mm, the sedan 1,456 mm and the station wagon 1,460 mm."
+    },
+    "wheelbase": {
+      "value": 2442,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-206",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206"
+    },
+    "kerbWeight": {
+      "value": 950,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-peugeot-206",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206",
+      "sourceNote": "Lowest of a published 950-1,145 kg range across the whole range; not attributed to one specific trim, so recorded at generation level only."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-4-tu3jp",
+      "name": "1.4 (TU3JP)",
+      "productionYears": { "start": 1998, "end": 2012 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "TU3JP",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1360,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-206",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 55.16,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206",
+        "sourceNote": "Published as 75 PS at 5,250 rpm, converted at 1 PS = 0.73549875 kW. The 1.4-litre XR was reportedly the 206's best-selling model."
+      },
+      "torque": {
+        "value": 133,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206",
+        "sourceNote": "At 3,250 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 11.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206"
+      },
+      "topSpeed": {
+        "value": 187,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206"
+      },
+      "co2": {
+        "value": 152,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206",
+        "sourceNote": "Cycle not stated in the source beyond the powertrain table's own g/km column; likely an EU type-approval figure of the period."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "hdi-1-6-16v",
+      "name": "1.6 HDi",
+      "productionYears": { "start": 2004, "end": 2012 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "DV6TED4",
+        "configuration": "inline-4, turbocharged, 16V",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1560,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-206",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 80.17,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206",
+        "sourceNote": "Published as 109 PS at 4,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 240,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206",
+        "sourceNote": "At 1,750 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 9.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206"
+      },
+      "topSpeed": {
+        "value": 186,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206"
+      },
+      "co2": {
+        "value": 126,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gti-180-rc",
+      "name": "GTi 180 / RC",
+      "productionYears": { "start": 2003, "end": 2007 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "EW10J4S",
+        "configuration": "inline-4, DOHC 16V, variable valve timing",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1997,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-206",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206",
+          "sourceNote": "Sold as the GTi 180 in the UK and the RC (Rallye Concept) elsewhere in Europe, built to mark Peugeot's WRC manufacturers' titles of 2000 and 2002 and to echo the 205 GTI's reputation."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 130.18,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206",
+        "sourceNote": "Published as 177 PS at 7,000 rpm, converted at 1 PS = 0.73549875 kW; the article's prose also quotes 175 bhp for the same engine, a minor rounding difference from the same source's own powertrain table."
+      },
+      "torque": {
+        "value": 202,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206",
+        "sourceNote": "At 4,750 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 7.4,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206"
+      },
+      "topSpeed": {
+        "value": 217,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206",
+        "sourceNote": "Powertrain table figure; the article's prose separately quotes 220 km/h for the same car, a minor discrepancy within the same source."
+      },
+      "co2": {
+        "value": 204,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-peugeot-206",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_206"
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/peugeot-206-gen/hero.webp",
+    "alt": "Silver Peugeot 206 5-door hatchback photographed from the front three-quarter angle, parked beside a brick wall",
+    "width": 1600,
+    "height": 791,
+    "caption": "The 206: Peugeot's best-selling model ever, with over 8.3 million sold worldwide by 2012.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2002 Peugeot 206 LX 1.4 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2002_Peugeot_206_LX_1.4_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/peugeot-206-gen/gallery-1.webp",
+      "alt": "Silver Peugeot 206 GTi 180 hatchback photographed from the rear three-quarter angle, showing twin exhaust tips and a roof spoiler",
+      "width": 1200,
+      "height": 802,
+      "caption": "The GTi 180 (badged RC in mainland Europe): a 2.0-litre, 177 PS hot hatch built to mark Peugeot's early-2000s World Rally Championship titles.",
+      "credit": {
+        "author": "OSX",
+        "title": "File:2003-2007 Peugeot 206 (T1) GTi 180 3-door hatchback (2011-11-18).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2003-2007_Peugeot_206_(T1)_GTi_180_3-door_hatchback_(2011-11-18).jpg",
+        "licenseType": "public-domain",
+        "licenseNote": "Released into the public domain by the photographer."
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-peugeot-206"]
+}

@@ -1,0 +1,327 @@
+{
+  "id": "mercedes-benz-slr-mclaren-c199",
+  "name": "Mercedes-Benz SLR McLaren",
+  "fullName": "Mercedes-Benz SLR McLaren (C199/R199/Z199), 2003-2010",
+  "kind": "generation",
+  "parent": "mercedes-benz-slr-mclaren",
+  "brandRef": "mercedes-benz",
+  "generationCode": "C199",
+  "productionYears": {
+    "start": 2003,
+    "end": 2010
+  },
+  "bodyStyles": ["coupe", "roadster"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "designer": "Gordon Murray, Gorden Wagener",
+  "assembly": ["Woking, Surrey, England (McLaren Technology Centre)"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4656,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-slr-mclaren",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren"
+    },
+    "width": {
+      "value": 1909,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-slr-mclaren",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren"
+    },
+    "height": {
+      "value": 1261,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-slr-mclaren",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren",
+      "sourceNote": "2003-2006 figure; lowered to 1,252 mm for 2006-2008 cars."
+    },
+    "wheelbase": {
+      "value": 2700,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-slr-mclaren",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren"
+    }
+  },
+  "trims": [
+    {
+      "id": "slr-coupe",
+      "name": "SLR McLaren",
+      "productionYears": { "start": 2003, "end": 2009 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed automatic",
+      "gears": 5,
+      "engine": {
+        "code": "M155",
+        "configuration": "V8, supercharged, SOHC, 3 valves per cylinder",
+        "cylinders": 8,
+        "displacement": {
+          "value": 5439,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-slr-mclaren",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren",
+          "sourceNote": "Hand-built, all-aluminium, with a Lysholm-type twin-screw supercharger turning at up to 23,000 rpm and 0.9 bar of boost."
+        },
+        "aspiration": "supercharged"
+      },
+      "power": {
+        "value": 460.42,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren",
+        "sourceNote": "Published as 626 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 780,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren"
+      },
+      "mass": {
+        "value": 1743,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren",
+        "sourceNote": "Lowest of the published 1,743-1,768 kg range across coupé specifications."
+      },
+      "topSpeed": {
+        "value": 333.13,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren",
+        "sourceNote": "Published as 207 mph, converted at 1 mph = 1.609344 km/h."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "slr-roadster",
+      "name": "SLR McLaren Roadster",
+      "productionYears": { "start": 2007, "end": 2009 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed automatic",
+      "gears": 5,
+      "engine": {
+        "code": "M155",
+        "configuration": "V8, supercharged, SOHC, 3 valves per cylinder",
+        "cylinders": 8,
+        "displacement": {
+          "value": 5439,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-slr-mclaren",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren"
+        },
+        "aspiration": "supercharged"
+      },
+      "power": {
+        "value": 460.42,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren",
+        "sourceNote": "Published as 626 PS, the same output as the coupé, converted at 1 PS = 0.73549875 kW."
+      },
+      "mass": {
+        "value": 1791.5,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren",
+        "sourceNote": "Roadster-specific curb weight, heavier than the coupé due to the folding-roof mechanism and structural reinforcement."
+      },
+      "zeroToHundredKph": {
+        "value": 3.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren"
+      },
+      "topSpeed": {
+        "value": 334,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren"
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "722-edition",
+      "name": "SLR McLaren 722 Edition",
+      "productionYears": { "start": 2006, "end": 2009 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed automatic",
+      "gears": 5,
+      "engine": {
+        "code": "M155",
+        "configuration": "V8, supercharged, SOHC, 3 valves per cylinder",
+        "cylinders": 8,
+        "displacement": {
+          "value": 5439,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-slr-mclaren",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren",
+          "sourceNote": "Named for car number 722, driven by Stirling Moss and Denis Jenkinson to victory in the 1955 Mille Miglia. Limited to 150 units."
+        },
+        "aspiration": "supercharged"
+      },
+      "power": {
+        "value": 478.07,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren",
+        "sourceNote": "Published as 650 PS at 6,500 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 820,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren",
+        "sourceNote": "At 4,000 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 3.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren"
+      },
+      "topSpeed": {
+        "value": 337,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren"
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "stirling-moss",
+      "name": "SLR McLaren Stirling Moss",
+      "productionYears": { "start": 2009, "end": 2010 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed automatic",
+      "gears": 5,
+      "engine": {
+        "code": "M155 AMG",
+        "configuration": "V8, supercharged",
+        "cylinders": 8,
+        "displacement": {
+          "value": 5439,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-slr-mclaren",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren",
+          "sourceNote": "A windscreen-less speedster body, named for Stirling Moss and limited to 75 units."
+        },
+        "aspiration": "supercharged"
+      },
+      "power": {
+        "value": 478.07,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren",
+        "sourceNote": "Published as 650 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "mass": {
+        "value": 1550,
+        "unit": "kg",
+        "status": "estimated",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren",
+        "sourceNote": "The article states only that the Stirling Moss is 'approximately 200 kg lighter' than the standard coupe (curb weight 1,743-1,768 kg); no exact figure is published, so this is the coupe's lowest weight minus 200 kg, marked as an estimate rather than a manufacturer spec."
+      },
+      "zeroToHundredKph": {
+        "value": 3,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren"
+      },
+      "topSpeed": {
+        "value": 350,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-slr-mclaren",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren"
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mercedes-benz-slr-mclaren-c199/hero.webp",
+    "alt": "Silver Mercedes-Benz SLR McLaren coupe photographed from the front three-quarter angle, parked on a street beside a building",
+    "width": 1600,
+    "height": 1067,
+    "caption": "The SLR McLaren: a front mid-engined grand tourer built by McLaren in Woking, styled by Mercedes-Benz, and named for the 300 SLR racer of 1955.",
+    "credit": {
+      "author": "Alexandre Prévot from Nancy, France",
+      "title": "File:Mercedes-Benz SLR McLaren (8615164079).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_SLR_McLaren_(8615164079).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/mercedes-benz-slr-mclaren-c199/gallery-1.webp",
+      "alt": "Silver Mercedes-Benz SLR Stirling Moss speedster with no roof or windscreen, on display at a motor show with two roll hoops visible",
+      "width": 1200,
+      "height": 900,
+      "caption": "The Stirling Moss: a windscreen-less speedster built to close out the SLR programme in 2009, limited to 75 cars.",
+      "credit": {
+        "author": "LSDSL",
+        "title": "File:Mercedes-Benz SLR Stirling Moss McLaren.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_SLR_Stirling_Moss_McLaren.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    },
+    {
+      "src": "/images/cars/mercedes-benz-slr-mclaren-c199/gallery-2.webp",
+      "alt": "Silver Mercedes-Benz SLR 722 S Roadster with its fabric roof raised, on display among other cars at a classic car show",
+      "width": 1200,
+      "height": 802,
+      "caption": "The 722 S Roadster: the open-top version of the 722 Edition, sharing its uprated engine and suspension.",
+      "credit": {
+        "author": "Alexander Migl",
+        "title": "File:Mercedes-Benz SLR 722 Roadster 1Y7A6042.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_SLR_722_Roadster_1Y7A6042.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-slr-mclaren"]
+}

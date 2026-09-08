@@ -1,0 +1,197 @@
+{
+  "id": "laferrari-2013",
+  "name": "LaFerrari",
+  "fullName": "LaFerrari, 2013-2018",
+  "kind": "generation",
+  "parent": "laferrari",
+  "brandRef": "ferrari",
+  "productionYears": {
+    "start": 2013,
+    "end": 2018
+  },
+  "bodyStyles": [
+    "coupe",
+    "targa"
+  ],
+  "powertrains": [
+    "hybrid"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "designer": "Ferrari Styling Centre under Flavio Manzoni",
+  "assembly": [
+    "Maranello, Italy"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4702,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-laferrari",
+      "sourceUrl": "https://en.wikipedia.org/wiki/LaFerrari"
+    },
+    "width": {
+      "value": 1992,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-laferrari",
+      "sourceUrl": "https://en.wikipedia.org/wiki/LaFerrari"
+    },
+    "height": {
+      "value": 1116,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-laferrari",
+      "sourceUrl": "https://en.wikipedia.org/wiki/LaFerrari"
+    },
+    "wheelbase": {
+      "value": 2650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-laferrari",
+      "sourceUrl": "https://en.wikipedia.org/wiki/LaFerrari"
+    },
+    "kerbWeight": {
+      "value": 1585,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-laferrari",
+      "sourceUrl": "https://en.wikipedia.org/wiki/LaFerrari",
+      "sourceNote": "3,495 lb, converted at 1 lb = 0.45359237 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "laferrari",
+      "name": "LaFerrari",
+      "productionYears": {
+        "start": 2013,
+        "end": 2018
+      },
+      "drivetrain": "rwd",
+      "powertrain": "hybrid",
+      "transmission": "7-speed dual-clutch",
+      "gears": 7,
+      "engine": {
+        "code": "F140 FE",
+        "configuration": "V12, HY-KERS hybrid",
+        "cylinders": 12,
+        "displacement": {
+          "value": 6262,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-laferrari",
+          "sourceUrl": "https://en.wikipedia.org/wiki/LaFerrari"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 708,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-laferrari",
+        "sourceUrl": "https://en.wikipedia.org/wiki/LaFerrari",
+        "sourceNote": "963 PS combined system output, Ferrari's own published total, converted at 1 PS = 0.73549875 kW. The V12 alone makes 800 PS/588 kW at 9,000 rpm and the KERS electric motor alone 163 PS/120 kW; those two figures happen to sum exactly to the published total, but the 963 PS figure is Ferrari's own stated combined output, not an addition performed by this entry."
+      },
+      "torque": {
+        "value": 900,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-laferrari",
+        "sourceUrl": "https://en.wikipedia.org/wiki/LaFerrari",
+        "sourceNote": "Combined system torque, Ferrari's own published figure. The V12 alone makes 700 N-m at 6,750 rpm; engine and electric-motor torque cannot be meaningfully added at the crankshaft, so the 900 N-m used here is the manufacturer's own combined figure, not a sum performed by this entry."
+      },
+      "mass": {
+        "value": 1585,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-laferrari",
+        "sourceUrl": "https://en.wikipedia.org/wiki/LaFerrari",
+        "sourceNote": "3,495 lb, converted at 1 lb = 0.45359237 kg."
+      },
+      "co2": {
+        "value": 330,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-laferrari",
+        "sourceUrl": "https://en.wikipedia.org/wiki/LaFerrari",
+        "sourceNote": "Ferrari's own claimed figure; cycle not specified in the article."
+      },
+      "zeroToHundredKph": {
+        "value": 2.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-laferrari",
+        "sourceUrl": "https://en.wikipedia.org/wiki/LaFerrari",
+        "sourceNote": "Ferrari's official factory figure."
+      },
+      "topSpeed": {
+        "value": 350,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-laferrari",
+        "sourceUrl": "https://en.wikipedia.org/wiki/LaFerrari",
+        "sourceNote": "Published as \"in excess of 350 km/h\"."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/laferrari/hero.webp",
+    "alt": "Red LaFerrari coupé photographed from the front three-quarter angle, showing its low nose and butterfly door",
+    "width": 1600,
+    "height": 1067,
+    "caption": "LaFerrari, the marque's first full-hybrid road car and, at launch, the most powerful Ferrari ever built.",
+    "credit": {
+      "author": "Axion23",
+      "title": "File:LaFerrari in Beverly Hills (14563979888).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:LaFerrari_in_Beverly_Hills_(14563979888).jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/laferrari/gallery-1.webp",
+      "alt": "LaFerrari engine bay showing the 6.3-litre V12 and HY-KERS hybrid hardware at the 2013 Geneva Motor Show",
+      "width": 1200,
+      "height": 654,
+      "caption": "The F140 FE V12 and its HY-KERS hybrid system, shown at the car's 2013 Geneva debut.",
+      "credit": {
+        "author": "Clément Bucco-Lechat",
+        "title": "File:Geneva MotorShow 2013 - Ferrari LaFerrari engine.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_Ferrari_LaFerrari_engine.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    },
+    {
+      "src": "/images/cars/laferrari/gallery-2.webp",
+      "alt": "Red LaFerrari Aperta targa-top convertible on display at a Ferrari 70th anniversary event",
+      "width": 1200,
+      "height": 800,
+      "caption": "The LaFerrari Aperta, the open-top variant introduced in 2016, limited to 210 units.",
+      "credit": {
+        "author": "Alexandre Prévot from Nancy, France",
+        "title": "File:Ferrari LaFerrari Aperta (29989480538).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_LaFerrari_Aperta_(29989480538).jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-laferrari"
+  ]
+}

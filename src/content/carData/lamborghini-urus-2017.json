@@ -1,0 +1,265 @@
+{
+  "id": "lamborghini-urus-2017",
+  "name": "Lamborghini Urus",
+  "fullName": "Lamborghini Urus, 2017-present",
+  "kind": "generation",
+  "parent": "lamborghini-urus",
+  "brandRef": "lamborghini",
+  "productionYears": {
+    "start": 2017,
+    "end": null
+  },
+  "bodyStyles": [
+    "suv"
+  ],
+  "powertrains": [
+    "petrol",
+    "phev"
+  ],
+  "drivetrains": [
+    "awd"
+  ],
+  "segment": "suv-large",
+  "positioning": "ultra-luxury",
+  "designer": "Filippo Perini (2012 concept); Mitja Borkert (production version)",
+  "assembly": [
+    "Sant'Agata Bolognese, Italy"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 5113,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-urus",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus"
+    },
+    "width": {
+      "value": 2017,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-urus",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus"
+    },
+    "height": {
+      "value": 1638,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-urus",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus"
+    },
+    "wheelbase": {
+      "value": 3002,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-urus",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus"
+    },
+    "kerbWeight": {
+      "value": 2200,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-urus",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus",
+      "sourceNote": "Base Urus. Confirmed independently by NHTSA's Canadian Vehicle Specifications for the 2019 model year, which records the identical 2,200 kg curb weight."
+    }
+  },
+  "trims": [
+    {
+      "id": "urus",
+      "name": "Urus",
+      "productionYears": {
+        "start": 2017,
+        "end": 2022
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "8-speed ZF 8HP automatic",
+      "gears": 8,
+      "engine": {
+        "configuration": "V8, twin-turbo",
+        "cylinders": 8,
+        "displacement": {
+          "value": 3996,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article states the engine as \"4.0-litre\", based on the Audi 4.0 TFSI V8; 3,996 cc is that engine family's well-documented displacement, not a figure stated directly in this article."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 478,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-urus",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus",
+        "sourceNote": "At 6,000 rpm."
+      },
+      "torque": {
+        "value": 850,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-urus",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus",
+        "sourceNote": "At 2,250-4,500 rpm."
+      },
+      "mass": {
+        "value": 2200,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-urus",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus",
+        "sourceNote": "Confirmed by NHTSA's Canadian Vehicle Specifications for the 2019 model year."
+      },
+      "zeroToHundredKph": {
+        "value": 3.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-urus",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus"
+      },
+      "topSpeed": {
+        "value": 305,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-urus",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus"
+      },
+      "weightDistributionFront": {
+        "value": 0.58,
+        "unit": "",
+        "status": "verified",
+        "source": "nhtsa-cvs-2019-lamborghini-urus",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2019&Make=lamborghini&units=Metric&format=json",
+        "sourceNote": "Published as a 58/42 front/rear split for the 2019 model year — nose-heavy for a Lamborghini, consistent with its front-engine layout, unlike every mid-engined car in the range."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "urus-se",
+      "name": "Urus SE",
+      "productionYears": {
+        "start": 2024,
+        "end": null
+      },
+      "drivetrain": "awd",
+      "powertrain": "phev",
+      "transmission": "8-speed ZF 8HP automatic with integrated electric motor",
+      "gears": 8,
+      "engine": {
+        "configuration": "V8, twin-turbo, plug-in hybrid with permanent-magnet electric motor",
+        "cylinders": 8,
+        "displacement": {
+          "value": 3996,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "Reworked version of the same Audi-derived 4.0-litre V8; the article does not give an exact cc figure for the SE's engine, so this carries the same estimate as the base Urus."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 596,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-urus",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus",
+        "sourceNote": "Published combined system output. The engine alone makes 462 kW and the electric motor alone 141 kW; those do not add to 596 kW because they peak at different points, so only the manufacturer's own combined figure is used."
+      },
+      "torque": {
+        "value": 950,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-urus",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus",
+        "sourceNote": "Published combined system torque. The engine alone makes 800 N-m and the motor alone 483 N-m; motor and engine torque cannot be meaningfully summed at the crankshaft, so only the manufacturer's own combined figure is used."
+      },
+      "batteryCapacity": {
+        "value": 25.9,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-urus",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus",
+        "sourceNote": "Total pack capacity; the article does not separately state a usable figure."
+      },
+      "zeroToHundredKph": {
+        "value": 3.4,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-urus",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus"
+      },
+      "topSpeed": {
+        "value": 312,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-urus",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Urus",
+        "sourceNote": "Lamborghini's own claim: the fastest production SUV in the world at launch."
+      },
+      "mass": {
+        "value": null,
+        "unit": "kg",
+        "status": "placeholder",
+        "sourceNote": "The article states only that the SE is \"roughly 300 kg\" heavier than the Urus S due to its 25.9 kWh battery pack — and the Urus S's own kerb weight is not independently stated in this article, only the original Urus's 2,200 kg. Adding 300 kg to a different trim's weight would be exactly the kind of invented arithmetic this site avoids, so the field is left as a placeholder instead."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/lamborghini-urus/hero.webp",
+    "alt": "Green Lamborghini Urus SE photographed from the front three-quarter angle, showing the SUV's angular Lamborghini-styled front end",
+    "width": 1600,
+    "height": 905,
+    "caption": "The Urus SE, Lamborghini's plug-in hybrid update of its front-engined SUV and, at launch, the fastest production SUV in the world.",
+    "credit": {
+      "author": "Alexander Migl",
+      "title": "File:Lamborghini Urus SE DSC 8524.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_Urus_SE_DSC_8524.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/lamborghini-urus/gallery-1.webp",
+      "alt": "Yellow Lamborghini Urus Performante with matte black wheels and lowered ride height, photographed from the side",
+      "width": 1200,
+      "height": 609,
+      "caption": "The Urus Performante, a lighter and more powerful variant introduced in 2022.",
+      "credit": {
+        "author": "Alexander-93",
+        "title": "File:Lamborghini Urus Performante 1X7A6803.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_Urus_Performante_1X7A6803.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    },
+    {
+      "src": "/images/cars/lamborghini-urus/gallery-2.webp",
+      "alt": "Rear view of a white 2019 Lamborghini Urus showing its full-width tail lamp bar and quad exhaust outlets",
+      "width": 1200,
+      "height": 672,
+      "caption": "The original 2019 Urus, powered by a 4.0-litre twin-turbo V8 shared in modified form with Audi.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2019 Lamborghini Urus V8 Automatic 4.0 Rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Lamborghini_Urus_V8_Automatic_4.0_Rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-lamborghini-urus",
+    "nhtsa-cvs-2019-lamborghini-urus"
+  ]
+}

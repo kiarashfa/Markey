@@ -1,0 +1,225 @@
+{
+  "id": "bmw-5-series-e12",
+  "name": "BMW 5 Series (E12)",
+  "fullName": "BMW 5 Series (E12), 1972-1981",
+  "kind": "generation",
+  "parent": "bmw-5-series",
+  "brandRef": "bmw",
+  "generationCode": "E12",
+  "productionYears": {
+    "start": 1972,
+    "end": 1981
+  },
+  "bodyStyles": ["saloon"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "e-segment",
+  "positioning": "premium",
+  "designer": "Paul Bracq, Marcello Gandini",
+  "assembly": [
+    "Dingolfing, West Germany",
+    "Munich, West Germany",
+    "Rosslyn, South Africa (BMW SA)",
+    "Jakarta, Indonesia (Gaya Motor)",
+    "Bangkok, Thailand (Yontrakit Group)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4620,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-5-series-e12",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)"
+    },
+    "width": {
+      "value": 1690,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-5-series-e12",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)"
+    },
+    "height": {
+      "value": 1425,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-5-series-e12",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)"
+    },
+    "wheelbase": {
+      "value": 2636,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-5-series-e12",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)"
+    },
+    "kerbWeight": {
+      "value": 1235,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-bmw-5-series-e12",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)",
+      "sourceNote": "Lowest of a published 1,235-1,565 kg range covering the whole E12 run; not attributed to one specific trim in the infobox, so recorded at generation level only."
+    }
+  },
+  "trims": [
+    {
+      "id": "520",
+      "name": "520",
+      "productionYears": { "start": 1972, "end": 1977 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "M17",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1990,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)",
+          "sourceNote": "The article states only '2.0 L' for this engine, carried over from the BMW New Class saloons. 1,990 cc is the M10-family engine's commonly documented exact displacement, not a figure this article itself states, so it is marked estimated rather than verified."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 84.58,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-5-series-e12",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)",
+        "sourceNote": "Published as 115 PS at 5,800 rpm, converted at 1 PS = 0.73549875 kW. Power and torque throughout this table are manufacturer claims measured to the German DIN 70020 standard."
+      },
+      "torque": {
+        "value": 165,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-5-series-e12",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)",
+        "sourceNote": "At 3,700 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "528",
+      "name": "528",
+      "productionYears": { "start": 1975, "end": 1976 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "M30B28",
+        "configuration": "inline-6",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2788,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)",
+          "sourceNote": "The article states only '2.8 L' for this engine. 2,788 cc is the M30B28's commonly documented exact displacement, not a figure this article itself states, so it is marked estimated rather than verified."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 121.36,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-5-series-e12",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)",
+        "sourceNote": "Published as 165 PS at 5,800 rpm (pre-facelift), converted at 1 PS = 0.73549875 kW. Rose to 170 PS (125.03 kW) after the 1976 facelift's carburettor change."
+      },
+      "torque": {
+        "value": 234,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-5-series-e12",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)",
+        "sourceNote": "At 4,000 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "m535i",
+      "name": "M535i",
+      "productionYears": { "start": 1980, "end": 1981 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "M90",
+        "configuration": "inline-6",
+        "cylinders": 6,
+        "displacement": {
+          "value": 3453,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)",
+          "sourceNote": "The article states only '3.5 L' for this engine. 3,453 cc is the M90/M30B35's commonly documented exact displacement, not a figure this article itself states, so it is marked estimated rather than verified. The M535i was the first M-badged 5 Series and is considered the M5's spiritual predecessor, though BMW Motorsport did not yet call it an M5. 1,650 were built, including 240 CKD kits for South Africa."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 160.35,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-5-series-e12",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)",
+        "sourceNote": "Published as 218 PS at 5,200 rpm, converted at 1 PS = 0.73549875 kW; the article also states this engine's output directly as 160 kW elsewhere in the text, matching this figure to within rounding."
+      },
+      "torque": {
+        "value": 310,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-5-series-e12",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_5_Series_(E12)",
+        "sourceNote": "At 4,000 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/bmw-5-series-e12/hero.webp",
+    "alt": "Red BMW E12 525 saloon photographed from the front three-quarter angle in a gravel car park",
+    "width": 1600,
+    "height": 981,
+    "caption": "The E12: the car that established the 5 Series name in 1972, styled by Paul Bracq with Marcello Gandini of Bertone.",
+    "credit": {
+      "author": "nakhon100",
+      "title": "File:BMW 525 (3538948081).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_525_(3538948081).jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/bmw-5-series-e12/gallery-1.webp",
+      "alt": "Silver BMW E12 M535i saloon with a tricolour side stripe, photographed from the front three-quarter angle at a car show",
+      "width": 1200,
+      "height": 764,
+      "caption": "The M535i: the first M-badged 5 Series, and the car BMW itself points to as the M5's forerunner.",
+      "credit": {
+        "author": "Wikisympathisant",
+        "title": "File:535 BMW Cernobbio 2022-05-22.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:535_BMW_Cernobbio_2022-05-22.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bmw-5-series-e12"]
+}

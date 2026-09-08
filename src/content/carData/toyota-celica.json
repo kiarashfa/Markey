@@ -1,0 +1,20 @@
+{
+  "id": "toyota-celica",
+  "name": "Toyota Celica",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "toyota",
+  "productionYears": {
+    "start": 1970,
+    "end": 2006
+  },
+  "fullName": "Toyota Celica, 1970-2006",
+  "segment": "s-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-celica"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "ferrari-f430",
+  "name": "Ferrari F430",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "ferrari",
+  "productionYears": {
+    "start": 2004,
+    "end": 2009
+  },
+  "fullName": "Ferrari F430, 2004-2009",
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-ferrari-f430"
+  ]
+}

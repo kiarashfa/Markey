@@ -1,0 +1,18 @@
+{
+  "id": "mercedes-benz-a-class",
+  "name": "Mercedes-Benz A-Class",
+  "fullName": "Mercedes-Benz A-Class, 1997-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "mercedes-benz",
+  "productionYears": {
+    "start": 1997,
+    "end": null
+  },
+  "segment": "b-segment",
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-a-class"]
+}

@@ -1,0 +1,232 @@
+{
+  "id": "mercedes-benz-a-class-w176",
+  "name": "Mercedes-Benz A-Class (W176)",
+  "fullName": "Mercedes-Benz A-Class (W176), 2012-2018",
+  "kind": "generation",
+  "parent": "mercedes-benz-a-class",
+  "brandRef": "mercedes-benz",
+  "generationCode": "W176",
+  "productionYears": {
+    "start": 2012,
+    "end": 2018
+  },
+  "bodyStyles": ["hatchback"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "c-segment",
+  "positioning": "premium",
+  "designer": "Mark Fetherston",
+  "assembly": [
+    "Rastatt, Germany",
+    "Uusikaupunki, Finland (Valmet)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4292,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-a-class-w176",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)",
+      "sourceNote": "Lowest of the published 4,292-4,367 mm range across trims; the A 45 AMG and other AMG-bodykit cars sit at the upper end."
+    },
+    "width": {
+      "value": 1780,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-a-class-w176",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)"
+    },
+    "height": {
+      "value": 1417,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-a-class-w176",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)",
+      "sourceNote": "Lowest of the published 1,417-1,433 mm range across trims."
+    },
+    "wheelbase": {
+      "value": 2699,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-a-class-w176",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)"
+    }
+  },
+  "trims": [
+    {
+      "id": "a180",
+      "name": "A 180 BlueEFFICIENCY",
+      "productionYears": { "start": 2012, "end": 2018 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "M270 DE16 AL red.",
+        "configuration": "inline-4, turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1595,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-a-class-w176",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 89.73,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-a-class-w176",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)",
+        "sourceNote": "Published as 122 PS at 5,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 200,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-a-class-w176",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)",
+        "sourceNote": "At 1,250-4,000 rpm."
+      },
+      "bootVolume": {
+        "value": 341,
+        "unit": "L",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-a-class-w176",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)",
+        "sourceNote": "Seats-up figure, published directly in litres; grows to 1,157 L with the 60/40 rear seats folded."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "a200-cdi",
+      "name": "A 200 CDI BlueEFFICIENCY",
+      "productionYears": { "start": 2014, "end": 2018 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "OM651 DE22LA",
+        "configuration": "inline-4, turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2143,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-a-class-w176",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 100.03,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-a-class-w176",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)",
+        "sourceNote": "Published as 136 PS at 3,400-4,400 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 300,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-a-class-w176",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)",
+        "sourceNote": "At 1,400-3,400 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "a45-amg",
+      "name": "A 45 AMG",
+      "productionYears": { "start": 2015, "end": 2018 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed automatic",
+      "gears": 7,
+      "engine": {
+        "code": "M133 DE20 AL",
+        "configuration": "inline-4, twin-scroll turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1991,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-a-class-w176",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 280.23,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-a-class-w176",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)",
+        "sourceNote": "Published as 381 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW. This is the 2015 facelift figure; the pre-facelift 2013-2015 A 45 AMG made 360 PS (264.78 kW)."
+      },
+      "torque": {
+        "value": 475,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-a-class-w176",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)",
+        "sourceNote": "At 2,250-5,000 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 4.2,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-a-class-w176",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_A-Class_(W176)",
+        "sourceNote": "Manufacturer-claimed figure for the A 45 fitted with the optional Dynamic Plus package, which adds a mechanical locking front differential; the standard car's own 0-100 km/h time is not stated separately in the source."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mercedes-benz-a-class-w176/hero.webp",
+    "alt": "White third-generation Mercedes-Benz A-Class hatchback photographed from the front three-quarter angle in a car park",
+    "width": 1600,
+    "height": 801,
+    "caption": "The W176: a five-door-only hatchback that moved the A-Class from the supermini B-segment into the C-segment for the first time.",
+    "credit": {
+      "author": "M 93",
+      "title": "File:Mercedes-Benz A 180 Urban (W 176) – Frontansicht, 30. November 2014, Ratingen.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_A_180_Urban_(W_176)_–_Frontansicht,_30._November_2014,_Ratingen.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/mercedes-benz-a-class-w176/gallery-1.webp",
+      "alt": "Grey pre-facelift Mercedes-Benz A 45 AMG hatchback photographed from the front three-quarter angle, with large alloy wheels and AMG bumper",
+      "width": 1200,
+      "height": 607,
+      "caption": "The A 45 AMG: at launch, the most powerful four-cylinder production engine per litre in the passenger-car market.",
+      "credit": {
+        "author": "EurovisionNim",
+        "title": "File:2012-2014 Mercedes-Benz A 45 AMG (W 176) 4MATIC hatchback (2018-10-01) 01.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-2014_Mercedes-Benz_A_45_AMG_(W_176)_4MATIC_hatchback_(2018-10-01)_01.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-a-class-w176"]
+}

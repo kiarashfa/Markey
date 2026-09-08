@@ -1,0 +1,20 @@
+{
+  "id": "lamborghini-gallardo",
+  "name": "Lamborghini Gallardo",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "lamborghini",
+  "productionYears": {
+    "start": 2003,
+    "end": 2013
+  },
+  "fullName": "Lamborghini Gallardo, 2003-2013",
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-lamborghini-gallardo"
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "id": "lamborghini-gallardo-2003",
+  "name": "Lamborghini Gallardo",
+  "fullName": "Lamborghini Gallardo, 2003-2013",
+  "kind": "generation",
+  "parent": "lamborghini-gallardo",
+  "brandRef": "lamborghini",
+  "productionYears": {
+    "start": 2003,
+    "end": 2013
+  },
+  "bodyStyles": [
+    "coupe",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "awd",
+    "rwd"
+  ],
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "designer": "Fabrizio Giugiaro at Italdesign (initial design); Luc Donckerwolke (final design); Walter de Silva (LP 560-4 facelift)",
+  "assembly": [
+    "Sant'Agata Bolognese, Italy"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4300,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-gallardo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo",
+      "sourceNote": "Infobox gives a 4,300-4,386 mm range across the run without attributing each figure to a trim. The lower figure, for the original 2003 coupé, is recorded here."
+    },
+    "width": {
+      "value": 1900,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-gallardo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo"
+    },
+    "height": {
+      "value": 1165,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-gallardo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo",
+      "sourceNote": "Coupé figure. The Spyder is 1,184 mm; recorded as an override on that trim."
+    },
+    "wheelbase": {
+      "value": 2560,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-gallardo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo"
+    },
+    "kerbWeight": {
+      "value": 1597,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-gallardo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo",
+      "sourceNote": "3,520 lb for the base coupé, per Car and Driver's published test chart, converted at 1 lb = 0.45359237 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "gallardo-coupe",
+      "name": "Gallardo",
+      "productionYears": {
+        "start": 2003,
+        "end": 2008
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or 6-speed e-gear automated manual",
+      "gears": 6,
+      "engine": {
+        "configuration": "V10, even firing",
+        "cylinders": 10,
+        "displacement": {
+          "value": 4961,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-gallardo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 368,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-gallardo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo",
+        "sourceNote": "500 PS at 7,500-7,800 rpm (the article gives both figures in different places), converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 510,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-gallardo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo",
+        "sourceNote": "Peak at 4,500 rpm."
+      },
+      "mass": {
+        "value": 1597,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-gallardo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo",
+        "sourceNote": "3,520 lb, converted at 1 lb = 0.45359237 kg."
+      },
+      "zeroToHundredKph": {
+        "value": 4.2,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-gallardo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo",
+        "sourceNote": "2003-2005 coupé, from the comparison table. Facelifted 2006-2008 coupés with the 520 PS engine improved to 4.0 s."
+      },
+      "topSpeed": {
+        "value": 309,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-gallardo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo"
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "lp560-4",
+      "name": "LP 560-4",
+      "productionYears": {
+        "start": 2008,
+        "end": 2013
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or 6-speed e-gear automated manual",
+      "gears": 6,
+      "engine": {
+        "configuration": "V10, odd firing (Iniezione Diretta Stratificata direct injection)",
+        "cylinders": 10,
+        "displacement": {
+          "value": 5204,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-gallardo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 412,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-gallardo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo",
+        "sourceNote": "560 PS at 8,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 540,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-gallardo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo",
+        "sourceNote": "Peak at 6,500 rpm."
+      },
+      "mass": {
+        "value": 1501,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-gallardo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo",
+        "sourceNote": "3,310 lb, converted at 1 lb = 0.45359237 kg. Motor Trend's test weight for the coupé."
+      },
+      "zeroToHundredKph": {
+        "value": 3.7,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-gallardo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo"
+      },
+      "topSpeed": {
+        "value": 325,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-gallardo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Gallardo"
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/lamborghini-gallardo/hero.webp",
+    "alt": "White Lamborghini Gallardo LP 550-2 coupé photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 772,
+    "caption": "A late-run LP 550-2 coupé — rear-wheel drive only, unlike the rest of the all-wheel-drive Gallardo line.",
+    "credit": {
+      "author": "OSX",
+      "title": "File:2010-2011 Lamborghini Gallardo (L140) LP 550-2 coupe (2011-11-04) 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010-2011_Lamborghini_Gallardo_(L140)_LP_550-2_coupe_(2011-11-04)_01.jpg",
+      "licenseType": "public-domain"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/lamborghini-gallardo/gallery-1.webp",
+      "alt": "Yellow Lamborghini Gallardo Spyder with its soft top folded down, parked in a car park",
+      "width": 1200,
+      "height": 799,
+      "caption": "The Gallardo Spyder, launched in 2006 with a retractable fabric roof — Lamborghini marketed it as a separate model rather than a coupé derivative.",
+      "credit": {
+        "author": "Skievl",
+        "title": "File:06 Gallardo spyder.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:06_Gallardo_spyder.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    },
+    {
+      "src": "/images/cars/lamborghini-gallardo/gallery-2.webp",
+      "alt": "Side view of a white Lamborghini Gallardo LP 560-4 showing the revised front and rear styling of the 2008 facelift",
+      "width": 1200,
+      "height": 490,
+      "caption": "The LP 560-4 facelift, with the new odd-firing 5.2-litre V10 and reshaped bumpers front and rear.",
+      "credit": {
+        "author": "Brandon Lim",
+        "title": "File:Lamborghini Gallardo LP560-4 - 009.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_Gallardo_LP560-4_-_009.jpg",
+        "licenseType": "cc-by",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-lamborghini-gallardo"
+  ]
+}

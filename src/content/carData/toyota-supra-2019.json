@@ -1,0 +1,195 @@
+{
+  "id": "toyota-supra-2019",
+  "name": "Toyota GR Supra (J29/DB)",
+  "fullName": "Toyota GR Supra (J29/DB), 2019-2026",
+  "kind": "generation",
+  "parent": "toyota-supra",
+  "brandRef": "toyota",
+  "generationCode": "J29/DB",
+  "productionYears": {
+    "start": 2019,
+    "end": 2026
+  },
+  "bodyStyles": [
+    "coupe"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "s-segment",
+  "positioning": "premium",
+  "designer": "Nobuo Nakamura (project chief designer)",
+  "assembly": [
+    "Graz, Austria (Magna Steyr)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4380,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-gr-supra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_GR_Supra"
+    },
+    "width": {
+      "value": 1865,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-gr-supra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_GR_Supra"
+    },
+    "height": {
+      "value": 1290,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-gr-supra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_GR_Supra",
+      "sourceNote": "Infobox gives a 1,290-1,295 mm range without attributing each figure to a trim. The lower figure is recorded here."
+    },
+    "wheelbase": {
+      "value": 2470,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-gr-supra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_GR_Supra"
+    },
+    "kerbWeight": {
+      "value": 1410,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-toyota-gr-supra",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_GR_Supra",
+      "sourceNote": "Infobox gives a 1,410-1,520 kg range without attributing each figure to a trim. The lower figure is recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "2-0",
+      "name": "2.0",
+      "productionYears": {
+        "start": 2019,
+        "end": 2025
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "8-speed ZF 8HP automatic",
+      "gears": 8,
+      "engine": {
+        "code": "BMW B48",
+        "configuration": "inline-4 turbo",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article describes this engine only as \"2.0-litre\"; 1,998 cc is the well-documented displacement of the BMW B48 engine family, not a figure stated directly in this article."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 145,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-gr-supra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_GR_Supra",
+        "sourceNote": "Launch output, from 4,500-6,500 rpm. Later cars offered a higher-output 190 kW version of the same engine, not recorded as a separate trim here."
+      },
+      "torque": {
+        "value": 320,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-gr-supra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_GR_Supra",
+        "sourceNote": "From 1,450-4,200 rpm."
+      },
+      "mass": {
+        "value": 1410,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-toyota-gr-supra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_GR_Supra",
+        "sourceNote": "Low end of the generation's published weight range, applied here to the lighter four-cylinder trim."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "3-0",
+      "name": "3.0",
+      "productionYears": {
+        "start": 2019,
+        "end": 2026
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "8-speed ZF 8HP automatic or 6-speed ZF S6-53 manual (from 2022)",
+      "gears": 8,
+      "engine": {
+        "code": "BMW B58",
+        "configuration": "inline-6 turbo",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-toyota-gr-supra",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_GR_Supra"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 250,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-gr-supra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_GR_Supra",
+        "sourceNote": "Launch output, from 5,000-6,500 rpm. Later revisions raised output as high as 324 kW (2023 Japanese RZ) and 429 hp (final-edition markets outside the US); not recorded as separate trims here."
+      },
+      "torque": {
+        "value": 495,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-gr-supra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_GR_Supra",
+        "sourceNote": "From 1,600-4,500 rpm."
+      },
+      "mass": {
+        "value": 1520,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-toyota-gr-supra",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_GR_Supra",
+        "sourceNote": "High end of the generation's published weight range, applied here to the heavier six-cylinder trim."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-supra-2019/hero.webp",
+    "alt": "White Toyota GR Supra photographed from the front three-quarter angle, showing its double-bubble roof and vented front fenders",
+    "width": 1600,
+    "height": 762,
+    "caption": "The GR Supra, co-developed with BMW and built alongside the Z4 (G29) it shares its platform and engines with, ending a 17-year absence from the market.",
+    "credit": {
+      "author": "Gold Pony",
+      "title": "File:2020 Toyota GR Supra (United States).png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Toyota_GR_Supra_(United_States).png",
+      "licenseType": "cc-by",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-gr-supra",
+    "wikipedia-toyota-supra"
+  ]
+}

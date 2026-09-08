@@ -1,0 +1,216 @@
+{
+  "id": "audi-a8-1994",
+  "name": "Audi A8 (D2)",
+  "fullName": "Audi A8 (D2), 1994-2002",
+  "kind": "generation",
+  "parent": "audi-a8",
+  "brandRef": "audi",
+  "generationCode": "D2",
+  "productionYears": {
+    "start": 1994,
+    "end": 2002
+  },
+  "bodyStyles": [
+    "saloon"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd",
+    "awd"
+  ],
+  "segment": "f-segment",
+  "positioning": "luxury",
+  "designer": "Chris Bird; Dirk van Braeckel",
+  "assembly": [
+    "Neckarsulm, Germany"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 5138,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+      "sourceNote": "Short-wheelbase car. The long-wheelbase A8 L is 5,164 mm."
+    },
+    "width": {
+      "value": 1880,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+    },
+    "height": {
+      "value": 1438,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+    },
+    "wheelbase": {
+      "value": 2882,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-audi-a8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+      "sourceNote": "Short-wheelbase car. The long-wheelbase A8 L is 3,010 mm."
+    },
+    "kerbWeight": {
+      "value": 1750,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-audi-a8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+      "sourceNote": "4.2-litre quattro, one of thirteen per-engine weights the infobox publishes for this generation, from 1,540 kg (base 2.8) to 1,980 kg (6.0 W12 AWD A8 L)."
+    }
+  },
+  "trims": [
+    {
+      "id": "4-2-quattro",
+      "name": "4.2 quattro",
+      "productionYears": {
+        "start": 1994,
+        "end": 1998
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "engine": {
+        "configuration": "V8",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4172,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-audi-a8",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 221,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+        "sourceNote": "300 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 400,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+      },
+      "mass": {
+        "value": 1750,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+        "sourceNote": "4.2, AWD, per the infobox's per-engine weight list."
+      },
+      "zeroToHundredKph": {
+        "value": 6.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+      },
+      "topSpeed": {
+        "value": 250,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "s8",
+      "name": "S8",
+      "productionYears": {
+        "start": 1996,
+        "end": 1999
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "engine": {
+        "configuration": "V8",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4172,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-audi-a8",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 250,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+        "sourceNote": "340 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 420,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+      },
+      "mass": {
+        "value": 1730,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8",
+        "sourceNote": "European-market S8, per the infobox's per-engine weight list. The US-market S8 is listed separately at 1,845 kg."
+      },
+      "zeroToHundredKph": {
+        "value": 5.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+      },
+      "topSpeed": {
+        "value": 250,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-audi-a8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Audi_A8"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/audi-a8-1994/hero.webp",
+    "alt": "Black first-generation Audi A8 L 4.2 photographed from the front three-quarter angle",
+    "width": 1523,
+    "height": 905,
+    "caption": "The first A8 (Typ 4D), 1994's aluminium-bodied Audi Space Frame flagship.",
+    "credit": {
+      "author": "IFCAR",
+      "title": "File:1st Audi A8 L 4.2 -- 03-21-2012.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1st_Audi_A8_L_4.2_--_03-21-2012.JPG",
+      "licenseType": "public-domain"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-audi-a8"
+  ]
+}

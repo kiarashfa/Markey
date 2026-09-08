@@ -1,0 +1,276 @@
+{
+  "id": "lamborghini-huracan-2014",
+  "name": "Lamborghini Huracán",
+  "fullName": "Lamborghini Huracán, 2014-2024",
+  "kind": "generation",
+  "parent": "lamborghini-huracan",
+  "brandRef": "lamborghini",
+  "productionYears": {
+    "start": 2014,
+    "end": 2024
+  },
+  "bodyStyles": [
+    "coupe",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "awd",
+    "rwd"
+  ],
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "designer": "Filippo Perini (original design); Mitja Borkert (EVO facelift)",
+  "assembly": [
+    "Sant'Agata Bolognese, Italy"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4459,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-huracan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+      "sourceNote": "Pre-facelift (2014-2019) figure. The 2019+ EVO facelift range grew to 4,520-4,567 mm depending on trim; recorded as an override on the STO trim."
+    },
+    "width": {
+      "value": 1924,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-huracan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+      "sourceNote": "Pre-facelift figure. EVO-era trims widened to 1,933-1,956 mm; recorded as an override on the STO trim."
+    },
+    "height": {
+      "value": 1165,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-huracan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+      "sourceNote": "Infobox gives a 1,165-1,248 mm range across the run without attributing each figure to a trim. The lower figure is recorded here."
+    },
+    "wheelbase": {
+      "value": 2620,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-huracan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n"
+    },
+    "kerbWeight": {
+      "value": 1553,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-lamborghini-huracan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+      "sourceNote": "LP 610-4 kerb weight (with fluids), stated directly in the article body. The specifications table separately gives a lighter 1,422 kg 'without fluids' figure for the same car; the two are not a conflict, just different measurement bases."
+    }
+  },
+  "trims": [
+    {
+      "id": "lp610-4",
+      "name": "LP 610-4",
+      "productionYears": {
+        "start": 2014,
+        "end": 2019
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "7-speed dual-clutch",
+      "gears": 7,
+      "engine": {
+        "code": "DFJ",
+        "configuration": "V10, odd-firing",
+        "cylinders": 10,
+        "displacement": {
+          "value": 5204,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-huracan",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 449,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-huracan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+        "sourceNote": "610 PS at 8,250 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 560,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-huracan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+        "sourceNote": "Peak at 6,500 rpm."
+      },
+      "mass": {
+        "value": 1553,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-huracan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+        "sourceNote": "Kerb weight with fluids, stated in the article body. The specifications table's own 'without fluids' figure for this trim is 1,422 kg."
+      },
+      "zeroToHundredKph": {
+        "value": 3.1,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-huracan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n"
+      },
+      "topSpeed": {
+        "value": 325,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-huracan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n"
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "sto",
+      "name": "STO",
+      "productionYears": {
+        "start": 2021,
+        "end": 2024
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "7-speed dual-clutch",
+      "gears": 7,
+      "engine": {
+        "code": "DGF",
+        "configuration": "V10, odd-firing",
+        "cylinders": 10,
+        "displacement": {
+          "value": 5204,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-huracan",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 470,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-huracan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+        "sourceNote": "640 PS at 8,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 565,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-huracan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+        "sourceNote": "Peak at 6,500 rpm."
+      },
+      "mass": {
+        "value": 1321,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-lamborghini-huracan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+        "sourceNote": "Specifications table figure, explicitly 'without fluids' (dry weight) — the lightest Huracán variant, track-focused and rear-wheel drive only. No kerb-weight-with-fluids figure is published for this trim."
+      },
+      "zeroToHundredKph": {
+        "value": 3,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-huracan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n"
+      },
+      "topSpeed": {
+        "value": 311,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-lamborghini-huracan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+        "sourceNote": "Lower than lighter, more aerodynamically efficient siblings despite more power — the STO's fixed rear wing and bodywork trade top speed for downforce."
+      },
+      "seats": 2,
+      "dimensions": {
+        "length": {
+          "value": 4520,
+          "unit": "mm",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-huracan",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+          "sourceNote": "Low end of the facelift-era 4,520-4,567 mm range; the article does not attribute the exact figure to the STO specifically."
+        },
+        "width": {
+          "value": 1933,
+          "unit": "mm",
+          "status": "verified",
+          "source": "wikipedia-lamborghini-huracan",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+          "sourceNote": "Low end of the facelift-era 1,933-1,956 mm range; the article does not attribute the exact figure to the STO specifically."
+        }
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/lamborghini-huracan/hero.webp",
+    "alt": "Yellow Lamborghini Huracán LP 610-4 photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 862,
+    "caption": "The original LP 610-4, launched in 2014 to replace the Gallardo.",
+    "credit": {
+      "author": "MrWalkr",
+      "title": "File:2017 Lamborghini Huracan LP610.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Lamborghini_Huracan_LP610.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/lamborghini-huracan/gallery-1.webp",
+      "alt": "Blue Lamborghini Huracán STO with a large fixed rear wing and prominent front splitter, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 737,
+      "caption": "The STO — Super Trofeo Omologata — the rear-wheel-drive, track-focused final evolution of the Huracán, homologated from the Super Trofeo race car.",
+      "credit": {
+        "author": "MrWalkr",
+        "title": "File:2021 Lamborghini Huracan STO Blue.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Lamborghini_Huracan_STO_Blue.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    },
+    {
+      "src": "/images/cars/lamborghini-huracan/gallery-2.webp",
+      "alt": "Interior of a Lamborghini Huracán showing the fighter-jet-style flip-up starter switch cover and green sports seats",
+      "width": 1200,
+      "height": 900,
+      "caption": "The cabin carried over the Aventador's aircraft-inspired flip-up starter cover, a Huracán signature throughout its ten-year run.",
+      "credit": {
+        "author": "Zlatko",
+        "title": "File:Lamborghini Huracan Interior.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_Huracan_Interior.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-lamborghini-huracan"
+  ]
+}

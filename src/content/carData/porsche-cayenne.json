@@ -1,0 +1,18 @@
+{
+  "id": "porsche-cayenne",
+  "name": "Porsche Cayenne",
+  "fullName": "Porsche Cayenne, 2002-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "porsche",
+  "productionYears": {
+    "start": 2002,
+    "end": null
+  },
+  "segment": "suv-mid",
+  "positioning": "luxury",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-porsche-cayenne"]
+}

@@ -1,0 +1,364 @@
+{
+  "id": "mercedes-benz-s-class-w126",
+  "name": "Mercedes-Benz S-Class (W126)",
+  "fullName": "Mercedes-Benz S-Class (W126/C126), 1979-1991",
+  "kind": "generation",
+  "parent": "mercedes-benz-s-class",
+  "brandRef": "mercedes-benz",
+  "generationCode": "W126",
+  "productionYears": {
+    "start": 1979,
+    "end": 1991
+  },
+  "bodyStyles": ["saloon", "coupe"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["rwd"],
+  "segment": "f-segment",
+  "positioning": "luxury",
+  "designer": "Bruno Sacco, Werner Breitschwerdt",
+  "assembly": [
+    "Sindelfingen, Germany",
+    "Johor Bahru, Malaysia (OASB)",
+    "East London, South Africa"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4995,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-w126",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126",
+      "sourceNote": "Lowest of the published 4,995-5,020 mm range for the short-wheelbase sedan. The long-wheelbase sedan was 5,135-5,160 mm and the coupé 4,910-4,935 mm."
+    },
+    "width": {
+      "value": 1820,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-w126",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126",
+      "sourceNote": "Sedan figure; the coupé was 1,828 mm."
+    },
+    "height": {
+      "value": 1430,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-w126",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126",
+      "sourceNote": "Lowest of the published 1,430-1,437 mm range for the short-wheelbase sedan. The long-wheelbase sedan was 1,441 mm and the coupé 1,406 mm."
+    },
+    "wheelbase": {
+      "value": 2935,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mercedes-benz-w126",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126",
+      "sourceNote": "Short-wheelbase sedan; the long-wheelbase sedan was 3,075 mm and the coupé 2,850 mm."
+    }
+  },
+  "trims": [
+    {
+      "id": "280se",
+      "name": "280 SE",
+      "productionYears": { "start": 1979, "end": 1985 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed automatic",
+      "gears": 4,
+      "engine": {
+        "code": "M110.989",
+        "configuration": "inline-6, DOHC",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2746,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-w126",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 136,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126",
+        "sourceNote": "Published directly in kW in the article's technical-data table (First Series, 1979-1985)."
+      },
+      "torque": {
+        "value": 240,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "mass": {
+        "value": 1560,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126",
+        "sourceNote": "SE curb weight; the SEL was 1,590 kg."
+      },
+      "zeroToHundredKph": {
+        "value": 10,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "topSpeed": {
+        "value": 210,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "fuelEconomy": {
+        "value": 15.6,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "500sel",
+      "name": "500 SEL",
+      "productionYears": { "start": 1979, "end": 1981 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed automatic",
+      "gears": 4,
+      "engine": {
+        "code": "M117.963",
+        "configuration": "V8, SOHC",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4973,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-w126",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 177,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126",
+        "sourceNote": "1979-1981 figure; revised down to 170 kW from September 1981 as part of Mercedes-Benz's 'Energiekonzept' efficiency revisions."
+      },
+      "torque": {
+        "value": 402,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "mass": {
+        "value": 1650,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "zeroToHundredKph": {
+        "value": 8.1,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "topSpeed": {
+        "value": 215,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "fuelEconomy": {
+        "value": 18.5,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "300sd",
+      "name": "300 SD",
+      "productionYears": { "start": 1979, "end": 1982 },
+      "drivetrain": "rwd",
+      "powertrain": "diesel",
+      "transmission": "4-speed automatic",
+      "gears": 4,
+      "engine": {
+        "code": "OM617.951",
+        "configuration": "inline-5, turbocharged",
+        "cylinders": 5,
+        "displacement": {
+          "value": 2998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-w126",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126",
+          "sourceNote": "US, Canada and Japan only. Won Motor Trend's 1981 Import Car of the Year award."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 89,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126",
+        "sourceNote": "Published directly in kW; revised to 92 kW from October 1982."
+      },
+      "torque": {
+        "value": 250,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "mass": {
+        "value": 1620,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "zeroToHundredKph": {
+        "value": 15.2,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "topSpeed": {
+        "value": 175,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "fuelEconomy": {
+        "value": 12.4,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "560sel",
+      "name": "560 SEL",
+      "productionYears": { "start": 1985, "end": 1986 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed automatic",
+      "gears": 4,
+      "engine": {
+        "code": "M117 (5.5)",
+        "configuration": "V8, SOHC",
+        "cylinders": 8,
+        "displacement": {
+          "value": 5547,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mercedes-benz-w126",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126",
+          "sourceNote": "The largest engine offered in the W126, and the most powerful; later catalyst-equipped ('RUF' and 'CAT') versions of the same car made less power, down to 178 kW for the US-market catalyst car."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 220,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126",
+        "sourceNote": "Published directly in kW for the non-catalyst 'ECE' European-market car, September 1985-August 1986. Catalyst-equipped 'RUF' and 'CAT' versions sold in the same period made between 178 kW and 205 kW."
+      },
+      "torque": {
+        "value": 455,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126",
+        "sourceNote": "ECE non-catalyst figure, matching the power output note."
+      },
+      "mass": {
+        "value": 1830,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "zeroToHundredKph": {
+        "value": 6.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126",
+        "sourceNote": "ECE non-catalyst figure. A separately published 7.0-second figure for the US-market catalyst car is a 0-60 mph time, not 0-100 km/h, and is not used here."
+      },
+      "topSpeed": {
+        "value": 250,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-mercedes-benz-w126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_W126"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mercedes-benz-s-class-w126/hero.webp",
+    "alt": "Dark blue facelifted Mercedes-Benz W126 S-Class saloon on display indoors, photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 858,
+    "caption": "The W126: on sale from late 1979, and for over a decade the reference point for how a big luxury saloon should be built.",
+    "credit": {
+      "author": "OSX",
+      "title": "File:1987-1991 Mercedes-Benz 300 SEL (V 126) sedan (2010-04-03) 02.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1987-1991_Mercedes-Benz_300_SEL_(V_126)_sedan_(2010-04-03)_02.jpg",
+      "licenseType": "public-domain",
+      "licenseNote": "Released into the public domain by the photographer."
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/mercedes-benz-s-class-w126/gallery-1.webp",
+      "alt": "Dark navy Mercedes-Benz 500 SE saloon parked at a kerb, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 613,
+      "caption": "The 500 SE: the smaller of the W126's two original V8s, added to the US range in 1984 to answer criticism that the launch 380 SEL was underpowered.",
+      "credit": {
+        "author": "IFCAR",
+        "title": "File:Mercedes-Benz 500SE.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_500SE.jpg",
+        "licenseType": "public-domain",
+        "licenseNote": "Released into the public domain by the photographer."
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mercedes-benz-w126"]
+}

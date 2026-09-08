@@ -1,0 +1,232 @@
+{
+  "id": "ford-focus-first-gen",
+  "name": "Ford Focus (first generation)",
+  "fullName": "Ford Focus (C170), 1998-2007",
+  "kind": "generation",
+  "parent": "ford-focus",
+  "brandRef": "ford",
+  "generationCode": "C170",
+  "productionYears": {
+    "start": 1998,
+    "end": 2007
+  },
+  "bodyStyles": ["hatchback", "saloon", "estate"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "John Doughty, Claude Lobo",
+  "assembly": [
+    "Saarlouis, Germany",
+    "Valencia, Spain",
+    "Wayne, Michigan, United States",
+    "Hermosillo, Mexico",
+    "General Pacheco, Argentina",
+    "Santa Rosa, Laguna, Philippines",
+    "Valencia, Venezuela"
+  ],
+  "spotlight": true,
+  "trims": [
+    {
+      "id": "1-6-zetec",
+      "name": "1.6 Zetec-S/SE",
+      "productionYears": { "start": 1998, "end": 2004 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1596,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)",
+          "sourceNote": "The article states only '1.6' for this engine's displacement. 1,596 cc is the Zetec-SE/Sigma family's commonly documented exact displacement, not a figure this article itself states, so it is marked estimated rather than verified."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 74,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)",
+        "sourceNote": "Published directly in kW (74/100/101 kW/bhp/PS) for the Europe-market car."
+      },
+      "torque": {
+        "value": 145,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)"
+      },
+      "zeroToHundredKph": {
+        "value": 10.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)"
+      },
+      "topSpeed": {
+        "value": 185.07,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)",
+        "sourceNote": "Published as 115 mph, converted at 1 mph = 1.609344 km/h."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-8-tdci",
+      "name": "1.8 TDCi",
+      "productionYears": { "start": 2002, "end": 2007 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "DLD-418",
+        "configuration": "inline-4, turbocharged, common rail",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1753,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)",
+          "sourceNote": "The article states only '1.8' for this engine's displacement. 1,753 cc is the DLD-418 Duratorq's commonly documented exact displacement, not a figure this article itself states, so it is marked estimated rather than verified. Replaced the original Endura TDDi in 2002."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 74,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)",
+        "sourceNote": "Published directly in kW (74/99/100 kW/bhp/PS)."
+      },
+      "torque": {
+        "value": 240,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)"
+      },
+      "zeroToHundredKph": {
+        "value": 11.7,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)"
+      },
+      "topSpeed": {
+        "value": 186.68,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)",
+        "sourceNote": "Published as 116 mph, converted at 1 mph = 1.609344 km/h."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "rs",
+      "name": "RS",
+      "productionYears": { "start": 2002, "end": 2003 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "inline-4, turbocharged, DOHC 16V",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-focus-first-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)#RS",
+          "sourceNote": "Modified or replaced roughly 70% of the standard Focus's mechanicals, including a Quaife automatic torque-biasing differential, Brembo brakes and OZ Racing 18-inch wheels. Sold in one colour only, Imperial Blue."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 158,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)",
+        "sourceNote": "Published directly in kW (158/212/215 kW/bhp/PS) at 5,500 rpm."
+      },
+      "torque": {
+        "value": 310,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)",
+        "sourceNote": "At 3,500 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 6.4,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)",
+        "sourceNote": "Torque-limited off the line owing to the front-wheel-drive layout, per the article's own note on this figure."
+      },
+      "topSpeed": {
+        "value": 239.79,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ford-focus-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Focus_(first_generation)",
+        "sourceNote": "Published as 149 mph, converted at 1 mph = 1.609344 km/h."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/ford-focus-first-gen/hero.webp",
+    "alt": "Pale green first-generation Ford Focus hatchback photographed from the front three-quarter angle outside shops",
+    "width": 1600,
+    "height": 842,
+    "caption": "The original Focus: praised for its 'New Edge' styling and its class-leading Control Blade independent rear suspension, which rivals soon began to copy.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:1999 Ford Focus Zetec 1.8 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1999_Ford_Focus_Zetec_1.8_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/ford-focus-first-gen/gallery-1.webp",
+      "alt": "Blue first-generation Ford Focus RS hatchback photographed from the front three-quarter angle, with a mesh front grille and RS badging",
+      "width": 1200,
+      "height": 599,
+      "caption": "The Focus RS: sold only in Imperial Blue, with a Quaife limited-slip differential to tame its 215 PS turbocharged four through the front wheels alone.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2003 Ford Focus RS 2.0.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2003_Ford_Focus_RS_2.0.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-ford-focus-first-generation"]
+}

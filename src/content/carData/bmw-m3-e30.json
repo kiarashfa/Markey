@@ -1,0 +1,230 @@
+{
+  "id": "bmw-m3-e30",
+  "name": "BMW M3 (E30)",
+  "fullName": "BMW M3 (E30), 1986-1991",
+  "kind": "generation",
+  "parent": "bmw-m3",
+  "brandRef": "bmw",
+  "generationCode": "E30",
+  "productionYears": {
+    "start": 1986,
+    "end": 1991
+  },
+  "bodyStyles": ["coupe", "convertible"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "premium",
+  "designer": "Claus Luthe",
+  "assembly": ["Munich, Germany"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4345,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-m3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30"
+    },
+    "width": {
+      "value": 1680,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-m3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30"
+    },
+    "height": {
+      "value": 1370,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-m3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30"
+    },
+    "wheelbase": {
+      "value": 2562,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-m3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30"
+    },
+    "kerbWeight": {
+      "value": 1165,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-bmw-m3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30",
+      "sourceNote": "Lowest of a published 1,165-1,360 kg range covering the whole E30 M3 run, cited to a 1987 Autoweek test; not attributed to one specific trim in the source, so recorded at generation level only."
+    }
+  },
+  "trims": [
+    {
+      "id": "m3",
+      "name": "M3",
+      "productionYears": { "start": 1986, "end": 1990 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "S14B23",
+        "configuration": "inline-4, DOHC",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2302,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-bmw-m3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30",
+          "sourceNote": "A high-revving four-cylinder built from a BMW S38 six-cylinder head design and an M10 four-cylinder block, redlined at 7,250 rpm; developed as a Group A/DTM homologation special."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 143.42,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30",
+        "sourceNote": "Published as 195 PS for catalyst-equipped markets, converted at 1 PS = 0.73549875 kW. Cars sold without a catalytic converter were rated 200 PS (147.10 kW). No torque figure is published for this base engine in the source, so torque is omitted rather than estimated."
+      },
+      "topSpeed": {
+        "value": 234.96,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30",
+        "sourceNote": "Published as 146 mph, converted at 1 mph = 1.609344 km/h."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "m3-evolution-2",
+      "name": "M3 Evolution II",
+      "productionYears": { "start": 1988, "end": 1988 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "S14B23 (Evo II)",
+        "configuration": "inline-4, DOHC",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2302,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-bmw-m3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30",
+          "sourceNote": "Same displacement as the standard M3, with a revised camshaft, pistons, compression ratio (raised to 11.0:1) and intake. 501 examples were built, March-May 1988."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 162,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30",
+        "sourceNote": "At 6,750 rpm, published directly in kW."
+      },
+      "torque": {
+        "value": 245,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30",
+        "sourceNote": "At 4,750 rpm."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "m3-sport-evolution",
+      "name": "M3 Sport Evolution",
+      "productionYears": { "start": 1990, "end": 1990 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "S14B25",
+        "configuration": "inline-4, DOHC",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2467,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-bmw-m3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30",
+          "sourceNote": "Also called 'Evo3'. Limited to 600 units, with an adjustable front splitter, rear wing and enlarged front bumper openings."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 175.05,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30",
+        "sourceNote": "Published as 238 PS at 7,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 240,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30",
+        "sourceNote": "At 4,750 rpm."
+      },
+      "topSpeed": {
+        "value": 247.84,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-bmw-m3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_M3#E30",
+        "sourceNote": "Published as 154 mph, converted at 1 mph = 1.609344 km/h."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/bmw-m3-e30/hero.webp",
+    "alt": "Black BMW E30 M3 coupe photographed from the front three-quarter angle on grass at a car show",
+    "width": 1600,
+    "height": 913,
+    "caption": "The original M3: a Group A homologation special built around a four-cylinder engine derived from BMW's M1 supercar straight-six.",
+    "credit": {
+      "author": "MrWalkr",
+      "title": "File:1991 BMW M3 Evo II BS O24.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1991_BMW_M3_Evo_II_BS_O24.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/bmw-m3-e30/gallery-1.webp",
+      "alt": "Dark purple BMW E30 M3 convertible with its roof down, photographed from the front three-quarter angle at an indoor display",
+      "width": 1200,
+      "height": 899,
+      "caption": "The convertible: built in far smaller numbers than the coupe, and the body style most of the special editions skipped.",
+      "credit": {
+        "author": "Stahlkocher",
+        "title": "File:BMW M3 Cabrio 1991 purble vl TCE.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M3_Cabrio_1991_purble_vl_TCE.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bmw-m3"]
+}

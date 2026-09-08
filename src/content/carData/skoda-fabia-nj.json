@@ -1,0 +1,295 @@
+{
+  "id": "skoda-fabia-nj",
+  "name": "Škoda Fabia Mk3",
+  "fullName": "Škoda Fabia Mk3 (Typ NJ), 2014-2022",
+  "kind": "generation",
+  "parent": "skoda-fabia",
+  "brandRef": "skoda-auto",
+  "generationCode": "NJ",
+  "productionYears": {
+    "start": 2014,
+    "end": 2022
+  },
+  "bodyStyles": ["hatchback", "estate"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "assembly": [
+    "Mladá Boleslav, Czech Republic",
+    "Anting, China",
+    "Relizane, Algeria",
+    "Solomonovo, Ukraine (SKD, Eurocar)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 3992,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-fabia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)",
+      "sourceNote": "Hatchback; the estate was 4,257 mm."
+    },
+    "width": {
+      "value": 1730,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-fabia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)",
+      "sourceNote": "Hatchback; the estate was 1,732 mm."
+    },
+    "height": {
+      "value": 1467,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-fabia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)",
+      "sourceNote": "Hatchback; the estate was 1,488 mm."
+    },
+    "wheelbase": {
+      "value": 2470,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-skoda-fabia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+    },
+    "kerbWeight": {
+      "value": 1055,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-skoda-fabia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)",
+      "sourceNote": "Lowest of a published 1,055-1,165 kg range for the hatchback; not attributed to one specific trim, so recorded at generation level only."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0-mpi",
+      "name": "1.0 MPI",
+      "productionYears": { "start": 2014, "end": 2019 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "CHYA",
+        "configuration": "inline-3, DOHC 12V",
+        "cylinders": 3,
+        "displacement": {
+          "value": 999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-skoda-fabia",
+          "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 44.13,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)",
+        "sourceNote": "Published as 60 PS at 5,000-6,000 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 95,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)",
+        "sourceNote": "At 3,000-4,300 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 15.7,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+      },
+      "topSpeed": {
+        "value": 160,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+      },
+      "fuelEconomy": {
+        "value": 4.7,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+      },
+      "co2": {
+        "value": 106,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-2-tsi-110",
+      "name": "1.2 TSI",
+      "productionYears": { "start": 2014, "end": 2017 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "CJZD",
+        "configuration": "inline-4, DOHC 16V, turbocharged, direct injection",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1197,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-skoda-fabia",
+          "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 80.9,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)",
+        "sourceNote": "Published as 110 PS at 4,600-5,600 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 175,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)",
+        "sourceNote": "At 1,400-4,000 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 9.4,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+      },
+      "topSpeed": {
+        "value": 196,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+      },
+      "fuelEconomy": {
+        "value": 4.8,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+      },
+      "co2": {
+        "value": 110,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-4-tdi-105",
+      "name": "1.4 TDI",
+      "productionYears": { "start": 2014, "end": 2017 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "CUTA",
+        "configuration": "inline-3, DOHC 12V, turbocharged, common rail",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1422,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-skoda-fabia",
+          "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 77.23,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)",
+        "sourceNote": "Published as 105 PS at 3,500-3,750 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 250,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)",
+        "sourceNote": "At 1,750-2,500 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 10.1,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+      },
+      "topSpeed": {
+        "value": 193,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+      },
+      "fuelEconomy": {
+        "value": 3.5,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)"
+      },
+      "co2": {
+        "value": 90,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-skoda-fabia",
+        "sourceUrl": "https://en.wikipedia.org/wiki/%C5%A0koda_Fabia#Third_generation_(Type_NJ;_2014)",
+        "sourceNote": "The TDI engine was discontinued in the 2019 facelift; diesel power was dropped from the range entirely after that."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/skoda-fabia-nj/hero.webp",
+    "alt": "White facelifted third-generation Skoda Fabia hatchback photographed from the front three-quarter angle on a street",
+    "width": 1600,
+    "height": 772,
+    "caption": "The NJ: no hot vRS variant was offered this generation, following weak sales of the previous RS diesel.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2018 Skoda Fabia SE MPi 1.0 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Skoda_Fabia_SE_MPi_1.0_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-skoda-fabia"]
+}

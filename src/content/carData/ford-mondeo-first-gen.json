@@ -1,0 +1,209 @@
+{
+  "id": "ford-mondeo-first-gen",
+  "name": "Ford Mondeo (first generation)",
+  "fullName": "Ford Mondeo Mk1, 1992-2000",
+  "kind": "generation",
+  "parent": "ford-mondeo",
+  "brandRef": "ford",
+  "productionYears": {
+    "start": 1992,
+    "end": 2000
+  },
+  "bodyStyles": ["saloon", "hatchback", "estate"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "d-segment",
+  "positioning": "mainstream",
+  "designer": "John Oldfield",
+  "assembly": [
+    "Genk, Belgium",
+    "Cologne, Germany",
+    "Zhongli, Taiwan (Ford Lio Ho)",
+    "Cuautitlán, Mexico",
+    "Claycomo, Missouri, United States (Kansas City Assembly)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4481,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mondeo-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)",
+      "sourceNote": "1993 saloon/hatchback figure. The 1993 estate was 4,631 mm; after the 1996 facelift the saloon/hatchback grew to 4,556 mm and the estate to 4,671 mm."
+    },
+    "width": {
+      "value": 1747,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mondeo-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)",
+      "sourceNote": "1993 saloon/hatchback figure; the 1993 estate was 1,745 mm and the 1996 facelift cars 1,749 mm."
+    },
+    "height": {
+      "value": 1372,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mondeo-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)",
+      "sourceNote": "Saloon/hatchback figure; the estate was 1,391 mm."
+    },
+    "wheelbase": {
+      "value": 2704,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-ford-mondeo-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)"
+    }
+  },
+  "trims": [
+    {
+      "id": "1-8-zetec",
+      "name": "1.8 Zetec",
+      "productionYears": { "start": 1993, "end": 2000 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "inline-4, DOHC 16V",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1796,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-mondeo-first-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 85,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)",
+        "sourceNote": "At 5,750 rpm, published directly in kW."
+      },
+      "torque": {
+        "value": 158,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)",
+        "sourceNote": "At 3,750 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-8-endura-d",
+      "name": "1.8 Endura-D",
+      "productionYears": { "start": 1993, "end": 2000 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "inline-4, turbocharged, 8V",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1753,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-mondeo-first-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 66,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)",
+        "sourceNote": "At 4,500 rpm, published directly in kW."
+      },
+      "torque": {
+        "value": 177,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)",
+        "sourceNote": "At 2,250 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "st200",
+      "name": "ST200",
+      "productionYears": { "start": 1999, "end": 2000 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "V6, DOHC 24V",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2495,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-ford-mondeo-first-generation",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)",
+          "sourceNote": "An SVT-tuned version of the Duratec V6, replacing the ST24. Sold in Imperial Blue, Stardust Silver, Panther Black and Radiant Red, with 66 built in Diamond White for UK police forces. Badged Contour SVT in North America."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 151,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)",
+        "sourceNote": "At 6,500 rpm, published directly in kW."
+      },
+      "torque": {
+        "value": 235,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)",
+        "sourceNote": "At 5,500 rpm."
+      },
+      "topSpeed": {
+        "value": 243.01,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-ford-mondeo-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mondeo_(first_generation)",
+        "sourceNote": "Published as 151 mph, converted at 1 mph = 1.609344 km/h. A separately published 0-60 mph time of 7.7 seconds is not converted to 0-100 km/h here, as it is a different speed threshold."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/ford-mondeo-first-gen/hero.webp",
+    "alt": "Blue first-generation Ford Mondeo saloon photographed from the front three-quarter angle in a gravel car park",
+    "width": 1600,
+    "height": 862,
+    "caption": "The original Mondeo: Ford's global 'world car' answer to the Sierra, the Tempo and the Telstar all at once, sold on three continents from the same CDW27 platform.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:1994 Ford Mondeo LX 1.8 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1994_Ford_Mondeo_LX_1.8_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-ford-mondeo-first-generation"]
+}

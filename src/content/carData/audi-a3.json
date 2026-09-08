@@ -1,0 +1,20 @@
+{
+  "id": "audi-a3",
+  "name": "Audi A3",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "audi",
+  "productionYears": {
+    "start": 1996,
+    "end": null
+  },
+  "fullName": "Audi A3, 1996-present",
+  "segment": "c-segment",
+  "positioning": "premium",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-audi-a3"
+  ]
+}

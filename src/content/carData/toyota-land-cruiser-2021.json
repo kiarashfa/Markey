@@ -1,0 +1,176 @@
+{
+  "id": "toyota-land-cruiser-2021",
+  "name": "Toyota Land Cruiser (J300)",
+  "fullName": "Toyota Land Cruiser (J300), 2021-present",
+  "kind": "generation",
+  "parent": "toyota-land-cruiser",
+  "brandRef": "toyota",
+  "generationCode": "J300",
+  "productionYears": {
+    "start": 2021,
+    "end": null
+  },
+  "bodyStyles": [
+    "suv"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel",
+    "hybrid"
+  ],
+  "drivetrains": [
+    "4wd"
+  ],
+  "segment": "suv-large",
+  "positioning": "mainstream",
+  "designer": "Masaki Okue, Masanori Kinoshita, Takeshi Ogawa, Hironami Haga, Hisayuki Tashiro",
+  "assembly": [
+    "Toyota, Aichi, Japan (Yoshiwara plant)",
+    "Tahara, Aichi, Japan (Tahara plant)"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4950,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-land-cruiser",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+      "sourceNote": "Infobox gives a 4,950-5,015 mm range across trims. The lower figure is recorded here."
+    },
+    "width": {
+      "value": 1980,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-land-cruiser",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+      "sourceNote": "Infobox gives a 1,980-1,990 mm range across trims. The lower figure is recorded here."
+    },
+    "height": {
+      "value": 1945,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-land-cruiser",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser"
+    },
+    "wheelbase": {
+      "value": 2850,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-land-cruiser",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser"
+    },
+    "kerbWeight": {
+      "value": 2310,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-toyota-land-cruiser",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+      "sourceNote": "Infobox gives a 2,310-2,645 kg range across the whole engine line-up without attributing each figure to an engine. The lower figure is recorded here. Toyota states the whole generation is about 200 kg lighter than its J200 predecessor."
+    }
+  },
+  "trims": [
+    {
+      "id": "vja300",
+      "name": "VJA300 (3.4 V6 Twin-Turbo)",
+      "productionYears": {
+        "start": 2021,
+        "end": null
+      },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "transmission": "10-speed automatic",
+      "gears": 10,
+      "engine": {
+        "code": "V35A-FTS",
+        "configuration": "V6, twin-turbo",
+        "cylinders": 6,
+        "displacement": {
+          "value": 3444,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-toyota-land-cruiser",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+          "sourceNote": "The article notes explicitly not to round this to \"3.5 L\", as the displacement is 3,444 cc."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 305,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-land-cruiser",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser"
+      },
+      "mass": {
+        "value": 2310,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-toyota-land-cruiser",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+        "sourceNote": "Low end of the generation's published 2,310-2,645 kg weight range, applied here to the base petrol trim rather than taken from a per-engine figure."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "fja300",
+      "name": "FJA300 (3.3 V6 Twin-Turbo Diesel)",
+      "productionYears": {
+        "start": 2021,
+        "end": null
+      },
+      "drivetrain": "4wd",
+      "powertrain": "diesel",
+      "transmission": "10-speed automatic",
+      "gears": 10,
+      "engine": {
+        "code": "F33A-FTV",
+        "configuration": "V6, twin-turbo",
+        "cylinders": 6,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 220,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-land-cruiser",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+        "sourceNote": "Low end of a published 220-227 kW range across markets."
+      },
+      "mass": {
+        "value": 2645,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-toyota-land-cruiser",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser",
+        "sourceNote": "High end of the generation's published 2,310-2,645 kg weight range, applied here to the heavier diesel trim rather than taken from a per-engine figure."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-land-cruiser-2021/hero.webp",
+    "alt": "White Toyota Land Cruiser 300 ZX photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 900,
+    "caption": "The J300, launched in 2021 on Toyota's GA-F body-on-frame platform, about 200 kg lighter than its predecessor despite growing in most dimensions.",
+    "credit": {
+      "author": "Autosdeprimera",
+      "title": "File:2021 Toyota Land Cruiser 300 3.4 ZX (Colombia) front view 02.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Toyota_Land_Cruiser_300_3.4_ZX_(Colombia)_front_view_02.png",
+      "licenseType": "cc-by",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-land-cruiser"
+  ]
+}

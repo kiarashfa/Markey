@@ -1,0 +1,197 @@
+{
+  "id": "toyota-celica-1970",
+  "name": "Toyota Celica (A20/A30)",
+  "fullName": "Toyota Celica (A20/A30), 1970-1977",
+  "kind": "generation",
+  "parent": "toyota-celica",
+  "brandRef": "toyota",
+  "generationCode": "A20/A30",
+  "productionYears": {
+    "start": 1970,
+    "end": 1977
+  },
+  "bodyStyles": [
+    "coupe",
+    "liftback"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "s-segment",
+  "positioning": "mainstream",
+  "designer": "Masao Fujita, Tatsuo Hasegawa",
+  "assembly": [
+    "Japan"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4171,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-celica",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+      "sourceNote": "Published as 164.2 in pre-facelift, converted at 1 in = 25.4 mm. The facelift model grew to 171.5 in / 4,356 mm."
+    },
+    "width": {
+      "value": 1600,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-celica",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+      "sourceNote": "Published as 63.0 in, converted at 1 in = 25.4 mm."
+    },
+    "height": {
+      "value": 1346,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-celica",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+      "sourceNote": "Published as 53 in, converted at 1 in = 25.4 mm."
+    },
+    "wheelbase": {
+      "value": 2407,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-toyota-celica",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+      "sourceNote": "Published as 94.75 in for the pre-facelift car, converted at 1 in = 25.4 mm. The facelift model grew to 98 in / 2,489 mm."
+    },
+    "kerbWeight": {
+      "value": 890,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-toyota-celica",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+      "sourceNote": "Infobox gives an 890-1,186 kg range across the generation without attributing each figure to a trim. The lower figure is recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "st-8r",
+      "name": "ST (8R)",
+      "productionYears": {
+        "start": 1971,
+        "end": 1972
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual or 3-speed automatic",
+      "gears": 4,
+      "engine": {
+        "code": "8R",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1858,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article describes this engine only as \"1.9 litre\"; 1,858 cc is the well-documented displacement of the Toyota 8R engine, not a figure stated directly in this article."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 81,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-celica",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+        "sourceNote": "108 hp, North American-market first Celica, converted at 1 hp = 0.745699872 kW."
+      },
+      "torque": {
+        "value": 159,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-celica",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+        "sourceNote": "117 lb-ft, converted at 1 lb-ft = 1.3558179483 Nm."
+      },
+      "mass": {
+        "value": 890,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-toyota-celica",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+        "sourceNote": "Low end of the generation's published weight range, applied here to the earliest, lightest trim."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gt-20r",
+      "name": "GT (20R)",
+      "productionYears": {
+        "start": 1975,
+        "end": 1977
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "20R",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2189,
+          "unit": "cc",
+          "status": "estimated",
+          "sourceNote": "The article describes this engine only as \"2.2 litre\"; 2,189 cc is the well-documented displacement of the Toyota 20R engine, not a figure stated directly in this article."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 72,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-toyota-celica",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+        "sourceNote": "96 hp, North American-market facelift Celica, converted at 1 hp = 0.745699872 kW. Lower than the earlier 8R-engined ST despite the larger displacement, a result of mid-1970s US emissions detuning, per the article."
+      },
+      "torque": {
+        "value": 165,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-toyota-celica",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+        "sourceNote": "122 lb-ft, converted at 1 lb-ft = 1.3558179483 Nm."
+      },
+      "mass": {
+        "value": 1186,
+        "unit": "kg",
+        "status": "estimated",
+        "source": "wikipedia-toyota-celica",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Celica",
+        "sourceNote": "High end of the generation's published weight range, applied here to the later, heavier facelift trim with US-mandated bumpers."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/toyota-celica-1970/hero.webp",
+    "alt": "Yellow original Toyota Celica coupé photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 800,
+    "caption": "The first Celica, launched in 1970 as Toyota's answer to the Ford Mustang — a stylised coupé body over sedan mechanicals.",
+    "credit": {
+      "author": "Mytho88",
+      "title": "File:1970 Toyota Celica 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1970_Toyota_Celica_01.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-toyota-celica"
+  ]
+}

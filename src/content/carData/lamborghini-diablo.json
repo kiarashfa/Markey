@@ -1,0 +1,20 @@
+{
+  "id": "lamborghini-diablo",
+  "name": "Lamborghini Diablo",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "lamborghini",
+  "productionYears": {
+    "start": 1990,
+    "end": 2001
+  },
+  "fullName": "Lamborghini Diablo, 1990-2001",
+  "segment": "s-segment",
+  "positioning": "ultra-luxury",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-lamborghini-diablo"
+  ]
+}

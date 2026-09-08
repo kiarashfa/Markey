@@ -1,0 +1,18 @@
+{
+  "id": "peugeot-206",
+  "name": "Peugeot 206",
+  "fullName": "Peugeot 206, 1998-2012 (Europe)",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "peugeot",
+  "productionYears": {
+    "start": 1998,
+    "end": 2012
+  },
+  "segment": "b-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-peugeot-206"]
+}

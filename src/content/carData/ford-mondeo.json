@@ -1,0 +1,18 @@
+{
+  "id": "ford-mondeo",
+  "name": "Ford Mondeo",
+  "fullName": "Ford Mondeo, 1992-2022",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "ford",
+  "productionYears": {
+    "start": 1992,
+    "end": 2022
+  },
+  "segment": "d-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-ford-mondeo-first-generation"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "skoda-fabia",
+  "name": "Škoda Fabia",
+  "fullName": "Škoda Fabia, 1999-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "skoda-auto",
+  "productionYears": {
+    "start": 1999,
+    "end": null
+  },
+  "segment": "b-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-09-08",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-skoda-fabia"]
+}
