@@ -1,10 +1,10 @@
 /**
- * Content Layer API collection definitions — SPEC.md §5.
+ * Content Layer API collection definitions.
  *
  * Six collections, three narrative/data pairs. The pairing itself (every
  * `.mdx` having exactly one `.json` sibling and vice versa) is a cross-file
  * property Zod cannot see, so it is enforced by `src/integrations/integrity.ts`
- * at `astro:build:start` (SPEC.md §13).
+ * at `astro:build:start`.
  */
 import { existsSync, readdirSync } from 'node:fs';
 import path from 'node:path';

@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Standalone unit converter — SPEC.md §6, §9.
+   * Standalone unit converter.
    *
    * Every conversion routes through `lib/math/units.ts`, the same module the
    * spec tables use. That is the point of the shared math engine: this page

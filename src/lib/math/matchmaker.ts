@@ -1,11 +1,11 @@
 /**
- * Shared filtering and ranking — SPEC.md §8.1, §9.2, §9.3.
+ * Shared filtering and ranking.
  *
  * Two tools sit on this module and they are deliberately different:
  *
- *  - **Guided Browse** (§9.2) applies dealbreakers only and ends in a filtered
+ *  - **Guided Browse** applies dealbreakers only and ends in a filtered
  *    list. No scoring, no ranking, no opinion.
- *  - **Matchmaker** (§9.3) applies the same dealbreakers first, then ranks
+ *  - **Matchmaker** applies the same dealbreakers first, then ranks
  *    what survives by weighted preference.
  *
  * So filtering and ranking are separate, composable functions rather than one

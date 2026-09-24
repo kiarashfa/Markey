@@ -1,0 +1,116 @@
+{
+  "id": "fiat-punto-188",
+  "name": "Fiat Punto (Type 188)",
+  "fullName": "Fiat Punto (Type 188), 1999-2010",
+  "kind": "generation",
+  "parent": "fiat-punto",
+  "brandRef": "fiat",
+  "generationCode": "188",
+  "productionYears": {
+    "start": 1999,
+    "end": 2010
+  },
+  "bodyStyles": ["hatchback"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "assembly": [
+    "Fiat, Melfi, Basilicata, Italy",
+    "Fiat, Mirafiori, Turin, Italy",
+    "Fiat, Termini Imerese, Sicily, Italy",
+    "Zastava, Kragujevac, Serbia"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 3800,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-fiat-punto",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto",
+      "sourceNote": "3-door, 1999-2003. Later variants: 5-door 1999-2003 3,835 mm; 3-door 2003-10 3,840 mm; 5-door 2003-10 3,865 mm."
+    },
+    "width": { "value": 1660, "unit": "mm", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+    "height": { "value": 1480, "unit": "mm", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+    "wheelbase": { "value": 2460, "unit": "mm", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+    "kerbWeight": {
+      "value": 860,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-fiat-punto",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto",
+      "sourceNote": "Lowest figure in the infobox's published range of 860-1,050 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-2-8v",
+      "name": "1.2 8v",
+      "productionYears": { "start": 1999, "end": 2010 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "inline-4, 8-valve, multi-point injection",
+        "cylinders": 4,
+        "displacement": { "value": 1242, "unit": "cc", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": { "value": 44, "unit": "kW", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto", "sourceNote": "At 5,000 rpm." },
+      "torque": { "value": 102, "unit": "Nm", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto", "sourceNote": "At 2,500 rpm." },
+      "topSpeed": { "value": 155, "unit": "km/h", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+      "zeroToHundredKph": { "value": 14.3, "unit": "s", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+      "fuelEconomy": { "value": 5.7, "unit": "L/100km", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto", "sourceNote": "Combined figure; the source's specification table does not name the test cycle (pre-WLTP)." },
+      "co2": { "value": 136, "unit": "g/km", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto", "sourceNote": "Cycle not named in the source." },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-9-jtd-63kw",
+      "name": "1.9 JTD",
+      "productionYears": { "start": 2002, "end": 2006 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "JTD",
+        "configuration": "inline-4, common-rail turbo-diesel, 8-valve",
+        "cylinders": 4,
+        "displacement": { "value": 1910, "unit": "cc", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+        "aspiration": "turbocharged"
+      },
+      "power": { "value": 63, "unit": "kW", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto", "sourceNote": "At 3,000 rpm; a lower state of tune of the same engine made 59 kW earlier in the generation's run." },
+      "torque": { "value": 200, "unit": "Nm", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto", "sourceNote": "At 1,500 rpm." },
+      "topSpeed": { "value": 173, "unit": "km/h", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+      "zeroToHundredKph": { "value": 11.5, "unit": "s", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+      "fuelEconomy": { "value": 4.9, "unit": "L/100km", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto", "sourceNote": "Combined figure; cycle not named in the source." },
+      "co2": { "value": 130, "unit": "g/km", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto", "sourceNote": "Cycle not named in the source." },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/fiat-punto-188/hero.webp",
+    "alt": "Red second-generation Fiat Punto photographed from the front three-quarter angle, showing its softer, more rounded restyled body",
+    "width": 1600,
+    "height": 941,
+    "caption": "An all-new body and chassis over a torsion-beam rear end, retaining the outgoing car's silhouette; sold alongside its Grande Punto successor as the \"Punto Classic\" for five more years.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2000 Fiat Punto 1.2 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2000_Fiat_Punto_1.2_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-fiat-punto"]
+}

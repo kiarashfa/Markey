@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Build Car — SPEC.md §9.6.
+   * Build Car.
    *
    * Spec a car that does not exist and run it through the **same** physics the
    * catalogue's cars run through. Three things make that claim true rather than
@@ -124,7 +124,7 @@
   }
 
   /**
-   * The wind tunnel's answer, applied to the build (SPEC.md §9.6, the closed
+   * The wind tunnel's answer, applied to the build (the closed
    * loop). Both figures move together because they are one measurement of one
    * shape — taking the Cd and leaving the area would mix a measured coefficient
    * with an estimated area and quietly change what the drag figure means.
@@ -384,7 +384,7 @@
 
   <!-- The shape, and the tunnel that measures it ---------------------------- -->
   <!--
-    SPEC.md §9.6's closed loop: the numbers above describe a car, the dimensions
+    The closed loop: the numbers above describe a car, the dimensions
     above describe a body, and this is where the two meet. The tunnel is the
     same component the Test Drive page runs, in its `build` variant — the solver
     still sits behind a dynamic `import()` and still starts only when asked, so

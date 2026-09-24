@@ -1,0 +1,198 @@
+{
+  "id": "subaru-impreza-1",
+  "name": "Subaru Impreza",
+  "fullName": "Subaru Impreza (GC/GF/GM), 1992-2000",
+  "kind": "generation",
+  "parent": "subaru-impreza",
+  "brandRef": "subaru",
+  "generationCode": "GC/GF/GM",
+  "productionYears": {
+    "start": 1992,
+    "end": 2000
+  },
+  "bodyStyles": [
+    "saloon",
+    "estate",
+    "coupe"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd",
+    "awd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Hidefumi Kato",
+  "assembly": [
+    "Ōta, Gunma, Japan",
+    "Pingtung City, Taiwan (TCMC, CKD)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4340,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-subaru-impreza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza"
+    },
+    "width": {
+      "value": 1690,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-subaru-impreza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza"
+    },
+    "height": {
+      "value": 1405,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-subaru-impreza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza"
+    },
+    "wheelbase": {
+      "value": 2520,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-subaru-impreza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza"
+    },
+    "kerbWeight": {
+      "value": 1220,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-subaru-impreza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza"
+    }
+  },
+  "trims": [
+    {
+      "id": "wrx-gc8a",
+      "name": "WRX",
+      "productionYears": {
+        "start": 1992,
+        "end": 1993
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "EJ20 turbo",
+        "configuration": "2.0 L flat-4 (boxer), turbocharged",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 177,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-subaru-impreza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+        "sourceNote": "240 PS, converted at 1 PS = 0.73549875 kW (176.5 kW, rounded to 177). The launch WRX, sold in Japan only; the contemporary European Impreza GT / Turbo 2000 used a lower state of tune at 208 hp (155 kW), not recorded separately here."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "wrx-sti-22b",
+      "name": "22B STi",
+      "productionYears": {
+        "start": 1998,
+        "end": 1998
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "EJ22G",
+        "configuration": "2.2 L flat-4 (boxer), turbocharged, widebody",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2212,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-subaru-impreza",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 206,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-subaru-impreza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+        "sourceNote": "280 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW (205.9 kW, rounded to 206). A limited widebody edition of 400 Japanese-market units marking Subaru's 40th anniversary and third consecutive WRC manufacturers' title."
+      },
+      "torque": {
+        "value": 363,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-subaru-impreza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+        "sourceNote": "Published as 37 kgf⋅m at 3,200 rpm, converted at 1 kgf⋅m = 9.80665 N⋅m (362.8 N⋅m, rounded to 363)."
+      },
+      "mass": {
+        "value": 1270,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-subaru-impreza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "wrx-sti-gc8g",
+      "name": "WRX STI (Version VI)",
+      "productionYears": {
+        "start": 1999,
+        "end": 2000
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "EJ20 turbo (\"Phase 2\")",
+        "configuration": "2.0 L flat-4 (boxer), turbocharged",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 160,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-subaru-impreza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+        "sourceNote": "160 kW, published directly in kW in the source as the European-market GT/STI figure, an increase of 5 kW over the previous version. Japanese-market STI power was capped at a nominally reported 280 PS by an industry gentlemen's agreement, which the article notes most manufacturers understated."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/subaru-impreza-1/hero.webp",
+    "alt": "Blue Subaru Impreza 22B STi photographed from the front three-quarter angle at a car show, showing its widened fenders and gold BBS wheels",
+    "width": 1600,
+    "height": 925,
+    "caption": "The 22B STi, a 400-unit widebody special built to mark Subaru's 40th anniversary and third straight World Rally Championship manufacturers' title.",
+    "credit": {
+      "author": "MrWalkr",
+      "title": "File:1998 Subaru Impreza 22b STi.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1998_Subaru_Impreza_22b_STi.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-subaru-impreza"
+  ]
+}

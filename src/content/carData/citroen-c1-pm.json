@@ -1,0 +1,254 @@
+{
+  "id": "citroen-c1-pm",
+  "name": "Citroën C1 (PM/PN)",
+  "fullName": "Citroën C1 (PM/PN), 2005-2014",
+  "kind": "generation",
+  "parent": "citroen-c1",
+  "brandRef": "citroen",
+  "generationCode": "PM/PN",
+  "productionYears": {
+    "start": 2005,
+    "end": 2014
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "designer": "Donato Coco",
+  "assembly": [
+    "Kolin, Czech Republic (TPCA)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3435,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+    },
+    "width": {
+      "value": 1630,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+    },
+    "height": {
+      "value": 1468,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+    },
+    "wheelbase": {
+      "value": 2340,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+    },
+    "kerbWeight": {
+      "value": 790,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-citroen-c1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+      "sourceNote": "Published as a 790-890 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0i-12v",
+      "name": "1.0i 12V",
+      "productionYears": {
+        "start": 2005,
+        "end": 2014
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual or 5-speed automated manual (Sensodrive)",
+      "engine": {
+        "code": "1KR-FE",
+        "configuration": "inline-3, Toyota 1KR-FE VTi",
+        "cylinders": 3,
+        "displacement": {
+          "value": 998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 51,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "69 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW (50.7 kW, rounded to 51)."
+      },
+      "torque": {
+        "value": 93,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "Published directly as 93 N-m at 3,600 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 12.3,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+      },
+      "topSpeed": {
+        "value": 158,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "Published as 98 mph, converted at 1.609344 km/mi (157.7 km/h, rounded to 158)."
+      },
+      "fuelEconomy": {
+        "value": 4.3,
+        "unit": "L/100km",
+        "status": "conflicting-sources",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "The article's engine specification table gives 4.3 L/100km (NEDC); its body text separately states 4.6 L/100km (EU method) for the same 1.0-litre petrol engine, flagged 'citation needed' in the source itself. The table figure is used as the more specifically attributed one."
+      },
+      "co2": {
+        "value": 99,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "Published as a 99-109 g/km range across trims and model years (NEDC); the lowest figure in the range is recorded here."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-4-hdi-8v",
+      "name": "1.4 HDi 8V",
+      "productionYears": {
+        "start": 2005,
+        "end": 2010
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "DV4-TD",
+        "configuration": "inline-4 turbo-diesel, Ford DLD/DV4-TD HDi",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1398,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 41,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "56 PS at 4,000 rpm, converted at 1 PS = 0.73549875 kW (41.2 kW, rounded to 41)."
+      },
+      "torque": {
+        "value": 130,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "Published directly as 130 N-m at 1,750 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 14.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+      },
+      "topSpeed": {
+        "value": 154,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "Published as 96 mph, converted at 1.609344 km/mi (154.5 km/h, rounded to 154)."
+      },
+      "fuelEconomy": {
+        "value": 4.0,
+        "unit": "L/100km",
+        "status": "conflicting-sources",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "The article's engine specification table gives 4.0 L/100km (NEDC); its body text separately states 4.1 L/100km (EU method) for the same engine, flagged 'citation needed' in the source itself. The table figure is used as the more specifically attributed one."
+      },
+      "co2": {
+        "value": 109,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "NEDC cycle."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/citroen-c1-pm/hero.webp",
+    "alt": "Red first-generation Citroën C1 three-door hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 874,
+    "caption": "The original C1, one of three near-identical siblings built at the same Czech factory alongside the Peugeot 107 and Toyota Aygo.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2008 Citroen C1 Rhythm 1.0 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Citroen_C1_Rhythm_1.0_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/citroen-c1-pm/gallery-1.webp",
+      "alt": "Rear three-quarter view of a red first-generation Citroën C1 hatchback",
+      "width": 1200,
+      "height": 641,
+      "caption": "A pre-facelift Rhythm trim car.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2008 Citroen C1 Rhythm 1.0 Rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Citroen_C1_Rhythm_1.0_Rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-citroen-c1"
+  ]
+}

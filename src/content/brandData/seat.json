@@ -1,0 +1,27 @@
+{
+  "id": "seat",
+  "name": "SEAT",
+  "legalName": "SEAT S.A. (Sociedad Española de Automóviles de Turismo)",
+  "countryOfOrigin": "Spain",
+  "founded": 1950,
+  "parentCompany": "volkswagen",
+  "website": "https://www.seat.com",
+  "logo": {
+    "src": "/images/brands/seat.svg",
+    "alt": "The SEAT S.A. wordmark, rendered in black",
+    "credit": {
+      "author": "Interbrand Studio",
+      "title": "File:SEAT S.A. logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SEAT_S.A._logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes; the basis for display here is trademark nominative use, not a copyright licence."
+    }
+  },
+  "accentColor": "#000000",
+  "accentColorNote": "Sampled from the badge's own SVG source, which specifies no fill colour on any path and therefore renders in the SVG default of solid black. This is the corporate wordmark logo, not the red 'S' emblem SEAT uses on some cars and marketing; no colour specification for either mark was found, so the mark actually on file is what is recorded rather than the widely recognised red being guessed at.",
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-seat"
+  ]
+}

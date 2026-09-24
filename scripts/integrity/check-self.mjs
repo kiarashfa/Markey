@@ -2,8 +2,8 @@
 /**
  * `npm run check:self` — proves the integrity checks themselves still bite.
  *
- * SPEC.md §13: CI runs the checks against a known-bad fixture set "which must
- * still fail (proves the checks haven't silently stopped catching problems)".
+ * CI runs the checks against a known-bad fixture set that must still fail —
+ * proof that the checks haven't silently stopped catching problems.
  *
  * Read the exit code carefully, because the two senses of "fail" are easy to
  * confuse:

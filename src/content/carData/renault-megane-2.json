@@ -1,0 +1,258 @@
+{
+  "id": "renault-megane-2",
+  "name": "Renault Mégane",
+  "fullName": "Renault Mégane (Mk2, X84), 2002-2008",
+  "kind": "generation",
+  "parent": "renault-megane",
+  "brandRef": "renault",
+  "generationCode": "X84",
+  "productionYears": {
+    "start": 2002,
+    "end": 2008
+  },
+  "bodyStyles": [
+    "hatchback",
+    "saloon",
+    "estate",
+    "coupe",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Patrick Le Quément (design direction)",
+  "assembly": [
+    "Douai, France (3-door hatchback)",
+    "Palencia, Spain (5-door hatchback and estate)",
+    "Nilüfer, Bursa, Turkey (Oyak-Renault, saloon)",
+    "Osnabrück, Germany (Karmann, coupé-cabriolet)",
+    "Curitiba, Brazil (Renault do Brasil)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4209,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-megane",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+      "sourceNote": "Hatchback body; saloon/estate is 4498 mm and the convertible 4355 mm."
+    },
+    "width": {
+      "value": 1777,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-megane",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+    },
+    "height": {
+      "value": 1460,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-megane",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+      "sourceNote": "Saloon body; the estate is 1505 mm and the convertible 1514 mm."
+    },
+    "wheelbase": {
+      "value": 2625,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-megane",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+      "sourceNote": "Hatchback body; saloon and estate share a longer 2686 mm wheelbase and the convertible a shorter 2522 mm one."
+    },
+    "kerbWeight": {
+      "value": 1175,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-renault-megane",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+      "sourceNote": "Published for the hatchback body only; other body styles are not given a weight in the source."
+    }
+  },
+  "trims": [
+    {
+      "id": "16-16v-k4m",
+      "name": "1.6 16v",
+      "productionYears": {
+        "start": 2002,
+        "end": 2008
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "K4M",
+        "configuration": "inline-4 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-megane",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 87,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+        "sourceNote": "118 PS, explicitly labelled PS in the source's own conversion, at conversion rate 1 PS = 0.73549875 kW (86.8 kW, rounded to 87)."
+      },
+      "topSpeed": {
+        "value": 196,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+      },
+      "zeroToHundredKph": {
+        "value": 10.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "15-dci-106",
+      "name": "1.5 dCi 106",
+      "productionYears": {
+        "start": 2002,
+        "end": 2008
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "K9K",
+        "configuration": "inline-4, turbocharged common-rail diesel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1461,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-megane",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 78,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+        "sourceNote": "106 PS, explicitly labelled PS in the source's own conversion, at conversion rate 1 PS = 0.73549875 kW (78.0 kW)."
+      },
+      "topSpeed": {
+        "value": 185,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+      },
+      "zeroToHundredKph": {
+        "value": 11.1,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "megane-rs-225",
+      "name": "Renault Sport 225",
+      "productionYears": {
+        "start": 2004,
+        "end": 2008
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "F4RT",
+        "configuration": "inline-4 16v turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-megane",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 165,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+        "sourceNote": "225 PS, explicitly labelled PS in the source's own conversion, at conversion rate 1 PS = 0.73549875 kW (165.5 kW, rounded to 165). The hot-hatch Renault Sport model, with revised front and rear suspension geometry over the standard car."
+      },
+      "topSpeed": {
+        "value": 236,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+      },
+      "zeroToHundredKph": {
+        "value": 6.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-megane-2/hero.webp",
+    "alt": "Yellow Renault Mégane R26 Renault Sport hot hatch photographed from the front three-quarter angle in a museum, with black checkerboard roof graphics",
+    "width": 1600,
+    "height": 1216,
+    "caption": "The Mégane II Renault Sport, which took the front-wheel-drive lap record at the Nürburgring Nordschleife in R26 form.",
+    "credit": {
+      "author": "TaurusEmerald",
+      "title": "File:2007 Renault Megane R-26 Lane Motor Museum.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Renault_Megane_R-26_Lane_Motor_Museum.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/renault-megane-2/gallery-1.webp",
+      "alt": "Grey five-door Renault Mégane II hatchback with a 1.9 dCi badge, photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 645,
+      "caption": "An ordinary five-door 1.9 dCi hatchback, the volume-selling body style the RS was built alongside.",
+      "credit": {
+        "author": "DieselFordMondeo",
+        "title": "File:2003 Renault Mégane Dynamique 1.9dCi 120 (Front).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2003_Renault_M%C3%A9gane_Dynamique_1.9dCi_120_(Front).jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-renault-megane"
+  ]
+}

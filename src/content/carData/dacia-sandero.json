@@ -1,0 +1,19 @@
+{
+  "id": "dacia-sandero",
+  "name": "Dacia Sandero",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "dacia",
+  "productionYears": {
+    "start": 2007,
+    "end": null
+  },
+  "segment": "b-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-dacia-sandero"
+  ]
+}

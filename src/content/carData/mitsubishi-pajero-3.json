@@ -1,0 +1,184 @@
+{
+  "id": "mitsubishi-pajero-3",
+  "name": "Mitsubishi Pajero",
+  "fullName": "Mitsubishi Pajero (V60/V70), 1999-2006",
+  "kind": "generation",
+  "parent": "mitsubishi-pajero",
+  "brandRef": "mitsubishi",
+  "generationCode": "V60/V70",
+  "productionYears": {
+    "start": 1999,
+    "end": 2006
+  },
+  "bodyStyles": [
+    "suv"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "4wd"
+  ],
+  "segment": "suv-large",
+  "positioning": "mainstream",
+  "assembly": [
+    "Sakahogi, Gifu, Japan (Pajero Manufacturing Co., Ltd)",
+    "Changsha, Hunan, China (GAC Changfeng Motor / GAC Mitsubishi)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4798,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+      "sourceNote": "5-door body, 2001-02 pre-facelift, published as 188.9 in and converted at 1 in = 25.4 mm. The 2003-06 facelifted 5-door is 190.2 in (4831 mm); the 3-door short-wheelbase body is 166.1 in (4219 mm)."
+    },
+    "width": {
+      "value": 1877,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+      "sourceNote": "5-door body, 2001-02 pre-facelift, published as 73.9 in and converted at 1 in = 25.4 mm. The 2003-06 facelifted 5-door is 74.8 in (1900 mm)."
+    },
+    "height": {
+      "value": 1857,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+      "sourceNote": "5-door body, 2001-02 pre-facelift, published as 73.1 in and converted at 1 in = 25.4 mm. Height varies further by model year and body: 71.5 in for 2003-04, 74.2 in for 2005-06."
+    },
+    "wheelbase": {
+      "value": 2780,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+      "sourceNote": "5-door body, published as 109.45 in and converted at 1 in = 25.4 mm. The 3-door body is 100.2 in (2545 mm)."
+    },
+    "kerbWeight": {
+      "value": 2060,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+      "sourceNote": "5-door body only; no figure is given for the 3-door."
+    }
+  },
+  "trims": [
+    {
+      "id": "35-v6-gdi",
+      "name": "3.5 V6 GDI",
+      "productionYears": {
+        "start": 2003,
+        "end": 2005
+      },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "6G74 GDI",
+        "configuration": "3.5 L V6, SOHC 24v, gasoline direct injection, Electronic Throttle Valve",
+        "cylinders": 6,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 162,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mitsubishi-pajero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+        "sourceNote": "162 kW, published directly in kW in the source, for the Japanese-market GDI tune introduced at the 2003 facelift. Export markets kept the earlier EFI version of the same engine, raised to 149 kW at the same facelift; that variant is not recorded separately here. Replaced in the Japanese lineup by the 3.8 V6 in 2005."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "38-v6",
+      "name": "3.8 V6",
+      "productionYears": {
+        "start": 2003,
+        "end": 2006
+      },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "6G75",
+        "configuration": "3.8 L V6, SOHC 24v, Electronic Throttle Valve",
+        "cylinders": 6,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 160,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mitsubishi-pajero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+        "sourceNote": "160 kW, published directly in kW in the source. Introduced for the North American market in 2003 replacing the 3.5 V6, and later exported to South America, Australia and New Zealand."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "32-di-d",
+      "name": "3.2 DI-D",
+      "productionYears": {
+        "start": 2003,
+        "end": 2006
+      },
+      "drivetrain": "4wd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "4M41",
+        "configuration": "3.2 L inline-4, 16-valve, direct-injection turbodiesel, front-mounted intercooler",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 120,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mitsubishi-pajero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+        "sourceNote": "120 kW, published directly in kW in the source. Introduced at the 2003 facelift to replace the 2.8 TDI, which was retained only for developing markets."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mitsubishi-pajero-3/hero.webp",
+    "alt": "Silver third-generation Mitsubishi Pajero Exceed five-door SUV photographed from the front three-quarter angle on a residential street",
+    "width": 1600,
+    "height": 1070,
+    "caption": "The third-generation Pajero, the first with unibody construction over an integrated ladder frame instead of traditional body-on-frame.",
+    "credit": {
+      "author": "OSX",
+      "title": "File:2001 Mitsubishi Pajero (NM MY01) Exceed 5-door wagon (2015-08-07) 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2001_Mitsubishi_Pajero_(NM_MY01)_Exceed_5-door_wagon_(2015-08-07)_01.jpg",
+      "licenseType": "public-domain"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/mitsubishi-pajero-3/gallery-1.webp",
+      "alt": "Rear three-quarter view of a silver third-generation Mitsubishi Pajero Exceed, showing its tailgate-mounted spare wheel and Pajero badging",
+      "width": 1200,
+      "height": 645,
+      "caption": "The tailgate-mounted spare wheel, a Pajero signature this generation kept and the fifth generation would later drop.",
+      "credit": {
+        "author": "OSX",
+        "title": "File:2000-2002 Mitsubishi Pajero (NM) Exceed wagon 04.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2000-2002_Mitsubishi_Pajero_(NM)_Exceed_wagon_04.jpg",
+        "licenseType": "public-domain"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-mitsubishi-pajero"
+  ]
+}

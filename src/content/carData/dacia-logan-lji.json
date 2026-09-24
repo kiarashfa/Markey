@@ -1,0 +1,182 @@
+{
+  "id": "dacia-logan-lji",
+  "name": "Dacia Logan (LJI)",
+  "fullName": "Dacia Logan (LJI), 2020-present",
+  "kind": "generation",
+  "parent": "dacia-logan",
+  "brandRef": "dacia",
+  "generationCode": "LJI",
+  "productionYears": {
+    "start": 2020,
+    "end": null
+  },
+  "bodyStyles": [
+    "saloon"
+  ],
+  "powertrains": [
+    "petrol",
+    "lpg",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Renault Technocentre and Renault Technologie Roumanie",
+  "assembly": [
+    "Mioveni, Romania",
+    "Casablanca, Morocco (Somaca)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4396,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-logan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan"
+    },
+    "width": {
+      "value": 1848,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-logan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan"
+    },
+    "height": {
+      "value": 1501,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-logan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan"
+    },
+    "wheelbase": {
+      "value": 2649,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-logan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan"
+    },
+    "kerbWeight": {
+      "value": null,
+      "unit": "kg",
+      "status": "placeholder",
+      "sourceNote": "Not published in the Wikipedia infobox or body text for this generation."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0-sce-65",
+      "name": "1.0 SCe 65",
+      "productionYears": {
+        "start": 2020,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "H4D",
+        "configuration": "inline-3, SCe",
+        "cylinders": 3,
+        "aspiration": "naturally-aspirated"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-0-tce-90",
+      "name": "1.0 TCe 90",
+      "productionYears": {
+        "start": 2020,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "H4Dt",
+        "configuration": "inline-3 turbocharged, TCe",
+        "cylinders": 3,
+        "aspiration": "turbocharged"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-0-eco-g-100",
+      "name": "1.0 ECO-G 100",
+      "productionYears": {
+        "start": 2020,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "lpg",
+      "gears": 6,
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "H4Dt",
+        "configuration": "inline-3 turbocharged, petrol/LPG bi-fuel",
+        "cylinders": 3,
+        "aspiration": "turbocharged"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-5-dci",
+      "name": "1.5 dCi",
+      "productionYears": {
+        "start": 2020,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "K9K",
+        "configuration": "inline-4 SOHC 8v common-rail turbo-diesel",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/dacia-logan-lji/hero.webp",
+    "alt": "White third-generation Dacia Logan saloon photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1017,
+    "caption": "The current Logan, launched in 2020 on the shared Renault-Nissan CMF-B LS platform used by the third-generation Sandero.",
+    "credit": {
+      "author": "ROCostiTheBunnyCZ",
+      "title": "File:2021 Dacia Logan III (front).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Dacia_Logan_III_(front).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/dacia-logan-lji/gallery-1.webp",
+      "alt": "Rear three-quarter view of a white third-generation Dacia Logan saloon",
+      "width": 1200,
+      "height": 760,
+      "caption": "Sold in Turkey and other markets as the Renault Taliant.",
+      "credit": {
+        "author": "ROCostiTheBunnyCZ",
+        "title": "File:2021 Dacia Logan III (rear).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Dacia_Logan_III_(rear).jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-dacia-logan"
+  ]
+}

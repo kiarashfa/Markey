@@ -1,0 +1,204 @@
+{
+  "id": "hyundai-accent-x3",
+  "name": "Hyundai Accent (X3)",
+  "fullName": "Hyundai Accent (X3), 1994-1999",
+  "kind": "generation",
+  "parent": "hyundai-accent",
+  "brandRef": "hyundai",
+  "generationCode": "X3",
+  "productionYears": {
+    "start": 1994,
+    "end": 1999
+  },
+  "bodyStyles": [
+    "saloon",
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "assembly": [
+    "Ulsan, South Korea (Hyundai)",
+    "İzmit, Kocaeli Province, Turkey (Hyundai Assan Otomotiv)",
+    "Cairo, Egypt (Ghabbour Group)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4100,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-accent",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent",
+      "sourceNote": "Liftback length; the sedan is published as 162.1 in (4118 mm)."
+    },
+    "width": {
+      "value": 1620,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-accent",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent"
+    },
+    "height": {
+      "value": 1395,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-accent",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent",
+      "sourceNote": "1395 mm for the Hyundai-badged car; the Kia Qianlima sibling built in China is 1410 mm."
+    },
+    "wheelbase": {
+      "value": 2400,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-accent",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent"
+    },
+    "kerbWeight": {
+      "value": 953,
+      "unit": "kg",
+      "status": "verified",
+      "source": "nhtsa-cvs-1996-hyundai-accent",
+      "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1996&Make=hyundai&units=Metric&format=json",
+      "sourceNote": "Canadian-market curb weight for the 2-door hatchback (model year 95), matching the low end of Wikipedia's published 2,101-2,150 lb kerb weight range (953-975 kg)."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-5-sohc",
+      "name": "1.5 SOHC",
+      "productionYears": {
+        "start": 1994,
+        "end": 1999
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual or 4-speed automatic",
+      "engine": {
+        "code": "G4EK",
+        "configuration": "inline-4 SOHC 12V",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 68,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-accent",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent",
+        "sourceNote": "91 hp at the 1997 Australian facelift, converted at 1 hp = 0.745699872 kW (67.9 kW, rounded to 68)."
+      },
+      "mass": {
+        "value": 953,
+        "unit": "kg",
+        "status": "verified",
+        "source": "nhtsa-cvs-1996-hyundai-accent",
+        "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1996&Make=hyundai&units=Metric&format=json",
+        "sourceNote": "Canadian-market curb weight for the 2-door hatchback, model year 95."
+      },
+      "fuelEconomy": {
+        "value": 8.4,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "epa-1996-hyundai-accent",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/12728",
+        "sourceNote": "EPA combined 28 mpg (US) for the 1996 US-market 1.5 L 5-speed manual, converted at 235.215 L-mi/100km-gal. This is the current EPA estimate; the methodology changed in 2008 and earlier cars were recalculated, so it is not the figure on the 1996 window sticker."
+      },
+      "co2": {
+        "value": 197.2,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "epa-1996-hyundai-accent",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/12728",
+        "sourceNote": "EPA tailpipe CO2, 317.4 g/mi, converted at 1.609344 km/mi (US cycle)."
+      },
+      "bootVolume": {
+        "value": 311,
+        "unit": "L",
+        "status": "verified",
+        "source": "epa-1996-hyundai-accent",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/12728",
+        "sourceNote": "EPA luggage volume, 11 cu ft, converted at 28.3168 L/cu ft. EPA's method is not comparable with a European VDA boot figure."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-5-dohc-twin-cam",
+      "name": "1.5 DOHC Twin Cam",
+      "productionYears": {
+        "start": 1997,
+        "end": 1999
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual or 4-speed automatic",
+      "engine": {
+        "code": "G4FK",
+        "configuration": "inline-4 DOHC 16V",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 74,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-accent",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent",
+        "sourceNote": "74 kW (99 hp) at 6,000 rpm, as published directly in kW. The US-market Accent GT used the same DOHC engine tuned to a different, higher figure (105 hp / 78.3 kW) and is not this trim."
+      },
+      "torque": {
+        "value": 134,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-accent",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent",
+        "sourceNote": "134 N-m at 4,000 rpm, from the 1997 Australian facelift ('Twin Cam') introduction."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/hyundai-accent-x3/hero.webp",
+    "alt": "Blue Hyundai Excel/Accent X3 four-door sedan photographed from the front three-quarter angle, parked on a residential street",
+    "width": 1600,
+    "height": 862,
+    "caption": "The X3: Hyundai's first Accent, sold in Australia and several markets as the Excel and elsewhere as the Pony.",
+    "credit": {
+      "author": "OSX",
+      "title": "File:1996 Hyundai Excel (X3) GLX sedan (2015-06-25) 01 (cropped).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1996_Hyundai_Excel_(X3)_GLX_sedan_(2015-06-25)_01_(cropped).jpg",
+      "licenseType": "public-domain",
+      "licenseNote": "Released into the public domain by the photographer."
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/hyundai-accent-x3/gallery-1.webp",
+      "alt": "Rear three-quarter view of a silver Hyundai Excel X3 five-door hatchback parked at a kerb",
+      "width": 1200,
+      "height": 643,
+      "caption": "The 5-door liftback version, badged Excel in this market.",
+      "credit": {
+        "author": "Jeremy from Sydney, Australia",
+        "title": "File:1995 Hyundai Excel (X3) LX 5-door hatchback (22666581699) (cropped).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1995_Hyundai_Excel_(X3)_LX_5-door_hatchback_(22666581699)_(cropped).jpg",
+        "licenseType": "cc-by",
+        "licenseVersion": "2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-hyundai-accent",
+    "epa-1996-hyundai-accent",
+    "nhtsa-cvs-1996-hyundai-accent"
+  ]
+}

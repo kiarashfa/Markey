@@ -1,0 +1,216 @@
+{
+  "id": "mazda-rx-8-se3p",
+  "name": "Mazda RX-8 (SE3P)",
+  "fullName": "Mazda RX-8 (SE3P), 2003-2012",
+  "kind": "generation",
+  "parent": "mazda-rx-8",
+  "brandRef": "mazda",
+  "generationCode": "SE3P",
+  "productionYears": {
+    "start": 2003,
+    "end": 2012
+  },
+  "bodyStyles": ["coupe"],
+  "powertrains": ["rotary"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "mainstream",
+  "designer": "Ikuo Maeda",
+  "assembly": ["Mazda, Hiroshima, Japan (Hiroshima Plant)"],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4425,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mazda-rx-8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8",
+      "sourceNote": "Pre-facelift (2003-2008) length. The 2009-2012 facelift grew to 4,470 mm."
+    },
+    "width": {
+      "value": 1770,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mazda-rx-8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8"
+    },
+    "height": {
+      "value": 1340,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mazda-rx-8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8"
+    },
+    "wheelbase": {
+      "value": 2703,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mazda-rx-8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8"
+    },
+    "kerbWeight": {
+      "value": 1309,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-mazda-rx-8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8",
+      "sourceNote": "Lowest figure in the published range: manual-transmission cars ranged 1,309-1,373 kg depending on trim, automatic cars were 1,384 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "renesis-4-port",
+      "name": "Renesis 4-Port",
+      "productionYears": { "start": 2003, "end": 2008 },
+      "drivetrain": "rwd",
+      "powertrain": "rotary",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "13B-MSP Renesis",
+        "configuration": "twin-rotor Wankel, 4-port",
+        "displacement": { "value": 1308, "unit": "cc", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 143.17,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mazda-rx-8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8",
+        "sourceNote": "192 hp at 7,000 rpm, converted at 1 hp = 0.74569987 kW. Published for the European-market car; North American cars of this same low-power tune were rated 189 hp."
+      },
+      "torque": { "value": 198, "unit": "Nm", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8", "sourceNote": "At 5,000 rpm." },
+      "zeroToHundredKph": { "value": 7.2, "unit": "s", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8" },
+      "topSpeed": { "value": 224, "unit": "km/h", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8" },
+      "co2": { "value": 284, "unit": "g/km", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8", "sourceNote": "European-market figure; the source's engine table does not name the test cycle." },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "renesis-6-port",
+      "name": "Renesis 6-Port (Type S)",
+      "productionYears": { "start": 2003, "end": 2008 },
+      "drivetrain": "rwd",
+      "powertrain": "rotary",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "13B-MSP Renesis",
+        "configuration": "twin-rotor Wankel, 6-port",
+        "displacement": { "value": 1308, "unit": "cc", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 172.26,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mazda-rx-8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8",
+        "sourceNote": "231 hp at 8,200 rpm from the source's engine table, converted at 1 hp = 0.74569987 kW. The article body separately quotes this North American 6-speed manual tune as 232 hp at 8,250 rpm; the two figures are within 1% of each other and are treated as the same published output rather than a conflict."
+      },
+      "torque": { "value": 212, "unit": "Nm", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8", "sourceNote": "At 5,500 rpm." },
+      "zeroToHundredKph": { "value": 6.4, "unit": "s", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8" },
+      "topSpeed": { "value": 235, "unit": "km/h", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8" },
+      "co2": { "value": 284, "unit": "g/km", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8", "sourceNote": "European-market figure; the source's engine table does not name the test cycle." },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "renesis-ii-4-port",
+      "name": "Renesis II 4-Port",
+      "productionYears": { "start": 2009, "end": 2012 },
+      "drivetrain": "rwd",
+      "powertrain": "rotary",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "13B-MSP Renesis II",
+        "configuration": "twin-rotor Wankel, 4-port",
+        "displacement": { "value": 1308, "unit": "cc", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 158.09,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mazda-rx-8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8",
+        "sourceNote": "212 hp at 7,500 rpm, converted at 1 hp = 0.74569987 kW."
+      },
+      "torque": { "value": 216, "unit": "Nm", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8", "sourceNote": "At 5,500 rpm." },
+      "zeroToHundredKph": { "value": 7.2, "unit": "s", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8" },
+      "topSpeed": { "value": 230, "unit": "km/h", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8" },
+      "co2": { "value": 258, "unit": "g/km", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8", "sourceNote": "European-market figure; the source's engine table does not name the test cycle." },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "renesis-ii-6-port",
+      "name": "Renesis II 6-Port (R3)",
+      "productionYears": { "start": 2009, "end": 2012 },
+      "drivetrain": "rwd",
+      "powertrain": "rotary",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "13B-MSP Renesis II",
+        "configuration": "twin-rotor Wankel, 6-port",
+        "displacement": { "value": 1308, "unit": "cc", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 173.00,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mazda-rx-8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8",
+        "sourceNote": "232 hp at 8,500 rpm, converted at 1 hp = 0.74569987 kW."
+      },
+      "torque": { "value": 216, "unit": "Nm", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8", "sourceNote": "At 5,500 rpm." },
+      "zeroToHundredKph": { "value": 6.3, "unit": "s", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8" },
+      "topSpeed": { "value": 237, "unit": "km/h", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8" },
+      "co2": { "value": 299, "unit": "g/km", "status": "verified", "source": "wikipedia-mazda-rx-8", "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-8", "sourceNote": "European-market figure; the source's engine table does not name the test cycle." },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mazda-rx-8-se3p/hero.webp",
+    "alt": "Blue pre-facelift Mazda RX-8 photographed from the front three-quarter angle in a car park, showing its four-door quad-coupe silhouette with no visible B-pillar",
+    "width": 1600,
+    "height": 787,
+    "caption": "The RX-8's quad-coupe body: a real four-seat cabin reached through rear-hinged half-doors and no B-pillar, built around a rotary engine to keep it compact.",
+    "credit": {
+      "author": "IFCAR",
+      "title": "File:Mazda RX-8.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_RX-8.jpg",
+      "licenseType": "public-domain",
+      "licenseNote": "Released into the public domain by the photographer."
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/mazda-rx-8-se3p/gallery-1.webp",
+      "alt": "Open front and rear doors of a Mazda RX-8 showing the pillarless side structure and red rear seat",
+      "width": 1200,
+      "height": 900,
+      "caption": "The rear-hinged \"freestyle\" doors open only once the front doors are open; the leading edge of the rear door stands in for a B-pillar.",
+      "credit": {
+        "author": "メルビル",
+        "title": "File:RX-8 SE3P-BACKDOOR.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:RX-8_SE3P-BACKDOOR.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mazda-rx-8"]
+}

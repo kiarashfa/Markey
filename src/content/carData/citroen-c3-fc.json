@@ -1,0 +1,271 @@
+{
+  "id": "citroen-c3-fc",
+  "name": "Citroën C3 (FC/FN)",
+  "fullName": "Citroën C3 (FC/FN), 2002-2010",
+  "kind": "generation",
+  "parent": "citroen-c3",
+  "brandRef": "citroen",
+  "generationCode": "FC/FN",
+  "productionYears": {
+    "start": 2002,
+    "end": 2010
+  },
+  "bodyStyles": [
+    "hatchback",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Donato Coco and Jean-Pierre Ploue",
+  "assembly": [
+    "Aulnay-sous-Bois, France",
+    "Villaverde, Madrid, Spain",
+    "Porto Real, Brazil (PSA Brasil)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3850,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+      "sourceNote": "Hatchback figure; the Pluriel convertible is 3,934 mm."
+    },
+    "width": {
+      "value": 1670,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+      "sourceNote": "Hatchback figure; the Pluriel convertible is 1,700 mm."
+    },
+    "height": {
+      "value": 1490,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+    },
+    "wheelbase": {
+      "value": 2460,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+    },
+    "kerbWeight": {
+      "value": 953,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+      "sourceNote": "Published as a 953-1,050 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-1-tu1",
+      "name": "1.1 TU1",
+      "productionYears": {
+        "start": 2002,
+        "end": 2010
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "TU1",
+        "configuration": "inline-4, PSA TU1",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1124,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 45,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+        "sourceNote": "Published directly in kW."
+      },
+      "torque": {
+        "value": 94,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-4-tu3",
+      "name": "1.4 TU3",
+      "productionYears": {
+        "start": 2002,
+        "end": 2010
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual or 5-speed SensoDrive automated manual",
+      "engine": {
+        "code": "TU3",
+        "configuration": "inline-4, PSA TU3",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1360,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 56,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+        "sourceNote": "Published directly in kW."
+      },
+      "torque": {
+        "value": 118,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-4-dv4-hdi",
+      "name": "1.4 HDi",
+      "productionYears": {
+        "start": 2002,
+        "end": 2010
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "DV4",
+        "configuration": "inline-4 common-rail turbo-diesel, Ford DLD/DV4 HDi",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1398,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 51,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+        "sourceNote": "Published directly in kW. A 16-valve, 68 kW tune of the same displacement was also offered until it was discontinued in 2005 for failing to meet Euro 4 emissions, and is not this trim."
+      },
+      "torque": {
+        "value": 160,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-tu5",
+      "name": "1.6 TU5",
+      "productionYears": {
+        "start": 2002,
+        "end": 2010
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed automatic",
+      "engine": {
+        "code": "TU5",
+        "configuration": "inline-4 16v, PSA TU5",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1587,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 81,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+        "sourceNote": "Published directly in kW. This was the only engine offered with the optional 4-speed hydraulic automatic transmission."
+      },
+      "torque": {
+        "value": 146,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/citroen-c3-fc/hero.webp",
+    "alt": "Silver first-generation Citroën C3 hatchback photographed from the front three-quarter angle, Exclusive facelift trim",
+    "width": 1600,
+    "height": 875,
+    "caption": "The original C3, launched in 2002 sharing its platform with the Peugeot 1007 and 206.",
+    "credit": {
+      "author": "OSX",
+      "title": "File:2006 Citroën C3 (MY06) Exclusive hatchback (2011-12-06) 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Citro%C3%ABn_C3_(MY06)_Exclusive_hatchback_(2011-12-06)_01.jpg",
+      "licenseType": "public-domain"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/citroen-c3-fc/gallery-1.webp",
+      "alt": "Rear three-quarter view of a silver first-generation Citroën C3 hatchback",
+      "width": 1200,
+      "height": 713,
+      "caption": "A 2005 facelift ('MY06') car in Exclusive trim.",
+      "credit": {
+        "author": "OSX",
+        "title": "File:2006 Citroën C3 (MY06) Exclusive hatchback (2011-12-06) 02.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Citro%C3%ABn_C3_(MY06)_Exclusive_hatchback_(2011-12-06)_02.jpg",
+        "licenseType": "public-domain"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-citroen-c3"
+  ]
+}

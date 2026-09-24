@@ -1,0 +1,20 @@
+{
+  "id": "renault-twingo",
+  "name": "Renault Twingo",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "renault",
+  "productionYears": {
+    "start": 1992,
+    "end": null
+  },
+  "segment": "a-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-renault-twingo",
+    "wikipedia-renault-twingo-e-tech"
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "id": "kia-picanto-sa",
+  "name": "Kia Picanto (SA)",
+  "fullName": "Kia Picanto (SA), 2003-2011",
+  "kind": "generation",
+  "parent": "kia-picanto",
+  "brandRef": "kia",
+  "generationCode": "SA",
+  "productionYears": {
+    "start": 2003,
+    "end": 2011
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel",
+    "lpg"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "assembly": [
+    "Seosan, South Korea (Donghee)",
+    "Gurun, Kedah, Malaysia (Naza)",
+    "Chu Lai, Vietnam (Thaco Kia)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3535,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-picanto",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+    },
+    "width": {
+      "value": 1595,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-picanto",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+    },
+    "height": {
+      "value": 1480,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-picanto",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+    },
+    "wheelbase": {
+      "value": 2370,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-picanto",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+    },
+    "kerbWeight": {
+      "value": 836,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-kia-picanto",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto",
+      "sourceNote": "Published as an 836-945 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0",
+      "name": "1.0",
+      "productionYears": {
+        "start": 2003,
+        "end": 2011
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual or 4-speed automatic",
+      "engine": {
+        "code": "G4HC",
+        "configuration": "inline-4, Epsilon",
+        "cylinders": 4,
+        "displacement": {
+          "value": 999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-kia-picanto",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 45,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-kia-picanto",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto",
+        "sourceNote": "61 PS, converted at 1 PS = 0.73549875 kW (44.9 kW, rounded to 45)."
+      },
+      "torque": {
+        "value": 86,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-kia-picanto",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+      },
+      "fuelEconomy": {
+        "value": 5.1,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-kia-picanto",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto",
+        "sourceNote": "Published directly as a combined 5.1 L/100km figure; cycle not named in the source."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-1",
+      "name": "1.1",
+      "productionYears": {
+        "start": 2003,
+        "end": 2011
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual or 4-speed automatic",
+      "engine": {
+        "code": "G4HG",
+        "configuration": "inline-4, Epsilon",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1086,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-kia-picanto",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 48,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-kia-picanto",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto",
+        "sourceNote": "65 PS, converted at 1 PS = 0.73549875 kW (47.8 kW, rounded to 48)."
+      },
+      "torque": {
+        "value": 97,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-kia-picanto",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+      },
+      "fuelEconomy": {
+        "value": 5.2,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-kia-picanto",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto",
+        "sourceNote": "Published directly as a combined 5.2 L/100km figure; cycle not named in the source."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-1-crdi",
+      "name": "1.1 CRDi",
+      "productionYears": {
+        "start": 2003,
+        "end": 2011
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "D3FA",
+        "configuration": "inline-3 CRDi-VGT turbo-diesel, U",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1120,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-kia-picanto",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 55,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-kia-picanto",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto",
+        "sourceNote": "75 PS, converted at 1 PS = 0.73549875 kW (55.2 kW, rounded to 55)."
+      },
+      "torque": {
+        "value": 153,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-kia-picanto",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+      },
+      "fuelEconomy": {
+        "value": 4.4,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-kia-picanto",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto",
+        "sourceNote": "Published directly as a combined 4.4 L/100km figure; cycle not named in the source."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/kia-picanto-sa/hero.webp",
+    "alt": "Blue first-generation Kia Picanto five-door hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 940,
+    "caption": "The original Picanto, revealed at the 2003 Frankfurt Motor Show on a shortened Hyundai Getz platform.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2004 Kia Picanto LX 1.1 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2004_Kia_Picanto_LX_1.1_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/kia-picanto-sa/gallery-1.webp",
+      "alt": "Rear three-quarter view of a blue first-generation Kia Picanto hatchback",
+      "width": 1200,
+      "height": 728,
+      "caption": "A pre-facelift UK-market car, badged LX.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2004 Kia Picanto LX 1.1 Rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2004_Kia_Picanto_LX_1.1_Rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-kia-picanto"
+  ]
+}

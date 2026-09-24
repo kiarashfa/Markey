@@ -1,0 +1,122 @@
+{
+  "id": "fiat-uno-327",
+  "name": "Fiat Uno (Type 327, \"Novo Uno\")",
+  "fullName": "Fiat Uno (Type 327, \"Novo Uno\"), 2010-2021 (Brazil)",
+  "kind": "generation",
+  "parent": "fiat-uno",
+  "brandRef": "fiat",
+  "generationCode": "Type 327",
+  "productionYears": {
+    "start": 2010,
+    "end": 2021
+  },
+  "bodyStyles": ["hatchback"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["fwd"],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "assembly": ["FCA Brasil, Betim, Brazil"],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 3770,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-fiat-uno",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Uno"
+    },
+    "width": {
+      "value": 1640,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-fiat-uno",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Uno"
+    },
+    "height": {
+      "value": 1490,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-fiat-uno",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Uno"
+    },
+    "wheelbase": {
+      "value": 2376,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-fiat-uno",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Uno"
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0-fire-evo",
+      "name": "1.0 Fire Evo",
+      "productionYears": { "start": 2010, "end": 2021 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "FIRE Evo",
+        "configuration": "inline-4, flex-fuel (ethanol/petrol)",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 54.43,
+        "unit": "kW",
+        "status": "estimated",
+        "source": "wikipedia-fiat-uno",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Uno",
+        "sourceNote": "Source states '74 hp' without specifying metric (PS/cv) or mechanical horsepower. Converted here as metric PS (74 x 0.73549875 = 54.43 kW), the convention Brazilian flex-fuel spec sheets normally use; reading it as mechanical hp instead would give 55.18 kW, about 1.4% higher."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-4-fire-evo",
+      "name": "1.4 Fire Evo",
+      "productionYears": { "start": 2010, "end": 2021 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "FIRE Evo",
+        "configuration": "inline-4, flex-fuel (ethanol/petrol)",
+        "cylinders": 4
+      },
+      "power": {
+        "value": 63.99,
+        "unit": "kW",
+        "status": "estimated",
+        "source": "wikipedia-fiat-uno",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Uno",
+        "sourceNote": "Source states '87 hp' without specifying metric (PS/cv) or mechanical horsepower. Converted here as metric PS (87 x 0.73549875 = 63.99 kW), the convention Brazilian flex-fuel spec sheets normally use; reading it as mechanical hp instead would give 64.87 kW, about 1.4% higher."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/fiat-uno-327/hero.webp",
+    "alt": "Silver second-generation Fiat Uno (Type 327) photographed from the front three-quarter angle, showing its rounded, more modern hatchback body",
+    "width": 1024,
+    "height": 726,
+    "caption": "The \"Novo Uno\": a Brazil-only, Brazil-built car sharing nothing but a name with the 1983 original, styled as an urban take on the Fiat Panda over Fiat Palio underpinnings.",
+    "credit": {
+      "author": "juan elo; cropped and digitally altered by Mr.choppers",
+      "title": "File:2011 Fiat Uno 1.4 Attractive.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Fiat_Uno_1.4_Attractive.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-fiat-uno"]
+}

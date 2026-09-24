@@ -1,0 +1,230 @@
+{
+  "id": "hyundai-tucson-nx4",
+  "name": "Hyundai Tucson (NX4)",
+  "fullName": "Hyundai Tucson (NX4), 2020-present",
+  "kind": "generation",
+  "parent": "hyundai-tucson",
+  "brandRef": "hyundai",
+  "generationCode": "NX4",
+  "productionYears": {
+    "start": 2020,
+    "end": null
+  },
+  "bodyStyles": [
+    "crossover"
+  ],
+  "powertrains": [
+    "petrol",
+    "hybrid",
+    "phev"
+  ],
+  "drivetrains": [
+    "fwd",
+    "awd"
+  ],
+  "segment": "suv-compact",
+  "positioning": "mainstream",
+  "designer": "Kim Jun-Ho",
+  "assembly": [
+    "Ulsan, South Korea",
+    "Nosovice, Czechia (Hyundai Motor Manufacturing Czech)",
+    "Montgomery, Alabama, US (Hyundai Motor Manufacturing Alabama)",
+    "Beijing, China (Beijing Hyundai)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4500,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-tucson",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+      "sourceNote": "Short-wheelbase (SWB) version sold in Europe and the Middle East, published as a 4,500-4,510 mm range; the long-wheelbase (LWB) version sold in most other markets is 4,630-4,670 mm. Lowest figure of the SWB range recorded here."
+    },
+    "width": {
+      "value": 1865,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-tucson",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson"
+    },
+    "height": {
+      "value": 1650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-tucson",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+      "sourceNote": "Published as a 1,650-1,690 mm range depending on wheelbase/trim; lowest figure recorded here."
+    },
+    "wheelbase": {
+      "value": 2680,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-tucson",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+      "sourceNote": "Short-wheelbase (SWB) figure; the long-wheelbase (LWB) version used in most non-European markets is 2,755 mm."
+    },
+    "kerbWeight": {
+      "value": 1491,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-hyundai-tucson",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+      "sourceNote": "Published as a 1,491-1,700 kg range across the line-up, including hybrid and PHEV variants; the lowest figure is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-6-t-gdi",
+      "name": "1.6 T-GDi",
+      "productionYears": {
+        "start": 2020,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 7,
+      "transmission": "7-speed dual-clutch",
+      "engine": {
+        "code": "G4FP",
+        "configuration": "inline-4 turbocharged, Smartstream G1.6",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-hyundai-tucson",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 132,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "180 PS at 5,500 rpm, converted at 1 PS = 0.73549875 kW (132.4 kW, rounded to 132)."
+      },
+      "torque": {
+        "value": 265,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "27 kgf-m at 1,500-4,500 rpm, converted at 9.80665 N per kgf (264.8 N-m, rounded to 265)."
+      },
+      "zeroToHundredKph": {
+        "value": 8.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "FWD figure; AWD is quoted at 9.0s."
+      },
+      "topSpeed": {
+        "value": 201,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-0-mpi",
+      "name": "2.0 MPi",
+      "productionYears": {
+        "start": 2021,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 6,
+      "transmission": "6-speed manual or 6-speed automatic",
+      "engine": {
+        "code": "G4NJ",
+        "configuration": "inline-4, Smartstream G2.0 MPi",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-hyundai-tucson",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 115,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "156 PS at 6,200 rpm, converted at 1 PS = 0.73549875 kW (114.7 kW, rounded to 115)."
+      },
+      "torque": {
+        "value": 192,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "19.6 kgf-m at 4,500 rpm, converted at 9.80665 N per kgf (192.2 N-m, rounded to 192)."
+      },
+      "zeroToHundredKph": {
+        "value": 10.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "FWD with 6-speed manual. AWD is quoted at 11.1s; the automatic-gearbox version is slightly slower again."
+      },
+      "topSpeed": {
+        "value": 186,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/hyundai-tucson-nx4/hero.webp",
+    "alt": "Dark grey fourth-generation Hyundai Tucson photographed from the front three-quarter angle, showing its angular jewel-like grille and geometric daytime running lights",
+    "width": 1600,
+    "height": 858,
+    "caption": "The NX4, launched in 2020 with sharply faceted bodywork and Hyundai's 'parametric jewel' grille.",
+    "credit": {
+      "author": "SsmIntrigue",
+      "title": "File:2022 Hyundai Tucson Preferred, Front Right, 05-24-2021.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Hyundai_Tucson_Preferred,_Front_Right,_05-24-2021.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/hyundai-tucson-nx4/gallery-1.webp",
+      "alt": "Rear three-quarter view of a grey long-wheelbase Hyundai Tucson Limited, showing the connected LED tail light bar",
+      "width": 1200,
+      "height": 762,
+      "caption": "The long-wheelbase version sold in North America and most markets outside Europe.",
+      "credit": {
+        "author": "Kevauto",
+        "title": "File:2024 Hyundai Tucson Limited, rear 12.10.24.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Hyundai_Tucson_Limited,_rear_12.10.24.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-hyundai-tucson"
+  ]
+}

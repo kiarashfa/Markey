@@ -1,0 +1,268 @@
+{
+  "id": "citroen-ds-1955",
+  "name": "Citroën DS",
+  "fullName": "Citroën DS/ID, 1955-1975",
+  "kind": "generation",
+  "parent": "citroen-ds",
+  "brandRef": "citroen",
+  "productionYears": {
+    "start": 1955,
+    "end": 1975
+  },
+  "bodyStyles": [
+    "saloon",
+    "estate",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "e-segment",
+  "positioning": "premium",
+  "designer": "Flaminio Bertoni and Andre Lefebvre; Robert Opron (1967 facelift)",
+  "assembly": [
+    "Paris, France (Quai de Javel / Quai Andre-Citroen)",
+    "Slough, United Kingdom",
+    "Mangualde, Portugal",
+    "Heidelberg, Victoria, Australia",
+    "Johannesburg, South Africa",
+    "Koper, Yugoslavia (Cimos)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4826,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-ds",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS",
+      "sourceNote": "Saloon figure; the Safari estate is 4,991 mm."
+    },
+    "width": {
+      "value": 1791,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-ds",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS"
+    },
+    "height": {
+      "value": 1464,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-ds",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS",
+      "sourceNote": "Saloon figure; the Safari estate is 1,537 mm."
+    },
+    "wheelbase": {
+      "value": 3124,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-ds",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS"
+    },
+    "kerbWeight": {
+      "value": 1270,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-citroen-ds",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS",
+      "sourceNote": "Saloon figure; the Safari estate is 1,384 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "id19",
+      "name": "ID 19",
+      "productionYears": {
+        "start": 1957,
+        "end": 1969
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1911,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-ds",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 51,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-ds",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS",
+        "sourceNote": "69 hp (DIN, i.e. metric PS), converted at 1 PS = 0.73549875 kW (50.7 kW, rounded to 51). A cheaper, less powerful submodel of the DS, sharing its body but with a conventional, non-hydraulic clutch and no power steering."
+      },
+      "dragCoefficient": {
+        "value": 0.36,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-drag-coefficients",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Automobile_drag_coefficient",
+        "sourceNote": "Listed for the DS body shape generally, not the ID submodel specifically; the two share the same body."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "ds19",
+      "name": "DS 19",
+      "productionYears": {
+        "start": 1955,
+        "end": 1968
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1911,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-ds",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 55,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-ds",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS",
+        "sourceNote": "75 hp (DIN, i.e. metric PS) as claimed at launch, converted at 1 PS = 0.73549875 kW (55.2 kW, rounded to 55). A 1961 update with a Weber twin-choke carburettor and higher compression raised this to a claimed 83 hp DIN (61.0 kW), which is not this figure."
+      },
+      "dragCoefficient": {
+        "value": 0.36,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-drag-coefficients",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Automobile_drag_coefficient"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "ds21",
+      "name": "DS 21",
+      "productionYears": {
+        "start": 1965,
+        "end": 1972
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2175,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-ds",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 78,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-ds",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS",
+        "sourceNote": "106 hp DIN (metric PS) for the carburetted version at introduction, converted at 1 PS = 0.73549875 kW (78.0 kW). Power increased again from 1970 with the option of Bosch electronic fuel injection, one of the first mass-market applications of the technology; that later figure is not recorded here."
+      },
+      "dragCoefficient": {
+        "value": 0.36,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-drag-coefficients",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Automobile_drag_coefficient"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "ds23-ie",
+      "name": "DS 23 ie",
+      "productionYears": {
+        "start": 1973,
+        "end": 1975
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "configuration": "inline-4, Bosch electronic fuel injection",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2347,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-ds",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 96,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-ds",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS",
+        "sourceNote": "The most powerful production DS: 130 hp DIN (metric PS), converted at 1 PS = 0.73549875 kW (95.6 kW, rounded to 96). The same engine is also quoted at 141 hp SAE gross, a different measurement standard for the same physical engine, not a disagreement between sources — the DIN figure is used here as the European home-market standard."
+      },
+      "dragCoefficient": {
+        "value": 0.36,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-drag-coefficients",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Automobile_drag_coefficient"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/citroen-ds/hero.webp",
+    "alt": "Maroon Citroën DS23 Pallas saloon photographed from the front three-quarter angle, showing its low, sculpted nose and covered rear wheel arches",
+    "width": 1600,
+    "height": 1205,
+    "caption": "A late DS23, the most powerful and last of the line, in Pallas luxury trim.",
+    "credit": {
+      "author": "PLawrence99cx",
+      "title": "File:1974 Citroen DS23 Pallas.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1974_Citroen_DS23_Pallas.jpg",
+      "licenseType": "public-domain"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/citroen-ds/gallery-1.webp",
+      "alt": "White Citroën ID19B saloon photographed from the front three-quarter angle",
+      "width": 1200,
+      "height": 900,
+      "caption": "The ID: a cheaper, less powerful submodel sharing the DS body but without its hydraulic clutch or power steering.",
+      "credit": {
+        "author": "Alf van Beem",
+        "title": "File:1967 Citroen ID19B pic3.JPG",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1967_Citroen_ID19B_pic3.JPG",
+        "licenseType": "cc0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-citroen-ds",
+    "wikipedia-drag-coefficients"
+  ]
+}

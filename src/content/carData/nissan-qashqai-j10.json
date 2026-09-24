@@ -1,0 +1,134 @@
+{
+  "id": "nissan-qashqai-j10",
+  "name": "Nissan Qashqai (J10)",
+  "fullName": "Nissan Qashqai (J10), 2006-2013",
+  "kind": "generation",
+  "parent": "nissan-qashqai",
+  "brandRef": "nissan",
+  "generationCode": "J10",
+  "productionYears": {
+    "start": 2006,
+    "end": 2013
+  },
+  "bodyStyles": ["crossover"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "suv-compact",
+  "positioning": "mainstream",
+  "designer": "Darryl Scriven, Masaki Aikawa and Patrick Reimer",
+  "assembly": [
+    "Nissan, Sunderland, United Kingdom (NMUK)",
+    "Nissan, Kanda, Fukuoka, Japan (JDM Dualis only)",
+    "Dongfeng Nissan, Xiangfan, China",
+    "Pars Khodro, Tehran, Iran"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4315,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-qashqai",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai",
+      "sourceNote": "Standard body; the seven-seat Qashqai+2 was 4,535 mm."
+    },
+    "width": { "value": 1785, "unit": "mm", "status": "verified", "source": "wikipedia-nissan-qashqai", "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai" },
+    "height": { "value": 1605, "unit": "mm", "status": "verified", "source": "wikipedia-nissan-qashqai", "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai" },
+    "wheelbase": {
+      "value": 2630,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-qashqai",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai",
+      "sourceNote": "Standard body; the Qashqai+2 was 2,760 mm."
+    }
+  },
+  "trims": [
+    {
+      "id": "2-0-dci-m9r",
+      "name": "2.0 dCi",
+      "productionYears": { "start": 2006, "end": 2010 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "M9R",
+        "configuration": "inline-4, turbo-diesel",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 110,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-nissan-qashqai",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai",
+        "sourceNote": "Stated directly in kW as the launch 2.0 dCi's peak output, before it was replaced by the 1.6 dCi from 2010."
+      },
+      "torque": {
+        "value": 320,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-nissan-qashqai",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai",
+        "sourceNote": "At 2,000 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-dci-r9m",
+      "name": "1.6 dCi",
+      "productionYears": { "start": 2010, "end": 2013 },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "R9M",
+        "configuration": "inline-4, turbo-diesel",
+        "cylinders": 4,
+        "displacement": { "value": 1598, "unit": "cc", "status": "verified", "source": "wikipedia-nissan-qashqai", "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai" },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 96,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-nissan-qashqai",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai",
+        "sourceNote": "Stated directly in kW, replacing the 2.0 dCi's 110 kW from the 2010 facelift, with the same 320 N-m torque now available at 1,750 rpm rather than 2,000 rpm."
+      },
+      "torque": {
+        "value": 320,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-nissan-qashqai",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai",
+        "sourceNote": "At 1,750 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": [
+        { "market": "Japan/Australia", "alsoKnownAs": "Nissan Dualis", "overrides": {} }
+      ]
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/nissan-qashqai-j10/hero.webp",
+    "alt": "Black first-generation Nissan Qashqai photographed from the front three-quarter angle, showing its rounded crossover body and high beltline",
+    "width": 1600,
+    "height": 829,
+    "caption": "A \"mini-Murano\": Nissan built the first Qashqai to give C-segment hatchback buyers SUV looks without X-Trail size or running costs, and it defined the compact-crossover segment that followed.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2007 Nissan Qashqai Visia DCi 2WD 1.5 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Nissan_Qashqai_Visia_DCi_2WD_1.5_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-nissan-qashqai"]
+}

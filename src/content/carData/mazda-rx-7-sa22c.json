@@ -1,0 +1,142 @@
+{
+  "id": "mazda-rx-7-sa22c",
+  "name": "Mazda RX-7 (SA22C/FB)",
+  "fullName": "Mazda RX-7 (SA22C/FB), 1978-1985",
+  "kind": "generation",
+  "parent": "mazda-rx-7",
+  "brandRef": "mazda",
+  "generationCode": "SA22C/FB",
+  "productionYears": {
+    "start": 1978,
+    "end": 1985
+  },
+  "bodyStyles": ["coupe"],
+  "powertrains": ["rotary"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "mainstream",
+  "assembly": ["Mazda, Hiroshima, Japan (Hiroshima Assembly)"],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4285,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mazda-rx-7",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7"
+    },
+    "width": {
+      "value": 1675,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mazda-rx-7",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7"
+    },
+    "height": {
+      "value": 1260,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mazda-rx-7",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7"
+    },
+    "wheelbase": {
+      "value": 2420,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mazda-rx-7",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7"
+    }
+  },
+  "trims": [
+    {
+      "id": "12a",
+      "name": "12A",
+      "productionYears": { "start": 1978, "end": 1985 },
+      "drivetrain": "rwd",
+      "powertrain": "rotary",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "12A",
+        "configuration": "twin-rotor Wankel",
+        "displacement": {
+          "value": 1146,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mazda-rx-7",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 74.57,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mazda-rx-7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7",
+        "sourceNote": "100 hp (SAE net) at 6,000 rpm for North American-market cars, converted at 1 hp = 0.74569987 kW."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gsl-se-13b",
+      "name": "GSL-SE 13B",
+      "productionYears": { "start": 1984, "end": 1985 },
+      "drivetrain": "rwd",
+      "powertrain": "rotary",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "13B RE-EGI",
+        "configuration": "twin-rotor Wankel, fuel injected",
+        "displacement": {
+          "value": 1308,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mazda-rx-7",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 100.67,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mazda-rx-7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7",
+        "sourceNote": "135 hp, converted at 1 hp = 0.74569987 kW."
+      },
+      "torque": {
+        "value": 180,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mazda-rx-7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7"
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mazda-rx-7-sa22c/hero.webp",
+    "alt": "Gold first-generation Mazda RX-7 GSL photographed from the front three-quarter angle, showing its pop-up headlight covers and low, wedge-shaped nose",
+    "width": 1600,
+    "height": 888,
+    "caption": "The GSL: the pop-up headlights and Kammback tail that carried the RX-7's rotary engine to a wider audience than the Cosmo ever reached.",
+    "credit": {
+      "author": "Mr.choppers",
+      "title": "File:1983 Mazda RX-7 GSL, front left.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1983_Mazda_RX-7_GSL,_front_left.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mazda-rx-7"]
+}

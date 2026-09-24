@@ -1,0 +1,113 @@
+{
+  "id": "chevrolet-impala-1st",
+  "name": "Chevrolet Impala (first generation)",
+  "fullName": "Chevrolet Impala (first generation), 1958",
+  "kind": "generation",
+  "parent": "chevrolet-impala",
+  "brandRef": "chevrolet",
+  "generationCode": "GM B-body (1st gen)",
+  "productionYears": {
+    "start": 1957,
+    "end": 1958
+  },
+  "bodyStyles": ["coupe", "convertible"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "e-segment",
+  "positioning": "mainstream",
+  "designer": "Joe Schemansky",
+  "assembly": [
+    "Chevrolet, Flint, Michigan, United States",
+    "Chevrolet, Baltimore, Maryland, United States",
+    "Chevrolet, Janesville, Wisconsin, United States",
+    "Chevrolet, Atlanta, Georgia, United States",
+    "Chevrolet, Kansas City, Missouri, United States",
+    "Chevrolet, Norwood, Ohio, United States",
+    "Chevrolet, Oakland, California, United States",
+    "Chevrolet, St. Louis, Missouri, United States",
+    "Chevrolet, North Tarrytown, New York, United States",
+    "Chevrolet, Van Nuys, California, United States"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": { "value": 5310, "unit": "mm", "status": "verified", "source": "wikipedia-chevrolet-impala", "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala" },
+    "width": { "value": 1975, "unit": "mm", "status": "verified", "source": "wikipedia-chevrolet-impala", "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala" },
+    "height": { "value": 1450, "unit": "mm", "status": "verified", "source": "wikipedia-chevrolet-impala", "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala" },
+    "wheelbase": { "value": 2985, "unit": "mm", "status": "verified", "source": "wikipedia-chevrolet-impala", "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala" }
+  },
+  "trims": [
+    {
+      "id": "283-turbo-fire",
+      "name": "283 Turbo Fire V8",
+      "productionYears": { "start": 1957, "end": 1958 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "3-speed manual",
+      "gears": 3,
+      "engine": {
+        "code": "Turbo Fire",
+        "configuration": "V8",
+        "cylinders": 8,
+        "displacement": { "value": 4638, "unit": "cc", "status": "verified", "source": "wikipedia-chevrolet-impala", "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala", "sourceNote": "283 cubic inches, converted at 16.387064 cc/cu in." },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 137.95,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-impala",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+        "sourceNote": "185 hp, the standard rating for the 283 V8; the same engine was also offered at 230 hp and, with optional Rochester Ramjet fuel injection, 250 hp. Converted at 1 hp = 0.74569987 kW."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "348-w-series",
+      "name": "348 W-series Turbo Thrust V8",
+      "productionYears": { "start": 1958, "end": 1958 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "3-speed manual",
+      "gears": 3,
+      "engine": {
+        "code": "W-series",
+        "configuration": "V8, big-block",
+        "cylinders": 8,
+        "displacement": { "value": 5703, "unit": "cc", "status": "verified", "source": "wikipedia-chevrolet-impala", "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala", "sourceNote": "348 cubic inches, converted at 16.387064 cc/cu in." },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 208.8,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-impala",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+        "sourceNote": "280 hp with triple two-barrel carburettors, the higher of two 348 tunes (the other, with a single four-barrel, made 250 hp). Converted at 1 hp = 0.74569987 kW."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/chevrolet-impala-1st/hero.webp",
+    "alt": "Red and white 1958 Chevrolet Bel Air Impala Sport Coupe photographed from the front three-quarter angle, showing its chrome grille and tailfins",
+    "width": 1600,
+    "height": 966,
+    "caption": "The Impala started life as the top-of-the-range Bel Air trim rather than a model in its own right, built on Chevrolet's new, more torsionally rigid X-frame.",
+    "credit": {
+      "author": "MercurySable99",
+      "title": "File:1958 Chevrolet Bel Air Impala Sport Coupe, front left, 06-15-2024.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1958_Chevrolet_Bel_Air_Impala_Sport_Coupe,_front_left,_06-15-2024.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-chevrolet-impala"]
+}

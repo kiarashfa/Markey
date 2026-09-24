@@ -1,0 +1,119 @@
+{
+  "id": "nissan-qashqai-j12",
+  "name": "Nissan Qashqai (J12)",
+  "fullName": "Nissan Qashqai (J12), 2021-present",
+  "kind": "generation",
+  "parent": "nissan-qashqai",
+  "brandRef": "nissan",
+  "generationCode": "J12",
+  "productionYears": {
+    "start": 2021,
+    "end": null
+  },
+  "bodyStyles": ["crossover"],
+  "powertrains": ["mild-hybrid", "hybrid"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "suv-compact",
+  "positioning": "mainstream",
+  "assembly": [
+    "Nissan, Sunderland, United Kingdom (NMUK)",
+    "Dongfeng Nissan, Dalian, China"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": { "value": 4425, "unit": "mm", "status": "verified", "source": "wikipedia-nissan-qashqai", "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai" },
+    "width": { "value": 1838, "unit": "mm", "status": "verified", "source": "wikipedia-nissan-qashqai", "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai" },
+    "height": { "value": 1635, "unit": "mm", "status": "verified", "source": "wikipedia-nissan-qashqai", "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai" },
+    "wheelbase": { "value": 2666, "unit": "mm", "status": "verified", "source": "wikipedia-nissan-qashqai", "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai" }
+  },
+  "trims": [
+    {
+      "id": "1-3-dig-t-103kw",
+      "name": "1.3 DIG-T mild hybrid",
+      "productionYears": { "start": 2021, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "mild-hybrid",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "HR13DDT",
+        "configuration": "inline-4, turbocharged, 12V mild-hybrid assist",
+        "cylinders": 4,
+        "displacement": { "value": 1332, "unit": "cc", "status": "verified", "source": "wikipedia-nissan-qashqai", "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai" },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 103,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-nissan-qashqai",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai",
+        "sourceNote": "Stated directly in kW (138 hp) at 5,500 rpm; the infobox's own powerout field lists this engine's two tunes in kW rather than requiring a PS/hp conversion."
+      },
+      "torque": {
+        "value": 220,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-nissan-qashqai",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai",
+        "sourceNote": "At 1,500-3,500 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-3-dig-t-117kw",
+      "name": "1.3 DIG-T mild hybrid (156 hp)",
+      "productionYears": { "start": 2021, "end": null },
+      "drivetrain": "awd",
+      "powertrain": "mild-hybrid",
+      "transmission": "CVT-Xtronic",
+      "engine": {
+        "code": "HR13DDT",
+        "configuration": "inline-4, turbocharged, 12V mild-hybrid assist",
+        "cylinders": 4,
+        "displacement": { "value": 1332, "unit": "cc", "status": "verified", "source": "wikipedia-nissan-qashqai", "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai" },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 117,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-nissan-qashqai",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai",
+        "sourceNote": "Stated directly in kW (157 hp). This is the only tune offered with the all-wheel-drive CVT option."
+      },
+      "torque": {
+        "value": 270,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-nissan-qashqai",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_Qashqai",
+        "sourceNote": "At 1,800-3,500 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/nissan-qashqai-j12/hero.webp",
+    "alt": "White third-generation Nissan Qashqai photographed from the front three-quarter angle, showing its sharper, more angular styling",
+    "width": 1600,
+    "height": 927,
+    "caption": "The current Qashqai: built on the same CMF-CD platform as the Nissan X-Trail and Renault Austral, and the first Qashqai offered with a series-hybrid e-Power option.",
+    "credit": {
+      "author": "© M 93",
+      "title": "File:Nissan Qashqai (III) – f 11102025.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_Qashqai_(III)_%E2%80%93_f_11102025.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-nissan-qashqai"]
+}

@@ -1,0 +1,214 @@
+{
+  "id": "lada-vaz-2101-1970",
+  "name": "Lada VAZ-2101",
+  "fullName": "Lada VAZ-2101 (Zhiguli / Lada 1200), 1970-1988",
+  "kind": "generation",
+  "parent": "lada-vaz-2101",
+  "brandRef": "lada",
+  "generationCode": "VAZ-2101",
+  "productionYears": {
+    "start": 1970,
+    "end": 1988
+  },
+  "bodyStyles": ["saloon"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "assembly": ["AvtoVAZ, Tolyatti, Samara Oblast, Soviet Union"],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 4073,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-vaz-2101",
+      "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101",
+      "sourceNote": "Saloon length from the manufacturer specification table. The article's infobox separately rounds this to 4,075 mm for the saloon."
+    },
+    "width": {
+      "value": 1611,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-vaz-2101",
+      "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101"
+    },
+    "height": {
+      "value": 1440,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-vaz-2101",
+      "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101"
+    },
+    "wheelbase": {
+      "value": 2424,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-vaz-2101",
+      "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101"
+    }
+  },
+  "trims": [
+    {
+      "id": "vaz-2101",
+      "name": "VAZ-2101 1.2",
+      "productionYears": { "start": 1970, "end": 1982 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "VAZ-2101",
+        "configuration": "inline-4, overhead camshaft",
+        "cylinders": 4,
+        "displacement": { "value": 1198, "unit": "cc", "status": "verified", "source": "wikipedia-vaz-2101", "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 44,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-vaz-2101",
+        "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101",
+        "sourceNote": "Rated power per DIN 70020 at 5,600 rpm, from the manufacturer specification table. The same engine is also rated 46 kW under the Soviet GOST-14846 standard and 48 kW under SAE J1349; DIN is recorded here as the figure most directly comparable with this site's other European-market entries."
+      },
+      "torque": {
+        "value": 87,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-vaz-2101",
+        "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101",
+        "sourceNote": "Per GOST-14846, at 3,400 rpm; no DIN torque figure is given."
+      },
+      "mass": {
+        "value": 945,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-vaz-2101",
+        "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101",
+        "sourceNote": "Roadworthy (kerb) mass; dry mass is separately given as 890 kg."
+      },
+      "zeroToHundredKph": {
+        "value": 22,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-vaz-2101",
+        "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101"
+      },
+      "topSpeed": {
+        "value": 140,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-vaz-2101",
+        "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101"
+      },
+      "fuelEconomy": {
+        "value": 8.0,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-vaz-2101",
+        "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101",
+        "sourceNote": "Combined figure from the manufacturer specification table; the test cycle is not named in the source (pre-dates EPA/EU standardised cycles)."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": [
+        {
+          "market": "UK/Western Europe",
+          "alsoKnownAs": "Lada 1200",
+          "overrides": {}
+        }
+      ]
+    },
+    {
+      "id": "vaz-21011",
+      "name": "VAZ-21011 1.3",
+      "productionYears": { "start": 1974, "end": 1981 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "VAZ-21011",
+        "configuration": "inline-4, overhead camshaft",
+        "cylinders": 4,
+        "displacement": { "value": 1294, "unit": "cc", "status": "verified", "source": "wikipedia-vaz-2101", "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 51,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-vaz-2101",
+        "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101",
+        "sourceNote": "Rated power per GOST-14846 at 5,600 rpm; the specification table gives no DIN figure for this engine. The article body separately states '67 hp' for this engine without specifying whether that is metric PS or mechanical horsepower, so that figure is not used here."
+      },
+      "torque": {
+        "value": 93,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-vaz-2101",
+        "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101",
+        "sourceNote": "Per GOST-14846, at 3,400 rpm."
+      },
+      "mass": {
+        "value": 1010,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-vaz-2101",
+        "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101",
+        "sourceNote": "Roadworthy (kerb) mass."
+      },
+      "zeroToHundredKph": {
+        "value": 18,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-vaz-2101",
+        "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101"
+      },
+      "topSpeed": {
+        "value": 145,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-vaz-2101",
+        "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101"
+      },
+      "fuelEconomy": {
+        "value": 9.0,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-vaz-2101",
+        "sourceUrl": "https://en.wikipedia.org/wiki/VAZ-2101",
+        "sourceNote": "Combined figure from the manufacturer specification table; the test cycle is not named in the source."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": [
+        {
+          "market": "UK/Western Europe",
+          "alsoKnownAs": "Lada 1300",
+          "overrides": {}
+        }
+      ]
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/lada-vaz-2101/hero.webp",
+    "alt": "Red Lada VAZ-2101 saloon photographed from the front three-quarter angle, showing its rounded Fiat-derived nose and chrome bumpers",
+    "width": 1360,
+    "height": 908,
+    "caption": "A licence-built, heavily reworked Fiat 124: aluminium rear brake drums, a new NAMI-designed overhead-cam engine, raised suspension and thicker steel replaced the original wherever Soviet roads and winters demanded it.",
+    "credit": {
+      "author": "Olahjoci",
+      "title": "File:1975 VAZ 2101.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1975_VAZ_2101.jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-vaz-2101"]
+}

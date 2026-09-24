@@ -1,9 +1,9 @@
 /**
- * The flattened catalogue — SPEC.md §9.1.
+ * The flattened catalogue.
  *
  * One builder, used by three consumers: the `/catalogue.json` machine-readable
  * export, the catalog island, and the comparison and matchmaker tools. That is
- * the whole point — SPEC.md §9.1 requires the structured index to be generated
+ * the whole point — the structured index must be generated
  * "from the same content the pages render from" so the two can never disagree
  * about what matches.
  *

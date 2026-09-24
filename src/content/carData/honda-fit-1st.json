@@ -1,0 +1,105 @@
+{
+  "id": "honda-fit-1st",
+  "name": "Honda Fit (first generation)",
+  "fullName": "Honda Fit / Jazz (first generation), 2001-2008",
+  "kind": "generation",
+  "parent": "honda-fit",
+  "brandRef": "honda",
+  "generationCode": "GD/GE",
+  "productionYears": {
+    "start": 2001,
+    "end": 2008
+  },
+  "bodyStyles": ["hatchback"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["fwd", "awd"],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Mitsuhiro Honda",
+  "assembly": [
+    "Honda, Suzuka, Mie, Japan",
+    "Guangqi Honda, Guangzhou, China",
+    "Honda, Ayutthaya, Thailand",
+    "Honda Prospect Motor, Karawang, Indonesia",
+    "Honda, Santa Rosa, Philippines",
+    "Honda, Sumare, Sao Paulo, Brazil"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 3830,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-honda-fit-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Fit_(first_generation)",
+      "sourceNote": "Lowest figure in the worldwide range of 3,830-3,850 mm; US/Canada cars were longer at 3,998 mm."
+    },
+    "width": { "value": 1675, "unit": "mm", "status": "verified", "source": "wikipedia-honda-fit-first-generation", "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Fit_(first_generation)" },
+    "height": {
+      "value": 1525,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-honda-fit-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Fit_(first_generation)",
+      "sourceNote": "Lowest figure in the published range of 1,525-1,550 mm."
+    },
+    "wheelbase": { "value": 2450, "unit": "mm", "status": "verified", "source": "wikipedia-honda-fit-first-generation", "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Fit_(first_generation)" },
+    "kerbWeight": {
+      "value": 980,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-honda-fit-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Fit_(first_generation)",
+      "sourceNote": "Lowest figure in the published range of 980-1,100 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-5-vtec-us",
+      "name": "1.5 VTEC (US/Canada)",
+      "productionYears": { "start": 2006, "end": 2008 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "L15A VTEC",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": { "value": 1497, "unit": "cc", "status": "verified", "source": "wikipedia-honda-fit-first-generation", "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Fit_(first_generation)", "sourceNote": "1.5 L." },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 81,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-honda-fit-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Fit_(first_generation)",
+        "sourceNote": "Stated directly in kW (109 hp) for the sole engine sold in the US and Canada across Base and Sport trims."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": [
+        { "market": "Rest of world", "alsoKnownAs": "Honda Jazz", "overrides": {} }
+      ]
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/honda-fit-1st/hero.webp",
+    "alt": "Silver first-generation Honda Fit Sport photographed from the front three-quarter angle, showing its tall, short-nosed hatchback body",
+    "width": 1600,
+    "height": 924,
+    "caption": "Built around a fuel tank moved under the front seats rather than the rear, freeing up a flat load floor and the fold-flat \"Magic Seat\" that became the Fit's signature.",
+    "credit": {
+      "author": "IFCAR",
+      "title": "File:2007-Honda-Fit-Sport.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007-Honda-Fit-Sport.jpg",
+      "licenseType": "public-domain",
+      "licenseNote": "Released into the public domain by the photographer."
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-honda-fit-first-generation"]
+}

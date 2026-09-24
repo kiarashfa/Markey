@@ -3,7 +3,7 @@
  *
  * ## Why this exists when the real one runs on the GPU
  *
- * The validation gate (SPEC.md §9.5.1) is the thing that earns the wind tunnel
+ * The validation gate is the thing that earns the wind tunnel
  * the right to report a drag number at all. A gate that can only be run by
  * opening a browser and looking at it is not a gate — it cannot run in CI, it
  * cannot fail a build, and it rots the first time nobody checks.
@@ -286,7 +286,7 @@ export function solve(sdf: Sdf, options: SolverOptions, steps = 600): SolveResul
     if (options.movingRoad) {
       // The road moves with the free stream. A stationary floor grows a
       // boundary layer that does not exist under a real car and corrupts the
-      // underbody flow — SPEC.md §9.5.1 calls this out explicitly.
+      // underbody flow.
       for (let z = 0; z < nz; z++) {
         for (let x = 0; x < nx; x++) {
           const road = idx(x, 0, z) * Q;

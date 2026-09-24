@@ -1,0 +1,183 @@
+{
+  "id": "mazda-rx-7-fd",
+  "name": "Mazda RX-7 (FD3S)",
+  "fullName": "Mazda RX-7 (FD3S), 1991-2002",
+  "kind": "generation",
+  "parent": "mazda-rx-7",
+  "brandRef": "mazda",
+  "generationCode": "FD3S",
+  "productionYears": {
+    "start": 1991,
+    "end": 2002
+  },
+  "bodyStyles": ["coupe"],
+  "powertrains": ["rotary"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "premium",
+  "assembly": ["Mazda, Hiroshima, Japan (Hiroshima Assembly)"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4285,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mazda-rx-7",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7"
+    },
+    "width": {
+      "value": 1760,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mazda-rx-7",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7"
+    },
+    "height": {
+      "value": 1230,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mazda-rx-7",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7"
+    },
+    "wheelbase": {
+      "value": 2446,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mazda-rx-7",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7"
+    }
+  },
+  "trims": [
+    {
+      "id": "13b-rew",
+      "name": "13B-REW Twin-Turbo",
+      "productionYears": { "start": 1991, "end": 1995 },
+      "drivetrain": "rwd",
+      "powertrain": "rotary",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "13B-REW",
+        "configuration": "twin-rotor Wankel, sequential twin-turbo",
+        "displacement": {
+          "value": 1308,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mazda-rx-7",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7",
+          "sourceNote": "Same 13B displacement as the naturally aspirated engine; the REW adds Mazda/Hitachi's sequential twin-turbocharger system."
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 187.55,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mazda-rx-7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7",
+        "sourceNote": "255 PS (JIS), converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 294,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mazda-rx-7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7"
+      },
+      "mass": {
+        "value": 1260,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mazda-rx-7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7",
+        "sourceNote": "Weight for the 5-speed manual version of the initial Series 6 twin-turbo spec; the 4-speed automatic version of the same engine tune weighed 1,340 kg."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "type-rs",
+      "name": "Type RS",
+      "productionYears": { "start": 2000, "end": 2002 },
+      "drivetrain": "rwd",
+      "powertrain": "rotary",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "13B-REW",
+        "configuration": "twin-rotor Wankel, sequential twin-turbo",
+        "displacement": {
+          "value": 1308,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-mazda-rx-7",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 205.94,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mazda-rx-7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7",
+        "sourceNote": "280 PS at 6,500 rpm, the maximum output permitted under the Japanese manufacturers' gentlemen's agreement, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 314,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mazda-rx-7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7",
+        "sourceNote": "314 N-m at 5,000 rpm."
+      },
+      "mass": {
+        "value": 1280,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mazda-rx-7",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mazda_RX-7",
+        "sourceNote": "Weight reduced to 1,280 kg for the Series 8 Type RS, this generation's final Japan-only high-end specification."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mazda-rx-7-fd/hero.webp",
+    "alt": "Red third-generation Mazda RX-7 photographed from the front three-quarter angle on a racetrack, showing its smooth pop-up-headlight nose and rounded flanks",
+    "width": 1600,
+    "height": 1026,
+    "caption": "The FD3S: a single sequential twin-turbo rotary shape that stayed in production, largely unchanged, from 1991 to 2002.",
+    "credit": {
+      "author": "Mr.choppers",
+      "title": "File:1994 Mazda RX-7 R2 in Vintage Red, front left (Lime Rock).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1994_Mazda_RX-7_R2_in_Vintage_Red,_front_left_(Lime_Rock).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/mazda-rx-7-fd/gallery-1.webp",
+      "alt": "Mazda 13B-REW rotary engine installed in an FD3S RX-7 engine bay, showing its sequential twin-turbocharger plumbing",
+      "width": 1200,
+      "height": 900,
+      "caption": "The 13B-REW: the first mass-produced sequential twin-turbo system exported from Japan, developed with Hitachi.",
+      "credit": {
+        "author": "C0rbin99",
+        "title": "File:Mazda 13B-REW rotary engine2.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_13B-REW_rotary_engine2.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mazda-rx-7"]
+}

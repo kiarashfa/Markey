@@ -1,0 +1,141 @@
+{
+  "id": "bmw-x6-e71",
+  "name": "BMW X6 (E71)",
+  "fullName": "BMW X6 (E71), 2007-2014",
+  "kind": "generation",
+  "parent": "bmw-x6",
+  "brandRef": "bmw",
+  "generationCode": "E71",
+  "productionYears": {
+    "start": 2007,
+    "end": 2014
+  },
+  "bodyStyles": ["crossover", "coupe"],
+  "powertrains": ["petrol", "diesel", "hybrid"],
+  "drivetrains": ["awd"],
+  "segment": "suv-mid",
+  "positioning": "premium",
+  "designer": "Pierre Leclercq",
+  "assembly": [
+    "BMW, Greer, South Carolina, United States (Plant Spartanburg)",
+    "Avtotor, Kaliningrad, Russia"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4877,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-x6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X6",
+      "sourceNote": "Lowest figure in the published range of 4,877-4,879 mm."
+    },
+    "width": {
+      "value": 1979,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-x6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X6",
+      "sourceNote": "Lowest figure in the published range of 1,979-1,984 mm."
+    },
+    "height": {
+      "value": 1684,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-x6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X6",
+      "sourceNote": "Lowest figure in the published range of 1,684-1,697 mm."
+    },
+    "wheelbase": { "value": 2933, "unit": "mm", "status": "verified", "source": "wikipedia-bmw-x6", "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X6" }
+  },
+  "trims": [
+    {
+      "id": "xdrive35i",
+      "name": "xDrive35i",
+      "productionYears": { "start": 2008, "end": 2014 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed automatic",
+      "gears": 6,
+      "engine": {
+        "code": "N54/N55",
+        "configuration": "inline-6, turbocharged",
+        "cylinders": 6,
+        "displacement": { "value": 2979, "unit": "cc", "status": "verified", "source": "wikipedia-bmw-x6", "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X6", "sourceNote": "3.0 L." },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 225,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-x6",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X6",
+        "sourceNote": "Stated directly in kW at 5,800 rpm. The optional M Performance Package raised this to 240 kW."
+      },
+      "torque": {
+        "value": 400,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-x6",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X6",
+        "sourceNote": "At 1,200-5,000 rpm."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "x6-m",
+      "name": "X6 M",
+      "productionYears": { "start": 2009, "end": 2014 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed automatic",
+      "gears": 6,
+      "engine": {
+        "code": "S63",
+        "configuration": "V8, twin-turbocharged, twin-scroll",
+        "cylinders": 8,
+        "displacement": { "value": 4395, "unit": "cc", "status": "verified", "source": "wikipedia-bmw-x6", "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X6", "sourceNote": "4.4 L." },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 408,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-x6",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X6",
+        "sourceNote": "Stated directly in kW at 6,000 rpm."
+      },
+      "torque": {
+        "value": 677,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-x6",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X6",
+        "sourceNote": "At 1,500-5,650 rpm."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/bmw-x6-e71/hero.webp",
+    "alt": "White first-generation BMW X6 photographed from the front three-quarter angle, showing its sloping coupe-like roofline over an SUV body",
+    "width": 1600,
+    "height": 798,
+    "caption": "The car that invented the \"coupe SUV\" body style: initially four seats only, lower and less practical than the X5 it shared its platform with, by design.",
+    "credit": {
+      "author": "OSX",
+      "title": "File:2008-2010 BMW X6 (E71) xDrive35d wagon (2011-11-04).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008-2010_BMW_X6_(E71)_xDrive35d_wagon_(2011-11-04).jpg",
+      "licenseType": "public-domain",
+      "licenseNote": "Released into the public domain by the photographer."
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bmw-x6"]
+}

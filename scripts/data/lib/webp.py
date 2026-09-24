@@ -33,7 +33,7 @@ try:
 except ImportError:  # pragma: no cover - environment problem, not a code path
     print(
         "Pillow is not installed. `pip install Pillow` — the image pipeline "
-        "needs it to produce WebP (SPEC.md §10).",
+        "needs it to produce WebP.",
         file=sys.stderr,
     )
     raise SystemExit(2)

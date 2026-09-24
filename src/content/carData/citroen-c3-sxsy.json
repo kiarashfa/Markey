@@ -1,0 +1,295 @@
+{
+  "id": "citroen-c3-sxsy",
+  "name": "Citroën C3 (SX/SY)",
+  "fullName": "Citroën C3 (SX/SY), 2016-2024",
+  "kind": "generation",
+  "parent": "citroen-c3",
+  "brandRef": "citroen",
+  "generationCode": "SX/SY",
+  "productionYears": {
+    "start": 2016,
+    "end": 2024
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Cyril Pietton (exterior) and Jean-Arthur Madelaine (interior)",
+  "assembly": [
+    "Trnava, Slovakia (PSA Trnava Plant)",
+    "Kashan, Iran (Saipa Citroën)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3996,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+    },
+    "width": {
+      "value": 1740,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+      "sourceNote": "Published as a 1,740-1,749 mm range depending on trim; lowest figure recorded here."
+    },
+    "height": {
+      "value": 1470,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+    },
+    "wheelbase": {
+      "value": 2540,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+    },
+    "kerbWeight": {
+      "value": 968,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+      "sourceNote": "Published as a 968-1,080 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-2-puretech-83",
+      "name": "1.2 PureTech 83",
+      "productionYears": {
+        "start": 2016,
+        "end": 2024
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "EB2F",
+        "configuration": "inline-3, PSA EB2F PureTech",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1199,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 61,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+        "sourceNote": "83 PS at 5,750 rpm, converted at 1 PS = 0.73549875 kW (61.0 kW). A lower, 68 PS tune of the same engine was also offered from 2016 to 2019 and is not this trim."
+      },
+      "torque": {
+        "value": 118,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "zeroToHundredKph": {
+        "value": 13.0,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "topSpeed": {
+        "value": 167,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "co2": {
+        "value": 124,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+        "sourceNote": "Cycle not named in the source; likely NEDC given the model years."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-2-puretech-turbo-110",
+      "name": "1.2 PureTech Turbo 110",
+      "productionYears": {
+        "start": 2016,
+        "end": 2024
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual (2016-2018), 6-speed manual, or 6-speed automatic",
+      "engine": {
+        "code": "EB2DT",
+        "configuration": "inline-3 turbocharged, PSA EB2DT PureTech",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1199,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 81,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+        "sourceNote": "110 PS at 5,500 rpm, converted at 1 PS = 0.73549875 kW (80.9 kW, rounded to 81)."
+      },
+      "torque": {
+        "value": 151,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "zeroToHundredKph": {
+        "value": 9.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "topSpeed": {
+        "value": 188,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "co2": {
+        "value": 133,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-5-bluehdi",
+      "name": "1.5 BlueHDi",
+      "productionYears": {
+        "start": 2018,
+        "end": 2024
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "gears": 6,
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "DW5",
+        "configuration": "inline-4 turbo-diesel, DW5 BlueHDi",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1499,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 75,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+        "sourceNote": "102 PS at 3,500 rpm, converted at 1 PS = 0.73549875 kW (75.0 kW)."
+      },
+      "torque": {
+        "value": 250,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "zeroToHundredKph": {
+        "value": 10.4,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "topSpeed": {
+        "value": 188,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "co2": {
+        "value": 113,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/citroen-c3-sxsy/hero.webp",
+    "alt": "Silver third-generation European Citroën C3 hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 875,
+    "caption": "The European third-generation C3, sold from 2016 to 2024, seen here in facelifted form.",
+    "credit": {
+      "author": "Cutlass",
+      "title": "File:2019 Citroën C3 in Cumulus Grey, front left, 06-08-2025.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Citro%C3%ABn_C3_in_Cumulus_Grey,_front_left,_06-08-2025.jpg",
+      "licenseType": "cc0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/citroen-c3-sxsy/gallery-1.webp",
+      "alt": "Rear three-quarter view of a silver third-generation European Citroën C3 hatchback",
+      "width": 1200,
+      "height": 712,
+      "caption": "Optional Airbump side mouldings, borrowed from the C4 Cactus, were a signature feature of this generation.",
+      "credit": {
+        "author": "Cutlass",
+        "title": "File:2019 Citroën C3 in Cumulus Grey, rear left, 06-08-2025.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Citro%C3%ABn_C3_in_Cumulus_Grey,_rear_left,_06-08-2025.jpg",
+        "licenseType": "cc0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-citroen-c3"
+  ]
+}

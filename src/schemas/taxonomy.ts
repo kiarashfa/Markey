@@ -1,5 +1,5 @@
 /**
- * Controlled vocabularies — SPEC.md §7.
+ * Controlled vocabularies.
  *
  * The vocabulary files under `src/data/taxonomy/` are the single source of
  * truth. Zod enums are built *from* them at load time rather than restated
@@ -47,7 +47,7 @@ export interface EraVocabulary extends Omit<Vocabulary, 'terms'> {
   terms: EraTerm[];
 }
 
-/** The seven browse axes of SPEC.md §7, in the order they appear there. */
+/** The seven browse axes, in their canonical order. */
 export const TAXONOMY_AXES = [
   'body-style',
   'powertrain',
@@ -108,7 +108,7 @@ export function labelFor(axis: string, id: string): string | undefined {
 }
 
 // ---------------------------------------------------------------------------
-// Era — computed, never authored (SPEC.md §7)
+// Era — computed, never authored
 // ---------------------------------------------------------------------------
 
 /**

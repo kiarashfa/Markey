@@ -5,12 +5,12 @@
  * Two jobs, both of which would otherwise be re-implemented in every template:
  *
  *  1. **Joining.** Narrative and structured data are two files joined by `id`
- *     and never merged (SPEC.md §5.1). Templates want them together.
+ *     and never merged. Templates want them together.
  *  2. **Walking the hierarchy.** trim → generation → model, in both directions.
  *     Breadcrumbs, hub pages, and canonical URLs all need this constantly.
  *
  * Integrity is already guaranteed by the time this runs — `astro:build:start`
- * has failed the build if any pairing or parent were broken (SPEC.md §13) — so
+ * has failed the build if any pairing or parent were broken — so
  * the joins here can be direct rather than defensive.
  */
 import { getCollection, type CollectionEntry } from 'astro:content';
@@ -95,7 +95,7 @@ export async function getBrands(): Promise<JoinedBrand[]> {
 }
 
 // ---------------------------------------------------------------------------
-// Hierarchy walking — SPEC.md §5.1
+// Hierarchy walking
 // ---------------------------------------------------------------------------
 
 export function indexById<T extends { id: string }>(entries: T[]): Map<string, T> {
@@ -146,13 +146,13 @@ export function generationsOf(modelId: string, all: JoinedCar[]): JoinedCar[] {
   );
 }
 
-/** The halo trims that earned their own page under a generation (SPEC.md §5.1). */
+/** The halo trims that earned their own page under a generation. */
 export function haloTrimsOf(generationId: string, all: JoinedCar[]): JoinedCar[] {
   return childrenOf(generationId, all, 'trim');
 }
 
 // ---------------------------------------------------------------------------
-// Computed taxonomy — SPEC.md §7
+// Computed taxonomy
 // ---------------------------------------------------------------------------
 
 /**

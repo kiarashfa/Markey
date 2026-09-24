@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Full-text search over the whole site — SPEC.md §9.1, §12.
+   * Full-text search over the whole site.
    *
    * This is the *other* half of the search split the spec describes. The
    * catalog's own box filters structured records — names, brands, codes — and

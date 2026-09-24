@@ -1,0 +1,174 @@
+{
+  "id": "renault-5-etech",
+  "name": "Renault 5 E-Tech",
+  "fullName": "Renault 5 E-Tech, 2024-present",
+  "kind": "generation",
+  "parent": "renault-5",
+  "brandRef": "renault",
+  "productionYears": {
+    "start": 2024,
+    "end": null
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "bev"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "designer": "Gilles Vidal",
+  "assembly": [
+    "Douai, France (Renault ElectriCity)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3922,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-5-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5_E-Tech"
+    },
+    "width": {
+      "value": 1774,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-5-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5_E-Tech"
+    },
+    "height": {
+      "value": 1498,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-5-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5_E-Tech"
+    },
+    "wheelbase": {
+      "value": 2540,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-5-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5_E-Tech"
+    },
+    "kerbWeight": {
+      "value": 1350,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-renault-5-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5_E-Tech",
+      "sourceNote": "Published as a 1,350-1,450 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "e-tech-70-40kwh",
+      "name": "E-Tech 70 (40 kWh)",
+      "productionYears": {
+        "start": 2024,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "bev",
+      "engine": {
+        "code": "6AK",
+        "configuration": "single motor, externally-excited synchronous (EESM)"
+      },
+      "power": {
+        "value": 70,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-5-e-tech",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5_E-Tech",
+        "sourceNote": "Published directly in kW; the entry-level motor paired with the smaller of two batteries. A 90 kW motor is also offered with the same 40 kWh battery and is not this trim."
+      },
+      "batteryCapacity": {
+        "value": 40,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-renault-5-e-tech",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5_E-Tech",
+        "sourceNote": "NMC chemistry, gross capacity."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "e-tech-110-52kwh",
+      "name": "E-Tech 110 (52 kWh)",
+      "productionYears": {
+        "start": 2024,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "bev",
+      "engine": {
+        "code": "6AK",
+        "configuration": "single motor, externally-excited synchronous (EESM)"
+      },
+      "power": {
+        "value": 110,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-5-e-tech",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5_E-Tech",
+        "sourceNote": "Published directly in kW; the top-spec motor, paired exclusively with the larger of two batteries."
+      },
+      "batteryCapacity": {
+        "value": 52,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-renault-5-e-tech",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5_E-Tech",
+        "sourceNote": "NMC chemistry, gross capacity."
+      },
+      "electricRange": {
+        "value": null,
+        "unit": "km",
+        "status": "placeholder",
+        "sourceNote": "The article gives only a pre-launch 'expected range of 400 km' for this battery, attributed to a Renault executive before the car's specifications were finalised, not a confirmed WLTP figure."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-5-etech/hero.webp",
+    "alt": "Yellow Renault 5 E-Tech electric hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 994,
+    "caption": "The 2024 revival: a battery-electric hatchback deliberately styled after the 1972 original, on the AmpR Small platform.",
+    "credit": {
+      "author": "Alexander Migl",
+      "title": "File:Renault 5 E-Tech Electric DSC 7279.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_5_E-Tech_Electric_DSC_7279.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/renault-5-etech/gallery-1.webp",
+      "alt": "Rear three-quarter view of a yellow Renault 5 E-Tech electric hatchback",
+      "width": 1200,
+      "height": 727,
+      "caption": "Built at Renault's ElectriCity plant in Douai, France, alongside the Renault 4 E-Tech.",
+      "credit": {
+        "author": "Alexander Migl",
+        "title": "File:Renault 5 E-Tech Electric DSC 7284.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_5_E-Tech_Electric_DSC_7284.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-renault-5-e-tech"
+  ]
+}

@@ -1,9 +1,9 @@
 ---
 /**
- * `/cars/<slug>/` — model hub, generation, or halo trim (SPEC.md §5.1, §6).
+ * `/cars/<slug>/` — model hub, generation, or halo trim.
  *
- * One flat route for all three `kind`s. This is the canonical-URL promise of
- * SPEC.md §2 principle 1 in practice: the path is type-prefixed and flat, so
+ * One flat route for all three `kind`s. This is the canonical-URL promise
+ * in practice: the path is type-prefixed and flat, so
  * re-parenting a generation or reclassifying a trim never moves its URL.
  */
 import CarPage from '../../components/templates/CarPage.astro';
@@ -31,7 +31,7 @@ const { car, brand, allCars } = Astro.props;
 /**
  * `remarkPluginFrontmatter` carries what the Markdown plugins wrote — here,
  * the citation numbering `rehype-citations.ts` assigned to this entry's prose
- * (SPEC.md §5.5). The template needs it to build the page's reference list.
+ *. The template needs it to build the page's reference list.
  */
 const { Content, remarkPluginFrontmatter } = await render(car.narrative);
 ---

@@ -1,0 +1,23 @@
+{
+  "id": "chevrolet",
+  "name": "Chevrolet",
+  "legalName": "Chevrolet Motor Division of General Motors Company",
+  "countryOfOrigin": "United States",
+  "founded": 1911,
+  "logo": {
+    "src": "/images/brands/chevrolet.svg",
+    "alt": "The Chevrolet bowtie emblem, a stylised horizontal cross shape",
+    "credit": {
+      "author": "Chevrolet",
+      "title": "File:Chevrolet bowtie 2023.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chevrolet_bowtie_2023.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's cars, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence."
+    }
+  },
+  "accentColor": "#262626",
+  "accentColorNote": "Sampled from the single fill colour (#262626) used in the current bowtie emblem's own SVG source. This is a dark neutral rendering rather than Chevrolet's better-known gold, because no gold or yellow variant of the mark was found on Commons with clear licensing.",
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-chevrolet", "commons-file-chevrolet-bowtie-2023-svg"]
+}

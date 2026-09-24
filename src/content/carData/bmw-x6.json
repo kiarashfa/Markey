@@ -1,0 +1,16 @@
+{
+  "id": "bmw-x6",
+  "name": "BMW X6",
+  "fullName": "BMW X6 (E71-G06), 2007-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "bmw",
+  "productionYears": {
+    "start": 2007,
+    "end": null
+  },
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bmw-x6"]
+}

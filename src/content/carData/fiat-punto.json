@@ -1,0 +1,16 @@
+{
+  "id": "fiat-punto",
+  "name": "Fiat Punto",
+  "fullName": "Fiat Punto (Type 176 / 188 / 199), 1993-2018",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "fiat",
+  "productionYears": {
+    "start": 1993,
+    "end": 2018
+  },
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-fiat-punto"]
+}

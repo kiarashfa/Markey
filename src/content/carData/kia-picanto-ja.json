@@ -1,0 +1,173 @@
+{
+  "id": "kia-picanto-ja",
+  "name": "Kia Picanto (JA)",
+  "fullName": "Kia Picanto (JA), 2017-present",
+  "kind": "generation",
+  "parent": "kia-picanto",
+  "brandRef": "kia",
+  "generationCode": "JA",
+  "productionYears": {
+    "start": 2017,
+    "end": null
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "lpg"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "designer": "Peter Schreyer",
+  "assembly": [
+    "Seosan, South Korea (Donghee)",
+    "Gurun, Kedah, Malaysia (Naza)",
+    "Kaliningrad, Russia (Avtotor)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3595,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-picanto",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+    },
+    "width": {
+      "value": 1595,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-picanto",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+    },
+    "height": {
+      "value": 1485,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-picanto",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+    },
+    "wheelbase": {
+      "value": 2400,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-picanto",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto"
+    },
+    "kerbWeight": {
+      "value": null,
+      "unit": "kg",
+      "status": "placeholder",
+      "sourceNote": "The Wikipedia infobox for this generation leaves the weight field blank; no figure is published in the article body either."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0-mpi",
+      "name": "1.0 Kappa II MPi",
+      "productionYears": {
+        "start": 2017,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "G3LA",
+        "configuration": "inline-3, Kappa II MPi",
+        "cylinders": 3,
+        "aspiration": "naturally-aspirated"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-0-t-gdi",
+      "name": "1.0 Kappa II T-GDi",
+      "productionYears": {
+        "start": 2017,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "G3LC",
+        "configuration": "inline-3 turbocharged, Kappa II T-GDi",
+        "cylinders": 3,
+        "aspiration": "turbocharged"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-2-mpi",
+      "name": "1.2 Kappa II MPi",
+      "productionYears": {
+        "start": 2017,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual or 4-speed automatic",
+      "engine": {
+        "code": "G4LA",
+        "configuration": "inline-4, Kappa II MPi",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1248,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-kia-picanto",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Picanto",
+          "sourceNote": "Given as 1.25 L in the infobox engine list."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/kia-picanto-ja/hero.webp",
+    "alt": "Grey third-generation Kia Picanto GT-Line hatchback with red trim accents, photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 883,
+    "caption": "The current, third-generation Picanto, revealed at the 2017 Geneva Motor Show; this is the sportier GT-Line trim.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2017 Kia Picanto GT-Line S 1.2 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Kia_Picanto_GT-Line_S_1.2_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/kia-picanto-ja/gallery-1.webp",
+      "alt": "Rear three-quarter view of a grey third-generation Kia Picanto GT-Line hatchback",
+      "width": 1200,
+      "height": 677,
+      "caption": "Sold in South Korea and several other markets as the Kia Morning.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2017 Kia Picanto GT-Line S 1.2 Rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Kia_Picanto_GT-Line_S_1.2_Rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-kia-picanto"
+  ]
+}

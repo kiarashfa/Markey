@@ -1,0 +1,400 @@
+{
+  "id": "vw-up-nf",
+  "name": "Volkswagen Up",
+  "fullName": "Volkswagen up!, 2011-2023",
+  "kind": "generation",
+  "parent": "volkswagen-up",
+  "brandRef": "volkswagen",
+  "productionYears": {
+    "start": 2011,
+    "end": 2023
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "cng",
+    "bev"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "designer": "Klaus Bischoff; Oliver Stefani; Marco Antonio Pavone",
+  "assembly": [
+    "Bratislava, Slovakia (Volkswagen Bratislava Plant)",
+    "Taubaté, Brazil (Volkswagen do Brasil)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3540,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-up",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+      "sourceNote": "Published as a 3540-3563 mm range across body styles and facelifts; the lowest figure is recorded here."
+    },
+    "width": {
+      "value": 1641,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-up",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+    },
+    "height": {
+      "value": 1478,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-up",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+      "sourceNote": "Published as a 1478-1489 mm range; the lowest figure is recorded here."
+    },
+    "wheelbase": {
+      "value": 2420,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-up",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+    },
+    "kerbWeight": {
+      "value": 929,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-up",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+      "sourceNote": "Published in the infobox as a 929-997 kg range across the petrol/CNG range (the electric e-up! is considerably heavier still, at up to 1229 kg); the lowest figure across the petrol range is recorded here at generation level."
+    }
+  },
+  "trims": [
+    {
+      "id": "10-mpi-60",
+      "name": "1.0 MPI (60 PS)",
+      "productionYears": {
+        "start": 2011,
+        "end": 2023
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "inline-3, multi-point fuel injection",
+        "cylinders": 3,
+        "displacement": {
+          "value": 999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-up",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 44,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "sourceNote": "44 kW (60 PS) at 5,000 rpm, published directly in kW in the source's powertrain table."
+      },
+      "torque": {
+        "value": 95,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "sourceNote": "95 N⋅m across a 3,000-4,300 rpm plateau."
+      },
+      "topSpeed": {
+        "value": 161,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+      },
+      "zeroToHundredKph": {
+        "value": 14.4,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+      },
+      "fuelEconomy": {
+        "value": 4.5,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "sourceNote": "EU-norm combined figure, cycle not further named in the source."
+      },
+      "co2": {
+        "value": 105,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "sourceNote": "105 g/km for the standard car; the BlueMotion version of the same engine is rated 96 g/km."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "10-tsi-90",
+      "name": "1.0 TSI (90 PS)",
+      "productionYears": {
+        "start": 2016,
+        "end": 2023
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "inline-3 turbocharged, direct injection",
+        "cylinders": 3,
+        "displacement": {
+          "value": 999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-up",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 66,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "sourceNote": "66 kW (90 PS) at 5,000-5,500 rpm, published directly in kW in the source's powertrain table."
+      },
+      "torque": {
+        "value": 160,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "sourceNote": "160 N⋅m across a 1,500-3,000 rpm plateau."
+      },
+      "topSpeed": {
+        "value": 185,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+      },
+      "zeroToHundredKph": {
+        "value": 9.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+      },
+      "fuelEconomy": {
+        "value": 4.4,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "sourceNote": "EU-norm combined figure, cycle not further named in the source."
+      },
+      "co2": {
+        "value": 101,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "up-gti",
+      "name": "Up GTI",
+      "productionYears": {
+        "start": 2018,
+        "end": 2023
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "configuration": "inline-3 high-pressure turbocharged, direct injection",
+        "cylinders": 3,
+        "displacement": {
+          "value": 999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-up",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 85,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "sourceNote": "85 kW (115 PS) at 5,000 rpm, published directly in kW in the source's powertrain table. The only Up sold with a six-speed manual gearbox."
+      },
+      "torque": {
+        "value": 200,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "sourceNote": "200 N⋅m at 2,000 rpm."
+      },
+      "mass": {
+        "value": 997,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+      },
+      "topSpeed": {
+        "value": 192,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+      },
+      "zeroToHundredKph": {
+        "value": 8.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "e-up-2019",
+      "name": "e-up! (2019)",
+      "productionYears": {
+        "start": 2019,
+        "end": 2023
+      },
+      "drivetrain": "fwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed fixed gear ratio",
+      "gears": 1,
+      "engine": {
+        "configuration": "single electric motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 60,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+      },
+      "torque": {
+        "value": 210,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+      },
+      "mass": {
+        "value": 1229,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "sourceNote": "Curb weight with all fluids and 50% fuel, as published in the source's technical-data table."
+      },
+      "topSpeed": {
+        "value": 130,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+      },
+      "zeroToHundredKph": {
+        "value": 12.4,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+      },
+      "batteryCapacity": {
+        "value": 32.3,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "sourceNote": "32.3 kWh usable (net) capacity; the pack's total (gross) capacity is 36.8 kWh."
+      },
+      "electricConsumption": {
+        "value": 14.9,
+        "unit": "kWh/100km",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up"
+      },
+      "electricRange": {
+        "value": 258,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "sourceNote": "258 km in the source's own technical-data table; the article's prose rounds this to 260 km elsewhere. Same figure, not a conflict between sources."
+      },
+      "dragCoefficient": {
+        "value": 0.308,
+        "unit": "",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-up",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+        "sourceNote": "The 2013 first-generation e-up! is separately given as 0.281; the drag coefficient rose with this revision's dimensional and equipment changes."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/vw-up/hero.webp",
+    "alt": "White Volkswagen Up GTI hot hatch photographed from the front three-quarter angle in front of a hedge, with red grille trim and black alloy wheels",
+    "width": 1600,
+    "height": 941,
+    "caption": "The Up GTI, added to the range in 2018 as the only Up with a six-speed manual gearbox.",
+    "credit": {
+      "author": "Alexander Migl",
+      "title": "File:Volkswagen up! GTI IMG 4177.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_up!_GTI_IMG_4177.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/vw-up/gallery-1.webp",
+      "alt": "White Volkswagen e-up! electric city car photographed from the front three-quarter angle on a city street",
+      "width": 1200,
+      "height": 684,
+      "caption": "The second-generation e-up!, with a larger 36.8 kWh battery pack and a WLTP range of about 258 km.",
+      "credit": {
+        "author": "M 93",
+        "title": "File:VW e-up! Style – f 08052021.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:VW_e-up!_Style_–_f_08052021.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-volkswagen-up"
+  ]
+}

@@ -1,19 +1,19 @@
 /**
- * Build Car — the specification of a hypothetical car (SPEC.md §9.6).
+ * Build Car — the specification of a hypothetical car.
  *
  * A `BuildSpec` is *only* inputs. It computes nothing, so it can be encoded
  * into a URL, handed to the comparison tool, or round-tripped through storage
  * without any risk of a stale derived figure travelling with it. Turning one
  * into physics is `toVehicleInputs`, and what comes out is fed to the **same**
  * `dynamics/*` functions Test Drive runs on real cars — no second physics path,
- * which is the whole point of the feature (SPEC.md §9.6).
+ * which is the whole point of the feature.
  *
  * ## About the presets, and why they are not a violation of the data rule
  *
  * The project's rule is that a *fact about a real car* is never invented. A
  * preset here is not a fact about anything: it is a starting position for a car
  * the visitor is making up, in a tool whose entire premise is that the numbers
- * are theirs to change. SPEC.md §9.6 asks for exactly this — "sensible defaults
+ * are theirs to change. The design asks for exactly this — "sensible defaults
  * pre-fill from a chosen segment so the visitor starts from something plausible
  * rather than an empty form."
  *

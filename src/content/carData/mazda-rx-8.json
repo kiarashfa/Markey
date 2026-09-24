@@ -1,0 +1,16 @@
+{
+  "id": "mazda-rx-8",
+  "name": "Mazda RX-8",
+  "fullName": "Mazda RX-8, 2003-2012",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "mazda",
+  "productionYears": {
+    "start": 2003,
+    "end": 2012
+  },
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mazda-rx-8"]
+}

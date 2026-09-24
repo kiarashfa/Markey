@@ -1,0 +1,19 @@
+{
+  "id": "citroen-xsara",
+  "name": "Citroën Xsara",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "citroen",
+  "productionYears": {
+    "start": 1997,
+    "end": 2006
+  },
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-citroen-xsara"
+  ]
+}

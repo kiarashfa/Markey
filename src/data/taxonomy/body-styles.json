@@ -2,7 +2,7 @@
   "axis": "body-style",
   "urlPrefix": "body-style",
   "authored": true,
-  "note": "Starter vocabulary — SPEC.md §16 leaves the exact term set open. Expected to grow as the catalog does. What matters is the mechanism: an unlisted tag fails the build naming the file to fix. A generation may carry more than one term (a range spanning saloon + estate + coupe).",
+  "note": "Starter vocabulary — the exact term set is open. Expected to grow as the catalog does. What matters is the mechanism: an unlisted tag fails the build naming the file to fix. A generation may carry more than one term (a range spanning saloon + estate + coupe).",
   "terms": [
     { "id": "saloon", "label": "Saloon", "aka": ["Sedan"], "description": "Three-box body with a separate boot compartment." },
     { "id": "hatchback", "label": "Hatchback", "description": "Two-box body with a rear liftgate opening into the cabin." },

@@ -1,0 +1,162 @@
+{
+  "id": "dmc-delorean-dmc12",
+  "name": "DeLorean DMC-12",
+  "fullName": "DeLorean DMC-12, 1981-1982",
+  "kind": "generation",
+  "parent": "dmc-delorean",
+  "brandRef": "delorean",
+  "productionYears": {
+    "start": 1981,
+    "end": 1982
+  },
+  "bodyStyles": [
+    "coupe"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "s-segment",
+  "positioning": "premium",
+  "designer": "Giorgetto Giugiaro (Italdesign)",
+  "assembly": [
+    "Dunmurry, Northern Ireland (DeLorean Motor Cars, Ltd.)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4267,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dmc-delorean",
+      "sourceUrl": "https://en.wikipedia.org/wiki/DMC_DeLorean"
+    },
+    "width": {
+      "value": 1988,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dmc-delorean",
+      "sourceUrl": "https://en.wikipedia.org/wiki/DMC_DeLorean"
+    },
+    "height": {
+      "value": 1140,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dmc-delorean",
+      "sourceUrl": "https://en.wikipedia.org/wiki/DMC_DeLorean",
+      "sourceNote": "Doors closed; with the gull-wing doors raised, height at the door tops is 1962 mm."
+    },
+    "wheelbase": {
+      "value": 2413,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dmc-delorean",
+      "sourceUrl": "https://en.wikipedia.org/wiki/DMC_DeLorean"
+    },
+    "kerbWeight": {
+      "value": 1233,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-dmc-delorean",
+      "sourceUrl": "https://en.wikipedia.org/wiki/DMC_DeLorean"
+    }
+  },
+  "trims": [
+    {
+      "id": "v6-5-speed",
+      "name": "DMC-12",
+      "productionYears": {
+        "start": 1981,
+        "end": 1982
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual (Renault 369-08)",
+      "gears": 5,
+      "engine": {
+        "code": "PRV ZMJ-159",
+        "configuration": "rear-mounted V6, 90°, light-alloy SOHC",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2849,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-dmc-delorean",
+          "sourceUrl": "https://en.wikipedia.org/wiki/DMC_DeLorean"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 97,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-dmc-delorean",
+        "sourceUrl": "https://en.wikipedia.org/wiki/DMC_DeLorean",
+        "sourceNote": "130 bhp at 5,500 rpm, explicitly labelled bhp (mechanical horsepower) in the source's technical-data table, converted at 1 hp = 0.745699872 kW (96.9 kW, rounded to 97)."
+      },
+      "torque": {
+        "value": 207,
+        "unit": "Nm",
+        "status": "conflicting-sources",
+        "source": "wikipedia-dmc-delorean",
+        "sourceUrl": "https://en.wikipedia.org/wiki/DMC_DeLorean",
+        "sourceNote": "The article's body text and infobox both state 153 lb-ft at 2,750 rpm, citing Espey 2014 (207.4 N⋅m, rounded to 207) — the figure recorded here. The article's own technical-data table, citing period Road & Track and Car and Driver tests, separately states 162 lb-ft (219.6 N⋅m) at the same 2,750 rpm for the same engine. The two are not reconciled or averaged."
+      },
+      "mass": {
+        "value": 1233,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-dmc-delorean",
+        "sourceUrl": "https://en.wikipedia.org/wiki/DMC_DeLorean"
+      },
+      "topSpeed": {
+        "value": 209,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-dmc-delorean",
+        "sourceUrl": "https://en.wikipedia.org/wiki/DMC_DeLorean",
+        "sourceNote": "DMC's claimed top speed of 130 mph, converted at 1 mph = 1.609344 km/h (209.2 km/h, rounded to 209). Road & Track measured a considerably lower 110 mph (177 km/h) and described the car as 'not quick for a sports/GT car in this price category'; the manufacturer-claimed figure is recorded here, with the tested figure noted rather than substituted."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/dmc-delorean-dmc12/hero.webp",
+    "alt": "Stainless-steel DeLorean DMC-12 photographed head-on with both gull-wing doors raised",
+    "width": 790,
+    "height": 564,
+    "caption": "The gull-wing doors, raised on their cryogenically-treated torsion bars — one of the DMC-12's few genuinely novel features.",
+    "credit": {
+      "author": "Grenex",
+      "title": "File:DeLorean DMC-12 with doors open.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DeLorean_DMC-12_with_doors_open.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/dmc-delorean-dmc12/gallery-1.webp",
+      "alt": "Silver DeLorean DMC-12 photographed from the rear three-quarter angle at a car show, showing its unpainted brushed-steel body panels and slatted rear window louvres",
+      "width": 1200,
+      "height": 784,
+      "caption": "The bare stainless-steel panels were rust-proof and never painted at the factory, which is why every DMC-12 looks the same colour.",
+      "credit": {
+        "author": "MercurySable99",
+        "title": "File:1983 DMC De Lorean, rear left, 09-07-2024.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1983_DMC_De_Lorean,_rear_left,_09-07-2024.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-dmc-delorean"
+  ]
+}

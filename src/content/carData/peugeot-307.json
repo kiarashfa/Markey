@@ -1,0 +1,19 @@
+{
+  "id": "peugeot-307",
+  "name": "Peugeot 307",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "peugeot",
+  "productionYears": {
+    "start": 2001,
+    "end": 2008
+  },
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-peugeot-307"
+  ]
+}

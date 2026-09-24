@@ -1,5 +1,5 @@
 /**
- * The validation gate — SPEC.md §9.5.1.
+ * The validation gate.
  *
  * "This is what earns the right to claim soundness." The rule that governs
  * everything here: **never tune a reference value to match the output.** If a
@@ -7,7 +7,7 @@
  *
  * ## What this gate can and cannot check, and why
  *
- * SPEC.md lists four canonical shapes with published drag coefficients —
+ * There are four canonical shapes with published drag coefficients —
  * sphere ≈ 0.47, cube ≈ 1.05, plate ≈ 1.17, teardrop ≈ 0.04–0.05. Measuring
  * the CPU reference solver against them directly turned out to be a **category
  * error**, and finding that out was the most useful thing this module did.
@@ -20,8 +20,8 @@
  * it would fail a correct solver, and it could be made to "pass" by fiddling
  * the grid until the two numbers happened to meet.
  *
- * SPEC.md anticipated exactly this for the sphere — "Re-dependent; compare
- * against the Clift–Gauvin correlation" — and the same logic applies to the
+ * The sphere is the textbook case — its Cd is Re-dependent, so it is compared
+ * against the Clift–Gauvin correlation — and the same logic applies to the
  * other three.
  *
  * So the gate checks what is actually checkable at this scale:

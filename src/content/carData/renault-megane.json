@@ -1,0 +1,20 @@
+{
+  "id": "renault-megane",
+  "name": "Renault Mégane",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "renault",
+  "productionYears": {
+    "start": 1995,
+    "end": null
+  },
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-renault-megane",
+    "wikipedia-renault-megane-e-tech-electric"
+  ]
+}

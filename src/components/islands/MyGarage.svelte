@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * My Garage — SPEC.md §9.4.
+   * My Garage.
    *
    * **One feature, two purposes.** Collecting is the primary frame: the visitor
    * parks cars they like into numbered bays. Ownership is an *enhancement* on
@@ -13,7 +13,7 @@
    *  - **Share** — slots and cars only. The `ownership` block never travels.
    *  - **Full backup** — includes ownership, for the visitor's own devices.
    *
-   * That distinction is stated *at the moment of sharing* (SPEC.md §9.4), not
+   * That distinction is stated *at the moment of sharing*, not
    * buried on an about page, and it is enforced in `lib/garage/model.ts` by an
    * allowlist rather than by this component remembering to be careful.
    */
@@ -83,7 +83,7 @@
   function persist(next: Garage) {
     garage = next;
     const result = write(GARAGE_FEATURE, GARAGE_VERSION, next);
-    // SPEC.md §9.8: never a silent failure. A garage that quietly forgets is
+    // Never a silent failure. A garage that quietly forgets is
     // the worst possible outcome for a feature whose job is remembering.
     notice = result.ok ? null : result.message;
   }

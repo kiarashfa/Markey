@@ -1,5 +1,5 @@
 /**
- * Acceleration and top speed — SPEC.md §8.2.
+ * Acceleration and top speed.
  *
  * Two models, both textbook:
  *
@@ -14,7 +14,7 @@
  *
  * Everything here is **modelled**. Where a manufacturer figure exists it is
  * what the spec sheet shows; these outputs sit alongside it, labelled as the
- * model's (SPEC.md §8.2 discipline 1).
+ * model's (discipline 1).
  */
 import { kmhToMs, msToKmh } from '../units.ts';
 import {

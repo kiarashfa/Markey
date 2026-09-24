@@ -1,0 +1,117 @@
+{
+  "id": "lada-niva-legend",
+  "name": "Lada Niva Legend (VAZ-21214)",
+  "fullName": "Lada Niva Legend (VAZ-21214), 2010-present",
+  "kind": "generation",
+  "parent": "lada-niva",
+  "brandRef": "lada",
+  "generationCode": "VAZ-21214",
+  "productionYears": {
+    "start": 2010,
+    "end": null
+  },
+  "bodyStyles": ["suv"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["4wd"],
+  "segment": "suv-small",
+  "positioning": "economy",
+  "assembly": [
+    "AvtoVAZ, Tolyatti, Russia",
+    "Azermash, Hajigabul, Azerbaijan",
+    "Bogdan, Cherkasy, Ukraine"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 3740,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lada-niva",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva"
+    },
+    "width": {
+      "value": 1680,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lada-niva",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva"
+    },
+    "height": {
+      "value": 1640,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lada-niva",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva"
+    },
+    "wheelbase": {
+      "value": 2200,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lada-niva",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva"
+    },
+    "kerbWeight": {
+      "value": 1210,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-lada-niva",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva",
+      "sourceNote": "Weight given for the 21213/21214 in the infobox."
+    }
+  },
+  "trims": [
+    {
+      "id": "vaz-21214",
+      "name": "Niva Legend 1.7i",
+      "productionYears": { "start": 2010, "end": null },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "VAZ-21214",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": { "value": 1690, "unit": "cc", "status": "verified", "source": "wikipedia-lada-niva", "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 61,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-lada-niva",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva",
+        "sourceNote": "61 kW (83 hp), multi-point fuel injection, current since 2010. No torque figure is given for this specific engine revision in the source, so torque is left unset rather than carried over from an earlier or different-displacement Niva engine."
+      },
+      "mass": {
+        "value": 1210,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lada-niva",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva"
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/lada-niva-legend/hero.webp",
+    "alt": "White current-generation Lada Niva Legend photographed from the front three-quarter angle indoors, with a Niva badge visible on the grille",
+    "width": 1600,
+    "height": 901,
+    "caption": "Renamed Niva Legend in 2021 once Lada reused the plain \"Niva\" name for the unrelated, Chevrolet-derived Niva Travel — but underneath, still the same 1977 monocoque and running gear.",
+    "credit": {
+      "author": "Sergey A. Demidov",
+      "title": "File:20251125 Lada Niva in Zelenopark (13138).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20251125_Lada_Niva_in_Zelenopark_(13138).jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-lada-niva"]
+}

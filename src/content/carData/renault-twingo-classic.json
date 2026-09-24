@@ -1,0 +1,207 @@
+{
+  "id": "renault-twingo-classic",
+  "name": "Renault Twingo",
+  "fullName": "Renault Twingo (Mk1), 1992-2007",
+  "kind": "generation",
+  "parent": "renault-twingo",
+  "brandRef": "renault",
+  "productionYears": {
+    "start": 1992,
+    "end": 2007
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "designer": "Patrick Le Quément (design direction); Jean-Pierre Ploué (exterior)",
+  "assembly": [
+    "Flins-sur-Seine, France",
+    "Valladolid, Spain (Renault Spain)",
+    "Envigado, Colombia (Sofasa)",
+    "Changhua, Taiwan (Sanfu Motors)",
+    "Montevideo, Uruguay (Nordex)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3430,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+    },
+    "width": {
+      "value": 1630,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+    },
+    "height": {
+      "value": 1420,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+    },
+    "wheelbase": {
+      "value": 2345,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+    },
+    "kerbWeight": {
+      "value": 790,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+      "sourceNote": "Published in the infobox as 'from 790 kg', the lowest figure across the range rather than a per-trim spec, recorded here at generation level."
+    }
+  },
+  "trims": [
+    {
+      "id": "12-c3g",
+      "name": "1.2",
+      "productionYears": {
+        "start": 1993,
+        "end": 1996
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "C3G",
+        "configuration": "inline-4, Cléon-Fonte",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1239,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-twingo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 44,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "60 PS at 5,300 rpm, the launch engine (shared with the Renault 5), converted at 1 PS = 0.73549875 kW (44.1 kW, rounded to 44). Replaced in July 1996 by the 1149 cc D7F unit."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "11-d7f",
+      "name": "1.1",
+      "productionYears": {
+        "start": 1996,
+        "end": 2007
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "D7F",
+        "configuration": "inline-4, D-Type",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1149,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-twingo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 43,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "43 kW at 5,250 rpm, from the Renault Clio. Introduced July 1996 to replace the original 1239 cc engine."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "12-16v-d4f",
+      "name": "1.2 16V",
+      "productionYears": {
+        "start": 2000,
+        "end": 2007
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "D4F",
+        "configuration": "inline-4 16V, D-Type",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1149,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-twingo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 55,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "75 PS at 5,500 rpm, converted at 1 PS = 0.73549875 kW (55.2 kW, rounded to 55). Added to the range in December 2000 alongside the existing 1.1, not a replacement for it."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-twingo-classic/hero.webp",
+    "alt": "White three-door original Renault Twingo photographed from the front three-quarter angle at an outdoor car show, with its tailgate open",
+    "width": 1600,
+    "height": 1251,
+    "caption": "The original Twingo, launched in April 1993 as a single one-box shape with no equivalent elsewhere in Renault's range.",
+    "credit": {
+      "author": "Calreyn88",
+      "title": "File:1997 Renault Twingo.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1997_Renault_Twingo.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/renault-twingo-classic/gallery-1.webp",
+      "alt": "Engine bay of a 1997 Renault Twingo showing the D-Type four-cylinder engine with a Renault-branded intake manifold cover",
+      "width": 1200,
+      "height": 821,
+      "caption": "The D-Type four-cylinder that powered most of the run, seen here in a 1997 car.",
+      "credit": {
+        "author": "I Made This Account Just To Add An Image Of A Renault Engine To The D-Type Article",
+        "title": "File:Renault D7F in a 1997 Renault Twingo.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_D7F_in_a_1997_Renault_Twingo.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-renault-twingo"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "id": "bmw-x5-e53",
+  "name": "BMW X5 (E53)",
+  "fullName": "BMW X5 (E53), 1999-2006",
+  "kind": "generation",
+  "parent": "bmw-x5",
+  "brandRef": "bmw",
+  "generationCode": "E53",
+  "productionYears": {
+    "start": 1999,
+    "end": 2006
+  },
+  "bodyStyles": ["suv"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["awd"],
+  "segment": "suv-mid",
+  "positioning": "premium",
+  "designer": "Frank Stephenson (1996); Chris Bangle (design chief)",
+  "assembly": [
+    "BMW, Greer, South Carolina, United States (Plant Spartanburg)",
+    "BMW Mexico, Toluca, Mexico"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4666,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-x5-e53",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(E53)",
+      "sourceNote": "183.7 in, converted at 25.4 mm/in."
+    },
+    "width": {
+      "value": 1872,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-x5-e53",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(E53)",
+      "sourceNote": "73.7 in, converted at 25.4 mm/in."
+    },
+    "wheelbase": {
+      "value": 2819,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-x5-e53",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(E53)",
+      "sourceNote": "111 in, converted at 25.4 mm/in."
+    }
+  },
+  "trims": [
+    {
+      "id": "3-0i",
+      "name": "3.0i",
+      "productionYears": { "start": 2000, "end": 2006 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "5-speed automatic",
+      "gears": 5,
+      "engine": {
+        "code": "M54",
+        "configuration": "inline-6",
+        "cylinders": 6,
+        "displacement": { "value": 2979, "unit": "cc", "status": "verified", "source": "wikipedia-bmw-x5-e53", "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(E53)", "sourceNote": "3.0 L." },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 167.69,
+        "unit": "kW",
+        "status": "estimated",
+        "source": "wikipedia-bmw-x5-e53",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(E53)",
+        "sourceNote": "Source states '228 hp' without specifying metric PS or mechanical horsepower; converted here as metric PS (228 x 0.73549875 = 167.69 kW), the standard convention for a German manufacturer's own published figures. Reading it as mechanical hp instead would give 170.02 kW, about 1.4% higher."
+      },
+      "zeroToHundredKph": {
+        "value": 8.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-bmw-x5-e53",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(E53)",
+        "sourceNote": "Manufacturer figure, automatic transmission; 8.5 s with the manual."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "4-8is",
+      "name": "4.8is",
+      "productionYears": { "start": 2004, "end": 2006 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "5-speed automatic",
+      "gears": 5,
+      "engine": {
+        "code": "N62B48",
+        "configuration": "V8",
+        "cylinders": 8,
+        "displacement": { "value": 4799, "unit": "cc", "status": "verified", "source": "wikipedia-bmw-x5-e53", "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(E53)", "sourceNote": "4.8 L." },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 261.09,
+        "unit": "kW",
+        "status": "estimated",
+        "source": "wikipedia-bmw-x5-e53",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(E53)",
+        "sourceNote": "Source states '355 hp' without specifying metric PS or mechanical horsepower; converted here as metric PS (355 x 0.73549875 = 261.09 kW). Reading it as mechanical hp instead would give 264.72 kW, about 1.4% higher."
+      },
+      "zeroToHundredKph": {
+        "value": 6.1,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-bmw-x5-e53",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(E53)",
+        "sourceNote": "Manufacturer figure, automatic transmission (the only gearbox offered on this trim)."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/bmw-x5-e53/hero.webp",
+    "alt": "Silver first-generation BMW X5 photographed from the front three-quarter angle, showing its boxy proportions and round headlights",
+    "width": 1600,
+    "height": 824,
+    "caption": "BMW's first SUV, developed alongside the Range Rover L322 during BMW's ownership of Land Rover and sharing its hill-descent and off-road management systems.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2002 BMW X5 Sport Automatic 4.4 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2002_BMW_X5_Sport_Automatic_4.4_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bmw-x5-e53"]
+}

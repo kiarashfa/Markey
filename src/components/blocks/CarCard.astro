@@ -2,7 +2,7 @@
 /**
  * One entry in any list of cars — catalog grid, taxonomy view, a hub's
  * generation list. The brand badge is reused here so recognition is consistent
- * from the homepage down (SPEC.md §11.2).
+ * from the homepage down.
  */
 import BrandBadge from './BrandBadge.astro';
 import { carHref } from '../../lib/content/href.ts';
@@ -47,7 +47,7 @@ const kindLabel = { model: 'Nameplate', generation: 'Generation', trim: 'Halo tr
   </div>
 
   {/* A thin accent rule is as far as brand colour goes in a dense list —
-      SPEC.md §11.1 keeps reference content calm. */}
+      reference content stays calm. */}
   <span
     aria-hidden="true"
     class="w-1 shrink-0 self-stretch rounded-full opacity-70"

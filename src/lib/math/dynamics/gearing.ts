@@ -1,5 +1,5 @@
 /**
- * Gearing — SPEC.md §8.2, §9.6.
+ * Gearing.
  *
  * The one thing `/methodology/` names as the model's largest blind spot: the
  * top-speed solve finds where power balances drag and knows nothing about
@@ -9,7 +9,7 @@
  *
  * This closes that gap for anyone who supplies gearing, and changes nothing at
  * all for anyone who does not. Gearing is optional on `VehicleInputs`; absent,
- * every figure is exactly what it was before. Build Car (SPEC.md §9.6) is where
+ * every figure is exactly what it was before. Build Car is where
  * it earns its keep, because a visitor specifying a hypothetical car can state
  * its gearing where the content collections almost never publish it.
  *

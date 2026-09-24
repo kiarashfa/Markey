@@ -1,0 +1,27 @@
+{
+  "id": "delorean",
+  "name": "DeLorean",
+  "legalName": "DeLorean Motor Company (DMC)",
+  "countryOfOrigin": "United States",
+  "founded": 1975,
+  "defunct": 1982,
+  "logo": {
+    "src": "/images/brands/delorean.svg",
+    "alt": "The DMC wordmark on a black rectangular background",
+    "credit": {
+      "author": "DeLorean Motor Company",
+      "title": "File:Delorean DMC-12 Logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delorean_DMC-12_Logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicle, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes; the basis for display here is trademark nominative use, not a copyright licence."
+    }
+  },
+  "accentColor": "#000000",
+  "accentColorNote": "Sampled from the badge's own SVG source, whose single background rectangle is filled solid black (#000000) — matching the real DMC badge, which is a black plate on the DeLorean's brushed-stainless bodywork. No separate published brand colour exists for a company that built and sold cars for barely a year and a half.",
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-delorean-motor-company",
+    "wikipedia-dmc-delorean"
+  ]
+}

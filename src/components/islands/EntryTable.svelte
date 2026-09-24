@@ -10,7 +10,7 @@
    * you are looking at.
    *
    * **It reads `CatalogueCar`**, the same flattened record the catalog page,
-   * `/catalogue.json` and the comparison tool read (SPEC.md §9.1). One builder,
+   * `/catalogue.json` and the comparison tool read. One builder,
    * one set of numbers: this table cannot disagree with the catalog about which
    * car is faster, because there is no second source of that answer.
    *

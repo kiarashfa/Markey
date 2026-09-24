@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Matchmaker — SPEC.md §9.3.
+   * Matchmaker.
    *
    * The deeper of the two discovery tools: hard dealbreakers first, then
    * **weighted preference scoring within what survives**, producing a ranked,

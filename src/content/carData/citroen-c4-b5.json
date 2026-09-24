@@ -1,0 +1,423 @@
+{
+  "id": "citroen-c4-b5",
+  "name": "Citroën C4 (B5)",
+  "fullName": "Citroën C4 (B5), 2004-2010",
+  "kind": "generation",
+  "parent": "citroen-c4",
+  "brandRef": "citroen",
+  "generationCode": "B5",
+  "productionYears": {
+    "start": 2004,
+    "end": 2010
+  },
+  "bodyStyles": [
+    "hatchback",
+    "coupe",
+    "saloon"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Donato Coco, Jean-Pierre Ploue and Bertrand Rapatel; Domagoj Djukec (coupe)",
+  "assembly": [
+    "Mulhouse, France",
+    "Wuhan, China (Dongfeng Peugeot-Citroen)",
+    "El Palomar, Buenos Aires, Argentina"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4260,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+      "sourceNote": "Hatchback figure; the coupe is 4,274 mm, the short-wheelbase saloon 4,588 mm and the long saloon 4,770 mm."
+    },
+    "width": {
+      "value": 1769,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+    },
+    "height": {
+      "value": 1458,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+      "sourceNote": "Hatchback/coupe figure; the saloon is 1,510 mm."
+    },
+    "wheelbase": {
+      "value": 2608,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+      "sourceNote": "Hatchback/coupe figure; the saloon is 2,710 mm."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-4-16v",
+      "name": "1.4 16v",
+      "productionYears": {
+        "start": 2004,
+        "end": 2010
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "ET3",
+        "configuration": "inline-4, PSA ET3",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1360,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 65,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "88 PS at 5,250 rpm, converted at 1 PS = 0.73549875 kW (64.7 kW, rounded to 65)."
+      },
+      "torque": {
+        "value": 133,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "mass": {
+        "value": 1182,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "zeroToHundredKph": {
+        "value": 12.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "topSpeed": {
+        "value": 182,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "fuelEconomy": {
+        "value": 6.4,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "Cycle not named in the source."
+      },
+      "co2": {
+        "value": 153,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-16v-thp",
+      "name": "1.6 16v THP",
+      "productionYears": {
+        "start": 2008,
+        "end": 2010
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 6,
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "EP6DT",
+        "configuration": "inline-4 turbocharged, Prince EP6DT THP",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 110,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "150 PS at 5,800 rpm, converted at 1 PS = 0.73549875 kW (110.3 kW, rounded to 110)."
+      },
+      "torque": {
+        "value": 240,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "mass": {
+        "value": 1276,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "zeroToHundredKph": {
+        "value": 9.2,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "topSpeed": {
+        "value": 195,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "fuelEconomy": {
+        "value": 6.9,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "Cycle not named in the source."
+      },
+      "co2": {
+        "value": 164,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-hdi",
+      "name": "1.6 16v HDi",
+      "productionYears": {
+        "start": 2004,
+        "end": 2008
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "DV6ATED4",
+        "configuration": "inline-4 common-rail turbo-diesel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1560,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 66,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "90 PS at 4,000 rpm, converted at 1 PS = 0.73549875 kW (66.2 kW, rounded to 66)."
+      },
+      "torque": {
+        "value": 215,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "mass": {
+        "value": 1257,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "zeroToHundredKph": {
+        "value": 12.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "topSpeed": {
+        "value": 180,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "fuelEconomy": {
+        "value": 4.7,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "Cycle not named in the source."
+      },
+      "co2": {
+        "value": 125,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-0-hdi",
+      "name": "2.0 16v HDi",
+      "productionYears": {
+        "start": 2004,
+        "end": 2008
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "gears": 6,
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "DW10B",
+        "configuration": "inline-4 common-rail turbo-diesel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1997,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 100,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "136 PS at 4,000 rpm, converted at 1 PS = 0.73549875 kW (100.0 kW)."
+      },
+      "torque": {
+        "value": 320,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "mass": {
+        "value": 1381,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "zeroToHundredKph": {
+        "value": 9.7,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "topSpeed": {
+        "value": 207,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "fuelEconomy": {
+        "value": 5.4,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "Cycle not named in the source."
+      },
+      "co2": {
+        "value": 142,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "dragCoefficient": {
+        "value": 0.28,
+        "unit": "",
+        "status": "estimated",
+        "sourceNote": "The article states a Cd of 0.28 for the saloon body specifically, not this hatchback/coupe trim; recorded here as an estimate for the shared platform rather than a verified figure for this exact body style."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/citroen-c4-b5/hero.webp",
+    "alt": "Silver first-generation Citroën C4 five-door hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 772,
+    "caption": "The original C4, launched in 2004 sharing its floorpan with the Peugeot 307.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2006 Citroen C4 SX 1.6 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Citroen_C4_SX_1.6_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/citroen-c4-b5/gallery-1.webp",
+      "alt": "Rear three-quarter view of a silver first-generation Citroën C4 hatchback",
+      "width": 1200,
+      "height": 604,
+      "caption": "A pre-facelift UK-market SX trim car.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2006 Citroen C4 SX 1.6 Rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Citroen_C4_SX_1.6_Rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-citroen-c4"
+  ]
+}

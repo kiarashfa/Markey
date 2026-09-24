@@ -1,0 +1,178 @@
+{
+  "id": "subaru-impreza-6",
+  "name": "Subaru Impreza",
+  "fullName": "Subaru Impreza (GU), 2023-present",
+  "kind": "generation",
+  "parent": "subaru-impreza",
+  "brandRef": "subaru",
+  "generationCode": "GU",
+  "productionYears": {
+    "start": 2023,
+    "end": null
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "awd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "assembly": [
+    "Ōta, Gunma, Japan"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4476,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-subaru-impreza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+      "sourceNote": "Published as 176.2 in, converted at 1 in = 25.4 mm."
+    },
+    "width": {
+      "value": 1781,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-subaru-impreza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+      "sourceNote": "Published as 70.1 in, converted at 1 in = 25.4 mm."
+    },
+    "height": {
+      "value": 1481,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-subaru-impreza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+      "sourceNote": "Published as 58.3 in, converted at 1 in = 25.4 mm."
+    },
+    "wheelbase": {
+      "value": 2670,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-subaru-impreza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+      "sourceNote": "Published as 105.1 in, converted at 1 in = 25.4 mm."
+    },
+    "kerbWeight": {
+      "value": 1382,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-subaru-impreza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+      "sourceNote": "The infobox also lists a lower 1350 kg 'Manual' figure, but the article's own prose states plainly that the manual transmission was discontinued for this generation, leaving the CVT ('Automatic', 1382 kg) as the only gearbox actually sold. The CVT figure is recorded here as the one describing a real car."
+    }
+  },
+  "trims": [
+    {
+      "id": "20i",
+      "name": "2.0i",
+      "productionYears": {
+        "start": 2023,
+        "end": null
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "Lineartronic CVT",
+      "engine": {
+        "code": "FB20D",
+        "configuration": "2.0 L flat-4 (boxer), direct injection",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 113,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-subaru-impreza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+        "sourceNote": "152 hp, US-market figure, converted at 1 hp = 0.745699872 kW (113.3 kW, rounded to 113). Used in the Base and Sport trims."
+      },
+      "torque": {
+        "value": 197,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-subaru-impreza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+        "sourceNote": "145 lb-ft, converted at 1 lb-ft = 1.3558179 N⋅m (196.6 N⋅m, rounded to 197)."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "25-rs",
+      "name": "2.5 RS",
+      "productionYears": {
+        "start": 2023,
+        "end": null
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "Lineartronic CVT",
+      "engine": {
+        "code": "FB25D",
+        "configuration": "2.5 L flat-4 (boxer), direct injection",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 136,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-subaru-impreza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+        "sourceNote": "182 hp, US-market figure, converted at 1 hp = 0.745699872 kW (135.7 kW, rounded to 136). The RS trim revives a name unused since 2005."
+      },
+      "torque": {
+        "value": 242,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-subaru-impreza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+        "sourceNote": "178 lb-ft, converted at 1 lb-ft = 1.3558179 N⋅m (241.5 N⋅m, rounded to 242)."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/subaru-impreza-6/hero.webp",
+    "alt": "Grey current-generation Subaru Impreza RS hatchback photographed from the front three-quarter angle in the rain",
+    "width": 1600,
+    "height": 801,
+    "caption": "The current, sixth-generation Impreza in RS trim — the first Impreza sold only as a hatchback, with no sedan or manual gearbox offered.",
+    "credit": {
+      "author": "Kevauto",
+      "title": "File:2024 Subaru Impreza RS, front 12.10.24.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Subaru_Impreza_RS,_front_12.10.24.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/subaru-impreza-6/gallery-1.webp",
+      "alt": "Rear three-quarter view of a light blue current-generation Subaru Impreza hatchback badged Impreza on the tailgate",
+      "width": 1200,
+      "height": 799,
+      "caption": "The sedan body style was dropped entirely for this generation, leaving the five-door hatchback as the only Impreza.",
+      "credit": {
+        "author": "Alexander-93",
+        "title": "File:Subaru Impreza (GU) Automesse Ludwigsburg 2024 IMG 1347.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Subaru_Impreza_(GU)_Automesse_Ludwigsburg_2024_IMG_1347.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-subaru-impreza"
+  ]
+}

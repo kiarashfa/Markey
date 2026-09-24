@@ -1,0 +1,321 @@
+{
+  "id": "citroen-c1-ab40",
+  "name": "Citroën C1 (AB40)",
+  "fullName": "Citroën C1 (AB40), 2014-2022",
+  "kind": "generation",
+  "parent": "citroen-c1",
+  "brandRef": "citroen",
+  "generationCode": "AB40",
+  "productionYears": {
+    "start": 2014,
+    "end": 2022
+  },
+  "bodyStyles": [
+    "hatchback",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "assembly": [
+    "Kolin, Czech Republic (TPCA)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3470,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+    },
+    "width": {
+      "value": 1620,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+    },
+    "height": {
+      "value": 1468,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+    },
+    "wheelbase": {
+      "value": 2340,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+    },
+    "kerbWeight": {
+      "value": 840,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-citroen-c1",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+      "sourceNote": "Published as an 840-956 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0-vti-68",
+      "name": "1.0 VTi 68",
+      "productionYears": {
+        "start": 2014,
+        "end": 2018
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual or 5-speed semi-automatic (ETG5)",
+      "engine": {
+        "code": "1KR-FE",
+        "configuration": "inline-3, Toyota 1KR-FE VTi",
+        "cylinders": 3,
+        "displacement": {
+          "value": 998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 51,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "69 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW (50.7 kW, rounded to 51)."
+      },
+      "torque": {
+        "value": 95,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+      },
+      "zeroToHundredKph": {
+        "value": 13.0,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+      },
+      "topSpeed": {
+        "value": 160,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+      },
+      "fuelEconomy": {
+        "value": 4.1,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "NEDC cycle."
+      },
+      "co2": {
+        "value": 90,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "NEDC cycle."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-2-puretech",
+      "name": "1.2 PureTech",
+      "productionYears": {
+        "start": 2014,
+        "end": 2018
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "EB2-F",
+        "configuration": "inline-3, PureTech",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1199,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 61,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "83 PS at 5,750 rpm, converted at 1 PS = 0.73549875 kW (61.0 kW)."
+      },
+      "torque": {
+        "value": 117,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+      },
+      "zeroToHundredKph": {
+        "value": 11.0,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+      },
+      "topSpeed": {
+        "value": 171,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+      },
+      "fuelEconomy": {
+        "value": 4.3,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "NEDC cycle."
+      },
+      "co2": {
+        "value": 99,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "NEDC cycle."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-0-vti-72",
+      "name": "1.0 VTi 72",
+      "productionYears": {
+        "start": 2019,
+        "end": 2022
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "1KR-B52",
+        "configuration": "inline-3, Toyota 1KR-B52 VTi",
+        "cylinders": 3,
+        "displacement": {
+          "value": 998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 53,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "72 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW (53.0 kW)."
+      },
+      "torque": {
+        "value": 93,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+      },
+      "zeroToHundredKph": {
+        "value": 12.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+      },
+      "topSpeed": {
+        "value": 160,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1"
+      },
+      "fuelEconomy": {
+        "value": 3.8,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "NEDC cycle."
+      },
+      "co2": {
+        "value": 86,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c1",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+        "sourceNote": "NEDC cycle."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/citroen-c1-ab40/hero.webp",
+    "alt": "Silver second-generation Citroën C1 Flair hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 875,
+    "caption": "The second and final C1, sold from 2014 until the nameplate's discontinuation in January 2022.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2017 Citroen C1 Flair Puretech 1.2 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Citroen_C1_Flair_Puretech_1.2_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/citroen-c1-ab40/gallery-1.webp",
+      "alt": "Rear three-quarter view of a silver second-generation Citroën C1 Flair hatchback",
+      "width": 1200,
+      "height": 741,
+      "caption": "This generation also introduced the Airscape, a fixed-profile cabriolet with a folding fabric roof.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2017 Citroen C1 Flair Puretech 1.2 Rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Citroen_C1_Flair_Puretech_1.2_Rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-citroen-c1"
+  ]
+}

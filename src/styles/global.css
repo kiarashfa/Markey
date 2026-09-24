@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /*
- * Design tokens — SPEC.md §11.
+ * Design tokens.
  *
  * Registered in `@theme` so Tailwind generates real utilities (`bg-surface-1`,
  * `text-ink-muted`) rather than every component reaching for an arbitrary
@@ -11,12 +11,12 @@
  */
 @theme {
   /*
-   * Two type registers (SPEC.md §11.3). Both resolve to the platform's own
+   * Two type registers. Both resolve to the platform's own
    * font today: per apple-design §15, the system face already ships optical
    * sizing, tracking tables and legibility tuning, and overriding it needs a
    * reason. The registers are therefore distinguished by weight, size,
    * tracking and leading — which is where the hierarchy actually lives.
-   * Selecting a bespoke display face is still open (SPEC.md §16); when it
+   * Selecting a bespoke display face is still open; when it
    * lands it changes this one line and nothing else.
    */
   --font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI Variable Display",
@@ -55,7 +55,7 @@
   --color-line-strong: oklch(74% 0.009 260);
 
   /*
-   * Status colours for the data-trust badges (SPEC.md §5.5).
+   * Status colours for the data-trust badges.
    *
    * Amber is the hard one: at 58% it measured 4.03:1 on the card surface and
    * failed AA. These are the darkest each hue can go while still reading as
@@ -259,7 +259,7 @@
   }
 
   /*
-   * A citation marker in prose — SPEC.md §5.5.
+   * A citation marker in prose.
    *
    * Superscript, tabular, and *not* underlined: a footnote number is a pointer
    * rather than a link into the world, and underlining every one of them turns
@@ -304,7 +304,7 @@
    * elements, because everywhere else on the site a link carries its own
    * classes and a blanket `a { }` rule would style it twice. Two kinds of link
    * land here and both need to look like links: the ones an author wrote in
-   * Markdown, and the ones the cross-link plugin derived (SPEC.md §12).
+   * Markdown, and the ones the cross-link plugin derived.
    *
    * Underlined rather than coloured. The accent is the *brand's* colour on
    * these pages, and a paragraph of BMW-blue words would read as decoration

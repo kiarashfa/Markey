@@ -1,8 +1,8 @@
 /**
- * Depreciation — SPEC.md §8.1.
+ * Depreciation.
  *
  * A transparent, formula-driven decay curve. **Explicitly a projection, never a
- * live market-data claim.** SPEC.md §15 puts real used-car pricing in the
+ * live market-data claim.** Real used-car pricing sits in the
  * "likely not obtainable at all" column for a free global static site, so this
  * module exists to be honest about modelling rather than to pretend at data it
  * cannot have.
@@ -17,7 +17,7 @@
  * and flattens out. A linear model would reach zero on a specific date, which
  * no car does.
  *
- * Where the owner has logged real valuations (SPEC.md §9.4 `valueAnchors`),
+ * Where the owner has logged real valuations (`valueAnchors`),
  * those are plotted on the same chart as points. The curve is never fitted to
  * them: a projection that quietly rewrites itself to pass through user data
  * stops being a projection and starts being a very short trend line.
@@ -236,7 +236,7 @@ export function depreciationCurve(
 /**
  * How far a real logged valuation sits from the projection.
  *
- * SPEC.md §9.4 lets an owner record real valuations they looked up. This
+ * My Garage lets an owner record real valuations they looked up. This
  * reports the gap between those anchors and the curve **without altering the
  * curve** — the divergence is the interesting thing, and hiding it by refitting
  * would throw away the only real market data the site ever sees.

@@ -1,5 +1,5 @@
 /**
- * Braking — SPEC.md §8.2.
+ * Braking.
  *
  * `d = v² / (2·μ·g)`
  *

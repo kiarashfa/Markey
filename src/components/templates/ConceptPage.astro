@@ -1,6 +1,6 @@
 ---
 /**
- * Concept / prototype page — SPEC.md §5.3.
+ * Concept / prototype page.
  *
  * A genuinely lighter content type: no trims, no market variants, no price.
  * Its distinctive field is `fate`, which is the thing a reader actually wants
@@ -38,7 +38,7 @@ interface Props {
 const { concept, brand, relatedCar, proseFrontmatter } = Astro.props;
 const { data } = concept;
 
-/** This page's own numbered references — SPEC.md §5.5. */
+/** This page's own numbered references. */
 const { list: references, numbers: citationNumbers } = buildPageReferences(
   proseCitationsOf(proseFrontmatter),
   dataCitationsOf(data),

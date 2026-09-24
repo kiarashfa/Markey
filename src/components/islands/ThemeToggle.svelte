@@ -55,7 +55,7 @@
     resolved = resolveTheme(next);
 
     const result = write(THEME_FEATURE, THEME_VERSION, next);
-    // SPEC.md §9.8: a failure to remember is surfaced, never swallowed. The
+    // A failure to remember is surfaced, never swallowed. The
     // theme still applies for this page — only the persistence failed.
     notice = result.ok ? null : result.message;
   }

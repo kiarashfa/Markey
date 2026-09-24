@@ -1,5 +1,5 @@
 /**
- * Relative insurance risk banding — SPEC.md §8.1.
+ * Relative insurance risk banding.
  *
  * **This never produces a monetary quote, and that is a design constraint
  * rather than a limitation to be worked around.** Insurance pricing is

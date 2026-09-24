@@ -1,0 +1,280 @@
+{
+  "id": "dacia-logan-l90",
+  "name": "Dacia Logan (L90)",
+  "fullName": "Dacia Logan (L90/U90/F90), 2004-2012",
+  "kind": "generation",
+  "parent": "dacia-logan",
+  "brandRef": "dacia",
+  "generationCode": "L90/U90/F90",
+  "productionYears": {
+    "start": 2004,
+    "end": 2012
+  },
+  "bodyStyles": [
+    "saloon",
+    "estate",
+    "van",
+    "pickup"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Renault Technocentre",
+  "assembly": [
+    "Mioveni, Romania",
+    "Sao Jose dos Pinhais, Brazil (Renault Brazil)",
+    "Envigado, Colombia (Sofasa)",
+    "Casablanca, Morocco (Somaca)",
+    "Tehran, Iran (Pars Khodro / IKCO)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4288,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-logan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan",
+      "sourceNote": "Saloon figure; the station wagon is 4,473 mm, the panel van 4,450 mm and the pickup 4,496 mm."
+    },
+    "width": {
+      "value": 1740,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-logan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan",
+      "sourceNote": "Saloon, station wagon and panel van figure; the pickup is 1,735 mm."
+    },
+    "height": {
+      "value": 1534,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-logan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan",
+      "sourceNote": "Saloon figure; the station wagon/van are 1,640-1,674 mm and the pickup 1,554 mm."
+    },
+    "wheelbase": {
+      "value": 2630,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-logan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan",
+      "sourceNote": "Saloon figure; the station wagon and pickup are 2,905 mm and the panel van 2,900 mm."
+    },
+    "kerbWeight": {
+      "value": 1090,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-dacia-logan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan",
+      "sourceNote": "Published as a 1,090-1,360 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0-16v-hiflex",
+      "name": "1.0 16v Hi-Flex",
+      "productionYears": {
+        "start": 2004,
+        "end": 2012
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "D4D",
+        "configuration": "inline-4 SOHC 16v, flex-fuel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-dacia-logan",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 57,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-dacia-logan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan",
+        "sourceNote": "Published directly in kW. Hi-Flex, runs on petrol or ethanol (Brazil)."
+      },
+      "torque": {
+        "value": 99,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-dacia-logan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan"
+      },
+      "topSpeed": {
+        "value": 160,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-dacia-logan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-16v-k4m",
+      "name": "1.6 16v",
+      "productionYears": {
+        "start": 2004,
+        "end": 2012
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "K4M",
+        "configuration": "inline-4 DOHC 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-dacia-logan",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 77,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-dacia-logan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan",
+        "sourceNote": "Published directly in kW."
+      },
+      "torque": {
+        "value": 148,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-dacia-logan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan"
+      },
+      "topSpeed": {
+        "value": 183,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-dacia-logan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan"
+      },
+      "fuelEconomy": {
+        "value": 7.1,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-dacia-logan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan",
+        "sourceNote": "Cycle not named in the source."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-5-dci-48kw",
+      "name": "1.5 dCi",
+      "productionYears": {
+        "start": 2005,
+        "end": 2012
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "K9K 700",
+        "configuration": "inline-4 SOHC 8v common-rail turbo-diesel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1461,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-dacia-logan",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 48,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-dacia-logan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan",
+        "sourceNote": "Published directly in kW. More powerful 75 kW and 90 kW tunes of the same 1.5 dCi engine (K9K 792 and K9K 796) were introduced later in the run and are not this trim."
+      },
+      "torque": {
+        "value": 160,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-dacia-logan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan"
+      },
+      "topSpeed": {
+        "value": 155,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-dacia-logan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan"
+      },
+      "fuelEconomy": {
+        "value": 4.9,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-dacia-logan",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Logan",
+        "sourceNote": "Cycle not named in the source."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/dacia-logan-l90/hero.webp",
+    "alt": "Red first-generation Dacia Logan saloon photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 975,
+    "caption": "The original Logan, launched in 2004 as a deliberately simple, low-cost saloon designed at Renault's Technocentre.",
+    "credit": {
+      "author": "Rudolf Stricker",
+      "title": "File:Dacia Logan front 20070611.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dacia_Logan_front_20070611.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/dacia-logan-l90/gallery-1.webp",
+      "alt": "Rear three-quarter view of a red first-generation Dacia Logan",
+      "width": 1200,
+      "height": 866,
+      "caption": "A Super trim car; the same B0-platform underpinnings were shared with the Sandero and Duster.",
+      "credit": {
+        "author": "Rudolf Stricker",
+        "title": "File:Dacia Logan rear 20070611.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dacia_Logan_rear_20070611.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-dacia-logan"
+  ]
+}

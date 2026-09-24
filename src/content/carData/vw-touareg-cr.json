@@ -1,0 +1,132 @@
+{
+  "id": "vw-touareg-cr",
+  "name": "Volkswagen Touareg",
+  "fullName": "Volkswagen Touareg (CR), 2018-2026",
+  "kind": "generation",
+  "parent": "volkswagen-touareg",
+  "brandRef": "volkswagen",
+  "generationCode": "CR",
+  "productionYears": {
+    "start": 2018,
+    "end": 2026
+  },
+  "bodyStyles": [
+    "suv"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel",
+    "phev"
+  ],
+  "drivetrains": [
+    "awd"
+  ],
+  "segment": "suv-large",
+  "positioning": "premium",
+  "designer": "Frank Bruese",
+  "assembly": [
+    "Bratislava, Slovakia (Volkswagen Bratislava Plant)",
+    "Pekan, Malaysia (HICOM, 2024-2026)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4878,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-touareg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+    },
+    "width": {
+      "value": 1984,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-touareg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+    },
+    "height": {
+      "value": 1717,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-touareg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+    },
+    "wheelbase": {
+      "value": 2894,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-touareg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+    }
+  },
+  "trims": [
+    {
+      "id": "touareg-r-phev",
+      "name": "Touareg R",
+      "productionYears": {
+        "start": 2020,
+        "end": 2026
+      },
+      "drivetrain": "awd",
+      "powertrain": "phev",
+      "engine": {
+        "configuration": "V6 turbocharged petrol plus AC induction electric motor",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2995,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-touareg",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 340,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "Published combined system output of 462 PS, converted at 1 PS = 0.73549875 kW (339.9 kW, rounded to 340). The electric motor alone is separately rated at 100 kW; petrol-engine-only output is not stated, and the two figures are not additive for a system rating."
+      },
+      "torque": {
+        "value": 700,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "700 N⋅m combined system torque."
+      },
+      "batteryCapacity": {
+        "value": 14.1,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "Stated for the Touareg R specifically. The base plug-in-hybrid Touareg (not the R) is separately given a larger 17.9 kWh pack in the same article; the two are not the same battery."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/vw-touareg-cr/hero.webp",
+    "alt": "Dark blue-grey third-generation Volkswagen Touareg R photographed from the front three-quarter angle, showing its illuminated grille strip and R badging",
+    "width": 1600,
+    "height": 848,
+    "caption": "The third and, as of the 2024 facelift, final Touareg generation, shown here as the plug-in hybrid Touareg R.",
+    "credit": {
+      "author": "Alexander-93",
+      "title": "File:2024 Volkswagen Touareg R IMG 8443.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Volkswagen_Touareg_R_IMG_8443.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-volkswagen-touareg"
+  ]
+}

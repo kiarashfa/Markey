@@ -174,7 +174,7 @@ describe('missing inputs', () => {
 
 // ---------------------------------------------------------------------------
 
-describe('one physics path (SPEC.md §9.6)', () => {
+describe('one physics path', () => {
   /**
    * The definition of done for Phase 7: a built car and a real car with
    * identical inputs produce identical outputs.

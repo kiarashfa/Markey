@@ -1,0 +1,16 @@
+{
+  "id": "chevrolet-camaro",
+  "name": "Chevrolet Camaro",
+  "fullName": "Chevrolet Camaro (1967-2024)",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "chevrolet",
+  "productionYears": {
+    "start": 1966,
+    "end": 2023
+  },
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-chevrolet-camaro-first-generation", "wikipedia-chevrolet-camaro-sixth-generation"]
+}

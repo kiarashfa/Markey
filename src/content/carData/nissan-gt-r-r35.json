@@ -1,0 +1,224 @@
+{
+  "id": "nissan-gt-r-r35",
+  "name": "Nissan GT-R (R35)",
+  "fullName": "Nissan GT-R (R35), 2007-2025",
+  "kind": "generation",
+  "parent": "nissan-gt-r",
+  "brandRef": "nissan",
+  "generationCode": "R35",
+  "productionYears": {
+    "start": 2007,
+    "end": 2025
+  },
+  "bodyStyles": ["coupe"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["awd"],
+  "segment": "s-segment",
+  "positioning": "premium",
+  "designer": "Hiroshi Hasegawa (chief designer); Shiro Nakamura (design director)",
+  "assembly": ["Nissan, Kaminokawa, Tochigi, Japan (Tochigi Plant)"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4656,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-gt-r",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+      "sourceNote": "183.3 in (2007-2009), converted at 25.4 mm/in. Length grew across facelifts: 183.9 in (2010-15), 184.65 in (2016-22), 185.4 in (2023-25)."
+    },
+    "width": {
+      "value": 1895,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-gt-r",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+      "sourceNote": "74.6 in, converted at 25.4 mm/in (2007-09 and 2012-25; briefly 74.9 in in 2010-11)."
+    },
+    "height": {
+      "value": 1369,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-gt-r",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+      "sourceNote": "53.9 in, converted at 25.4 mm/in (2007-09, 2012-15, 2023-25; briefly 54.0 in in 2010-11 and 2016-22)."
+    },
+    "wheelbase": {
+      "value": 2780,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-nissan-gt-r",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+      "sourceNote": "Unchanged across the 18-year production run."
+    },
+    "kerbWeight": {
+      "value": 1740,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-nissan-gt-r",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+      "sourceNote": "2007-2009 base figure. The car grew heavier at every facelift, reaching 1,785 kg by 2019-2025; the lightest version built was the 2007-2009 SpecV at 1,680 kg and the lightest late car the 2019-2025 Nismo at 1,750 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "launch-480ps",
+      "name": "Launch (CBA-R35)",
+      "productionYears": { "start": 2007, "end": 2009 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed dual-clutch automatic",
+      "gears": 6,
+      "engine": {
+        "code": "VR38DETT",
+        "configuration": "V6, 60-degree, twin-turbocharged",
+        "cylinders": 6,
+        "displacement": { "value": 3799, "unit": "cc", "status": "verified", "source": "wikipedia-nissan-gt-r", "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R" },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 353,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-nissan-gt-r",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+        "sourceNote": "Stated directly in kW (480 PS) at 6,400 rpm for the 2007-2009 launch cars."
+      },
+      "torque": {
+        "value": 583,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-nissan-gt-r",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+        "sourceNote": "430 lb-ft at 3,200-5,200 rpm, converted at 1.35581795 Nm/lb-ft."
+      },
+      "mass": {
+        "value": 1740,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-nissan-gt-r",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R"
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "570ps-2016",
+      "name": "4BA-R35 (570 PS)",
+      "productionYears": { "start": 2016, "end": 2025 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed dual-clutch automatic",
+      "gears": 6,
+      "engine": {
+        "code": "VR38DETT",
+        "configuration": "V6, 60-degree, twin-turbocharged",
+        "cylinders": 6,
+        "displacement": { "value": 3799, "unit": "cc", "status": "verified", "source": "wikipedia-nissan-gt-r", "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R" },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 419.24,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-nissan-gt-r",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+        "sourceNote": "570 PS at 6,800 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 633,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-nissan-gt-r",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+        "sourceNote": "467 lb-ft at 3,300-5,800 rpm, converted at 1.35581795 Nm/lb-ft."
+      },
+      "mass": {
+        "value": 1785,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-nissan-gt-r",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R"
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "nismo-600ps",
+      "name": "Nismo",
+      "productionYears": { "start": 2014, "end": 2025 },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "6-speed dual-clutch automatic",
+      "gears": 6,
+      "engine": {
+        "code": "VR38DETT (Nismo tune)",
+        "configuration": "V6, 60-degree, twin-turbocharged, larger turbochargers",
+        "cylinders": 6,
+        "displacement": { "value": 3799, "unit": "cc", "status": "verified", "source": "wikipedia-nissan-gt-r", "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R" },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 441.3,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-nissan-gt-r",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+        "sourceNote": "600 PS, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 652,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-nissan-gt-r",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R"
+      },
+      "mass": {
+        "value": 1730,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-nissan-gt-r",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+        "sourceNote": "2014-2015 figure. Later Nismo years ranged 1,750-1,775 kg."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/nissan-gt-r-r35/hero.webp",
+    "alt": "Black pre-facelift Nissan GT-R (R35) photographed from the front three-quarter angle, showing its four round tail-light heritage cues up front and sharply creased bodywork",
+    "width": 1600,
+    "height": 670,
+    "caption": "The car that replaced the Skyline GT-R name entirely: an all-new Premium Midship platform with the transmission mounted at the rear axle for near-even weight distribution.",
+    "credit": {
+      "author": "OSX",
+      "title": "File:2009-2010 Nissan GT-R (R35) coupe 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009-2010_Nissan_GT-R_(R35)_coupe_01.jpg",
+      "licenseType": "public-domain",
+      "licenseNote": "Released into the public domain by the photographer."
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/nissan-gt-r-r35/gallery-1.webp",
+      "alt": "Engine bay of a late-model Nissan GT-R showing the hand-built VR38DETT twin-turbo V6",
+      "width": 1200,
+      "height": 798,
+      "caption": "Every VR38DETT was hand-assembled by one of a handful of named Takumi craftsmen at Nissan's Yokohama plant, a practice maintained for the whole 18-year run.",
+      "credit": {
+        "author": "TTTNIS",
+        "title": "File:2025 Nissan GT-R Premium edition T-spec engine.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025_Nissan_GT-R_Premium_edition_T-spec_engine.jpg",
+        "licenseType": "cc0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-nissan-gt-r"]
+}

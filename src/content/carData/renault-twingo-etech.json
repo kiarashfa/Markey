@@ -1,0 +1,172 @@
+{
+  "id": "renault-twingo-etech",
+  "name": "Renault Twingo E-Tech",
+  "fullName": "Renault Twingo E-Tech, 2026-present",
+  "kind": "generation",
+  "parent": "renault-twingo",
+  "brandRef": "renault",
+  "productionYears": {
+    "start": 2026,
+    "end": null
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "bev"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "designer": "Gilles Vidal (design director)",
+  "assembly": [
+    "Novo Mesto, Slovenia (Renault Slovenia)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3789,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo_E-Tech"
+    },
+    "width": {
+      "value": 1720,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo_E-Tech"
+    },
+    "height": {
+      "value": 1491,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo_E-Tech"
+    },
+    "wheelbase": {
+      "value": 2493,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo_E-Tech"
+    },
+    "kerbWeight": {
+      "value": 1200,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo_E-Tech"
+    }
+  },
+  "trims": [
+    {
+      "id": "60kw",
+      "name": "Twingo E-Tech",
+      "productionYears": {
+        "start": 2026,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed automatic",
+      "gears": 1,
+      "engine": {
+        "configuration": "single front-mounted electric motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 60,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo-e-tech",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo_E-Tech"
+      },
+      "torque": {
+        "value": 175,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo-e-tech",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo_E-Tech"
+      },
+      "mass": {
+        "value": 1200,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo-e-tech",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo_E-Tech"
+      },
+      "topSpeed": {
+        "value": 130,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo-e-tech",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo_E-Tech"
+      },
+      "zeroToHundredKph": {
+        "value": 12.1,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo-e-tech",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo_E-Tech"
+      },
+      "batteryCapacity": {
+        "value": 27.5,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo-e-tech",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo_E-Tech",
+        "sourceNote": "27.5 kWh lithium iron phosphate (LFP) pack; the source does not distinguish gross from usable capacity."
+      },
+      "electricRange": {
+        "value": 263,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo-e-tech",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo_E-Tech",
+        "sourceNote": "WLTP combined range."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-twingo-etech/hero.webp",
+    "alt": "Green Renault Twingo E-Tech electric city car photographed from the front three-quarter angle, showing its rounded headlights and single-box silhouette",
+    "width": 1600,
+    "height": 1065,
+    "caption": "The fourth Twingo, launched in 2026 as a battery-electric city car with styling deliberately close to the 1993 original.",
+    "credit": {
+      "author": "Alexander Migl",
+      "title": "File:Renault Twingo E-Tech IMG 6605.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_Twingo_E-Tech_IMG_6605.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/renault-twingo-etech/gallery-1.webp",
+      "alt": "Rear three-quarter view of a red Renault Twingo E-Tech showing its half-moon tail lamps and Renault badge on the tailgate",
+      "width": 1200,
+      "height": 683,
+      "caption": "The half-moon tail lamps are one of several styling details that reference the original Twingo.",
+      "credit": {
+        "author": "© M 93",
+        "title": "File:Renault Twingo E-Tech 80 Urban Range Techno (IV) – h 04042026.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_Twingo_E-Tech_80_Urban_Range_Techno_(IV)_–_h_04042026.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-renault-twingo-e-tech"
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "id": "vw-touareg-7l",
+  "name": "Volkswagen Touareg",
+  "fullName": "Volkswagen Touareg (7L), 2002-2010",
+  "kind": "generation",
+  "parent": "volkswagen-touareg",
+  "brandRef": "volkswagen",
+  "generationCode": "7L",
+  "productionYears": {
+    "start": 2002,
+    "end": 2010
+  },
+  "bodyStyles": [
+    "suv"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "awd"
+  ],
+  "segment": "suv-large",
+  "positioning": "premium",
+  "designer": "Erwin Leo Himmel",
+  "assembly": [
+    "Bratislava, Slovakia (Volkswagen Bratislava Plant)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4754,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-touareg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+    },
+    "width": {
+      "value": 1928,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-touareg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+    },
+    "height": {
+      "value": 1726,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-touareg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+    },
+    "wheelbase": {
+      "value": 2855,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-touareg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+    }
+  },
+  "trims": [
+    {
+      "id": "32-vr6",
+      "name": "3.2 VR6",
+      "productionYears": {
+        "start": 2002,
+        "end": 2007
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "AZZ/BAA/BKJ/BRJ/BMV/BMX",
+        "configuration": "VR6",
+        "cylinders": 6,
+        "displacement": {
+          "value": 3189,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-touareg",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 162,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "220 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW (161.8 kW, rounded to 162)."
+      },
+      "torque": {
+        "value": 310,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "310 N⋅m at 2,500 rpm."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "30-v6-tdi",
+      "name": "3.0 V6 TDI",
+      "productionYears": {
+        "start": 2004,
+        "end": 2010
+      },
+      "drivetrain": "awd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "BKS",
+        "configuration": "V6, common-rail turbocharged",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2967,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-touareg",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 165,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "225 PS at 3,500 rpm, converted at 1 PS = 0.73549875 kW (165.5 kW, rounded to 165)."
+      },
+      "torque": {
+        "value": 550,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "550 N⋅m across a 2,000-2,250 rpm plateau."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "50-v10-tdi",
+      "name": "5.0 V10 TDI",
+      "productionYears": {
+        "start": 2002,
+        "end": 2008
+      },
+      "drivetrain": "awd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "AYH/BLE/BKW/BWF",
+        "configuration": "V10, Pumpe-Düse turbocharged",
+        "cylinders": 10,
+        "displacement": {
+          "value": 4921,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-touareg",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 230,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "313 PS at 3,750 rpm, converted at 1 PS = 0.73549875 kW (230.2 kW, rounded to 230). At launch this was the most powerful diesel passenger-car engine in production."
+      },
+      "torque": {
+        "value": 750,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "750 N⋅m at 2,000 rpm."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/vw-touareg-7l/hero.webp",
+    "alt": "Dark blue first-generation Volkswagen Touareg SUV photographed from the front three-quarter angle outside a house",
+    "width": 1600,
+    "height": 863,
+    "caption": "The original Touareg, launched in 2002 and sharing its platform with the Porsche Cayenne and Audi Q7.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2005 Volkswagen Touareg V6 Sport Automatic 3.2 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2005_Volkswagen_Touareg_V6_Sport_Automatic_3.2_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-volkswagen-touareg"
+  ]
+}

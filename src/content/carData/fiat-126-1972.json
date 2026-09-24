@@ -1,0 +1,187 @@
+{
+  "id": "fiat-126-1972",
+  "name": "Fiat 126",
+  "fullName": "Fiat 126 (incl. Polski Fiat 126p), 1972-2000",
+  "kind": "generation",
+  "parent": "fiat-126",
+  "brandRef": "fiat",
+  "generationCode": "Type 126",
+  "productionYears": {
+    "start": 1972,
+    "end": 2000
+  },
+  "bodyStyles": ["saloon", "hatchback"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "designer": "Sergio Sartorelli",
+  "assembly": [
+    "Fiat, Cassino, Italy",
+    "Fiat, Termini Imerese, Italy",
+    "FSM, Tychy and Bielsko-Biala, Poland",
+    "Zastava, Kragujevac, Yugoslavia",
+    "Steyr-Puch, Graz, Austria"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 3054,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-fiat-126",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_126"
+    },
+    "width": {
+      "value": 1378,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-fiat-126",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_126"
+    },
+    "height": {
+      "value": 1302,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-fiat-126",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_126"
+    },
+    "wheelbase": {
+      "value": 1840,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-fiat-126",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_126"
+    },
+    "kerbWeight": {
+      "value": 580,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-fiat-126",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_126",
+      "sourceNote": "Lowest figure in the infobox's published range of 580-619 kg across the model's trims and years."
+    }
+  },
+  "trims": [
+    {
+      "id": "594cc",
+      "name": "126 594",
+      "productionYears": { "start": 1972, "end": 1977 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "126",
+        "configuration": "air-cooled flat-2",
+        "cylinders": 2,
+        "displacement": { "value": 594, "unit": "cc", "status": "verified", "source": "wikipedia-fiat-126", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_126" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 16.92,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-fiat-126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_126",
+        "sourceNote": "23 PS (metric hp), converted at 1 PS = 0.73549875 kW. The article states this figure was unchanged when the engine was later enlarged to 652 cc."
+      },
+      "torque": {
+        "value": 39,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-fiat-126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_126"
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": [
+        { "market": "Poland", "alsoKnownAs": "Polski Fiat 126p", "overrides": {} }
+      ]
+    },
+    {
+      "id": "652cc",
+      "name": "126 652",
+      "productionYears": { "start": 1977, "end": 1987 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "126",
+        "configuration": "air-cooled flat-2",
+        "cylinders": 2,
+        "displacement": { "value": 652, "unit": "cc", "status": "verified", "source": "wikipedia-fiat-126", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_126", "sourceNote": "Bore increased from 73.5 to 77 mm at the end of 1977; the 594 cc engine remained available on some markets into early 1983." },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 16.92,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-fiat-126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_126",
+        "sourceNote": "23 PS (metric hp), claimed unchanged from the 594 cc engine despite the larger capacity, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": {
+        "value": 43,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-fiat-126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_126"
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": [
+        { "market": "Poland", "alsoKnownAs": "Polski Fiat 126p", "overrides": {} }
+      ]
+    },
+    {
+      "id": "126-bis-704cc",
+      "name": "126 BIS 704",
+      "productionYears": { "start": 1987, "end": 1991 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "126 BIS",
+        "configuration": "water-cooled flat-2, horizontally mounted",
+        "cylinders": 2,
+        "displacement": { "value": 704, "unit": "cc", "status": "verified", "source": "wikipedia-fiat-126", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_126" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 19.12,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-fiat-126",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_126",
+        "sourceNote": "26 PS (metric hp), converted at 1 PS = 0.73549875 kW."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": [
+        { "market": "Poland", "alsoKnownAs": "Polski Fiat 126p Bis", "overrides": {} }
+      ]
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/fiat-126/hero.webp",
+    "alt": "White Fiat 126 photographed from the front three-quarter angle, showing its boxy two-door body and round headlights",
+    "width": 1600,
+    "height": 1067,
+    "caption": "A single generation for 28 years: the rear-engined 126 replaced the Fiat 500 in 1972 and outlived it in production by decades, mostly as the Polish-built 126p.",
+    "credit": {
+      "author": "Tony Harrison",
+      "title": "File:1973 Fiat 126 IMG 7855.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1973_Fiat_126_IMG_7855.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-fiat-126"]
+}

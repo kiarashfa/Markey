@@ -1,0 +1,285 @@
+{
+  "id": "peugeot-208-a9",
+  "name": "Peugeot 208",
+  "fullName": "Peugeot 208 (A9), 2012-2019",
+  "kind": "generation",
+  "parent": "peugeot-208",
+  "brandRef": "peugeot",
+  "generationCode": "A9",
+  "productionYears": {
+    "start": 2012,
+    "end": 2019
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "designer": "Pierre Authier",
+  "assembly": [
+    "Mulhouse, France",
+    "Poissy, France",
+    "Trnava, Slovakia",
+    "Porto Real, Brazil",
+    "Gurun, Kedah, Malaysia (NAM)",
+    "Tehran, Iran (IKAP)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3962,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-208",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+    },
+    "width": {
+      "value": 1739,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-208",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+    },
+    "height": {
+      "value": 1460,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-208",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+    },
+    "wheelbase": {
+      "value": 2538,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-208",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+    },
+    "kerbWeight": {
+      "value": 975,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-peugeot-208",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+      "sourceNote": "Published in the infobox as a 975-1295 kg range across engine variants; the lowest figure is recorded here at generation level. Per-trim kerb weights are recorded separately below, sourced from the engine table rather than this range."
+    }
+  },
+  "trims": [
+    {
+      "id": "12-vti",
+      "name": "1.2 VTi",
+      "productionYears": {
+        "start": 2012,
+        "end": 2015
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "inline-3",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1199,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-208",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 60,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "82 PS at 6,000 rpm, explicitly labelled PS in the source's engine table, converted at 1 PS = 0.73549875 kW (60.3 kW, rounded to 60)."
+      },
+      "torque": {
+        "value": 118,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "118 N⋅m at 2,750 rpm."
+      },
+      "mass": {
+        "value": 975,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+      },
+      "topSpeed": {
+        "value": 175,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+      },
+      "zeroToHundredKph": {
+        "value": 12.2,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gti-16-thp",
+      "name": "GTi (1.6 THP)",
+      "productionYears": {
+        "start": 2013,
+        "end": 2015
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "configuration": "inline-4 turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-208",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 147,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "200 PS at 6,800 rpm, explicitly labelled PS, converted at 1 PS = 0.73549875 kW (147.1 kW, rounded to 147). A 208 PS 30th Anniversary edition of the same engine was also sold and is not recorded separately here."
+      },
+      "torque": {
+        "value": 275,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "275 N⋅m at 1,700 rpm."
+      },
+      "mass": {
+        "value": 1160,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+      },
+      "topSpeed": {
+        "value": 230,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+      },
+      "zeroToHundredKph": {
+        "value": 6.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "6.8 s for the standard 200 PS car; the 208 PS 30th Anniversary edition is quoted at 6.5 s."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "16-e-hdi",
+      "name": "1.6 e-HDi",
+      "productionYears": {
+        "start": 2012,
+        "end": 2015
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "configuration": "inline-4 turbocharged common-rail diesel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1560,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-208",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 68,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "92 PS at 4,000 rpm, explicitly labelled PS, converted at 1 PS = 0.73549875 kW (67.7 kW, rounded to 68)."
+      },
+      "torque": {
+        "value": 230,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "230 N⋅m at 1,750 rpm."
+      },
+      "mass": {
+        "value": 1080,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+      },
+      "topSpeed": {
+        "value": 185,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+      },
+      "zeroToHundredKph": {
+        "value": 10.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/peugeot-208-a9/hero.webp",
+    "alt": "White first-generation Peugeot 208 GTi photographed from the rear three-quarter angle, showing its roof spoiler, black alloy wheels and dual exhaust",
+    "width": 1600,
+    "height": 793,
+    "caption": "The first-generation 208 GTi, a turbocharged 1.6 THP hot hatch styled by Pierre Authier's team.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2017 Peugeot 208 GTi 1.6 Rear.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Peugeot_208_GTi_1.6_Rear.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-peugeot-208"
+  ]
+}

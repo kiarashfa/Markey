@@ -1,0 +1,23 @@
+{
+  "id": "mazda",
+  "name": "Mazda",
+  "legalName": "Mazda Motor Corporation",
+  "countryOfOrigin": "Japan",
+  "founded": 1920,
+  "logo": {
+    "src": "/images/brands/mazda.svg",
+    "alt": "The Mazda wordmark in blue lowercase letters",
+    "credit": {
+      "author": "TTTNIS",
+      "title": "File:Mazda logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's cars, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence."
+    }
+  },
+  "accentColor": "#0080c5",
+  "accentColorNote": "Sampled from the single fill colour (#0080C5) used throughout the wordmark's own SVG source — no separate brand-colour specification was published; the artwork is the only self-consistent source.",
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mazda-rx-7", "commons-file-mazda-logo-svg"]
+}

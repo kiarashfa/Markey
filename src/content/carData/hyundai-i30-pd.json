@@ -1,0 +1,225 @@
+{
+  "id": "hyundai-i30-pd",
+  "name": "Hyundai i30 (PD)",
+  "fullName": "Hyundai i30 (PD), 2016-present",
+  "kind": "generation",
+  "parent": "hyundai-i30",
+  "brandRef": "hyundai",
+  "generationCode": "PD",
+  "productionYears": {
+    "start": 2016,
+    "end": null
+  },
+  "bodyStyles": [
+    "hatchback",
+    "estate",
+    "liftback"
+  ],
+  "powertrains": [
+    "petrol",
+    "mild-hybrid",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Peter Schreyer",
+  "assembly": [
+    "Ulsan, South Korea (2016-2023)",
+    "Nosovice, Czech Republic",
+    "Tiaret, Algeria"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4340,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i30",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+      "sourceNote": "Hatchback figure; the Wagon is 4,585 mm and the Fastback liftback is 4,455 mm."
+    },
+    "width": {
+      "value": 1795,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i30",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+    },
+    "height": {
+      "value": 1450,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i30",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+      "sourceNote": "Published as a 1,450-1,455 mm range for the hatchback depending on trim; the Wagon is 1,475 mm and the Fastback is 1,425 mm. Lowest hatchback figure recorded here."
+    },
+    "wheelbase": {
+      "value": 2650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i30",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+    },
+    "kerbWeight": {
+      "value": 1197,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i30",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+      "sourceNote": "Published as a 1,197-1,520 kg range across the entire line-up, including the N performance model; the lowest figure is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0-t-gdi",
+      "name": "1.0 Kappa II T-GDi",
+      "productionYears": {
+        "start": 2016,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "G3LC",
+        "configuration": "inline-3 turbocharged, Kappa II T-GDi",
+        "cylinders": 3,
+        "displacement": {
+          "value": 998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-hyundai-i30",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 88,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+        "sourceNote": "120 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW (88.3 kW, rounded to 88)."
+      },
+      "torque": {
+        "value": 171,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+        "sourceNote": "17.4 kgf-m at 1,500-4,500 rpm, converted at 9.80665 N per kgf (170.6 N-m, rounded to 171)."
+      },
+      "zeroToHundredKph": {
+        "value": 11.1,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+      },
+      "topSpeed": {
+        "value": 190,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-4-t-gdi",
+      "name": "1.4 Kappa II T-GDi",
+      "productionYears": {
+        "start": 2016,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or 7-speed DCT",
+      "engine": {
+        "code": "G4LD",
+        "configuration": "inline-4 turbocharged, Kappa II T-GDi",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1353,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-hyundai-i30",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 103,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+        "sourceNote": "140 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW (103.0 kW)."
+      },
+      "torque": {
+        "value": 242,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+        "sourceNote": "24.7 kgf-m at 1,500-3,200 rpm, converted at 9.80665 N per kgf (242.2 N-m, rounded to 242)."
+      },
+      "zeroToHundredKph": {
+        "value": 8.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+        "sourceNote": "Manual gearbox; the DCT version is quoted at 9.2s."
+      },
+      "topSpeed": {
+        "value": 210,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/hyundai-i30-pd/hero.webp",
+    "alt": "Blue third-generation Hyundai i30 five-door hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 839,
+    "caption": "The PD, revealed at the 2016 Paris Motor Show with Hyundai's new 'cascading grille' design language.",
+    "credit": {
+      "author": "Harvey Bold",
+      "title": "File:2017 Hyundai i30 SE T-GDi - 998cc 1.0 (120PS) Petrol - Ara Blue - 10-2024, Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Hyundai_i30_SE_T-GDi_-_998cc_1.0_(120PS)_Petrol_-_Ara_Blue_-_10-2024,_Front.jpg",
+      "licenseType": "cc0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/hyundai-i30-pd/gallery-1.webp",
+      "alt": "Rear three-quarter view of a blue third-generation Hyundai i30 hatchback",
+      "width": 1200,
+      "height": 640,
+      "caption": "Sold in North America under a different name entirely, as the Elantra GT.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2017 Hyundai i30 SE NAV CRDi 1.6 Rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Hyundai_i30_SE_NAV_CRDi_1.6_Rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-hyundai-i30"
+  ]
+}

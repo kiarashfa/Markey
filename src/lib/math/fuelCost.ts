@@ -1,5 +1,5 @@
 /**
- * Running cost — SPEC.md §8.1.
+ * Running cost.
  *
  * Energy or fuel cost from consumption × price × distance. Regional numbers
  * come from **both** curated presets and fully editable override fields: the

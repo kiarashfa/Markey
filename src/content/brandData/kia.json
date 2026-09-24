@@ -1,0 +1,27 @@
+{
+  "id": "kia",
+  "name": "Kia",
+  "legalName": "Kia Corporation",
+  "countryOfOrigin": "South Korea",
+  "founded": 1944,
+  "parentCompany": "hyundai",
+  "website": "https://www.kia.com",
+  "logo": {
+    "src": "/images/brands/kia.svg",
+    "alt": "Kia wordmark: the letters K I A in a continuous, unbroken flowing script",
+    "credit": {
+      "author": "Kia Corporation",
+      "title": "File:KIA logo3.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:KIA_logo3.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes; the basis for display here is trademark nominative use, not a copyright licence."
+    }
+  },
+  "accentColor": "#131e29",
+  "accentColorNote": "Sampled from the fill colour used for the wordmark in the badge's own SVG source (#131E29) — no public brand-colour specification was found; the badge artwork is the only self-consistent source.",
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-kia"
+  ]
+}

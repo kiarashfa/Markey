@@ -1,5 +1,5 @@
 /**
- * Build-time content integrity — SPEC.md §13 and §2 principle 7:
+ * Build-time content integrity:
  * "The build fails loudly and completely."
  *
  * Hooks `astro:build:start` so broken content can never reach `dist/`, and

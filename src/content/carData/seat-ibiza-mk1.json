@@ -1,0 +1,223 @@
+{
+  "id": "seat-ibiza-mk1",
+  "name": "SEAT Ibiza",
+  "fullName": "SEAT Ibiza Mk1 (021A), 1984-1993",
+  "kind": "generation",
+  "parent": "seat-ibiza",
+  "brandRef": "seat",
+  "generationCode": "021A",
+  "productionYears": {
+    "start": 1984,
+    "end": 1993
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Giorgetto Giugiaro (Italdesign)",
+  "assembly": [
+    "Barcelona, Spain"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3683,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-seat-ibiza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+    },
+    "width": {
+      "value": 1610,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-seat-ibiza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+    },
+    "height": {
+      "value": 1395,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-seat-ibiza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+    },
+    "wheelbase": {
+      "value": 2443,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-seat-ibiza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+    }
+  },
+  "trims": [
+    {
+      "id": "12-8v",
+      "name": "1.2 8V",
+      "productionYears": {
+        "start": 1984,
+        "end": 1993
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "021A1.000",
+        "configuration": "inline-4, carburettor, developed with Porsche (System Porsche)",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1193,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-seat-ibiza",
+          "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 46,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza",
+        "sourceNote": "63 PS, converted at 1 PS = 0.73549875 kW (46.3 kW, rounded to 46)."
+      },
+      "torque": {
+        "value": 86,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+      },
+      "topSpeed": {
+        "value": 155,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "15-8v-injection",
+      "name": "1.5 8V (fuel injection)",
+      "productionYears": {
+        "start": 1984,
+        "end": 1993
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "021C2.000",
+        "configuration": "inline-4, single-point fuel injection, developed with Porsche (System Porsche)",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1461,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-seat-ibiza",
+          "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 66,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza",
+        "sourceNote": "90 PS, converted at 1 PS = 0.73549875 kW (66.2 kW, rounded to 66). A carburettor 85 PS version and a higher-output 100 PS multi-point-injection version of the same displacement were also sold and are not recorded separately here."
+      },
+      "torque": {
+        "value": 120,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+      },
+      "topSpeed": {
+        "value": 175,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "17-diesel",
+      "name": "1.7 D",
+      "productionYears": {
+        "start": 1984,
+        "end": 1993
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "022A5.000",
+        "configuration": "inline-4, indirect-injection diesel (Fiat-derived)",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1714,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-seat-ibiza",
+          "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 41,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza",
+        "sourceNote": "56 PS, converted at 1 PS = 0.73549875 kW (41.2 kW, rounded to 41)."
+      },
+      "torque": {
+        "value": 98,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+      },
+      "topSpeed": {
+        "value": 150,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/seat-ibiza-mk1/hero.webp",
+    "alt": "Silver first-generation SEAT Ibiza three-door hatchback photographed from the front three-quarter angle, parked among other cars",
+    "width": 1600,
+    "height": 824,
+    "caption": "The original Ibiza: Italdesign styling by Giorgetto Giugiaro over mechanicals developed with Porsche, SEAT's first car as an independent company.",
+    "credit": {
+      "author": "Randroide",
+      "title": "File:SEATIbizaMk1Diesel.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SEATIbizaMk1Diesel.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-seat-ibiza"
+  ]
+}

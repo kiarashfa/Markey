@@ -7,8 +7,8 @@
  * that does not justify hydrating a component. Both panels stay in the DOM, so
  * returning to the tunnel does not restart the solver.
  *
- * The 2D readout is always present and never gated on GPU capability
- * (SPEC.md §9.5.1) — it is the baseline. The wind tunnel does its own
+ * The 2D readout is always present and never gated on GPU capability —
+ * it is the baseline. The wind tunnel does its own
  * capability check inside and says so plainly when a device cannot run it,
  * which beats hiding the tab and leaving the visitor wondering.
  */

@@ -1,6 +1,6 @@
 ---
 /**
- * One template for all three `kind`s — SPEC.md §5.1, Instruction.md Phase 2.
+ * One template for all three `kind`s.
  *
  * A `model` hub renders its narrative overview and lists its generations as
  * real links. A `generation` or `trim` renders the full spec block. Sharing one
@@ -96,7 +96,7 @@ const description =
     : `${data.name} specifications, ${formatYears(data.productionYears)}. Sourced figures with their citations, and honest gaps where a figure is not yet available.`;
 
 /**
- * This page's own numbered reference list — SPEC.md §5.5.
+ * This page's own numbered reference list.
  *
  * The prose numbers come first, in the order an author cited them; the sources
  * behind the specifications continue from there, in the order they are first
@@ -109,7 +109,7 @@ const { list: references, numbers: citationNumbers } = buildPageReferences(
 );
 
 /**
- * `schema.org/Car` for this entry — SPEC.md §12, and the §16 type choice.
+ * `schema.org/Car` for this entry.
  *
  * Built from the same `data` the page renders and the same description the meta
  * tag carries, so the structured data cannot describe a different car from the

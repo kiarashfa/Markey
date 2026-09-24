@@ -1,0 +1,16 @@
+{
+  "id": "trabant",
+  "name": "Trabant",
+  "fullName": "Trabant (P50/601/1.1), 1957-1991",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "trabant",
+  "productionYears": {
+    "start": 1957,
+    "end": 1991
+  },
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-trabant"]
+}

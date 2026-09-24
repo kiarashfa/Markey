@@ -1,5 +1,5 @@
 /**
- * A page's own reference list — SPEC.md §5.5, §10.
+ * A page's own reference list.
  *
  * Two things cite sources on a car page and both belong in one numbered list:
  *

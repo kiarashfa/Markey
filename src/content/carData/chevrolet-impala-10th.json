@@ -1,0 +1,218 @@
+{
+  "id": "chevrolet-impala-10th",
+  "name": "Chevrolet Impala (tenth generation)",
+  "fullName": "Chevrolet Impala (tenth generation), 2013-2020",
+  "kind": "generation",
+  "parent": "chevrolet-impala",
+  "brandRef": "chevrolet",
+  "generationCode": "GM Epsilon II LWB (10th gen)",
+  "productionYears": {
+    "start": 2013,
+    "end": 2020
+  },
+  "bodyStyles": [
+    "saloon"
+  ],
+  "powertrains": [
+    "petrol",
+    "mild-hybrid"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "e-segment",
+  "positioning": "mainstream",
+  "designer": "Steve McCabe",
+  "assembly": [
+    "General Motors, Oshawa, Ontario, Canada (until 2019)",
+    "General Motors, Detroit/Hamtramck, Michigan, United States"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 5113,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-impala",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+      "sourceNote": "201.3 in, converted at 25.4 mm/in."
+    },
+    "width": {
+      "value": 1854,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-impala",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+      "sourceNote": "73 in, converted at 25.4 mm/in."
+    },
+    "height": {
+      "value": 1496,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-impala",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+      "sourceNote": "58.9 in, converted at 25.4 mm/in."
+    },
+    "wheelbase": {
+      "value": 2837,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-impala",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+      "sourceNote": "111.7 in, converted at 25.4 mm/in."
+    },
+    "kerbWeight": {
+      "value": 1669,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-impala",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+      "sourceNote": "Lowest figure in the infobox's published range of 3,679-3,811 lb, converted at 0.45359237 kg/lb. The separate CNG bi-fuel version weighed 4,175 lb (1,894 kg)."
+    }
+  },
+  "trims": [
+    {
+      "id": "2-5l-lkw",
+      "name": "2.5 LKW EcoTec",
+      "productionYears": {
+        "start": 2013,
+        "end": 2019
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed automatic",
+      "gears": 6,
+      "engine": {
+        "code": "LKW",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "displacement": {
+          "value": 2500,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-chevrolet-impala",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+          "sourceNote": "2.5 L, converted at 1000 cc/L."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 146.16,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-impala",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+        "sourceNote": "196 hp at 6,300 rpm, the lower end of a published 196-197 hp range, converted at 1 hp = 0.74569987 kW."
+      },
+      "torque": {
+        "value": 252,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-impala",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+        "sourceNote": "186 lb-ft at 4,400 rpm, the lower end of a published 186-191 lb-ft range, converted at 1.35581795 Nm/lb-ft."
+      },
+      "fuelEconomy": {
+        "value": 9.8,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-impala",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+        "sourceNote": "EPA combined 24 mpg (US), converted at 235.215 L-mi/100km-gal."
+      },
+      "co2": {
+        "value": 228,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-impala",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+        "sourceNote": "EPA tailpipe 367 g/mi, converted at 1.609344 km/mi."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "3-6l-lfx",
+      "name": "3.6 LFX V6",
+      "productionYears": {
+        "start": 2013,
+        "end": 2020
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed automatic",
+      "gears": 6,
+      "engine": {
+        "code": "LFX",
+        "configuration": "V6, flex-fuel",
+        "cylinders": 6,
+        "displacement": {
+          "value": 3600,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-chevrolet-impala",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+          "sourceNote": "3.6 L, converted at 1000 cc/L."
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 227.44,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-impala",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+        "sourceNote": "305 hp at 6,800 rpm, converted at 1 hp = 0.74569987 kW."
+      },
+      "torque": {
+        "value": 358,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-impala",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+        "sourceNote": "264 lb-ft at 5,200 rpm, converted at 1.35581795 Nm/lb-ft."
+      },
+      "fuelEconomy": {
+        "value": 10.69,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-impala",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+        "sourceNote": "EPA combined 22 mpg (US) on petrol, converted at 235.215 L-mi/100km-gal. E85 flex-fuel figures are separately given as 385 g/mi CO2."
+      },
+      "co2": {
+        "value": 249,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-impala",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+        "sourceNote": "EPA tailpipe 401 g/mi on petrol, converted at 1.609344 km/mi."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/chevrolet-impala-10th/hero.webp",
+    "alt": "Silver tenth-generation Chevrolet Impala Premier photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 749,
+    "caption": "The last Impala: a front-wheel-drive full-size saloon sharing its extended Epsilon II platform with the Cadillac XTS and Buick LaCrosse, and the first Impala since the 1990s to score top marks from Consumer Reports.",
+    "credit": {
+      "author": "Kevauto",
+      "title": "File:2018 Chevrolet Impala Premier front 4.7.19.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Chevrolet_Impala_Premier_front_4.7.19.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-chevrolet-impala"
+  ]
+}

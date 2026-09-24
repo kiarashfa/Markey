@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * The catalog — SPEC.md §9.1.
+   * The catalog.
    *
    * **One filtered and sorted list drives both renderings.** The card grid and
    * the dense table are two views of the same `$derived` array, never two
@@ -273,7 +273,7 @@
       </div>
     </div>
 
-    <!-- Sort field and direction are separate controls (SPEC §9.1). -->
+    <!-- Sort field and direction are separate controls. -->
     <div class="flex flex-wrap items-center gap-2">
       <label class="flex items-center gap-2 text-xs text-ink-secondary">
         Sort by

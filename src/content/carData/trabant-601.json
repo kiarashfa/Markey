@@ -1,0 +1,145 @@
+{
+  "id": "trabant-601",
+  "name": "Trabant 601",
+  "fullName": "Trabant 601 (incl. 1.1), 1964-1991",
+  "kind": "generation",
+  "parent": "trabant",
+  "brandRef": "trabant",
+  "generationCode": "P601",
+  "productionYears": {
+    "start": 1964,
+    "end": 1991
+  },
+  "bodyStyles": ["saloon", "estate"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["fwd"],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "assembly": ["VEB Sachsenring, Zwickau, East Germany"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 3360,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-trabant",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Trabant"
+    },
+    "width": {
+      "value": 1500,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-trabant",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Trabant"
+    },
+    "wheelbase": {
+      "value": 2020,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-trabant",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Trabant"
+    },
+    "kerbWeight": {
+      "value": 600,
+      "unit": "kg",
+      "status": "estimated",
+      "source": "wikipedia-trabant",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Trabant",
+      "sourceNote": "The source itself states this only approximately: 'its curb weight was about 600 kg', not an instrumented figure."
+    }
+  },
+  "trims": [
+    {
+      "id": "601-standard",
+      "name": "601 Standard",
+      "productionYears": { "start": 1964, "end": 1990 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "P601",
+        "configuration": "air-cooled two-stroke inline-2",
+        "cylinders": 2,
+        "displacement": { "value": 594, "unit": "cc", "status": "verified", "source": "wikipedia-trabant", "sourceUrl": "https://en.wikipedia.org/wiki/Trabant" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 19.12,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-trabant",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Trabant",
+        "sourceNote": "26 PS, the rating stated for when the two-stroke engine ceased production in 1989, converted at 1 PS = 0.73549875 kW. Earlier 601s used detuned versions of the same 594 cc engine, but no separate figure is given for those years."
+      },
+      "topSpeed": {
+        "value": 100,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-trabant",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Trabant"
+      },
+      "zeroToHundredKph": {
+        "value": 21,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-trabant",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Trabant",
+        "sourceNote": "The source states the car took 21 seconds to reach its top speed, which is 100 km/h — the same figure this field records, rather than a separately measured 0-100 km/h test."
+      },
+      "fuelEconomy": {
+        "value": 7,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-trabant",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Trabant",
+        "sourceNote": "The source does not name a test cycle; this predates EPA/EU standardised testing."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "601-1-1",
+      "name": "601 1.1",
+      "productionYears": { "start": 1989, "end": 1991 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "BM 820 (VW EA111-derived)",
+        "configuration": "inline-4, four-stroke",
+        "cylinders": 4,
+        "displacement": { "value": 1043, "unit": "cc", "status": "verified", "source": "wikipedia-trabant", "sourceUrl": "https://en.wikipedia.org/wiki/Trabant" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 33.10,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-trabant",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Trabant",
+        "sourceNote": "45 PS, converted at 1 PS = 0.73549875 kW. This engine is a licence-built Volkswagen Polo unit, replacing the two-stroke twin as part of an East-West trade agreement."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/trabant-601/hero.webp",
+    "alt": "Blue Trabant 601 saloon photographed from the front three-quarter angle in a museum, showing its slab-sided body and rectangular grille",
+    "width": 1600,
+    "height": 1062,
+    "caption": "The 601: a 1964 facelift of the P60 that stayed in production, nearly unchanged, for 26 years — every proposed replacement was rejected by the East German government for want of the raw materials a more modern design would need.",
+    "credit": {
+      "author": "Rahil Rupawala",
+      "title": "File:1987 Trabant 601 Museo Nazionale dell'Automobile Torino.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1987_Trabant_601_Museo_Nazionale_dell'Automobile_Torino.jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-trabant"]
+}

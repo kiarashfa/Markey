@@ -1,5 +1,5 @@
 /**
- * Assembles the physics inputs for a car — SPEC.md §8.2, §9.5.
+ * Assembles the physics inputs for a car.
  *
  * The gatekeeper between authored content and the dynamics model. Its job is to
  * decide whether there is *enough* real data to model this car at all, and to

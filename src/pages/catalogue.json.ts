@@ -1,5 +1,5 @@
 /**
- * `/catalogue.json` — the machine-readable export (SPEC.md §6, §9.1).
+ * `/catalogue.json` — the machine-readable export.
  *
  * A build artifact generated from the same content the pages render, by the
  * same builder the interactive tools use. That shared origin is the point: an

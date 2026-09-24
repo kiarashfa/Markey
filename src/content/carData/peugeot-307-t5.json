@@ -1,0 +1,239 @@
+{
+  "id": "peugeot-307-t5",
+  "name": "Peugeot 307",
+  "fullName": "Peugeot 307 (T5), 2001-2008",
+  "kind": "generation",
+  "parent": "peugeot-307",
+  "brandRef": "peugeot",
+  "generationCode": "T5",
+  "productionYears": {
+    "start": 2001,
+    "end": 2008
+  },
+  "bodyStyles": [
+    "hatchback",
+    "estate",
+    "saloon",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Murat Günak",
+  "assembly": [
+    "Mulhouse, France",
+    "Sochaux, France",
+    "Wuhan, China (DPCA)",
+    "Villa Bosch, Argentina",
+    "El Palomar, Argentina",
+    "Kaduna, Nigeria (PAN)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4210,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-307",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_307",
+      "sourceNote": "Hatchback body; the coupé-cabriolet is 4350 mm, the estate 4420 mm and the saloon 4470 mm."
+    },
+    "width": {
+      "value": 1730,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-307",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_307"
+    },
+    "height": {
+      "value": 1510,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-307",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_307",
+      "sourceNote": "Published for most body styles; the coupé-cabriolet is lower, at 1420 mm."
+    },
+    "wheelbase": {
+      "value": 2608,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-307",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_307",
+      "sourceNote": "Hatchback and coupé-cabriolet; the saloon is 2612 mm and the estate 2710 mm."
+    }
+  },
+  "trims": [
+    {
+      "id": "16-16v-tu5",
+      "name": "1.6 16v",
+      "productionYears": {
+        "start": 2001,
+        "end": 2008
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "TU5",
+        "configuration": "inline-4 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1587,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-307",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_307"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 81,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-307",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_307",
+        "sourceNote": "110 PS, explicitly labelled PS in the source, converted at 1 PS = 0.73549875 kW (80.9 kW, rounded to 81)."
+      },
+      "torque": {
+        "value": 147,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-peugeot-307",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_307"
+      },
+      "mass": {
+        "value": 1168,
+        "unit": "kg",
+        "status": "verified",
+        "source": "rdw-peugeot-307",
+        "sourceUrl": "https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-ebf2",
+        "sourceNote": "Netherlands RDW register entry for a first-registered 2002 five-door 1587 cc car — an individual registered car, not a manufacturer specification, but matched here on displacement and body to this trim."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "20-16v-ew10",
+      "name": "2.0 16v",
+      "productionYears": {
+        "start": 2001,
+        "end": 2008
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "EW10",
+        "configuration": "inline-4 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1997,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-307",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_307"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 130,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-307",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_307",
+        "sourceNote": "177 PS, explicitly labelled PS in the source, converted at 1 PS = 0.73549875 kW (130.2 kW, rounded to 130). The most powerful naturally aspirated petrol engine offered; two lower-output 2.0 16v tunes (136 PS and 140 PS) were also sold and are not recorded separately here."
+      },
+      "torque": {
+        "value": 202,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-peugeot-307",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_307"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "20-hdi-dw10",
+      "name": "2.0 HDi",
+      "productionYears": {
+        "start": 2004,
+        "end": 2008
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "DW10TED4",
+        "configuration": "inline-4 16v turbocharged common-rail diesel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1997,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-307",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_307"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 100,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-307",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_307",
+        "sourceNote": "136 PS, explicitly labelled PS in the source, converted at 1 PS = 0.73549875 kW (100.0 kW). The 16-valve version of the DW10 diesel, introduced from model year 2004; earlier 8-valve DW10 diesels made 90 PS or 107 PS and are not recorded separately here."
+      },
+      "torque": {
+        "value": 320,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-peugeot-307",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_307"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/peugeot-307/hero.webp",
+    "alt": "Silver five-door Peugeot 307 hatchback photographed from the front three-quarter angle on a residential street",
+    "width": 1600,
+    "height": 872,
+    "caption": "The 307, Peugeot's replacement for the 306, styled by Murat Günak with a notably tall glasshouse for the class.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2002 Peugeot 307 Rapier 16V 1.6 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2002_Peugeot_307_Rapier_16V_1.6_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/peugeot-307/gallery-1.webp",
+      "alt": "Silver Peugeot 307 SW estate photographed from the rear three-quarter angle, showing its roof rails and HDi badge",
+      "width": 1200,
+      "height": 802,
+      "caption": "The 307 SW estate, sold with an optional third row of seats rather than as a separate MPV model.",
+      "credit": {
+        "author": "OSX",
+        "title": "File:2007 Peugeot 307 (T5) XSE HDi 2.0 Touring station wagon (2015-07-09) 02.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Peugeot_307_(T5)_XSE_HDi_2.0_Touring_station_wagon_(2015-07-09)_02.jpg",
+        "licenseType": "public-domain"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-peugeot-307",
+    "rdw-peugeot-307"
+  ]
+}

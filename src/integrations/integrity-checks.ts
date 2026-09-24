@@ -1,5 +1,5 @@
 /**
- * Cross-file content integrity — SPEC.md §13.
+ * Cross-file content integrity.
  *
  * Zod validates one file at a time. Everything that spans files — narrative
  * ↔ data pairing, `id` matching its filename, a `parent` resolving to a real
@@ -251,7 +251,7 @@ export async function runIntegrityChecks(options: IntegrityOptions): Promise<Vio
         violations.push({
           file: rel(displayRoot, path.join(narrativeDir, `${slug}.mdx`)),
           rule: 'pairing/missing-data',
-          message: `no matching \`${pair.data}/${slug}.json\` — every narrative file needs its structured data sibling (SPEC.md §5.1)`,
+          message: `no matching \`${pair.data}/${slug}.json\` — every narrative file needs its structured data sibling`,
         });
       }
     }
@@ -260,7 +260,7 @@ export async function runIntegrityChecks(options: IntegrityOptions): Promise<Vio
         violations.push({
           file: rel(displayRoot, path.join(dataDir, `${slug}.json`)),
           rule: 'pairing/missing-narrative',
-          message: `no matching \`${pair.narrative}/${slug}.mdx\` — every data file needs its narrative sibling (SPEC.md §5.1)`,
+          message: `no matching \`${pair.narrative}/${slug}.mdx\` — every data file needs its narrative sibling`,
         });
       }
     }
@@ -354,7 +354,7 @@ export async function runIntegrityChecks(options: IntegrityOptions): Promise<Vio
         violations.push({
           file: entry.file,
           rule: 'id/duplicate',
-          message: `id '${id}' is already used by ${previous} — ids are globally unique (SPEC.md §5.1)`,
+          message: `id '${id}' is already used by ${previous} — ids are globally unique`,
         });
       } else {
         seen.set(id, entry.file);
@@ -389,7 +389,7 @@ export async function runIntegrityChecks(options: IntegrityOptions): Promise<Vio
           violations.push({
             file,
             rule: 'parent/wrong-kind',
-            message: `a '${kind}' must hang off a '${expected}', but parent '${parent}' is a '${actual}' (SPEC.md §5.1)`,
+            message: `a '${kind}' must hang off a '${expected}', but parent '${parent}' is a '${actual}'`,
           });
         }
       }
@@ -407,7 +407,7 @@ export async function runIntegrityChecks(options: IntegrityOptions): Promise<Vio
         violations.push({
           file,
           rule: 'revision-of/different-parent',
-          message: `a facelift must sit under the same model hub as the generation it revises — '${data.revisionOf}' hangs off '${String(target.data.parent)}', this hangs off '${String(parent)}' (SPEC.md §5.1)`,
+          message: `a facelift must sit under the same model hub as the generation it revises — '${data.revisionOf}' hangs off '${String(target.data.parent)}', this hangs off '${String(parent)}'`,
         });
       }
     }
@@ -449,7 +449,7 @@ export async function runIntegrityChecks(options: IntegrityOptions): Promise<Vio
     }
   }
 
-  // Every model hub has at least one generation — SPEC.md §5.1 requires this
+  // Every model hub has at least one generation — required
   // even for a nameplate that only ever had one version, so templates never
   // have to special-case a childless hub.
   const generationParents = new Set(
@@ -465,7 +465,7 @@ export async function runIntegrityChecks(options: IntegrityOptions): Promise<Vio
           file: car.file,
           rule: 'hub/no-generation',
           message:
-            'a model hub must have at least one generation entry, even for a nameplate that only ever had one version (SPEC.md §5.1)',
+            'a model hub must have at least one generation entry, even for a nameplate that only ever had one version',
         });
       }
     }
@@ -526,7 +526,7 @@ export async function runIntegrityChecks(options: IntegrityOptions): Promise<Vio
           violations.push({
             file: entry.file,
             rule: 'image/missing-license',
-            message: `image at \`${at}\` has no \`credit.licenseType\` — every image's legal basis must be auditable (SPEC.md §10)`,
+            message: `image at \`${at}\` has no \`credit.licenseType\` — every image's legal basis must be auditable`,
           });
         }
       }
@@ -555,7 +555,7 @@ async function readJson(
   }
 }
 
-/** Human-readable report — the complete list, grouped by file (SPEC.md §13). */
+/** Human-readable report — the complete list, grouped by file. */
 export function formatViolations(violations: Violation[]): string {
   if (violations.length === 0) return 'No content-integrity violations.';
   const byFile = new Map<string, Violation[]>();

@@ -1,5 +1,5 @@
 /**
- * Base-path-safe URL construction — SPEC.md §6.
+ * Base-path-safe URL construction.
  *
  * The site lives at `/Markey/` on github.io today and may live at `/` on a
  * custom domain later. Every internal link goes through here so that migration
@@ -85,7 +85,7 @@ export const brandHref = (id: string) => href('brands', id);
 
 /**
  * A taxonomy page. `axis` is the vocabulary's `urlPrefix`, not its display
- * name — SPEC.md §6 fixes these seven paths.
+ * name — these seven paths are fixed.
  */
 export const taxonomyHref = (axis: string, term?: string) =>
   term ? href(axis, term) : href(axis);

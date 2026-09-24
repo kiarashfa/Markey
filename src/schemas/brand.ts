@@ -1,10 +1,10 @@
 /**
- * The `brands` collection — SPEC.md §5.4.
+ * The `brands` collection.
  *
  * Brand pages are real content (own narrative + identity), but the list of
  * models under a brand is always computed from `brandRef`, never hand-
  * maintained. `logo` and `accentColor` are authored once here and inherited by
- * every car page underneath (SPEC.md §11.2), so hundreds of car pages get a
+ * every car page underneath, so hundreds of car pages get a
  * cohesive identity with no per-entry authoring.
  */
 import { z } from 'zod';
@@ -32,7 +32,7 @@ export const brandDataSchema = z
     legalName: z.string().optional(),
 
     /**
-     * The Origin taxonomy axis (SPEC.md §7) resolves through this, at brand
+     * The Origin taxonomy axis resolves through this, at brand
      * level only — BMW is Germany. Per-generation build location is a real
      * fact but is not a formal axis; it lives in `carData.assembly`.
      */
@@ -43,7 +43,7 @@ export const brandDataSchema = z
     /**
      * Brand id of the corporate owner. Tracked because ownership is a real,
      * sourceable fact and gives platform-sharing and badge-engineering context
-     * somewhere to hang (SPEC.md §5.4). Resolution is checked cross-file.
+     * somewhere to hang. Resolution is checked cross-file.
      */
     parentCompany: slug.optional(),
     website: z.url().optional(),
@@ -51,7 +51,7 @@ export const brandDataSchema = z
     /**
      * Displayed as a badge on every car under this brand.
      *
-     * SPEC.md §11.2 / §10: brand marks sit on trademark nominative fair use,
+     * Brand marks sit on trademark nominative fair use,
      * not a copyright licence. The mark is used **unmodified** — no recolour,
      * no monochrome knockout, no re-cut — and contrast is solved by the frame
      * behind it. `licenseType: 'trademark-nominative-use'` is the honest
@@ -68,7 +68,7 @@ export const brandDataSchema = z
     /**
      * How this accent colour was arrived at.
      *
-     * Not in SPEC.md §5.4 — added because an accent colour is the one brand
+     * Not in the original brand shape — added because an accent colour is the one brand
      * field with no reliable public source. Manufacturers publish brand
      * guidelines inconsistently, and a Commons logo file is usually a gradient
      * rendering rather than a flat brand colour. Recording the basis keeps this
@@ -99,7 +99,7 @@ export const brandDataSchema = z
         code: 'custom',
         path: ['logo', 'credit', 'licenseType'],
         message:
-          "a brand logo must be recorded as 'trademark-nominative-use' — it is a trademark used to identify that manufacturer's cars, not a copyright-licensed image (SPEC.md §10, §11.2)",
+          "a brand logo must be recorded as 'trademark-nominative-use' — it is a trademark used to identify that manufacturer's cars, not a copyright-licensed image",
       });
     }
   });

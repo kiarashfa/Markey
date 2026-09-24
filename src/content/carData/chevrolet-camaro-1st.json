@@ -1,0 +1,133 @@
+{
+  "id": "chevrolet-camaro-1st",
+  "name": "Chevrolet Camaro (first generation)",
+  "fullName": "Chevrolet Camaro (first generation), 1966-1969",
+  "kind": "generation",
+  "parent": "chevrolet-camaro",
+  "brandRef": "chevrolet",
+  "generationCode": "F-body (1st gen)",
+  "productionYears": {
+    "start": 1966,
+    "end": 1969
+  },
+  "bodyStyles": ["coupe", "convertible"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "mainstream",
+  "designer": "Henry Haga",
+  "assembly": [
+    "Chevrolet, Van Nuys, California, United States",
+    "Chevrolet, Norwood, Ohio, United States"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4691,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-camaro-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(first_generation)",
+      "sourceNote": "184.7 in (MY1967-68), converted at 25.4 mm/in. MY1969 grew to 186.0 in (4,724 mm)."
+    },
+    "wheelbase": {
+      "value": 2743,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-camaro-first-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(first_generation)",
+      "sourceNote": "108 in, converted at 25.4 mm/in."
+    }
+  },
+  "trims": [
+    {
+      "id": "230-i6-base",
+      "name": "230 Turbo-Thrift I6",
+      "productionYears": { "start": 1966, "end": 1969 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "3-speed manual",
+      "gears": 3,
+      "engine": {
+        "code": "Turbo-Thrift",
+        "configuration": "inline-6",
+        "cylinders": 6,
+        "displacement": { "value": 3769, "unit": "cc", "status": "verified", "source": "wikipedia-chevrolet-camaro-first-generation", "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(first_generation)", "sourceNote": "230 cubic inches, converted at 16.387064 cc/cu in." },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 104.4,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-camaro-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(first_generation)",
+        "sourceNote": "140 hp (SAE gross) at 4,400 rpm, converted at 1 hp = 0.74569987 kW. The standard engine at launch."
+      },
+      "torque": {
+        "value": 298,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-camaro-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(first_generation)",
+        "sourceNote": "220 lb-ft at 1,600 rpm, converted at 1.35581795 Nm/lb-ft."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "ss-396-l78",
+      "name": "SS 396 (L78)",
+      "productionYears": { "start": 1967, "end": 1969 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "L78",
+        "configuration": "V8, big-block",
+        "cylinders": 8,
+        "displacement": { "value": 6489, "unit": "cc", "status": "verified", "source": "wikipedia-chevrolet-camaro-first-generation", "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(first_generation)", "sourceNote": "396 cubic inches, converted at 16.387064 cc/cu in." },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 279.6,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-camaro-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(first_generation)",
+        "sourceNote": "375 bhp (SAE gross) at 5,600 rpm, the higher-output of two 396 SS tunes (325 or 375 bhp), converted at 1 hp = 0.74569987 kW."
+      },
+      "torque": {
+        "value": 563,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-camaro-first-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(first_generation)",
+        "sourceNote": "415 lb-ft at 3,600 rpm, converted at 1.35581795 Nm/lb-ft."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/chevrolet-camaro-1st/hero.webp",
+    "alt": "Orange 1969 Chevrolet Camaro SS 396 photographed from the front three-quarter angle at a car show, showing its black bonnet stripes and SS badging",
+    "width": 1600,
+    "height": 1200,
+    "caption": "The car GM built to answer the Ford Mustang: a straight-six standard engine and a menu of increasingly large V8s, up to a 396-cubic-inch big-block in the SS.",
+    "credit": {
+      "author": "BrokenSphere",
+      "title": "File:1969 red Chevrolet Camaro SS side.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1969_red_Chevrolet_Camaro_SS_side.JPG",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-chevrolet-camaro-first-generation"]
+}

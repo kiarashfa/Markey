@@ -2,7 +2,7 @@
   "axis": "powertrain",
   "urlPrefix": "powertrain",
   "authored": true,
-  "note": "Starter vocabulary — SPEC.md §16. Describes how the car is propelled and energised, not the engine's internal layout (a V8 and a flat-six are both 'petrol'; cylinder configuration lives on the trim's engine block).",
+  "note": "Starter vocabulary. Describes how the car is propelled and energised, not the engine's internal layout (a V8 and a flat-six are both 'petrol'; cylinder configuration lives on the trim's engine block).",
   "terms": [
     { "id": "petrol", "label": "Petrol", "aka": ["Gasoline"], "description": "Spark-ignition internal combustion, no electric drive assistance." },
     { "id": "diesel", "label": "Diesel", "description": "Compression-ignition internal combustion." },

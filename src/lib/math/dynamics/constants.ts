@@ -1,9 +1,9 @@
 /**
- * Default constants for the vehicle-dynamics model — SPEC.md §8.2, §16.
+ * Default constants for the vehicle-dynamics model.
  *
  * Every value here is a **reasoned default, not a measurement**, and each one
  * carries the reasoning that justifies it so `/methodology/` can publish the
- * basis rather than the bare number. SPEC.md §16 lists these as an open item
+ * basis rather than the bare number. These are an open item
  * to be set with real seed data; this is the starting position, gathered in one
  * file precisely so it can be tuned without hunting through the solver.
  *
@@ -161,8 +161,8 @@ export const LOAD_TRANSFER_RATIO: ConstantNote = {
  * which is physically correct rather than convenient, because top speed occurs
  * precisely where the engine *is* at peak power.
  *
- * They are reasoned defaults, not measurements, and SPEC.md §16 lists exactly
- * this class of constant as open until there is real seed data to tune against.
+ * They are reasoned defaults, not measurements, and exactly
+ * this class of constant stays open until there is real seed data to tune against.
  */
 export const POWER_AVAILABILITY: Record<string, ConstantNote> = {
   ice: {
@@ -188,7 +188,7 @@ export function powerAvailability(powertrain: string): number {
 }
 
 /**
- * Frontal area as a fraction of the width × height bounding box — SPEC.md §8.2.
+ * Frontal area as a fraction of the width × height bounding box.
  *
  * The standing approximation for cars. Anything derived from it must be flagged
  * `estimated`, which the schema already enforces by requiring a `sourceNote`.

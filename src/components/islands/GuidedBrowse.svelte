@@ -1,11 +1,11 @@
 <script lang="ts">
   /**
-   * Guided Browse — SPEC.md §9.2.
+   * Guided Browse.
    *
    * The **lower-commitment** of the two discovery tools: a step-by-step filter
    * that ends in a list. No scoring, no ranking, no percentages, no opinion
    * about which of the survivors is "best". That restraint is the feature —
-   * Matchmaker (§9.3) is where ranking happens, and blurring the two would
+   * Matchmaker is where ranking happens, and blurring the two would
    * leave the site with two tools that do the same thing slightly differently.
    *
    * Filtering runs through `applyDealbreakers` in `lib/math/matchmaker.ts`, the

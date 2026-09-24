@@ -1,0 +1,246 @@
+{
+  "id": "vw-touareg-7p",
+  "name": "Volkswagen Touareg",
+  "fullName": "Volkswagen Touareg (7P), 2010-2018",
+  "kind": "generation",
+  "parent": "volkswagen-touareg",
+  "brandRef": "volkswagen",
+  "generationCode": "7P",
+  "productionYears": {
+    "start": 2010,
+    "end": 2018
+  },
+  "bodyStyles": [
+    "suv"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel",
+    "hybrid"
+  ],
+  "drivetrains": [
+    "awd"
+  ],
+  "segment": "suv-large",
+  "positioning": "premium",
+  "designer": "Klaus Bischoff",
+  "assembly": [
+    "Bratislava, Slovakia (Volkswagen Bratislava Plant)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4795,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-touareg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+    },
+    "width": {
+      "value": 1940,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-touareg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+    },
+    "height": {
+      "value": 1709,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-touareg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+      "sourceNote": "Petrol/diesel body; the Hybrid is taller at 1732 mm."
+    },
+    "wheelbase": {
+      "value": 2893,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-volkswagen-touareg",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+    }
+  },
+  "trims": [
+    {
+      "id": "v6-tdi-239",
+      "name": "V6 TDI BlueMotion (239 PS)",
+      "productionYears": {
+        "start": 2010,
+        "end": 2018
+      },
+      "drivetrain": "awd",
+      "powertrain": "diesel",
+      "engine": {
+        "configuration": "V6, turbocharged",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2967,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-touareg",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 176,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "239 PS across a 4,000-4,400 rpm plateau, converted at 1 PS = 0.73549875 kW (175.8 kW, rounded to 176). Sold in Eastern/Western Europe, North America (2010-2015), Australia and China; other markets received 204 PS or 245 PS tunes of the same engine, not recorded separately here."
+      },
+      "torque": {
+        "value": 550,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "550 N⋅m across a 2,000-2,250 rpm plateau."
+      },
+      "topSpeed": {
+        "value": 218,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+      },
+      "zeroToHundredKph": {
+        "value": 7.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "30-v6-tsi-hybrid",
+      "name": "3.0 V6 TSI Hybrid",
+      "productionYears": {
+        "start": 2010,
+        "end": 2014
+      },
+      "drivetrain": "awd",
+      "powertrain": "hybrid",
+      "engine": {
+        "configuration": "V6, supercharged, plus AC synchronous electric motor",
+        "cylinders": 6,
+        "displacement": {
+          "value": 2995,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-touareg",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+        },
+        "aspiration": "supercharged"
+      },
+      "power": {
+        "value": 279,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "Published combined system output of 380 PS, converted at 1 PS = 0.73549875 kW (279.5 kW, rounded to 279). The engine alone makes 333 PS (245 kW) and the electric motor 46 PS (34 kW); those do not add up to the system figure, because the two peak at different points."
+      },
+      "torque": {
+        "value": 580,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "580 N⋅m combined system torque."
+      },
+      "topSpeed": {
+        "value": 240,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+      },
+      "zeroToHundredKph": {
+        "value": 5.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "42-v8-tdi",
+      "name": "V8 TDI",
+      "productionYears": {
+        "start": 2010,
+        "end": 2018
+      },
+      "drivetrain": "awd",
+      "powertrain": "diesel",
+      "engine": {
+        "configuration": "V8, twin-turbocharged",
+        "cylinders": 8,
+        "displacement": {
+          "value": 4134,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-volkswagen-touareg",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 250,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "340 PS at 4,400 rpm, converted at 1 PS = 0.73549875 kW (250.1 kW, rounded to 250)."
+      },
+      "torque": {
+        "value": 800,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+        "sourceNote": "800 N⋅m across a 1,750-2,750 rpm plateau."
+      },
+      "topSpeed": {
+        "value": 242,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+      },
+      "zeroToHundredKph": {
+        "value": 5.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-volkswagen-touareg",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Touareg"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/vw-touareg-7p/hero.webp",
+    "alt": "Blue second-generation Volkswagen Touareg R-Line SUV photographed from the front three-quarter angle in a car park",
+    "width": 1600,
+    "height": 895,
+    "caption": "The second-generation Touareg in facelifted R-Line trim, introducing an eight-speed automatic and a glare-free LED high-beam system as standard.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2015 Volkswagen Touareg V6 R-Line TDi BMT 3.0.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_Volkswagen_Touareg_V6_R-Line_TDi_BMT_3.0.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-volkswagen-touareg"
+  ]
+}

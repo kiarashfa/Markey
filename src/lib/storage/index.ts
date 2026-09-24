@@ -1,12 +1,12 @@
 /**
- * The one versioned `localStorage` wrapper — SPEC.md §9.8.
+ * The one versioned `localStorage` wrapper.
  *
  * Every feature that remembers anything goes through here: the theme choice,
  * My Garage, comparison persistence. Written once because the failure modes are
  * subtle and identical everywhere, and re-deriving them per feature is how a
  * site ends up with three different bugs in three different places.
  *
- * The four rules, all from SPEC.md §9.8:
+ * The four rules:
  *
  *  1. **Namespaced and versioned keys.** `markey:garage:v1`, never `garage`.
  *     Nothing this site stores can collide with anything else on the origin,

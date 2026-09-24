@@ -1,0 +1,16 @@
+{
+  "id": "lada-niva",
+  "name": "Lada Niva",
+  "fullName": "Lada Niva (VAZ-2121 / Niva Legend), 1977-present",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "lada",
+  "productionYears": {
+    "start": 1977,
+    "end": null
+  },
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-lada-niva"]
+}

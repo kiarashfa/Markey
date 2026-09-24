@@ -1,5 +1,5 @@
 /**
- * Numbered citations in prose — SPEC.md §5.5.
+ * Numbered citations in prose.
  *
  * An author writes `[@wikipedia-toyota-86]` and the page renders `[1]`, linked
  * to a numbered entry in that page's own References section. Several at once —

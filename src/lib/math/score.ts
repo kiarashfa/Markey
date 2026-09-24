@@ -1,10 +1,10 @@
 /**
- * The Markey Score — SPEC.md §8.1, §16.
+ * The Markey Score.
  *
  * One blended headline number from a small set of interpretable sub-factors.
  * The full formula is published on `/methodology/`, never a black box.
  *
- * **The weights are an open item (SPEC.md §16)** and cannot be tuned
+ * **The weights are an open item** and cannot be tuned
  * meaningfully until there is real seed data. They therefore live as named
  * constants in one exported object, so tuning them is editing one literal
  * rather than hunting through a scoring function. Nothing else in the codebase
@@ -29,7 +29,7 @@ export interface ScoreWeights {
 }
 
 /**
- * The weights. **Provisional — SPEC.md §16.**
+ * The weights. **Provisional.**
  *
  * Equal weighting is the honest starting position: any other split would be an
  * assertion about what matters that we have no evidence for yet. It is

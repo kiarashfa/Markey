@@ -1,0 +1,391 @@
+{
+  "id": "dacia-sandero-b90",
+  "name": "Dacia Sandero (B90)",
+  "fullName": "Dacia Sandero (B90), 2007-2014",
+  "kind": "generation",
+  "parent": "dacia-sandero",
+  "brandRef": "dacia",
+  "generationCode": "B90",
+  "productionYears": {
+    "start": 2007,
+    "end": 2014
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "lpg",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Renault Design Barcelona",
+  "assembly": [
+    "Mioveni, Romania",
+    "Sao Jose dos Pinhais, Brazil (Renault Brazil)",
+    "Envigado, Colombia (Sofasa)",
+    "Casablanca, Morocco (Somaca)",
+    "Moscow, Russia (Avtoframos)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4020,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-sandero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+      "sourceNote": "Published as a 4,020-4,091 mm range depending on trim; lowest figure recorded here."
+    },
+    "width": {
+      "value": 1746,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-sandero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+      "sourceNote": "Published as a 1,746-1,753 mm range depending on trim; lowest figure recorded here."
+    },
+    "height": {
+      "value": 1534,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-sandero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+      "sourceNote": "Published as a 1,534-1,590 mm range depending on trim (the raised Stepway is at the top of the range); lowest figure recorded here."
+    },
+    "wheelbase": {
+      "value": 2589,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-sandero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+    },
+    "kerbWeight": {
+      "value": 1025,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-dacia-sandero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+      "sourceNote": "Published as a 1,025-1,204 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0-16v-hiflex",
+      "name": "1.0 16v Hi-Flex",
+      "productionYears": {
+        "start": 2007,
+        "end": 2014
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "D4D",
+        "configuration": "inline-4 16v, flex-fuel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-dacia-sandero",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 57,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "77 PS, converted at 1 PS = 0.73549875 kW (56.6 kW, rounded to 57). Hi-Flex, runs on petrol or ethanol (Brazil)."
+      },
+      "zeroToHundredKph": {
+        "value": 14.1,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "topSpeed": {
+        "value": 161,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-4-8v-k7j",
+      "name": "1.4 8v",
+      "productionYears": {
+        "start": 2007,
+        "end": 2014
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "K7J 710",
+        "configuration": "inline-4 SOHC 8v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1390,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-dacia-sandero",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 55,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "75 PS, converted at 1 PS = 0.73549875 kW (55.2 kW, rounded to 55)."
+      },
+      "zeroToHundredKph": {
+        "value": 13.0,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "topSpeed": {
+        "value": 161,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "fuelEconomy": {
+        "value": 6.9,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "Cycle not named in the source."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-4-8v-k7j-lpg",
+      "name": "1.4 8v LPG",
+      "productionYears": {
+        "start": 2007,
+        "end": 2014
+      },
+      "drivetrain": "fwd",
+      "powertrain": "lpg",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "K7J",
+        "configuration": "inline-4 SOHC 8v, petrol/LPG bi-fuel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1390,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-dacia-sandero",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 53,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "72 PS, converted at 1 PS = 0.73549875 kW (52.9 kW, rounded to 53)."
+      },
+      "zeroToHundredKph": {
+        "value": 13.0,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "topSpeed": {
+        "value": 161,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "fuelEconomy": {
+        "value": 9.2,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "LPG consumption; cycle not named in the source."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-16v-k4m",
+      "name": "1.6 16v",
+      "productionYears": {
+        "start": 2007,
+        "end": 2014
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "K4M 696",
+        "configuration": "inline-4 DOHC 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-dacia-sandero",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 77,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "105 PS, converted at 1 PS = 0.73549875 kW (77.2 kW, rounded to 77)."
+      },
+      "zeroToHundredKph": {
+        "value": 11.3,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "topSpeed": {
+        "value": 181,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "fuelEconomy": {
+        "value": 6.8,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "Cycle not named in the source."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-5-dci-75",
+      "name": "1.5 dCi",
+      "productionYears": {
+        "start": 2007,
+        "end": 2014
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "K9K 892",
+        "configuration": "inline-4 common-rail turbo-diesel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1461,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-dacia-sandero",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 55,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "75 PS, converted at 1 PS = 0.73549875 kW (55.2 kW, rounded to 55). A higher, 90 PS (66 kW) tune of the same K9K 892 engine was also offered and is not this trim."
+      },
+      "zeroToHundredKph": {
+        "value": 15.0,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "topSpeed": {
+        "value": 157,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "fuelEconomy": {
+        "value": 4.5,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "Cycle not named in the source."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/dacia-sandero-b90/hero.webp",
+    "alt": "Silver first-generation Dacia Sandero hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 966,
+    "caption": "The original Sandero, developed on a shortened version of the Logan's B0 platform and revealed first in Brazil in 2007.",
+    "credit": {
+      "author": "Torsten Maue",
+      "title": "File:Dacia Sandero 1.4 MPI 2008.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dacia_Sandero_1.4_MPI_2008.jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/dacia-sandero-b90/gallery-1.webp",
+      "alt": "Rear three-quarter view of a black raised Dacia Sandero Stepway",
+      "width": 1200,
+      "height": 609,
+      "caption": "The raised-suspension Stepway version, part of this generation's line-up.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2013 Dacia Sandero Stepway Laureate 900cc Rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013_Dacia_Sandero_Stepway_Laureate_900cc_Rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-dacia-sandero"
+  ]
+}

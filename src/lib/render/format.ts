@@ -1,7 +1,7 @@
 /**
  * Display formatting for stored values.
  *
- * Deliberately *not* unit conversion — SPEC.md §8.1 puts SI⇄imperial in
+ * Deliberately *not* unit conversion — SI⇄imperial lives in
  * `lib/math/units.ts` (Phase 3), shared between the static render and the
  * client-side unit toggle so the two can never disagree. This module only
  * turns a stored SI number into readable text.

@@ -1,0 +1,341 @@
+{
+  "id": "citroen-c4-c41",
+  "name": "Citroën C4 (C41)",
+  "fullName": "Citroën C4 (C41), 2020-present",
+  "kind": "generation",
+  "parent": "citroen-c4",
+  "brandRef": "citroen",
+  "generationCode": "C41",
+  "productionYears": {
+    "start": 2020,
+    "end": null
+  },
+  "bodyStyles": [
+    "crossover",
+    "saloon"
+  ],
+  "powertrains": [
+    "petrol",
+    "mild-hybrid",
+    "diesel",
+    "bev"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Sylvain Henry (exterior); Pierre Leclercq (C4 X)",
+  "assembly": [
+    "Villaverde, Madrid, Spain (Stellantis Madrid Plant)",
+    "Cairo, Egypt (Arab American Vehicles)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4360,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+      "sourceNote": "C4 hatchback/crossover figure; the C4 X fastback saloon is 4,600 mm."
+    },
+    "width": {
+      "value": 1834,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+    },
+    "height": {
+      "value": 1525,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+    },
+    "wheelbase": {
+      "value": 2670,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+      "sourceNote": "The C4 X shares the same wheelbase."
+    },
+    "kerbWeight": {
+      "value": null,
+      "unit": "kg",
+      "status": "placeholder",
+      "sourceNote": "Not published in the Wikipedia infobox or body text for this generation."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-2-puretech-100",
+      "name": "1.2 PureTech 100",
+      "productionYears": {
+        "start": 2020,
+        "end": 2025
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 6,
+      "transmission": "6-speed manual",
+      "engine": {
+        "configuration": "inline-3, PureTech",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1199,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 74,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "100 PS at 5,500 rpm, converted at 1 PS = 0.73549875 kW (73.5 kW, rounded to 74)."
+      },
+      "torque": {
+        "value": 205,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "zeroToHundredKph": {
+        "value": 10.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "C4 hatchback/crossover; the C4 X is quoted at 11.6s."
+      },
+      "topSpeed": {
+        "value": 183,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "Published as 114 mph, converted at 1.609344 km/mi (183.5 km/h, rounded to 183)."
+      },
+      "co2": {
+        "value": 122,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "Published as a 122-136 g/km range for the C4 depending on trim; lowest figure recorded here."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-2-puretech-130",
+      "name": "1.2 PureTech 130",
+      "productionYears": {
+        "start": 2020,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual (2020-2025) or 8-speed automatic",
+      "engine": {
+        "configuration": "inline-3 turbocharged, PureTech",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1199,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 96,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "130 PS at 5,550 rpm, converted at 1 PS = 0.73549875 kW (95.6 kW, rounded to 96)."
+      },
+      "torque": {
+        "value": 230,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "zeroToHundredKph": {
+        "value": 8.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "C4 with manual gearbox; the automatic is quoted at 9.4s and the C4 X at 10.3s."
+      },
+      "topSpeed": {
+        "value": 200,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "Published as 124 mph, converted at 1.609344 km/mi (199.6 km/h, rounded to 200)."
+      },
+      "co2": {
+        "value": 119,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "Published as a 119-135 g/km range for the manual C4 depending on trim; lowest figure recorded here."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-5-bluehdi",
+      "name": "1.5 BlueHDi",
+      "productionYears": {
+        "start": 2020,
+        "end": 2024
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "8-speed automatic",
+      "engine": {
+        "code": "DV5",
+        "configuration": "inline-4 turbocharged, DV5 BlueHDi",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1499,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 96,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "130 PS at 3,750 rpm, converted at 1 PS = 0.73549875 kW (95.6 kW, rounded to 96)."
+      },
+      "torque": {
+        "value": 300,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "zeroToHundredKph": {
+        "value": 10.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "topSpeed": {
+        "value": 206,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "Published as 128 mph, converted at 1.609344 km/mi (206.0 km/h)."
+      },
+      "co2": {
+        "value": 120,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "Published as a 120-123 g/km range depending on trim; lowest figure recorded here."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "e-c4",
+      "name": "e-C4",
+      "productionYears": {
+        "start": 2020,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "bev",
+      "engine": {
+        "configuration": "single motor, permanent magnet synchronous"
+      },
+      "power": {
+        "value": 100,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "Published directly in kW for the 50 kWh version. A higher-output 114 kW motor with a 54 kWh battery was added later and is not this figure."
+      },
+      "batteryCapacity": {
+        "value": 50,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4"
+      },
+      "electricRange": {
+        "value": 350,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+        "sourceNote": "WLTP cycle, 50 kWh version. The article separately gives a 350-415 km range across both battery sizes; 350 km is the figure stated specifically for this 50 kWh/100 kW version."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/citroen-c4-c41/hero.webp",
+    "alt": "Orange third-generation Citroën C4 crossover hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 788,
+    "caption": "The current C4, revealed in 2020 with 'coupe SUV' styling and shared with a fastback saloon twin, the C4 X.",
+    "credit": {
+      "author": "Alexander Migl",
+      "title": "File:Citroen C4 (2020) IMG 4202.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citroen_C4_(2020)_IMG_4202.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/citroen-c4-c41/gallery-1.webp",
+      "alt": "Rear three-quarter view of an orange third-generation Citroën C4 crossover hatchback",
+      "width": 1200,
+      "height": 691,
+      "caption": "Built on the PSA EMP1 platform shared with the Peugeot 2008 and 208.",
+      "credit": {
+        "author": "Alexander Migl",
+        "title": "File:Citroen C4 (2020) 1X7A5854.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citroen_C4_(2020)_1X7A5854.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-citroen-c4"
+  ]
+}

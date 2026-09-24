@@ -1,5 +1,5 @@
 /**
- * Shared plumbing for the seven axis route pairs (SPEC.md §6).
+ * Shared plumbing for the seven axis route pairs.
  *
  * Fourteen route files that each re-derived their own term list would be
  * fourteen chances for one axis to quietly behave differently from the other
@@ -19,7 +19,7 @@ export async function loadAxis(axis: string): Promise<AxisData> {
   const config = axisConfig(axis);
   if (!config) {
     throw new Error(
-      `Unknown taxonomy axis '${axis}'. The seven axes are fixed by SPEC.md §6 and listed in taxonomy-views.ts.`,
+      `Unknown taxonomy axis '${axis}'. The seven axes are fixed and listed in taxonomy-views.ts.`,
     );
   }
   const [cars, brands] = await Promise.all([getCars(), getBrands()]);

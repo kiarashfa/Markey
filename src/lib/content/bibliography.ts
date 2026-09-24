@@ -1,5 +1,5 @@
 /**
- * The bibliography, parsed once — SPEC.md §5.5.
+ * The bibliography, parsed once.
  *
  * `references.json` is plain data rather than a content collection, so nothing
  * validates it on import the way a collection schema would. Every consumer that

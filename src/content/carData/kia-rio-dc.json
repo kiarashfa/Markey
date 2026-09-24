@@ -1,0 +1,194 @@
+{
+  "id": "kia-rio-dc",
+  "name": "Kia Rio (DC)",
+  "fullName": "Kia Rio (DC), 1999-2005",
+  "kind": "generation",
+  "parent": "kia-rio",
+  "brandRef": "kia",
+  "generationCode": "DC",
+  "productionYears": {
+    "start": 1999,
+    "end": 2005
+  },
+  "bodyStyles": [
+    "saloon",
+    "estate"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Justyn Norek at I.DE.A Institute",
+  "assembly": [
+    "Gwangmyeong, South Korea (Sohari Plant)",
+    "Quito, Ecuador (AYMESA)",
+    "Tehran, Iran (SAIPA)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4215,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-rio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio",
+      "sourceNote": "2000-02 pre-facelift figure; the 2002-05 facelifted car is 4,240 mm."
+    },
+    "width": {
+      "value": 1675,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-rio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio",
+      "sourceNote": "2000-02 pre-facelift figure; the 2002-05 facelifted car is 1,680 mm."
+    },
+    "height": {
+      "value": 1440,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-rio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio"
+    },
+    "wheelbase": {
+      "value": 2410,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-rio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio"
+    },
+    "kerbWeight": {
+      "value": 1019,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-kia-rio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio",
+      "sourceNote": "Published as a 1,019-1,256 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-5-dohc-na",
+      "name": "1.5 DOHC (North America)",
+      "productionYears": {
+        "start": 2001,
+        "end": 2002
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual or 4-speed automatic",
+      "engine": {
+        "code": "B5-DE",
+        "configuration": "inline-4 DOHC, Mazda B5",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 72,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-kia-rio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio",
+        "sourceNote": "96 hp (SAE, US market), converted at 1 hp = 0.745699872 kW (71.6 kW, rounded to 72)."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-dohc-na",
+      "name": "1.6 DOHC (North America)",
+      "productionYears": {
+        "start": 2003,
+        "end": 2005
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual or 4-speed automatic",
+      "engine": {
+        "code": "B6",
+        "configuration": "inline-4 DOHC, Mazda B6",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 78,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-kia-rio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio",
+        "sourceNote": "104 hp (SAE, US market), converted at 1 hp = 0.745699872 kW (77.6 kW, rounded to 78)."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-3-sohc-europe",
+      "name": "1.3 SOHC (Europe)",
+      "productionYears": {
+        "start": 1999,
+        "end": 2002
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "B3",
+        "configuration": "inline-4 SOHC 8v, Mazda B3",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1343,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-kia-rio",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 56,
+        "unit": "kW",
+        "status": "estimated",
+        "sourceNote": "Wikipedia gives this engine's UK/European output as '75 hp' with no PS/mechanical qualifier stated. Read here as imperial/mechanical horsepower (0.745699872 kW/hp, giving 55.9 kW, rounded to 56) by analogy with the North American engines in the same infobox, which the article's own conversion templates confirm are imperial hp. If the figure were instead metric PS, the result would be about 55.2 kW — a difference of under 2%."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/kia-rio-dc/hero.webp",
+    "alt": "White first-generation Kia Rio hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 906,
+    "caption": "The original Rio, launched in 1999 and sold at the time as the least expensive mass-produced car on the US market.",
+    "credit": {
+      "author": "OSX",
+      "title": "File:2001 Kia Rio (DC) LS hatchback (2015-11-13) 01 (cropped).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2001_Kia_Rio_(DC)_LS_hatchback_(2015-11-13)_01_(cropped).jpg",
+      "licenseType": "public-domain",
+      "licenseNote": "Released into the public domain by the photographer."
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/kia-rio-dc/gallery-1.webp",
+      "alt": "Rear three-quarter view of a white first-generation Kia Rio hatchback",
+      "width": 1200,
+      "height": 802,
+      "caption": "The five-door estate/hatchback body, marketed in the US as the 'Rio Cinco'.",
+      "credit": {
+        "author": "OSX",
+        "title": "File:2001 Kia Rio (DC) LS hatchback (2015-11-13) 02.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2001_Kia_Rio_(DC)_LS_hatchback_(2015-11-13)_02.jpg",
+        "licenseType": "public-domain",
+        "licenseNote": "Released into the public domain by the photographer."
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-kia-rio"
+  ]
+}

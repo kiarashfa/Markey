@@ -1,6 +1,6 @@
 name: Deploy to GitHub Pages
 
-# SPEC.md §13 — three jobs, in order:
+# Three jobs, in order:
 #   verify  → the integrity checks must still catch known-bad content, + type check
 #   build   → withastro/action, which runs the gated `npm run build`
 #   deploy  → actions/deploy-pages
@@ -78,7 +78,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      # Runs `npm run build` — the full gated pipeline from SPEC.md §13
+      # Runs `npm run build` — the full gated pipeline
       # (test → check:content → astro build → postbuild:index → check:site) —
       # and uploads dist/ as the Pages artifact. `npm run build` is this
       # action's default command for npm, so the gate is not bypassed.

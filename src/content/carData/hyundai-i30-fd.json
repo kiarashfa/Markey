@@ -1,0 +1,224 @@
+{
+  "id": "hyundai-i30-fd",
+  "name": "Hyundai i30 (FD)",
+  "fullName": "Hyundai i30 (FD), 2007-2012",
+  "kind": "generation",
+  "parent": "hyundai-i30",
+  "brandRef": "hyundai",
+  "generationCode": "FD",
+  "productionYears": {
+    "start": 2007,
+    "end": 2012
+  },
+  "bodyStyles": [
+    "hatchback",
+    "estate"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Thomas Burkle",
+  "assembly": [
+    "Ulsan, South Korea",
+    "Nosovice, Czech Republic",
+    "Beijing, China (Beijing Hyundai)",
+    "Cairo, Egypt (Ghabbour Group)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4245,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i30",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+      "sourceNote": "Hatchback figure; the i30cw estate is 4,475 mm."
+    },
+    "width": {
+      "value": 1775,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i30",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+    },
+    "height": {
+      "value": 1480,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i30",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+      "sourceNote": "Hatchback figure; the i30cw estate is 1,565 mm."
+    },
+    "wheelbase": {
+      "value": 2650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i30",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+      "sourceNote": "Hatchback figure; the i30cw estate is 2,700 mm."
+    },
+    "kerbWeight": {
+      "value": null,
+      "unit": "kg",
+      "status": "placeholder",
+      "sourceNote": "Not published in the Wikipedia infobox for this generation, unlike the second and third generations, which both give a weight range."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-4",
+      "name": "1.4",
+      "productionYears": {
+        "start": 2007,
+        "end": 2012
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "G4FA",
+        "configuration": "inline-4, Gamma CVVT DOHC 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1396,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-hyundai-i30",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 80,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+        "sourceNote": "109 PS at 6,200 rpm, converted at 1 PS = 0.73549875 kW (80.2 kW, rounded to 80)."
+      },
+      "torque": {
+        "value": 137,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+        "sourceNote": "Published directly as 137.2 N-m at 5,000 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 12.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+      },
+      "topSpeed": {
+        "value": 187,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-0-crdi",
+      "name": "2.0 CRDi",
+      "productionYears": {
+        "start": 2007,
+        "end": 2012
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "gears": 6,
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "D4EA",
+        "configuration": "inline-4 CRDi-VGT SOHC 16v turbo-diesel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1991,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-hyundai-i30",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 103,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+        "sourceNote": "140 PS at 3,800 rpm, converted at 1 PS = 0.73549875 kW (103.0 kW)."
+      },
+      "torque": {
+        "value": 304,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30",
+        "sourceNote": "Published directly as 304 N-m at 1,900-2,500 rpm."
+      },
+      "zeroToHundredKph": {
+        "value": 10.3,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+      },
+      "topSpeed": {
+        "value": 205,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i30",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i30"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/hyundai-i30-fd/hero.webp",
+    "alt": "Silver first-generation Hyundai i30 five-door hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 903,
+    "caption": "The original i30, launched in 2007 and sold in North America as the Elantra Touring in estate form.",
+    "credit": {
+      "author": "EurovisionNim",
+      "title": "File:2011 Hyundai i30 (FD) SLX hatchback (2018-10-01) 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Hyundai_i30_(FD)_SLX_hatchback_(2018-10-01)_01.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/hyundai-i30-fd/gallery-1.webp",
+      "alt": "Rear three-quarter view of a silver first-generation Hyundai i30 hatchback",
+      "width": 1200,
+      "height": 754,
+      "caption": "A post-2010 facelifted car, badged SLX.",
+      "credit": {
+        "author": "EurovisionNim",
+        "title": "File:2011 Hyundai i30 (FD) SLX hatchback (2018-10-01) 02.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Hyundai_i30_(FD)_SLX_hatchback_(2018-10-01)_02.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-hyundai-i30"
+  ]
+}

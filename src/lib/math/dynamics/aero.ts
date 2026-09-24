@@ -1,5 +1,5 @@
 /**
- * Aerodynamics — SPEC.md §8.2.
+ * Aerodynamics.
  *
  * Drag force, drag area, and the frontal-area estimate that makes the rest of
  * the model possible for cars where nobody published one.
@@ -56,7 +56,7 @@ export interface FrontalAreaEstimate {
 /**
  * Estimates frontal area from the width × height bounding box.
  *
- * SPEC.md §8.2 fixes the approximation at ~0.85 × width × height and requires
+ * The approximation is fixed at ~0.85 × width × height and requires
  * anything derived from it to be flagged as estimated wherever it feeds a
  * displayed figure. The return type carries that flag and its explanation so a
  * caller cannot accidentally present the result as measured — the shape of the
@@ -84,7 +84,7 @@ export function estimateFrontalArea(
 /**
  * The frontal area to actually use, published in preference to estimated.
  *
- * SPEC.md §8.2 discipline 1: a modelled figure never overwrites a real one.
+ * Discipline 1: a modelled figure never overwrites a real one.
  */
 export function resolveFrontalArea(
   publishedM2: number | null | undefined,
@@ -103,7 +103,7 @@ export function resolveFrontalArea(
  * Cd back-calculated from a measured force — `Cd = 2F / (ρ · U² · A)`.
  *
  * This is the momentum-exchange relationship the wind-tunnel solver reports its
- * own Cd through (SPEC.md §9.5.1). It lives here so the 2D physics and the
+ * own Cd through. It lives here so the 2D physics and the
  * solver share one definition rather than each carrying its own.
  */
 export function dragCoefficientFromForce(

@@ -1,0 +1,199 @@
+{
+  "id": "kia-rio-yb",
+  "name": "Kia Rio (YB)",
+  "fullName": "Kia Rio (YB), 2016-2023",
+  "kind": "generation",
+  "parent": "kia-rio",
+  "brandRef": "kia",
+  "generationCode": "YB",
+  "productionYears": {
+    "start": 2016,
+    "end": 2023
+  },
+  "bodyStyles": [
+    "hatchback",
+    "saloon"
+  ],
+  "powertrains": [
+    "petrol",
+    "mild-hybrid",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Peter Schreyer",
+  "assembly": [
+    "Gwangmyeong, South Korea (Sohari Plant)",
+    "Pesqueria, Mexico (KMMX)",
+    "Batna, Algeria (GLOVIZ)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4065,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-rio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio",
+      "sourceNote": "Hatchback figure; the sedan, sold mainly in the Americas, is 4,420 mm."
+    },
+    "width": {
+      "value": 1725,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-rio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio",
+      "sourceNote": "Published as a 1,725-1,740 mm range depending on trim; lowest figure recorded here."
+    },
+    "height": {
+      "value": 1450,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-rio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio",
+      "sourceNote": "Published as a 1,450-1,470 mm range depending on trim; lowest figure recorded here."
+    },
+    "wheelbase": {
+      "value": 2580,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-rio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio"
+    },
+    "kerbWeight": {
+      "value": 1110,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-kia-rio",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio",
+      "sourceNote": "Published as a 1,110-1,303 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-6-gdi-na",
+      "name": "1.6 Gamma GDi (North America)",
+      "productionYears": {
+        "start": 2016,
+        "end": 2019
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or 6-speed automatic",
+      "engine": {
+        "code": "Gamma GDi",
+        "configuration": "inline-4, Gamma GDi",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 97,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-kia-rio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio",
+        "sourceNote": "130 hp (SAE, North American market), converted at 1 hp = 0.745699872 kW (96.9 kW, rounded to 97). Replaced from the 2020 model year by a lower-output MPi engine rated at 120 hp."
+      },
+      "fuelEconomy": {
+        "value": 7.35,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "epa-2018-kia-rio",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/39330",
+        "sourceNote": "EPA combined 32 mpg (US) for the 2018 automatic, converted at 235.215 L-mi/100km-gal."
+      },
+      "co2": {
+        "value": 174,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "epa-2018-kia-rio",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/39330",
+        "sourceNote": "EPA tailpipe CO2, 280 g/mi, converted at 1.609344 km/mi (US cycle)."
+      },
+      "bootVolume": {
+        "value": 396,
+        "unit": "L",
+        "status": "verified",
+        "source": "epa-2018-kia-rio",
+        "sourceUrl": "https://www.fueleconomy.gov/ws/rest/vehicle/39330",
+        "sourceNote": "EPA luggage volume, 14 cu ft, converted at 28.3168 L/cu ft. EPA's method is not comparable with a European VDA boot figure."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-mpi-na",
+      "name": "1.6 Gamma II MPi (North America)",
+      "productionYears": {
+        "start": 2020,
+        "end": 2023
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed automatic",
+      "engine": {
+        "code": "G4FM",
+        "configuration": "inline-4, Gamma II MPi (mechanically identical to the Hyundai Smartstream G4FM)",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-kia-rio",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 89,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-kia-rio",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Rio",
+        "sourceNote": "120 hp (SAE, North American market), converted at 1 hp = 0.745699872 kW (89.5 kW, rounded to 89). Introduced for the 2020 model year in place of the higher-output 130 hp GDi engine, with improved EPA fuel economy from dual-port injection."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/kia-rio-yb/hero.webp",
+    "alt": "Silver fourth-generation Kia Rio five-door hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 851,
+    "caption": "The fourth-generation, global-market Rio, revealed at the 2016 Paris Motor Show and built in Korea and Mexico.",
+    "credit": {
+      "author": "EurovisionNim",
+      "title": "File:2018 Kia Rio (YB) S 5-door hatchback (2018-08-06) 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Kia_Rio_(YB)_S_5-door_hatchback_(2018-08-06)_01.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/kia-rio-yb/gallery-1.webp",
+      "alt": "Rear three-quarter view of a silver fourth-generation Kia Rio hatchback",
+      "width": 1200,
+      "height": 694,
+      "caption": "Not sold in South Korea itself: this generation was an export-only model, with the Rio-based Stonic crossover offered at home instead.",
+      "credit": {
+        "author": "EurovisionNim",
+        "title": "File:2018 Kia Rio (YB) S 5-door hatchback (2018-08-06) 02.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Kia_Rio_(YB)_S_5-door_hatchback_(2018-08-06)_02.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-kia-rio",
+    "epa-2018-kia-rio"
+  ]
+}

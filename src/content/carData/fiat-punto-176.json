@@ -1,0 +1,143 @@
+{
+  "id": "fiat-punto-176",
+  "name": "Fiat Punto (Type 176)",
+  "fullName": "Fiat Punto (Type 176), 1993-1999",
+  "kind": "generation",
+  "parent": "fiat-punto",
+  "brandRef": "fiat",
+  "generationCode": "176",
+  "productionYears": {
+    "start": 1993,
+    "end": 1999
+  },
+  "bodyStyles": ["hatchback", "convertible"],
+  "powertrains": ["petrol", "diesel"],
+  "drivetrains": ["fwd"],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Giorgetto Giugiaro (Italdesign)",
+  "assembly": [
+    "Fiat, Melfi, Basilicata, Italy",
+    "Fiat, Mirafiori, Turin, Italy",
+    "Fiat, Termini Imerese, Sicily, Italy",
+    "Fiat Auto Poland, Tychy, Poland"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": { "value": 3760, "unit": "mm", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+    "width": { "value": 1625, "unit": "mm", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+    "height": { "value": 1450, "unit": "mm", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+    "wheelbase": { "value": 2450, "unit": "mm", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+    "kerbWeight": {
+      "value": 830,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-fiat-punto",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto",
+      "sourceNote": "Lowest figure in the infobox's published range of 830-1,040 kg (hatchback); the cabriolet is separately given as 1,070 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "60-1-2-fire",
+      "name": "60 1.2",
+      "productionYears": { "start": 1993, "end": 1999 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "FIRE",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 44.13,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-fiat-punto",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto",
+        "sourceNote": "60 PS, the 1.2 FIRE fitted to the SX cabriolet and widely across the hatchback range, converted at 1 PS = 0.73549875 kW."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "sporting-1-6",
+      "name": "Sporting 1.6",
+      "productionYears": { "start": 1993, "end": 1997 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "128 SOHC",
+        "configuration": "inline-4, 8-valve",
+        "cylinders": 4,
+        "displacement": { "value": 1581, "unit": "cc", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 66.19,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-fiat-punto",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto",
+        "sourceNote": "90 PS at 5,750 rpm, converted at 1 PS = 0.73549875 kW."
+      },
+      "torque": { "value": 129, "unit": "Nm", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto", "sourceNote": "At 2,750 rpm." },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gt-1-4-turbo",
+      "name": "GT 1.4 Turbo",
+      "productionYears": { "start": 1993, "end": 1995 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "128 SOHC turbo",
+        "configuration": "inline-4, turbocharged",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 100.03,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-fiat-punto",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto",
+        "sourceNote": "136 PS, the earliest and most powerful of three GT tunes across this generation's run (136 PS 1993-95, 133 PS 1995-97, 130 PS 1997-99), converted at 1 PS = 0.73549875 kW."
+      },
+      "topSpeed": { "value": 200, "unit": "km/h", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto", "sourceNote": "Reported as 'over 200 km/h'." },
+      "zeroToHundredKph": { "value": 7.9, "unit": "s", "status": "verified", "source": "wikipedia-fiat-punto", "sourceUrl": "https://en.wikipedia.org/wiki/Fiat_Punto" },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/fiat-punto-176/hero.webp",
+    "alt": "Silver first-generation Fiat Punto photographed from the front three-quarter angle, showing its rounded Giugiaro-designed hatchback body",
+    "width": 1600,
+    "height": 989,
+    "caption": "European Car of the Year for 1995, beating the Volkswagen Polo: a Giugiaro design originally drawn up, and rejected, for what became the Renault Clio.",
+    "credit": {
+      "author": "Makizox",
+      "title": "File:1998 Fiat Punto SX Selecta 1.2 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1998_Fiat_Punto_SX_Selecta_1.2_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-fiat-punto"]
+}

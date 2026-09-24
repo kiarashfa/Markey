@@ -1,0 +1,19 @@
+{
+  "id": "citroen-c1",
+  "name": "Citroën C1",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "citroen",
+  "productionYears": {
+    "start": 2005,
+    "end": 2022
+  },
+  "segment": "a-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-citroen-c1"
+  ]
+}

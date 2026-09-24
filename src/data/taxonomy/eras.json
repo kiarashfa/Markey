@@ -2,7 +2,7 @@
   "axis": "era",
   "urlPrefix": "era",
   "authored": false,
-  "note": "NOT an authored tag. SPEC.md §7: era is computed from each entry's `productionYears`, never written by a content author — which is why it costs nothing to offer as a browse axis. This file only defines the bucket boundaries and their display labels; `src/schemas/taxonomy.ts` does the derivation. A car in production 1976–1989 lands in three buckets, not one.",
+  "note": "NOT an authored tag. Era is computed from each entry's `productionYears`, never written by a content author — which is why it costs nothing to offer as a browse axis. This file only defines the bucket boundaries and their display labels; `src/schemas/taxonomy.ts` does the derivation. A car in production 1976–1989 lands in three buckets, not one.",
   "terms": [
     { "id": "1900s", "label": "1900s", "start": 1900, "end": 1909 },
     { "id": "1910s", "label": "1910s", "start": 1910, "end": 1919 },

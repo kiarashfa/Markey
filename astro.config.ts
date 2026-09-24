@@ -13,7 +13,7 @@ import rehypeCrosslink from './src/integrations/rehype-crosslink.ts';
 import rehypeCitations from './src/integrations/rehype-citations.ts';
 
 /**
- * SPEC.md §6 — while the site lives on the github.io subdomain, `site` is the
+ * While the site lives on the github.io subdomain, `site` is the
  * user domain and `base` is the repo name. Moving to a custom domain later is
  * a two-line change here and nothing else, because every internal link is
  * built through a shared href() helper rather than hardcoded.
@@ -22,7 +22,7 @@ export const SITE = 'https://kiarashfa.github.io';
 export const BASE = '/Markey';
 
 /**
- * Paths kept out of the sitemap — SPEC.md §12.
+ * Paths kept out of the sitemap.
  *
  * These are the pages that carry the visitor's own state. They are `noindex`
  * in the document head and they are **not** disallowed in `robots.txt`, which
@@ -43,11 +43,11 @@ const REFERENCES_PATH = fileURLToPath(new URL('./src/data/references.json', impo
 export default defineConfig({
   site: SITE,
   base: BASE,
-  // SPEC.md §6/§12 — canonical URLs always end in a slash.
+  // Canonical URLs always end in a slash.
   trailingSlash: 'always',
   // GitHub Pages cannot run a server; static is the only valid output.
   output: 'static',
-  // `integrity` first: SPEC.md §13 wants the build to stop on bad content
+  // `integrity` first: the build must stop on bad content
   // before anything else has spent time on it.
   integrations: [
     integrity(),
@@ -59,7 +59,7 @@ export default defineConfig({
   ],
   markdown: {
     /**
-     * SPEC.md §12 — internal link density without manual upkeep, and §5.5's
+     * Internal link density without manual upkeep, and the
      * numbered citations. Both are derived from the content files rather than
      * typed, so they survive a rename.
      *
@@ -78,7 +78,7 @@ export default defineConfig({
     }),
   },
   vite: {
-    // Tailwind v4 is a Vite plugin, not an Astro integration (SPEC.md §3).
+    // Tailwind v4 is a Vite plugin, not an Astro integration.
     plugins: [tailwindcss()],
   },
 });

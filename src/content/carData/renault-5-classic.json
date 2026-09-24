@@ -1,0 +1,342 @@
+{
+  "id": "renault-5-classic",
+  "name": "Renault 5",
+  "fullName": "Renault 5 (first generation), 1972-1985",
+  "kind": "generation",
+  "parent": "renault-5",
+  "brandRef": "renault",
+  "productionYears": {
+    "start": 1972,
+    "end": 1985
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd",
+    "rwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "designer": "Michel Boue",
+  "assembly": [
+    "Flins, France",
+    "Douai, France",
+    "Valladolid, Spain (FASA-Renault)",
+    "Mariara, Venezuela",
+    "Novo Mesto, Yugoslavia (IMV)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3521,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+    },
+    "width": {
+      "value": 1525,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+    },
+    "height": {
+      "value": 1410,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+    },
+    "wheelbase": {
+      "value": 2419,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+    },
+    "kerbWeight": {
+      "value": 730,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-renault-5",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5",
+      "sourceNote": "Published as a 730-810 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "r5l-845",
+      "name": "R5L",
+      "productionYears": {
+        "start": 1972,
+        "end": 1985
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "B1B",
+        "configuration": "inline-4 8v, Ventoux",
+        "cylinders": 4,
+        "displacement": {
+          "value": 845,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-5",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 27,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5",
+        "sourceNote": "37 PS, converted at 1 PS = 0.73549875 kW (27.2 kW, rounded to 27)."
+      },
+      "zeroToHundredKph": {
+        "value": 22.3,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+      },
+      "topSpeed": {
+        "value": 126,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "tl-1108",
+      "name": "TL",
+      "productionYears": {
+        "start": 1972,
+        "end": 1985
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "C1E (688)",
+        "configuration": "inline-4 8v, Cleon-Fonte",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1108,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-5",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 33,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5",
+        "sourceNote": "45 PS, converted at 1 PS = 0.73549875 kW (33.1 kW, rounded to 33)."
+      },
+      "zeroToHundredKph": {
+        "value": 21.4,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+      },
+      "topSpeed": {
+        "value": 136,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1300-810",
+      "name": "1300",
+      "productionYears": {
+        "start": 1976,
+        "end": 1985
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "810",
+        "configuration": "inline-4 8v, Cleon-Fonte",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1289,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-5",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 47,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5",
+        "sourceNote": "64 PS, converted at 1 PS = 0.73549875 kW (47.1 kW, rounded to 47). A lower, 55 PS tune of the same displacement was also offered, mainly for the automatic gearbox, and is not this trim."
+      },
+      "zeroToHundredKph": {
+        "value": 15.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+      },
+      "topSpeed": {
+        "value": 154,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "alpine-turbo",
+      "name": "Alpine Turbo",
+      "productionYears": {
+        "start": 1981,
+        "end": 1985
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "C6J",
+        "configuration": "inline-4 8v turbocharged, Cleon-Fonte",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1397,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-5",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 81,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5",
+        "sourceNote": "110 PS, converted at 1 PS = 0.73549875 kW (80.9 kW, rounded to 81). Sold as the Renault 5 Alpine Turbo (Gordini Turbo in the UK), a conventional front-engine, front-wheel-drive hot hatch — distinct from the mid-engined, rear-drive Renault 5 Turbo homologation car."
+      },
+      "zeroToHundredKph": {
+        "value": 9.1,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+      },
+      "topSpeed": {
+        "value": 185,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "5-turbo",
+      "name": "5 Turbo",
+      "productionYears": {
+        "start": 1980,
+        "end": 1984
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "C1J",
+        "configuration": "mid-mounted inline-4 8v turbocharged, Cleon-Fonte",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1397,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-5",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 118,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5",
+        "sourceNote": "160 PS, converted at 1 PS = 0.73549875 kW (117.7 kW, rounded to 118). The Group 4 homologation special: mid-engined and rear-wheel-drive, sharing only its door panels with the regular front-engined, front-wheel-drive 5 — the dimensions and drivetrain recorded elsewhere on this generation entry do not describe this trim."
+      },
+      "zeroToHundredKph": {
+        "value": 6.9,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+      },
+      "topSpeed": {
+        "value": 204,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-5",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-5-classic/hero.webp",
+    "alt": "Red original Renault 5 hatchback photographed from the front three-quarter angle at a museum display",
+    "width": 1600,
+    "height": 1065,
+    "caption": "The original 5, styled by Michel Boue in his spare time and launched in January 1972.",
+    "credit": {
+      "author": "Y.Leclercq",
+      "title": "File:50 ans Renault 5 - Retromobile 02 crop.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:50_ans_Renault_5_-_Retromobile_02_crop.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/renault-5-classic/gallery-1.webp",
+      "alt": "Rear three-quarter view of a green original Renault 5TL hatchback from 1972",
+      "width": 1200,
+      "height": 721,
+      "caption": "A 1972 5TL, from the car's launch year.",
+      "credit": {
+        "author": "Charles01",
+        "title": "File:Renault 5TL rear three quarters 1972.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_5TL_rear_three_quarters_1972.jpg",
+        "licenseType": "public-domain"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-renault-5"
+  ]
+}

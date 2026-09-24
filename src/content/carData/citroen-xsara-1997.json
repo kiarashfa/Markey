@@ -1,0 +1,289 @@
+{
+  "id": "citroen-xsara-1997",
+  "name": "Citroën Xsara",
+  "fullName": "Citroën Xsara, 1997-2006",
+  "kind": "generation",
+  "parent": "citroen-xsara",
+  "brandRef": "citroen",
+  "productionYears": {
+    "start": 1997,
+    "end": 2006
+  },
+  "bodyStyles": [
+    "hatchback",
+    "estate"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Donato Coco and Giles Taylor",
+  "assembly": [
+    "Rennes, France (PSA Rennes Plant)",
+    "Villaverde, Madrid, Spain",
+    "Vigo, Spain (PSA Vigo Plant)",
+    "Wuhan, Hubei, China",
+    "Cairo, Egypt (AAV)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4167,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-xsara",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara",
+      "sourceNote": "Published as a 4,167-4,188 mm range for the hatchback depending on trim; the estate is 4,350-4,369 mm. Lowest hatchback figure recorded here."
+    },
+    "width": {
+      "value": 1705,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-xsara",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara"
+    },
+    "height": {
+      "value": 1405,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-xsara",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara",
+      "sourceNote": "Hatchback figure; the estate is 1,420 mm."
+    },
+    "wheelbase": {
+      "value": 2540,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-xsara",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara"
+    },
+    "kerbWeight": {
+      "value": null,
+      "unit": "kg",
+      "status": "placeholder",
+      "sourceNote": "No absolute kerb weight is published in the infobox or body text; the article only states that the 2000 facelift made the car about 80 kg heavier than before, without giving either figure."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-4-tu3jp",
+      "name": "1.4 TU3JP",
+      "productionYears": {
+        "start": 1997,
+        "end": 2000
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "TU3JP",
+        "configuration": "inline-4 SOHC 8v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1361,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-xsara",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 55,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-xsara",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara",
+        "sourceNote": "Published directly in kW. A revised version of the same engine, with a repositioned catalyst, made 121 N-m after the 2000 facelift, up from 111 N-m before it."
+      },
+      "torque": {
+        "value": 111,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-xsara",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-8-16v-xu7jp4",
+      "name": "1.8 16v",
+      "productionYears": {
+        "start": 1997,
+        "end": 2000
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "XU7JP4",
+        "configuration": "inline-4 DOHC 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1761,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-xsara",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 82,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-xsara",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara",
+        "sourceNote": "Published directly in kW. Two lower-output, 8-valve tunes of the same 1.8 L displacement (66 kW each) were also offered and are not this trim; all three were dropped from the range at the 2000 facelift."
+      },
+      "torque": {
+        "value": 155,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-xsara",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-0-16v-vts",
+      "name": "2.0 16v VTS",
+      "productionYears": {
+        "start": 1997,
+        "end": 2000
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "XU10J4RS",
+        "configuration": "inline-4 DOHC 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-xsara",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 123,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-xsara",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara",
+        "sourceNote": "167 PS, converted at 1 PS = 0.73549875 kW (122.8 kW, rounded to 123). The same XU10J4RS engine continued after the 2000 facelift at a lower, 122 kW rating until 2002, which is a different figure and not this trim."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-9-xud9te-turbodiesel",
+      "name": "1.9 TD",
+      "productionYears": {
+        "start": 1997,
+        "end": 2000
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "XUD9TE",
+        "configuration": "inline-4 turbo-diesel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1905,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-xsara",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 66,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-xsara",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara",
+        "sourceNote": "Published directly in kW."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-0-dw10ated-turbodiesel",
+      "name": "2.0 HDi",
+      "productionYears": {
+        "start": 2000,
+        "end": 2004
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "DW10ATED",
+        "configuration": "inline-4 common-rail turbo-diesel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1997,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-xsara",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 79,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-xsara",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara",
+        "sourceNote": "Published directly in kW. Introduced new at the 2000 facelift, alongside the carried-over, lower-output 66 kW DW10TD."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/citroen-xsara/hero.webp",
+    "alt": "Dark green pre-facelift Citroën Xsara hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 900,
+    "caption": "A pre-facelift Xsara, launched in September 1997 to replace the ZX.",
+    "credit": {
+      "author": "Dogs.barking.duster.rolling",
+      "title": "File:2000 Citroën Xsara (1).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2000_Citro%C3%ABn_Xsara_(1).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/citroen-xsara/gallery-1.webp",
+      "alt": "Rear three-quarter view of a dark green pre-facelift Citroën Xsara hatchback",
+      "width": 1200,
+      "height": 675,
+      "caption": "The hatchback body, discontinued in Europe in 2004 in favour of the C4 but built for one more year in China.",
+      "credit": {
+        "author": "Dogs.barking.duster.rolling",
+        "title": "File:2000 Citroën Xsara (2).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2000_Citro%C3%ABn_Xsara_(2).jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-citroen-xsara"
+  ]
+}

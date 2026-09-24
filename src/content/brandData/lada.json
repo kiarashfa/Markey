@@ -1,0 +1,25 @@
+{
+  "id": "lada",
+  "name": "Lada",
+  "legalName": "AvtoVAZ",
+  "countryOfOrigin": "Soviet Union",
+  "founded": 1966,
+  "logo": {
+    "src": "/images/brands/lada.webp",
+    "alt": "The Lada badge: a blue oval containing a white stylised sailing boat, above the LADA wordmark in blue",
+    "width": 300,
+    "height": 211,
+    "credit": {
+      "author": "AvtoVAZ",
+      "title": "File:Lada company logo image.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lada_company_logo_image.png",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's cars, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain; the basis for display here is trademark nominative use, not a copyright licence."
+    }
+  },
+  "accentColor": "#0061ac",
+  "accentColorNote": "No SVG source of the badge was available on Commons, so the hex was sampled directly from the downloaded logo bitmap: the most common non-transparent blue pixel value across the oval and wordmark was rgb(0,97,172).",
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-lada", "wikipedia-avtovaz", "commons-file-lada-company-logo-image-png"]
+}

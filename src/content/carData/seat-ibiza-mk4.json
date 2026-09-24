@@ -1,0 +1,217 @@
+{
+  "id": "seat-ibiza-mk4",
+  "name": "SEAT Ibiza",
+  "fullName": "SEAT Ibiza Mk4 (6J), 2008-2017",
+  "kind": "generation",
+  "parent": "seat-ibiza",
+  "brandRef": "seat",
+  "generationCode": "6J",
+  "productionYears": {
+    "start": 2008,
+    "end": 2017
+  },
+  "bodyStyles": [
+    "hatchback",
+    "estate"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "designer": "Luc Donckerwolke",
+  "assembly": [
+    "Martorell, Catalonia, Spain",
+    "Relizane, Algeria"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4031,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-seat-ibiza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza",
+      "sourceNote": "3-door body, published as a 4031-4072 mm range across model years; the lower figure is recorded here. The 5-door is 4052 mm and the estate 4227 mm."
+    },
+    "width": {
+      "value": 1693,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-seat-ibiza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+    },
+    "height": {
+      "value": 1420,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-seat-ibiza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza",
+      "sourceNote": "3-door body, published as a 1420-1428 mm range; the lower figure is recorded here. The 5-door and estate are 1445 mm."
+    },
+    "wheelbase": {
+      "value": 2469,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-seat-ibiza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+    },
+    "kerbWeight": {
+      "value": 974,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-seat-ibiza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza",
+      "sourceNote": "Published as a 974-1172 kg range for the 3-door body across engine variants (the 5-door is 999-1120 kg); the lowest figure across both is recorded here at generation level."
+    }
+  },
+  "trims": [
+    {
+      "id": "12-tsi",
+      "name": "1.2 TSI",
+      "productionYears": {
+        "start": 2010,
+        "end": 2017
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "CBZB",
+        "configuration": "inline-4 OHC turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1197,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-seat-ibiza",
+          "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 77,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza",
+        "sourceNote": "105 PS at 5,000 rpm, converted at 1 PS = 0.73549875 kW (77.2 kW, rounded to 77)."
+      },
+      "torque": {
+        "value": 175,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza",
+        "sourceNote": "175 N⋅m across a 1,550-4,100 rpm plateau."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "14-tsi-cupra",
+      "name": "1.4 TSI Cupra",
+      "productionYears": {
+        "start": 2009,
+        "end": 2015
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "CAVE / CTHE",
+        "configuration": "inline-4 DOHC turbocharged",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1390,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-seat-ibiza",
+          "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 132,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza",
+        "sourceNote": "180 PS at 6,200 rpm, converted at 1 PS = 0.73549875 kW (132.4 kW, rounded to 132). The Cupra shared this engine, tuned identically, with the Bocanegra special edition; the lower-output FR used the same block at 150 PS."
+      },
+      "torque": {
+        "value": 250,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza",
+        "sourceNote": "250 N⋅m across a 2,000-4,500 rpm plateau."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "16-tdi-90",
+      "name": "1.6 TDI",
+      "productionYears": {
+        "start": 2009,
+        "end": 2015
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "CAYB",
+        "configuration": "inline-4 DOHC turbocharged common-rail diesel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-seat-ibiza",
+          "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 66,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza",
+        "sourceNote": "90 PS at 4,200 rpm, converted at 1 PS = 0.73549875 kW (66.2 kW, rounded to 66). A higher-output 105 PS version of the same block (CAYC) was also sold and is not recorded separately here."
+      },
+      "torque": {
+        "value": 230,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-seat-ibiza",
+        "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza",
+        "sourceNote": "230 N⋅m across a 1,500-2,500 rpm plateau."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/seat-ibiza-mk4/hero.webp",
+    "alt": "White fourth-generation SEAT Ibiza three-door hatchback photographed from the front three-quarter angle outside a brick building",
+    "width": 1600,
+    "height": 851,
+    "caption": "The fourth-generation Ibiza, styled by Luc Donckerwolke with SEAT's 'arrow design' language, seen here as the three-door SportCoupé.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2011 SEAT Ibiza SE Copa 1.4 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_SEAT_Ibiza_SE_Copa_1.4_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-seat-ibiza"
+  ]
+}

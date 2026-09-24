@@ -1,0 +1,279 @@
+{
+  "id": "kia-ceed-cd",
+  "name": "Kia Ceed (CD)",
+  "fullName": "Kia Ceed (CD), 2018-2026",
+  "kind": "generation",
+  "parent": "kia-ceed",
+  "brandRef": "kia",
+  "generationCode": "CD",
+  "productionYears": {
+    "start": 2018,
+    "end": 2026
+  },
+  "bodyStyles": [
+    "hatchback",
+    "estate",
+    "shooting-brake"
+  ],
+  "powertrains": [
+    "petrol",
+    "mild-hybrid",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Peter Schreyer",
+  "assembly": [
+    "Zilina, Slovakia (Kia Motors Slovakia)",
+    "Kaliningrad, Russia (Avtotor)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4310,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-ceed",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed",
+      "sourceNote": "Hatchback figure; the Proceed shooting brake is 4,605 mm and the Ceed SW estate is 4,600 mm."
+    },
+    "width": {
+      "value": 1800,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-ceed",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed"
+    },
+    "height": {
+      "value": 1447,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-ceed",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed",
+      "sourceNote": "Hatchback figure; the Proceed is 1,442 mm and the Ceed SW estate is 1,465 mm."
+    },
+    "wheelbase": {
+      "value": 2650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-ceed",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed"
+    },
+    "kerbWeight": {
+      "value": null,
+      "unit": "kg",
+      "status": "placeholder",
+      "sourceNote": "Not published in the Wikipedia infobox for this generation, unlike the first and second generations, which both give a weight range."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0-t-gdi",
+      "name": "1.0 Kappa II T-GDi",
+      "productionYears": {
+        "start": 2018,
+        "end": 2026
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 6,
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "G3LC",
+        "configuration": "inline-3 turbocharged, Kappa II T-GDi",
+        "cylinders": 3,
+        "displacement": {
+          "value": 998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-kia-ceed",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 88,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-kia-ceed",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed",
+        "sourceNote": "120 PS at 6,300 rpm, converted at 1 PS = 0.73549875 kW (88.3 kW, rounded to 88)."
+      },
+      "torque": {
+        "value": 172,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-kia-ceed",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed",
+        "sourceNote": "Published directly as 172 N-m at 1,500-4,000 rpm."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-4-t-gdi",
+      "name": "1.4 Kappa II T-GDi",
+      "productionYears": {
+        "start": 2018,
+        "end": 2026
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or 7-speed DCT",
+      "engine": {
+        "code": "G4LD",
+        "configuration": "inline-4 turbocharged, Kappa II T-GDi",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1353,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-kia-ceed",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 103,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-kia-ceed",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed",
+        "sourceNote": "140 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW (103.0 kW)."
+      },
+      "torque": {
+        "value": 242,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-kia-ceed",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed",
+        "sourceNote": "Published directly as 242 N-m at 1,500-3,200 rpm."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-mpi",
+      "name": "1.6 Gamma II MPi",
+      "productionYears": {
+        "start": 2018,
+        "end": 2026
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or 6-speed automatic",
+      "engine": {
+        "code": "G4FG",
+        "configuration": "inline-4, Gamma II MPi",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1591,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-kia-ceed",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 96,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-kia-ceed",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed",
+        "sourceNote": "130 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW (95.6 kW, rounded to 96)."
+      },
+      "torque": {
+        "value": 157,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-kia-ceed",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed",
+        "sourceNote": "Published directly as 157 N-m at 4,500-4,850 rpm."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-crdi",
+      "name": "1.6 Smartstream D1.6 CRDi",
+      "productionYears": {
+        "start": 2018,
+        "end": 2026
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "6-speed manual or 7-speed DCT",
+      "engine": {
+        "code": "D4FE",
+        "configuration": "inline-4 CRDi-VGT turbo-diesel, Smartstream D1.6",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-kia-ceed",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 85,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-kia-ceed",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed",
+        "sourceNote": "116 PS at 4,000 rpm, converted at 1 PS = 0.73549875 kW (85.3 kW, rounded to 85). A higher-output 136 PS tune of the same engine was also offered and is not this trim."
+      },
+      "torque": {
+        "value": 280,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-kia-ceed",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed",
+        "sourceNote": "280 N-m at 1,500-2,750 rpm with the manual gearbox; the DCT version of the same engine tune is quoted at 300 N-m."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/kia-ceed-cd/hero.webp",
+    "alt": "Blue third-generation Kia Ceed five-door hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 849,
+    "caption": "The current, third-generation car, launched in 2018 as the first to drop the apostrophe from 'Cee'd'.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2019 Kia Ceed Blue Edition ISG S-A 1.4 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Kia_Ceed_Blue_Edition_ISG_S-A_1.4_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/kia-ceed-cd/gallery-1.webp",
+      "alt": "Rear three-quarter view of a blue third-generation Kia Ceed hatchback",
+      "width": 1200,
+      "height": 613,
+      "caption": "This generation also spawned the Proceed shooting brake and the XCeed crossover, both built on the same platform.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2019 Kia Ceed Blue Edition ISG S-A 1.4 Rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Kia_Ceed_Blue_Edition_ISG_S-A_1.4_Rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-kia-ceed"
+  ]
+}

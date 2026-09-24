@@ -1,8 +1,8 @@
 /**
- * A build, in a URL — SPEC.md §9.6, §9.7.
+ * A build, in a URL.
  *
  * The build has no storage behind it and never needs any: the address bar *is*
- * the save file. That is the same decision the comparison tool made (§9.7), and
+ * the save file. That is the same decision the comparison tool made, and
  * for the same reason — a thing you want to send someone belongs in a link.
  *
  * **Readable rather than packed.** A base64 blob would be shorter, and it would

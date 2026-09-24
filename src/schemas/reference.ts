@@ -1,9 +1,8 @@
 /**
  * The bibliography — `src/data/references.json`.
  *
- * SPEC.md §5.5 requires every citation key to resolve "into a references.bib-
- * style bibliography", but neither SPEC.md §4 nor Instruction.md named a file
- * for it. This is that file, added explicitly rather than silently: without a
+ * Every citation key must resolve into a references.bib-style bibliography,
+ * but no file had been named for it. This is that file, added explicitly rather than silently: without a
  * bibliography to resolve *into*, the "every citation key resolves" integrity
  * check has nothing to check against.
  *

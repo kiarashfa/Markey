@@ -1,6 +1,6 @@
 ---
 /**
- * `/brands/<slug>/` — SPEC.md §5.4, §6.
+ * `/brands/<slug>/`.
  *
  * Corporate ownership is resolved in both directions here: the brand's own
  * `parentCompany`, and every brand that names it as theirs. The second list is
@@ -23,7 +23,7 @@ export async function getStaticPaths() {
       cars,
       /* The flattened records for this brand's spec-carrying entries — the
          same shape the catalog and the comparison tool read, so the brand
-         page cannot disagree with either about a figure (SPEC.md §9.1). */
+         page cannot disagree with either about a figure. */
       entries: catalogue.filter((car) => car.brandId === brand.id),
       parent: brand.data.parentCompany ? byId.get(brand.data.parentCompany) : undefined,
       owned: brands.filter((b) => b.data.parentCompany === brand.id),

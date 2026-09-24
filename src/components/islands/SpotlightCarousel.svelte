@@ -1,11 +1,11 @@
 <script lang="ts">
   /**
-   * Homepage spotlight — SPEC.md §11.1, built against `.claude/skills/apple-design`.
+   * Homepage spotlight, built against `.claude/skills/apple-design`.
    *
    * The one place on the site with a real motion budget. Everything below the
    * fold is calm reference content; this is the "wow" moment before it.
    *
-   * Why hand-rolled rather than a carousel library: SPEC.md §3 asks for a
+   * Why hand-rolled rather than a carousel library: the design asks for a
    * spring-capable approach for gesture-driven motion, and the specific
    * behaviours below are the whole point of the component — a library that
    * animates on a fixed timeline would fail every one of them.
@@ -27,7 +27,7 @@
    *    cross-fade with no transform motion and no drag, which is a gentler
    *    equivalent rather than the absence of feedback.
    *
-   * Deliberately does **not** auto-advance. SPEC.md §11.1 calls the set
+   * Deliberately does **not** auto-advance. The design calls the set
    * "rotating", but an unattended auto-rotating hero steals control from the
    * reader (apple-design §16, agency) and is a known accessibility problem. The
    * curated set rotates when the curation changes.
@@ -255,7 +255,7 @@
       the active car — silently does nothing: CSS cannot interpolate between two
       `linear-gradient` values, so the colour would hard-cut on every slide
       change. Stacked layers also keep this on the compositor-friendly side of
-      the §11.4 rule (transform and opacity only), and the cross-fade is kept
+      the motion rule (transform and opacity only), and the cross-fade is kept
       under reduced motion because a colour change aids comprehension without
       being vestibular motion.
     -->
@@ -391,7 +391,7 @@
               <!--
                 The pill grows via `scaleX`, not `width`. Animating width would
                 relayout the row on every slide change — the exact thing
-                SPEC.md §11.4 rules out. The button keeps a constant 24x24 hit
+                the motion rules forbid. The button keeps a constant 24x24 hit
                 area regardless of what the bar inside it is doing, so the touch
                 target never moves either.
               -->

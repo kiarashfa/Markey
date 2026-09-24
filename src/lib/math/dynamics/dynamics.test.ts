@@ -65,7 +65,7 @@ describe('aero', () => {
   });
 
   it('refuses to estimate frontal area without dimensions', () => {
-    // An honest gap, not a guess — SPEC.md §8.2 discipline 2.
+    // An honest gap, not a guess — discipline 2.
     assert.equal(estimateFrontalArea(null, 1365), null);
     assert.equal(estimateFrontalArea(1725, undefined), null);
     assert.equal(estimateFrontalArea(0, 1365), null);
@@ -73,7 +73,7 @@ describe('aero', () => {
   });
 
   it('prefers a published frontal area over an estimate', () => {
-    // SPEC.md §8.2 discipline 1: a modelled figure never overwrites a real one.
+    // Discipline 1: a modelled figure never overwrites a real one.
     const resolved = resolveFrontalArea(2.15, 1725, 1365)!;
     assert.equal(resolved.value, 2.15);
     assert.equal(resolved.estimated, false);

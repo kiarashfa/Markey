@@ -1,5 +1,5 @@
 /**
- * Steady-state energy use at speed — SPEC.md §8.2.
+ * Steady-state energy use at speed.
  *
  * Total resistive power divided by powertrain efficiency, converted per
  * powertrain type. This models a car holding a constant speed on level ground:
@@ -64,8 +64,8 @@ const ELECTRIC = new Set(['bev', 'fcev', 'range-extender']);
  * Energy use to hold a constant speed.
  *
  * Returns `null` rather than a number when an input the physics genuinely needs
- * is missing — a car with no Cd gets no aero panel at all (SPEC.md §8.2
- * discipline 2), not a panel full of guesses.
+ * is missing — a car with no Cd gets no aero panel at all (discipline
+ * 2), not a panel full of guesses.
  */
 export function consumptionAtSpeed(
   speedKmh: number,

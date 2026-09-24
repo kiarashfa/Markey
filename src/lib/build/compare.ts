@@ -1,8 +1,8 @@
 /**
- * A build as a comparison column — SPEC.md §9.6, §9.7.
+ * A build as a comparison column.
  *
- * §9.7 says the comparison tool "accepts a Build Car creation as one of the
- * four slots". The cheap way to do that is a second table code path for builds;
+ * The comparison tool accepts a Build Car creation as one of its
+ * four slots. The cheap way to do that is a second table code path for builds;
  * this is the other way — the build is shaped into the same `CatalogueCar` the
  * catalogue produces, so there is exactly one table, one set of rows and one
  * formatter, and a build cannot drift into being presented differently from a

@@ -1,0 +1,94 @@
+{
+  "id": "honda-accord-11th",
+  "name": "Honda Accord (eleventh generation)",
+  "fullName": "Honda Accord (eleventh generation), 2023-present",
+  "kind": "generation",
+  "parent": "honda-accord",
+  "brandRef": "honda",
+  "generationCode": "CY",
+  "productionYears": {
+    "start": 2023,
+    "end": null
+  },
+  "bodyStyles": ["saloon"],
+  "powertrains": ["petrol", "hybrid"],
+  "drivetrains": ["fwd"],
+  "segment": "d-segment",
+  "positioning": "mainstream",
+  "designer": "Takuya Miyazawa",
+  "assembly": [
+    "Honda, Marysville, Ohio, United States",
+    "GAC Honda, Guangzhou, China",
+    "Dongfeng Honda, Wuhan, China",
+    "Honda, Prachinburi, Thailand"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": { "value": 4970, "unit": "mm", "status": "verified", "source": "wikipedia-honda-accord", "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord" },
+    "width": { "value": 1860, "unit": "mm", "status": "verified", "source": "wikipedia-honda-accord", "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord" },
+    "height": { "value": 1450, "unit": "mm", "status": "verified", "source": "wikipedia-honda-accord", "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord" },
+    "wheelbase": { "value": 2830, "unit": "mm", "status": "verified", "source": "wikipedia-honda-accord", "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord" },
+    "kerbWeight": {
+      "value": 1580,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-honda-accord",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord",
+      "sourceNote": "Hybrid (CY2) figure; no separate figure is given for the 1.5-litre turbo (CY1)."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-5t-cy1",
+      "name": "1.5T",
+      "productionYears": { "start": 2023, "end": null },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "CVT",
+      "engine": {
+        "code": "L15BE",
+        "configuration": "inline-4, turbocharged, VTEC",
+        "cylinders": 4,
+        "displacement": { "value": 1498, "unit": "cc", "status": "verified", "source": "wikipedia-honda-accord", "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord", "sourceNote": "1.5 L." },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 143.17,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-honda-accord",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord",
+        "sourceNote": "192 hp (SAE net), converted at 1 hp = 0.74569987 kW. The 2.0-litre turbo offered on the previous generation was dropped for this generation."
+      },
+      "torque": {
+        "value": 260,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-honda-accord",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord",
+        "sourceNote": "192 lb-ft, converted at 1.35581795 Nm/lb-ft."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/honda-accord-11th/hero.webp",
+    "alt": "White eleventh-generation Honda Accord EX photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 832,
+    "caption": "The current Accord, built on Honda's new HA platform: sold as a petrol 1.5-litre turbo or a hybrid, with more than half of US sales now going to the hybrid version.",
+    "credit": {
+      "author": "Cutlass",
+      "title": "File:2023 Honda Accord EX in Platinum White Pearl, front right, 04-26-2025.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Honda_Accord_EX_in_Platinum_White_Pearl,_front_right,_04-26-2025.jpg",
+      "licenseType": "cc0",
+      "licenseNote": "Released into the public domain (CC0) by the photographer."
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-honda-accord"]
+}

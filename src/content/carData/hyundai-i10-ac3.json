@@ -1,0 +1,256 @@
+{
+  "id": "hyundai-i10-ac3",
+  "name": "Hyundai i10 (AC3)",
+  "fullName": "Hyundai i10 (AC3), 2019-present",
+  "kind": "generation",
+  "parent": "hyundai-i10",
+  "brandRef": "hyundai",
+  "generationCode": "AC3",
+  "productionYears": {
+    "start": 2019,
+    "end": null
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "designer": "Sungno Kim and Hyeryun Sohn (exterior); Youngwook Kang (interior)",
+  "assembly": [
+    "Izmit, Turkey (Hyundai Assan Otomotiv)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3670,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+      "sourceNote": "Published as a 3,670-3,675 mm range depending on trim; lowest figure recorded here. The related India-built AI3 (Grand i10 Nios) is a longer, different car at 3,815 mm and is not this generation."
+    },
+    "width": {
+      "value": 1680,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10"
+    },
+    "height": {
+      "value": 1480,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+      "sourceNote": "Published as a 1,480-1,483 mm range depending on trim; lowest figure recorded here."
+    },
+    "wheelbase": {
+      "value": 2425,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10"
+    },
+    "kerbWeight": {
+      "value": 921,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+      "sourceNote": "Published as a 921-1,045 kg range across the (AC3+AI3) line-up; the lowest figure is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-0-mpi",
+      "name": "1.0 Kappa II MPi",
+      "productionYears": {
+        "start": 2019,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual or 5-speed automated manual",
+      "engine": {
+        "code": "G3LA",
+        "configuration": "inline-3, Kappa II MPi",
+        "cylinders": 3,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 49,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+        "sourceNote": "67 PS at 5,500 rpm, converted at 1 PS = 0.73549875 kW (49.3 kW, rounded to 49)."
+      },
+      "torque": {
+        "value": 96,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+        "sourceNote": "9.8 kgf-m at 3,750 rpm, converted at 9.80665 N per kgf (96.1 N-m, rounded to 96)."
+      },
+      "zeroToHundredKph": {
+        "value": 14.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+        "sourceNote": "Manual gearbox; the automated-manual (AMT) version is quoted at 17.3s."
+      },
+      "topSpeed": {
+        "value": 156,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-0-t-gdi",
+      "name": "1.0 Kappa II T-GDi",
+      "productionYears": {
+        "start": 2019,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "G3LC",
+        "configuration": "inline-3 turbocharged, Kappa II T-GDi",
+        "cylinders": 3,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 74,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+        "sourceNote": "100 PS at 4,500-6,000 rpm, converted at 1 PS = 0.73549875 kW (73.5 kW, rounded to 74)."
+      },
+      "torque": {
+        "value": 172,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+        "sourceNote": "17.5 kgf-m at 1,500-4,000 rpm, converted at 9.80665 N per kgf (171.6 N-m, rounded to 172)."
+      },
+      "zeroToHundredKph": {
+        "value": 10.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10"
+      },
+      "topSpeed": {
+        "value": 185,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-2-mpi",
+      "name": "1.2 Kappa II MPi",
+      "productionYears": {
+        "start": 2019,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual or 5-speed automated manual",
+      "engine": {
+        "code": "G4LA",
+        "configuration": "inline-4, Kappa II MPi",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 62,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+        "sourceNote": "84 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW (61.8 kW, rounded to 62)."
+      },
+      "torque": {
+        "value": 118,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+        "sourceNote": "12 kgf-m at 4,200 rpm, converted at 9.80665 N per kgf (117.7 N-m, rounded to 118)."
+      },
+      "zeroToHundredKph": {
+        "value": 12.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+        "sourceNote": "Manual gearbox; the automated-manual (AMT) version is quoted at 15.8s."
+      },
+      "topSpeed": {
+        "value": 171,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/hyundai-i10-ac3/hero.webp",
+    "alt": "White third-generation Hyundai i10 five-door hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 858,
+    "caption": "The European-built AC3, revealed in 2019 alongside the longer, India-built AI3 (Grand i10 Nios), which shares the name but not the sheet metal.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2022 Hyundai i10 SE Connect MPi 1.0 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Hyundai_i10_SE_Connect_MPi_1.0_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/hyundai-i10-ac3/gallery-1.webp",
+      "alt": "Rear three-quarter view of a white third-generation Hyundai i10 hatchback",
+      "width": 1200,
+      "height": 731,
+      "caption": "European i10 production ran at Hyundai Assan Otomotiv in Turkey from 2020 until the model's discontinuation there in January 2026.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2022 Hyundai i10 SE Connect MPi 1.0 Rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Hyundai_i10_SE_Connect_MPi_1.0_Rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-hyundai-i10"
+  ]
+}

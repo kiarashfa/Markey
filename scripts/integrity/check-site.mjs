@@ -2,8 +2,7 @@
 /**
  * `npm run check:site` — post-build assertions against `dist/`.
  *
- * The one that matters most here is the **bundle check** required by SPEC.md
- * §9.5.1 and §13: the wind-tunnel solver must never enter the bundle of a page
+ * The one that matters most here is the **bundle check**: the wind-tunnel solver must never enter the bundle of a page
  * that does not use it. It is the heaviest thing on the site, and a visitor who
  * only reads a spec page must not pay for it.
  */
@@ -55,7 +54,7 @@ for (const file of html) {
   }
 }
 
-// --- SPEC.md §12: noindex, never a robots.txt disallow ---------------------
+// --- Noindex, never a robots.txt disallow ---------------------
 /**
  * The rule this enforces is a trio, and all three parts have to hold together:
  * the page says `noindex`, the sitemap does not list it, and `robots.txt` does
@@ -68,20 +67,20 @@ let robots = null;
 try {
   robots = await readFile(path.join(dist, 'robots.txt'), 'utf8');
 } catch {
-  failures.push('robots.txt was not built (SPEC.md §12).');
+  failures.push('robots.txt was not built.');
 }
 
 const sitemapFiles = files.filter((f) => path.basename(f).startsWith('sitemap'));
 let sitemapText = '';
 for (const file of sitemapFiles) sitemapText += await readFile(file, 'utf8');
-if (sitemapFiles.length === 0) failures.push('No sitemap was generated (SPEC.md §12).');
+if (sitemapFiles.length === 0) failures.push('No sitemap was generated.');
 
 for (const noindexPath of NOINDEX_PATHS) {
   const page = path.join(dist, noindexPath.replace(/^\/|\/$/g, ''), 'index.html');
   try {
     const body = await readFile(page, 'utf8');
     if (!/name="robots"[^>]*noindex/i.test(body)) {
-      failures.push(`${noindexPath} is missing its noindex meta (SPEC.md §12).`);
+      failures.push(`${noindexPath} is missing its noindex meta.`);
     }
     if (/data-pagefind-body/.test(body)) {
       failures.push(`${noindexPath} is marked for the search index but must not be indexed.`);
@@ -91,18 +90,18 @@ for (const noindexPath of NOINDEX_PATHS) {
   }
 
   if (sitemapText.includes(`${BASE.replace(/\/$/, '')}${noindexPath}<`)) {
-    failures.push(`${noindexPath} is listed in the sitemap but carries noindex (SPEC.md §12).`);
+    failures.push(`${noindexPath} is listed in the sitemap but carries noindex.`);
   }
   if (robots && new RegExp(`^\s*Disallow:.*${noindexPath}`, 'im').test(robots)) {
     failures.push(
-      `robots.txt disallows ${noindexPath}. It must not: a blocked page is never fetched, so its noindex is never read (SPEC.md §12).`,
+      `robots.txt disallows ${noindexPath}. It must not: a blocked page is never fetched, so its noindex is never read.`,
     );
   }
 }
 
 if (robots) {
   if (!/^Sitemap:\s*https?:\/\/\S+/m.test(robots)) {
-    failures.push('robots.txt has no absolute Sitemap: line (SPEC.md §12).');
+    failures.push('robots.txt has no absolute Sitemap: line.');
   } else {
     const declared = /^Sitemap:\s*(\S+)/m.exec(robots)?.[1] ?? '';
     if (!declared.includes(BASE)) {
@@ -111,7 +110,7 @@ if (robots) {
   }
 }
 
-// --- the search index (SPEC.md §9.1) --------------------------------------
+// --- the search index --------------------------------------
 /**
  * Pagefind indexes only elements marked `data-pagefind-body` once any exist.
  * If the marker were dropped it would silently fall back to indexing every
@@ -133,7 +132,7 @@ if (robots) {
   }
 }
 
-// --- structured data (SPEC.md §12) ----------------------------------------
+// --- structured data ----------------------------------------
 {
   let carPages = 0;
   let withCar = 0;
@@ -165,7 +164,7 @@ if (robots) {
     if (/^cars\/[^/]+\/index\.html$/.test(rel)) {
       carPages++;
       if (!blocks.some(([, json]) => json.includes('"Car"'))) {
-        failures.push(`${rel} has no Car structured data (SPEC.md §12).`);
+        failures.push(`${rel} has no Car structured data.`);
       }
     }
   }
@@ -174,7 +173,7 @@ if (robots) {
   );
 }
 
-// --- the bundle check (SPEC.md §9.5.1) -------------------------------------
+// --- the bundle check -------------------------------------
 /**
  * The solver is identified by a string only it contains. Checking for a
  * filename would break the moment the bundler renames a chunk; checking for a
@@ -199,7 +198,7 @@ if (solverChunks.length === 0) {
   const entryLike = solverChunks.filter((c) => /client|hoisted|index/i.test(path.basename(c)));
   if (entryLike.length > 0) {
     failures.push(
-      `The wind-tunnel solver appears in what looks like a shared entry chunk: ${entryLike.join(', ')}. It must stay in its own lazily-imported chunk (SPEC.md §9.5.1).`,
+      `The wind-tunnel solver appears in what looks like a shared entry chunk: ${entryLike.join(', ')}. It must stay in its own lazily-imported chunk.`,
     );
   }
 
@@ -208,7 +207,7 @@ if (solverChunks.length === 0) {
    *
    * Two do: Test Drive, and — since Phase 7 — Build Car, which runs the solver
    * over the shape the visitor is inventing and feeds the measured Cd and
-   * frontal area back into the performance model (SPEC.md §9.6, the closed
+   * frontal area back into the performance model (the closed
    * loop). The rule this check exists to enforce is unchanged: a visitor who
    * only reads spec pages must never pay for the heaviest thing on the site.
    */

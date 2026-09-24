@@ -1,0 +1,16 @@
+{
+  "id": "mazda-rx-7",
+  "name": "Mazda RX-7",
+  "fullName": "Mazda RX-7, 1978-2002",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "mazda",
+  "productionYears": {
+    "start": 1978,
+    "end": 2002
+  },
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-mazda-rx-7"]
+}

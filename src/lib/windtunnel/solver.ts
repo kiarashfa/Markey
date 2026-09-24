@@ -48,7 +48,7 @@ export interface SolverStats {
   frontalAreaCells: number;
   /**
    * The projected frontal area in square metres — the GPU silhouette
-   * measurement SPEC.md §9.5.1 wanted, in the units the §8.2 physics takes.
+   * measurement, in the units the performance physics takes.
    *
    * Derived here rather than at the call site so there is one definition of
    * what "the area this drag was measured over" means: the same count of cells

@@ -1,0 +1,206 @@
+{
+  "id": "renault-4-classic",
+  "name": "Renault 4",
+  "fullName": "Renault 4/R3, 1961-1994",
+  "kind": "generation",
+  "parent": "renault-4",
+  "brandRef": "renault",
+  "productionYears": {
+    "start": 1961,
+    "end": 1994
+  },
+  "bodyStyles": [
+    "hatchback",
+    "van",
+    "pickup"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "assembly": [
+    "Billancourt, France",
+    "Valladolid, Spain (FASA-Renault)",
+    "Santa Isabel, Argentina (IKA)",
+    "Envigado, Colombia (Sofasa)",
+    "Novo Mesto, Yugoslavia/Slovenia (IMV)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3663,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4"
+    },
+    "width": {
+      "value": 1485,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4"
+    },
+    "height": {
+      "value": 1470,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4"
+    },
+    "wheelbase": {
+      "value": 2395,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4",
+      "sourceNote": "The R4's wheelbase is genuinely asymmetric: 2,395 mm on the left side and 2,440 mm on the right, because the rear torsion bars are mounted one behind the other rather than opposite each other. The shorter, left-side figure is recorded here."
+    },
+    "kerbWeight": {
+      "value": 600,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-renault-4",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4",
+      "sourceNote": "Published as a 600-750 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "r3",
+      "name": "R3",
+      "productionYears": {
+        "start": 1961,
+        "end": 1962
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 3,
+      "transmission": "3-speed manual",
+      "engine": {
+        "code": "690",
+        "configuration": "inline-4, water-cooled",
+        "cylinders": 4,
+        "displacement": {
+          "value": 603,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 17,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4",
+        "sourceNote": "Rated by Renault as 22.5 PS (metric hp), converted at 1 PS = 0.73549875 kW (16.5 kW, rounded to 17). Sold alongside the R4 as a lower-taxation-class variant of the same body and most mechanical components."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "r4-747",
+      "name": "R4 (747 cc)",
+      "productionYears": {
+        "start": 1961,
+        "end": 1963
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 3,
+      "transmission": "3-speed manual",
+      "engine": {
+        "code": "680",
+        "configuration": "inline-4, water-cooled",
+        "cylinders": 4,
+        "displacement": {
+          "value": 747,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 19,
+        "unit": "kW",
+        "status": "conflicting-sources",
+        "source": "wikipedia-renault-4",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4",
+        "sourceNote": "Renault rated this engine at 26.5 to 32 PS (metric hp) depending on price level and carburettor, per the article's own development history section; the lowest figure, 26.5 PS, converts at 1 PS = 0.73549875 kW to 19.5 kW (rounded to 19) and is recorded here. Elsewhere in the same article, the launch engine is separately described just as '24 hp' with no further detail, a lower and less precisely sourced figure that is not used here."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "r4-845",
+      "name": "R4 Super (845 cc)",
+      "productionYears": {
+        "start": 1963,
+        "end": 1986
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "3-speed manual (4-speed from 1968)",
+      "engine": {
+        "code": "800/B1B",
+        "configuration": "inline-4, water-cooled",
+        "cylinders": 4,
+        "displacement": {
+          "value": 845,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-4",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-4-classic/hero.webp",
+    "alt": "Yellow Renault 4 GTL hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1111,
+    "caption": "A 1984 Renault 4 GTL, by which point the car had been in production for over two decades essentially unchanged in concept.",
+    "credit": {
+      "author": "Mr.choppers",
+      "title": "File:1984 Renault 4 GTL, front left (Germany).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1984_Renault_4_GTL,_front_left_(Germany).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/renault-4-classic/gallery-1.webp",
+      "alt": "Rear three-quarter view of a white early Renault R4 hatchback",
+      "width": 1200,
+      "height": 823,
+      "caption": "An early R4, showing the flat-floored, two-box body that stayed in production for 33 years.",
+      "credit": {
+        "author": "Berthold Werner",
+        "title": "File:Renault R4 BW 2016-07-17 13-45-17.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_R4_BW_2016-07-17_13-45-17.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-renault-4"
+  ]
+}

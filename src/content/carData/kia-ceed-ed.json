@@ -1,0 +1,147 @@
+{
+  "id": "kia-ceed-ed",
+  "name": "Kia Cee'd (ED)",
+  "fullName": "Kia Cee'd (ED), 2006-2012",
+  "kind": "generation",
+  "parent": "kia-ceed",
+  "brandRef": "kia",
+  "generationCode": "ED",
+  "productionYears": {
+    "start": 2006,
+    "end": 2012
+  },
+  "bodyStyles": [
+    "hatchback",
+    "estate"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Gregory Guillaume and Miklos Kovacs",
+  "assembly": [
+    "Zilina, Slovakia (Kia Motors Slovakia)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4240,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-ceed",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed",
+      "sourceNote": "5-door hatchback figure; the 3-door Pro Cee'd is 4,250 mm and the Cee'd SW estate is 4,470 mm."
+    },
+    "width": {
+      "value": 1790,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-ceed",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed"
+    },
+    "height": {
+      "value": 1480,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-ceed",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed",
+      "sourceNote": "5-door hatchback figure; the 3-door Pro Cee'd is 1,450 mm and the Cee'd SW estate is 1,530 mm."
+    },
+    "wheelbase": {
+      "value": 2650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-kia-ceed",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed"
+    },
+    "kerbWeight": {
+      "value": 1263,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-kia-ceed",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kia_Ceed",
+      "sourceNote": "Published as a 1,263-1,572 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-6-gamma",
+      "name": "1.6 Gamma",
+      "productionYears": {
+        "start": 2006,
+        "end": 2012
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual, 6-speed manual, or 4-speed automatic",
+      "engine": {
+        "code": "G4FC",
+        "configuration": "inline-4, Gamma CVVT",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-6-crdi",
+      "name": "1.6 CRDi",
+      "productionYears": {
+        "start": 2006,
+        "end": 2012
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual or 6-speed manual",
+      "engine": {
+        "code": "D4FB",
+        "configuration": "inline-4 CRDi-VGT turbo-diesel, U",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/kia-ceed-ed/hero.webp",
+    "alt": "Red first-generation Kia Cee'd five-door hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 882,
+    "caption": "The original Cee'd, the first Kia designed and built entirely in Europe.",
+    "credit": {
+      "author": "Vauxford",
+      "title": "File:2008 Kia Cee'd SR-7 1.6 Front.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Kia_Cee'd_SR-7_1.6_Front.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/kia-ceed-ed/gallery-1.webp",
+      "alt": "Rear three-quarter view of a red first-generation Kia Cee'd hatchback",
+      "width": 1200,
+      "height": 733,
+      "caption": "A pre-facelift five-door car, badged SR-7.",
+      "credit": {
+        "author": "Vauxford",
+        "title": "File:2008 Kia Cee'd SR-7 1.6 Rear.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Kia_Cee'd_SR-7_1.6_Rear.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-kia-ceed"
+  ]
+}

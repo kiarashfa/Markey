@@ -1,0 +1,222 @@
+{
+  "id": "renault-megane-etech",
+  "name": "Renault Mégane E-Tech Electric",
+  "fullName": "Renault Mégane E-Tech Electric, 2022-present",
+  "kind": "generation",
+  "parent": "renault-megane",
+  "brandRef": "renault",
+  "generationCode": "BCB",
+  "productionYears": {
+    "start": 2022,
+    "end": null
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "bev"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "assembly": [
+    "Douai, France (Douai Renault Factory)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4199,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-megane-e-tech-electric",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric"
+    },
+    "width": {
+      "value": 1768,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-megane-e-tech-electric",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric"
+    },
+    "height": {
+      "value": 1505,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-megane-e-tech-electric",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric"
+    },
+    "wheelbase": {
+      "value": 2685,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-megane-e-tech-electric",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric"
+    },
+    "kerbWeight": {
+      "value": 1624,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-renault-megane-e-tech-electric",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric",
+      "sourceNote": "Published as a 1624-1650 kg range across battery/motor combinations; the lowest figure is recorded here at generation level rather than assigned to one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "40kwh-96kw",
+      "name": "Standard Range (40 kWh)",
+      "productionYears": {
+        "start": 2022,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed automatic",
+      "gears": 1,
+      "engine": {
+        "configuration": "single front-mounted electrically excited synchronous motor (EESM)",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 96,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-megane-e-tech-electric",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric"
+      },
+      "torque": {
+        "value": 250,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-megane-e-tech-electric",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric"
+      },
+      "batteryCapacity": {
+        "value": 40,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-renault-megane-e-tech-electric",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric"
+      },
+      "electricRange": {
+        "value": 300,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-renault-megane-e-tech-electric",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric",
+        "sourceNote": "WLTP combined range for the 40 kWh battery paired with the 96 kW motor."
+      },
+      "bootVolume": {
+        "value": 440,
+        "unit": "L",
+        "status": "verified",
+        "source": "wikipedia-renault-megane-e-tech-electric",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric",
+        "sourceNote": "The source does not state whether this is a VDA or another measurement standard. The car has no front boot, as the motor and ancillaries occupy that space."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "60kwh-160kw",
+      "name": "Long Range (60 kWh)",
+      "productionYears": {
+        "start": 2022,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed automatic",
+      "gears": 1,
+      "engine": {
+        "configuration": "single front-mounted electrically excited synchronous motor (EESM)",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 160,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-megane-e-tech-electric",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric"
+      },
+      "torque": {
+        "value": 300,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-megane-e-tech-electric",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric"
+      },
+      "zeroToHundredKph": {
+        "value": 7.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-megane-e-tech-electric",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric",
+        "sourceNote": "Manufacturer-claimed figure. Independent road tests cited in the source have measured 6.9 seconds for the same car; the claimed figure is recorded here as the attributable one."
+      },
+      "batteryCapacity": {
+        "value": 60,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-renault-megane-e-tech-electric",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric"
+      },
+      "electricRange": {
+        "value": 470,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-renault-megane-e-tech-electric",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric",
+        "sourceNote": "WLTP combined range for the 60 kWh battery paired with the 160 kW motor. The same 60 kWh battery paired with the lower-output 96 kW motor is rated 450 km; that combination is not recorded as a separate trim here."
+      },
+      "bootVolume": {
+        "value": 440,
+        "unit": "L",
+        "status": "verified",
+        "source": "wikipedia-renault-megane-e-tech-electric",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric",
+        "sourceNote": "The source does not state whether this is a VDA or another measurement standard. The car has no front boot, as the motor and ancillaries occupy that space."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-megane-etech/hero.webp",
+    "alt": "Grey Renault Mégane E-Tech Electric photographed from the front three-quarter angle in a car park, showing its lit diamond-shaped daytime running lights",
+    "width": 1600,
+    "height": 915,
+    "caption": "The fifth Mégane, a battery-electric hatchback on Renault's dedicated CMF-EV platform, launched in 2022.",
+    "credit": {
+      "author": "Alexander-93",
+      "title": "File:Renault Mégane E-Tech IMG 4064.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_M%C3%A9gane_E-Tech_IMG_4064.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/renault-megane-etech/gallery-1.webp",
+      "alt": "Rear three-quarter view of a grey Renault Mégane E-Tech Electric showing its full-width tail lamp and Megane badge",
+      "width": 1200,
+      "height": 634,
+      "caption": "The full-width tail lamp bar and coupe-like roofline distinguish the E-Tech from earlier Méganes.",
+      "credit": {
+        "author": "Alexander-93",
+        "title": "File:Renault Mégane E-Tech IMG 4069.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_M%C3%A9gane_E-Tech_IMG_4069.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-renault-megane-e-tech-electric"
+  ]
+}

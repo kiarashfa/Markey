@@ -2,7 +2,7 @@
   "axis": "segment",
   "urlPrefix": "segment",
   "authored": true,
-  "note": "Starter vocabulary — SPEC.md §16. One canonical internal tier per SPEC.md §7, displayed with region-specific labels so the site never has to pick a side between European letter-segments and US size classes. `labels.europe` / `labels.us` are what templates render; `id` is what content authors tag.",
+  "note": "Starter vocabulary. One canonical internal tier, displayed with region-specific labels so the site never has to pick a side between European letter-segments and US size classes. `labels.europe` / `labels.us` are what templates render; `id` is what content authors tag.",
   "terms": [
     { "id": "a-segment", "label": "A-segment / City car", "labels": { "europe": "A-segment", "us": "Minicompact" }, "description": "Smallest passenger cars, typically under 3.7 m." },
     { "id": "b-segment", "label": "B-segment / Subcompact", "labels": { "europe": "B-segment", "us": "Subcompact" }, "description": "Supermini class, roughly 3.7–4.1 m." },

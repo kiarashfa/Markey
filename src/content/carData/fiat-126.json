@@ -1,0 +1,16 @@
+{
+  "id": "fiat-126",
+  "name": "Fiat 126",
+  "fullName": "Fiat 126 (incl. Polski Fiat 126p), 1972-2000",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "fiat",
+  "productionYears": {
+    "start": 1972,
+    "end": 2000
+  },
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-fiat-126"]
+}

@@ -1,0 +1,258 @@
+{
+  "id": "hyundai-tucson-jm",
+  "name": "Hyundai Tucson (JM)",
+  "fullName": "Hyundai Tucson (JM), 2004-2009",
+  "kind": "generation",
+  "parent": "hyundai-tucson",
+  "brandRef": "hyundai",
+  "generationCode": "JM",
+  "productionYears": {
+    "start": 2004,
+    "end": 2009
+  },
+  "bodyStyles": [
+    "crossover"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd",
+    "awd"
+  ],
+  "segment": "suv-compact",
+  "positioning": "mainstream",
+  "assembly": [
+    "Ulsan, South Korea",
+    "Beijing, China (Beijing Hyundai)",
+    "Chennai, India (Hyundai Motor India)",
+    "Anapolis, Brazil (Hyundai Caoa)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4325,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-tucson",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson"
+    },
+    "width": {
+      "value": 1795,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-tucson",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson"
+    },
+    "height": {
+      "value": 1730,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-tucson",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson"
+    },
+    "wheelbase": {
+      "value": 2630,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-tucson",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson"
+    },
+    "kerbWeight": {
+      "value": 1470,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-hyundai-tucson",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+      "sourceNote": "Published as a 1,470-1,529 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "2-0-beta-ii",
+      "name": "2.0 Beta II",
+      "productionYears": {
+        "start": 2004,
+        "end": 2009
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual or 4-speed automatic",
+      "engine": {
+        "code": "G4GC",
+        "configuration": "inline-4 DOHC CVVT",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 104,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "142 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW (104.4 kW, rounded to 104)."
+      },
+      "torque": {
+        "value": 184,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "18.8 kgf-m at 4,500 rpm, converted at 9.80665 N per kgf (184.4 N-m, rounded to 184)."
+      },
+      "zeroToHundredKph": {
+        "value": 10.4,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "Manufacturer-quoted, FWD with 5-speed manual. The AWD version is quoted at 11.3s."
+      },
+      "topSpeed": {
+        "value": 180,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "FWD figure; AWD is quoted at 174 km/h."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-7-delta-v6",
+      "name": "2.7 Delta V6",
+      "productionYears": {
+        "start": 2004,
+        "end": 2009
+      },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "4-speed automatic",
+      "engine": {
+        "code": "G6BA",
+        "configuration": "V6 DOHC CVVT",
+        "cylinders": 6,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 129,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "175 PS at 6,000 rpm, converted at 1 PS = 0.73549875 kW (128.7 kW, rounded to 129)."
+      },
+      "torque": {
+        "value": 241,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "24.6 kgf-m at 4,000 rpm, converted at 9.80665 N per kgf (241.2 N-m, rounded to 241)."
+      },
+      "zeroToHundredKph": {
+        "value": 10.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson"
+      },
+      "topSpeed": {
+        "value": 180,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "2-0-crdi",
+      "name": "2.0 CRDi",
+      "productionYears": {
+        "start": 2004,
+        "end": 2009
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "5-speed manual or 4-speed automatic",
+      "engine": {
+        "code": "D4EA",
+        "configuration": "inline-4 CRDi-VGT turbo-diesel",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 83,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "113 PS at 4,000 rpm, converted at 1 PS = 0.73549875 kW (83.1 kW, rounded to 83). A later, more powerful 140/150 PS tune of the same engine was introduced from 2006 and is not this trim."
+      },
+      "torque": {
+        "value": 245,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "25 kgf-m at 1,800-2,500 rpm, converted at 9.80665 N per kgf (245.2 N-m, rounded to 245)."
+      },
+      "zeroToHundredKph": {
+        "value": 13.1,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+        "sourceNote": "FWD with 5-speed manual. AWD is quoted at 13.8s."
+      },
+      "topSpeed": {
+        "value": 168,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-hyundai-tucson",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Tucson"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/hyundai-tucson-jm/hero.webp",
+    "alt": "Black first-generation Hyundai Tucson photographed from the front three-quarter angle with a roof rack fitted",
+    "width": 1600,
+    "height": 1222,
+    "caption": "The original JM Tucson, launched in 2004 as a smaller, unibody companion to the Santa Fe.",
+    "credit": {
+      "author": "Elise240SX",
+      "title": "File:2005 Hyundai Tucson GL in Ebony Black, Front Left, 07-17-2022.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2005_Hyundai_Tucson_GL_in_Ebony_Black,_Front_Left,_07-17-2022.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/hyundai-tucson-jm/gallery-1.webp",
+      "alt": "Rear three-quarter view of a white facelifted Hyundai Tucson with a roof rack, badged Tucson City Elite",
+      "width": 1200,
+      "height": 715,
+      "caption": "A facelifted, post-2007 car, badged 'City' in the Australian market.",
+      "credit": {
+        "author": "OSX",
+        "title": "File:2007-2010 Hyundai Tucson City Elite wagon 02.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007-2010_Hyundai_Tucson_City_Elite_wagon_02.jpg",
+        "licenseType": "public-domain",
+        "licenseNote": "Released into the public domain by the photographer."
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-hyundai-tucson"
+  ]
+}

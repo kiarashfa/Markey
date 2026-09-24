@@ -1,0 +1,267 @@
+{
+  "id": "peugeot-208-p21",
+  "name": "Peugeot 208",
+  "fullName": "Peugeot 208 (P21), 2019-present",
+  "kind": "generation",
+  "parent": "peugeot-208",
+  "brandRef": "peugeot",
+  "generationCode": "P21",
+  "productionYears": {
+    "start": 2019,
+    "end": null
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel",
+    "bev"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "designer": "Kevin Gonçalves (exterior); Yann Beurel (exterior); Eric Dejou (interior)",
+  "assembly": [
+    "Trnava, Slovakia",
+    "Zaragoza, Spain",
+    "Kenitra, Morocco",
+    "El Palomar, Buenos Aires, Argentina"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4055,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-208",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+    },
+    "width": {
+      "value": 1745,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-208",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+    },
+    "height": {
+      "value": 1430,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-208",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+    },
+    "wheelbase": {
+      "value": 2540,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-208",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+    }
+  },
+  "trims": [
+    {
+      "id": "12-puretech-130",
+      "name": "1.2 PureTech 130 EAT8",
+      "productionYears": {
+        "start": 2019,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "8-speed automatic",
+      "gears": 8,
+      "engine": {
+        "code": "EB2DTS",
+        "configuration": "inline-3 turbocharged",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1199,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-208",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 96,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "130 PS at 5,500 rpm, explicitly labelled PS in the source's UK-brochure-sourced engine table, converted at 1 PS = 0.73549875 kW (95.6 kW, rounded to 96)."
+      },
+      "torque": {
+        "value": 230,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "230 N⋅m at 1,750 rpm."
+      },
+      "topSpeed": {
+        "value": 208,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "Published as 129 mph, converted at 1 mph = 1.609344 km/h (207.6 km/h, rounded to 208)."
+      },
+      "zeroToHundredKph": {
+        "value": 8.7,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+      },
+      "co2": {
+        "value": 101,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "Published as a 101-108 g/km range depending on trim/equipment; the lowest figure is recorded here."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "15-bluehdi-100",
+      "name": "1.5 BlueHDi 100",
+      "productionYears": {
+        "start": 2019,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "DV5",
+        "configuration": "inline-4 turbocharged common-rail diesel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1499,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-peugeot-208",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 75,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "102 PS at 3,500 rpm, explicitly labelled PS, converted at 1 PS = 0.73549875 kW (75.0 kW)."
+      },
+      "torque": {
+        "value": 250,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "250 N⋅m at 1,750 rpm."
+      },
+      "topSpeed": {
+        "value": 188,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "Published as 117 mph, converted at 1 mph = 1.609344 km/h (188.3 km/h, rounded to 188)."
+      },
+      "zeroToHundredKph": {
+        "value": 10.2,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+      },
+      "co2": {
+        "value": 84,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "Published as an 84-92 g/km range depending on trim/equipment; the lowest figure is recorded here."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "e-208-51kwh",
+      "name": "e-208",
+      "productionYears": {
+        "start": 2023,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed automatic",
+      "gears": 1,
+      "engine": {
+        "configuration": "single front-mounted permanent magnet synchronous motor",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 115,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "156 PS, explicitly labelled PS, converted at 1 PS = 0.73549875 kW (114.7 kW, rounded to 115). Current-generation motor, updated from 136 PS (100 kW) at launch in 2019."
+      },
+      "torque": {
+        "value": 260,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "Published as a 260-300 N⋅m range; the lowest figure is recorded here."
+      },
+      "batteryCapacity": {
+        "value": 51,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208"
+      },
+      "electricRange": {
+        "value": 400,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-peugeot-208",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_208",
+        "sourceNote": "WLTP combined range for the current 51 kWh pack, sold since 2023. The earlier 50 kWh pack was rated 340 km (2019-2021) then 362 km (2021-2023) as efficiency improved; those are not recorded as separate trims here."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/peugeot-208-p21/hero.webp",
+    "alt": "Blue second-generation Peugeot e-208 photographed from the front three-quarter angle, showing its claw-shaped LED daytime running lights and chequered grille pattern",
+    "width": 1600,
+    "height": 964,
+    "caption": "The current, second-generation 208, shown here as the battery-electric e-208, which shares its body and platform with the petrol and diesel versions.",
+    "credit": {
+      "author": "Alexander-93",
+      "title": "File:Peugeot e-208 facelift 1X7A2502.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peugeot_e-208_facelift_1X7A2502.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-peugeot-208"
+  ]
+}

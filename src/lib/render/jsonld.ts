@@ -1,7 +1,7 @@
 /**
- * JSON-LD structured data — SPEC.md §12, and the §16 open item it closes.
+ * JSON-LD structured data.
  *
- * ## The type choice, which §16 left open
+ * ## The type choice
  *
  * `schema.org/Car`. Not `Product`, and not both.
  *

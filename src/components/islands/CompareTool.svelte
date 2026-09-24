@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Side-by-side comparison — SPEC.md §9.7.
+   * Side-by-side comparison.
    *
    * **State lives entirely in the URL**, not in storage. A comparison is
    * something you send someone, and `?cars=a,b,c` is shareable, bookmarkable
@@ -31,7 +31,7 @@
   let selected = $state<string[]>([]);
   let picking = $state(false);
   /**
-   * A build from the URL — SPEC.md §9.7's fourth slot.
+   * A build from the URL — the comparison's fourth slot.
    *
    * It arrives the same way the car selection does, in the address bar, so a
    * comparison of three real cars against something you invented is one link

@@ -1,0 +1,182 @@
+{
+  "id": "hyundai-accent-bn7",
+  "name": "Hyundai Accent (BN7)",
+  "fullName": "Hyundai Accent (BN7), 2023-present",
+  "kind": "generation",
+  "parent": "hyundai-accent",
+  "brandRef": "hyundai",
+  "generationCode": "BN7",
+  "productionYears": {
+    "start": 2023,
+    "end": null
+  },
+  "bodyStyles": [
+    "saloon"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Min-chul Koo",
+  "assembly": [
+    "Chennai, India (Hyundai Motor India)",
+    "Ninh Binh, Vietnam (Hyundai Thanh Cong Manufacturing Vietnam)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4535,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-accent",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent"
+    },
+    "width": {
+      "value": 1765,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-accent",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent"
+    },
+    "height": {
+      "value": 1475,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-accent",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent"
+    },
+    "wheelbase": {
+      "value": 2670,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-accent",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent"
+    },
+    "kerbWeight": {
+      "value": null,
+      "unit": "kg",
+      "status": "placeholder",
+      "sourceNote": "Not published by Hyundai or stated in the Wikipedia article for this generation (the infobox weight field is present but empty)."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-5-mpi",
+      "name": "1.5 Smartstream MPi",
+      "productionYears": {
+        "start": 2023,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or CVT",
+      "engine": {
+        "code": "G4FL",
+        "configuration": "inline-4, Smartstream Smartstream G1.5 MPi",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 85,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-accent",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent",
+        "sourceNote": "115 PS at 6,300 rpm, converted at 1 PS = 0.73549875 kW (84.6 kW, rounded to 85)."
+      },
+      "torque": {
+        "value": 144,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-accent",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent",
+        "sourceNote": "Published directly as 144 N-m; the powertrain table separately states 14.7 kgf-m at 4,500 rpm, which converts to 144.2 N-m at 9.80665 N per kgf, consistent with the prose figure."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "1-5-t-gdi",
+      "name": "1.5 Smartstream T-GDi",
+      "productionYears": {
+        "start": 2023,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or 7-speed DCT",
+      "engine": {
+        "code": "G4LH",
+        "configuration": "inline-4, Smartstream G1.5 T-GDi",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 118,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-accent",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent",
+        "sourceNote": "160 PS at 5,500 rpm, converted at 1 PS = 0.73549875 kW (117.7 kW, rounded to 118)."
+      },
+      "torque": {
+        "value": 253,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-hyundai-accent",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent",
+        "sourceNote": "The powertrain table gives 25.8 kgf-m at 1,500-3,500 rpm, converted at 9.80665 N per kgf to 253.0 N-m; the article prose separately states 253 N-m directly."
+      },
+      "zeroToHundredKph": {
+        "value": 8.1,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-hyundai-accent",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_Accent",
+        "sourceNote": "Manufacturer-quoted official 0-100 km/h figure for the T-GDi/DCT, from the article's powertrain table."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/hyundai-accent-bn7/hero.webp",
+    "alt": "White sixth-generation Hyundai Accent saloon photographed from the front three-quarter angle, showing the connected LED light bar and sharp-edged bumper",
+    "width": 1600,
+    "height": 813,
+    "caption": "The current, sixth-generation car — sold as the Accent in most markets and as the Verna in India, where it is built.",
+    "credit": {
+      "author": "M 93",
+      "title": "File:Hyundai Accent 1.5 MPI Smart+ (VI) – f 08032025.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyundai_Accent_1.5_MPI_Smart+_(VI)_%E2%80%93_f_08032025.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/hyundai-accent-bn7/gallery-1.webp",
+      "alt": "Rear three-quarter view of a white sixth-generation Hyundai Accent saloon, showing the full-width tail light bar",
+      "width": 1200,
+      "height": 585,
+      "caption": "The rear light bar echoes the front, part of what Hyundai calls its 'Sensuous Sportiness' design language.",
+      "credit": {
+        "author": "M 93",
+        "title": "File:Hyundai Accent 1.5 MPI Smart+ (VI) – h 08032025.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyundai_Accent_1.5_MPI_Smart+_(VI)_%E2%80%93_h_08032025.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-hyundai-accent"
+  ]
+}

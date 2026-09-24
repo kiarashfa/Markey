@@ -10,7 +10,7 @@
  *  - **Segment proxy bodies** — a representative coupé, saloon, hatch, SUV or
  *    estate, built procedurally from primitives with per-axis stretch. These
  *    are **not** models of any specific car. A drag number from one describes
- *    that *shape*, not that car, and the UI must say so (SPEC.md §9.5.1).
+ *    that *shape*, not that car, and the UI must say so.
  *
  * Procedural geometry rather than 3D assets is what makes the 3D tab reach more
  * than a curated handful: DATA_SOURCES.md establishes that no free, accurately-
@@ -103,8 +103,8 @@ const R = 0.5;
 /**
  * The four shapes with published drag coefficients.
  *
- * These values come from the standard aerodynamics literature and are repeated
- * in SPEC.md §9.5.1 and DATA_SOURCES.md. **They are never adjusted to match
+ * These values come from the standard aerodynamics literature and are the
+ * published reference values. **They are never adjusted to match
  * what the solver produces** — if a shape is badly off, the integration is
  * wrong, and tuning the reference would destroy the only check that exists.
  */

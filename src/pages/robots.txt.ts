@@ -1,5 +1,5 @@
 /**
- * `/robots.txt` — SPEC.md §12.
+ * `/robots.txt`.
  *
  * Dynamic rather than a file in `public/`, for one reason: the sitemap lives
  * under the base path and at the site origin, and both of those are config. A
@@ -13,7 +13,7 @@
  * head and is filtered out of the sitemap. Blocking it here would do the
  * opposite of what it looks like: a blocked URL is never fetched, so the
  * `noindex` on it is never read, and it can sit in the index as "fetched but
- * not indexed" indefinitely. SPEC.md §12 names this trap explicitly.
+ * not indexed" indefinitely.
  */
 import type { APIRoute } from 'astro';
 import { absoluteHref } from '../lib/content/href.ts';

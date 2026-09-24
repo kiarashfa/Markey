@@ -1,0 +1,166 @@
+{
+  "id": "mitsubishi-pajero-1",
+  "name": "Mitsubishi Pajero",
+  "fullName": "Mitsubishi Pajero (L040/L140), 1982-1991",
+  "kind": "generation",
+  "parent": "mitsubishi-pajero",
+  "brandRef": "mitsubishi",
+  "generationCode": "L040/L140",
+  "productionYears": {
+    "start": 1982,
+    "end": 1991
+  },
+  "bodyStyles": [
+    "suv"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "4wd"
+  ],
+  "segment": "suv-large",
+  "positioning": "mainstream",
+  "designer": "Kiyoshi Honda",
+  "assembly": [
+    "Sakahogi, Gifu, Japan (Pajero Manufacturing Co., Ltd)",
+    "Tramagal, Portugal (Tramagauto)",
+    "Cainta, Philippines (MMPC)",
+    "Zhuhai, Guangdong, China",
+    "Ulsan, South Korea (Hyundai Precision Products)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4650,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+      "sourceNote": "5-door long-wheelbase body; the 3-door short-wheelbase body is 3995 mm."
+    },
+    "width": {
+      "value": 1679,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+      "sourceNote": "Published as 66.1 in and 66.6 in across body variants; converted at 1 in = 25.4 mm, the lower figure (1679 mm) is recorded here."
+    },
+    "height": {
+      "value": 1890,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+      "sourceNote": "5-door body, published as 74.4 in, converted at 1 in = 25.4 mm (1890 mm). The 3-door body is lower, at 72.4-72.8 in (1839-1849 mm)."
+    },
+    "wheelbase": {
+      "value": 2695,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+      "sourceNote": "5-door long-wheelbase body; the 3-door short-wheelbase body is 2350 mm."
+    }
+  },
+  "trims": [
+    {
+      "id": "26-i4",
+      "name": "2.6",
+      "productionYears": {
+        "start": 1988,
+        "end": 1991
+      },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "4G54",
+        "configuration": "2.6 L inline-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 82,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mitsubishi-pajero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+        "sourceNote": "82 kW, published directly in kW in the source. A separate, earlier European-market tune of the same displacement is quoted elsewhere in the article at 103 PS (76 kW); the two are not reconciled, and the later, higher figure is recorded here."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "30-v6",
+      "name": "3.0 V6",
+      "productionYears": {
+        "start": 1988,
+        "end": 1991
+      },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "6G72",
+        "configuration": "3.0 L V6, SOHC, EFI",
+        "cylinders": 6,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 104,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mitsubishi-pajero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+        "sourceNote": "104 kW, published directly in kW in the source. The range-topping petrol engine, added in 1988."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "25-turbodiesel-intercooled",
+      "name": "2.5 Turbodiesel (intercooled)",
+      "productionYears": {
+        "start": 1988,
+        "end": 1991
+      },
+      "drivetrain": "4wd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "4D56T",
+        "configuration": "2.5 L inline-4, OHC, turbocharged, intercooled",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 70,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mitsubishi-pajero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+        "sourceNote": "70 kW, published directly in kW in the source — the first intercooled engine fitted to a production 4x4, per the article. A non-intercooled version of the same engine made 62 kW and is not recorded separately here."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mitsubishi-pajero-1/hero.webp",
+    "alt": "Black first-generation Mitsubishi Pajero three-door hardtop with a chrome bull bar, photographed from the front three-quarter angle on a residential street",
+    "width": 1600,
+    "height": 964,
+    "caption": "The original Pajero, launched in 1982 with body-on-frame construction and part-time four-wheel drive, and sold elsewhere as the Montero or Shogun.",
+    "credit": {
+      "author": "OSX",
+      "title": "File:1989 Mitsubishi Pajero hardtop (2010-12-10) 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1989_Mitsubishi_Pajero_hardtop_(2010-12-10)_01.jpg",
+      "licenseType": "public-domain"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-mitsubishi-pajero"
+  ]
+}

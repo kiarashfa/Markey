@@ -1,0 +1,138 @@
+{
+  "id": "honda-accord-1st",
+  "name": "Honda Accord (first generation)",
+  "fullName": "Honda Accord (first generation), 1976-1981",
+  "kind": "generation",
+  "parent": "honda-accord",
+  "brandRef": "honda",
+  "generationCode": "SJ/SM",
+  "productionYears": {
+    "start": 1976,
+    "end": 1981
+  },
+  "bodyStyles": ["hatchback", "saloon"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["fwd"],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "assembly": [
+    "Honda, Sayama, Saitama, Japan",
+    "PT Prospect Motor, North Jakarta, Indonesia",
+    "OASB, Johor Bahru, Malaysia"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4135,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-honda-accord",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord",
+      "sourceNote": "Hatchback figure; the four-door sedan added from 1977 was 4,450 mm."
+    },
+    "width": { "value": 1620, "unit": "mm", "status": "verified", "source": "wikipedia-honda-accord", "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord" },
+    "height": {
+      "value": 1335,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-honda-accord",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord",
+      "sourceNote": "Hatchback figure; the sedan was 1,360 mm."
+    },
+    "wheelbase": { "value": 2380, "unit": "mm", "status": "verified", "source": "wikipedia-honda-accord", "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord" },
+    "kerbWeight": {
+      "value": 890,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-honda-accord",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord",
+      "sourceNote": "Lowest figure in the infobox's published range of 890-945 kg."
+    }
+  },
+  "trims": [
+    {
+      "id": "1600-hatchback-jis",
+      "name": "1600 (Japan/export)",
+      "productionYears": { "start": 1976, "end": 1981 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "EF1",
+        "configuration": "inline-4, CVCC",
+        "cylinders": 4,
+        "displacement": { "value": 1599, "unit": "cc", "status": "verified", "source": "wikipedia-honda-accord", "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 58.84,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-honda-accord",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord",
+        "sourceNote": "80 PS JIS (Japan/export markets without emissions controls, described by the source as similar to SAE Gross), converted at 1 PS = 0.73549875 kW. European DIN-rated cars claimed the same 80 PS figure under the stricter DIN norm."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": [
+        { "market": "US", "overrides": {
+          "power": {
+            "value": 50.71,
+            "unit": "kW",
+            "status": "verified",
+            "source": "wikipedia-honda-accord",
+            "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord",
+            "sourceNote": "US-market cars claimed 68 hp (SAE net) rather than the JIS/DIN 80 PS gross figure, converted at 1 hp = 0.74569987 kW."
+          }
+        } }
+      ]
+    },
+    {
+      "id": "1800-sedan-ek1",
+      "name": "1800 (EK1)",
+      "productionYears": { "start": 1977, "end": 1981 },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "EK1",
+        "configuration": "inline-4, CVCC",
+        "cylinders": 4,
+        "displacement": { "value": 1751, "unit": "cc", "status": "verified", "source": "wikipedia-honda-accord", "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 53.69,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-honda-accord",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Honda_Accord",
+        "sourceNote": "72 hp with the 5-speed manual transaxle, converted at 1 hp = 0.74569987 kW. With the 2-speed Hondamatic the same engine was rated 68 hp (50.71 kW)."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/honda-accord-1st/hero.webp",
+    "alt": "Green first-generation Honda Accord photographed from the front three-quarter angle outdoors",
+    "width": 1600,
+    "height": 1131,
+    "caption": "Honda's first move upmarket from the Civic: launched in 1976 as a three-door hatchback, with a four-door sedan added a year later.",
+    "credit": {
+      "author": "Rutger van der Maar",
+      "title": "File:1978 Honda Accord 1600 01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1978_Honda_Accord_1600_01.jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-honda-accord"]
+}

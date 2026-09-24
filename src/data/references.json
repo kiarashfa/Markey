@@ -1,5 +1,5 @@
 {
-  "note": "The bibliography every citation key resolves into (SPEC.md §5.5). Wikipedia entries record the revision they were read at, because the article will have changed by the time anyone verifies the claim.",
+  "note": "The bibliography every citation key resolves into. Wikipedia entries record the revision they were read at, because the article will have changed by the time anyone verifies the claim.",
   "entries": [
     {
       "key": "wikipedia-bmw",
@@ -91,7 +91,7 @@
       "url": "https://commons.wikimedia.org/wiki/File:BMW.svg",
       "accessed": "2026-08-17",
       "license": "Public domain (copyright); mark is trademarked",
-      "note": "Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction. Copyright status and trademark status are separate questions — the basis on which Markey displays it is nominative fair use (SPEC.md §10, §11.2)."
+      "note": "Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction. Copyright status and trademark status are separate questions — the basis on which Markey displays it is nominative fair use."
     },
     {
       "key": "wikipedia-tesla-inc",
@@ -483,7 +483,7 @@
       "url": "https://commons.wikimedia.org/wiki/File:Tata_Motors_Logo.svg",
       "accessed": "2026-09-02",
       "license": "Public domain (copyright); mark is trademarked",
-      "note": "Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction. Displayed here under trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+      "note": "Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction. Displayed here under trademark nominative use, not a copyright licence."
     },
     {
       "key": "wikipedia-toyota-corolla",
@@ -581,7 +581,7 @@
       "url": "https://commons.wikimedia.org/wiki/File:Porsche_Warenzeichen.svg",
       "accessed": "2026-09-03",
       "license": "Public domain (copyright); mark is trademarked",
-      "note": "Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction. The basis on which Markey displays it is trademark nominative use (SPEC.md §10, §11.2)."
+      "note": "Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction. The basis on which Markey displays it is trademark nominative use."
     },
     {
       "key": "wikipedia-toyota-yaris",
@@ -703,7 +703,7 @@
       "url": "https://commons.wikimedia.org/wiki/File:Mercedes-Logo.svg",
       "accessed": "2026-09-03",
       "license": "CC BY-SA 4.0",
-      "note": "Licensed CC BY-SA 4.0 as a vector rendering; the star device it depicts is a Mercedes-Benz trademark. Displayed here under trademark nominative use (SPEC.md §10, §11.2), not the copyright licence."
+      "note": "Licensed CC BY-SA 4.0 as a vector rendering; the star device it depicts is a Mercedes-Benz trademark. Displayed here under trademark nominative use, not the copyright licence."
     },
     {
       "key": "wikipedia-toyota-camry",
@@ -860,7 +860,7 @@
       "url": "https://commons.wikimedia.org/wiki/File:Audi_logo_2016.svg",
       "accessed": "2026-09-03",
       "license": "Public domain (copyright); mark is trademarked",
-      "note": "Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction. Displayed here under trademark nominative use (SPEC.md §10, §11.2)."
+      "note": "Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction. Displayed here under trademark nominative use."
     },
     {
       "key": "wikipedia-volkswagen-polo",
@@ -1005,7 +1005,7 @@
       "url": "https://commons.wikimedia.org/wiki/File:Honda_logo.svg",
       "accessed": "2026-09-03",
       "license": "Public domain (copyright); mark is trademarked",
-      "note": "Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction. Displayed here under trademark nominative use, not a copyright licence (SPEC.md §10, §11.2)."
+      "note": "Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction. Displayed here under trademark nominative use, not a copyright licence."
     },
     {
       "key": "wikipedia-honda-civic",
@@ -1933,6 +1933,836 @@
       "url": "https://www.fueleconomy.gov/ws/rest/vehicle/12728",
       "accessed": "2026-09-08",
       "license": "Public domain (US Government work)"
+    },
+    {
+      "key": "nhtsa-cvs-1996-hyundai-accent",
+      "type": "dataset",
+      "title": "1996 Hyundai Accent 2DR Hatchback L/GL/GT (model year 95) — NHTSA Canadian Vehicle Specifications",
+      "publisher": "US National Highway Traffic Safety Administration",
+      "url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1996&Make=hyundai&units=Metric&format=json",
+      "accessed": "2026-09-24",
+      "license": "Public domain (US Government work)",
+      "note": "Canadian-market curb weight 953 kg and 63/37 front/rear weight distribution for the 2-door hatchback, model year 95 (X3)."
+    },
+    {
+      "key": "wikipedia-mazda",
+      "type": "wikipedia",
+      "title": "Mazda",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mazda",
+      "revision": "1375175430",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "commons-file-mazda-logo-svg",
+      "type": "commons",
+      "title": "File:Mazda logo.svg",
+      "author": "TTTNIS",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Mazda_logo.svg",
+      "accessed": "2026-09-24",
+      "license": "Public domain (copyright); mark is trademarked",
+      "note": "Text wordmark, recorded as public domain for copyright purposes with an explicit 'trademarked' restriction; displayed here under trademark nominative use, not a copyright licence."
+    },
+    {
+      "key": "wikipedia-mazda-rx-7",
+      "type": "wikipedia",
+      "title": "Mazda RX-7",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mazda_RX-7",
+      "revision": "1375789154",
+      "accessed": "2026-09-23",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all three generations (SA/FB, FC, FD) by section."
+    },
+    {
+      "key": "wikipedia-hyundai-tucson",
+      "type": "wikipedia",
+      "title": "Hyundai Tucson",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hyundai_Tucson",
+      "revision": "1375226507",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all generations (JM, LM, TL, NX4) by section."
+    },
+    {
+      "key": "wikipedia-mazda-rx-8",
+      "type": "wikipedia",
+      "title": "Mazda RX-8",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mazda_RX-8",
+      "revision": "1372478695",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-hyundai-i10",
+      "type": "wikipedia",
+      "title": "Hyundai i10",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hyundai_i10",
+      "revision": "1374782192",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all generations (PA, IA/BA, AC3/AI3) by section."
+    },
+    {
+      "key": "wikipedia-lada",
+      "type": "wikipedia",
+      "title": "Lada",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lada",
+      "revision": "1376364210",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-avtovaz",
+      "type": "wikipedia",
+      "title": "AvtoVAZ",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/AvtoVAZ",
+      "revision": "1357164536",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "commons-file-lada-company-logo-image-png",
+      "type": "commons",
+      "title": "File:Lada company logo image.png",
+      "author": "AvtoVAZ",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Lada_company_logo_image.png",
+      "accessed": "2026-09-24",
+      "license": "Public domain",
+      "note": "The oval sail/boat badge and LADA wordmark; displayed here under trademark nominative use, not a copyright licence."
+    },
+    {
+      "key": "wikipedia-vaz-2101",
+      "type": "wikipedia",
+      "title": "VAZ-2101",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/VAZ-2101",
+      "revision": "1373626939",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-hyundai-i30",
+      "type": "wikipedia",
+      "title": "Hyundai i30",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hyundai_i30",
+      "revision": "1375363372",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all generations (FD, GD, PD) by section."
+    },
+    {
+      "key": "wikipedia-lada-niva",
+      "type": "wikipedia",
+      "title": "Lada Niva",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lada_Niva",
+      "revision": "1372659556",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Covers the model now called Lada Niva Legend, formerly VAZ-2121/Lada 4x4; the unrelated Lada Niva Travel (ex-Chevrolet Niva) is a separate article."
+    },
+    {
+      "key": "wikipedia-kia",
+      "type": "wikipedia",
+      "title": "Kia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kia",
+      "revision": "1375894754",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-kia-picanto",
+      "type": "wikipedia",
+      "title": "Kia Picanto",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kia_Picanto",
+      "revision": "1362920237",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all generations (SA, TA, JA) by section."
+    },
+    {
+      "key": "wikipedia-trabant",
+      "type": "wikipedia",
+      "title": "Trabant",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Trabant",
+      "revision": "1362557633",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering the P50/500, 600, 601 and 1.1 models by section."
+    },
+    {
+      "key": "commons-file-ifa-trabant-logo-svg",
+      "type": "commons",
+      "title": "File:IFA Trabant Logo.svg",
+      "author": "Unknown",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:IFA_Trabant_Logo.svg",
+      "accessed": "2026-09-24",
+      "license": "Public domain (copyright); mark is trademarked",
+      "note": "Displayed here under trademark nominative use, not a copyright licence."
+    },
+    {
+      "key": "wikipedia-kia-rio",
+      "type": "wikipedia",
+      "title": "Kia Rio",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kia_Rio",
+      "revision": "1375987114",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all generations (DC, JB, UB/QB, YB/FB) by section."
+    },
+    {
+      "key": "epa-2018-kia-rio",
+      "type": "dataset",
+      "title": "2018 Kia Rio (Auto S6, 1.6 L) — EPA fuel economy record (vehicle 39330)",
+      "publisher": "US EPA / US Department of Energy",
+      "url": "https://www.fueleconomy.gov/ws/rest/vehicle/39330",
+      "accessed": "2026-09-24",
+      "license": "Public domain (US Government work)"
+    },
+    {
+      "key": "wikipedia-fiat",
+      "type": "wikipedia",
+      "title": "Fiat",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fiat",
+      "revision": "1375541039",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "commons-file-fiat-logo-2020-svg",
+      "type": "commons",
+      "title": "File:FIAT logo (2020).svg",
+      "author": "FIAT",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:FIAT_logo_(2020).svg",
+      "accessed": "2026-09-24",
+      "license": "Public domain (copyright); mark is trademarked",
+      "note": "Displayed here under trademark nominative use, not a copyright licence."
+    },
+    {
+      "key": "wikipedia-fiat-126",
+      "type": "wikipedia",
+      "title": "Fiat 126",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fiat_126",
+      "revision": "1369972671",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-kia-ceed",
+      "type": "wikipedia",
+      "title": "Kia Ceed",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kia_Ceed",
+      "revision": "1373332201",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all generations (ED, JD, CD) by section."
+    },
+    {
+      "key": "wikipedia-fiat-uno",
+      "type": "wikipedia",
+      "title": "Fiat Uno",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fiat_Uno",
+      "revision": "1375457067",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering both generations (Type 146 Europe/1983 and Type 327 Brazil/2010) by section."
+    },
+    {
+      "key": "wikipedia-citroen-ds",
+      "type": "wikipedia",
+      "title": "Citroën DS",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS",
+      "revision": "1374322339",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-fiat-punto",
+      "type": "wikipedia",
+      "title": "Fiat Punto",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fiat_Punto",
+      "revision": "1375556282",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all three generations (Type 176, Type 188, Type 199/Grande Punto) by section."
+    },
+    {
+      "key": "wikipedia-citroen-c1",
+      "type": "wikipedia",
+      "title": "Citroën C1",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C1",
+      "revision": "1373614473",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering both generations (PM/PN and AB40) by section."
+    },
+    {
+      "key": "wikipedia-chevrolet",
+      "type": "wikipedia",
+      "title": "Chevrolet",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet",
+      "revision": "1368343268",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "commons-file-chevrolet-bowtie-2023-svg",
+      "type": "commons",
+      "title": "File:Chevrolet bowtie 2023.svg",
+      "author": "Chevrolet",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Chevrolet_bowtie_2023.svg",
+      "accessed": "2026-09-24",
+      "license": "Public domain (copyright); mark is trademarked",
+      "note": "Displayed here under trademark nominative use, not a copyright licence."
+    },
+    {
+      "key": "wikipedia-chevrolet-corvette-c1",
+      "type": "wikipedia",
+      "title": "Chevrolet Corvette (C1)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C1)",
+      "revision": "1370551304",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-chevrolet-corvette-c8",
+      "type": "wikipedia",
+      "title": "Chevrolet Corvette (C8)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+      "revision": "1375440977",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-citroen-c3",
+      "type": "wikipedia",
+      "title": "Citroën C3",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+      "revision": "1375306682",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all generations (FC/FN, SC, SX/SY, and the unrelated CC21 sold in India and Latin America) by section."
+    },
+    {
+      "key": "wikipedia-chevrolet-camaro-first-generation",
+      "type": "wikipedia",
+      "title": "Chevrolet Camaro (first generation)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(first_generation)",
+      "revision": "1370188693",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-chevrolet-camaro-sixth-generation",
+      "type": "wikipedia",
+      "title": "Chevrolet Camaro (sixth generation)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(sixth_generation)",
+      "revision": "1374949978",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-chevrolet-impala",
+      "type": "wikipedia",
+      "title": "Chevrolet Impala",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Impala",
+      "revision": "1375273754",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all ten generations by section."
+    },
+    {
+      "key": "wikipedia-citroen-c4",
+      "type": "wikipedia",
+      "title": "Citroën C4",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C4",
+      "revision": "1374461988",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all generations (B5, B7, C41) by section."
+    },
+    {
+      "key": "wikipedia-nissan-gt-r",
+      "type": "wikipedia",
+      "title": "Nissan GT-R",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nissan_GT-R",
+      "revision": "1375295292",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Covers only the R35 (2007-2025), a single continuous generation; the earlier Skyline GT-R generations are a separate article."
+    },
+    {
+      "key": "wikipedia-citroen-xsara",
+      "type": "wikipedia",
+      "title": "Citroën Xsara",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Citro%C3%ABn_Xsara",
+      "revision": "1375234246",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-nissan-qashqai",
+      "type": "wikipedia",
+      "title": "Nissan Qashqai",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nissan_Qashqai",
+      "revision": "1375008805",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all three generations (J10, J11, J12) by section."
+    },
+    {
+      "key": "wikipedia-honda-accord",
+      "type": "wikipedia",
+      "title": "Honda Accord",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Honda_Accord",
+      "revision": "1376009575",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all eleven generations by section."
+    },
+    {
+      "key": "wikipedia-automobile-dacia",
+      "type": "wikipedia",
+      "title": "Automobile Dacia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Automobile_Dacia",
+      "revision": "1372526622",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "commons-file-dacia-2021-logo-green-svg",
+      "type": "web",
+      "title": "File:Dacia 2021 logo green.svg",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Dacia_2021_logo_green.svg",
+      "accessed": "2026-09-24",
+      "license": "Public domain (logo, below threshold of originality)"
+    },
+    {
+      "key": "wikipedia-dacia-logan",
+      "type": "wikipedia",
+      "title": "Dacia Logan",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dacia_Logan",
+      "revision": "1371484338",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all generations (L90/U90/F90, L52/K52, LJI) by section."
+    },
+    {
+      "key": "wikipedia-honda-fit",
+      "type": "wikipedia",
+      "title": "Honda Fit",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Honda_Fit",
+      "revision": "1375858572",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all four generations (GD/GE, GE/GG/GK, GK, GR/GS) by section."
+    },
+    {
+      "key": "wikipedia-honda-fit-first-generation",
+      "type": "wikipedia",
+      "title": "Honda Fit (first generation)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Honda_Fit_(first_generation)",
+      "revision": "1373669910",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-dacia-sandero",
+      "type": "wikipedia",
+      "title": "Dacia Sandero",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+      "revision": "1374221140",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all generations (B90, B52, BJI) by section."
+    },
+    {
+      "key": "wikipedia-bmw-x5-e53",
+      "type": "wikipedia",
+      "title": "BMW X5 (E53)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BMW_X5_(E53)",
+      "revision": "1372642707",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-bmw-x5-g05",
+      "type": "wikipedia",
+      "title": "BMW X5 (G05)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BMW_X5_(G05)",
+      "revision": "1372054585",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-bmw-x6",
+      "type": "wikipedia",
+      "title": "BMW X6",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BMW_X6",
+      "revision": "1369394409",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all three generations (E71, F16, G06) by section."
+    },
+    {
+      "key": "wikipedia-renault-4",
+      "type": "wikipedia",
+      "title": "Renault 4",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Renault_4",
+      "revision": "1370360496",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Covers the 1961-1994 R4/R3 only; the unrelated 2025 revival is a separate article, Renault 4 E-Tech."
+    },
+    {
+      "key": "wikipedia-renault-4-e-tech",
+      "type": "wikipedia",
+      "title": "Renault 4 E-Tech",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Renault_4_E-Tech",
+      "revision": "1370076792",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Article is tagged by its own editors as needing an update; production trim power/battery figures are largely absent, with only concept-stage figures given for the 2022 4Ever Trophy show car."
+    },
+    {
+      "key": "wikipedia-bmw-i8",
+      "type": "wikipedia",
+      "title": "BMW i8",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BMW_i8",
+      "revision": "1372261669",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-renault-5",
+      "type": "wikipedia",
+      "title": "Renault 5",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Renault_5",
+      "revision": "1369914792",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Covers the 1972-1996 R5 (first and second generations) only; the unrelated 2024 revival is a separate article, Renault 5 E-Tech."
+    },
+    {
+      "key": "wikipedia-renault-5-e-tech",
+      "type": "wikipedia",
+      "title": "Renault 5 E-Tech",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Renault_5_E-Tech",
+      "revision": "1371622907",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-volkswagen-touareg",
+      "type": "wikipedia",
+      "title": "Volkswagen Touareg",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Volkswagen_Touareg",
+      "revision": "1373485149",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all three generations (7L, 7P, CR) by section."
+    },
+    {
+      "key": "wikipedia-renault-twingo",
+      "type": "wikipedia",
+      "title": "Renault Twingo",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Renault_Twingo",
+      "revision": "1374666662",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering the first three generations by section; the fourth (E-Tech) is a separate article."
+    },
+    {
+      "key": "wikipedia-renault-twingo-e-tech",
+      "type": "wikipedia",
+      "title": "Renault Twingo E-Tech",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Renault_Twingo_E-Tech",
+      "revision": "1376307448",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-renault-megane",
+      "type": "wikipedia",
+      "title": "Renault Mégane",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+      "revision": "1376366156",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all five generations by section; the fifth (E-Tech Electric) is detailed in its own article."
+    },
+    {
+      "key": "wikipedia-renault-megane-e-tech-electric",
+      "type": "wikipedia",
+      "title": "Renault Megane E-Tech Electric",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Renault_Megane_E-Tech_Electric",
+      "revision": "1364144576",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-peugeot-207",
+      "type": "wikipedia",
+      "title": "Peugeot 207",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peugeot_207",
+      "revision": "1374596211",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-peugeot-307",
+      "type": "wikipedia",
+      "title": "Peugeot 307",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peugeot_307",
+      "revision": "1373618521",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "rdw-peugeot-307",
+      "type": "dataset",
+      "title": "RDW Open Data — Gekentekende Voertuigen (Peugeot 307 registrations)",
+      "publisher": "RDW (Dutch vehicle authority)",
+      "url": "https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-ebf2",
+      "accessed": "2026-09-24",
+      "license": "CC0",
+      "lang": "en",
+      "note": "Netherlands vehicle register; describes one individually registered 1.6 16v car, not a manufacturer specification."
+    },
+    {
+      "key": "wikipedia-peugeot-208",
+      "type": "wikipedia",
+      "title": "Peugeot 208",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peugeot_208",
+      "revision": "1370788746",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering both generations by section."
+    },
+    {
+      "key": "wikipedia-seat",
+      "type": "wikipedia",
+      "title": "SEAT",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/SEAT",
+      "revision": "1374746468",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-seat-ibiza",
+      "type": "wikipedia",
+      "title": "SEAT Ibiza",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/SEAT_Ibiza",
+      "revision": "1375247774",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all five generations by section."
+    },
+    {
+      "key": "wikipedia-volkswagen-up",
+      "type": "wikipedia",
+      "title": "Volkswagen Up",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Volkswagen_Up",
+      "revision": "1367391178",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-dmc-delorean",
+      "type": "wikipedia",
+      "title": "DMC DeLorean",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/DMC_DeLorean",
+      "revision": "1376141774",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-delorean-motor-company",
+      "type": "wikipedia",
+      "title": "DeLorean Motor Company",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/DeLorean_Motor_Company",
+      "revision": "1359243639",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-mitsubishi-motors",
+      "type": "wikipedia",
+      "title": "Mitsubishi Motors",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mitsubishi_Motors",
+      "revision": "1373969913",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-mitsubishi-pajero",
+      "type": "wikipedia",
+      "title": "Mitsubishi Pajero",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+      "revision": "1375943829",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all five generations by section."
+    },
+    {
+      "key": "wikipedia-subaru",
+      "type": "wikipedia",
+      "title": "Subaru",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Subaru",
+      "revision": "1372788801",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en"
+    },
+    {
+      "key": "wikipedia-subaru-impreza",
+      "type": "wikipedia",
+      "title": "Subaru Impreza",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Subaru_Impreza",
+      "revision": "1375308313",
+      "accessed": "2026-09-24",
+      "license": "CC BY-SA 4.0",
+      "lang": "en",
+      "note": "Single article covering all six generations by section."
+    },
+    {
+      "key": "rdw-peugeot-207",
+      "type": "dataset",
+      "title": "RDW Open Data — Gekentekende Voertuigen (Peugeot 207 registrations)",
+      "publisher": "RDW (Dutch vehicle authority)",
+      "url": "https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-ebf2",
+      "accessed": "2026-09-24",
+      "license": "CC0",
+      "lang": "en",
+      "note": "Netherlands vehicle register; individual registered cars, used here only for the fixed seat/door count."
     }
   ]
 }

@@ -4,7 +4,7 @@
    *
    * ## Built to be re-skinned
    *
-   * Game garage screens (the GTA/Forza reference in SPEC.md §9.4) share a
+   * Game garage screens (the GTA/Forza reference) share a
    * structure worth copying: **the empty slot is drawn, not absent.** That is
    * what makes a collection read as a *space* you are filling rather than a
    * list that happens to be short, and it is why the capacity tier feels like a

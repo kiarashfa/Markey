@@ -1,5 +1,5 @@
 /**
- * Presentation helpers for images and their attribution — SPEC.md §10.
+ * Presentation helpers for images and their attribution.
  *
  * The licence label table lives here rather than in a component so the
  * single-image popover and the gallery lightbox cannot end up describing the

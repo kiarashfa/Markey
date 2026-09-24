@@ -1,0 +1,143 @@
+{
+  "id": "hyundai-i10-pa",
+  "name": "Hyundai i10 (PA)",
+  "fullName": "Hyundai i10 (PA), 2007-2015",
+  "kind": "generation",
+  "parent": "hyundai-i10",
+  "brandRef": "hyundai",
+  "generationCode": "PA",
+  "productionYears": {
+    "start": 2007,
+    "end": 2015
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "designer": "Thomas Burkle",
+  "assembly": [
+    "Chennai, India (Hyundai Motor India)",
+    "Ninh Binh, Vietnam (Hyundai Thanh Cong Manufacturing Vietnam)",
+    "Kulim, Malaysia (Inokom)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3565,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10"
+    },
+    "width": {
+      "value": 1595,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10"
+    },
+    "height": {
+      "value": 1550,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10"
+    },
+    "wheelbase": {
+      "value": 2380,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10"
+    },
+    "kerbWeight": {
+      "value": 925,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-hyundai-i10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+      "sourceNote": "Published as a 925-1,040 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-1-irde",
+      "name": "1.1 iRDE",
+      "productionYears": {
+        "start": 2007,
+        "end": 2013
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual or 4-speed automatic",
+      "engine": {
+        "code": "Epsilon",
+        "configuration": "inline-4",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 48,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+        "sourceNote": "Published directly in kW; the same engine as used in the Kia Picanto and Hyundai Atos Prime/Santro Xing, tuned here for lower CO2 emissions."
+      },
+      "bootVolume": {
+        "value": 225,
+        "unit": "L",
+        "status": "verified",
+        "source": "wikipedia-hyundai-i10",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hyundai_i10",
+        "sourceNote": "Stated directly in the article body; measurement basis (VDA or otherwise) is not specified."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/hyundai-i10-pa/hero.webp",
+    "alt": "Red first-generation Hyundai i10 five-door hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1078,
+    "caption": "The original i10, developed under the PA codename primarily for the Indian market and launched in 2007.",
+    "credit": {
+      "author": "DieselFordMondeo",
+      "title": "File:2010 Hyundai i10 Comfort - 1248cc 1.2 (85PS) Petrol - Electric Red - 12-12-2023, Front Left.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010_Hyundai_i10_Comfort_-_1248cc_1.2_(85PS)_Petrol_-_Electric_Red_-_12-12-2023,_Front_Left.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/hyundai-i10-pa/gallery-1.webp",
+      "alt": "Rear three-quarter view of a red first-generation Hyundai i10 hatchback",
+      "width": 1200,
+      "height": 809,
+      "caption": "The tailgate carries a chrome-lined boot release handle, a detail Hyundai called out in its own marketing.",
+      "credit": {
+        "author": "DieselFordMondeo",
+        "title": "File:2010 Hyundai i10 Comfort - 1248cc 1.2 (85PS) Petrol - Electric Red - 12-12-2023, Rear Left.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010_Hyundai_i10_Comfort_-_1248cc_1.2_(85PS)_Petrol_-_Electric_Red_-_12-12-2023,_Rear_Left.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-hyundai-i10"
+  ]
+}

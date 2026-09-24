@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * The 3D wind tunnel — SPEC.md §9.5.1.
+   * The 3D wind tunnel.
    *
    * This component owns presentation and nothing else. It does not know where
    * the working section is, how large a cell is, how a body becomes a solid
@@ -41,14 +41,14 @@
      * `car` measures a shape family fitted to a real car's published
      * dimensions, and everything it says is framed against that car's own
      * published Cd, which stays authoritative. `build` measures a shape the
-     * visitor is inventing (SPEC.md §9.6), where there is no published figure
+     * visitor is inventing, where there is no published figure
      * to defer to and the solver's number is the only one there is — which is
-     * exactly why SPEC.md §9.5.1 rule 2 forbids calling it validated.
+     * exactly why it must never be called validated.
      */
     variant?: 'car' | 'build';
     /**
-     * Hands a completed measurement back to the caller — the closed loop of
-     * SPEC.md §9.6. Cd and frontal area travel together because they are one
+     * Hands a completed measurement back to the caller — the closed
+     * loop. Cd and frontal area travel together because they are one
      * measurement of one shape.
      */
     onMeasure?: (cd: number, frontalAreaM2: number) => void;
@@ -914,7 +914,7 @@
         </p>
 
         <!--
-          The closed loop of SPEC.md §9.6, and the one control on this panel that
+          The closed loop, and the one control on this panel that
           changes something outside it. Withheld while the run is unusable: a
           diverged solve reports nothing, and a figure taken in a running fan's
           wake describes the shape in that wake rather than in clean air.

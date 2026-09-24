@@ -1,0 +1,217 @@
+{
+  "id": "citroen-c3-cc21",
+  "name": "Citroën C3 (CC21)",
+  "fullName": "Citroën C3 (CC21), 2024-present",
+  "kind": "generation",
+  "parent": "citroen-c3",
+  "brandRef": "citroen",
+  "generationCode": "CC21",
+  "productionYears": {
+    "start": 2024,
+    "end": null
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "mild-hybrid",
+    "bev"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "assembly": [
+    "Trnava, Slovakia",
+    "Kragujevac, Serbia"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4015,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+    },
+    "width": {
+      "value": 1813,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+    },
+    "height": {
+      "value": 1577,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+    },
+    "wheelbase": {
+      "value": 2540,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+    },
+    "kerbWeight": {
+      "value": 1151,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-citroen-c3",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+      "sourceNote": "Published as a 1,151-1,416 kg range across the model line-up, including the electric e-C3; the lowest figure is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "1-2-puretech-turbo-100",
+      "name": "1.2 PureTech Turbo 100",
+      "productionYears": {
+        "start": 2024,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 6,
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "EB2LTED",
+        "configuration": "inline-3 turbocharged, PureTech THP",
+        "cylinders": 3,
+        "displacement": {
+          "value": 1199,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-citroen-c3",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 74,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+        "sourceNote": "100 PS at 5,500 rpm, converted at 1 PS = 0.73549875 kW (73.5 kW, rounded to 74)."
+      },
+      "torque": {
+        "value": 205,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "zeroToHundredKph": {
+        "value": 10.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "topSpeed": {
+        "value": 183,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3"
+      },
+      "co2": {
+        "value": 123,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+        "sourceNote": "Cycle not named in the source; likely WLTP given the model year."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "e-c3",
+      "name": "e-C3",
+      "productionYears": {
+        "start": 2024,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "bev",
+      "engine": {
+        "configuration": "single motor, permanent magnet synchronous",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 83,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+        "sourceNote": "Published directly in kW for the 44 kWh battery version."
+      },
+      "batteryCapacity": {
+        "value": 44,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+        "sourceNote": "Gross capacity; a smaller 30 kWh pack is also offered in some markets and is not this figure."
+      },
+      "electricRange": {
+        "value": 320,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-citroen-c3",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_C3",
+        "sourceNote": "WLTP cycle, 44 kWh version."
+      },
+      "zeroToHundredKph": {
+        "value": 11,
+        "unit": "s",
+        "status": "estimated",
+        "sourceNote": "The article states 0-100 km/h in 'around 11 seconds' rather than an exact figure."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/citroen-c3-cc21/hero.webp",
+    "alt": "White fourth-generation Citroën C3 hatchback with crossover-styled black cladding, photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 929,
+    "caption": "The current C3: a heavily reskinned version of the Indian-market third-generation car, Citroën's first model with its new logo and design language.",
+    "credit": {
+      "author": "M 93",
+      "title": "File:Citroën C3 Turbo 100 You (IV) – f 01062025.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_C3_Turbo_100_You_(IV)_%E2%80%93_f_01062025.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/citroen-c3-cc21/gallery-1.webp",
+      "alt": "Rear three-quarter view of a white fourth-generation Citroën C3 hatchback",
+      "width": 1200,
+      "height": 725,
+      "caption": "Raised ground clearance and crossover-like styling distinguish this generation from its predecessors.",
+      "credit": {
+        "author": "M 93",
+        "title": "File:Citroën C3 Turbo 100 You (IV) – h 01062025.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_C3_Turbo_100_You_(IV)_%E2%80%93_h_01062025.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-citroen-c3"
+  ]
+}

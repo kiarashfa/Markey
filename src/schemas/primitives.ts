@@ -1,6 +1,6 @@
 /**
- * Shared schema primitives — SPEC.md §5.5 (data trust & attribution) and §10
- * (imagery licensing).
+ * Shared schema primitives — data trust & attribution, and imagery
+ * licensing.
  *
  * These import `zod` directly rather than `astro:content`'s re-export so the
  * same schemas can be loaded by plain Node scripts (the integrity checks in
@@ -11,7 +11,7 @@
 import { z } from 'zod';
 
 /**
- * Flat, globally-unique, lowercase-kebab slug (SPEC.md §5.1). Generation codes
+ * Flat, globally-unique, lowercase-kebab slug. Generation codes
  * alone are not unique across the industry, so a slug always carries the model
  * prefix: `bmw-6-series-e24`, never `e24`.
  */
@@ -29,7 +29,7 @@ export const isoDate = z
 
 /**
  * A key into the bibliography at `src/data/references.json`. Resolution is a
- * cross-file concern, so it is enforced by the integrity checks (SPEC.md §13),
+ * cross-file concern, so it is enforced by the integrity checks,
  * not here — Zod only sees one file at a time.
  */
 export const citationKey = slug;
@@ -48,7 +48,7 @@ export const yearRange = z
   });
 
 // ---------------------------------------------------------------------------
-// PropertyValue — SPEC.md §5.5
+// PropertyValue
 // ---------------------------------------------------------------------------
 
 export const valueStatus = z.enum([
@@ -60,7 +60,7 @@ export const valueStatus = z.enum([
 export type ValueStatus = z.infer<typeof valueStatus>;
 
 /**
- * The SI units this site stores. SPEC.md §8.1: **SI is what's stored; imperial
+ * The SI units this site stores. **SI is what's stored; imperial
  * is always computed on demand, client-side, never stored or indexed.** Making
  * this an enum rather than a free string is what stops a stray `hp` or `mph`
  * from ever reaching the database and quietly corrupting the math engine.
@@ -87,7 +87,7 @@ export type SiUnit = z.infer<typeof siUnit>;
 /**
  * Every numeric value on the site is wrapped, never a bare number.
  *
- * The refinements below encode SPEC.md §2 principles 3 and 5 as hard schema
+ * The refinements below encode the data-trust principles as hard schema
  * rules, so "no fabricated data, ever" is enforced by the build rather than by
  * an author remembering it:
  *
@@ -112,7 +112,7 @@ function propertyValueRules<T extends z.ZodType<PropertyValueShape>>(schema: T) 
       ctx.addIssue({
         code: 'custom',
         message:
-          "status 'placeholder' requires `value: null` — a placeholder must never carry a plausible-looking invented number (SPEC.md §2.3)",
+          "status 'placeholder' requires `value: null` — a placeholder must never carry a plausible-looking invented number",
       });
     }
     if (v.status === 'estimated' && !v.sourceNote) {
@@ -181,15 +181,15 @@ export const anyPropertyValue = propertyValueRules(
 export type PropertyValue = z.infer<typeof anyPropertyValue>;
 
 // ---------------------------------------------------------------------------
-// Imagery — SPEC.md §10
+// Imagery
 // ---------------------------------------------------------------------------
 
 /**
- * The legal basis on which an image is used. SPEC.md §10 is explicit that this
- * is recorded per file so the basis is auditable rather than assumed.
+ * The legal basis on which an image is used. It is
+ * recorded per file so the basis is auditable rather than assumed.
  *
  * `trademark-nominative-use` is deliberately separate from the copyright
- * licences: brand logos (§11.2) sit on trademark law, not a copyright licence,
+ * licences: brand logos sit on trademark law, not a copyright licence,
  * and the rules that follow are different (use unmodified, identification only,
  * never implying endorsement).
  */
@@ -207,7 +207,7 @@ export const licenseType = z.enum([
 ]);
 export type LicenseType = z.infer<typeof licenseType>;
 
-/** Licences that require naming the author (SPEC.md §10). */
+/** Licences that require naming the author. */
 export const ATTRIBUTION_REQUIRED: ReadonlySet<string> = new Set([
   'cc-by',
   'cc-by-sa',
@@ -245,7 +245,7 @@ export const imageCredit = z
         code: 'custom',
         path: ['licenseNote'],
         message:
-          "fair-use-editorial requires a `licenseNote` — fair use is a contestable defence, not a licence, and SPEC.md §10 requires it be justified per file",
+          "fair-use-editorial requires a `licenseNote` — fair use is a contestable defence, not a licence, and it must be justified per file",
       });
     }
     if (c.licenseType === 'manufacturer-press-grant' && !c.licenseNote) {
@@ -271,7 +271,7 @@ export const imageRef = z.object({
 export type ImageRef = z.infer<typeof imageRef>;
 
 // ---------------------------------------------------------------------------
-// Entry-level trust fields — SPEC.md §5.5
+// Entry-level trust fields
 // ---------------------------------------------------------------------------
 
 export const reviewStatus = z.enum([
@@ -285,7 +285,7 @@ export type ReviewStatus = z.infer<typeof reviewStatus>;
 /**
  * Carried by every entry in every collection. `lastVerified` exists because —
  * unlike polymer chemistry — car prices, specs and availability genuinely go
- * stale (SPEC.md §2.3).
+ * stale.
  */
 export const trustFields = {
   lastVerified: isoDate,

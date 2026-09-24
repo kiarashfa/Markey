@@ -1,0 +1,181 @@
+{
+  "id": "trabant-p50",
+  "name": "Trabant P50 (500/600)",
+  "fullName": "Trabant P50 (500/600), 1957-1964",
+  "kind": "generation",
+  "parent": "trabant",
+  "brandRef": "trabant",
+  "generationCode": "P50",
+  "productionYears": {
+    "start": 1957,
+    "end": 1964
+  },
+  "bodyStyles": [
+    "saloon",
+    "estate"
+  ],
+  "powertrains": [
+    "petrol"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "assembly": [
+    "VEB Sachsenring, Zwickau, East Germany"
+  ],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 3360,
+      "unit": "mm",
+      "status": "estimated",
+      "source": "wikipedia-trabant",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Trabant",
+      "sourceNote": "Estimated: the source gives one set of dimensions for the whole Trabant range, not a P50-specific figure; applied here on the source's statement that the design barely changed. Original note: The source gives one set of dimensions for the whole Trabant range and states the design was essentially unchanged from the 1950s to 1990; no separate P50-specific figure is given."
+    },
+    "width": {
+      "value": 1500,
+      "unit": "mm",
+      "status": "estimated",
+      "source": "wikipedia-trabant",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Trabant",
+      "sourceNote": "Estimated: the source gives one set of dimensions for the whole Trabant range, not a P50-specific figure; applied here on the source's statement that the design barely changed."
+    },
+    "wheelbase": {
+      "value": 2020,
+      "unit": "mm",
+      "status": "estimated",
+      "source": "wikipedia-trabant",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Trabant",
+      "sourceNote": "Estimated: the source gives one set of dimensions for the whole Trabant range, not a P50-specific figure; applied here on the source's statement that the design barely changed."
+    }
+  },
+  "trims": [
+    {
+      "id": "p50-17ps",
+      "name": "P50 500",
+      "productionYears": {
+        "start": 1957,
+        "end": 1960
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "P50",
+        "configuration": "air-cooled two-stroke inline-2",
+        "cylinders": 2,
+        "displacement": {
+          "value": 500,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-trabant",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Trabant"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 12.5,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-trabant",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Trabant",
+        "sourceNote": "17 PS at launch, converted at 1 PS = 0.73549875 kW."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "p50-20ps",
+      "name": "P50 500 (synchromesh)",
+      "productionYears": {
+        "start": 1960,
+        "end": 1962
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "Fully synchronised manual",
+      "engine": {
+        "code": "P50",
+        "configuration": "air-cooled two-stroke inline-2",
+        "cylinders": 2,
+        "displacement": {
+          "value": 500,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-trabant",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Trabant"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 14.71,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-trabant",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Trabant",
+        "sourceNote": "20 PS from 1960, with a newly fully synchronised gearbox, converted at 1 PS = 0.73549875 kW."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "p60-23ps",
+      "name": "P60 600",
+      "productionYears": {
+        "start": 1962,
+        "end": 1964
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "P60",
+        "configuration": "air-cooled two-stroke inline-2",
+        "cylinders": 2,
+        "displacement": {
+          "value": 594,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-trabant",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Trabant"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 16.92,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-trabant",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Trabant",
+        "sourceNote": "23 PS from the enlarged 594 cc engine introduced in 1962, converted at 1 PS = 0.73549875 kW."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/trabant-p50/hero.webp",
+    "alt": "Dark red Trabant P50 photographed from the front three-quarter angle in a museum, showing its rounded 1950s body and single-piece curved windscreen",
+    "width": 1600,
+    "height": 1200,
+    "caption": "The original Trabant: a modern small car for 1957, with a duroplast body over a galvanised steel unibody, front-wheel drive and a transverse two-stroke twin.",
+    "credit": {
+      "author": "Matěj Baťha",
+      "title": "File:P 50.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:P_50.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-trabant"
+  ]
+}

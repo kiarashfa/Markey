@@ -1,13 +1,13 @@
 <script lang="ts">
   /**
-   * Test Drive — the 2D instrumented panel (SPEC.md §9.5).
+   * Test Drive — the 2D instrumented panel.
    *
    * Every number here is computed in the browser by the *same* `lib/math`
    * functions the static pages use. That is the point of the shared engine: the
    * slider recomputes, and it cannot disagree with the spec sheet because it is
    * not a second implementation.
    *
-   * Two honesty rules govern the whole panel, both from SPEC.md §8.2:
+   * Two honesty rules govern the whole panel:
    *
    *  1. **A modelled figure never replaces a published one.** Where both exist
    *     they sit side by side, each labelled, with the difference stated. That

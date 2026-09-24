@@ -1,0 +1,19 @@
+{
+  "id": "mitsubishi-pajero",
+  "name": "Mitsubishi Pajero",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "mitsubishi",
+  "productionYears": {
+    "start": 1981,
+    "end": null
+  },
+  "segment": "suv-large",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-mitsubishi-pajero"
+  ]
+}

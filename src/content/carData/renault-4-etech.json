@@ -1,0 +1,132 @@
+{
+  "id": "renault-4-etech",
+  "name": "Renault 4 E-Tech",
+  "fullName": "Renault 4 E-Tech, 2025-present",
+  "kind": "generation",
+  "parent": "renault-4",
+  "brandRef": "renault",
+  "productionYears": {
+    "start": 2025,
+    "end": null
+  },
+  "bodyStyles": [
+    "crossover",
+    "van"
+  ],
+  "powertrains": [
+    "bev"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "designer": "Gilles Vidal",
+  "assembly": [
+    "Maubeuge, France (Maubeuge Construction Automobile)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4143,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-4-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4_E-Tech"
+    },
+    "width": {
+      "value": 1796,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-4-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4_E-Tech"
+    },
+    "height": {
+      "value": 1572,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-4-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4_E-Tech"
+    },
+    "wheelbase": {
+      "value": 2624,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-4-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4_E-Tech"
+    },
+    "kerbWeight": {
+      "value": 1410,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-renault-4-e-tech",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_4_E-Tech",
+      "sourceNote": "Published as a 1,410-1,521 kg range across the model line-up; the lowest figure in the range is recorded here at generation level, not assigned to any one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "e-tech-electric",
+      "name": "E-Tech Electric",
+      "productionYears": {
+        "start": 2025,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "bev",
+      "engine": {
+        "configuration": "single motor"
+      },
+      "power": {
+        "value": null,
+        "unit": "kW",
+        "status": "placeholder",
+        "sourceNote": "Wikipedia's article on the production car (marked by its own editors as needing an update) gives a motor output only for the 2022 4Ever Trophy show car (100 kW, described there as 'expected'), not a confirmed figure for any production trim. Euro NCAP separately names a production trim 'EV52 Techno', implying at least one battery size, but without a power figure attached. Using the concept figure for the production car would misattribute a different vehicle's number."
+      },
+      "batteryCapacity": {
+        "value": null,
+        "unit": "kWh",
+        "status": "placeholder",
+        "sourceNote": "Only a concept-car battery figure (42 kWh, for the 2022 4Ever Trophy show car) is given in the source; no production battery capacity is stated, though Euro NCAP's naming of an 'EV52' trim implies one exists."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-4-etech/hero.webp",
+    "alt": "Pale blue Renault 4 E-Tech electric crossover photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 901,
+    "caption": "The 2025 revival: a battery-electric crossover on the AmpR Small platform, sharing nothing mechanical with the original R4 beyond the name.",
+    "credit": {
+      "author": "M 93",
+      "title": "File:Renault 4 E-Tech 150 Comfort Range Techno – f 22062025.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_4_E-Tech_150_Comfort_Range_Techno_%E2%80%93_f_22062025.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/renault-4-etech/gallery-1.webp",
+      "alt": "Rear three-quarter view of a pale blue Renault 4 E-Tech electric crossover",
+      "width": 1200,
+      "height": 701,
+      "caption": "Built alongside the Renault 5 E-Tech at the Maubeuge plant in northern France.",
+      "credit": {
+        "author": "M 93",
+        "title": "File:Renault 4 E-Tech 150 Comfort Range Techno – h 22062025.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_4_E-Tech_150_Comfort_Range_Techno_%E2%80%93_h_22062025.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-renault-4-e-tech"
+  ]
+}

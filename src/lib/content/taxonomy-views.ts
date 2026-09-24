@@ -1,5 +1,5 @@
 /**
- * The seven taxonomy axes as computed views — SPEC.md §7, §2 principle 2.
+ * The seven taxonomy axes as computed views.
  *
  * Taxonomy pages own no content. Each one is derived at build time from tagged
  * entries, which is what makes re-tagging safe: nothing "lives" at
@@ -8,7 +8,7 @@
  * brand's country, Era is computed from production years.
  *
  * **Views list generations and halo trims, not model hubs.** Those are the
- * entries that carry the tags (SPEC.md §7), and they are also what a search
+ * entries that carry the tags, and they are also what a search
  * like "1980s coupé" wants to land on — a hub spanning forty years and three
  * body styles is the wrong answer to a specific query. Hubs stay reachable
  * one breadcrumb up.
@@ -25,7 +25,7 @@ import {
 import { erasFor, type JoinedBrand, type JoinedCar } from './entries.ts';
 
 export interface AxisConfig {
-  /** The URL segment fixed by SPEC.md §6. */
+  /** The fixed URL segment. */
   axis: string;
   title: string;
   /** Shown on the axis index page. */

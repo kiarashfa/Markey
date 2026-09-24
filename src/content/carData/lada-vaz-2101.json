@@ -1,0 +1,16 @@
+{
+  "id": "lada-vaz-2101",
+  "name": "Lada VAZ-2101",
+  "fullName": "Lada VAZ-2101 (Zhiguli / Lada 1200), 1970-1988",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "lada",
+  "productionYears": {
+    "start": 1970,
+    "end": 1988
+  },
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-vaz-2101"]
+}

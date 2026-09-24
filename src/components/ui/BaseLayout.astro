@@ -4,7 +4,7 @@
  *
  * Centralised because four things must be true on *every* page and are easy
  * to get wrong one page at a time: a canonical URL under the base path
- * (SPEC.md §6/§12), `noindex` where the page holds user state (SPEC.md §12),
+ *, `noindex` where the page holds user state,
  * Pagefind's body marker — a narrative `.mdx` rendered without a layout emits
  * no `<html>` element at all and is silently dropped from the search index —
  * and the JSON-LD slot, so structured data can never end up in the body.
@@ -18,14 +18,14 @@ import '../../styles/global.css';
 interface Props {
   title: string;
   description?: string;
-  /** SPEC.md §12 — noindex, never a robots.txt disallow. */
+  /** Noindex, never a robots.txt disallow. */
   noindex?: boolean;
-  /** Brand accent to theme this page's hero band with (SPEC.md §11.2). */
+  /** Brand accent to theme this page's hero band with. */
   accentColor?: string;
   /** Pages that are their own full-bleed composition skip the content gutter. */
   bleed?: boolean;
   /**
-   * The search filter this page belongs under — SPEC.md §9.1.
+   * The search filter this page belongs under.
    *
    * Pagefind indexes `<main>` and nothing else (see below), and this is the one
    * facet the results page offers. Omitted means the page is still found, just
@@ -64,7 +64,7 @@ const fullTitle = title === 'Markey' ? title : `${title} — Markey`;
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
     {noindex && <meta name="robots" content="noindex, follow" />}
     <meta name="generator" content={Astro.generator} />
-    {/* Structured data (SPEC.md §12). A named slot so it lands in <head>. */}
+    {/* Structured data. A named slot so it lands in <head>. */}
     <slot name="jsonld" />
     <slot name="head" />
   </head>

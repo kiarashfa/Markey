@@ -1,11 +1,11 @@
 <script lang="ts">
   /**
-   * Fuel and energy cost calculator — SPEC.md §8.1, §9.
+   * Fuel and energy cost calculator.
    *
    * Calls `lib/math/fuelCost.ts` directly, so this and any running-cost figure
    * elsewhere on the site are the same computation.
    *
-   * **No regional price presets are shipped.** SPEC.md forbids inventing data,
+   * **No regional price presets are shipped.** The site never invents data,
    * and a fuel price is the most perishable number the site could carry —
    * a plausible-looking default nobody sourced would be exactly the kind of
    * invented figure the whole project exists to avoid. The field starts empty

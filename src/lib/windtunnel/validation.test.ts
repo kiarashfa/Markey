@@ -12,7 +12,7 @@ import {
 } from './validation.ts';
 
 /**
- * The validation gate (SPEC.md §9.5.1), as far as a CI-affordable grid can
+ * The validation gate, as far as a CI-affordable grid can
  * take it. See `validation.ts` for why the four published high-Re figures are
  * NOT what the CPU reference is measured against.
  */
@@ -42,7 +42,7 @@ describe('Clift–Gauvin correlation', () => {
   });
 
   it('approaches the textbook 0.47 plateau at high Re', () => {
-    // This is where SPEC.md's 0.47 actually lives — and it is three orders of
+    // This is where the textbook 0.47 actually lives — and it is three orders of
     // magnitude above where the CPU reference can run.
     const cd = cliftGauvinSphereCd(1e5);
     assert.ok(cd > 0.4 && cd < 0.6, `expected ≈0.47 at Re 1e5, got ${cd}`);

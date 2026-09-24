@@ -1,5 +1,5 @@
 /**
- * The `concepts` collection — SPEC.md §5.3.
+ * The `concepts` collection.
  *
  * Structurally separate from `cars` because concept cars and prototypes
  * genuinely need different fields: no trims, no market variants, no MSRP. A

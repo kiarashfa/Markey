@@ -1,0 +1,327 @@
+{
+  "id": "dacia-sandero-bji",
+  "name": "Dacia Sandero (BJI)",
+  "fullName": "Dacia Sandero (BJI), 2020-present",
+  "kind": "generation",
+  "parent": "dacia-sandero",
+  "brandRef": "dacia",
+  "generationCode": "BJI",
+  "productionYears": {
+    "start": 2020,
+    "end": null
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "lpg"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "economy",
+  "designer": "Erde Tungaa (exterior) and Maxime Pinol (interior)",
+  "assembly": [
+    "Casablanca, Morocco (Somaca)",
+    "Tangier, Morocco (Renault Tanger Mediterranee)",
+    "Mioveni, Romania (Stepway, 2020-2025)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4088,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-sandero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+      "sourceNote": "Published as a 4,088-4,099 mm range depending on trim; lowest figure recorded here."
+    },
+    "width": {
+      "value": 1758,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-sandero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+    },
+    "height": {
+      "value": 1499,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-sandero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+      "sourceNote": "Published as a 1,499-1,535 mm range depending on trim (the raised Stepway is at the top of the range); lowest figure recorded here."
+    },
+    "wheelbase": {
+      "value": 2604,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-dacia-sandero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+    },
+    "kerbWeight": {
+      "value": null,
+      "unit": "kg",
+      "status": "placeholder",
+      "sourceNote": "Not published in the Wikipedia infobox or body text for this generation."
+    }
+  },
+  "trims": [
+    {
+      "id": "sce-65",
+      "name": "SCe 65",
+      "productionYears": {
+        "start": 2020,
+        "end": 2026
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "gears": 5,
+      "transmission": "5-speed manual",
+      "engine": {
+        "code": "B4D",
+        "configuration": "inline-3, SCe",
+        "cylinders": 3,
+        "displacement": {
+          "value": 999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-dacia-sandero",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 48,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "65 PS at 6,300 rpm, converted at 1 PS = 0.73549875 kW (47.8 kW, rounded to 48). Discontinued in 2026 in favour of a detuned TCe 100."
+      },
+      "torque": {
+        "value": 95,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "zeroToHundredKph": {
+        "value": 16.7,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "topSpeed": {
+        "value": 158,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "fuelEconomy": {
+        "value": 5.4,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "Cycle not named in the source."
+      },
+      "co2": {
+        "value": 121,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "tce-90",
+      "name": "TCe 90",
+      "productionYears": {
+        "start": 2020,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual or CVT",
+      "engine": {
+        "code": "H4Dt",
+        "configuration": "inline-3 turbocharged, TCe",
+        "cylinders": 3,
+        "displacement": {
+          "value": 999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-dacia-sandero",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 66,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "90 PS, converted at 1 PS = 0.73549875 kW (66.2 kW, rounded to 66)."
+      },
+      "torque": {
+        "value": 160,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "Manual gearbox figure at 2,100 rpm; the CVT version of the same engine is quoted at 142 N-m."
+      },
+      "zeroToHundredKph": {
+        "value": 11.7,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "Published as a 11.7-12.2s range depending on trim; lowest figure recorded here."
+      },
+      "topSpeed": {
+        "value": 172,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "Published as a 172-179 km/h range depending on trim; lowest figure recorded here."
+      },
+      "fuelEconomy": {
+        "value": 5.3,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "Cycle not named in the source."
+      },
+      "co2": {
+        "value": 120,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "Published as a 120-127 g/km range depending on trim; lowest figure recorded here."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "eco-g-100",
+      "name": "ECO-G 100 Bi-Fuel",
+      "productionYears": {
+        "start": 2020,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "lpg",
+      "gears": 6,
+      "transmission": "6-speed manual",
+      "engine": {
+        "code": "H4Dt",
+        "configuration": "inline-3 turbocharged, petrol/LPG bi-fuel",
+        "cylinders": 3,
+        "displacement": {
+          "value": 999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-dacia-sandero",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 74,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "100 PS at 5,000 rpm, converted at 1 PS = 0.73549875 kW (73.5 kW, rounded to 74). A newer, larger 1.2-litre 'ECO-G 120' bi-fuel engine was added at the 2025 facelift and is a different figure, not this trim."
+      },
+      "torque": {
+        "value": 170,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero"
+      },
+      "zeroToHundredKph": {
+        "value": 11.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "Published as a 11.6-11.9s range depending on trim; lowest figure recorded here."
+      },
+      "topSpeed": {
+        "value": 177,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "Published as a 177-183 km/h range depending on trim; lowest figure recorded here."
+      },
+      "fuelEconomy": {
+        "value": 7.1,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "LPG consumption; cycle not named in the source."
+      },
+      "co2": {
+        "value": 109,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-dacia-sandero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Dacia_Sandero",
+        "sourceNote": "Published as a 109-115 g/km range depending on trim; lowest figure recorded here."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/dacia-sandero-bji/hero.webp",
+    "alt": "Silver third-generation Dacia Sandero hatchback photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 922,
+    "caption": "The current Sandero, launched in 2020 alongside the Logan III on the shared Renault-Nissan CMF-B LS platform.",
+    "credit": {
+      "author": "Alexander Migl",
+      "title": "File:Dacia Sandero III IMG 4216.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dacia_Sandero_III_IMG_4216.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/dacia-sandero-bji/gallery-1.webp",
+      "alt": "Rear three-quarter view of a silver third-generation Dacia Sandero hatchback",
+      "width": 1200,
+      "height": 756,
+      "caption": "Sold in Italy, Greece and Morocco as the Sandero Streetway.",
+      "credit": {
+        "author": "Alexander Migl",
+        "title": "File:Dacia Sandero III 1X7A0329.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dacia_Sandero_III_1X7A0329.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-dacia-sandero"
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "id": "bmw-x5-g05",
+  "name": "BMW X5 (G05)",
+  "fullName": "BMW X5 (G05), 2018-present",
+  "kind": "generation",
+  "parent": "bmw-x5",
+  "brandRef": "bmw",
+  "generationCode": "G05",
+  "productionYears": {
+    "start": 2018,
+    "end": null
+  },
+  "bodyStyles": ["suv"],
+  "powertrains": ["petrol", "diesel", "phev"],
+  "drivetrains": ["awd", "rwd"],
+  "segment": "suv-mid",
+  "positioning": "premium",
+  "designer": "Anders Thøgersen (exterior); Eva Günther (interior)",
+  "assembly": [
+    "BMW, Spartanburg, South Carolina, United States",
+    "BBA, Shenyang, China (long-wheelbase)",
+    "BMW Manufacturing, Rayong, Thailand"
+  ],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4935,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-x5-g05",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(G05)",
+      "sourceNote": "Standard wheelbase; the China-market long-wheelbase G18 is 5,060 mm."
+    },
+    "width": { "value": 2004, "unit": "mm", "status": "verified", "source": "wikipedia-bmw-x5-g05", "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(G05)" },
+    "height": { "value": 1765, "unit": "mm", "status": "verified", "source": "wikipedia-bmw-x5-g05", "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(G05)" },
+    "wheelbase": {
+      "value": 2975,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-bmw-x5-g05",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(G05)",
+      "sourceNote": "Standard wheelbase; the long-wheelbase G18 is 3,105 mm."
+    },
+    "kerbWeight": {
+      "value": 2060,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-bmw-x5-g05",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(G05)",
+      "sourceNote": "Lowest figure in the infobox's published range of 2,060-2,286 kg across engines and trims."
+    }
+  },
+  "trims": [
+    {
+      "id": "xdrive40i",
+      "name": "xDrive40i",
+      "productionYears": { "start": 2018, "end": null },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "8-speed automatic",
+      "gears": 8,
+      "engine": {
+        "code": "B58",
+        "configuration": "inline-6, turbocharged",
+        "cylinders": 6,
+        "displacement": { "value": 2998, "unit": "cc", "status": "verified", "source": "wikipedia-bmw-x5-g05", "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(G05)", "sourceNote": "3.0 L." },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 245,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-bmw-x5-g05",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(G05)",
+        "sourceNote": "Stated directly in kW at 5,500-6,250 rpm."
+      },
+      "torque": {
+        "value": 450,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-bmw-x5-g05",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(G05)",
+        "sourceNote": "At 1,600-4,800 rpm."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "x5-m-competition",
+      "name": "X5 M Competition",
+      "productionYears": { "start": 2019, "end": null },
+      "drivetrain": "awd",
+      "powertrain": "petrol",
+      "transmission": "8-speed automatic",
+      "gears": 8,
+      "engine": {
+        "code": "S63",
+        "configuration": "V8, twin-turbocharged",
+        "cylinders": 8,
+        "displacement": { "value": 4395, "unit": "cc", "status": "verified", "source": "wikipedia-bmw-x5-g05", "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(G05)", "sourceNote": "4.4 L." },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 459.4,
+        "unit": "kW",
+        "status": "estimated",
+        "source": "wikipedia-bmw-x5-g05",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(G05)",
+        "sourceNote": "Source states '616 hp' without specifying mechanical horsepower or metric PS; converted here as mechanical hp (616 x 0.74569987 = 459.4 kW). Reading it as metric PS instead would give 453.2 kW, about 1.4% lower."
+      },
+      "zeroToHundredKph": {
+        "value": 3.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-bmw-x5-g05",
+        "sourceUrl": "https://en.wikipedia.org/wiki/BMW_X5_(G05)"
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/bmw-x5-g05/hero.webp",
+    "alt": "White fourth-generation BMW X5 photographed from the front three-quarter angle, showing its large kidney grille",
+    "width": 1600,
+    "height": 887,
+    "caption": "Built on BMW's shared CLAR platform with the 5 and 7 Series, offered with everything from a four-cylinder plug-in hybrid to a twin-turbo V8, and even a hydrogen fuel-cell demonstration fleet, the iX5.",
+    "credit": {
+      "author": "Alexander Migl",
+      "title": "File:BMW G05 45e IMG 3714.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_G05_45e_IMG_3714.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-bmw-x5-g05"]
+}

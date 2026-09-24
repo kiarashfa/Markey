@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Depreciation projection — SPEC.md §8.1, §9.
+   * Depreciation projection.
    *
    * Calls `lib/math/depreciation.ts`, and shows the model's own `workings`
    * array rather than just its answer. That is deliberate: this is a projection

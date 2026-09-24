@@ -1,0 +1,19 @@
+{
+  "id": "peugeot-208",
+  "name": "Peugeot 208",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "peugeot",
+  "productionYears": {
+    "start": 2012,
+    "end": null
+  },
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-peugeot-208"
+  ]
+}

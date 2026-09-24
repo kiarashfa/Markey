@@ -1,0 +1,16 @@
+{
+  "id": "fiat-uno",
+  "name": "Fiat Uno",
+  "fullName": "Fiat Uno (Type 146 / Type 327), 1983-2021",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "fiat",
+  "productionYears": {
+    "start": 1983,
+    "end": 2021
+  },
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-fiat-uno"]
+}

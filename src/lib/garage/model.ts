@@ -1,5 +1,5 @@
 /**
- * My Garage — the data model and every operation on it (SPEC.md §9.4).
+ * My Garage — the data model and every operation on it.
  *
  * Pure functions over plain data. No DOM, no storage, no Svelte: the island
  * calls these, and so do the tests, which is the only way the sharing rule
@@ -25,7 +25,7 @@
 export const GARAGE_FEATURE = 'garage';
 export const GARAGE_VERSION = 1;
 
-/** Fixed capacity tiers — SPEC.md §9.4. */
+/** Fixed capacity tiers. */
 export const CAPACITY_TIERS = [10, 20, 50] as const;
 export type Capacity = (typeof CAPACITY_TIERS)[number];
 

@@ -1,0 +1,237 @@
+{
+  "id": "renault-megane-classic",
+  "name": "Renault Mégane",
+  "fullName": "Renault Mégane (Mk1, X64), 1995-2003",
+  "kind": "generation",
+  "parent": "renault-megane",
+  "brandRef": "renault",
+  "generationCode": "X64",
+  "productionYears": {
+    "start": 1995,
+    "end": 2003
+  },
+  "bodyStyles": [
+    "hatchback",
+    "saloon",
+    "estate",
+    "coupe",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "designer": "Michel Jardin; Patrick Le Quément (design direction)",
+  "assembly": [
+    "Douai, France (hatchback)",
+    "Palencia, Spain",
+    "Nilüfer, Bursa, Turkey (Oyak-Renault, saloon and estate)",
+    "Osnabrück, Germany (Karmann, coupé and convertible)",
+    "Haren-Vilvoorde, Belgium",
+    "Santa Isabel, Córdoba, Argentina (Renault Argentina)",
+    "Envigado, Colombia (Sofasa)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4129,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-megane",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+      "sourceNote": "Hatchback body, published as a 4129-4164 mm range across model years; the lower figure is recorded here. Saloon, estate, coupé and convertible bodies are longer still and are not represented by this single figure."
+    },
+    "width": {
+      "value": 1698,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-megane",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+      "sourceNote": "Published as a 1698-1699 mm range; the lower figure is recorded here."
+    },
+    "height": {
+      "value": 1365,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-megane",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+      "sourceNote": "Published as a 1365-1420 mm range across body styles; the lower figure (a low-roof body) is recorded here."
+    },
+    "wheelbase": {
+      "value": 2468,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-megane",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+      "sourceNote": "The coupé and convertible's shorter wheelbase; hatchback, saloon and estate share a longer 2580 mm wheelbase. The lower figure across the two published values is recorded here."
+    }
+  },
+  "trims": [
+    {
+      "id": "16-16v-k4m",
+      "name": "1.6 16v",
+      "productionYears": {
+        "start": 1995,
+        "end": 2003
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "K4M",
+        "configuration": "inline-4 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1598,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-megane",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 81,
+        "unit": "kW",
+        "status": "estimated",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+        "sourceNote": "The engine table gives '110 hp' without stating whether this is mechanical horsepower or the metric PS a European manufacturer of this era would actually have quoted. Read as 110 PS (the near-universal European convention, and consistent with Renault's other 1990s spec sheets) and converted at 1 PS = 0.73549875 kW (80.9 kW, rounded to 81). Read as mechanical horsepower instead, the figure would be 82 kW."
+      },
+      "topSpeed": {
+        "value": 195,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+      },
+      "zeroToHundredKph": {
+        "value": 9.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "20-16v-f7r",
+      "name": "2.0 16v",
+      "productionYears": {
+        "start": 1995,
+        "end": 2003
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "F7R",
+        "configuration": "inline-4 16v",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1998,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-megane",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 110,
+        "unit": "kW",
+        "status": "estimated",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+        "sourceNote": "The engine table gives '150 hp' without a PS/mechanical-hp qualifier. Read as 150 PS, the European convention, and converted at 1 PS = 0.73549875 kW (110.3 kW). Read as mechanical horsepower instead, the figure would be 112 kW."
+      },
+      "topSpeed": {
+        "value": 215,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+      },
+      "zeroToHundredKph": {
+        "value": 8.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "19-dci-f9q",
+      "name": "1.9 dCi",
+      "productionYears": {
+        "start": 1999,
+        "end": 2003
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "F9Q",
+        "configuration": "inline-4, turbocharged common-rail diesel",
+        "cylinders": 4,
+        "displacement": {
+          "value": 1870,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-megane",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 77,
+        "unit": "kW",
+        "status": "estimated",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane",
+        "sourceNote": "The engine table gives '105 hp' without a PS/mechanical-hp qualifier. Read as 105 PS, the European convention, and converted at 1 PS = 0.73549875 kW (77.2 kW). Read as mechanical horsepower instead, the figure would be 78 kW."
+      },
+      "topSpeed": {
+        "value": 189,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+      },
+      "zeroToHundredKph": {
+        "value": 11.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-megane",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_M%C3%A9gane"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-megane-classic/hero.webp",
+    "alt": "Yellow first-generation Renault Mégane Coupé 16V photographed from the front three-quarter angle inside a museum",
+    "width": 1600,
+    "height": 1067,
+    "caption": "The first Mégane, launched in 1995 to replace the Renault 19, wearing the 'bird beak' grille borrowed from the 1960s Renault 16.",
+    "credit": {
+      "author": "Bene Riobó",
+      "title": "File:Renault Megane 16V.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_Megane_16V.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-renault-megane"
+  ]
+}

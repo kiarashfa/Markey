@@ -1,0 +1,24 @@
+{
+  "id": "trabant",
+  "name": "Trabant",
+  "legalName": "VEB Sachsenring Automobilwerke Zwickau",
+  "countryOfOrigin": "East Germany",
+  "founded": 1957,
+  "defunct": 1991,
+  "logo": {
+    "src": "/images/brands/trabant.svg",
+    "alt": "The IFA Trabant script logo in a stylised angular typeface",
+    "credit": {
+      "author": "Unknown",
+      "title": "File:IFA Trabant Logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:IFA_Trabant_Logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's cars, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence."
+    }
+  },
+  "accentColor": "#000000",
+  "accentColorNote": "The badge's own SVG source specifies no fill colour on its single path, which therefore renders at the SVG default of black (#000000). No separate brand-colour specification was published for VEB Sachsenring; the artwork itself is monochrome.",
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-trabant", "commons-file-ifa-trabant-logo-svg"]
+}

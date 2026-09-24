@@ -1,0 +1,147 @@
+{
+  "id": "mitsubishi-pajero-5",
+  "name": "Mitsubishi Pajero",
+  "fullName": "Mitsubishi Pajero (fifth generation), 2026-present",
+  "kind": "generation",
+  "parent": "mitsubishi-pajero",
+  "brandRef": "mitsubishi",
+  "productionYears": {
+    "start": 2026,
+    "end": null
+  },
+  "bodyStyles": [
+    "suv"
+  ],
+  "powertrains": [
+    "diesel"
+  ],
+  "drivetrains": [
+    "rwd",
+    "4wd"
+  ],
+  "segment": "suv-large",
+  "positioning": "mainstream",
+  "designer": "Norihiko Yoshimine; Alessandro D'ambrosio (executive design director)",
+  "assembly": [
+    "Laem Chabang, Thailand (Mitsubishi Motors Thailand)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4920,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero"
+    },
+    "width": {
+      "value": 1925,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero"
+    },
+    "height": {
+      "value": 1910,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero"
+    },
+    "wheelbase": {
+      "value": 2870,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero"
+    },
+    "kerbWeight": {
+      "value": 2383,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-mitsubishi-pajero",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero"
+    }
+  },
+  "trims": [
+    {
+      "id": "24-4n16",
+      "name": "2.4 4N16",
+      "productionYears": {
+        "start": 2026,
+        "end": null
+      },
+      "drivetrain": "4wd",
+      "powertrain": "diesel",
+      "transmission": "8-speed automatic (Aisin TL-80SN/TL-80NF)",
+      "gears": 8,
+      "engine": {
+        "code": "4N16",
+        "configuration": "2.4 L inline-4 turbodiesel",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 150,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-mitsubishi-pajero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+        "sourceNote": "150 kW, published directly in kW in the source. The only engine offered at launch, shared with the sixth-generation Mitsubishi Triton pickup this generation's platform is based on."
+      },
+      "torque": {
+        "value": 470,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-mitsubishi-pajero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+        "sourceNote": "Published as a 470-480 N⋅m range depending on variant; the lower figure is recorded here."
+      },
+      "mass": {
+        "value": 2383,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-mitsubishi-pajero",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero"
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/mitsubishi-pajero-5/hero.webp",
+    "alt": "Copper-coloured fifth-generation Mitsubishi Pajero photographed from the front three-quarter angle at its Tokyo launch event, showing its T-shaped LED daytime running lights",
+    "width": 1600,
+    "height": 773,
+    "caption": "The fifth-generation Pajero, unveiled in Tokyo in September 2026 after a five-year hiatus, returning to body-on-frame construction on a Mitsubishi Triton-derived platform.",
+    "credit": {
+      "author": "POV LÁI THỬ",
+      "title": "File:2026 Mitsubishi event in Tokyo - Pajero left front - POV LÁI THỬ.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2026_Mitsubishi_event_in_Tokyo_-_Pajero_left_front_-_POV_L%C3%81I_TH%E1%BB%AC.jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/mitsubishi-pajero-5/gallery-1.webp",
+      "alt": "Rear view of a light blue fifth-generation Mitsubishi Pajero at its launch event, showing its full-width T-shaped tail lamp and Pajero badging",
+      "width": 1200,
+      "height": 899,
+      "caption": "The spare wheel has moved from the tailgate to underneath the vehicle, a first for the Pajero.",
+      "credit": {
+        "author": "POV LÁI THỬ",
+        "title": "File:2026 Mitsubishi event in Tokyo - Pajero rear 2 - POV LÁI THỬ.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2026_Mitsubishi_event_in_Tokyo_-_Pajero_rear_2_-_POV_L%C3%81I_TH%E1%BB%AC.jpg",
+        "licenseType": "cc-by",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-mitsubishi-pajero"
+  ]
+}

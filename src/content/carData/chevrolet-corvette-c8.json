@@ -1,0 +1,194 @@
+{
+  "id": "chevrolet-corvette-c8",
+  "name": "Chevrolet Corvette (C8)",
+  "fullName": "Chevrolet Corvette (C8), 2020-present",
+  "kind": "generation",
+  "parent": "chevrolet-corvette",
+  "brandRef": "chevrolet",
+  "generationCode": "C8",
+  "productionYears": {
+    "start": 2020,
+    "end": null
+  },
+  "bodyStyles": ["coupe", "convertible"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "premium",
+  "designer": "Tom Peters",
+  "assembly": ["General Motors, Bowling Green, Kentucky, United States"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4630,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-corvette-c8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+      "sourceNote": "182.3 in, converted at 25.4 mm/in."
+    },
+    "width": {
+      "value": 1933,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-corvette-c8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+      "sourceNote": "76.1 in, converted at 25.4 mm/in."
+    },
+    "height": {
+      "value": 1234,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-corvette-c8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+      "sourceNote": "48.6 in, converted at 25.4 mm/in."
+    },
+    "wheelbase": {
+      "value": 2723,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-corvette-c8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+      "sourceNote": "107.2 in, converted at 25.4 mm/in."
+    },
+    "kerbWeight": {
+      "value": 1654,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-corvette-c8",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+      "sourceNote": "Stingray figure, 3,647 lb, converted at 0.45359237 kg/lb. The Z06 (3,666 lb / 1,663 kg), ZR1 (3,831 lb / 1,738 kg), E-Ray (3,965 lb / 1,798 kg) and ZR1X (4,162 lb / 1,888 kg) are all heavier."
+    }
+  },
+  "trims": [
+    {
+      "id": "stingray-lt2",
+      "name": "Stingray",
+      "productionYears": { "start": 2020, "end": 2026 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "8-speed dual-clutch automatic",
+      "gears": 8,
+      "engine": {
+        "code": "LT2",
+        "configuration": "V8, crossplane crank, OHV, dry sump",
+        "cylinders": 8,
+        "displacement": { "value": 6162, "unit": "cc", "status": "verified", "source": "wikipedia-chevrolet-corvette-c8", "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)", "sourceNote": "6.2 L, converted at 1000 cc/L." },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 365.4,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-corvette-c8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+        "sourceNote": "490 hp (SAE net) at 6,450 rpm, converted at 1 hp = 0.74569987 kW. The optional NPP sport exhaust raises this to 495 hp (369.1 kW)."
+      },
+      "torque": {
+        "value": 630,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-corvette-c8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+        "sourceNote": "465 lb-ft at 5,150 rpm, converted at 1.35581795 Nm/lb-ft."
+      },
+      "mass": {
+        "value": 1654,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-corvette-c8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+        "sourceNote": "3,647 lb, converted at 0.45359237 kg/lb."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "z06-lt6",
+      "name": "Z06",
+      "productionYears": { "start": 2022, "end": null },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "8-speed dual-clutch automatic",
+      "gears": 8,
+      "engine": {
+        "code": "LT6",
+        "configuration": "V8, flat-plane crank, DOHC",
+        "cylinders": 8,
+        "displacement": { "value": 5500, "unit": "cc", "status": "verified", "source": "wikipedia-chevrolet-corvette-c8", "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)", "sourceNote": "5.5 L, converted at 1000 cc/L." },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 499.6,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-corvette-c8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+        "sourceNote": "670 hp (SAE net) at 8,400 rpm, converted at 1 hp = 0.74569987 kW. Described by the source as the most powerful naturally aspirated production V8 built."
+      },
+      "torque": {
+        "value": 624,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-corvette-c8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+        "sourceNote": "460 lb-ft at 6,300 rpm, converted at 1.35581795 Nm/lb-ft."
+      },
+      "mass": {
+        "value": 1663,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-corvette-c8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+        "sourceNote": "3,666 lb, converted at 0.45359237 kg/lb."
+      },
+      "topSpeed": {
+        "value": 314,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-corvette-c8",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+        "sourceNote": "195 mph, converted at 1.609344 km/mi."
+      },
+      "seats": 2,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/chevrolet-corvette-c8/hero.webp",
+    "alt": "Red mid-engined Chevrolet Corvette C8 photographed from the front three-quarter angle at a motor show",
+    "width": 1600,
+    "height": 834,
+    "caption": "GM's first mid-engine production sports car since the Pontiac Fiero: an all-new aluminium structure with the V8 behind the driver instead of in front for the first time in the Corvette's history.",
+    "credit": {
+      "author": "Alexander Migl",
+      "title": "File:Chevrolet Corvette C8 IAA 2021 1X7A0156.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C8_IAA_2021_1X7A0156.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/chevrolet-corvette-c8/gallery-1.webp",
+      "alt": "Rear engine bay of a Chevrolet Corvette C8 showing the V8 mounted behind the passenger compartment",
+      "width": 1200,
+      "height": 801,
+      "caption": "The layout change that defines the C8: engine and transmission sit behind the two occupants, feeding an 8-speed dual-clutch gearbox with no manual option offered.",
+      "credit": {
+        "author": "Alexander Migl",
+        "title": "File:Chevrolet Corvette C8 IAA 2021 1X7A0182.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C8_IAA_2021_1X7A0182.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-chevrolet-corvette-c8"]
+}

@@ -1,5 +1,5 @@
 /**
- * Unit conversion and formatting — SPEC.md §8.1.
+ * Unit conversion and formatting.
  *
  * **SI is what is stored. Imperial is always computed on demand, client-side,
  * and never stored or indexed.** That rule is why this module exists as pure
@@ -173,7 +173,7 @@ export function kwh100kmToMpge(kwh100km: number): number | null {
 // ---------------------------------------------------------------------------
 
 /**
- * Power-to-weight in kW per tonne — SPEC.md §8.2.
+ * Power-to-weight in kW per tonne.
  *
  * Returns `null` for a non-positive mass rather than `Infinity`: a car with no
  * recorded mass has an unknown power-to-weight, not an infinite one.

@@ -1,0 +1,20 @@
+{
+  "id": "renault-4",
+  "name": "Renault 4",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "renault",
+  "productionYears": {
+    "start": 1961,
+    "end": null
+  },
+  "segment": "b-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-renault-4",
+    "wikipedia-renault-4-e-tech"
+  ]
+}

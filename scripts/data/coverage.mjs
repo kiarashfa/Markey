@@ -4,7 +4,7 @@
  *
  *   node scripts/data/coverage.mjs
  *
- * SPEC §14 makes the seed size a judgement — "keep adding diverse nameplates
+ * The seed size is a judgement — "keep adding diverse nameplates
  * until every taxonomy axis has real examples". That judgement needs a fact to
  * rest on, and a hand-maintained list of gaps in a document goes stale the
  * moment a batch lands. This reads the live content instead, so the answer to
@@ -31,7 +31,7 @@ const cars = readAll(CAR_DIR);
 const brands = readAll(BRAND_DIR);
 const generations = cars.filter((c) => c.kind !== 'model');
 
-/** Era buckets are computed from production years, never authored (SPEC §7). */
+/** Era buckets are computed from production years, never authored. */
 function erasOf(car) {
   const { start, end } = car.productionYears;
   const last = end ?? new Date().getFullYear();

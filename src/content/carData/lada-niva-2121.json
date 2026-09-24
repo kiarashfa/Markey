@@ -1,0 +1,126 @@
+{
+  "id": "lada-niva-2121",
+  "name": "Lada Niva (VAZ-2121)",
+  "fullName": "Lada Niva (VAZ-2121), 1977-1994",
+  "kind": "generation",
+  "parent": "lada-niva",
+  "brandRef": "lada",
+  "generationCode": "VAZ-2121",
+  "productionYears": {
+    "start": 1977,
+    "end": 1994
+  },
+  "bodyStyles": ["suv"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["4wd"],
+  "segment": "suv-small",
+  "positioning": "economy",
+  "designer": "Pyotr Prusov",
+  "assembly": ["AvtoVAZ, Tolyatti, Russia"],
+  "spotlight": false,
+  "dimensions": {
+    "length": {
+      "value": 3740,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lada-niva",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva",
+      "sourceNote": "Three-door hatchback body; the article records this as unchanged across the model's history."
+    },
+    "width": {
+      "value": 1680,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lada-niva",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva"
+    },
+    "height": {
+      "value": 1640,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lada-niva",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva"
+    },
+    "wheelbase": {
+      "value": 2200,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-lada-niva",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva"
+    },
+    "kerbWeight": {
+      "value": 1150,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-lada-niva",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva",
+      "sourceNote": "Weight given for the VAZ-2121 in the infobox."
+    }
+  },
+  "trims": [
+    {
+      "id": "vaz-2121-1600",
+      "name": "Niva 1600",
+      "productionYears": { "start": 1977, "end": 1994 },
+      "drivetrain": "4wd",
+      "powertrain": "petrol",
+      "transmission": "4-speed manual",
+      "gears": 4,
+      "engine": {
+        "code": "VAZ-2121",
+        "configuration": "inline-4, overhead camshaft",
+        "cylinders": 4,
+        "displacement": { "value": 1570, "unit": "cc", "status": "verified", "source": "wikipedia-lada-niva", "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva" },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 58.8,
+        "unit": "kW",
+        "status": "conflicting-sources",
+        "source": "wikipedia-lada-niva",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva",
+        "sourceNote": "The article's model-code table gives 58.8 kW (80 hp), which is the figure recorded here; the article's own prose separately states the same engine makes 76 PS (55.9 kW). The two are 5% apart and neither is identified as gross vs net, so both are recorded rather than one being silently discarded."
+      },
+      "torque": {
+        "value": 118,
+        "unit": "Nm",
+        "status": "conflicting-sources",
+        "source": "wikipedia-lada-niva",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva",
+        "sourceNote": "The article's model-code table gives 118 N-m; the prose separately states 126 N-m at 5,000 rpm for the same engine. Recorded here with both figures noted rather than picking one silently."
+      },
+      "mass": {
+        "value": 1150,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-lada-niva",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Lada_Niva"
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": [
+        { "market": "UK", "alsoKnownAs": "Lada Cossack / Hussar", "overrides": {} },
+        { "market": "Germany/Austria", "alsoKnownAs": "Lada Taiga", "overrides": {} }
+      ]
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/lada-niva-2121/hero.webp",
+    "alt": "Yellow original Lada Niva photographed from the front three-quarter angle in a car park, showing its boxy body and round headlights",
+    "width": 1600,
+    "height": 1048,
+    "caption": "Described by its own designers as \"a Renault 5 put on a Land Rover chassis\": a compact monocoque body with permanent four-wheel drive and a lockable centre differential.",
+    "credit": {
+      "author": "Niels de Wit from Lunteren, The Netherlands",
+      "title": "File:1982 Lada Niva (8870754922).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1982_Lada_Niva_(8870754922).jpg",
+      "licenseType": "cc-by",
+      "licenseVersion": "2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-lada-niva"]
+}

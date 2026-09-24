@@ -1,5 +1,5 @@
 /**
- * The `cars` collection — SPEC.md §5.1 and §5.2.
+ * The `cars` collection.
  *
  * One flat, self-referencing hierarchy: model hub → generation → halo trim,
  * all three living in the same collection and discriminated by `kind` +
@@ -39,7 +39,7 @@ export type CarKind = z.infer<typeof carKind>;
 // ---------------------------------------------------------------------------
 
 /**
- * Identity essentials only (SPEC.md §5.1). `.strict()` is deliberate: it makes
+ * Identity essentials only. `.strict()` is deliberate: it makes
  * the two-file discipline self-enforcing, so spec data can never start
  * drifting into the narrative file where nothing validates it.
  */
@@ -54,7 +54,7 @@ export const carNarrativeSchema = z
 export type CarNarrative = z.infer<typeof carNarrativeSchema>;
 
 // ---------------------------------------------------------------------------
-// Trim shape — SPEC.md §5.2
+// Trim shape
 // ---------------------------------------------------------------------------
 
 export const engineSpec = z.object({
@@ -81,8 +81,8 @@ export type EngineSpec = z.infer<typeof engineSpec>;
  *
  * Not a `PropertyValue`: money is not an SI quantity and carries a currency and
  * a market that a unit enum can't express. It exists because `depreciation.ts`
- * (SPEC.md §8.1) needs an original price to decay from — and because SPEC.md
- * §5.3 defines concepts as the collection *without* an MSRP, which implies
+ * needs an original price to decay from — and because the
+ * content model defines concepts as the collection *without* an MSRP, which implies
  * production cars have one.
  */
 export const priceRecord = z.object({
@@ -104,7 +104,7 @@ export type PriceRecord = z.infer<typeof priceRecord>;
  * Everything about a trim except its market variants.
  *
  * Split out so `marketVariants[].overrides` can be typed as a partial of
- * exactly this shape — the delta-override pattern of SPEC.md §5.2, where a US
+ * exactly this shape — the delta-override pattern, where a US
  * detune or a JDM compliance variant is authored as *only what changed*.
  */
 const trimCore = z.object({
@@ -114,7 +114,7 @@ const trimCore = z.object({
 
   engine: engineSpec.optional(),
   transmission: z.string().optional(),
-  /** Number of forward gears — feeds the §8.2 in-gear acceleration model. */
+  /** Number of forward gears — feeds the in-gear acceleration model. */
   gears: z.number().int().positive().optional(),
   drivetrain: drivetrainTag,
   powertrain: powertrainTag,
@@ -132,7 +132,7 @@ const trimCore = z.object({
   co2: propertyValue('g/km').optional(),
 
   /**
-   * Vehicle-dynamics inputs — SPEC.md §8.2. `dragCoefficient` is the one
+   * Vehicle-dynamics inputs. `dragCoefficient` is the one
    * genuinely new authoring field; `frontalArea` is published where known and
    * otherwise estimated (~0.85 x width x height) with status 'estimated', which
    * `primitives.ts` already forces to carry an explaining `sourceNote`.
@@ -158,7 +158,7 @@ const trimCore = z.object({
   weightDistributionFront: propertyValue('').optional(),
 
   /**
-   * Practicality — SPEC.md §8.1's Markey Score and §9.3's Matchmaker both
+   * Practicality — the Markey Score and the Matchmaker both
    * read these, and until Phase 10 nothing in the schema could supply them:
    * `score.ts` takes `bootLitres`, `matchmaker.ts` takes `seats` for the
    * `minSeats` dealbreaker, and both islands were passing a hardcoded `null`.
@@ -188,7 +188,7 @@ export const marketVariant = z.object({
   /** Name used in that market, if different. */
   alsoKnownAs: z.string().optional(),
   /**
-   * ONLY the fields that differ — the delta pattern (SPEC.md §5.2).
+   * ONLY the fields that differ — the delta pattern.
    *
    * Defaults to empty: plenty of market variants differ by name alone (the
    * same car sold as a GT86, an FR-S and a BRZ), and forcing an author to
@@ -224,7 +224,7 @@ export const carDataSchema = z
     generationCode: z.string().optional(),
     /**
      * Self-reference marking this entry as a facelift of another generation
-     * under the same model hub (SPEC.md §5.1) — no separate modelling concept
+     * under the same model hub — no separate modelling concept
      * for facelifts, just another `generation` with the same parent.
      */
     revisionOf: slug.optional(),
@@ -253,13 +253,13 @@ export const carDataSchema = z
     hero: imageRef.optional(),
     gallery: z.array(imageRef).default([]),
 
-    /** Eligible for the homepage spotlight carousel (SPEC.md §11.1). */
+    /** Eligible for the homepage spotlight carousel. */
     spotlight: z.boolean().default(false),
 
     ...trustFields,
   })
   .superRefine((car, ctx) => {
-    // --- the kind/parent discriminator (SPEC.md §5.1) ------------------------
+    // --- the kind/parent discriminator ------------------------
     if (car.kind === 'model' && car.parent !== null) {
       ctx.addIssue({
         code: 'custom',
@@ -298,14 +298,14 @@ export const carDataSchema = z
       });
     }
 
-    // Trims are rows on a generation (SPEC.md §5.2). A hub that carried its own
+    // Trims are rows on a generation. A hub that carried its own
     // trim list would duplicate — and eventually contradict — its generations.
     if (car.kind === 'model' && car.trims.length > 0) {
       ctx.addIssue({
         code: 'custom',
         path: ['trims'],
         message:
-          "kind 'model' is a hub and must not carry trims — they belong to its generation entries (SPEC.md §5.2)",
+          "kind 'model' is a hub and must not carry trims — they belong to its generation entries",
       });
     }
 

@@ -1,0 +1,219 @@
+{
+  "id": "peugeot-207-a7",
+  "name": "Peugeot 207",
+  "fullName": "Peugeot 207 (A7), 2006-2015",
+  "kind": "generation",
+  "parent": "peugeot-207",
+  "brandRef": "peugeot",
+  "generationCode": "A7",
+  "productionYears": {
+    "start": 2006,
+    "end": 2015
+  },
+  "bodyStyles": [
+    "hatchback",
+    "estate",
+    "convertible"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "assembly": [
+    "Poissy, France",
+    "Madrid, Spain",
+    "Trnava, Slovakia"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4045,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-207",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_207",
+      "sourceNote": "Hatchback body; the estate (207 SW) is 4164 mm and the coupé-cabriolet 4037 mm."
+    },
+    "width": {
+      "value": 1748,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-207",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_207"
+    },
+    "height": {
+      "value": 1472,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-207",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_207"
+    },
+    "wheelbase": {
+      "value": 2540,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-peugeot-207",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_207"
+    },
+    "kerbWeight": {
+      "value": 1243,
+      "unit": "kg",
+      "status": "verified",
+      "source": "wikipedia-peugeot-207",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_207",
+      "sourceNote": "Published in the infobox as a 1243-1283 kg range across engine variants; the lowest figure is recorded here at generation level rather than assigned to one trim."
+    }
+  },
+  "trims": [
+    {
+      "id": "16-vti-120",
+      "name": "1.6 VTi 120",
+      "productionYears": {
+        "start": 2006,
+        "end": 2015
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "EP6",
+        "configuration": "1.6 L inline-4 16v, Prince, Valvetronic",
+        "cylinders": 4,
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 89,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-207",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_207",
+        "sourceNote": "120 bhp, explicitly labelled bhp (mechanical/imperial horsepower) in the source, converted at 1 hp = 0.745699872 kW (89.5 kW, rounded to 89). Replaced the original 1.6 16v (TU5JP4) at the end of 2006."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gti-thp175",
+      "name": "GTi THP175",
+      "productionYears": {
+        "start": 2006,
+        "end": 2009
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "THP175 (Prince)",
+        "configuration": "1.6 L inline-4 16v turbocharged, developed with BMW",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 130,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-207",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_207",
+        "sourceNote": "175 bhp, explicitly labelled bhp in the source, converted at 1 hp = 0.745699872 kW (130.5 kW, rounded to 130). The same engine, badged THP150, made 150 bhp (111.9 kW) in the lower GT trim, not recorded separately here. Revised for the 2009 facelift; see the GTi THP184 trim."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "gti-thp184",
+      "name": "GTi THP184",
+      "productionYears": {
+        "start": 2009,
+        "end": 2015
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "code": "THP184 (Prince)",
+        "configuration": "1.6 L inline-4 16v turbocharged, developed with BMW",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 137,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-peugeot-207",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_207",
+        "sourceNote": "184 hp, read as bhp (mechanical horsepower) consistent with the pre-facelift 175 bhp figure the source explicitly labels, converted at 1 hp = 0.745699872 kW (137.2 kW, rounded to 137). Reached via engine-management software changes at the July 2009 facelift, without a change of engine code cited in the source."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "16-hdi-110",
+      "name": "1.6 HDi 110",
+      "productionYears": {
+        "start": 2006,
+        "end": 2015
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "engine": {
+        "code": "DV6 (PSA)",
+        "configuration": "1.6 L inline-4 16v turbocharged common-rail diesel (HDi)",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 81,
+        "unit": "kW",
+        "status": "estimated",
+        "source": "wikipedia-peugeot-207",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_207",
+        "sourceNote": "Published as '110 hp' with no PS/bhp qualifier, unlike the petrol turbo engines in the same article which are explicitly labelled bhp. Read as 110 PS, the reading the diesel HDi range is conventionally rated in, converted at 1 PS = 0.73549875 kW (80.9 kW, rounded to 81). Read as mechanical bhp instead, the figure would be 82 kW."
+      },
+      "seats": 5,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/peugeot-207/hero.webp",
+    "alt": "Black Peugeot 207 GTi hot hatch photographed from the front three-quarter angle in a car park, with yellow fog lamps and alloy wheels",
+    "width": 1600,
+    "height": 1200,
+    "caption": "The 207 GTi, Peugeot's hot-hatch flagship for the range, using a turbocharged engine co-developed with BMW.",
+    "credit": {
+      "author": "Sherwin",
+      "title": "File:Peugeot 207 GTI (1).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peugeot_207_GTI_(1).jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/peugeot-207/gallery-1.webp",
+      "alt": "White three-door Peugeot 207 hatchback photographed from the rear three-quarter angle",
+      "width": 1200,
+      "height": 694,
+      "caption": "An ordinary three-door 207, the volume-selling body the GTi shared its shell with.",
+      "credit": {
+        "author": "M 93",
+        "title": "File:Peugeot 207 3-Türer rear.JPG",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peugeot_207_3-T%C3%BCrer_rear.JPG",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-peugeot-207",
+    "rdw-peugeot-207"
+  ]
+}

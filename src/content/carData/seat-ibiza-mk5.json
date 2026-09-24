@@ -1,0 +1,146 @@
+{
+  "id": "seat-ibiza-mk5",
+  "name": "SEAT Ibiza",
+  "fullName": "SEAT Ibiza Mk5 (6F), 2017-present",
+  "kind": "generation",
+  "parent": "seat-ibiza",
+  "brandRef": "seat",
+  "generationCode": "6F",
+  "productionYears": {
+    "start": 2017,
+    "end": null
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "diesel",
+    "cng"
+  ],
+  "drivetrains": [
+    "fwd"
+  ],
+  "segment": "b-segment",
+  "positioning": "mainstream",
+  "designer": "Julio Lozano",
+  "assembly": [
+    "Martorell, Catalonia, Spain",
+    "Relizane, Algeria"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 4059,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-seat-ibiza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+    },
+    "width": {
+      "value": 1780,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-seat-ibiza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+    },
+    "height": {
+      "value": 1444,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-seat-ibiza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+    },
+    "wheelbase": {
+      "value": 2564,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-seat-ibiza",
+      "sourceUrl": "https://en.wikipedia.org/wiki/SEAT_Ibiza"
+    }
+  },
+  "trims": [
+    {
+      "id": "10-tsi",
+      "name": "1.0 TSI",
+      "productionYears": {
+        "start": 2017,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "petrol",
+      "engine": {
+        "configuration": "1.0 L inline-3 turbocharged",
+        "cylinders": 3,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": null,
+        "status": "placeholder",
+        "unit": "kW",
+        "sourceNote": "No power or torque figures for this generation's engines are published in the source, unlike every earlier Ibiza generation, which each carry a full engine specification table. Left as a placeholder rather than estimated from unrelated Volkswagen Group ratings for the same nominal engine size, which vary by state of tune."
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "16-tdi",
+      "name": "1.6 TDI",
+      "productionYears": {
+        "start": 2017,
+        "end": null
+      },
+      "drivetrain": "fwd",
+      "powertrain": "diesel",
+      "engine": {
+        "configuration": "1.6 L inline-4 turbocharged common-rail diesel",
+        "cylinders": 4,
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": null,
+        "status": "placeholder",
+        "unit": "kW",
+        "sourceNote": "No power or torque figures for this generation's engines are published in the source, unlike every earlier Ibiza generation, which each carry a full engine specification table."
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/seat-ibiza-mk5/hero.webp",
+    "alt": "Red current-generation SEAT Ibiza FR photographed from the front three-quarter angle at a motor show, showing the 2025 facelift's hexagonal grille",
+    "width": 1600,
+    "height": 988,
+    "caption": "The current, fifth-generation Ibiza in FR trim after its October 2025 facelift, on Volkswagen Group's MQB A0 platform.",
+    "credit": {
+      "author": "Alexander Migl",
+      "title": "File:2026 SEAT Ibiza FR 6F Auto Zuerich 2025 DSC 3262.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2026_SEAT_Ibiza_FR_6F_Auto_Zuerich_2025_DSC_3262.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/seat-ibiza-mk5/gallery-1.webp",
+      "alt": "Rear three-quarter view of a red current-generation SEAT Ibiza FR at a motor show, showing its full-width tail lamp and dual exhaust",
+      "width": 1200,
+      "height": 826,
+      "caption": "The 2025 facelift's rear treatment, with a full-width lighting signature.",
+      "credit": {
+        "author": "Alexander Migl",
+        "title": "File:2026 SEAT Ibiza FR 6F Auto Zuerich 2025 DSC 3261.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2026_SEAT_Ibiza_FR_6F_Auto_Zuerich_2025_DSC_3261.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-seat-ibiza"
+  ]
+}

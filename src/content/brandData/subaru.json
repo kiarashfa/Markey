@@ -1,0 +1,26 @@
+{
+  "id": "subaru",
+  "name": "Subaru",
+  "legalName": "Subaru Corporation",
+  "countryOfOrigin": "Japan",
+  "founded": 1953,
+  "website": "https://www.subaru.co.jp/en/",
+  "logo": {
+    "src": "/images/brands/subaru.svg",
+    "alt": "The Subaru wordmark in a stylised sans-serif typeface",
+    "credit": {
+      "author": "Subaru",
+      "title": "File:Subaru logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Subaru_logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes; the basis for display here is trademark nominative use, not a copyright licence."
+    }
+  },
+  "accentColor": "#000000",
+  "accentColorNote": "Sampled from the badge's own SVG source, which specifies no fill colour on its path and therefore renders in the SVG default of solid black. This is the wordmark rather than the six-star cluster emblem; no colour specification for either mark was found on Commons, so the mark actually on file is what is recorded rather than the widely recognised blue being guessed at.",
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-subaru"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "fiat",
+  "name": "Fiat",
+  "legalName": "FIAT Automobiles S.p.A.",
+  "countryOfOrigin": "Italy",
+  "founded": 1899,
+  "logo": {
+    "src": "/images/brands/fiat.svg",
+    "alt": "The FIAT wordmark in a plain sans-serif typeface",
+    "credit": {
+      "author": "FIAT",
+      "title": "File:FIAT logo (2020).svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:FIAT_logo_(2020).svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's cars, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes with an explicit 'trademarked' restriction; the basis for display here is trademark nominative use, not a copyright licence."
+    }
+  },
+  "accentColor": "#000000",
+  "accentColorNote": "The current wordmark's own SVG source specifies no fill colour on its path, which therefore renders at the SVG default of black (#000000). Fiat's own brand guidelines were not consulted as a source, per this site's rule against citing 'the commonly cited value.'",
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-fiat", "commons-file-fiat-logo-2020-svg"]
+}

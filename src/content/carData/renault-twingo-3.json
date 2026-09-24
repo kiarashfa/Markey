@@ -1,0 +1,437 @@
+{
+  "id": "renault-twingo-3",
+  "name": "Renault Twingo",
+  "fullName": "Renault Twingo (Mk3), 2014-2024",
+  "kind": "generation",
+  "parent": "renault-twingo",
+  "brandRef": "renault",
+  "generationCode": "Twingo III",
+  "productionYears": {
+    "start": 2014,
+    "end": 2024
+  },
+  "bodyStyles": [
+    "hatchback"
+  ],
+  "powertrains": [
+    "petrol",
+    "bev"
+  ],
+  "drivetrains": [
+    "rwd"
+  ],
+  "segment": "a-segment",
+  "positioning": "economy",
+  "designer": "Csaba Wittinger; Raphaël Linari",
+  "assembly": [
+    "Novo Mesto, Slovenia (Revoz)"
+  ],
+  "dimensions": {
+    "length": {
+      "value": 3590,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+    },
+    "width": {
+      "value": 1640,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+    },
+    "height": {
+      "value": 1550,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+    },
+    "wheelbase": {
+      "value": 2490,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-renault-twingo",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+    }
+  },
+  "trims": [
+    {
+      "id": "sce-70",
+      "name": "SCe 70",
+      "productionYears": {
+        "start": 2014,
+        "end": 2024
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "H4D 400",
+        "configuration": "rear mid-mounted inline-3, Nissan HR",
+        "cylinders": 3,
+        "displacement": {
+          "value": 999,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-twingo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+        },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 51,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "51 kW at 6,000 rpm, as published directly in kW in the manufacturer spec table."
+      },
+      "torque": {
+        "value": 91,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "91 N⋅m at 2,850 rpm."
+      },
+      "topSpeed": {
+        "value": 151,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+      },
+      "zeroToHundredKph": {
+        "value": 14.5,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+      },
+      "fuelEconomy": {
+        "value": 5.5,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "Manufacturer combined-cycle figure from the spec table, not attributed to a named test cycle in the source."
+      },
+      "co2": {
+        "value": 126,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "tce-90",
+      "name": "Energy TCe 90",
+      "productionYears": {
+        "start": 2014,
+        "end": 2024
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "H4Bt 401",
+        "configuration": "rear mid-mounted inline-3 turbocharged, Nissan HR",
+        "cylinders": 3,
+        "displacement": {
+          "value": 898,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-twingo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 66,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "66 kW at 5,500 rpm, as published directly in kW in the manufacturer spec table."
+      },
+      "torque": {
+        "value": 135,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "135 N⋅m at 2,500 rpm."
+      },
+      "topSpeed": {
+        "value": 165,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+      },
+      "zeroToHundredKph": {
+        "value": 10.8,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+      },
+      "fuelEconomy": {
+        "value": 4.9,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "Manufacturer combined-cycle figure from the spec table, not attributed to a named test cycle in the source."
+      },
+      "co2": {
+        "value": 111,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "tce-110-gt",
+      "name": "GT Energy TCe 110",
+      "productionYears": {
+        "start": 2016,
+        "end": 2024
+      },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "5-speed manual",
+      "gears": 5,
+      "engine": {
+        "code": "H4Bt 401",
+        "configuration": "rear mid-mounted inline-3 turbocharged, Nissan HR",
+        "cylinders": 3,
+        "displacement": {
+          "value": 898,
+          "unit": "cc",
+          "status": "verified",
+          "source": "wikipedia-renault-twingo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+        },
+        "aspiration": "turbocharged"
+      },
+      "power": {
+        "value": 80,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "80 kW at 5,750 rpm, as published directly in kW in the manufacturer spec table. Fitted to the sportier GT model, introduced November 2016."
+      },
+      "torque": {
+        "value": 170,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "170 N⋅m at 2,000 rpm."
+      },
+      "topSpeed": {
+        "value": 182,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+      },
+      "zeroToHundredKph": {
+        "value": 9.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+      },
+      "fuelEconomy": {
+        "value": 5.6,
+        "unit": "L/100km",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "Manufacturer combined-cycle figure from the spec table, not attributed to a named test cycle in the source."
+      },
+      "co2": {
+        "value": 128,
+        "unit": "g/km",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+      },
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "ze",
+      "name": "Twingo Electric (Z.E.)",
+      "productionYears": {
+        "start": 2020,
+        "end": 2024
+      },
+      "drivetrain": "rwd",
+      "powertrain": "bev",
+      "transmission": "Single-speed automatic",
+      "gears": 1,
+      "engine": {
+        "configuration": "rear-mounted synchronous electric motor, R80",
+        "aspiration": "electric"
+      },
+      "power": {
+        "value": 60,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "Published as 80 hp (US mechanical horsepower), converted at 1 hp = 0.745699872 kW (59.7 kW, rounded to 60)."
+      },
+      "torque": {
+        "value": 160,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "Published as 118 lb-ft, converted at 1 lb-ft = 1.3558179 N⋅m (160.0 Nm)."
+      },
+      "mass": {
+        "value": 1112,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+      },
+      "topSpeed": {
+        "value": 135,
+        "unit": "km/h",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "Published as 84 mph, converted at 1 mph = 1.609344 km/h (135.2 km/h, rounded to 135)."
+      },
+      "zeroToHundredKph": {
+        "value": 12.6,
+        "unit": "s",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+      },
+      "batteryCapacity": {
+        "value": 22,
+        "unit": "kWh",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+      },
+      "electricRange": {
+        "value": 180,
+        "unit": "km",
+        "status": "verified",
+        "source": "wikipedia-renault-twingo",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo",
+        "sourceNote": "WLTP rates the car at 180 km on the 'Full' sub-cycle and 250 km on the 'City' sub-cycle; the lower, full-cycle figure is recorded here. Both describe the same WLTP test, not conflicting sources."
+      },
+      "dimensions": {
+        "length": {
+          "value": 3615,
+          "unit": "mm",
+          "status": "verified",
+          "source": "wikipedia-renault-twingo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+        },
+        "width": {
+          "value": 1646,
+          "unit": "mm",
+          "status": "verified",
+          "source": "wikipedia-renault-twingo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+        },
+        "height": {
+          "value": 1541,
+          "unit": "mm",
+          "status": "verified",
+          "source": "wikipedia-renault-twingo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+        },
+        "wheelbase": {
+          "value": 2492,
+          "unit": "mm",
+          "status": "verified",
+          "source": "wikipedia-renault-twingo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+        },
+        "kerbWeight": {
+          "value": 1112,
+          "unit": "kg",
+          "status": "verified",
+          "source": "wikipedia-renault-twingo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Renault_Twingo"
+        }
+      },
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/renault-twingo-3/hero.webp",
+    "alt": "White five-door third-generation Renault Twingo photographed from the front three-quarter angle",
+    "width": 1600,
+    "height": 1012,
+    "caption": "The third Twingo, launched in 2014 with the engine moved to the rear and the wheels driving the back axle, a layout shared with the Smart Fortwo and Forfour.",
+    "credit": {
+      "author": "M 93",
+      "title": "File:Renault Twingo Dynamique (III) – Frontansicht, 24. Oktober 2015, Münster.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_Twingo_Dynamique_(III)_–_Frontansicht,_24._Oktober_2015,_Münster.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    }
+  },
+  "gallery": [
+    {
+      "src": "/images/cars/renault-twingo-3/gallery-1.webp",
+      "alt": "Rear three-quarter view of a white third-generation Renault Twingo showing the Twingo badge and split tail lamps",
+      "width": 1200,
+      "height": 768,
+      "caption": "The rear-hinged badge is the only clue from outside that the engine sits behind the rear seats rather than under the bonnet.",
+      "credit": {
+        "author": "M 93",
+        "title": "File:Renault Twingo Dynamique (III) – Heckansicht, 24. Oktober 2015, Münster.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_Twingo_Dynamique_(III)_–_Heckansicht,_24._Oktober_2015,_Münster.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+      }
+    },
+    {
+      "src": "/images/cars/renault-twingo-3/gallery-2.webp",
+      "alt": "Rear luggage compartment of a third-generation Renault Twingo SCe 70 with the boot floor removed to show the transversely mounted three-cylinder engine beneath",
+      "width": 1200,
+      "height": 900,
+      "caption": "The three-cylinder SCe 70 engine, mounted low and at an angle behind the rear seats to leave room for luggage above it.",
+      "credit": {
+        "author": "Cjp24",
+        "title": "File:2016 Renault Twingo III SCe 70 - engine.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Renault_Twingo_III_SCe_70_-_engine.jpg",
+        "licenseType": "cc-by-sa",
+        "licenseVersion": "4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    }
+  ],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-renault-twingo"
+  ]
+}

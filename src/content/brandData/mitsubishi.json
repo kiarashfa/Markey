@@ -1,0 +1,26 @@
+{
+  "id": "mitsubishi",
+  "name": "Mitsubishi",
+  "legalName": "Mitsubishi Motors Corporation",
+  "countryOfOrigin": "Japan",
+  "founded": 1970,
+  "website": "https://www.mitsubishi-motors.com",
+  "logo": {
+    "src": "/images/brands/mitsubishi.svg",
+    "alt": "The Mitsubishi three-diamond mark in red, next to the Mitsubishi Motors wordmark",
+    "credit": {
+      "author": "Mitsubishi Motors Corporation",
+      "title": "File:Mitsubishi motors new logo.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mitsubishi_motors_new_logo.svg",
+      "licenseType": "trademark-nominative-use",
+      "licenseNote": "Displayed unmodified to identify this manufacturer's own vehicles, editorially and without any suggestion of endorsement or affiliation. Commons records the file as public domain for copyright purposes; the basis for display here is trademark nominative use, not a copyright licence."
+    }
+  },
+  "accentColor": "#e60013",
+  "accentColorNote": "Sampled directly from the fill colour (#e60013) used for the three-diamond mark in the badge's own SVG source.",
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-mitsubishi-motors"
+  ]
+}

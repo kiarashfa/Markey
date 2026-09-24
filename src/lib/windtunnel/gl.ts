@@ -1,7 +1,7 @@
 /**
  * The thin WebGL2 layer the solver and the renderer share.
  *
- * Raw WebGL2, no Three.js. SPEC.md §3 assumed Three.js for rendering, but the
+ * Raw WebGL2, no Three.js. The original plan assumed Three.js for rendering, but the
  * reference solver it points at uses none — and a raymarch through a lattice
  * needs a fragment shader and a fullscreen triangle, not a scene graph. Adding
  * ~600 KB to a feature that must never enter another page's bundle would have
@@ -182,7 +182,7 @@ export function makeFramebuffer(
   return fbo;
 }
 
-/** Whether this device can run the tunnel at all (SPEC.md §9.5.1 gating). */
+/** Whether this device can run the tunnel at all (the capability gate). */
 let supportProbe: boolean | null = null;
 
 /**

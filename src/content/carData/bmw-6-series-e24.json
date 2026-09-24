@@ -138,7 +138,7 @@
         "value": null,
         "unit": "kW",
         "status": "placeholder",
-        "sourceNote": "Output varied by market and model year across the M90/M30B34/M30B35 engines. Not yet sourced per variant — a single figure here would be a guess, so the field stays empty (SPEC.md §2.3)."
+        "sourceNote": "Output varied by market and model year across the M90/M30B34/M30B35 engines. Not yet sourced per variant — a single figure here would be a guess, so the field stays empty."
       },
       "torque": {
         "value": null,
@@ -165,7 +165,7 @@
         "value": 2,
         "unit": "m2",
         "status": "estimated",
-        "sourceNote": "Estimated as 0.85 × width × height = 0.85 × 1.725 m × 1.365 m ≈ 2.00 m², the standing approximation documented in SPEC.md §8.2. Not a measured figure."
+        "sourceNote": "Estimated as 0.85 × width × height = 0.85 × 1.725 m × 1.365 m ≈ 2.00 m², the standing approximation described on the methodology page. Not a measured figure."
       },
       "prices": [],
       "marketVariants": [

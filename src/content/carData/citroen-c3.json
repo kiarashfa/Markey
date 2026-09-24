@@ -1,0 +1,19 @@
+{
+  "id": "citroen-c3",
+  "name": "Citroën C3",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "citroen",
+  "productionYears": {
+    "start": 2002,
+    "end": null
+  },
+  "segment": "b-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-citroen-c3"
+  ]
+}

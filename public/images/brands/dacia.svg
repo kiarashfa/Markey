@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   sodipodi:docname="Dacia_2021_Logo.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 937.5 413.82647"
+   height="116.79103mm"
+   width="264.58334mm"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:document-rotation="0"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="-9"
+     inkscape:window-height="991"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="-45.273429"
+     inkscape:cx="194.78103"
+     inkscape:zoom="0.47489224"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:pagecheckerboard="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-6376.5727,1923.4478)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Calque 1">
+    <path
+       id="path4147-2"
+       style="opacity:1;fill:#646b52;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.37967px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 6376.5727,-1923.4478 v 89.0034 h 321.3178 v 85.8696 h -321.3178 v 89.0033 h 351.1926 c 11.8453,0 21.5684,-4.9574 27.1289,-10.5897 l 90.4285,-85.1156 90.4284,85.1156 c 5.5606,5.6323 15.2838,10.5897 27.1289,10.5897 h 351.1926 v -89.0033 H 6992.755 v -85.8696 h 321.3176 v -89.0034 H 6962.88 c -11.8452,0 -21.5683,4.9574 -27.1289,10.5897 l -90.4284,85.1157 -90.4285,-85.1157 c -5.5605,-5.6323 -15.2836,-10.5897 -27.1289,-10.5897 z"
+       sodipodi:nodetypes="ccccccscccsccccccscccsc" />
+    <g
+       id="g4-2"
+       transform="matrix(0.68127315,0,0,0.68127315,6376.5727,-1611.8123)"
+       style="opacity:1;fill:#646b52;fill-opacity:1">
+      <path
+         fill="#646b52"
+         d="m 517.2,150 h 76.3 L 449.5,3.4 C 447.2,1.1 445.4,0 443.4,0 c -2,0 -3.8,1.1 -6.1,3.4 L 293.5,150 h 75.7 L 443,74 Z m 782.6,0 h 76.3 L 1232.1,3.4 C 1229.8,1.1 1228,0 1226,0 c -2,0 -3.8,1.1 -6.1,3.4 L 1076.1,150 h 75.7 l 73.8,-76 z M 217.2,141.9 277.1,81.1 c 2.1,-2.3 3.3,-4.1 3.3,-6.1 0,-2 -1.1,-3.8 -3.3,-6.1 L 217.2,8.1 C 210.9,1.8 206.6,0 197.4,0 H 0 V 50.7 H 182.2 L 208,75 182.3,99.3 H 0 V 150 h 197.4 c 9.3,0 13.5,-1.8 19.8,-8.1 z M 676.3,8.1 616.4,68.9 c -2.1,2.3 -3.3,4.1 -3.3,6.1 0,2 1.1,3.8 3.3,6.1 l 59.9,60.8 c 6.3,6.3 10.6,8.1 19.8,8.1 H 893.5 V 99.3 H 711.2 L 685.5,75 711.2,50.7 H 893.4 V 0 H 696.1 c -9.3,0 -13.6,1.8 -19.8,8.1 z M 971.7,150 h 58.7 V 0 h -58.7 z"
+         id="path2-8"
+         style="fill:#646b52;fill-opacity:1" />
+    </g>
+  </g>
+</svg>

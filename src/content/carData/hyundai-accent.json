@@ -1,0 +1,19 @@
+{
+  "id": "hyundai-accent",
+  "name": "Hyundai Accent",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "hyundai",
+  "productionYears": {
+    "start": 1994,
+    "end": null
+  },
+  "segment": "b-segment",
+  "positioning": "economy",
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-hyundai-accent"
+  ]
+}

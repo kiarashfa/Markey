@@ -1,0 +1,19 @@
+{
+  "id": "citroen-c4",
+  "name": "Citroën C4",
+  "kind": "model",
+  "parent": null,
+  "brandRef": "citroen",
+  "productionYears": {
+    "start": 2004,
+    "end": null
+  },
+  "segment": "c-segment",
+  "positioning": "mainstream",
+  "trims": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": [
+    "wikipedia-citroen-c4"
+  ]
+}

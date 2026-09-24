@@ -2,7 +2,7 @@
   "axis": "drivetrain",
   "urlPrefix": "drivetrain",
   "authored": true,
-  "note": "Starter vocabulary — SPEC.md §16. Which wheels are driven. AWD and 4WD are kept distinct because they behave differently in the §8.2 traction model: a part-time 4WD system with a locked transfer case is not the same launch case as an on-demand AWD system.",
+  "note": "Starter vocabulary. Which wheels are driven. AWD and 4WD are kept distinct because they behave differently in the traction model: a part-time 4WD system with a locked transfer case is not the same launch case as an on-demand AWD system.",
   "terms": [
     { "id": "fwd", "label": "Front-wheel drive", "aka": ["FWD"], "description": "Drive to the front axle only." },
     { "id": "rwd", "label": "Rear-wheel drive", "aka": ["RWD"], "description": "Drive to the rear axle only." },

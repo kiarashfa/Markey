@@ -1,0 +1,154 @@
+{
+  "id": "chevrolet-camaro-6th",
+  "name": "Chevrolet Camaro (sixth generation)",
+  "fullName": "Chevrolet Camaro (sixth generation), 2015-2023",
+  "kind": "generation",
+  "parent": "chevrolet-camaro",
+  "brandRef": "chevrolet",
+  "generationCode": "GM Alpha (6th gen)",
+  "productionYears": {
+    "start": 2015,
+    "end": 2023
+  },
+  "bodyStyles": ["coupe", "convertible"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["rwd"],
+  "segment": "s-segment",
+  "positioning": "mainstream",
+  "designer": "Hwasup Lee",
+  "assembly": ["General Motors, Lansing, Michigan, United States (Lansing Grand River Assembly)"],
+  "spotlight": true,
+  "dimensions": {
+    "length": {
+      "value": 4783,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-camaro-sixth-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(sixth_generation)",
+      "sourceNote": "188.3 in, converted at 25.4 mm/in. The China-market car is separately given as 188.4 in."
+    },
+    "width": {
+      "value": 1897,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-camaro-sixth-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(sixth_generation)",
+      "sourceNote": "74.7 in, converted at 25.4 mm/in."
+    },
+    "wheelbase": {
+      "value": 2812,
+      "unit": "mm",
+      "status": "verified",
+      "source": "wikipedia-chevrolet-camaro-sixth-generation",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(sixth_generation)",
+      "sourceNote": "110.7 in, converted at 25.4 mm/in."
+    }
+  },
+  "trims": [
+    {
+      "id": "ss-lt1",
+      "name": "SS (LT1)",
+      "productionYears": { "start": 2016, "end": 2023 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "LT1",
+        "configuration": "V8, shared with the Corvette C7",
+        "cylinders": 8,
+        "displacement": { "value": 6162, "unit": "cc", "status": "verified", "source": "wikipedia-chevrolet-camaro-sixth-generation", "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(sixth_generation)", "sourceNote": "6.2 L, converted at 1000 cc/L." },
+        "aspiration": "naturally-aspirated"
+      },
+      "power": {
+        "value": 339.3,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-camaro-sixth-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(sixth_generation)",
+        "sourceNote": "455 hp (SAE net) at 6,000 rpm, converted at 1 hp = 0.74569987 kW."
+      },
+      "torque": {
+        "value": 617,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-camaro-sixth-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(sixth_generation)",
+        "sourceNote": "455 lb-ft at 4,400 rpm, converted at 1.35581795 Nm/lb-ft."
+      },
+      "mass": {
+        "value": 1671,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-camaro-sixth-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(sixth_generation)",
+        "sourceNote": "3,685 lb, converted at 0.45359237 kg/lb. The automatic-transmission SS is separately given as 3,760 lb (1,705 kg)."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    },
+    {
+      "id": "zl1-lt4",
+      "name": "ZL1 (LT4)",
+      "productionYears": { "start": 2017, "end": 2023 },
+      "drivetrain": "rwd",
+      "powertrain": "petrol",
+      "transmission": "6-speed manual",
+      "gears": 6,
+      "engine": {
+        "code": "LT4",
+        "configuration": "V8, supercharged, shared with the Corvette Z06 (C7)",
+        "cylinders": 8,
+        "displacement": { "value": 6162, "unit": "cc", "status": "verified", "source": "wikipedia-chevrolet-camaro-sixth-generation", "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(sixth_generation)", "sourceNote": "6.2 L, converted at 1000 cc/L." },
+        "aspiration": "supercharged"
+      },
+      "power": {
+        "value": 484.7,
+        "unit": "kW",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-camaro-sixth-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(sixth_generation)",
+        "sourceNote": "650 hp (SAE net) at 6,400 rpm, converted at 1 hp = 0.74569987 kW."
+      },
+      "torque": {
+        "value": 881,
+        "unit": "Nm",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-camaro-sixth-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(sixth_generation)",
+        "sourceNote": "650 lb-ft at 3,600 rpm, converted at 1.35581795 Nm/lb-ft."
+      },
+      "mass": {
+        "value": 1760,
+        "unit": "kg",
+        "status": "verified",
+        "source": "wikipedia-chevrolet-camaro-sixth-generation",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Chevrolet_Camaro_(sixth_generation)",
+        "sourceNote": "3,880 lb, converted at 0.45359237 kg/lb."
+      },
+      "seats": 4,
+      "prices": [],
+      "marketVariants": []
+    }
+  ],
+  "hero": {
+    "src": "/images/cars/chevrolet-camaro-6th/hero.webp",
+    "alt": "Silver sixth-generation Chevrolet Camaro 2SS photographed from the front three-quarter angle on a city street",
+    "width": 1600,
+    "height": 766,
+    "caption": "The last Camaro: built on GM's Alpha platform shared with the Cadillac ATS, discontinued in December 2023 with no direct successor announced at the time.",
+    "credit": {
+      "author": "Kevauto",
+      "title": "File:2019 Chevrolet Camaro 2SS, front 11.9.19.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Chevrolet_Camaro_2SS,_front_11.9.19.jpg",
+      "licenseType": "cc-by-sa",
+      "licenseVersion": "4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  },
+  "gallery": [],
+  "lastVerified": "2026-09-24",
+  "reviewStatus": "agent-populated",
+  "references": ["wikipedia-chevrolet-camaro-sixth-generation"]
+}
