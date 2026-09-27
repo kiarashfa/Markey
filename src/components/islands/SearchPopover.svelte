@@ -213,23 +213,23 @@
   <button
     bind:this={trigger}
     type="button"
-    class="pressable inline-flex size-8 items-center justify-center rounded-full border border-line bg-surface-1 text-ink-secondary transition-colors duration-150 hover:border-line-strong hover:text-ink"
+    class="pressable inline-flex size-9 items-center justify-center rounded-full border border-line-strong text-ink-secondary transition-colors duration-150 hover:bg-surface-2 hover:text-ink"
     aria-label="Search"
     aria-expanded={open}
     aria-haspopup="dialog"
-    title="Search — press /"
+    title="Search (press /)"
     onclick={() => (open ? hide() : show())}
   >
     <svg
       aria-hidden="true"
-      viewBox="0 0 16 16"
-      class="size-4"
+      viewBox="0 0 24 24"
+      class="size-[17px]"
       fill="none"
       stroke="currentColor"
-      stroke-width="1.6"
+      stroke-width="1.8"
     >
-      <circle cx="7" cy="7" r="4.5"></circle>
-      <path d="M10.5 10.5 14 14" stroke-linecap="round"></path>
+      <circle cx="11" cy="11" r="6.5"></circle>
+      <line x1="15.8" y1="15.8" x2="20.5" y2="20.5"></line>
     </svg>
   </button>
 

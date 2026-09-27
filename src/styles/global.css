@@ -1,6 +1,22 @@
 @import "tailwindcss";
 
 /*
+ * Self-hosted type, bundled with the rest of the CSS: Barlow for text and
+ * Barlow Semi Condensed for display. Barlow was drawn from the visual language
+ * of the California vehicle code (highway signs and licence plates), which is
+ * the road's own typography, and its condensed cut sets a model name large
+ * without it running off a phone. Only the weights the site uses are loaded;
+ * each file carries its own unicode-range, so a page downloads only the
+ * scripts it actually sets.
+ */
+@import "@fontsource/barlow/400.css";
+@import "@fontsource/barlow/500.css";
+@import "@fontsource/barlow/600.css";
+@import "@fontsource/barlow/700.css";
+@import "@fontsource/barlow-semi-condensed/600.css";
+@import "@fontsource/barlow-semi-condensed/700.css";
+
+/*
  * Design tokens.
  *
  * Registered in `@theme` so Tailwind generates real utilities (`bg-surface-1`,
@@ -11,18 +27,14 @@
  */
 @theme {
   /*
-   * Two type registers. Both resolve to the platform's own
-   * font today: per apple-design §15, the system face already ships optical
-   * sizing, tracking tables and legibility tuning, and overriding it needs a
-   * reason. The registers are therefore distinguished by weight, size,
-   * tracking and leading — which is where the hierarchy actually lives.
-   * Selecting a bespoke display face is still open; when it
-   * lands it changes this one line and nothing else.
+   * Two type registers, one family: Barlow Semi Condensed for display, Barlow
+   * for everything else (see the imports at the top of this file). The system
+   * stack stays behind each as the fallback while the files load.
    */
-  --font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI Variable Display",
+  --font-display: "Barlow Semi Condensed", ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI Variable Text",
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "Barlow", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", Menlo,
     Consolas, monospace;
 
@@ -136,6 +148,15 @@
   --brand-accent: oklch(55% 0.13 250);
 
   /*
+   * The page frame the sibling sites share: 75rem wide, a gutter from 20px on
+   * a phone to 48px on a laptop. Read by name (`max-w-(--layout-max)` and
+   * `px-(--layout-gutter)`) rather than as a Tailwind step, so the frame is
+   * one value in one place.
+   */
+  --layout-max: 75rem;
+  --layout-gutter: clamp(1.25rem, 4vw, 3rem);
+
+  /*
    * Set here as the no-JavaScript default and overwritten inline by the head
    * script. It makes the browser's own surfaces — scrollbars, form controls,
    * date pickers — follow the theme too. Omitting it is the classic half-done
@@ -188,16 +209,17 @@
     font-family: var(--font-display);
     font-weight: 700;
     line-height: 1.02;
-    letter-spacing: -0.035em;
+    /* Less than a regular-width face wants: the condensed cut is already tight. */
+    letter-spacing: -0.015em;
     font-optical-sizing: auto;
     text-wrap: balance;
   }
 
   .type-title {
     font-family: var(--font-display);
-    font-weight: 650;
+    font-weight: 600;
     line-height: 1.12;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.005em;
     text-wrap: balance;
   }
 

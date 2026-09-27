@@ -1,6 +1,6 @@
 # Markey
 
-**Markey** (from *marque* + *key*) is a free, non-profit encyclopedia of production cars — no ads, no accounts, no trackers, and nothing to subscribe to.
+**Markey** (from *marque* + *key*) is a free, non-profit encyclopedia of production cars, with no ads, no accounts, and nothing to subscribe to.
 
 A *marque* is the automotive world's word for a car's make: its brand name, its manufacturer, the badge on the bonnet. Swapping the end of it for *key* is a small joke that happens to be true twice over — the key you turn, and a key into the database.
 
@@ -10,9 +10,11 @@ It also does the physics. Acceleration, top speed, drag, braking and energy use 
 
 Browse it by body style, powertrain, drivetrain, origin, segment, market position or decade — every one of those a view computed over tagged entries, so nothing breaks when a car is reclassified. Compare four cars side by side, narrow the catalog down to what you actually need, or work out what something costs to run at the price you actually pay.
 
-Nothing you do here leaves your browser. A garage, a comparison, a car you built — each lives in your own storage or travels in a link you choose to share, because there is no server to send it to.
+What you save stays in your browser. A garage, a comparison or a car you built lives in your own storage or travels in a link you choose to share, because there is no server to send it to.
 
 ---
+
+**Live site:** <https://kiarashfa.github.io/Markey/> · **Sibling encyclopedias:** [Xefy](https://kiarashfa.github.io/Xefy/) · [eXir](https://kiarashfa.github.io/eXir/) · **Markey** · [ARMAG](https://kiarashfa.github.io/ARMAG/)
 
 © 2026 Kiarash Farajzadehahary.
 

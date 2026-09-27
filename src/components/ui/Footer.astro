@@ -1,30 +1,57 @@
 ---
+/**
+ * The site footer: one quiet row of links and the copyright, with the sibling
+ * sites underneath. The same shape on all four sibling sites.
+ */
 import { href } from '../../lib/content/href.ts';
 
-const year = new Date().getUTCFullYear();
+const links = [
+  { label: 'About', url: href('about') },
+  { label: 'Methodology', url: href('methodology') },
+  { label: 'Attributions', url: href('attributions') },
+  { label: 'Source code', url: 'https://github.com/kiarashfa/Markey' },
+];
+
+/*
+ * The first year is fixed: it is when the project began. The current year is
+ * read when the site is built, so every deploy carries the right range without
+ * anyone editing it.
+ */
+const COPYRIGHT_START_YEAR = 2026;
+const buildYear = new Date().getFullYear();
+const years = buildYear > COPYRIGHT_START_YEAR ? `${COPYRIGHT_START_YEAR}–${buildYear}` : `${COPYRIGHT_START_YEAR}`;
+
+const siblings = [
+  { name: 'Xefy', subject: 'Recipes', url: 'https://kiarashfa.github.io/Xefy/' },
+  { name: 'eXir', subject: 'Drinks', url: 'https://kiarashfa.github.io/eXir/' },
+  { name: 'Markey', subject: 'Cars', url: 'https://kiarashfa.github.io/Markey/' },
+  { name: 'ARMAG', subject: 'Firearms', url: 'https://kiarashfa.github.io/ARMAG/' },
+];
+
+const link = 'text-ink-secondary transition-colors duration-150 hover:text-ink';
 ---
 
-<footer class="mt-16 border-t border-line bg-surface-1">
-  <div
-    class="mx-auto flex w-full max-w-6xl flex-col gap-6 px-5 py-10 text-sm text-ink-secondary sm:px-8"
-  >
-    <div class="flex flex-wrap gap-x-6 gap-y-2">
-      <a class="hover:text-ink" href={href('about')}>About</a>
-      <a class="hover:text-ink" href={href('methodology')}>Methodology</a>
-      <a class="hover:text-ink" href={href('attributions')}>Attributions</a>
+<footer class="mt-14 border-t border-line" data-pagefind-ignore>
+  <div class="mx-auto w-full max-w-(--layout-max) px-(--layout-gutter) pb-8 pt-5 text-[13px]">
+    <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
+      <nav class="flex flex-wrap items-center gap-x-5 gap-y-1.5" aria-label="Site">
+        <a class="type-title text-[15px] text-ink" href={href()}>Markey</a>
+        <ul class="flex flex-wrap gap-x-4 gap-y-1.5">
+          {links.map((l) => <li><a class={link} href={l.url}>{l.label}</a></li>)}
+        </ul>
+      </nav>
+      <p class="text-ink-muted sm:ml-auto">© {years} Kiarash Farajzadehahary</p>
     </div>
-
-    <p class="max-w-readable type-body">
-      A free, non-profit, ad-free, login-free encyclopedia of production cars.
-      No accounts, no tracking, no cookies — anything you save stays in your own
-      browser. Every figure carries its source and its confidence, and a figure
-      we don't have is shown as missing rather than guessed.
-    </p>
-
-    <p class="text-xs text-ink-muted">
-      &copy; {year} Markey. Vehicle data and photography are credited to their
-      sources on each page. Manufacturer names and logos are the trademarks of
-      their respective owners, used here only to identify their vehicles.
-    </p>
+    <nav class="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-xs text-ink-muted" aria-label="Sibling sites">
+      {
+        siblings.map((s) =>
+          s.name === 'Markey' ? (
+            <span class="text-ink-secondary" aria-current="true" title={s.subject}>{s.name}</span>
+          ) : (
+            <a class="hover:text-ink" href={s.url} title={s.subject}>{s.name}</a>
+          ),
+        )
+      }
+    </nav>
   </div>
 </footer>

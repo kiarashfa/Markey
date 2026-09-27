@@ -18,6 +18,17 @@
 import SearchPopover from '../islands/SearchPopover.svelte';
 import ThemeToggle from '../islands/ThemeToggle.svelte';
 import { assetHref, href, taxonomyHref } from '../../lib/content/href.ts';
+import favicon from '../../../public/favicon.svg?raw';
+
+/**
+ * The mark beside the wordmark is the favicon's own path, read at build time,
+ * so the tab and the header cannot drift into two drawings. It is inlined
+ * rather than used as an <img> because the file switches black/white on the
+ * OS scheme, and the header has to follow the site's theme instead: a reader
+ * on a light machine who chose dark would otherwise get a black mark on a
+ * black bar. `currentColor` follows whatever the header's ink is.
+ */
+const markPath = favicon.match(/<path d="([^"]+)"/)?.[1] ?? '';
 
 /** The catalogue: what the site holds. */
 const browse = [
@@ -57,23 +68,26 @@ const isCurrent = (url: string) => url !== href() && current.startsWith(url);
     Skip to content
   </a>
 
-  <div class="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 px-5 py-3 sm:px-8">
-    <a href={href()} class="pressable type-title shrink-0 text-lg tracking-tight"> Markey </a>
+  <div class="mx-auto flex w-full max-w-(--layout-max) flex-wrap items-center gap-x-6 gap-y-2 px-(--layout-gutter) py-3.5">
+    <a href={href()} class="pressable flex shrink-0 items-center gap-2.5 text-ink">
+      <svg viewBox="0 0 128 128" class="size-[26px]" aria-hidden="true"><path d={markPath} fill="currentColor" /></svg>
+      <span class="type-title text-[1.4rem] leading-none tracking-tight">Markey</span>
+    </a>
 
     <nav
       aria-label="Primary"
       class="order-3 min-w-0 flex-1 basis-full sm:order-none sm:basis-auto"
     >
-      <ul class="flex items-center gap-0.5 overflow-x-auto text-sm [scrollbar-width:none]">
+      <ul class="flex items-center gap-x-5 overflow-x-auto text-sm [scrollbar-width:none]">
         {
           browse.map((item) => (
             <li>
               <a
                 href={item.url}
                 aria-current={isCurrent(item.url) ? 'page' : undefined}
-                class="block whitespace-nowrap rounded-md px-2.5 py-1.5 text-ink-secondary transition-colors duration-150 hover:bg-surface-2 hover:text-ink aria-[current=page]:bg-surface-2 aria-[current=page]:text-ink"
+                class="group block whitespace-nowrap py-1 text-ink-secondary transition-colors duration-150 hover:text-ink aria-[current=page]:text-ink"
               >
-                {item.label}
+                <span class="border-b border-transparent pb-[3px] transition-colors duration-150 group-hover:border-[var(--brand-accent)] group-aria-[current=page]:border-[var(--brand-accent)]">{item.label}</span>
               </a>
             </li>
           ))
@@ -81,7 +95,7 @@ const isCurrent = (url: string) => url !== href() && current.startsWith(url);
 
         {/* A hairline, not a gap: the two groups are different in kind, and a
             wider gap alone reads as an accident of spacing. */}
-        <li aria-hidden="true" class="mx-1.5 h-4 w-px shrink-0 bg-line"></li>
+        <li aria-hidden="true" class="h-4 w-px shrink-0 bg-line"></li>
 
         {
           tools.map((item) => (
@@ -89,9 +103,9 @@ const isCurrent = (url: string) => url !== href() && current.startsWith(url);
               <a
                 href={item.url}
                 aria-current={isCurrent(item.url) ? 'page' : undefined}
-                class="block whitespace-nowrap rounded-md px-2.5 py-1.5 text-ink-secondary transition-colors duration-150 hover:bg-surface-2 hover:text-ink aria-[current=page]:bg-surface-2 aria-[current=page]:text-ink"
+                class="group block whitespace-nowrap py-1 text-ink-secondary transition-colors duration-150 hover:text-ink aria-[current=page]:text-ink"
               >
-                {item.label}
+                <span class="border-b border-transparent pb-[3px] transition-colors duration-150 group-hover:border-[var(--brand-accent)] group-aria-[current=page]:border-[var(--brand-accent)]">{item.label}</span>
               </a>
             </li>
           ))
@@ -108,13 +122,24 @@ const isCurrent = (url: string) => url !== href() && current.startsWith(url);
       Neither costs much: the theme island is tiny, and the search index — the
       expensive part — is only fetched when the panel is opened.
     */}
-    <div class="ml-auto flex shrink-0 items-center gap-1.5 sm:ml-0">
+    <div class="ml-auto flex shrink-0 items-center gap-2 sm:ml-0">
       <SearchPopover
         client:load
         indexUrl={assetHref('pagefind/pagefind.js')}
         searchUrl={href('search')}
       />
       <ThemeToggle client:load />
+      <a
+        href={href('about')}
+        class="pressable inline-flex size-9 items-center justify-center rounded-full border border-line-strong text-ink-secondary transition-colors duration-150 hover:bg-surface-2 hover:text-ink"
+        aria-label="About Markey"
+      >
+        <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"></circle>
+          <path d="M12 11.2v5.1"></path>
+          <path d="M12 7.9h.01" stroke-linecap="round"></path>
+        </svg>
+      </a>
     </div>
   </div>
 </header>

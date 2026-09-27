@@ -31,7 +31,7 @@ interface Props {
 
 const { config, term, terms, brandsById } = Astro.props;
 
-const title = term ? `${term.label} — ${config.title}` : config.title;
+const title = term ? `${term.label} · ${config.title}` : config.title;
 const heading = term ? term.label : config.title;
 
 const crumbs = [

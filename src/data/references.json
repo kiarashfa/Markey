@@ -1083,7 +1083,7 @@
       "accessed": "2026-09-04",
       "license": "CC BY-SA 4.0",
       "lang": "fr",
-      "note": "The Espace I infobox, on French Wikipedia. Used only for figures (power, kerb weight, top speed) not published on the English-language article, per PLAYBOOK.md §3: prose is written independently, in English, from the facts."
+      "note": "The Espace I infobox, on French Wikipedia. Used only for figures (power, kerb weight, top speed) not published on the English-language article. The prose is written independently, in English, from the facts."
     },
     {
       "key": "wikipedia-fr-renault-espace-iv",
@@ -1095,7 +1095,7 @@
       "accessed": "2026-09-04",
       "license": "CC BY-SA 4.0",
       "lang": "fr",
-      "note": "Used only for per-engine power figures not published on the English-language article, per PLAYBOOK.md §3."
+      "note": "Used only for per-engine power figures not published on the English-language article."
     },
     {
       "key": "wikipedia-tesla-cybertruck",
