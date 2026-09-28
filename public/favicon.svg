@@ -1,9 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
-    <path d="M50.4 78.5a75.1 75.1 0 0 0-28.5 6.9l24.2-65.7c.7-2 1.9-3.2 3.4-3.2h29c1.5 0 2.7 1.2 3.4 3.2l24.2 65.7s-11.6-7-28.5-7L67 45.5c-.4-1.7-1.6-2.8-2.9-2.8-1.3 0-2.5 1.1-2.9 2.7L50.4 78.5Zm-1.1 28.2Zm-4.2-20.2c-2 6.6-.6 15.8 4.2 20.2a17.5 17.5 0 0 1 .2-.7 5.5 5.5 0 0 1 5.7-4.5c2.8.1 4.3 1.5 4.7 4.7.2 1.1.2 2.3.2 3.5v.4c0 2.7.7 5.2 2.2 7.4a13 13 0 0 0 5.7 4.9v-.3l-.2-.3c-1.8-5.6-.5-9.5 4.4-12.8l1.5-1a73 73 0 0 0 3.2-2.2 16 16 0 0 0 6.8-11.4c.3-2 .1-4-.6-6l-.8.6-1.6 1a37 37 0 0 1-22.4 2.7c-5-.7-9.7-2-13.2-6.2Z" />
-    <style>
-        path { fill: #000; }
-        @media (prefers-color-scheme: dark) {
-            path { fill: #FFF; }
-        }
-    </style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- A flame riding a sport wheel: low-profile tyre, a thin gap before the rim
+       lip, five split spokes with a slight directional sweep, and a centre-lock
+       hub. The flame's base is an arc concentric with the tyre. One colour, with
+       every detail cut out through a mask, so the cuts show whatever is behind
+       the tab. The ink is dark on a light browser and light on a dark one. -->
+  <style>
+    :root { --ink: #171b20; }
+    @media (prefers-color-scheme: dark) {
+      :root { --ink: #f0f2f4; }
+    }
+  </style>
+  <defs>
+    <mask id="cut" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+      <rect width="32" height="32" fill="#fff"/>
+      <path d="M17.42 19.33L18.69 16.01A6.75 6.75 0 0 1 22.04 19.18L18.34 20.01A3.2 3.2 0 0 0 17.42 19.33ZM16.64 18L16.99 15.52A6.75 6.75 0 0 1 16.75 15.49L15.74 17.96A4.25 4.25 0 0 0 16.64 18ZM19.17 22.66L22.72 22.84A6.75 6.75 0 0 1 20.74 27.01L18.8 23.74A3.2 3.2 0 0 0 19.17 22.66ZM20.19 21.51L22.66 21.08A6.75 6.75 0 0 1 22.61 20.84L19.95 20.64A4.25 4.25 0 0 0 20.19 21.51ZM16.54 25.35L17.47 28.79A6.75 6.75 0 0 1 12.89 28.19L15.4 25.34A3.2 3.2 0 0 0 16.54 25.35ZM17.95 25.98L19.12 28.18A6.75 6.75 0 0 1 19.33 28.07L18.7 25.48A4.25 4.25 0 0 0 17.95 25.98ZM13.17 23.69L10.19 25.63A6.75 6.75 0 0 1 9.34 21.1L12.82 22.6A3.2 3.2 0 0 0 13.17 23.69ZM13.01 25.22L11.27 27.02A6.75 6.75 0 0 1 11.45 27.18L13.72 25.78A4.25 4.25 0 0 0 13.01 25.22ZM13.71 19.97L10.94 17.73A6.75 6.75 0 0 1 14.99 15.53L14.64 19.3A3.2 3.2 0 0 0 13.71 19.97ZM12.2 20.29L9.96 19.19A6.75 6.75 0 0 1 9.85 19.41L11.89 21.14A4.25 4.25 0 0 0 12.2 20.29Z" fill="#000" stroke="#000" stroke-width="0.6" stroke-linejoin="round"/>
+      <circle cx="16" cy="22.2" r="0.9" fill="#000"/>
+      <circle cx="16" cy="22.2" r="7.6" fill="none" stroke="#000" stroke-width="0.5"/>
+    </mask>
+  </defs>
+  <g fill="var(--ink)" mask="url(#cut)">
+    <circle cx="16" cy="22.2" r="9.4"/>
+    <path d="M10.1 13.88C9.5 12.3 9.6 10 11.4 7.9C11.6 9.3 12.3 10.2 13.3 10.6C13.1 7.4 14.4 4.7 16.9 2.6C16.6 5 17.4 6.6 18.6 8.1C19.5 8.1 20.3 7.4 20.7 6.5C22.3 8.6 22.7 11.2 21.9 13.88A 10.2 10.2 0 0 0 10.1 13.88Z"/>
+  </g>
 </svg>

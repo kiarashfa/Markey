@@ -41,10 +41,12 @@ export default {
     },
   },
 
-  // The favicon switches black/white with a media query a rasteriser does not
-  // evaluate; draw it in the theme's ink instead.
+  /**
+   * The favicon switches its ink with a media query, which a rasteriser does
+   * not evaluate. Resolve it for the theme being drawn.
+   */
   mark(svg, theme) {
     const ink = theme === 'dark' ? '#f0f2f4' : '#171b20';
-    return svg.replace(/<style>[\s\S]*?<\/style>/, '').replace('<path ', `<path fill="${ink}" `);
+    return svg.replace(/<style>[\s\S]*?<\/style>/, '').replaceAll('var(--ink)', ink);
   },
 };
