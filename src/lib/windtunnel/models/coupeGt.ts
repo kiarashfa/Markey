@@ -10,7 +10,7 @@
  * It is **not a model of any particular car**. Nothing here was measured from a
  * vehicle, and no manufacturer's surfacing is reproduced. A drag figure taken
  * from it describes this shape at this scale — not the car whose page it
- * appears on. DATA_SOURCES.md establishes why: there is no free, accurately
+ * appears on. the design establishes why: there is no free, accurately
  * licensed library of real car models, so sourcing one per car was never on the
  * table, and inventing one and calling it a Toyota would be exactly the kind of
  * plausible-looking fabrication the whole project refuses to do.

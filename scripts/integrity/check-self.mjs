@@ -12,7 +12,7 @@
  *   exit 1  →  a fixture the checks are supposed to catch slipped through,
  *              i.e. a check has rotted. This is the alarm.
  *
- * (Instruction.md's Phase 1 DoD phrases this as "check:self fails against the
+ * (the design's Phase 1 DoD phrases this as "check:self fails against the
  * broken fixtures". That describes the *checks* failing the fixtures — which
  * is what this script asserts. If the script itself exited non-zero on a
  * correct run, it could never serve as a CI gate, because CI would be

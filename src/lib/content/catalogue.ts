@@ -260,3 +260,61 @@ export async function buildCatalogue(): Promise<CatalogueCar[]> {
     .map((car) => toCatalogueCar(car, brandsById.get(car.data.brandRef)!, cars))
     .sort((a, b) => a.brandName.localeCompare(b.brandName) || a.yearStart - b.yearStart);
 }
+
+/**
+ * The catalogue as the browsing page needs it: identity, facets, years and the
+ * four headline figures, and nothing else.
+ *
+ * `catalogue.json` is the public export and carries every trim; that is right
+ * for a machine reader and far too heavy to hand a browser for a list of names.
+ * This light row is what `/catalog-index.json` publishes and what the `/cars/`
+ * island filters, so the page weighs the same at ten thousand cars as at a
+ * hundred.
+ */
+export interface CatalogIndexRow {
+  id: string;
+  name: string;
+  url: string;
+  generationCode: string | null;
+  brandId: string;
+  brandName: string;
+  accentColor: string;
+  logoSrc: string;
+  bodyStyles: string[];
+  powertrains: string[];
+  drivetrains: string[];
+  segment: string | null;
+  positioning: string | null;
+  eras: string[];
+  yearStart: number;
+  yearEnd: number | null;
+  powerKwMax: number | null;
+  zeroToHundredMinS: number | null;
+  topSpeedMaxKmh: number | null;
+  consumptionMinL100km: number | null;
+}
+
+export function toIndexRow(car: CatalogueCar): CatalogIndexRow {
+  return {
+    id: car.id,
+    name: car.name,
+    url: car.url,
+    generationCode: car.generationCode,
+    brandId: car.brandId,
+    brandName: car.brandName,
+    accentColor: car.accentColor,
+    logoSrc: car.logoSrc,
+    bodyStyles: car.bodyStyles,
+    powertrains: car.powertrains,
+    drivetrains: car.drivetrains,
+    segment: car.segment,
+    positioning: car.positioning,
+    eras: car.eras,
+    yearStart: car.yearStart,
+    yearEnd: car.yearEnd,
+    powerKwMax: car.powerKwMax,
+    zeroToHundredMinS: car.zeroToHundredMinS,
+    topSpeedMaxKmh: car.topSpeedMaxKmh,
+    consumptionMinL100km: car.consumptionMinL100km,
+  };
+}

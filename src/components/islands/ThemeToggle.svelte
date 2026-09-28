@@ -17,9 +17,8 @@
    * reader user is never guessing, and reaching any state takes at most two
    * presses.
    *
-   * **No animation.** review-animations/STANDARDS.md is explicit that
-   * frequently-used, keyboard-reachable controls should not animate — motion
-   * here would make an instant state change feel slow. The only movement is the
+   * **No animation.** Frequently used, keyboard-reachable controls should not
+   * animate: motion here would make an instant state change feel slow. The only movement is the
    * standard press feedback every button on the site has.
    */
   import { read, write } from '../../lib/storage/index.ts';

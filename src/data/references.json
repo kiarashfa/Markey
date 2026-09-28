@@ -21,7 +21,7 @@
       "revision": "1363256463",
       "accessed": "2026-08-17",
       "license": "CC BY-SA 4.0",
-      "note": "The nameplate article, thin by design — 6 infobox fields. Generation-level specs come from the E24 article instead (DATA_SOURCES.md).",
+      "note": "The nameplate article, thin by design — 6 infobox fields. Generation-level specs come from the E24 article instead.",
       "lang": "en"
     },
     {
@@ -68,7 +68,7 @@
       "revision": "1360737555",
       "accessed": "2026-08-17",
       "license": "CC BY-SA 4.0",
-      "note": "The aerodynamic source named in DATA_SOURCES.md — several hundred production and concept vehicles, 1921 to 2024.",
+      "note": "The aerodynamic source named in several hundred production and concept vehicles, 1921 to 2024.",
       "lang": "en"
     },
     {
@@ -136,7 +136,7 @@
       "revision": "1370024728",
       "accessed": "2026-08-18",
       "license": "CC BY-SA 4.0",
-      "note": "The nameplate article, thin by design in exactly the way DATA_SOURCES.md describes. Generation specs come from the Mk1 article.",
+      "note": "The nameplate article, thin by design in exactly the way the design describes. Generation specs come from the Mk1 article.",
       "lang": "en"
     },
     {
@@ -333,7 +333,7 @@
       "url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1995&Make=land%20rover&units=Metric&format=json",
       "accessed": "2026-08-18",
       "license": "Public domain (US Government work)",
-      "note": "Found during Phase 10 and not in DATA_SOURCES.md's survey. vPIC's Canadian Vehicle Specifications endpoint publishes curb weight, overall dimensions, track and front/rear weight distribution for cars from 1971 — the one free source found that carries kerb weight for vehicles Wikipedia leaves blank. Queried by model year 1995, which returns records stamped MYR 94 and 95; the County Classic record used here is MYR 94. Cross-checked against two cars with known weights (2004 Prius 1,335 kg, 1995 Discovery 1,990 kg) to confirm CW is curb weight in kilograms."
+      "note": "Found during Phase 10 and not's survey. vPIC's Canadian Vehicle Specifications endpoint publishes curb weight, overall dimensions, track and front/rear weight distribution for cars from 1971 — the one free source found that carries kerb weight for vehicles Wikipedia leaves blank. Queried by model year 1995, which returns records stamped MYR 94 and 95; the County Classic record used here is MYR 94. Cross-checked against two cars with known weights (2004 Prius 1,335 kg, 1995 Discovery 1,990 kg) to confirm CW is curb weight in kilograms."
     },
     {
       "key": "nrcan-fcr-bev-2012-2026",

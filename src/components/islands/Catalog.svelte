@@ -4,107 +4,104 @@
    *
    * **One filtered and sorted list drives both renderings.** The card grid and
    * the dense table are two views of the same `$derived` array, never two
-   * pipelines — so they can never give different answers to "what matches",
-   * which is the failure this structure exists to prevent.
+   * pipelines, so they can never give different answers to "what matches".
    *
-   * **Facets only offer terms with a live match.** A dropdown listing options
-   * that lead to zero results wastes the visitor's time and makes the catalog
-   * feel broken; the counts come from the currently-filtered set, so what you
-   * see is what you will get.
+   * **Built for ten thousand entries, not a hundred.** The page server-renders
+   * the first page only; the whole list is the light `catalog-index.json`,
+   * fetched once on load. Results are shown a page at a time behind "Show
+   * more", and every filter, the sort and the view live in the address bar, so
+   * any view is a link and Back undoes a change.
    *
-   * **Sort field and direction are separate controls**, not a single list of
-   * "Price ascending / Price descending / Name ascending / …" that doubles in
-   * length with every new column.
+   * **Each facet is a menu in the toolbar**, not an open list in a sidebar that
+   * grew with every term. Named vocabularies (brand, body style, powertrain,
+   * drivetrain) are alphabetical; the ordinal ones (segment, positioning, era)
+   * keep their natural order. Counts are taken against every other active
+   * filter, so what a term says it will give is what it gives.
    *
-   * Data arrives as a prop from `buildCatalogue()`, the same builder behind
-   * `/catalogue.json`, so the browsable catalog and the machine-readable
-   * export cannot disagree.
+   * **Sort field and direction are separate controls**, not a list that
+   * doubles in length with every new column.
    */
-  import type { CatalogueCar } from '../../lib/content/catalogue.ts';
+  import { onMount } from 'svelte';
+  import type { CatalogIndexRow } from '../../lib/content/catalogue.ts';
+  import FacetMenu from './FacetMenu.svelte';
 
   interface VocabTerm {
     id: string;
     label: string;
   }
 
+  type AxisKey = 'brand' | 'body' | 'powertrain' | 'drivetrain' | 'segment' | 'positioning' | 'era';
+
   interface Props {
-    cars: CatalogueCar[];
-    bodyStyleTerms: VocabTerm[];
-    powertrainTerms: VocabTerm[];
-    drivetrainTerms: VocabTerm[];
-    segmentTerms: VocabTerm[];
-    positioningTerms: VocabTerm[];
+    /** The first page, server-rendered. */
+    initial: CatalogIndexRow[];
+    /** How many entries the full list holds, for the count before it loads. */
+    total: number;
+    /** Base-aware URL of the light index. */
+    src: string;
+    /** Every axis's terms, already in display order. */
+    vocab: Record<AxisKey, VocabTerm[]>;
   }
 
-  let {
-    cars,
-    bodyStyleTerms,
-    powertrainTerms,
-    drivetrainTerms,
-    segmentTerms,
-    positioningTerms,
-  }: Props = $props();
+  const { initial, total, src, vocab }: Props = $props();
+
+  const PAGE = 48;
+
+  const AXES: { key: AxisKey; label: string; pick: (car: CatalogIndexRow) => string[] }[] = [
+    { key: 'brand', label: 'Brand', pick: (c) => [c.brandId] },
+    { key: 'body', label: 'Body style', pick: (c) => c.bodyStyles },
+    { key: 'powertrain', label: 'Powertrain', pick: (c) => c.powertrains },
+    { key: 'drivetrain', label: 'Drivetrain', pick: (c) => c.drivetrains },
+    { key: 'segment', label: 'Segment', pick: (c) => (c.segment ? [c.segment] : []) },
+    { key: 'positioning', label: 'Positioning', pick: (c) => (c.positioning ? [c.positioning] : []) },
+    { key: 'era', label: 'Era', pick: (c) => c.eras },
+  ];
 
   type SortField = 'name' | 'year' | 'power' | 'zeroToHundred' | 'topSpeed' | 'consumption';
   type View = 'grid' | 'table';
+
+  let cars = $state<CatalogIndexRow[]>(initial);
+  let loadState = $state<'loading' | 'ready' | 'failed'>('loading');
 
   let query = $state('');
   let view = $state<View>('grid');
   let sortField = $state<SortField>('year');
   let sortAscending = $state(true);
-
-  let selectedBodyStyles = $state<string[]>([]);
-  let selectedPowertrains = $state<string[]>([]);
-  let selectedDrivetrains = $state<string[]>([]);
-  let selectedSegments = $state<string[]>([]);
-  let selectedPositioning = $state<string[]>([]);
+  let limit = $state(PAGE);
+  let selected = $state<Record<AxisKey, string[]>>({
+    brand: [],
+    body: [],
+    powertrain: [],
+    drivetrain: [],
+    segment: [],
+    positioning: [],
+    era: [],
+  });
 
   const activeFilterCount = $derived(
-    selectedBodyStyles.length +
-      selectedPowertrains.length +
-      selectedDrivetrains.length +
-      selectedSegments.length +
-      selectedPositioning.length +
-      (query.trim() ? 1 : 0),
+    Object.values(selected).reduce((n, list) => n + list.length, 0) + (query.trim() ? 1 : 0),
   );
-
-  function toggle(list: string[], id: string): string[] {
-    return list.includes(id) ? list.filter((x) => x !== id) : [...list, id];
-  }
 
   function clearAll() {
     query = '';
-    selectedBodyStyles = [];
-    selectedPowertrains = [];
-    selectedDrivetrains = [];
-    selectedSegments = [];
-    selectedPositioning = [];
+    selected = { brand: [], body: [], powertrain: [], drivetrain: [], segment: [], positioning: [], era: [] };
   }
 
-  /** Matches any selected term, or everything when nothing is selected. */
-  function matchesAny(selected: string[], has: string[]): boolean {
-    return selected.length === 0 || selected.some((s) => has.includes(s));
-  }
-
-  const filtered = $derived.by(() => {
+  function passes(car: CatalogIndexRow, skip?: AxisKey): boolean {
     const needle = query.trim().toLowerCase();
-    return cars.filter((car) => {
-      if (needle) {
-        const haystack = `${car.name} ${car.brandName} ${car.generationCode ?? ''}`.toLowerCase();
-        if (!haystack.includes(needle)) return false;
-      }
-      if (!matchesAny(selectedBodyStyles, car.bodyStyles)) return false;
-      if (!matchesAny(selectedPowertrains, car.powertrains)) return false;
-      if (!matchesAny(selectedDrivetrains, car.drivetrains)) return false;
-      if (!matchesAny(selectedSegments, car.segment ? [car.segment] : [])) return false;
-      if (!matchesAny(selectedPositioning, car.positioning ? [car.positioning] : [])) return false;
-      return true;
-    });
-  });
+    if (needle) {
+      const haystack = `${car.name} ${car.brandName} ${car.generationCode ?? ''}`.toLowerCase();
+      if (!haystack.includes(needle)) return false;
+    }
+    for (const axis of AXES) {
+      if (axis.key === skip) continue;
+      const wanted = selected[axis.key];
+      if (wanted.length && !wanted.some((id) => axis.pick(car).includes(id))) return false;
+    }
+    return true;
+  }
 
   /**
-   * Sorted result.
-   *
    * Cars with no figure for the sort field always sink to the bottom,
    * regardless of direction. Sorting them as zero would put every
    * under-documented car at the top of an "ascending consumption" list and
@@ -112,7 +109,7 @@
    */
   const results = $derived.by(() => {
     const direction = sortAscending ? 1 : -1;
-    const key = (car: CatalogueCar): number | string | null => {
+    const key = (car: CatalogIndexRow): number | string | null => {
       switch (sortField) {
         case 'name':
           return `${car.brandName} ${car.name}`;
@@ -128,98 +125,48 @@
           return car.consumptionMinL100km;
       }
     };
-
-    return [...filtered].sort((a, b) => {
-      const ka = key(a);
-      const kb = key(b);
-      if (ka === null && kb === null) return 0;
-      if (ka === null) return 1;
-      if (kb === null) return -1;
-      if (typeof ka === 'string' && typeof kb === 'string') return ka.localeCompare(kb) * direction;
-      return ((ka as number) - (kb as number)) * direction;
-    });
+    return cars
+      .filter((car) => passes(car))
+      .sort((a, b) => {
+        const ka = key(a);
+        const kb = key(b);
+        if (ka === null && kb === null) return a.name.localeCompare(b.name);
+        if (ka === null) return 1;
+        if (kb === null) return -1;
+        if (typeof ka === 'string' && typeof kb === 'string') return ka.localeCompare(kb) * direction;
+        return ((ka as number) - (kb as number)) * direction || a.name.localeCompare(b.name);
+      });
   });
 
-  /**
-   * How many of the current results each term would match.
-   *
-   * Counted against the set filtered by *every other* facet, so a count tells
-   * you what selecting that term would actually give you rather than what it
-   * would give you in isolation.
-   */
-  function facetCounts(
-    terms: VocabTerm[],
-    pick: (car: CatalogueCar) => string[],
-    selected: string[],
-  ): { term: VocabTerm; count: number; selected: boolean }[] {
-    const base = cars.filter((car) => {
-      const needle = query.trim().toLowerCase();
-      if (needle) {
-        const haystack = `${car.name} ${car.brandName} ${car.generationCode ?? ''}`.toLowerCase();
-        if (!haystack.includes(needle)) return false;
+  const windowed = $derived(results.slice(0, limit));
+
+  /** What each term would leave, given every other filter; only terms with cars behind them. */
+  const facets = $derived(
+    AXES.map((axis) => {
+      const counts: Record<string, number> = {};
+      const present = new Set<string>();
+      for (const car of cars) {
+        for (const id of axis.pick(car)) present.add(id);
+        if (!passes(car, axis.key)) continue;
+        for (const id of axis.pick(car)) counts[id] = (counts[id] ?? 0) + 1;
       }
-      if (pick !== pickBodyStyles && !matchesAny(selectedBodyStyles, car.bodyStyles)) return false;
-      if (pick !== pickPowertrains && !matchesAny(selectedPowertrains, car.powertrains)) return false;
-      if (pick !== pickDrivetrains && !matchesAny(selectedDrivetrains, car.drivetrains)) return false;
-      if (pick !== pickSegment && !matchesAny(selectedSegments, car.segment ? [car.segment] : []))
-        return false;
-      if (
-        pick !== pickPositioning &&
-        !matchesAny(selectedPositioning, car.positioning ? [car.positioning] : [])
-      )
-        return false;
-      return true;
-    });
+      return {
+        ...axis,
+        counts,
+        terms: vocab[axis.key].filter((t) => present.has(t.id) || selected[axis.key].includes(t.id)),
+      };
+    }),
+  );
 
-    return terms
-      .map((term) => ({
-        term,
-        count: base.filter((car) => pick(car).includes(term.id)).length,
-        selected: selected.includes(term.id),
-      }))
-      // A term with no live match is dropped unless it is currently selected —
-      // hiding a selected filter would make it impossible to switch off.
-      .filter((row) => row.count > 0 || row.selected);
-  }
+  const labelOf = (axis: AxisKey, id: string) => vocab[axis].find((t) => t.id === id)?.label ?? id;
 
-  const pickBodyStyles = (car: CatalogueCar) => car.bodyStyles;
-  const pickPowertrains = (car: CatalogueCar) => car.powertrains;
-  const pickDrivetrains = (car: CatalogueCar) => car.drivetrains;
-  const pickSegment = (car: CatalogueCar) => (car.segment ? [car.segment] : []);
-  const pickPositioning = (car: CatalogueCar) => (car.positioning ? [car.positioning] : []);
+  /* A changed question starts again at the top of its answer. */
+  $effect(() => {
+    void [query, selected, sortField, sortAscending];
+    limit = PAGE;
+  });
 
-  const facets = $derived([
-    {
-      key: 'body-style',
-      label: 'Body style',
-      rows: facetCounts(bodyStyleTerms, pickBodyStyles, selectedBodyStyles),
-      onToggle: (id: string) => (selectedBodyStyles = toggle(selectedBodyStyles, id)),
-    },
-    {
-      key: 'powertrain',
-      label: 'Powertrain',
-      rows: facetCounts(powertrainTerms, pickPowertrains, selectedPowertrains),
-      onToggle: (id: string) => (selectedPowertrains = toggle(selectedPowertrains, id)),
-    },
-    {
-      key: 'drivetrain',
-      label: 'Drivetrain',
-      rows: facetCounts(drivetrainTerms, pickDrivetrains, selectedDrivetrains),
-      onToggle: (id: string) => (selectedDrivetrains = toggle(selectedDrivetrains, id)),
-    },
-    {
-      key: 'segment',
-      label: 'Segment',
-      rows: facetCounts(segmentTerms, pickSegment, selectedSegments),
-      onToggle: (id: string) => (selectedSegments = toggle(selectedSegments, id)),
-    },
-    {
-      key: 'positioning',
-      label: 'Positioning',
-      rows: facetCounts(positioningTerms, pickPositioning, selectedPositioning),
-      onToggle: (id: string) => (selectedPositioning = toggle(selectedPositioning, id)),
-    },
-  ]);
+  /* ── The address bar ─────────────────────────────────────────────────── */
 
   const SORT_LABELS: Record<SortField, string> = {
     name: 'Name',
@@ -230,56 +177,74 @@
     consumption: 'Consumption',
   };
 
-  const years = (car: CatalogueCar) =>
+  let urlReady = $state(false);
+
+  function readUrl() {
+    const p = new URLSearchParams(location.search);
+    const next = { ...selected };
+    for (const axis of AXES) next[axis.key] = (p.get(axis.key) ?? '').split(',').filter(Boolean);
+    selected = next;
+    query = p.get('q') ?? '';
+    const s = p.get('sort');
+    sortField = s && s in SORT_LABELS ? (s as SortField) : 'year';
+    sortAscending = p.get('dir') !== 'desc';
+    view = p.get('view') === 'table' ? 'table' : 'grid';
+  }
+
+  $effect(() => {
+    if (!urlReady) return;
+    const p = new URLSearchParams();
+    if (query.trim()) p.set('q', query.trim());
+    for (const axis of AXES) if (selected[axis.key].length) p.set(axis.key, selected[axis.key].join(','));
+    if (sortField !== 'year') p.set('sort', sortField);
+    if (!sortAscending) p.set('dir', 'desc');
+    if (view === 'table') p.set('view', 'table');
+    const qs = p.toString();
+    const next = `${location.pathname}${qs ? `?${qs}` : ''}${location.hash}`;
+    if (next !== `${location.pathname}${location.search}${location.hash}`) history.replaceState(null, '', next);
+  });
+
+  onMount(() => {
+    readUrl();
+    urlReady = true;
+    fetch(src)
+      .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+      .then((rows: CatalogIndexRow[]) => {
+        cars = rows;
+        loadState = 'ready';
+      })
+      .catch(() => (loadState = 'failed'));
+  });
+
+  const years = (car: CatalogIndexRow) =>
     car.yearEnd === null ? `${car.yearStart}–present` : `${car.yearStart}–${car.yearEnd}`;
 
   const num = (n: number | null, unit: string, decimals = 0) =>
-    n === null ? '—' : `${n.toLocaleString('en-GB', { minimumFractionDigits: decimals, maximumFractionDigits: decimals })} ${unit}`;
+    n === null
+      ? '—'
+      : `${n.toLocaleString('en-GB', { minimumFractionDigits: decimals, maximumFractionDigits: decimals })} ${unit}`;
 </script>
 
-<div class="flex flex-col gap-5">
-  <!-- Controls -->
-  <div class="flex flex-col gap-3">
+<div class="flex flex-col gap-4">
+  <!-- Controls: search, sort and view on one row; the facet menus on the next. -->
+  <div class="relative flex flex-col gap-3">
     <div class="flex flex-wrap items-center gap-2">
-      <label class="min-w-0 flex-1">
+      <label class="min-w-0 flex-1 basis-60">
         <span class="sr-only">Search the catalog</span>
         <input
           type="search"
           bind:value={query}
           placeholder="Search by name, brand or code…"
-          class="w-full rounded-lg border border-line bg-surface-1 px-3.5 py-2.5 text-sm placeholder:text-ink-muted focus:border-line-strong focus:outline-none"
+          class="w-full rounded-full border border-line bg-surface-1 px-4 py-2 text-sm placeholder:text-ink-muted focus:border-line-strong focus:outline-none"
         />
       </label>
 
-      <div class="flex items-center gap-1 rounded-lg border border-line bg-surface-1 p-1">
-        <button
-          type="button"
-          class="rounded px-2.5 py-1.5 text-xs font-medium transition-colors duration-150"
-          style={view === 'grid' ? 'background-color: var(--color-surface-3);' : ''}
-          aria-pressed={view === 'grid'}
-          onclick={() => (view = 'grid')}
-        >
-          Cards
-        </button>
-        <button
-          type="button"
-          class="rounded px-2.5 py-1.5 text-xs font-medium transition-colors duration-150"
-          style={view === 'table' ? 'background-color: var(--color-surface-3);' : ''}
-          aria-pressed={view === 'table'}
-          onclick={() => (view = 'table')}
-        >
-          Table
-        </button>
-      </div>
-    </div>
-
-    <!-- Sort field and direction are separate controls. -->
-    <div class="flex flex-wrap items-center gap-2">
       <label class="flex items-center gap-2 text-xs text-ink-secondary">
-        Sort by
-        <select data-pagefind-ignore
+        <span class="sr-only">Sort by</span>
+        <select
+          data-pagefind-ignore
           bind:value={sortField}
-          class="rounded-md border border-line bg-surface-1 px-2 py-1.5 text-xs text-ink focus:border-line-strong focus:outline-none"
+          class="h-9 rounded-full border border-line bg-surface-1 px-3 text-[13px] text-ink focus:border-line-strong focus:outline-none"
         >
           {#each Object.entries(SORT_LABELS) as [field, label] (field)}
             <option value={field}>{label}</option>
@@ -289,149 +254,170 @@
 
       <button
         type="button"
-        class="pressable rounded-md border border-line bg-surface-1 px-2.5 py-1.5 text-xs font-medium transition-colors duration-150 hover:border-line-strong"
+        class="pressable h-9 rounded-full border border-line px-3.5 text-[13px] text-ink-secondary transition-colors duration-150 hover:border-line-strong hover:text-ink"
         onclick={() => (sortAscending = !sortAscending)}
-        aria-label={sortAscending ? 'Sort descending' : 'Sort ascending'}
+        aria-label={sortAscending ? 'Sorted ascending; switch to descending' : 'Sorted descending; switch to ascending'}
       >
         {sortAscending ? '↑ Ascending' : '↓ Descending'}
       </button>
 
-      {#if activeFilterCount > 0}
-        <button
-          type="button"
-          class="pressable rounded-md border border-line bg-surface-2 px-2.5 py-1.5 text-xs font-medium transition-colors duration-150 hover:border-line-strong"
-          onclick={clearAll}
-        >
-          Clear {activeFilterCount} filter{activeFilterCount === 1 ? '' : 's'}
-        </button>
-      {/if}
-    </div>
-  </div>
-
-  <div class="grid gap-6 lg:grid-cols-[minmax(0,14rem)_1fr] lg:items-start">
-    <!-- Facets -->
-    <aside class="flex flex-col gap-4 lg:sticky lg:top-20">
-      {#each facets as facet (facet.key)}
-        {#if facet.rows.length > 0}
-          <fieldset class="min-w-0 rounded-lg border border-line bg-surface-1 p-3">
-            <legend class="px-1 text-xs font-medium uppercase tracking-wide text-ink-muted">
-              {facet.label}
-            </legend>
-            <ul class="mt-1 flex flex-col gap-0.5">
-              {#each facet.rows as row (row.term.id)}
-                <li>
-                  <label
-                    class="flex cursor-pointer items-center gap-2 rounded px-1.5 py-1 text-sm transition-colors duration-150 hover:bg-surface-2"
-                  >
-                    <input
-                      type="checkbox"
-                      checked={row.selected}
-                      onchange={() => facet.onToggle(row.term.id)}
-                      class="size-3.5 shrink-0 accent-[var(--brand-accent)]"
-                    />
-                    <span class="min-w-0 flex-1 truncate">{row.term.label}</span>
-                    <span class="shrink-0 text-xs tabular-nums text-ink-muted">{row.count}</span>
-                  </label>
-                </li>
-              {/each}
-            </ul>
-          </fieldset>
-        {/if}
-      {/each}
-    </aside>
-
-    <!-- Results -->
-    <div class="min-w-0">
-      <p class="mb-3 text-sm text-ink-secondary" aria-live="polite">
-        {results.length}
-        {results.length === 1 ? 'car' : 'cars'}
-        {#if activeFilterCount > 0}<span class="text-ink-muted"> of {cars.length}</span>{/if}
-      </p>
-
-      {#if results.length === 0}
-        <div class="rounded-lg border border-line bg-surface-1 p-6 text-center">
-          <p class="text-sm text-ink-secondary">Nothing matches those filters.</p>
+      <div class="flex items-center gap-1 rounded-full border border-line bg-surface-1 p-1">
+        {#each [['grid', 'Cards'], ['table', 'Table']] as [value, label] (value)}
           <button
             type="button"
-            class="pressable mt-3 rounded-md border border-line bg-surface-2 px-3 py-1.5 text-sm font-medium"
-            onclick={clearAll}
+            class={`rounded-full px-3 py-1 text-xs font-medium transition-colors duration-150 ${view === value ? 'bg-surface-3 text-ink' : 'text-ink-secondary'}`}
+            aria-pressed={view === value}
+            onclick={() => (view = value as View)}
           >
-            Clear all filters
+            {label}
           </button>
-        </div>
-      {:else if view === 'grid'}
-        <ul class="grid gap-3 sm:grid-cols-2">
-          {#each results as car (car.id)}
-            <li class="min-w-0">
-              <a
-                href={car.url}
-                class="pressable group flex h-full min-w-0 gap-4 rounded-lg border border-line bg-surface-1 p-4 transition-colors duration-150 hover:border-line-strong hover:bg-surface-2"
-                style={`--brand-accent: ${car.accentColor};`}
-              >
-                <span
-                  class="inline-flex size-8 shrink-0 items-center justify-center rounded-lg border border-line bg-white p-1"
-                >
-                  <img src={car.logoSrc} alt="" class="size-full object-contain" loading="lazy" />
-                </span>
-                <span class="min-w-0 flex-1">
-                  <span class="block truncate text-[0.6875rem] font-medium uppercase tracking-[0.12em] text-ink-muted">
-                    {car.brandName}{car.generationCode ? ` · ${car.generationCode}` : ''}
-                  </span>
-                  <span class="type-heading mt-1 block truncate text-base group-hover:underline">
-                    {car.name}
-                  </span>
-                  <span class="type-data mt-1 block text-sm text-ink-secondary">{years(car)}</span>
-                  {#if car.powerKwMax !== null || car.zeroToHundredMinS !== null}
-                    <span class="type-data mt-2 block text-xs text-ink-muted">
-                      {#if car.powerKwMax !== null}{num(car.powerKwMax, 'kW')}{/if}
-                      {#if car.powerKwMax !== null && car.zeroToHundredMinS !== null} · {/if}
-                      {#if car.zeroToHundredMinS !== null}{num(car.zeroToHundredMinS, 's', 1)} to 100{/if}
-                    </span>
-                  {/if}
-                </span>
-                <span
-                  aria-hidden="true"
-                  class="w-1 shrink-0 self-stretch rounded-full opacity-70"
-                  style="background-color: var(--brand-accent);"
-                ></span>
-              </a>
-            </li>
-          {/each}
-        </ul>
-      {:else}
-        <div class="overflow-x-auto rounded-lg border border-line">
-          <table class="type-data w-full min-w-[46rem] border-collapse text-sm">
-            <thead>
-              <tr class="border-b border-line bg-surface-2 text-left">
-                <th scope="col" class="px-3 py-2 font-medium">Car</th>
-                <th scope="col" class="px-3 py-2 font-medium">Years</th>
-                <th scope="col" class="px-3 py-2 text-right font-medium">Power</th>
-                <th scope="col" class="px-3 py-2 text-right font-medium">0–100</th>
-                <th scope="col" class="px-3 py-2 text-right font-medium">Top speed</th>
-                <th scope="col" class="px-3 py-2 text-right font-medium">Consumption</th>
-              </tr>
-            </thead>
-            <tbody>
-              {#each results as car (car.id)}
-                <tr class="border-b border-line last:border-b-0 hover:bg-surface-1">
-                  <th scope="row" class="px-3 py-2 text-left font-normal">
-                    <a class="font-medium hover:underline" href={car.url}>{car.name}</a>
-                    <span class="block text-xs text-ink-muted">{car.brandName}</span>
-                  </th>
-                  <td class="whitespace-nowrap px-3 py-2 text-ink-secondary">{years(car)}</td>
-                  <td class="whitespace-nowrap px-3 py-2 text-right tabular-nums">{num(car.powerKwMax, 'kW')}</td>
-                  <td class="whitespace-nowrap px-3 py-2 text-right tabular-nums">{num(car.zeroToHundredMinS, 's', 1)}</td>
-                  <td class="whitespace-nowrap px-3 py-2 text-right tabular-nums">{num(car.topSpeedMaxKmh, 'km/h')}</td>
-                  <td class="whitespace-nowrap px-3 py-2 text-right tabular-nums">{num(car.consumptionMinL100km, 'L/100 km', 1)}</td>
-                </tr>
-              {/each}
-            </tbody>
-          </table>
-        </div>
-        <p class="mt-2 text-xs text-ink-muted">
-          An em dash means we do not have that figure yet — it is not a zero.
-        </p>
-      {/if}
+        {/each}
+      </div>
     </div>
+
+    <div class="flex flex-wrap items-center gap-2">
+      {#each facets as facet (facet.key)}
+        {#if facet.terms.length > 1 || selected[facet.key].length > 0}
+          <FacetMenu
+            label={facet.label}
+            terms={facet.terms}
+            counts={facet.counts}
+            selected={selected[facet.key]}
+            onchange={(next) => (selected = { ...selected, [facet.key]: next })}
+          />
+        {/if}
+      {/each}
+    </div>
+
+    <!-- What is filtering the list right now, each chip removing its own filter. -->
+    {#if activeFilterCount > 0}
+      <div class="flex flex-wrap items-center gap-1.5">
+        {#if query.trim()}
+          <button
+            type="button"
+            class="inline-flex items-center gap-1.5 rounded-full border border-[var(--brand-accent)] px-2.5 py-0.5 text-xs text-ink"
+            onclick={() => (query = '')}>“{query.trim()}” <span aria-hidden="true" class="text-ink-muted">×</span></button
+          >
+        {/if}
+        {#each AXES as axis (axis.key)}
+          {#each selected[axis.key] as id (id)}
+            <button
+              type="button"
+              class="inline-flex items-center gap-1.5 rounded-full border border-[var(--brand-accent)] px-2.5 py-0.5 text-xs text-ink"
+              aria-label={`Remove ${labelOf(axis.key, id)}`}
+              onclick={() => (selected = { ...selected, [axis.key]: selected[axis.key].filter((x) => x !== id) })}
+            >
+              {labelOf(axis.key, id)} <span aria-hidden="true" class="text-ink-muted">×</span>
+            </button>
+          {/each}
+        {/each}
+        <button type="button" class="ml-1 text-xs text-ink-secondary underline underline-offset-2 hover:text-ink" onclick={clearAll}>
+          Clear all
+        </button>
+      </div>
+    {/if}
   </div>
+
+  <p class="text-sm text-ink-secondary" aria-live="polite">
+    {#if loadState === 'loading'}
+      Showing {windowed.length} of {total} cars · loading the rest…
+    {:else if loadState === 'failed'}
+      The full list could not be loaded; these are the first {cars.length} of {total} cars.
+    {:else}
+      {results.length}
+      {results.length === 1 ? 'car' : 'cars'}
+      {#if results.length !== cars.length}<span class="text-ink-muted"> of {cars.length}</span>{/if}
+    {/if}
+  </p>
+
+  {#if results.length === 0}
+    <div class="rounded-lg border border-line bg-surface-1 p-6 text-center">
+      <p class="text-sm text-ink-secondary">Nothing matches those filters.</p>
+      <button
+        type="button"
+        class="pressable mt-3 rounded-full border border-line bg-surface-2 px-3.5 py-1.5 text-sm font-medium"
+        onclick={clearAll}
+      >
+        Clear all filters
+      </button>
+    </div>
+  {:else if view === 'grid'}
+    <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {#each windowed as car (car.id)}
+        <li class="min-w-0">
+          <a
+            href={car.url}
+            class="pressable group flex h-full min-w-0 gap-4 rounded-lg border border-line bg-surface-1 p-4 transition-colors duration-150 hover:border-line-strong hover:bg-surface-2"
+            style={`--brand-accent: ${car.accentColor};`}
+          >
+            <span class="inline-flex size-8 shrink-0 items-center justify-center rounded-lg border border-line bg-white p-1">
+              <img src={car.logoSrc} alt="" class="size-full object-contain" loading="lazy" />
+            </span>
+            <span class="min-w-0 flex-1">
+              <span class="block truncate text-[0.6875rem] font-medium uppercase tracking-[0.12em] text-ink-muted">
+                {car.brandName}{car.generationCode ? ` · ${car.generationCode}` : ''}
+              </span>
+              <span class="type-heading mt-1 block truncate text-base group-hover:underline">{car.name}</span>
+              <span class="type-data mt-1 block text-sm text-ink-secondary">{years(car)}</span>
+              {#if car.powerKwMax !== null || car.zeroToHundredMinS !== null}
+                <span class="type-data mt-2 block text-xs text-ink-muted">
+                  {#if car.powerKwMax !== null}{num(car.powerKwMax, 'kW')}{/if}
+                  {#if car.powerKwMax !== null && car.zeroToHundredMinS !== null}
+                    ·
+                  {/if}
+                  {#if car.zeroToHundredMinS !== null}{num(car.zeroToHundredMinS, 's', 1)} to 100{/if}
+                </span>
+              {/if}
+            </span>
+            <span aria-hidden="true" class="w-1 shrink-0 self-stretch rounded-full opacity-70" style="background-color: var(--brand-accent);"
+            ></span>
+          </a>
+        </li>
+      {/each}
+    </ul>
+  {:else}
+    <div class="overflow-x-auto rounded-lg border border-line">
+      <table class="type-data w-full min-w-[46rem] border-collapse text-sm">
+        <thead>
+          <tr class="border-b border-line bg-surface-2 text-left">
+            <th scope="col" class="px-3 py-2 font-medium">Car</th>
+            <th scope="col" class="px-3 py-2 font-medium">Years</th>
+            <th scope="col" class="px-3 py-2 text-right font-medium">Power</th>
+            <th scope="col" class="px-3 py-2 text-right font-medium">0–100</th>
+            <th scope="col" class="px-3 py-2 text-right font-medium">Top speed</th>
+            <th scope="col" class="px-3 py-2 text-right font-medium">Consumption</th>
+          </tr>
+        </thead>
+        <tbody>
+          {#each windowed as car (car.id)}
+            <tr class="border-b border-line last:border-b-0 hover:bg-surface-1">
+              <th scope="row" class="px-3 py-2 text-left font-normal">
+                <a class="font-medium hover:underline" href={car.url}>{car.name}</a>
+                <span class="block text-xs text-ink-muted">{car.brandName}</span>
+              </th>
+              <td class="whitespace-nowrap px-3 py-2 text-ink-secondary">{years(car)}</td>
+              <td class="whitespace-nowrap px-3 py-2 text-right tabular-nums">{num(car.powerKwMax, 'kW')}</td>
+              <td class="whitespace-nowrap px-3 py-2 text-right tabular-nums">{num(car.zeroToHundredMinS, 's', 1)}</td>
+              <td class="whitespace-nowrap px-3 py-2 text-right tabular-nums">{num(car.topSpeedMaxKmh, 'km/h')}</td>
+              <td class="whitespace-nowrap px-3 py-2 text-right tabular-nums">{num(car.consumptionMinL100km, 'L/100 km', 1)}</td>
+            </tr>
+          {/each}
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-ink-muted">A missing figure is shown as a gap, never as a zero.</p>
+  {/if}
+
+  {#if results.length > windowed.length}
+    <div class="flex flex-col items-center gap-2 pt-2">
+      <button
+        type="button"
+        class="pressable rounded-full border border-line-strong px-6 py-2.5 text-sm font-medium transition-colors duration-150 hover:bg-surface-2"
+        onclick={() => (limit += PAGE)}
+      >
+        Show {Math.min(PAGE, results.length - windowed.length)} more
+      </button>
+      <span class="text-xs text-ink-muted">{windowed.length} of {results.length} shown</span>
+    </div>
+  {/if}
 </div>

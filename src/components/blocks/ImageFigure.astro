@@ -174,7 +174,7 @@ const popoverId = `credit-${image.src.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|
    * A native popover lands in the top layer, so it is centred by the UA rather
    * than positioned against the trigger. That is the right call here: CSS
    * anchor positioning is still uneven across browsers, and a small centred
-   * card is a pattern apple-design §7 explicitly exempts from origin-anchoring
+   * card is a pattern the design guidance explicitly exempts from origin-anchoring
    * ("modals appear centred in the viewport"). It also behaves better on a
    * phone than a tooltip pinned to the corner of a photograph.
    */
@@ -248,7 +248,7 @@ const popoverId = `credit-${image.src.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|
     transform: scale(0.94);
   }
 
-  /* Reduced motion keeps the fade, drops the scale (apple-design §14). */
+  /* Reduced motion keeps the fade, drops the scale. */
   @media (prefers-reduced-motion: reduce) {
     .credit-popover,
     .credit-popover:popover-open {

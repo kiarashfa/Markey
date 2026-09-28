@@ -1,6 +1,6 @@
 <script lang="ts">
   /**
-   * Homepage spotlight, built against `.claude/skills/apple-design`.
+   * Homepage spotlight, built to Apple's interaction principles.
    *
    * The one place on the site with a real motion budget. Everything below the
    * fold is calm reference content; this is the "wow" moment before it.
@@ -10,27 +10,32 @@
    * behaviours below are the whole point of the component — a library that
    * animates on a fixed timeline would fail every one of them.
    *
-   *  - **1:1 tracking** (apple-design §2). The track follows the pointer
+   *  - **1:1 tracking**. The track follows the pointer
    *    exactly, from the offset where it was grabbed. Pointer capture keeps
    *    tracking alive when the pointer leaves the element.
-   *  - **Interruptibility** (§3, the important one). The spring integrates from
+   *  - **Interruptibility** (the important one). The spring integrates from
    *    the *current on-screen* position and velocity, so a slide can be grabbed
    *    mid-flight and thrown back the other way with no jump and no dead time.
-   *  - **Velocity handoff** (§5). Release velocity becomes the spring's initial
+   *  - **Velocity handoff**. Release velocity becomes the spring's initial
    *    velocity, so there is no seam between dragging and animating.
-   *  - **Momentum projection** (§6). The landing slide is chosen from where the
+   *  - **Momentum projection**. The landing slide is chosen from where the
    *    flick is *going*, using Apple's exponential-decay projection — not from
    *    where the finger happened to lift.
-   *  - **Rubber-banding** (§9). Past the first or last slide, resistance rises
+   *  - **Rubber-banding**. Past the first or last slide, resistance rises
    *    rather than hitting an invisible wall.
-   *  - **Reduced motion** (§14) is a first-class path, not an afterthought: a
+   *  - **Reduced motion** is a first-class path, not an afterthought: a
    *    cross-fade with no transform motion and no drag, which is a gentler
    *    equivalent rather than the absence of feedback.
    *
-   * Deliberately does **not** auto-advance. The design calls the set
-   * "rotating", but an unattended auto-rotating hero steals control from the
-   * reader (apple-design §16, agency) and is a known accessibility problem. The
-   * curated set rotates when the curation changes.
+   * Deliberately does **not** auto-advance: an unattended auto-rotating hero
+   * steals control from the reader and is a known accessibility problem.
+   *
+   * **A fixed, small set.** The homepage passes five cars, picked weekly from
+   * the ones flagged for the spotlight, never the whole flagged list: a
+   * carousel whose length grows with the catalogue is a carousel nobody reaches
+   * the end of. Five also lets every slide be named in the controls, so the
+   * row under the hero is a set of labelled tabs rather than a string of dots
+   * that says only "there are more".
    */
 
   import {
@@ -71,7 +76,7 @@
 
   // --- spring -------------------------------------------------------------
   // Apple parameterises springs as (response, damping ratio) rather than
-  // (mass, stiffness, damping) — see apple-design §4. `response 0.42` with
+  // (mass, stiffness, damping). `response 0.42` with
   // damping just under 1 gives a settle that feels immediate without the
   // overshoot that would look silly on a full-bleed photograph.
   const RESPONSE = 0.42;
@@ -152,7 +157,7 @@
     velocity = 0;
 
     // Capture keeps tracking alive when the pointer leaves the element
-    // (apple-design §2). It throws if the pointer is already gone, which must
+    // It throws if the pointer is already gone, which must
     // not abort the drag — the drag still works without capture.
     try {
       (event.currentTarget as HTMLElement).setPointerCapture(event.pointerId);
@@ -166,7 +171,7 @@
     const delta = event.clientX - startX;
 
     // ~10px of hysteresis before committing to a horizontal drag, so a vertical
-    // page scroll that starts on the carousel isn't stolen (apple-design §10).
+    // page scroll that starts on the carousel isn't stolen.
     if (!committed) {
       if (Math.abs(delta) < 10) return;
       committed = true;
@@ -365,7 +370,7 @@
     </div>
 
     {#if multiple}
-      <div class="mx-auto flex w-full max-w-(--layout-max) items-center gap-3 px-(--layout-gutter) pb-6">
+      <div class="mx-auto flex w-full max-w-(--layout-max) items-center gap-2 px-(--layout-gutter) pb-6">
         <button
           type="button"
           class="pressable inline-flex size-9 items-center justify-center rounded-full border border-line bg-surface-0/80 backdrop-blur transition-colors duration-150 hover:bg-surface-1 disabled:opacity-40"
@@ -385,28 +390,31 @@
           <span aria-hidden="true">&rarr;</span>
         </button>
 
-        <ol class="flex flex-1 items-center justify-end gap-1.5">
+        <span class="type-data w-12 shrink-0 text-center text-xs tabular-nums text-ink-secondary" aria-hidden="true">
+          {index + 1} / {cars.length}
+        </span>
+
+        <!--
+          Every slide, named. The rule under the active one grows by `scaleX`,
+          not `width`, so a slide change never relayouts the row. On a phone
+          the row scrolls sideways rather than wrapping.
+        -->
+        <ol class="flex min-w-0 flex-1 items-stretch justify-end gap-1 overflow-x-auto [scrollbar-width:none]">
           {#each cars as car, i (car.id)}
-            <li>
-              <!--
-                The pill grows via `scaleX`, not `width`. Animating width would
-                relayout the row on every slide change — the exact thing
-                the motion rules forbid. The button keeps a constant 24x24 hit
-                area regardless of what the bar inside it is doing, so the touch
-                target never moves either.
-              -->
+            <li class="shrink-0">
               <button
                 type="button"
-                class="flex size-6 items-center justify-center"
+                class="group flex max-w-[11rem] flex-col items-start gap-1 rounded-md px-2.5 pb-1.5 pt-1 text-left transition-colors duration-150 hover:bg-surface-0/60"
                 onclick={() => goTo(i)}
                 aria-label={`Show ${car.name}`}
                 aria-current={i === index ? 'true' : undefined}
               >
+                <span class="block w-full truncate text-[0.625rem] font-medium uppercase tracking-[0.12em] text-ink-muted">{car.kicker}</span>
+                <span class={`block w-full truncate text-sm ${i === index ? 'text-ink' : 'text-ink-secondary group-hover:text-ink'}`}>{car.name}</span>
                 <span
-                  class="block h-1.5 w-6 rounded-full transition-[transform,background-color] duration-200 ease-out"
-                  style={`transform: scaleX(${i === index ? 1 : 0.25}); background-color: ${
-                    i === index ? 'var(--brand-accent)' : 'var(--color-line-strong)'
-                  };`}
+                  aria-hidden="true"
+                  class="block h-0.5 w-full origin-left rounded-full transition-[transform,background-color] duration-200 ease-out"
+                  style={`transform: scaleX(${i === index ? 1 : 0}); background-color: var(--brand-accent);`}
                 ></span>
               </button>
             </li>

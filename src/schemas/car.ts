@@ -152,7 +152,7 @@ const trimCore = z.object({
    * launches differently from the 62/38 the model assumes for front-drive.
    *
    * Sourceable: NHTSA's Canadian Vehicle Specifications publishes it as `WD`
-   * (e.g. `60/40`, front/rear) for cars back to 1971 — see DATA_SOURCES.md's
+   * (e.g. `60/40`, front/rear) for cars back to 1971 —'s
    * 2026-08-18 addendum. Store the front figure as a fraction: 60/40 → 0.60.
    */
   weightDistributionFront: propertyValue('').optional(),

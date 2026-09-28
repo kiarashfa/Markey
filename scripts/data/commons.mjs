@@ -353,7 +353,7 @@ async function cmdDownload(rawFile, carSlug, basename) {
     // with different obligations, and the schema requires the honest one.
     console.error(
       `NOTE: this is a brand mark. Set licenseType 'trademark-nominative-use' with a licenseNote, ` +
-        `not '${meta.licenseType}' — see PLAYBOOK §1.4 rule 9.`,
+        `not '${meta.licenseType}' — see PLAYBOOK rule 9.`,
     );
   }
   console.log(JSON.stringify(imageRef, null, 2));
@@ -362,7 +362,7 @@ async function cmdDownload(rawFile, carSlug, basename) {
 /**
  * `sheet <name> "File:A.jpg" "File:B.jpg" …` — one numbered grid, for triage.
  *
- * §1.3 has you choose from what `find` listed, and choosing means looking.
+ * has you choose from what `find` listed, and choosing means looking.
  * Opening three to five candidates at 1600 px each in order to reject most of
  * them is the expensive way to do that: the sibling recipe site measured 321 k
  * tokens for 70 subjects before it worked this way. One small sheet is a single

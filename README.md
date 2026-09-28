@@ -14,10 +14,10 @@ What you save stays in your browser. A garage, a comparison or a car you built l
 
 ---
 
-**Live site:** <https://kiarashfa.github.io/Markey/> · **Sibling encyclopedias:** [Xefy](https://kiarashfa.github.io/Xefy/) · [eXir](https://kiarashfa.github.io/eXir/) · **Markey** · [ARMAG](https://kiarashfa.github.io/ARMAG/)
+**Live site:** <https://kiarashfa.github.io/Markey/>
 
 © 2026 Kiarash Farajzadehahary.
 
 ⚖ Licensed under the [KFA Source-Available License 1.0](LICENSE).
 
-Made with ❤️ and `½ · ρ · v² · Cd · A`
+Made with ❤️ for those who find joy in every mile.

@@ -3,68 +3,102 @@
   "expected": [
     {
       "file": "test-fixtures/broken-content/content/cars/orphan-narrative.mdx",
-      "rules": ["pairing/missing-data"],
+      "rules": [
+        "pairing/missing-data"
+      ],
       "why": "a narrative file with no structured-data sibling must not build — the two-file pattern is the whole content model"
     },
     {
       "file": "test-fixtures/broken-content/content/carData/orphan-data.json",
-      "rules": ["pairing/missing-narrative"],
+      "rules": [
+        "pairing/missing-narrative"
+      ],
       "why": "a data file with no narrative sibling would render as a page with no prose"
     },
     {
       "file": "test-fixtures/broken-content/content/cars/wrong-id.mdx",
-      "rules": ["id/filename-mismatch"],
+      "rules": [
+        "id/filename-mismatch"
+      ],
       "why": "the filename is the URL slug; an id that disagrees with it makes every cross-reference ambiguous"
     },
     {
       "file": "test-fixtures/broken-content/content/carData/wrong-id.json",
-      "rules": ["id/filename-mismatch"],
+      "rules": [
+        "id/filename-mismatch"
+      ],
       "why": "same rule, enforced on the data side of the pair as well as the narrative side"
     },
     {
       "file": "test-fixtures/broken-content/content/cars/identity-drift.mdx",
-      "rules": ["id/narrative-data-mismatch"],
+      "rules": [
+        "id/narrative-data-mismatch"
+      ],
       "why": "the paired files must agree on identity, or the page's title and its specs describe different cars"
     },
     {
       "file": "test-fixtures/broken-content/content/carData/dangling-parent.json",
-      "rules": ["parent/unresolved"],
+      "rules": [
+        "parent/unresolved"
+      ],
       "why": "an unresolved parent breaks breadcrumbs, the parent-chain walker, and the model hub's generation list"
     },
     {
       "file": "test-fixtures/broken-content/content/carData/misparented-trim.json",
-      "rules": ["parent/wrong-kind"],
+      "rules": [
+        "parent/wrong-kind"
+      ],
       "why": "the kind/parent discriminator is the load-bearing piece of the content model — a trim hangs off a generation, never off a model hub"
     },
     {
       "file": "test-fixtures/broken-content/content/carData/childless-hub.json",
-      "rules": ["hub/no-generation"],
+      "rules": [
+        "hub/no-generation"
+      ],
       "why": "Every model hub must have at least one generation, even for a nameplate that only ever had one version, so templates never special-case a childless hub"
     },
     {
       "file": "test-fixtures/broken-content/content/carData/dangling-brand.json",
-      "rules": ["brand-ref/unresolved"],
+      "rules": [
+        "brand-ref/unresolved"
+      ],
       "why": "brandRef drives the Origin taxonomy axis and the hero band's logo and accent colour — an unresolved one renders a car with no brand identity"
     },
     {
       "file": "test-fixtures/broken-content/content/carData/dangling-citation.json",
-      "rules": ["citation/unresolved"],
+      "rules": [
+        "citation/unresolved"
+      ],
       "why": "Every number has a citation. A citation key pointing at nothing is a number with no provenance, which is the same thing as an uncited number"
     },
     {
       "file": "test-fixtures/broken-content/content/carData/fabricated-placeholder.json",
-      "rules": ["schema/invalid"],
+      "rules": [
+        "schema/invalid"
+      ],
       "why": "THE important one: a plausible-looking invented figure hiding behind status 'placeholder', an 'estimated' value that never says how it was estimated, and a 'verified' value with no source. This is precisely the failure mode 'no fabricated data, ever' exists to stop"
     },
     {
       "file": "test-fixtures/broken-content/content/carData/invalid-tag.json",
-      "rules": ["schema/invalid"],
+      "rules": [
+        "schema/invalid"
+      ],
       "why": "an unlisted taxonomy tag must fail the build naming the vocabulary file to fix, rather than silently creating an orphan taxonomy page"
     },
     {
       "file": "test-fixtures/broken-content/content/brandData/unlicensed-logo.json",
-      "rules": ["image/missing-license", "schema/invalid"],
+      "rules": [
+        "image/missing-license",
+        "schema/invalid"
+      ],
       "why": "every image's legal basis must be auditable rather than assumed — an image with no recorded licence must never reach the site"
+    },
+    {
+      "file": "test-fixtures/broken-content/content/carData/assumed-verified.json",
+      "rules": [
+        "value/assumed-but-verified"
+      ],
+      "why": "a verified figure whose own note admits it was assumed passes the schema and the citation check; the words are the only evidence, and an honest note that merely mentions assuming must not trip it"
     }
   ]
 }

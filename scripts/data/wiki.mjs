@@ -4,12 +4,13 @@
  *
  *   node scripts/data/wiki.mjs infobox "Toyota Prius (XW20)"
  *   node scripts/data/wiki.mjs cite    "Toyota Prius (XW20)"
+ *   node scripts/data/wiki.mjs cite    "Toyota Prius (XW20)" --append   # into references.json
  *   node scripts/data/wiki.mjs raw     "Toyota Prius (XW20)" > article.wikitext
  *   node scripts/data/wiki.mjs grep    "Toyota Prius (XW20)" "drag|kerb|top speed"
  *
  * `infobox` prints the parsed infobox with SI conversions and the note text
  * each conversion needs. `cite` prints a ready-made `references.json` entry
- * including the **revision id**, which DATA_SOURCES.md requires and which is
+ * including the **revision id**, which the design requires and which is
  * the single easiest thing for a hurrying agent to leave out.
  *
  * `grep` exists because of the most expensive Phase 10 finding: the infobox is
@@ -17,6 +18,7 @@
  * Golf GTI's entire specification, the Range Rover's power and the 2CV's whole
  * evolution are all in the article *body*.
  */
+import { readFileSync, writeFileSync } from 'node:fs';
 import { getJson, withQuery } from './lib/http.mjs';
 import { GLOSSARY, infoboxFields, plain, readField, toSi, vehicleInfobox } from './lib/wikitext.mjs';
 
@@ -111,7 +113,7 @@ async function cmdInfobox(title, lang) {
   );
 }
 
-async function cmdCite(title, lang) {
+async function cmdCite(title, lang, append) {
   const article = await fetchArticle(title, lang);
   // The language belongs in the key. Without it the German and English
   // articles for the same car generate the same citation key and the second
@@ -135,7 +137,31 @@ async function cmdCite(title, lang) {
     accessed: new Date().toISOString().slice(0, 10),
     license: 'CC BY-SA 4.0',
   };
-  console.log(JSON.stringify(entry, null, 2));
+  if (!append) {
+    console.log(JSON.stringify(entry, null, 2));
+    return;
+  }
+  // --append writes the entry into the bibliography itself, so an author never
+  // has to open a file that grows with every car to add one line to it. Read
+  // and written in one step, immediately, which keeps the window for two
+  // parallel authors racing each other to milliseconds.
+  const file = new URL('../../src/data/references.json', import.meta.url);
+  const bibliography = JSON.parse(readFileSync(file, 'utf8'));
+  const existing = bibliography.entries.find((e) => e.key === key);
+  if (existing) {
+    if (existing.revision === entry.revision) {
+      console.log(`${key} is already in the bibliography at revision ${entry.revision}; nothing to add.`);
+    } else {
+      console.log(
+        `${key} is already in the bibliography at revision ${existing.revision} (the article is now at ${entry.revision}). ` +
+          'Cite the existing key; a figure read from the newer revision needs its own reference, added by hand.',
+      );
+    }
+    return;
+  }
+  bibliography.entries.push(entry);
+  writeFileSync(file, `${JSON.stringify(bibliography, null, 2)}\n`);
+  console.log(`added ${key} (revision ${entry.revision}) to src/data/references.json`);
 }
 
 async function cmdRaw(title, lang) {
@@ -164,11 +190,11 @@ const args = langFlag === -1 ? rest : rest.filter((_, i) => i !== langFlag && i 
 
 try {
   if (command === 'infobox') await cmdInfobox(args[0], lang);
-  else if (command === 'cite') await cmdCite(args[0], lang);
+  else if (command === 'cite') await cmdCite(args.filter((a) => a !== '--append')[0], lang, args.includes('--append'));
   else if (command === 'raw') await cmdRaw(args[0], lang);
   else if (command === 'grep') await cmdGrep(args[0], args[1], lang);
   else {
-    console.error('usage: wiki.mjs <infobox|cite|raw|grep> "Article title" [pattern] [--lang de]');
+    console.error('usage: wiki.mjs <infobox|cite|raw|grep> "Article title" [pattern] [--lang de] [--append, with cite]');
     process.exitCode = 1;
   }
 } catch (error) {

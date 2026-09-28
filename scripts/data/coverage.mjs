@@ -90,4 +90,4 @@ if (conceptCount === 0) {
   gapCount += 1;
 }
 
-console.log(`\n${gapCount} gap(s). Pick the next batch to close the widest ones (PLAYBOOK.md §1).`);
+console.log(`\n${gapCount} gap(s). Pick the next batch to close the widest ones.`);

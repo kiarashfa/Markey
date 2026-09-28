@@ -132,7 +132,7 @@ export function buildPageReferences(
  * "Toyota 86 — Toyota 86 · Wikipedia · …". What is left is the part that makes
  * the citation checkable rather than merely identifiable.
  *
- * Wikipedia entries always carry their revision, because DATA_SOURCES.md is
+ * Wikipedia entries always carry their revision, because the design is
  * explicit that the article will have changed by the time anyone verifies the
  * claim. That is the whole reason the field exists, so it is never dropped for
  * tidiness.

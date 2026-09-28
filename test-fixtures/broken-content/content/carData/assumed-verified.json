@@ -1,0 +1,31 @@
+{
+  "id": "assumed-verified",
+  "name": "Assumed Verified",
+  "kind": "generation",
+  "parent": "fixture-model",
+  "brandRef": "fixturebrand",
+  "productionYears": { "start": 1995, "end": 2000 },
+  "bodyStyles": ["saloon"],
+  "powertrains": ["petrol"],
+  "drivetrains": ["fwd"],
+  "dimensions": {
+    "length": {
+      "value": 4499,
+      "unit": "mm",
+      "status": "verified",
+      "source": "fixture-ref",
+      "sourceNote": "Assuming the same length as the base car."
+    },
+    "width": {
+      "value": 1800,
+      "unit": "mm",
+      "status": "verified",
+      "source": "fixture-ref",
+      "sourceNote": "Read from the dimensions table; recorded as published rather than assumed from the saloon."
+    }
+  },
+  "trims": [],
+  "lastVerified": "2026-08-17",
+  "reviewStatus": "draft",
+  "references": []
+}

@@ -137,7 +137,7 @@
 :root {
   /*
    * Easing curves. The browser built-ins are too weak to read as deliberate
-   * (review-animations/STANDARDS.md); these are the strong equivalents.
+   * these are the strong equivalents.
    * `ease-in` is deliberately absent — it delays the exact moment the user is
    * watching, and is never correct for UI.
    */
@@ -148,7 +148,7 @@
   --brand-accent: oklch(55% 0.13 250);
 
   /*
-   * The page frame the sibling sites share: 75rem wide, a gutter from 20px on
+   * The page frame all four sites share: 75rem wide, a gutter from 20px on
    * a phone to 48px on a laptop. Read by name (`max-w-(--layout-max)` and
    * `px-(--layout-gutter)`) rather than as a Tailwind step, so the frame is
    * one value in one place.
@@ -201,7 +201,7 @@
   }
 
   /*
-   * Optical sizing discipline (apple-design §15): tracking tightens as display
+   * Optical sizing discipline: tracking tightens as display
    * text grows, leading tightens with it, and body/table text sits near zero.
    * A single global `letter-spacing` would be wrong at one end or the other.
    */
@@ -344,9 +344,8 @@
   }
 
   /*
-   * Press feedback, on any pressable thing. 0.97 and 140ms per
-   * review-animations/STANDARDS.md — subtle, and on pointer-down rather than
-   * on release, which is the difference between responsive and dead.
+   * Press feedback, on any pressable thing. 0.97 and 140ms: subtle, and on
+   * pointer-down rather than on release, which is the difference between responsive and dead.
    */
   .pressable {
     transition: transform 140ms var(--ease-out-strong);
@@ -358,7 +357,7 @@
 
 /*
  * Reduced motion is a gentler equivalent, not the absence of feedback
- * (apple-design §14). Transform-based movement goes; opacity and colour
+ * Transform-based movement goes; opacity and colour
  * changes that aid comprehension stay.
  */
 @media (prefers-reduced-motion: reduce) {

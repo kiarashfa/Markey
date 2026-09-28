@@ -2,85 +2,80 @@
 /**
  * `/cars/` — the full catalog.
  *
- * The faceted list is an island; the page itself still server-renders the
- * complete set inside it, so the catalog is crawlable and readable without
- * JavaScript. `client:load` rather than `client:visible` because this is the
- * page's entire purpose — waiting for it to scroll into view would mean the
- * controls are dead at the moment the visitor first reaches for them.
+ * Only the first page of entries is rendered into the HTML; the island fetches
+ * the light `catalog-index.json` once it loads, so the page weighs the same at
+ * ten thousand cars as at a hundred. Every entry is still reachable without
+ * JavaScript through its brand page, the browse axes and the sitemap.
+ *
+ * `client:load` rather than `client:visible` because this is the page's entire
+ * purpose, and the island is what reads a shared filter out of the URL.
  */
 import Catalog from '../../components/islands/Catalog.svelte';
-import CarCard from '../../components/blocks/CarCard.astro';
-import Section from '../../components/blocks/Section.astro';
 import BaseLayout from '../../components/ui/BaseLayout.astro';
-import { buildCatalogue } from '../../lib/content/catalogue.ts';
+import { buildCatalogue, toIndexRow } from '../../lib/content/catalogue.ts';
 import { getBrands, getCars } from '../../lib/content/entries.ts';
-import { assetHref } from '../../lib/content/href.ts';
+import { assetHref, href } from '../../lib/content/href.ts';
 import {
   bodyStyles,
   drivetrains,
+  eras,
   positioning,
   powertrains,
   segments,
 } from '../../schemas/taxonomy.ts';
 
 const [catalogue, cars, brands] = await Promise.all([buildCatalogue(), getCars(), getBrands()]);
-const brandsById = new Map(brands.map((b) => [b.id, b]));
+const models = cars.filter((c) => c.data.kind === 'model');
 
-const models = cars
-  .filter((c) => c.data.kind === 'model')
-  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+const rows = catalogue
+  .map(toIndexRow)
+  .sort((a, b) => a.yearStart - b.yearStart || a.name.localeCompare(b.name));
 
-const terms = (list: { id: string; label: string }[]) =>
-  list.map((t) => ({ id: t.id, label: t.label }));
+const inVocabOrder = (list: { id: string; label: string }[]) => list.map((t) => ({ id: t.id, label: t.label }));
+/** A named vocabulary is alphabetical; it has no other order a reader can predict. */
+const alphabetical = (list: { id: string; label: string }[]) =>
+  inVocabOrder(list).sort((a, b) => a.label.localeCompare(b.label));
+
+const vocab = {
+  brand: alphabetical(brands.map((b) => ({ id: b.id, label: b.data.name }))),
+  body: alphabetical(bodyStyles.terms),
+  powertrain: alphabetical(powertrains.terms),
+  drivetrain: alphabetical(drivetrains.terms),
+  segment: inVocabOrder(segments.terms),
+  positioning: inVocabOrder(positioning.terms),
+  era: inVocabOrder(eras.terms),
+};
 ---
 
 <BaseLayout
   searchKind="Browse"
   title="Cars"
-  description="Every generation in the Markey catalog, filterable by body style, powertrain, drivetrain, segment and market positioning."
+  description="Every generation in the Markey catalog, filterable by brand, body style, powertrain, drivetrain, segment, positioning and era."
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Cars</h1>
     <p class="type-body mt-3 max-w-lede text-ink-secondary">
-      Generations and halo trims — the entries that carry the specifications.
-      Filter and sort them here; the nameplate hubs are listed underneath.
+      {rows.length} generations and halo trims, the entries that carry the specifications. Filter
+      and sort them here; each nameplate's overview lives on its{' '}
+      <a class="underline decoration-line underline-offset-4 hover:text-ink" href={href('brands')}>brand page</a>.
     </p>
   </header>
 
   <div class="mt-8">
     <Catalog
       client:load
-      cars={catalogue}
-      bodyStyleTerms={terms(bodyStyles.terms)}
-      powertrainTerms={terms(powertrains.terms)}
-      drivetrainTerms={terms(drivetrains.terms)}
-      segmentTerms={terms(segments.terms)}
-      positioningTerms={terms(positioning.terms)}
+      initial={rows.slice(0, 48)}
+      total={rows.length}
+      src={assetHref('catalog-index.json')}
+      vocab={vocab}
     />
   </div>
 
-  {
-    models.length > 0 && (
-      <Section
-        title={`Nameplates (${models.length})`}
-        lede="A nameplate page is the overview across a car's whole history; its generations are where the specifications live."
-      >
-        <div class="-mx-4 py-4 sm:-mx-5">
-          <div class="grid gap-3 px-4 sm:px-5 md:grid-cols-2">
-            {models.map((car) => (
-              <CarCard car={car} brand={brandsById.get(car.data.brandRef)} />
-            ))}
-          </div>
-        </div>
-      </Section>
-    )
-  }
-
-  <p class="mt-8 text-sm">
-    <a
-      class="underline decoration-line underline-offset-4 hover:text-ink"
-      href={assetHref('catalogue.json')}
-    >
+  <p class="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-secondary">
+    <a class="underline decoration-line underline-offset-4 hover:text-ink" href={href('brands')}>
+      {models.length} nameplates, by brand &rarr;
+    </a>
+    <a class="underline decoration-line underline-offset-4 hover:text-ink" href={assetHref('catalogue.json')}>
       Machine-readable export &rarr;
     </a>
   </p>

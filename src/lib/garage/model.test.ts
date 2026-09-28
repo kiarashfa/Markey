@@ -154,7 +154,7 @@ describe('ownership', () => {
 });
 
 // ---------------------------------------------------------------------------
-// The privacy contract. Instruction.md Phase 5 asks for this explicitly:
+// The privacy contract. the design asks for this explicitly:
 // "Test explicitly that no ownership field survives a share."
 // ---------------------------------------------------------------------------
 

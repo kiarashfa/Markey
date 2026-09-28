@@ -1,98 +1,91 @@
 ---
 /**
- * Homepage — the spotlight carousel as a "wow" moment, then
- * straight into practical search-first browsing directly beneath it.
+ * Homepage: the spotlight as the one moment of spectacle, then the ways in.
  *
- * The catalog below the fold is a static list for now. Pagefind full-text
- * search (Phase 8) and the faceted, reactive catalog (Phase 4)
- * both slot into this page without moving it.
+ * It holds a fixed amount however large the catalog grows: five spotlight cars
+ * picked weekly from the ones flagged for it, the browse axes, the busiest
+ * brands, and the door to the full catalog at `/cars/`. It used to carry the
+ * whole catalog as a table, which made it the heaviest page on the site and
+ * would have made it unusable at a few thousand entries.
  */
-import Section from '../components/blocks/Section.astro';
-import EntryTable from '../components/islands/EntryTable.svelte';
 import SpotlightCarousel from '../components/islands/SpotlightCarousel.svelte';
 import BaseLayout from '../components/ui/BaseLayout.astro';
 
 import { buildCatalogue } from '../lib/content/catalogue.ts';
 import { getBrands, getCars } from '../lib/content/entries.ts';
-import { carHref, href, imageSrc, taxonomyHref } from '../lib/content/href.ts';
+import { brandHref, carHref, href, imageSrc, taxonomyHref } from '../lib/content/href.ts';
 import { AXES, buildTermViews } from '../lib/content/taxonomy-views.ts';
 import { formatYears } from '../lib/render/format.ts';
-import {
-  bodyStyles as bodyStyleVocab,
-  eras as eraVocab,
-  powertrains as powertrainVocab,
-} from '../schemas/taxonomy.ts';
+import { weeklyPick } from '../lib/showcase.ts';
 
 const [cars, brands, catalogue] = await Promise.all([getCars(), getBrands(), buildCatalogue()]);
 const brandsById = new Map(brands.map((b) => [b.id, b]));
 
 /**
- * The curated spotlight set. A halo trim or generation flagged `spotlight` in
- * its data file — never an automatic "most recent", which would put whatever
- * was authored last in the most prominent place on the site.
+ * The spotlight: five cars a week from those flagged `spotlight` in their data
+ * file, never an automatic "most recent". Only flagged cars with a photograph,
+ * because a spotlight without one is a headline over empty space.
  */
-const spotlight = cars
-  .filter((car) => car.data.spotlight)
-  .map((car) => {
-    const brand = brandsById.get(car.data.brandRef)!;
-    const stats: { label: string; value: string }[] = [
-      { label: 'Produced', value: formatYears(car.data.productionYears) },
-    ];
-    if (car.data.generationCode) stats.push({ label: 'Code', value: car.data.generationCode });
-    if (car.data.designer) stats.push({ label: 'Designer', value: car.data.designer });
+const spotlight = weeklyPick(
+  cars.filter((car) => car.data.spotlight && car.data.hero),
+  5,
+).map((car) => {
+  const brand = brandsById.get(car.data.brandRef)!;
+  const stats: { label: string; value: string }[] = [
+    { label: 'Produced', value: formatYears(car.data.productionYears) },
+  ];
+  if (car.data.generationCode) stats.push({ label: 'Code', value: car.data.generationCode });
+  if (car.data.designer) stats.push({ label: 'Designer', value: car.data.designer });
 
-    return {
-      id: car.id,
-      name: car.data.name,
-      kicker: brand.data.name,
-      url: carHref(car.id),
-      brandName: brand.data.name,
-      accentColor: brand.data.accentColor,
-      logoSrc: imageSrc(brand.data.logo.src),
-      logoAlt: brand.data.logo.alt,
-      heroSrc: car.data.hero ? imageSrc(car.data.hero.src) : undefined,
-      heroAlt: car.data.hero?.alt,
-      stats,
-    };
-  });
-
-/**
- * Only the terms the catalogue actually uses.
- *
- * A filter row of fourteen body styles above four cars, twelve of them
- * disabled, advertises the vocabulary rather than the catalogue. These grow as
- * the catalogue does, with no editing.
- */
-const usedTerms = (
-  field: 'bodyStyles' | 'powertrains' | 'eras',
-  vocab: { terms: { id: string; label: string }[] },
-) => {
-  const used = new Set(catalogue.flatMap((car) => car[field]));
-  return vocab.terms.filter((term) => used.has(term.id)).map(({ id, label }) => ({ id, label }));
-};
+  return {
+    id: car.id,
+    name: car.data.name,
+    kicker: brand.data.name,
+    url: carHref(car.id),
+    brandName: brand.data.name,
+    accentColor: brand.data.accentColor,
+    logoSrc: imageSrc(brand.data.logo.src),
+    logoAlt: brand.data.logo.alt,
+    heroSrc: car.data.hero ? imageSrc(car.data.hero.src) : undefined,
+    heroAlt: car.data.hero?.alt,
+    stats,
+  };
+});
 
 /** Browse entry points, each showing how much is actually behind it. */
 const browseAxes = AXES.map((axis) => ({
   ...axis,
   count: buildTermViews(axis.axis, cars, brands).length,
 })).filter((axis) => axis.count > 0);
+
+/* The twelve brands with the most entries, then listed alphabetically: the
+   busiest doors, in an order a reader can scan. */
+const perBrand = new Map<string, number>();
+for (const row of catalogue) perBrand.set(row.brandId, (perBrand.get(row.brandId) ?? 0) + 1);
+const topBrands = [...perBrand]
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+  .slice(0, 12)
+  .map(([id, count]) => ({ brand: brandsById.get(id)!, count }))
+  .filter((b) => b.brand)
+  .sort((a, b) => a.brand.data.name.localeCompare(b.brand.data.name));
+
+const nameplates = cars.filter((c) => c.data.kind === 'model').length;
 ---
 
 <BaseLayout
   title="Markey"
-  description="A free, ad-free, login-free encyclopedia of production cars. Every figure carries its source and its confidence — and a figure we don't have is shown as missing, never guessed."
+  description="A free encyclopedia of production cars. Every figure carries its source and its confidence, and a figure we don't have is shown as missing, never guessed."
   bleed
 >
   {/*
     The carousel's slide titles are h2s, because which car is showing changes as
     you swipe and a document's h1 should not. The page still needs one heading
-    that names it, so it lives here — visually redundant next to the wordmark,
-    but not redundant to a screen reader or a crawler landing on the homepage.
+    that names it, so it lives here.
   */}
   {
     spotlight.length > 0 && (
       <>
-        <h1 class="sr-only">Markey — an encyclopedia of production cars</h1>
+        <h1 class="sr-only">Markey, an encyclopedia of production cars</h1>
         <SpotlightCarousel client:load cars={spotlight} />
       </>
     )
@@ -104,18 +97,69 @@ const browseAxes = AXES.map((axis) => ({
         <header class="mb-10">
           <h1 class="type-display text-[clamp(2rem,7vw,3.5rem)]">Markey</h1>
           <p class="type-body mt-4 max-w-lede text-lg text-ink-secondary">
-            A free, ad-free, login-free encyclopedia of production cars.
+            A free encyclopedia of production cars.
           </p>
         </header>
       )
     }
 
     <section>
-      <h2 class="type-title text-xl">Browse</h2>
-      <p class="type-body mt-2 max-w-readable text-sm text-ink-secondary">
-        Every browse axis is a view computed over tagged entries, so nothing
-        breaks when a car is reclassified. Two of them — origin and era — are
-        never tagged by hand at all.
+      <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 border-b border-line pb-3">
+        <h2 class="type-title text-xl">The catalog</h2>
+        <a class="text-sm text-ink-secondary hover:text-ink" href={href('cars')}>
+          All {catalogue.length} cars &rarr;
+        </a>
+      </div>
+      <p class="type-body mt-4 max-w-readable text-sm text-ink-secondary">
+        {catalogue.length} generations and halo trims across {nameplates} nameplates and {brands.length} brands,
+        every figure carrying its source. Filter and sort them by brand, body style, powertrain, era
+        and more.
+      </p>
+
+      {
+        topBrands.length > 0 && (
+          <ul class="mt-6 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+            {topBrands.map(({ brand, count }) => (
+              <li>
+                <a
+                  href={brandHref(brand.id)}
+                  class="pressable flex items-center gap-3 rounded-lg border border-line bg-surface-1 p-3 transition-colors duration-150 hover:border-line-strong hover:bg-surface-2"
+                >
+                  <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-md border border-line bg-white p-1">
+                    <img src={imageSrc(brand.data.logo.src)} alt="" class="size-full object-contain" loading="lazy" />
+                  </span>
+                  <span class="min-w-0 flex-1 truncate text-sm font-medium">{brand.data.name}</span>
+                  <span class="text-xs tabular-nums text-ink-muted">{count}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a
+          href={href('cars')}
+          class="pressable inline-flex items-center gap-2 rounded-full border border-line-strong px-5 py-2.5 text-sm font-medium transition-colors duration-150 hover:bg-surface-2"
+        >
+          Open the catalog <span aria-hidden="true">&rarr;</span>
+        </a>
+        <a
+          href={href('brands')}
+          class="pressable inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-sm text-ink-secondary transition-colors duration-150 hover:bg-surface-2 hover:text-ink"
+        >
+          All {brands.length} brands
+        </a>
+      </div>
+    </section>
+
+    <section class="mt-14">
+      <div class="border-b border-line pb-3">
+        <h2 class="type-title text-xl">Browse</h2>
+      </div>
+      <p class="type-body mt-4 max-w-readable text-sm text-ink-secondary">
+        Every browse axis is a view computed over tagged entries, so nothing breaks when a car is
+        reclassified. Two of them, origin and era, are never tagged by hand at all.
       </p>
 
       {
@@ -131,9 +175,7 @@ const browseAxes = AXES.map((axis) => ({
                     <span class="type-heading text-base">{axis.title}</span>
                     <span class="text-xs text-ink-muted tabular-nums">{axis.count}</span>
                   </span>
-                  <span class="mt-1.5 text-xs leading-relaxed text-ink-muted">
-                    {axis.description}
-                  </span>
+                  <span class="mt-1.5 text-xs leading-relaxed text-ink-muted">{axis.description}</span>
                 </a>
               </li>
             ))}
@@ -145,41 +187,5 @@ const browseAxes = AXES.map((axis) => ({
         )
       }
     </section>
-
-    {
-      catalogue.length > 0 && (
-        <Section
-          title="In the catalog"
-          lede="Generations and halo trims — the entries that carry the specifications. Filter it, or sort by any column."
-        >
-          <div class="py-5">
-            {/*
-              `client:visible` — the table is below the carousel, so a visitor
-              who never scrolls never pays for it. It hydrates in time either
-              way, because it only becomes interactive once it is on screen.
-            */}
-            <EntryTable
-              client:visible
-              cars={catalogue}
-              caption="Every car in the catalog"
-              facets={[
-                { label: 'Body style', field: 'bodyStyles', terms: usedTerms('bodyStyles', bodyStyleVocab) },
-                { label: 'Powertrain', field: 'powertrains', terms: usedTerms('powertrains', powertrainVocab) },
-                { label: 'Era', field: 'eras', terms: usedTerms('eras', eraVocab) },
-              ]}
-            />
-          </div>
-        </Section>
-      )
-    }
-
-    <p class="mt-8 text-sm">
-      <a
-        class="underline decoration-line underline-offset-4 hover:text-ink"
-        href={href('cars')}
-      >
-        The full catalog, with every facet &rarr;
-      </a>
-    </p>
   </div>
 </BaseLayout>

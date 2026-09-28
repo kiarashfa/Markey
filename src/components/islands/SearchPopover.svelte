@@ -235,7 +235,7 @@
 
   {#if open}
     <!--
-      A short, small-distance entrance. apple-design §5: a panel that appears
+      A short, small-distance entrance. a panel that appears
       from the control that opened it reads as *that control expanding*, and
       160ms is the band where a transition registers as responsive rather than
       as something to wait for. Under `prefers-reduced-motion` it simply exists.

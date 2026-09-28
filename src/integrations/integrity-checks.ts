@@ -133,6 +133,44 @@ function parseScalar(value: string): unknown {
   return value;
 }
 
+/**
+ * A `verified` value whose own note says it was not read from the source.
+ *
+ * `verified` only requires a resolvable citation key, so a note reading
+ * "assuming the same kerb weight as the base car" passes the schema, the
+ * citation check and every other gate while describing a figure nobody read.
+ * That shape was found on four figures of one benchmark entry. The words are
+ * the evidence, so the rule reads them, after first removing the phrases that
+ * say the opposite ("recorded as a gap rather than assumed", "not inferred"),
+ * which a bare word match would flag on honest notes.
+ */
+const ADMITS_ASSUMPTION =
+  /\b(?:assum(?:e|ed|es|ing|ption)|presum(?:e|ed|ably)|carried over|carry(?:ing)? over|same as (?:the )?(?:base|other|previous|standard)|extrapolat(?:e|ed|ing|ion)|inferred|infer(?:ring)?)\b/i;
+const NEGATED =
+  /\b(?:not|never|nor|rather than|instead of|without|no need to|isn't|is not|was not|wasn't|avoid(?:s|ed|ing)?|would|could|should|otherwise)\s+(?:\w+[\s,]+){0,4}?(?:assum\w*|presum\w*|carried over|carry(?:ing)? over|extrapolat\w*|inferr?\w*|infer)\b/gi;
+
+function collectAssumedVerified(
+  value: unknown,
+  at: string = '',
+  found: { at: string; note: string }[] = [],
+): { at: string; note: string }[] {
+  if (Array.isArray(value)) {
+    value.forEach((item, i) => collectAssumedVerified(item, `${at}[${i}]`, found));
+    return found;
+  }
+  if (value && typeof value === 'object') {
+    const record = value as AnyRecord;
+    if (record.status === 'verified' && typeof record.sourceNote === 'string') {
+      const affirmed = record.sourceNote.replace(NEGATED, ' ');
+      if (ADMITS_ASSUMPTION.test(affirmed)) found.push({ at: at || '(root)', note: record.sourceNote });
+    }
+    for (const [key, child] of Object.entries(record)) {
+      collectAssumedVerified(child, at ? `${at}.${key}` : key, found);
+    }
+  }
+  return found;
+}
+
 /** Every `source` property anywhere in an entry — they are all citation keys. */
 function collectCitationKeys(value: unknown, found: Set<string> = new Set()): Set<string> {
   if (Array.isArray(value)) {
@@ -518,6 +556,14 @@ export async function runIntegrityChecks(options: IntegrityOptions): Promise<Vio
             message: `citation key '${key}' is not in the bibliography (src/data/references.json)`,
           });
         }
+      }
+
+      for (const { at, note } of collectAssumedVerified(entry.data)) {
+        violations.push({
+          file: entry.file,
+          rule: 'value/assumed-but-verified',
+          message: `\`${at}\` is marked verified, but its note says it was not read from the source: "${note}". Mark it estimated, or cite where it was read.`,
+        });
       }
 
       for (const { at, image } of collectImages(entry.data)) {

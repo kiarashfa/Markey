@@ -13,7 +13,7 @@
  *    that *shape*, not that car, and the UI must say so.
  *
  * Procedural geometry rather than 3D assets is what makes the 3D tab reach more
- * than a curated handful: DATA_SOURCES.md establishes that no free, accurately-
+ * than a curated handful: the design establishes that no free, accurately-
  * licensed library of real car models exists, so sourcing one per car was never
  * going to happen.
  */

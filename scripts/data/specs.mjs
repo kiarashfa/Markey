@@ -14,7 +14,7 @@
  * a conversion was applied, the factor — because the schema requires the
  * `sourceNote` to say so.
  *
- * See DATA_SOURCES.md's 2026-08-18 addendum for what each source covers and
+ * See the design's 2026-08-18 addendum for what each source covers and
  * where it stops.
  */
 import { getJson, getText, withQuery } from './lib/http.mjs';

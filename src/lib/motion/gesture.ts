@@ -2,14 +2,14 @@
  * Pure gesture maths — the decisions behind a swipe, with no DOM in sight.
  *
  * Extracted from the spotlight carousel for the same reason `lib/math/` exists
- * (Instruction.md operating rule 6): the interesting part of a gesture is a
+ * (the design operating rule 6): the interesting part of a gesture is a
  * calculation, and a calculation that lives inside a component can only be
  * verified by driving a browser. These run under `node --test` instead, which
  * is the only way to actually assert that a slow 80 px drag snaps back while a
  * fast 80 px flick carries to the next slide.
  *
  * Sources for the formulae are Apple's *Designing Fluid Interfaces* sample
- * code, via `.claude/skills/apple-design` §6 and §9.
+ * code.
  */
 
 /**

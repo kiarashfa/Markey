@@ -2,7 +2,7 @@
 
 Why this exists
 ---------------
-`PLAYBOOK.md` §1.3 has the agent choose images from what `commons.mjs find`
+`the design` has the agent choose images from what `commons.mjs find`
 listed. Opening three to five full-size candidates per nameplate in order to
 reject most of them is how a photograph pass becomes the most expensive part of
 a round: the sibling recipe site measured 321 k tokens for 70 subjects before it

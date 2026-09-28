@@ -276,7 +276,7 @@ describe('performance', () => {
 });
 
 // ---------------------------------------------------------------------------
-// The reality check Instruction.md's Phase 3 DoD requires.
+// The reality check the design's Phase 3 DoD requires.
 //
 // Reference figures below are approximate published manufacturer claims used
 // ONLY as a sanity anchor — they are not cited data and none of them is stored
@@ -332,7 +332,7 @@ describe('sanity check against real cars', () => {
   });
 
   it('never returns a physically absurd top speed', () => {
-    // The failure mode Instruction.md names explicitly.
+    // The failure mode the design names explicitly.
     for (const car of [golf, nineEleven, e24]) {
       assert.ok(topSpeed(car)! < 400, 'no road car in this set should model above 400 km/h');
       assert.ok(topSpeed(car)! > 100, 'nor below 100 km/h');

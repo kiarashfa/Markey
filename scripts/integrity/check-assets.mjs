@@ -155,7 +155,7 @@ if (overFail) {
   );
 } else if (overWarn) {
   console.warn(
-    `[check:assets] WARNING — ${mb(total)} is past the ${mb(caps.totalWarnBytes)} warn threshold. Instruction.md §5 says escalate at this point rather than at the hard limit.`,
+    `[check:assets] WARNING — ${mb(total)} is past the ${mb(caps.totalWarnBytes)} warn threshold. the design says escalate at this point rather than at the hard limit.`,
   );
 }
 

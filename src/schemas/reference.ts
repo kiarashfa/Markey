@@ -41,7 +41,7 @@ export const referenceEntry = z
     /** When we last read it — a stale citation is a citation worth re-reading. */
     accessed: isoDate.optional(),
     /**
-     * Revision identifier. DATA_SOURCES.md is explicit that a Wikipedia
+     * Revision identifier. the design is explicit that a Wikipedia
      * citation must name the article *and* the revision, because the article
      * will have changed by the time anyone checks it.
      */
@@ -75,7 +75,7 @@ export const referenceEntry = z
           code: 'custom',
           path: ['revision'],
           message:
-            'a Wikipedia citation must name the revision it was read at — the article will have changed by the time anyone verifies it (DATA_SOURCES.md)',
+            'a Wikipedia citation must name the revision it was read at — the article will have changed by the time anyone verifies it',
         });
       }
       if (!ref.license) {
