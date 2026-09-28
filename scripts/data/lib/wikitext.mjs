@@ -4,7 +4,7 @@
  *
  * Pure functions over strings — no I/O, no network — so the awkward cases can
  * be held to tests rather than to an author's memory. Every behaviour here
- * exists because a real infobox in the pilot batch needed it:
+ * exists because a real infobox in the first entries needed it:
  *
  *  - `{{convert|2630|mm|in|1|abbr=on}}` and its alias `{{cvt}}` — Prius, Golf
  *  - `{{convert|1450|-|1619|kg}}` ranges — BMW E24 kerb weight
@@ -228,7 +228,7 @@ export function plain(text) {
  * Splits a field into the separate values it actually holds.
  *
  * `{{ubl}}`, `{{unbulleted list}}`, `{{plainlist}}` and bare `<br />` all mean
- * "this field has several values", and every car in the pilot batch used at
+ * "this field has several values", and every car in the first entries used at
  * least one of them. Returns raw strings, each still possibly a `{{convert}}`.
  */
 export function fieldValues(raw) {

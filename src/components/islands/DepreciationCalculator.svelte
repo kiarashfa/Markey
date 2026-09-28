@@ -225,7 +225,7 @@
       </details>
     </div>
 
-    <p class="max-w-readable text-xs leading-relaxed text-ink-muted">
+    <p class="text-xs leading-relaxed text-ink-muted">
       <strong class="text-ink-secondary">This is a projection, not a valuation.</strong>
       It is a published formula applied to a purchase price — it has no
       knowledge of the used market, of this specific car, of its condition,

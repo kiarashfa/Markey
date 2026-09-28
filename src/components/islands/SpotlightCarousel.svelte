@@ -59,6 +59,7 @@
     logoSrc: string;
     logoAlt: string;
     heroSrc?: string;
+    heroSrcset?: string;
     heroAlt?: string;
     stats: SpotlightStat[];
   }
@@ -155,15 +156,9 @@
     if (frame) cancelAnimationFrame(frame);
     frame = 0;
     velocity = 0;
-
-    // Capture keeps tracking alive when the pointer leaves the element
-    // It throws if the pointer is already gone, which must
-    // not abort the drag — the drag still works without capture.
-    try {
-      (event.currentTarget as HTMLElement).setPointerCapture(event.pointerId);
-    } catch {
-      /* no capture available; 1:1 tracking still works inside the element */
-    }
+    // No pointer capture yet: capturing on press retargets the click to the
+    // carousel, so a link or button inside a slide never receives it. Capture
+    // waits until the gesture is committed to a horizontal drag.
   }
 
   function onPointerMove(event: PointerEvent) {
@@ -175,6 +170,13 @@
     if (!committed) {
       if (Math.abs(delta) < 10) return;
       committed = true;
+      // Capture keeps tracking alive when the pointer leaves the element. It
+      // throws if the pointer is already gone, which must not abort the drag.
+      try {
+        (event.currentTarget as HTMLElement).setPointerCapture(event.pointerId);
+      } catch {
+        /* no capture available; 1:1 tracking still works inside the element */
+      }
     }
 
     offset = clampWithRubberband(
@@ -201,6 +203,15 @@
 
     const releaseVelocity = velocityFrom(samples);
     goTo(snapTarget(offset, releaseVelocity, width, cars.length), releaseVelocity);
+  }
+
+  /** A drag that ends over a link must not also follow it. */
+  function onClickCapture(event: MouseEvent) {
+    if (committed) {
+      event.preventDefault();
+      event.stopPropagation();
+      committed = false;
+    }
   }
 
   function onKeyDown(event: KeyboardEvent) {
@@ -256,6 +267,10 @@
     <!--
       One wash layer per car, cross-faded by opacity.
 
+      Straight down, not at an angle: on a band far wider than it is tall an
+      angled gradient reaches its last stop only in one bottom corner, and the
+      other corner stayed tinted where the band meets the page.
+
       The obvious implementation — a single layer whose gradient changes with
       the active car — silently does nothing: CSS cannot interpolate between two
       `linear-gradient` values, so the colour would hard-cut on every slide
@@ -268,7 +283,7 @@
       <div
         aria-hidden="true"
         class="pointer-events-none absolute inset-0 -z-10 transition-opacity duration-500 ease-out"
-        style={`opacity: ${i === index ? 1 : 0}; background: linear-gradient(165deg, color-mix(in oklab, ${car.accentColor} 30%, var(--color-surface-0)) 0%, var(--color-surface-0) 78%);`}
+        style={`opacity: ${i === index ? 1 : 0}; background: linear-gradient(to bottom, color-mix(in oklab, ${car.accentColor} 30%, var(--color-surface-0)) 0%, var(--color-surface-0) 82%);`}
       ></div>
     {/each}
 
@@ -281,6 +296,7 @@
       onpointermove={onPointerMove}
       onpointerup={onPointerUp}
       onpointercancel={onPointerUp}
+      onclickcapture={onClickCapture}
       onkeydown={onKeyDown}
       role={multiple ? 'group' : undefined}
       tabindex={multiple ? 0 : undefined}
@@ -296,7 +312,7 @@
             inert={i !== index ? true : undefined}
           >
             <div class="mx-auto w-full max-w-(--layout-max) px-(--layout-gutter) py-10 sm:py-14">
-              <div class="grid gap-8 lg:grid-cols-[1fr_minmax(0,24rem)] lg:items-center">
+              <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,24rem)] lg:items-center">
                 <div class="min-w-0">
                   <div class="flex items-center gap-3">
                     <span
@@ -353,6 +369,8 @@
                   <figure class="min-w-0">
                     <img
                       src={car.heroSrc}
+                      srcset={car.heroSrcset}
+                      sizes="(min-width: 64rem) 24rem, 90vw"
                       alt={car.heroAlt ?? ''}
                       draggable="false"
                       fetchpriority={i === 0 ? 'high' : 'low'}
@@ -397,11 +415,14 @@
         <!--
           Every slide, named. The rule under the active one grows by `scaleX`,
           not `width`, so a slide change never relayouts the row. On a phone
-          the row scrolls sideways rather than wrapping.
+          the row scrolls sideways rather than wrapping. It is pushed right by an
+          auto margin on the first item, not by `justify-end`: a flex row that
+          overflows at its start cannot be scrolled back to it, which clipped
+          the first names off a phone screen.
         -->
-        <ol class="flex min-w-0 flex-1 items-stretch justify-end gap-1 overflow-x-auto [scrollbar-width:none]">
+        <ol class="flex min-w-0 flex-1 items-stretch gap-1 overflow-x-auto [scrollbar-width:none]">
           {#each cars as car, i (car.id)}
-            <li class="shrink-0">
+            <li class={`shrink-0 ${i === 0 ? 'ml-auto' : ''}`}>
               <button
                 type="button"
                 class="group flex max-w-[11rem] flex-col items-start gap-1 rounded-md px-2.5 pb-1.5 pt-1 text-left transition-colors duration-150 hover:bg-surface-0/60"

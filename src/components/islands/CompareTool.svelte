@@ -56,6 +56,24 @@
   ]);
   const isFull = $derived(chosen.length >= MAX);
 
+  /**
+   * The picker: brand, then name, narrowed by a search box. A bare list of
+   * every car was a two-column wall of checkboxes at 200 cars and would be
+   * unusable at a thousand.
+   */
+  let query = $state('');
+  const sorted = $derived(
+    [...cars].sort((a, b) => a.brandName.localeCompare(b.brandName) || a.name.localeCompare(b.name)),
+  );
+  const pickable = $derived.by(() => {
+    const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+    if (words.length === 0) return sorted;
+    return sorted.filter((car) => {
+      const hay = `${car.name} ${car.brandName}`.toLowerCase();
+      return words.every((word) => hay.includes(word));
+    });
+  });
+
   function syncUrl() {
     const url = new URL(window.location.href);
     if (selected.length > 0) url.searchParams.set('cars', selected.join(','));
@@ -240,8 +258,23 @@
       <legend class="px-1 text-xs font-medium uppercase tracking-wide text-ink-muted">
         Choose up to {MAX}
       </legend>
-      <ul class="mt-2 grid gap-1 sm:grid-cols-2">
-        {#each cars as car (car.id)}
+      <div class="mt-2 flex flex-wrap items-center gap-3">
+        <input
+          type="search"
+          bind:value={query}
+          placeholder="Search by name or brand…"
+          aria-label="Search the cars to compare"
+          class="w-full min-w-0 rounded-full border border-line bg-surface-0 px-4 py-2 text-sm outline-none transition-colors duration-150 placeholder:text-ink-muted focus:border-ink-muted sm:max-w-sm"
+        />
+        <span class="type-data text-xs text-ink-muted" aria-live="polite">
+          {pickable.length} of {cars.length} · {chosen.length} / {MAX} chosen
+        </span>
+      </div>
+      {#if pickable.length === 0}
+        <p class="mt-4 px-2 text-sm text-ink-muted">No car matches "{query}".</p>
+      {/if}
+      <ul class="mt-3 grid max-h-[26rem] gap-1 overflow-y-auto overscroll-contain pr-1 sm:grid-cols-2">
+        {#each pickable as car (car.id)}
           {@const isSelected = selected.includes(car.id)}
           <li>
             <label
@@ -336,7 +369,7 @@
       </table>
     </div>
 
-    <p class="max-w-readable text-xs leading-relaxed text-ink-muted">
+    <p class="text-xs leading-relaxed text-ink-muted">
       An em dash means we do not have that figure yet — it is not a zero, and a
       car is never marked "best" on a row where it is the only one with data.
       Figures are the best available across each entry's trims.

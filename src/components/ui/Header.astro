@@ -21,14 +21,22 @@ import { assetHref, href, taxonomyHref } from '../../lib/content/href.ts';
 import favicon from '../../../public/favicon.svg?raw';
 
 /**
- * The mark beside the wordmark is the favicon's own path, read at build time,
- * so the tab and the header cannot drift into two drawings. It is inlined
- * rather than used as an <img> because the file switches black/white on the
- * OS scheme, and the header has to follow the site's theme instead: a reader
- * on a light machine who chose dark would otherwise get a black mark on a
- * black bar. `currentColor` follows whatever the header's ink is.
+ * The mark beside the wordmark is the favicon itself, read at build time, so
+ * the tab and the header cannot drift into two drawings. It is inlined rather
+ * than used as an <img> because the file switches its ink on the OS scheme,
+ * and the header has to follow the site's theme instead: a reader on a light
+ * machine who chose dark would otherwise get a dark mark on a dark bar. The
+ * theme block is dropped, the ink becomes `currentColor`, and the mask gets an
+ * id of its own so it cannot collide with anything else on the page.
  */
-const markPath = favicon.match(/<path d="([^"]+)"/)?.[1] ?? '';
+const markSvg = favicon
+  .replace(/<!--[\s\S]*?-->/g, '')
+  .replace(/<style>[\s\S]*?<\/style>/, '')
+  .replaceAll('var(--ink)', 'currentColor')
+  .replaceAll('id="cut"', 'id="markey-mark-cut"')
+  .replaceAll('url(#cut)', 'url(#markey-mark-cut)')
+  .replace('<svg ', '<svg class="size-[26px]" aria-hidden="true" ')
+  .trim();
 
 /** The catalogue: what the site holds. */
 const browse = [
@@ -70,7 +78,7 @@ const isCurrent = (url: string) => url !== href() && current.startsWith(url);
 
   <div class="mx-auto flex w-full max-w-(--layout-max) flex-wrap items-center gap-x-6 gap-y-2 px-(--layout-gutter) py-3.5">
     <a href={href()} class="pressable flex shrink-0 items-center gap-2.5 text-ink">
-      <svg viewBox="0 0 128 128" class="size-[26px]" aria-hidden="true"><path d={markPath} fill="currentColor" /></svg>
+      <Fragment set:html={markSvg} />
       <span class="type-title text-[1.4rem] leading-none tracking-tight">Markey</span>
     </a>
 

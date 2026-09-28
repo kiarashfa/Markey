@@ -21,7 +21,7 @@ const BASE = import.meta.env.BASE_URL;
  * resolves an `ImageRef.src`, and every template goes through it.
  *
  * Written now, with 41 images, because the alternative is 3,000 JSON edits
- * later. The sibling ARMAG project reserved the same hatch on day one.
+ * later.
  */
 const ASSET_ORIGIN: string = '';
 

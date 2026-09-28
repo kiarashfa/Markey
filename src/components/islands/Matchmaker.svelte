@@ -112,7 +112,7 @@
   const WEIGHT_LABELS = ['Not important', 'Slightly', 'Quite', 'Very important'];
 </script>
 
-<div class="grid gap-6 lg:grid-cols-[minmax(0,22rem)_1fr] lg:items-start">
+<div class="grid gap-6 lg:grid-cols-[minmax(0,22rem)_minmax(0,1fr)] lg:items-start">
   <div class="flex flex-col gap-4">
     <fieldset class="rounded-lg border border-line bg-surface-1 p-4">
       <legend class="px-1 text-xs font-medium uppercase tracking-wide text-ink-muted">
@@ -259,7 +259,7 @@
       </ol>
 
       {#if anyPreference}
-        <p class="mt-4 max-w-readable text-xs leading-relaxed text-ink-muted">
+        <p class="mt-4 text-xs leading-relaxed text-ink-muted">
           The percentage compares these cars <em>against each other</em> on the
           preferences you set — it is not a quality score, and a 100% does not
           mean a car is perfect. A car with no figure for one of your

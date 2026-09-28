@@ -22,9 +22,11 @@
     selected: string[];
     onchange: (next: string[]) => void;
     counts?: Record<string, number>;
+    /** Stretch to fill the slot the toolbar gives it. */
+    fill?: boolean;
   }
 
-  const { label, terms, selected, onchange, counts }: Props = $props();
+  const { label, terms, selected, onchange, counts, fill = false }: Props = $props();
 
   const SEARCH_FROM = 10;
 
@@ -65,20 +67,20 @@
   });
 </script>
 
-<div class="relative max-sm:static" bind:this={root}>
+<div class={`relative max-sm:static ${fill ? 'min-w-0 sm:flex-1' : ''}`} bind:this={root}>
   <button
     type="button"
     bind:this={button}
     aria-expanded={open}
     aria-haspopup="true"
     onclick={() => (open ? close() : (open = true))}
-    class={`pressable inline-flex h-9 items-center gap-1.5 rounded-full border px-3.5 text-[13px] transition-colors duration-150 ${
+    class={`pressable inline-flex h-10 items-center gap-1.5 rounded-full border px-4 text-[13px] font-medium transition-colors duration-150 ${fill ? 'w-full justify-between' : ''} ${
       selected.length > 0
         ? 'border-[var(--brand-accent)] bg-surface-2 text-ink'
         : 'border-line text-ink-secondary hover:border-line-strong hover:text-ink'
     }`}
   >
-    {label}
+    <span class="truncate">{label}</span>
     {#if selected.length > 0}
       <span class="rounded-full bg-[var(--brand-accent)] px-1.5 text-[11px] leading-[1.4] text-white tabular-nums"
         >{selected.length}</span

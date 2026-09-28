@@ -1,103 +1,214 @@
 ---
 /**
- * `/about/`.
+ * `/about/`: what Markey is, who builds it, how to reach or support them, and
+ * how to read the confidence mark on every figure.
  *
- * Written now rather than in a later phase because the footer links to it from
- * every page, and a site whose first promise is honesty should not ship a
- * broken link to the page explaining that promise.
+ * Two columns: the facts about the person and the project are cards in a rail,
+ * the argument is a reading column beside it. The rail is kept no taller than
+ * the reading column, so neither side ends in a long empty stretch.
  */
-import Section from '../components/blocks/Section.astro';
 import BaseLayout from '../components/ui/BaseLayout.astro';
-import { href } from '../lib/content/href.ts';
+import PayPalMark from '../assets/paypal.svg';
+import CoffeeMark from '../assets/buy-me-a-coffee.svg';
+import references from '../data/references.json';
+import { getBrands, getCars } from '../lib/content/entries.ts';
+import { assetHref, href } from '../lib/content/href.ts';
+
+const [cars, brands] = await Promise.all([getCars(), getBrands()]);
+
+/** Counted from the published content at build time, never typed. */
+const counts = [
+  { label: 'Cars', value: cars.filter((c) => c.data.kind !== 'model').length },
+  { label: 'Nameplates', value: cars.filter((c) => c.data.kind === 'model').length },
+  { label: 'Brands', value: brands.length },
+  { label: 'Photographs', value: cars.reduce((n, c) => n + (c.data.hero ? 1 : 0) + (c.data.gallery?.length ?? 0), 0) },
+  { label: 'Cited sources', value: references.entries.length },
+];
+
+const contact = [
+  { label: 'Personal site', url: 'https://kiarashfa.github.io/website/', note: 'kiarashfa.github.io' },
+  { label: 'Email', url: 'mailto:kiarashfa@gmail.com', note: 'kiarashfa@gmail.com' },
+  { label: 'GitHub', url: 'https://github.com/kiarashfa', note: 'github.com/kiarashfa' },
+];
+
+const marks = [
+  {
+    term: 'Verified',
+    text: 'Taken from a cited source, linked on the page. This is the default, so it carries no badge; the other three do.',
+  },
+  {
+    term: 'Estimated',
+    text: 'Calculated or approximated rather than measured, with the basis stated next to the figure: a frontal area derived from width and height, say, rather than published by the manufacturer.',
+  },
+  {
+    term: 'Not yet available',
+    text: 'We do not have it. The field is deliberately empty, and the schema itself forbids a placeholder from carrying a number.',
+  },
+  {
+    term: 'Sources disagree',
+    text: 'Published sources conflict, and rather than silently picking one, the page says so and explains the conflict.',
+  },
+];
+
+const card = 'rounded-2xl border border-line bg-surface-1 p-5';
+const cardTitle = 'text-[0.6875rem] font-medium uppercase tracking-[0.14em] text-ink-muted';
+const button =
+  'pressable flex items-center gap-2 rounded-full border border-line-strong bg-surface-0 px-4 py-2 text-sm text-ink-secondary no-underline transition-colors duration-150 hover:text-ink';
 ---
 
 <BaseLayout
   searchKind="About"
   title="About"
-  description="What Markey is, what it refuses to do, and how to read the confidence marks on every figure."
+  description="What Markey is, who builds it, what it refuses to do, and how to read the confidence mark on every figure."
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">About Markey</h1>
-    <p class="type-body mt-3 max-w-lede text-lg text-ink-secondary">
-      A free, non-profit, ad-free, login-free encyclopedia of production cars.
+    <p class="type-body mt-3 text-lg text-ink-secondary">
+      A free encyclopedia of production cars where every figure is sourced or computed, and every
+      gap is shown as a gap. No account, no ads, nothing to subscribe to, and no server to send
+      anything to.
     </p>
   </header>
 
-  <div class="type-body mt-8 flex max-w-readable flex-col gap-4 text-ink-secondary">
-    <p>
-      There is no account to make, nothing to subscribe to, and no ads. Anything
-      you save, such as a garage, a comparison or a car you built, stays in your
-      own browser or travels in a link you choose to share. There is no server to
-      send it to.
-    </p>
-    <p>
-      Every number you see is either sourced or computed, and it says which. The
-      site would rather show you a gap than a plausible-looking guess, so a
-      figure we haven't found yet reads "not yet available" instead of quietly
-      appearing as a number someone made up.
-    </p>
+  <div class="mt-10 grid gap-(--layout-gutter) lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)] lg:items-start">
+    {/* The rail */}
+    <aside class="flex flex-col gap-4">
+      <div class={card}>
+        <h2 class={cardTitle}>Who made this</h2>
+        <div class="mt-3 flex items-center gap-3">
+          <img
+            src={assetHref('images/author.webp')}
+            alt="Kiarash Farajzadehahary"
+            width="56"
+            height="56"
+            class="size-14 rounded-full border border-line"
+          />
+          <div>
+            <p class="type-title text-base text-ink">Kiarash Farajzadehahary</p>
+            <p class="type-data text-xs text-ink-muted">Scientist · developer · designer</p>
+          </div>
+        </div>
+        <p class="type-body mt-4 text-sm leading-relaxed text-ink-secondary">
+          Every car site I read either copied its numbers from another one without saying where they
+          came from, or filled the gaps with something that looked right. I wanted one where each
+          figure names its source, each calculation shows its working, and a number nobody has
+          published stays empty. I build it in the open, on my own time, and I would genuinely like
+          to hear when something here is wrong.
+        </p>
+      </div>
+
+      <div class={card}>
+        <h2 class={cardTitle}>Contact</h2>
+        <ul class="mt-3 flex flex-col gap-2">
+          {
+            contact.map((item) => (
+              <li class="flex flex-wrap items-baseline justify-between gap-x-3 border-b border-line pb-2 text-sm last:border-b-0 last:pb-0">
+                <a
+                  href={item.url}
+                  rel="noopener"
+                  target={item.url.startsWith('mailto:') ? undefined : '_blank'}
+                  class="text-ink underline decoration-line underline-offset-4 hover:decoration-ink"
+                >
+                  {item.label}
+                </a>
+                <span class="type-data text-xs text-ink-muted">{item.note}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div class={card}>
+        <h2 class={cardTitle}>Support</h2>
+        <p class="type-body mt-3 text-sm leading-relaxed text-ink-secondary">
+          Markey is free, ad-free and login-free, and stays that way. If it settled an argument or
+          saved you an evening of cross-checking, you can put something toward the next hundred cars.
+        </p>
+        <div class="mt-4 flex flex-col gap-2">
+          <a href="https://www.paypal.com/donate/?hosted_button_id=S3BD5XFBMMWSJ" target="_blank" rel="noopener" class={button}>
+            <PayPalMark width="16" height="16" />
+            <span>Donate · PayPal</span>
+          </a>
+          <a href="https://www.buymeacoffee.com/kiarashfa" target="_blank" rel="noopener" class={button}>
+            <CoffeeMark width="16" height="16" />
+            <span>Buy Me a Coffee</span>
+          </a>
+        </div>
+      </div>
+
+      <div class={card}>
+        <h2 class={cardTitle}>Where it stands</h2>
+        <dl class="mt-3 grid grid-cols-2 gap-x-4 gap-y-2">
+          {
+            counts.map((count) => (
+              <div class="flex items-baseline justify-between gap-2 border-b border-line pb-1">
+                <dt class="type-data text-xs text-ink-muted">{count.label}</dt>
+                <dd class="type-title text-base tabular-nums text-ink">{count.value.toLocaleString('en')}</dd>
+              </div>
+            ))
+          }
+        </dl>
+        <p class="type-data mt-3 text-xs leading-relaxed text-ink-muted">
+          Counted from the published content at build time. The catalogue grows nameplate by
+          nameplate; every figure in it is checked by the same build that publishes it.
+        </p>
+      </div>
+    </aside>
+
+    {/* The reading column */}
+    <div class="type-body flex flex-col text-ink-secondary">
+      <h2 class="type-title text-xl text-ink">What makes it different</h2>
+      <p class="mt-3 leading-relaxed">
+        Anyone has a spec sheet. The difference here is that{' '}
+        <strong class="font-semibold text-ink">every number is either sourced or computed, and says which</strong>.
+        The site would rather show you a gap than a plausible guess, so a figure nobody has published
+        reads "not yet available" instead of quietly appearing as a number someone made up.
+      </p>
+      <p class="mt-3 leading-relaxed">
+        Anything you save, such as a garage, a comparison or a car you built, stays in your own
+        browser or travels in a link you choose to share. There is no server to send it to.
+      </p>
+
+      <h2 class="type-title mt-10 text-xl text-ink">How to read a figure</h2>
+      <p class="mt-3 leading-relaxed">Every measurement on the site carries one of four confidence marks.</p>
+      <dl class="mt-4 grid gap-3 sm:grid-cols-2">
+        {
+          marks.map((mark) => (
+            <div class="rounded-2xl border border-line bg-surface-1 p-4">
+              <dt class="type-heading text-sm text-ink">{mark.term}</dt>
+              <dd class="mt-1 text-sm leading-relaxed text-ink-secondary">{mark.text}</dd>
+            </div>
+          ))
+        }
+      </dl>
+
+      <h2 class="type-title mt-10 text-xl text-ink">What this site will not do</h2>
+      <ul class="mt-3 flex list-disc flex-col gap-2 pl-5 leading-relaxed">
+        <li>
+          <strong class="font-semibold text-ink">No generated car imagery.</strong>{' '}Image models get
+          generation and trim details wrong, which is exactly what this site exists to get right.
+          Every photograph here is a real one, credited to the person who took it.
+        </li>
+        <li>
+          <strong class="font-semibold text-ink">No invented numbers.</strong>{' '}Not as a placeholder,
+          not to fill a table, not to make a page look finished.
+        </li>
+        <li>
+          <strong class="font-semibold text-ink">No insurance quotes or investment advice.</strong>{' '}
+          Insurance is personal, actuarial and regulated; a static site cannot responsibly estimate a
+          real premium, so it does not try.
+        </li>
+      </ul>
+
+      <h2 class="type-title mt-10 text-xl text-ink">Licence</h2>
+      <p class="mt-3 leading-relaxed">
+        The site's code and text are published under the KFA Source-Available License 1.0.
+        Photographs and manufacturers' marks are third-party material under their own licences,
+        recorded on each image and summarised on the{' '}
+        <a class="text-ink underline decoration-line underline-offset-4 hover:decoration-ink" href={href('attributions')}>attributions</a> page.
+        How every calculated figure works is on the{' '}
+        <a class="text-ink underline decoration-line underline-offset-4 hover:decoration-ink" href={href('methodology')}>methodology</a> page.
+      </p>
+    </div>
   </div>
-
-  <Section
-    title="How to read a figure"
-    lede="Every measurement on the site carries one of four confidence marks."
-  >
-    <dl class="flex flex-col gap-4 py-5 text-sm">
-      <div>
-        <dt class="type-heading">Verified</dt>
-        <dd class="mt-1 text-ink-secondary">
-          Taken from a cited source, linked on the page. This is the default
-          expectation, so it carries no badge — the other three do.
-        </dd>
-      </div>
-      <div>
-        <dt class="type-heading">Estimated</dt>
-        <dd class="mt-1 text-ink-secondary">
-          Calculated or approximated rather than measured. The basis is always
-          stated next to the figure — for example, a frontal area derived from
-          width × height rather than published by the manufacturer.
-        </dd>
-      </div>
-      <div>
-        <dt class="type-heading">Not yet available</dt>
-        <dd class="mt-1 text-ink-secondary">
-          We don't have it. The field is deliberately left empty; the schema
-          itself forbids a placeholder from carrying a number.
-        </dd>
-      </div>
-      <div>
-        <dt class="type-heading">Sources disagree</dt>
-        <dd class="mt-1 text-ink-secondary">
-          Published sources conflict, and rather than silently picking one, the
-          page says so and explains the conflict.
-        </dd>
-      </div>
-    </dl>
-  </Section>
-
-  <Section title="What this site will not do">
-    <ul class="flex list-disc flex-col gap-2 py-5 pl-5 text-sm text-ink-secondary">
-      <li>
-        <strong class="text-ink">No AI-generated car imagery.</strong> Image
-        models get generation- and trim-level details wrong, which is exactly
-        what this site exists to get right. Every photograph here is a real
-        photograph, credited to the person who took it.
-      </li>
-      <li>
-        <strong class="text-ink">No invented numbers.</strong> Not as a
-        placeholder, not to fill a table, not to make a page look finished.
-      </li>
-      <li>
-        <strong class="text-ink">No insurance quotes or investment advice.</strong>
-        Insurance is personal, actuarial and regulated; a static site cannot
-        responsibly estimate a real premium, so it doesn't try.
-      </li>
-    </ul>
-  </Section>
-
-  <p class="mt-8 text-sm">
-    <a class="underline decoration-line underline-offset-4 hover:text-ink" href={href('methodology')}>
-      How the calculated figures work &rarr;
-    </a>
-  </p>
 </BaseLayout>

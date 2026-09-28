@@ -33,6 +33,7 @@
       brandName: string;
       accentColor: string;
       heroSrc: string | null;
+      heroSrcset?: string | null;
       nickname?: string;
       owned: boolean;
       url: string;
@@ -62,7 +63,7 @@
     <!-- STAGE: everything a future visual treatment would replace. -->
     <span class="slot-stage" aria-hidden="true">
       {#if car?.heroSrc}
-        <img src={car.heroSrc} alt="" loading="lazy" decoding="async" class="slot-photo" />
+        <img src={car.heroSrc} srcset={car.heroSrcset ?? undefined} sizes="(min-width: 40rem) 22vw, 45vw" alt="" loading="lazy" decoding="async" class="slot-photo" />
       {:else if car}
         <span class="slot-nophoto">No photograph yet</span>
       {/if}

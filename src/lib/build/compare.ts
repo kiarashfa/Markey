@@ -112,6 +112,7 @@ export function buildColumn(spec: BuildSpec, editHref: string): BuildColumn {
     yearEnd: null,
 
     heroSrc: null,
+    heroSrcset: null,
     heroAlt: null,
 
     lengthMm: spec.lengthMm > 0 ? spec.lengthMm : null,

@@ -9,6 +9,7 @@ import svelte from '@astrojs/svelte';
 import tailwindcss from '@tailwindcss/vite';
 
 import integrity from './src/integrations/integrity.ts';
+import responsiveImages from './src/integrations/responsive-images.ts';
 import rehypeCrosslink from './src/integrations/rehype-crosslink.ts';
 import rehypeCitations from './src/integrations/rehype-citations.ts';
 
@@ -56,6 +57,7 @@ export default defineConfig({
     sitemap({
       filter: (page) => !NOINDEX_PATHS.some((path) => new URL(page).pathname === `${BASE}${path}`),
     }),
+    responsiveImages(),
   ],
   markdown: {
     /**

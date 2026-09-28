@@ -13,6 +13,7 @@
 import { getBrands, getCars, erasFor, type JoinedBrand, type JoinedCar } from './entries.ts';
 import type { MarketVariant } from '../../schemas/car.ts';
 import { carHref, imageSrc } from './href.ts';
+import { srcsetFor } from './srcset.ts';
 import { countrySlug } from './taxonomy-views.ts';
 import type { PropertyValue } from '../../schemas/primitives.ts';
 
@@ -75,6 +76,8 @@ export interface CatalogueCar {
   yearEnd: number | null;
 
   heroSrc: string | null;
+  /** The hero at 800px and full width, for a slot narrower than the page. */
+  heroSrcset: string | null;
   heroAlt: string | null;
 
   lengthMm: number | null;
@@ -222,6 +225,7 @@ export function toCatalogueCar(
     yearEnd: data.productionYears.end,
 
     heroSrc: data.hero ? imageSrc(data.hero.src) : null,
+    heroSrcset: data.hero ? (srcsetFor(imageSrc(data.hero.src), data.hero.width) ?? null) : null,
     heroAlt: data.hero?.alt ?? null,
 
     lengthMm: value(data.dimensions?.length),

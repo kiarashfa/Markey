@@ -14,6 +14,7 @@ import BaseLayout from '../components/ui/BaseLayout.astro';
 import { buildCatalogue } from '../lib/content/catalogue.ts';
 import { getBrands, getCars } from '../lib/content/entries.ts';
 import { brandHref, carHref, href, imageSrc, taxonomyHref } from '../lib/content/href.ts';
+import { srcsetFor } from '../lib/content/srcset.ts';
 import { AXES, buildTermViews } from '../lib/content/taxonomy-views.ts';
 import { formatYears } from '../lib/render/format.ts';
 import { weeklyPick } from '../lib/showcase.ts';
@@ -47,6 +48,7 @@ const spotlight = weeklyPick(
     logoSrc: imageSrc(brand.data.logo.src),
     logoAlt: brand.data.logo.alt,
     heroSrc: car.data.hero ? imageSrc(car.data.hero.src) : undefined,
+    heroSrcset: car.data.hero ? srcsetFor(imageSrc(car.data.hero.src), car.data.hero.width) : undefined,
     heroAlt: car.data.hero?.alt,
     stats,
   };
@@ -96,7 +98,7 @@ const nameplates = cars.filter((c) => c.data.kind === 'model').length;
       spotlight.length === 0 && (
         <header class="mb-10">
           <h1 class="type-display text-[clamp(2rem,7vw,3.5rem)]">Markey</h1>
-          <p class="type-body mt-4 max-w-lede text-lg text-ink-secondary">
+          <p class="type-body mt-4 text-lg text-ink-secondary">
             A free encyclopedia of production cars.
           </p>
         </header>
@@ -110,7 +112,7 @@ const nameplates = cars.filter((c) => c.data.kind === 'model').length;
           All {catalogue.length} cars &rarr;
         </a>
       </div>
-      <p class="type-body mt-4 max-w-readable text-sm text-ink-secondary">
+      <p class="type-body mt-4 text-sm text-ink-secondary">
         {catalogue.length} generations and halo trims across {nameplates} nameplates and {brands.length} brands,
         every figure carrying its source. Filter and sort them by brand, body style, powertrain, era
         and more.
@@ -157,7 +159,7 @@ const nameplates = cars.filter((c) => c.data.kind === 'model').length;
       <div class="border-b border-line pb-3">
         <h2 class="type-title text-xl">Browse</h2>
       </div>
-      <p class="type-body mt-4 max-w-readable text-sm text-ink-secondary">
+      <p class="type-body mt-4 text-sm text-ink-secondary">
         Every browse axis is a view computed over tagged entries, so nothing breaks when a car is
         reclassified. Two of them, origin and era, are never tagged by hand at all.
       </p>

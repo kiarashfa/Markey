@@ -64,7 +64,7 @@ const { title, eyebrow, subtitle, accentColor, brandName, brandUrl, brandLogo, h
   </div>
 
   <div class="relative mx-auto w-full max-w-(--layout-max) px-(--layout-gutter) py-10 sm:py-14">
-    <div class="grid gap-8 lg:grid-cols-[1fr_minmax(0,22rem)] lg:items-center">
+    <div class={`grid gap-8 lg:items-center ${hero ? 'lg:grid-cols-[minmax(0,1fr)_minmax(0,22rem)]' : ''}`}>
       <div class="min-w-0">
         <div class="flex items-center gap-3">
           {
@@ -93,7 +93,7 @@ const { title, eyebrow, subtitle, accentColor, brandName, brandUrl, brandLogo, h
 
         {
           subtitle && (
-            <p class="type-body mt-3 max-w-readable text-base text-ink-secondary sm:text-lg">
+            <p class="type-body mt-3 text-base text-ink-secondary sm:text-lg">
               {subtitle}
             </p>
           )
@@ -119,6 +119,7 @@ const { title, eyebrow, subtitle, accentColor, brandName, brandUrl, brandLogo, h
             image={hero}
             priority
             showCaption={false}
+            sizes="(min-width: 64rem) 22rem, 100vw"
             imgClass="w-full rounded-xl border border-line/60 bg-surface-1 object-cover shadow-lg"
           />
         )

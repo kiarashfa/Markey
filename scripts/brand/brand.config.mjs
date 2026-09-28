@@ -1,6 +1,6 @@
 /**
  * Markey's brand assets: what `build.mjs` draws. Everything site-specific
- * lives here; the layout it is poured into is shared with the other three sites.
+ * lives here; the layout it is poured into is `build.mjs`.
  *
  * Colours are the light theme's tokens from `src/styles/global.css`, converted
  * from oklch to hex because the card is rendered outside the browser. Re-run

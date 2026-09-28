@@ -139,7 +139,7 @@
 {#if !inputs}
   <div class="rounded-lg border border-dashed border-line bg-surface-1 p-6">
     <h2 class="type-heading text-base">No instrumented readout for this car yet</h2>
-    <p class="mt-2 max-w-readable text-sm text-ink-secondary">
+    <p class="mt-2 text-sm text-ink-secondary">
       The physics needs figures we have not sourced for {carName} yet. Rather
       than fill the gaps with plausible numbers and present the result as a
       measurement, there is no panel.
@@ -408,7 +408,7 @@
       </section>
     {/if}
 
-    <p class="max-w-readable text-xs leading-relaxed text-ink-muted">
+    <p class="text-xs leading-relaxed text-ink-muted">
       Every figure on this page is <strong class="text-ink-secondary">modelled</strong>,
       not measured. The formulae and every default constant are published on the
       methodology page, including where the model is weakest — it knows nothing

@@ -3,10 +3,9 @@
 Called by `commons.mjs`. Python rather than `sharp`, because `scripts/data/`
 never runs in the build or in CI and a ~30 MB native npm dependency for an
 authoring-only step is not worth it. Python is already an authoring dependency
-here (`plan/_tools/`, `lib/sheet.py`). Ported from the sibling ARMAG project,
-which encodes 239 images this way at a 93 kB mean.
+here (`plan/_tools/`, `lib/sheet.py`).
 
-Markey needs this because it had no encoder at all: it stored Commons originals
+This site needs it because it had no encoder at all: it stored Commons originals
 verbatim at a 414 kB mean, and Tier 1 alone (1,043 nameplates x ~4 images) would
 be 1.65 GB against GitHub Pages' 1 GB soft limit. At these caps the same corpus
 is ~0.37 GB.
@@ -38,9 +37,10 @@ except ImportError:  # pragma: no cover - environment problem, not a code path
     )
     raise SystemExit(2)
 
-# Searched in this order. 86 first because it cleared the gallery cap for 30 of
-# the 34 pilot images; the tail exists because the other four needed 78 and 45.
-QUALITIES = (92, 86, 80, 74, 68, 62, 56, 50, 45, 40, 35, 30)
+# Searched in this order, from 80: above it WebP spends bytes on detail no one
+# sees at display size (sampled heroes were 30 to 40% larger at 86 to 92 with
+# no visible gain). The tail is for busy photographs that miss the cap.
+QUALITIES = (80, 76, 72, 68, 62, 56, 50, 45, 40, 35, 30)
 
 # Applied only after every quality has failed. Each step is a fresh resize from
 # the ORIGINAL, never a resize of an already-resized copy: repeated resampling

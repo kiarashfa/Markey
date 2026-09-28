@@ -6,13 +6,11 @@
  * No ranking — that is Matchmaker's job, and keeping them distinct is what
  * stops the site having two tools that do the same thing slightly differently.
  */
-import GuidedBrowse from '../../components/islands/GuidedBrowse.svelte';
+import ToolIsland from '../../components/islands/ToolIsland.svelte';
 import BaseLayout from '../../components/ui/BaseLayout.astro';
-import { buildCatalogue } from '../../lib/content/catalogue.ts';
-import { href } from '../../lib/content/href.ts';
+import { assetHref, href } from '../../lib/content/href.ts';
 import { bodyStyles, drivetrains, powertrains } from '../../schemas/taxonomy.ts';
 
-const catalogue = await buildCatalogue();
 const terms = (list: { id: string; label: string }[]) => list.map((t) => ({ id: t.id, label: t.label }));
 ---
 
@@ -23,7 +21,7 @@ const terms = (list: { id: string; label: string }[]) => list.map((t) => ({ id: 
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Guided Browse</h1>
-    <p class="type-body mt-3 max-w-lede text-ink-secondary">
+    <p class="type-body mt-3 text-ink-secondary">
       A few questions, ending in a list of the cars that meet all of them.
       Nothing here is ranked or scored — every result satisfies what you asked
       for equally. If you want them put in an order, use{' '}
@@ -32,12 +30,15 @@ const terms = (list: { id: string; label: string }[]) => list.map((t) => ({ id: 
   </header>
 
   <div class="mt-8">
-    <GuidedBrowse
+    <ToolIsland
       client:load
-      cars={catalogue}
-      bodyStyleTerms={terms(bodyStyles.terms)}
-      powertrainTerms={terms(powertrains.terms)}
-      drivetrainTerms={terms(drivetrains.terms)}
+      tool="guided-browse"
+      src={assetHref('catalogue.json')}
+      props={{
+        bodyStyleTerms: terms(bodyStyles.terms),
+        powertrainTerms: terms(powertrains.terms),
+        drivetrainTerms: terms(drivetrains.terms),
+      }}
     />
   </div>
 </BaseLayout>

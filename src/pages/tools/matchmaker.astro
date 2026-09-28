@@ -5,13 +5,11 @@
  * Dealbreakers first, then weighted preference ranking within what survives.
  * Composed from the same filter primitives Guided Browse uses.
  */
-import Matchmaker from '../../components/islands/Matchmaker.svelte';
+import ToolIsland from '../../components/islands/ToolIsland.svelte';
 import BaseLayout from '../../components/ui/BaseLayout.astro';
-import { buildCatalogue } from '../../lib/content/catalogue.ts';
-import { href } from '../../lib/content/href.ts';
+import { assetHref, href } from '../../lib/content/href.ts';
 import { bodyStyles, powertrains } from '../../schemas/taxonomy.ts';
 
-const catalogue = await buildCatalogue();
 /** Descriptions travel too: they are what turns a pill into a decision. */
 const terms = (list: { id: string; label: string; description?: string }[]) =>
   list.map((t) => ({ id: t.id, label: t.label, description: t.description }));
@@ -24,7 +22,7 @@ const terms = (list: { id: string; label: string; description?: string }[]) =>
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Matchmaker</h1>
-    <p class="type-body mt-3 max-w-lede text-ink-secondary">
+    <p class="type-body mt-3 text-ink-secondary">
       Dealbreakers rule cars out; preferences put what is left in an order. The
       percentage compares the survivors against each other, not against an
       abstract ideal. For filtering without an opinion about the order, use{' '}
@@ -33,11 +31,11 @@ const terms = (list: { id: string; label: string; description?: string }[]) =>
   </header>
 
   <div class="mt-8">
-    <Matchmaker
+    <ToolIsland
       client:load
-      cars={catalogue}
-      bodyStyleTerms={terms(bodyStyles.terms)}
-      powertrainTerms={terms(powertrains.terms)}
+      tool="matchmaker"
+      src={assetHref('catalogue.json')}
+      props={{ bodyStyleTerms: terms(bodyStyles.terms), powertrainTerms: terms(powertrains.terms) }}
     />
   </div>
 </BaseLayout>

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { srcsetFor } from '../../lib/content/srcset.ts';
   /**
    * Per-car photo gallery with a full-screen lightbox.
    *
@@ -284,6 +285,8 @@
       >
         <img
           src={image.src}
+          srcset={srcsetFor(image.src, image.width)}
+          sizes="(min-width: 40rem) 30vw, 50vw"
           alt={image.alt}
           width={image.width}
           height={image.height}

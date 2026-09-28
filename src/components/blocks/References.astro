@@ -41,7 +41,7 @@ const TYPE_LABEL: Record<string, string> = {
       <h2 id="references-heading" class="type-title text-lg">
         References
       </h2>
-      <p class="type-body mt-2 max-w-readable text-sm text-ink-muted">
+      <p class="type-body mt-2 text-sm text-ink-muted">
         {lede ??
           'Every sourced figure and every cited claim on this page, numbered. Wikipedia articles record the revision they were read at, because the article will have changed by the time you check it.'}
       </p>
@@ -81,7 +81,7 @@ const TYPE_LABEL: Record<string, string> = {
               </p>
 
               {reference.entry.note && (
-                <p class="mt-1.5 max-w-readable text-xs leading-relaxed text-ink-muted">
+                <p class="mt-1.5 text-xs leading-relaxed text-ink-muted">
                   {reference.entry.note}
                 </p>
               )}

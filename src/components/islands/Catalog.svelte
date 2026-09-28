@@ -55,7 +55,7 @@
     { key: 'segment', label: 'Segment', pick: (c) => (c.segment ? [c.segment] : []) },
     { key: 'positioning', label: 'Positioning', pick: (c) => (c.positioning ? [c.positioning] : []) },
     { key: 'era', label: 'Era', pick: (c) => c.eras },
-  ];
+  ].sort((a, b) => a.label.localeCompare(b.label)); // menus in alphabetical order, like their options
 
   type SortField = 'name' | 'year' | 'power' | 'zeroToHundred' | 'topSpeed' | 'consumption';
   type View = 'grid' | 'table';
@@ -227,24 +227,26 @@
 
 <div class="flex flex-col gap-4">
   <!-- Controls: search, sort and view on one row; the facet menus on the next. -->
-  <div class="relative flex flex-col gap-3">
-    <div class="flex flex-wrap items-center gap-2">
-      <label class="min-w-0 flex-1 basis-60">
+  <div class="relative z-20 flex flex-col gap-3">
+    <!-- Row one: the tools that shape the list. Every control is 40px tall and
+         the search takes the rest, so the row is filled edge to edge. -->
+    <div class="grid grid-cols-2 items-center gap-2 sm:flex sm:flex-wrap max-sm:[&>*:last-child:nth-child(even)]:col-span-2">
+      <label class="col-span-2 min-w-0 sm:flex-1 sm:basis-60">
         <span class="sr-only">Search the catalog</span>
         <input
           type="search"
           bind:value={query}
           placeholder="Search by name, brand or code…"
-          class="w-full rounded-full border border-line bg-surface-1 px-4 py-2 text-sm placeholder:text-ink-muted focus:border-line-strong focus:outline-none"
+          class="h-10 w-full rounded-full border border-line bg-surface-1 px-4 text-sm placeholder:text-ink-muted focus:border-[var(--color-ink-muted)] focus:outline-none"
         />
       </label>
 
-      <label class="flex items-center gap-2 text-xs text-ink-secondary">
+      <label class="flex items-center text-xs text-ink-secondary">
         <span class="sr-only">Sort by</span>
         <select
           data-pagefind-ignore
           bind:value={sortField}
-          class="h-9 rounded-full border border-line bg-surface-1 px-3 text-[13px] text-ink focus:border-line-strong focus:outline-none"
+          class="h-10 w-full rounded-full border border-line bg-surface-1 px-4 text-[13px] font-medium text-ink focus:border-line-strong focus:outline-none"
         >
           {#each Object.entries(SORT_LABELS) as [field, label] (field)}
             <option value={field}>{label}</option>
@@ -254,18 +256,18 @@
 
       <button
         type="button"
-        class="pressable h-9 rounded-full border border-line px-3.5 text-[13px] text-ink-secondary transition-colors duration-150 hover:border-line-strong hover:text-ink"
+        class="pressable h-10 rounded-full border border-line px-4 text-[13px] font-medium text-ink-secondary transition-colors duration-150 hover:border-line-strong hover:text-ink"
         onclick={() => (sortAscending = !sortAscending)}
         aria-label={sortAscending ? 'Sorted ascending; switch to descending' : 'Sorted descending; switch to ascending'}
       >
-        {sortAscending ? '↑ Ascending' : '↓ Descending'}
+        <span class="whitespace-nowrap">{sortAscending ? '↑ Ascending' : '↓ Descending'}</span>
       </button>
 
-      <div class="flex items-center gap-1 rounded-full border border-line bg-surface-1 p-1">
+      <div class="flex h-10 items-center gap-1 rounded-full border border-line bg-surface-1 p-1">
         {#each [['grid', 'Cards'], ['table', 'Table']] as [value, label] (value)}
           <button
             type="button"
-            class={`rounded-full px-3 py-1 text-xs font-medium transition-colors duration-150 ${view === value ? 'bg-surface-3 text-ink' : 'text-ink-secondary'}`}
+            class={`h-full flex-1 rounded-full px-3.5 text-xs font-medium transition-colors duration-150 ${view === value ? 'bg-surface-3 text-ink' : 'text-ink-secondary'}`}
             aria-pressed={view === value}
             onclick={() => (view = value as View)}
           >
@@ -275,10 +277,13 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap items-center gap-2">
+    <!-- Row two: the list menus, in alphabetical order, each stretched so the
+         row is filled. -->
+    <div class="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:items-center max-sm:[&>*:last-child:nth-child(odd)]:col-span-2">
       {#each facets as facet (facet.key)}
         {#if facet.terms.length > 1 || selected[facet.key].length > 0}
           <FacetMenu
+            fill
             label={facet.label}
             terms={facet.terms}
             counts={facet.counts}

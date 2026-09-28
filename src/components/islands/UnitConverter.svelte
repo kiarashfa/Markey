@@ -123,7 +123,7 @@
           <dt class="text-xs text-ink-muted">{row.label}</dt>
           <dd class="type-data mt-0.5 text-lg font-semibold tabular-nums">{row.value}</dd>
           {#if row.note}
-            <p class="mt-1 max-w-readable text-xs leading-relaxed text-ink-muted">{row.note}</p>
+            <p class="mt-1 text-xs leading-relaxed text-ink-muted">{row.note}</p>
           {/if}
         </div>
       {/each}

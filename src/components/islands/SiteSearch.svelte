@@ -215,12 +215,12 @@
   {#if available === false}
     <div class="rounded-lg border border-dashed border-line bg-surface-1 p-6">
       <h2 class="type-heading text-base">The search index isn't here</h2>
-      <p class="mt-2 max-w-readable text-sm text-ink-secondary">
+      <p class="mt-2 text-sm text-ink-secondary">
         Full-text search reads an index built from the finished pages, after the
         site is built. During local development that index does not exist yet,
         so there is nothing to search rather than something searching badly.
       </p>
-      <p class="mt-3 max-w-readable text-sm text-ink-secondary">
+      <p class="mt-3 text-sm text-ink-secondary">
         Everything is still reachable without it: the catalog's own filters work
         on structured data and need no index at all.
       </p>
@@ -234,7 +234,7 @@
       <p class="text-sm text-ink-secondary">
         Nothing on the site matches <strong class="text-ink">{query.trim()}</strong>.
       </p>
-      <p class="mt-2 max-w-readable text-xs text-ink-muted">
+      <p class="mt-2 text-xs text-ink-muted">
         The catalog is deliberately small while the model and the sourcing
         pipeline are proven. A missing car is a gap in our research, not a
         statement that the car is unimportant.

@@ -48,6 +48,18 @@
 
   const carsById = new Map(cars.map((c) => [c.id, c]));
 
+  /** The bay picker: brand, then name, narrowed by a search box. */
+  let query = $state('');
+  const sorted = [...cars].sort((a, b) => a.brandName.localeCompare(b.brandName) || a.name.localeCompare(b.name));
+  const pickable = $derived.by(() => {
+    const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+    if (words.length === 0) return sorted;
+    return sorted.filter((car) => {
+      const hay = `${car.name} ${car.brandName}`.toLowerCase();
+      return words.every((word) => hay.includes(word));
+    });
+  });
+
   let garage = $state<Garage>(emptyGarage(10));
   let selectedUid = $state<string | null>(null);
   let notice = $state<string | null>(null);
@@ -339,8 +351,18 @@
       {#if cars.length === 0}
         <p class="mt-2 text-sm text-ink-muted">There are no cars in the catalog yet.</p>
       {:else}
-        <ul class="mt-2 grid gap-1 sm:grid-cols-2">
-          {#each cars as car (car.id)}
+        <input
+          type="search"
+          bind:value={query}
+          placeholder="Search by name or brand…"
+          aria-label="Search the cars to park"
+          class="mt-2 w-full min-w-0 rounded-full border border-line bg-surface-0 px-4 py-2 text-sm outline-none transition-colors duration-150 placeholder:text-ink-muted focus:border-ink-muted sm:max-w-sm"
+        />
+        {#if pickable.length === 0}
+          <p class="mt-4 px-2 text-sm text-ink-muted">No car matches "{query}".</p>
+        {/if}
+        <ul class="mt-3 grid max-h-[26rem] gap-1 overflow-y-auto overscroll-contain pr-1 sm:grid-cols-2">
+          {#each pickable as car (car.id)}
             <li>
               <button
                 type="button"

@@ -21,6 +21,7 @@
  * whether or not the popover is ever opened.
  */
 import { imageSrc } from '../../lib/content/href.ts';
+import { srcsetFor } from '../../lib/content/srcset.ts';
 import { ATTRIBUTION_REQUIRED, type ImageRef } from '../../schemas/primitives.ts';
 
 interface Props {
@@ -31,6 +32,8 @@ interface Props {
   priority?: boolean;
   showCaption?: boolean;
   class?: string;
+  /** How wide the slot is, for choosing between the 800px copy and the original. */
+  sizes?: string;
 }
 
 const {
@@ -39,6 +42,7 @@ const {
   priority = false,
   showCaption = true,
   class: className = '',
+  sizes = '(min-width: 64rem) 36rem, 100vw',
 } = Astro.props;
 
 const LICENSE_LABELS: Record<string, string> = {
@@ -68,6 +72,8 @@ const popoverId = `credit-${image.src.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|
 <figure class:list={['relative min-w-0', className]}>
   <img
     src={imageSrc(image.src)}
+    srcset={srcsetFor(imageSrc(image.src), image.width)}
+    sizes={sizes}
     alt={image.alt}
     width={image.width}
     height={image.height}

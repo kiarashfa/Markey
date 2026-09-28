@@ -208,8 +208,8 @@ async function cmdLicence(rawFile) {
 
 /**
  * Byte and pixel caps, by filename. `hero.webp` is the hero; everything else is
- * gallery — the same rule as the sibling ARMAG project, and it is a rule rather
- * than a field so nobody has to remember to set one.
+ * gallery. It is a rule rather than a field so nobody has to remember to set
+ * one.
  */
 function capsFor(basename) {
   return /^hero\./i.test(basename)
@@ -353,7 +353,7 @@ async function cmdDownload(rawFile, carSlug, basename) {
     // with different obligations, and the schema requires the honest one.
     console.error(
       `NOTE: this is a brand mark. Set licenseType 'trademark-nominative-use' with a licenseNote, ` +
-        `not '${meta.licenseType}' — see PLAYBOOK rule 9.`,
+        `not '${meta.licenseType}': only licences on the approved list are accepted.`,
     );
   }
   console.log(JSON.stringify(imageRef, null, 2));
@@ -364,8 +364,7 @@ async function cmdDownload(rawFile, carSlug, basename) {
  *
  * has you choose from what `find` listed, and choosing means looking.
  * Opening three to five candidates at 1600 px each in order to reject most of
- * them is the expensive way to do that: the sibling recipe site measured 321 k
- * tokens for 70 subjects before it worked this way. One small sheet is a single
+ * them is the expensive way to do that. One small sheet is a single
  * read, and side by side is a better comparison than one after another.
  *
  * Writes to `.cache/sheets/`, which is gitignored — a sheet is scratch for

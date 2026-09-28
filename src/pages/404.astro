@@ -9,7 +9,7 @@
  * `noindex`, and so out of the site's own search too: a soft 404 indexed under
  * its own title is worse than none.
  *
- * The same shape as the other three sites' 404s: the status, a plain headline, one
+ * The status, a plain headline, one
  * line in the site's own voice, then the ways out.
  */
 import BaseLayout from '../components/ui/BaseLayout.astro';
@@ -58,8 +58,9 @@ const ways = [
     </nav>
 
     <p class="mt-7 max-w-[38rem] text-sm leading-relaxed text-ink-muted">
-      Or search: the button in the header finds alternative names and spellings as well
-      as model titles, which is very likely what brought you here.
+      Or <a class="underline decoration-line underline-offset-4 hover:text-ink" href={href('search')}>search</a>:
+      it finds alternative names and spellings as well as model titles, which is very likely
+      what brought you here.
     </p>
   </div>
 </BaseLayout>

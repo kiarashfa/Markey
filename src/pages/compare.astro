@@ -4,12 +4,9 @@
  *
  * Client-side and URL-shareable; owns no content of its own.
  */
-import CompareTool from '../components/islands/CompareTool.svelte';
+import ToolIsland from '../components/islands/ToolIsland.svelte';
 import BaseLayout from '../components/ui/BaseLayout.astro';
-import { buildCatalogue } from '../lib/content/catalogue.ts';
-import { href } from '../lib/content/href.ts';
-
-const catalogue = await buildCatalogue();
+import { assetHref, href } from '../lib/content/href.ts';
 ---
 
 <BaseLayout
@@ -19,7 +16,7 @@ const catalogue = await buildCatalogue();
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Compare</h1>
-    <p class="type-body mt-3 max-w-lede text-ink-secondary">
+    <p class="type-body mt-3 text-ink-secondary">
       Up to four cars, row by row. Your selection is written into this page's
       address as you choose, so a comparison can be bookmarked or sent to
       someone without an account or a saved file. One of the four can be a car
@@ -28,6 +25,6 @@ const catalogue = await buildCatalogue();
   </header>
 
   <div class="mt-8">
-    <CompareTool client:load cars={catalogue} buildUrl={href('build')} />
+    <ToolIsland client:load tool="compare" src={assetHref('catalogue.json')} props={{ buildUrl: href('build') }} />
   </div>
 </BaseLayout>

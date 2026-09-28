@@ -15,11 +15,25 @@ interface Props {
 
 const { title, lede, id, as = 'div' } = Astro.props as Props;
 const Body = as;
+
+/**
+ * Every section can be linked to: without an explicit id it takes one from its
+ * title ("GTI" → `gti`, "1.6 Diesel" → `1-6-diesel`), so an entry's prose can
+ * point at a trim with `[Golf GTI](#gti)` and the link has somewhere to land.
+ */
+const anchor =
+  id ??
+  title
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/\p{Diacritic}/gu, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 ---
 
-<section id={id} class="mt-10 first:mt-0">
+<section id={anchor || undefined} class="mt-10 scroll-mt-24 first:mt-0">
   <h2 class="type-heading text-lg">{title}</h2>
-  {lede && <p class="mt-1 max-w-readable text-sm leading-relaxed text-ink-secondary">{lede}</p>}
+  {lede && <p class="mt-1 text-sm leading-relaxed text-ink-secondary">{lede}</p>}
   <Body class="mt-4 rounded-lg border border-line bg-surface-1 px-4 sm:px-5">
     <slot />
   </Body>

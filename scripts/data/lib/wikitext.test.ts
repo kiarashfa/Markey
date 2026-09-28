@@ -1,6 +1,6 @@
 /**
  * Every case here is a real string taken from one of the five articles the
- * Phase 10 pilot batch was authored from. A parser for this job is only worth
+ * the first entries was authored from. A parser for this job is only worth
  * having if it survives the actual infoboxes, not tidy invented ones.
  */
 import assert from 'node:assert/strict';

@@ -10,11 +10,9 @@
  * The page holds no user data of its own: everything lives in the visitor's
  * browser, and this is just the shell that renders it.
  */
-import MyGarage from '../components/islands/MyGarage.svelte';
+import ToolIsland from '../components/islands/ToolIsland.svelte';
 import BaseLayout from '../components/ui/BaseLayout.astro';
-import { buildCatalogue } from '../lib/content/catalogue.ts';
-
-const catalogue = await buildCatalogue();
+import { assetHref } from '../lib/content/href.ts';
 ---
 
 <BaseLayout
@@ -24,12 +22,12 @@ const catalogue = await buildCatalogue();
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">My Garage</h1>
-    <p class="type-body mt-3 max-w-lede text-ink-secondary">
+    <p class="type-body mt-3 text-ink-secondary">
       Park the cars you like into numbered bays. Tick "I own this one" on any of
       them to unlock ownership tooling for that car — a value projection, a
       service log, and reminders — without changing anything else.
     </p>
-    <p class="type-body mt-2 max-w-readable text-sm text-ink-muted">
+    <p class="type-body mt-2 text-sm text-ink-muted">
       All of it stays in this browser. There is no account, and no server to
       send it to. It leaves only when you choose to share or back it up, and
       those two are deliberately different things.
@@ -37,6 +35,6 @@ const catalogue = await buildCatalogue();
   </header>
 
   <div class="mt-8">
-    <MyGarage client:load cars={catalogue} />
+    <ToolIsland client:load tool="garage" src={assetHref('catalogue.json')} />
   </div>
 </BaseLayout>

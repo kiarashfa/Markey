@@ -213,7 +213,7 @@
   <!-- Start from something plausible -------------------------------------- -->
   <section class="rounded-lg border border-line bg-surface-1 p-5">
     <h2 class="type-heading text-sm">Start from</h2>
-    <p class="mt-1.5 max-w-readable text-xs leading-relaxed text-ink-muted">
+    <p class="mt-1.5 text-xs leading-relaxed text-ink-muted">
       Starting positions for a car you are inventing, not figures about a car
       anyone built. Nothing here is sourced and nothing here is meant to be —
       pick the nearest one and change all of it.
@@ -284,7 +284,7 @@
         </label>
       </div>
 
-      <p class="mt-4 max-w-readable text-xs leading-relaxed text-ink-muted">{TORQUE_NOTE}</p>
+      <p class="mt-4 text-xs leading-relaxed text-ink-muted">{TORQUE_NOTE}</p>
     </div>
 
     <div class="rounded-lg border border-line bg-surface-1 p-5">
@@ -326,7 +326,7 @@
         </label>
       </div>
 
-      <p class="mt-4 max-w-readable text-xs leading-relaxed text-ink-muted">
+      <p class="mt-4 text-xs leading-relaxed text-ink-muted">
         {#if solverApplied}
           <span class="text-status-estimated">From the wind tunnel:</span>
           Cd {solverApplied.cd.toFixed(3)} over {solverApplied.areaM2.toFixed(2)} m², measured
@@ -351,7 +351,7 @@
   <!-- Gearing --------------------------------------------------------------- -->
   <section class="rounded-lg border border-line bg-surface-1 p-5">
     <h2 class="type-heading text-sm">Gearing</h2>
-    <p class="mt-1 max-w-readable text-xs leading-relaxed text-ink-secondary">
+    <p class="mt-1 text-xs leading-relaxed text-ink-secondary">
       Road speed at 1000 rpm in top gear, and the engine speed the run ends at.
       One number each, both readable off a tachometer — which is why the model
       asks for these rather than for a ratio, a final drive and a tyre size.
@@ -392,7 +392,7 @@
   -->
   <section class="rounded-lg border border-line bg-surface-1 p-5">
     <h2 class="type-heading text-sm">Measure the shape</h2>
-    <p class="mt-1 max-w-readable text-xs leading-relaxed text-ink-secondary">
+    <p class="mt-1 text-xs leading-relaxed text-ink-secondary">
       The dimensions above are a body, and the wind tunnel will run it and
       report what it measures. Send that back into the build and every figure
       below recomputes from a Cd nobody typed — a lower roof, a tighter wake, a
@@ -435,7 +435,7 @@
       </div>
     </div>
 
-    <p class="mt-2 max-w-readable text-xs leading-relaxed text-ink-muted">
+    <p class="mt-2 text-xs leading-relaxed text-ink-muted">
       This build is written into the page's address as you type. Nothing is
       saved anywhere, so the link is the only copy — and it is enough.
     </p>
@@ -453,7 +453,7 @@
       {:else}
         <div class="rounded-lg border border-dashed border-line bg-surface-1 p-6">
           <h3 class="type-heading text-base">Not enough to model yet</h3>
-          <p class="mt-2 max-w-readable text-sm text-ink-secondary">
+          <p class="mt-2 text-sm text-ink-secondary">
             The physics needs a few more figures before it can say anything. It
             will not fill them in for you — a defaulted number presented as a
             result is the one thing this site never does.
