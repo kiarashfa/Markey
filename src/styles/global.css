@@ -142,7 +142,6 @@
    * watching, and is never correct for UI.
    */
   --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
-  --ease-in-out-strong: cubic-bezier(0.77, 0, 0.175, 1);
 
   /* Fallback accent for anything rendered outside a brand context. */
   --brand-accent: oklch(55% 0.13 250);
