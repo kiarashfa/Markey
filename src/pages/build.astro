@@ -22,7 +22,7 @@ const terms = (axis: string) => termsOf(axis).map(({ id, label }) => ({ id, labe
 <BaseLayout
   searchKind="Tools"
   title="Build a car"
-  description="Specify a car that does not exist — mass, power, gearing, drag — and run it through the same physics this site models real cars with. The build lives in the URL, so it is shareable."
+  description="Specify a car that does not exist (mass, power, gearing, drag) and run it through the same physics this site models real cars with. The build lives in the URL, so it is shareable."
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Build a car</h1>
@@ -31,8 +31,8 @@ const terms = (axis: string) => termsOf(axis).map(({ id, label }) => ({ id, labe
       through the <a
         class="underline decoration-line underline-offset-4 hover:text-ink"
         href={href('methodology')}>same physics</a
-      > the catalogue's cars are modelled with — not a simplified version for hypotheticals,
-      the identical functions — so a car you invent and a car someone built are measured
+      > the catalogue's cars are modelled with: not a simplified version for hypotheticals but
+      the identical functions, so a car you invent and a car someone built are measured
       by one ruler.
     </p>
     <p class="type-body mt-3 text-sm text-ink-muted">

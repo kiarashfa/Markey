@@ -48,14 +48,16 @@
   const PAGE = 48;
 
   const AXES: { key: AxisKey; label: string; pick: (car: CatalogIndexRow) => string[] }[] = [
+    // In the table's order where the table has a column (Car is the brand, Years
+    // the era); the filters with no column follow.
     { key: 'brand', label: 'Brand', pick: (c) => [c.brandId] },
+    { key: 'era', label: 'Era', pick: (c) => c.eras },
     { key: 'body', label: 'Body style', pick: (c) => c.bodyStyles },
     { key: 'powertrain', label: 'Powertrain', pick: (c) => c.powertrains },
     { key: 'drivetrain', label: 'Drivetrain', pick: (c) => c.drivetrains },
     { key: 'segment', label: 'Segment', pick: (c) => (c.segment ? [c.segment] : []) },
     { key: 'positioning', label: 'Positioning', pick: (c) => (c.positioning ? [c.positioning] : []) },
-    { key: 'era', label: 'Era', pick: (c) => c.eras },
-  ].sort((a, b) => a.label.localeCompare(b.label)); // menus in alphabetical order, like their options
+  ];
 
   type SortField = 'name' | 'year' | 'power' | 'zeroToHundred' | 'topSpeed' | 'consumption';
   type View = 'grid' | 'table';
@@ -168,6 +170,20 @@
 
   /* ── The address bar ─────────────────────────────────────────────────── */
 
+  /** The table's columns; each header sorts by its column, a second click reverses. */
+  const COLUMNS: { field: SortField; label: string; right?: boolean }[] = [
+    { field: 'name', label: 'Car' },
+    { field: 'year', label: 'Years' },
+    { field: 'power', label: 'Power', right: true },
+    { field: 'zeroToHundred', label: '0–100', right: true },
+    { field: 'topSpeed', label: 'Top speed', right: true },
+    { field: 'consumption', label: 'Consumption', right: true },
+  ];
+  function sortBy(field: SortField) {
+    sortAscending = sortField === field ? !sortAscending : true;
+    sortField = field;
+  }
+
   const SORT_LABELS: Record<SortField, string> = {
     name: 'Name',
     year: 'Year',
@@ -221,119 +237,127 @@
 
   const num = (n: number | null, unit: string, decimals = 0) =>
     n === null
-      ? '—'
+      ? '·'
       : `${n.toLocaleString('en-GB', { minimumFractionDigits: decimals, maximumFractionDigits: decimals })} ${unit}`;
 </script>
 
 <div class="flex flex-col gap-4">
-  <!-- Controls: search, sort and view on one row; the facet menus on the next. -->
-  <div class="relative z-20 flex flex-col gap-3">
-    <!-- Row one: the tools that shape the list. Every control is 40px tall and
-         the search takes the rest, so the row is filled edge to edge. -->
-    <div class="grid grid-cols-2 items-center gap-2 sm:flex sm:flex-wrap max-sm:[&>*:last-child:nth-child(even)]:col-span-2">
-      <label class="col-span-2 min-w-0 sm:flex-1 sm:basis-60">
-        <span class="sr-only">Search the catalog</span>
-        <input
-          type="search"
-          bind:value={query}
-          placeholder="Search by name, brand or code…"
-          class="h-10 w-full rounded-full border border-line bg-surface-1 px-4 text-sm placeholder:text-ink-muted focus:border-[var(--color-ink-muted)] focus:outline-none"
-        />
-      </label>
-
-      <label class="flex items-center text-xs text-ink-secondary">
-        <span class="sr-only">Sort by</span>
-        <select
-          data-pagefind-ignore
-          bind:value={sortField}
-          class="h-10 w-full rounded-full border border-line bg-surface-1 px-4 text-[13px] font-medium text-ink focus:border-line-strong focus:outline-none"
-        >
-          {#each Object.entries(SORT_LABELS) as [field, label] (field)}
-            <option value={field}>{label}</option>
-          {/each}
-        </select>
-      </label>
-
-      <button
-        type="button"
-        class="pressable h-10 rounded-full border border-line px-4 text-[13px] font-medium text-ink-secondary transition-colors duration-150 hover:border-line-strong hover:text-ink"
-        onclick={() => (sortAscending = !sortAscending)}
-        aria-label={sortAscending ? 'Sorted ascending; switch to descending' : 'Sorted descending; switch to ascending'}
-      >
-        <span class="whitespace-nowrap">{sortAscending ? '↑ Ascending' : '↓ Descending'}</span>
-      </button>
-
-      <div class="flex h-10 items-center gap-1 rounded-full border border-line bg-surface-1 p-1">
-        {#each [['grid', 'Cards'], ['table', 'Table']] as [value, label] (value)}
-          <button
-            type="button"
-            class={`h-full flex-1 rounded-full px-3.5 text-xs font-medium transition-colors duration-150 ${view === value ? 'bg-surface-3 text-ink' : 'text-ink-secondary'}`}
-            aria-pressed={view === value}
-            onclick={() => (view = value as View)}
-          >
-            {label}
-          </button>
-        {/each}
-      </div>
-    </div>
-
-    <!-- Row two: the list menus, in alphabetical order, each stretched so the
-         row is filled. -->
-    <div class="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:items-center max-sm:[&>*:last-child:nth-child(odd)]:col-span-2">
-      {#each facets as facet (facet.key)}
-        {#if facet.terms.length > 1 || selected[facet.key].length > 0}
-          <FacetMenu
-            fill
-            label={facet.label}
-            terms={facet.terms}
-            counts={facet.counts}
-            selected={selected[facet.key]}
-            onchange={(next) => (selected = { ...selected, [facet.key]: next })}
-          />
+  <!-- The console: a header line saying what is shown and what is filtering
+       it, each filter removable on its own; then search, sort and view on one
+       row and the facet menus on the next. -->
+  <section
+    aria-label="Filter the catalog"
+    class="relative z-20 rounded-2xl border border-line border-t-[3px] border-t-[var(--brand-accent)] bg-surface-0 shadow-[0_18px_40px_-30px_rgb(0_0_0/0.45)]"
+  >
+    <div class="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-t-[13px] border-b border-line bg-surface-1 px-4 py-2.5 sm:px-5">
+      <span class="type-title text-[17px] text-ink">Filter</span>
+      <p class="text-sm text-ink-secondary" aria-live="polite">
+        {#if loadState === 'loading'}
+          Showing {windowed.length} of {total} cars · loading the rest…
+        {:else if loadState === 'failed'}
+          The full list could not be loaded; these are the first {cars.length} of {total} cars.
+        {:else}
+          {results.length}
+          {results.length === 1 ? 'car' : 'cars'}
+          {#if results.length !== cars.length}<span class="text-ink-muted"> of {cars.length}</span>{/if}
         {/if}
-      {/each}
-    </div>
-
-    <!-- What is filtering the list right now, each chip removing its own filter. -->
-    {#if activeFilterCount > 0}
-      <div class="flex flex-wrap items-center gap-1.5">
-        {#if query.trim()}
-          <button
-            type="button"
-            class="inline-flex items-center gap-1.5 rounded-full border border-[var(--brand-accent)] px-2.5 py-0.5 text-xs text-ink"
-            onclick={() => (query = '')}>“{query.trim()}” <span aria-hidden="true" class="text-ink-muted">×</span></button
-          >
-        {/if}
-        {#each AXES as axis (axis.key)}
-          {#each selected[axis.key] as id (id)}
+      </p>
+      {#if activeFilterCount > 0}
+        <div class="flex flex-wrap items-center gap-1.5 sm:ml-auto">
+          {#if query.trim()}
             <button
               type="button"
               class="inline-flex items-center gap-1.5 rounded-full border border-[var(--brand-accent)] px-2.5 py-0.5 text-xs text-ink"
-              aria-label={`Remove ${labelOf(axis.key, id)}`}
-              onclick={() => (selected = { ...selected, [axis.key]: selected[axis.key].filter((x) => x !== id) })}
+              onclick={() => (query = '')}>“{query.trim()}” <span aria-hidden="true" class="text-ink-muted">×</span></button
             >
-              {labelOf(axis.key, id)} <span aria-hidden="true" class="text-ink-muted">×</span>
+          {/if}
+          {#each AXES as axis (axis.key)}
+            {#each selected[axis.key] as id (id)}
+              <button
+                type="button"
+                class="inline-flex items-center gap-1.5 rounded-full border border-[var(--brand-accent)] px-2.5 py-0.5 text-xs text-ink"
+                aria-label={`Remove ${labelOf(axis.key, id)}`}
+                onclick={() => (selected = { ...selected, [axis.key]: selected[axis.key].filter((x) => x !== id) })}
+              >
+                {labelOf(axis.key, id)} <span aria-hidden="true" class="text-ink-muted">×</span>
+              </button>
+            {/each}
+          {/each}
+          <button type="button" class="ml-1 text-xs text-ink-secondary underline underline-offset-2 hover:text-ink" onclick={clearAll}>
+            Clear all
+          </button>
+        </div>
+      {/if}
+    </div>
+
+    <div class="flex flex-col gap-3 px-4 py-4 sm:px-5">
+      <!-- Row one: the tools that shape the list. Every control is 40px tall and
+           the search takes the rest, so the row is filled edge to edge. -->
+      <div class="grid grid-cols-2 items-center gap-2 sm:flex sm:flex-wrap max-sm:[&>*:last-child:nth-child(even)]:col-span-2">
+        <label class="col-span-2 min-w-0 sm:flex-1 sm:basis-60">
+          <span class="sr-only">Search the catalog</span>
+          <input
+            type="search"
+            bind:value={query}
+            placeholder="Search by name, brand or code…"
+            class="h-10 w-full rounded-full border border-line bg-surface-1 px-4 text-sm placeholder:text-ink-muted focus:border-[var(--color-ink-muted)] focus:outline-none"
+          />
+        </label>
+
+        <label class="flex items-center text-xs text-ink-secondary">
+          <span class="sr-only">Sort by</span>
+          <select
+            data-pagefind-ignore
+            bind:value={sortField}
+            class="h-10 w-full rounded-full border border-line bg-surface-1 px-4 text-[13px] font-medium text-ink focus:border-line-strong focus:outline-none"
+          >
+            {#each Object.entries(SORT_LABELS) as [field, label] (field)}
+              <option value={field}>{label}</option>
+            {/each}
+          </select>
+        </label>
+
+        <button
+          type="button"
+          class="pressable h-10 rounded-full border border-line px-4 text-[13px] font-medium text-ink-secondary transition-colors duration-150 hover:border-line-strong hover:text-ink"
+          onclick={() => (sortAscending = !sortAscending)}
+          aria-label={sortAscending ? 'Sorted ascending; switch to descending' : 'Sorted descending; switch to ascending'}
+        >
+          <span class="whitespace-nowrap">{sortAscending ? '↑ Ascending' : '↓ Descending'}</span>
+        </button>
+
+        <div class="flex h-10 items-center gap-1 rounded-full border border-line bg-surface-1 p-1">
+          {#each [['grid', 'Cards'], ['table', 'Table']] as [value, label] (value)}
+            <button
+              type="button"
+              class={`h-full flex-1 rounded-full px-3.5 text-xs font-medium transition-colors duration-150 ${view === value ? 'bg-surface-3 text-ink' : 'text-ink-secondary'}`}
+              aria-pressed={view === value}
+              onclick={() => (view = value as View)}
+            >
+              {label}
             </button>
           {/each}
-        {/each}
-        <button type="button" class="ml-1 text-xs text-ink-secondary underline underline-offset-2 hover:text-ink" onclick={clearAll}>
-          Clear all
-        </button>
+        </div>
       </div>
-    {/if}
-  </div>
 
-  <p class="text-sm text-ink-secondary" aria-live="polite">
-    {#if loadState === 'loading'}
-      Showing {windowed.length} of {total} cars · loading the rest…
-    {:else if loadState === 'failed'}
-      The full list could not be loaded; these are the first {cars.length} of {total} cars.
-    {:else}
-      {results.length}
-      {results.length === 1 ? 'car' : 'cars'}
-      {#if results.length !== cars.length}<span class="text-ink-muted"> of {cars.length}</span>{/if}
-    {/if}
-  </p>
+      <!-- Row two: the list menus, in the table's column order, each stretched so
+           the row is filled. -->
+      <div class="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:items-center max-sm:[&>*:last-child:nth-child(odd)]:col-span-2">
+        {#each facets as facet (facet.key)}
+          {#if facet.terms.length > 1 || selected[facet.key].length > 0}
+            <FacetMenu
+              fill
+              label={facet.label}
+              terms={facet.terms}
+              counts={facet.counts}
+              selected={selected[facet.key]}
+              onchange={(next) => (selected = { ...selected, [facet.key]: next })}
+            />
+          {/if}
+        {/each}
+      </div>
+    </div>
+  </section>
 
   {#if results.length === 0}
     <div class="rounded-lg border border-line bg-surface-1 p-6 text-center">
@@ -385,12 +409,24 @@
       <table class="type-data w-full min-w-[46rem] border-collapse text-sm">
         <thead>
           <tr class="border-b border-line bg-surface-2 text-left">
-            <th scope="col" class="px-3 py-2 font-medium">Car</th>
-            <th scope="col" class="px-3 py-2 font-medium">Years</th>
-            <th scope="col" class="px-3 py-2 text-right font-medium">Power</th>
-            <th scope="col" class="px-3 py-2 text-right font-medium">0–100</th>
-            <th scope="col" class="px-3 py-2 text-right font-medium">Top speed</th>
-            <th scope="col" class="px-3 py-2 text-right font-medium">Consumption</th>
+            {#each COLUMNS as c (c.field)}
+              <th
+                scope="col"
+                class={`px-3 py-2 font-medium ${c.right ? 'text-right' : ''}`}
+                aria-sort={sortField === c.field ? (sortAscending ? 'ascending' : 'descending') : 'none'}
+              >
+                <button
+                  type="button"
+                  class={`inline-flex items-center gap-1 font-medium hover:text-ink ${c.right ? 'flex-row-reverse' : ''} ${sortField === c.field ? 'text-ink' : 'text-ink-secondary'}`}
+                  onclick={() => sortBy(c.field)}
+                >
+                  {c.label}
+                  <span aria-hidden="true" class={sortField === c.field ? 'text-[var(--brand-accent)]' : 'opacity-35'}
+                    >{sortField === c.field ? (sortAscending ? '↑' : '↓') : '↕'}</span
+                  >
+                </button>
+              </th>
+            {/each}
           </tr>
         </thead>
         <tbody>

@@ -44,7 +44,7 @@ export type WriteResult =
 /** Human-readable, and deliberately non-alarming where nothing is lost. */
 export const FAILURE_MESSAGES: Record<StorageFailure, string> = {
   unavailable:
-    "This browser isn't letting the site save anything — usually private browsing. Everything still works, but nothing will be here when you come back.",
+    "This browser isn't letting the site save anything, usually because of private browsing. Everything still works, but nothing will be here when you come back.",
   'quota-exceeded':
     "There's no room left to save. Removing a few entries, or clearing other site data, should free some up.",
   'not-found': 'Nothing saved yet.',

@@ -198,7 +198,7 @@
         {#if result.blocking.length > 0}
           <p class="mt-2 text-sm text-ink-secondary">
             The single condition ruling out the most cars is
-            <strong class="text-ink">{result.blocking[0]!.constraint}</strong> —
+            <strong class="text-ink">{result.blocking[0]!.constraint}</strong>;
             relaxing it alone would bring back {result.blocking[0]!.blocks}
             {result.blocking[0]!.blocks === 1 ? 'car' : 'cars'}.
           </p>
@@ -248,7 +248,7 @@
 
                   {#if match.unscored.length > 0}
                     <span class="mt-1 block text-xs text-ink-muted">
-                      Not scored on {match.unscored.join(', ')} — we do not have that figure.
+                      Not scored on {match.unscored.join(', ')}, because we do not have that figure.
                     </span>
                   {/if}
                 {/if}
@@ -261,7 +261,7 @@
       {#if anyPreference}
         <p class="mt-4 text-xs leading-relaxed text-ink-muted">
           The percentage compares these cars <em>against each other</em> on the
-          preferences you set — it is not a quality score, and a 100% does not
+          preferences you set. It is not a quality score, and a 100% does not
           mean a car is perfect. A car with no figure for one of your
           preferences is ranked on the rest and says so, rather than being
           scored zero for something we simply have not sourced.

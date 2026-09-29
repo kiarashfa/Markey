@@ -60,7 +60,7 @@ export const DECAY_BY_POSITIONING: Record<string, DecayRate> = {
   'ultra-luxury': {
     rate: 0.18,
     basis:
-      'Very low volume, where collectibility begins to counteract depreciation. The least predictable tier by a wide margin — individual cars deviate enormously and this figure should be read as barely more than a placeholder.',
+      'Very low volume, where collectibility begins to counteract depreciation. The least predictable tier by a wide margin: individual cars deviate enormously and this figure should be read as barely more than a placeholder.',
   },
 };
 

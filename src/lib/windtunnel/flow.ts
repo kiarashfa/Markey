@@ -41,8 +41,8 @@ export const FLOW_MODES = [
     question: 'What is the whole field doing?',
     detail:
       'Thousands of short-lived tracers rather than a few long ones. Individual ' +
-      'paths are lost, but the texture of the field — where it is fast, where it ' +
-      'is churning — is visible everywhere at once.',
+      'paths are lost, but the texture of the field (where it is fast, where it ' +
+      'is churning) is visible everywhere at once.',
   },
   {
     id: 'wake',
@@ -51,7 +51,7 @@ export const FLOW_MODES = [
     detail:
       'The region where the air has been slowed or reversed, drawn as a solid ' +
       'volume. This is the pressure deficit behind the car, and most of its ' +
-      'drag. Nothing is released — it is measured from the velocity field.',
+      'drag. Nothing is released: it is measured from the velocity field.',
   },
   {
     id: 'pressure',
@@ -59,8 +59,8 @@ export const FLOW_MODES = [
     question: 'Where does the air push?',
     detail:
       'Surface pressure on the bodywork itself, from the solver’s own density ' +
-      'field. Red is pushing in — the stagnation point at the nose. Blue is ' +
-      'pulling — accelerated flow over the shoulders and roof.',
+      'field. Red is pushing in, at the stagnation point on the nose. Blue is ' +
+      'pulling, in the accelerated flow over the shoulders and roof.',
   },
 ] as const;
 
@@ -69,7 +69,7 @@ export type FlowModeId = (typeof FLOW_MODES)[number]['id'];
 export const COLOR_MODES = [
   { id: 'white', label: 'White', detail: 'Plain smoke, as a tunnel actually looks.' },
   { id: 'speed', label: 'Speed', detail: 'Warm where the air is slowed, cool where it is accelerated.' },
-  { id: 'vorticity', label: 'Vorticity', detail: 'Bright where the flow is spinning — shear layers and vortex cores.' },
+  { id: 'vorticity', label: 'Vorticity', detail: 'Bright where the flow is spinning: shear layers and vortex cores.' },
   { id: 'age', label: 'Age', detail: 'By time since release, so you can read how fast a filament travelled.' },
 ] as const;
 

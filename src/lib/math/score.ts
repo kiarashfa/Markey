@@ -45,7 +45,7 @@ export const SCORE_WEIGHTS: ScoreWeights = {
 export const WEIGHTS_ARE_PROVISIONAL = true;
 
 export const SCORE_METHODOLOGY_NOTE =
-  'The Markey Score blends four sub-factors on equal weights. Those weights are provisional: they will be tuned once there is enough of a catalog to tune against, and equal weighting is what we use in the meantime rather than inventing a split we cannot justify. A score is a comparison between cars on these factors — it is not a percentage, and it is not a verdict.';
+  'The Markey Score blends four sub-factors on equal weights. Those weights are provisional: they will be tuned once there is enough of a catalog to tune against, and equal weighting is what we use in the meantime rather than inventing a split we cannot justify. A score is a comparison between cars on these factors. It is not a percentage, and it is not a verdict.';
 
 export interface ScoreInputs {
   /** L/100 km, or the kWh/100 km equivalent for an electric car. */

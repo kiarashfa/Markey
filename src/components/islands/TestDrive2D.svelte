@@ -120,7 +120,7 @@
   });
 
   const fmt = (v: number | null | undefined, digits = 0) =>
-    v === null || v === undefined ? '—' : v.toLocaleString('en-GB', { minimumFractionDigits: digits, maximumFractionDigits: digits });
+    v === null || v === undefined ? '·' : v.toLocaleString('en-GB', { minimumFractionDigits: digits, maximumFractionDigits: digits });
 
   /** Signed difference between a modelled and a published figure. */
   function delta(modelled: number | null, publishedValue: number | null) {
@@ -193,7 +193,7 @@
         </div>
         <p class="mt-0.5 text-[0.6875rem] uppercase tracking-wide text-ink-muted">modelled</p>
         <p class="mt-3 border-t border-line pt-2 text-xs leading-relaxed text-ink-muted">
-          Tyre-limited ideal. Ignores fade and assumes peak grip throughout — a
+          Tyre-limited ideal. Ignores fade and assumes peak grip throughout. A
           floor, not a test result.
         </p>
       </div>
@@ -207,7 +207,7 @@
         <p class="mt-0.5 text-[0.6875rem] uppercase tracking-wide text-ink-muted">at kerb weight</p>
         {#if accel && !accel.powerLimitedThroughout}
           <p class="mt-3 border-t border-line pt-2 text-xs leading-relaxed text-ink-muted">
-            Traction-limited to {fmt(accel.tractionLimitedToKmh, 0)} km/h — grip,
+            Traction-limited to {fmt(accel.tractionLimitedToKmh, 0)} km/h: grip,
             not power, sets the launch.
           </p>
         {/if}
@@ -228,7 +228,7 @@
     -->
     {#if top?.gearLimited}
       <p class="rounded-lg border border-status-estimated/40 bg-status-estimated/10 p-3 text-sm">
-        Geared out at {fmt(top.kmh, 0)} km/h — the engine reaches its limit in
+        Geared out at {fmt(top.kmh, 0)} km/h: the engine reaches its limit in
         top gear before the car reaches the {fmt(top.unrestrictedKmh, 0)} km/h at
         which power and drag would balance. Power is not what stops this car.
       </p>
@@ -241,7 +241,7 @@
       <section class="rounded-lg border border-line bg-surface-1 p-5">
         <h3 class="type-heading text-sm">Acceleration</h3>
         <p class="mt-1 text-xs text-ink-secondary">
-          Speed against time, integrated forward — traction-limited off the line,
+          Speed against time, integrated forward: traction-limited off the line,
           then power-limited.
         </p>
         <svg viewBox={`0 0 ${W} ${H}`} class="mt-3 w-full" role="img" aria-label={`Speed rising to ${fmt(maxV)} km/h over ${fmt(maxT, 1)} seconds.`}>
@@ -345,7 +345,7 @@
         {#if published.consumptionL100km !== null && atSpeed.litresPer100km !== null}
           <p class="mt-3 text-xs leading-relaxed text-ink-muted">
             The published figure of {fmt(published.consumptionL100km, 1)} L/100 km
-            is a drive cycle — stops, acceleration, hills. This is a constant
+            is a drive cycle, with stops, acceleration and hills. This is a constant
             speed on level ground, so the two are not comparable and neither is
             wrong.
           </p>
@@ -411,7 +411,7 @@
     <p class="text-xs leading-relaxed text-ink-muted">
       Every figure on this page is <strong class="text-ink-secondary">modelled</strong>,
       not measured. The formulae and every default constant are published on the
-      methodology page, including where the model is weakest — it knows nothing
+      methodology page, including where the model is weakest: it knows nothing
       about gearing, so a car that runs out of gears before it runs out of power
       will model faster than it really is.
     </p>

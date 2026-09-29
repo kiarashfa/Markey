@@ -119,7 +119,7 @@
       >
         {#each Object.entries(DECAY_BY_POSITIONING) as [id, decay] (id)}
           <option value={id}>
-            {id.replace('-', ' ')} — {(decay.rate * 100).toFixed(0)}%/yr
+            {id.replace('-', ' ')}, {(decay.rate * 100).toFixed(0)}%/yr
           </option>
         {/each}
       </select>
@@ -227,7 +227,7 @@
 
     <p class="text-xs leading-relaxed text-ink-muted">
       <strong class="text-ink-secondary">This is a projection, not a valuation.</strong>
-      It is a published formula applied to a purchase price — it has no
+      It is a published formula applied to a purchase price. It has no
       knowledge of the used market, of this specific car, of its condition,
       history or desirability, and it will be wrong for any individual car.
       Treat it as a shape, not a price.

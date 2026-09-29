@@ -92,7 +92,7 @@ const creditedImages = [...(data.hero ? [data.hero] : []), ...data.gallery];
 
 const description =
   data.kind === 'model'
-    ? `${data.name} — every generation, with specifications, sources and confidence for each.`
+    ? `${data.name}: every generation, with specifications, sources and confidence for each.`
     : `${data.name} specifications, ${formatYears(data.productionYears)}. Sourced figures with their citations, and honest gaps where a figure is not yet available.`;
 
 /**
@@ -396,7 +396,7 @@ const structuredData = serialiseJsonLd(
         {
           creditedImages.length > 0 && (
             <p class="text-xs leading-relaxed text-ink-muted">
-              Photography on this page is credited on each image — tap the
+              Photography on this page is credited on each image. Tap the
               <span class="mx-1 inline-flex size-4 items-center justify-center rounded-full border border-line align-[-2px] text-[0.5625rem] font-semibold">
                 i
               </span>

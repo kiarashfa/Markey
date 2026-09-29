@@ -203,7 +203,7 @@
           {survivors.length === 1 ? 'car matches' : 'cars match'}
         </h2>
         <p class="mt-1 text-sm text-ink-secondary">
-          No ranking here — these all meet what you asked for equally. Use
+          No ranking here: these all meet what you asked for equally. Use
           Matchmaker if you want them ordered by preference.
         </p>
 
@@ -213,7 +213,7 @@
             {#if blocking.length > 0}
               <p class="mt-2 text-sm text-ink-secondary">
                 The condition ruling out the most cars on its own is
-                <strong class="text-ink">{blocking[0]!.constraint}</strong> —
+                <strong class="text-ink">{blocking[0]!.constraint}</strong>;
                 relaxing it would bring back {blocking[0]!.blocks}
                 {blocking[0]!.blocks === 1 ? 'car' : 'cars'}.
               </p>

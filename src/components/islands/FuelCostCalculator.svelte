@@ -138,7 +138,7 @@
     </dl>
   {:else}
     <p class="rounded-lg border border-dashed border-line bg-surface-1 p-5 text-sm text-ink-muted">
-      Enter a price to see the cost. There is no default — fuel prices go stale
+      Enter a price to see the cost. There is no default: fuel prices go stale
       within weeks and vary by country, region and even by forecourt, so the
       site would rather ask than guess.
     </p>
@@ -175,7 +175,7 @@
       <div class="mt-4 rounded-lg border border-line bg-surface-2 p-4">
         <p class="text-sm">
           The second car costs
-          <strong>{money(comparison.other.cost)}</strong> a year —
+          <strong>{money(comparison.other.cost)}</strong> a year:
           {#if comparison.saving < 0.005}
             the same, to the penny.
           {:else}
@@ -187,9 +187,9 @@
           {@const payback = paybackYears(1000, comparison.saving)}
           <p class="mt-2 text-xs leading-relaxed text-ink-muted">
             At that rate every {money(1000)} of extra purchase price takes
-            {payback === null ? '—' : payback.toFixed(1)} years to repay in fuel
+            {payback === null ? '·' : payback.toFixed(1)} years to repay in fuel
             alone. This ignores depreciation, servicing, insurance, tax and
-            interest — it is a fuel comparison, nothing more.
+            interest. It is a fuel comparison, nothing more.
           </p>
         {/if}
       </div>

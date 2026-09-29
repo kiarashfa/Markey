@@ -152,7 +152,7 @@
       await navigator.clipboard.writeText(shareLink!);
       importMessage = 'Link copied.';
     } catch {
-      importMessage = 'Could not copy automatically — select the link and copy it.';
+      importMessage = 'Could not copy automatically. Select the link and copy it.';
     }
   }
 
@@ -262,7 +262,7 @@
     storageOk = isStorageAvailable();
     if (!storageOk) {
       notice =
-        "This browser isn't letting the site save anything — usually private browsing. You can still build a garage and share or download it, but it won't be here when you come back.";
+        "This browser isn't letting the site save anything, usually because of private browsing. You can still build a garage and share or download it, but it won't be here when you come back.";
     }
 
     // A shared garage in the URL takes precedence over what is stored, but is
@@ -500,7 +500,7 @@
               <p class="mt-1 text-xs leading-relaxed text-ink-muted">
                 The line is the projection from the published formula; the green
                 dots are real valuations you logged. The curve is deliberately
-                not refitted to them — where they diverge is the interesting
+                not refitted to them: where they diverge is the interesting
                 part, and hiding that would throw away the only real market data
                 this site ever sees.
               </p>
@@ -520,7 +520,7 @@
         <h3 class="text-sm font-semibold">Share</h3>
         <p class="mt-1 text-xs leading-relaxed text-ink-muted">
           A link or file with <strong class="text-ink-secondary">only which cars are in which bays</strong>.
-          No mileage, no purchase price, no registration, no service history —
+          No mileage, no purchase price, no registration, no service history:
           a shared garage is a top-ten list, not a personal record.
         </p>
         <div class="mt-3 flex flex-wrap gap-2">

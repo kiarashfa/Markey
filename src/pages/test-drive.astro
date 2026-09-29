@@ -50,7 +50,7 @@ const gaps = entries.filter((entry) => entry.testDrive.inputs === null);
       Put a car through the physics: acceleration and top speed integrated from
       its own published specifications, the drag it has to push through, and
       what it costs to hold a speed. Then open the wind tunnel and watch the air
-      go over it — a real lattice-Boltzmann solve on your GPU, not an animation.
+      go over it: a real lattice-Boltzmann solve on your GPU, not an animation.
     </p>
     <p class="type-body mt-3 text-sm text-ink-muted">
       Every figure is <strong class="text-ink-secondary">modelled</strong>, and
@@ -118,7 +118,7 @@ const gaps = entries.filter((entry) => entry.testDrive.inputs === null);
     gaps.length > 0 && (
       <Section
         title="Not yet"
-        lede="These are in the catalogue but cannot be modelled. What each one is missing is stated rather than implied — it is a gap in our sourcing, not a judgement about the car."
+        lede="These are in the catalogue but cannot be modelled. What each one is missing is stated rather than implied. It is a gap in our sourcing, not a judgement about the car."
       >
         <ul class="flex flex-col gap-2 py-5">
           {gaps.map(({ car, brand, testDrive }) => (

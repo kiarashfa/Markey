@@ -10,7 +10,7 @@ import { imageSrc } from '../content/href.ts';
 import { ATTRIBUTION_REQUIRED, type ImageRef } from '../../schemas/primitives.ts';
 
 export const LICENSE_LABELS: Record<string, string> = {
-  cc0: 'CC0 1.0 — public domain dedication',
+  cc0: 'CC0 1.0, public domain dedication',
   'public-domain': 'Public domain',
   'cc-by': 'CC BY',
   'cc-by-sa': 'CC BY-SA',

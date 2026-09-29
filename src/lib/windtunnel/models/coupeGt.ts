@@ -409,8 +409,8 @@ export const coupeGt: BodyModel = {
   id: 'coupe-gt',
   label: 'GT coupé',
   note:
-    'A representative two-door GT coupé — long bonnet, cab-back greenhouse, ' +
-    'tapering tail — stretched onto this car’s published dimensions. It is a ' +
+    'A representative two-door GT coupé (long bonnet, cab-back greenhouse, ' +
+    'tapering tail) stretched onto this car’s published dimensions. It is a ' +
     'shape family, not a scan of the car.',
   bodyStyles: ['coupe', 'coupé', 'fastback', 'sports', 'roadster', 'convertible'],
   size: { length: CAR.L, width: CAR.HALF_WIDTH * 2, height: CAR.HEIGHT },

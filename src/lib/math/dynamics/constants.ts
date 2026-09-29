@@ -175,7 +175,7 @@ export const POWER_AVAILABILITY: Record<string, ConstantNote> = {
     value: 0.92,
     unit: '',
     basis:
-      'Electric drive with a single reduction gear: near-peak torque from zero and no shifts, so far more of the rated output is genuinely available. Not 1.0 — motor power still tapers above base speed.',
+      'Electric drive with a single reduction gear: near-peak torque from zero and no shifts, so far more of the rated output is genuinely available. Not 1.0, because motor power still tapers above base speed.',
   },
 };
 
@@ -281,16 +281,16 @@ export function allConstants(): { name: string; value: number; unit: string; bas
     });
   }
   for (const [key, note] of Object.entries(DRIVETRAIN_EFFICIENCY)) {
-    rows.push({ name: `Drivetrain efficiency — ${key.toUpperCase()}`, ...note });
+    rows.push({ name: `Drivetrain efficiency, ${key.toUpperCase()}`, ...note });
   }
   for (const [key, note] of Object.entries(POWERTRAIN_EFFICIENCY)) {
-    rows.push({ name: `Powertrain efficiency — ${key}`, ...note });
+    rows.push({ name: `Powertrain efficiency, ${key}`, ...note });
   }
   for (const [key, note] of Object.entries(FUEL_ENERGY)) {
-    rows.push({ name: `Fuel energy — ${key}`, ...note });
+    rows.push({ name: `Fuel energy, ${key}`, ...note });
   }
   for (const [key, note] of Object.entries(POWER_AVAILABILITY)) {
-    rows.push({ name: `Power availability in acceleration — ${key}`, ...note });
+    rows.push({ name: `Power availability in acceleration, ${key}`, ...note });
   }
   return rows;
 }

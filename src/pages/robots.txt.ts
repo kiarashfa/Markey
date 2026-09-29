@@ -21,7 +21,7 @@ import { absoluteHref } from '../lib/content/href.ts';
 export const GET: APIRoute = ({ site }) => {
   const sitemap = absoluteHref(site, `${import.meta.env.BASE_URL}sitemap-index.xml`);
 
-  const body = `# Markey — https://github.com/kiarashfa/Markey
+  const body = `# Markey · https://github.com/kiarashfa/Markey
 #
 # Nothing here is disallowed. Pages that must not be indexed say so in their
 # own <head> instead: a blocked page is never fetched, so a noindex on it is

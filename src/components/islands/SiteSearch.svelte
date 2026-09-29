@@ -226,7 +226,7 @@
       </p>
     </div>
   {:else if query.trim().length > 0 && query.trim().length < 2}
-    <p class="text-sm text-ink-muted">Keep going — two characters or more.</p>
+    <p class="text-sm text-ink-muted">Keep going: two characters or more.</p>
   {:else if searching && results.length === 0}
     <p class="text-sm text-ink-muted">Searching…</p>
   {:else if searched && results.length === 0}

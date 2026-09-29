@@ -128,7 +128,7 @@ export function riskIndex(inputs: RiskInputs): RiskResult | null {
     contributions.push({
       factor: 'Repair and parts cost',
       score,
-      reason: `${inputs.positioning} tier — a proxy for what a claim costs to settle.`,
+      reason: `${inputs.positioning} tier, a proxy for what a claim costs to settle.`,
     });
     weightedSum += score * RISK_WEIGHTS.value;
     weightUsed += RISK_WEIGHTS.value;
@@ -177,4 +177,4 @@ export function riskIndex(inputs: RiskInputs): RiskResult | null {
  * be dropped by a component that forgets it.
  */
 export const RISK_DISCLAIMER =
-  'A relative comparison between cars, not a quote. What you would actually pay depends far more on you — your age, licence history, address and claims record — than on the car. Nothing here is an insurance estimate.';
+  'A relative comparison between cars, not a quote. What you would actually pay depends far more on you (your age, licence history, address and claims record) than on the car. Nothing here is an insurance estimate.';

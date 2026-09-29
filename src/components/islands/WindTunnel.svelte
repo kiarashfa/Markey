@@ -464,7 +464,7 @@
     <h3 class="type-heading text-base">The wind tunnel can't run on this device</h3>
     <p class="mt-2 text-sm text-ink-secondary">
       It needs WebGL2 with floating-point render targets, which this browser
-      doesn't provide. Nothing else on the page depends on it — the instrumented
+      doesn't provide. Nothing else on the page depends on it: the instrumented
       readout is the baseline and is unaffected.
     </p>
   </div>
@@ -557,7 +557,7 @@
             </div>
             {#if flowMode === 'pressure'}
               <p class="mt-1.5 text-[0.6875rem] text-ink-muted">
-                The pressure view has its own scale — red pushing in, blue pulling.
+                The pressure view has its own scale: red pushing in, blue pulling.
               </p>
             {/if}
 
@@ -608,7 +608,7 @@
 
           {#snippet bodyBody()}
             <p class="text-xs leading-relaxed text-ink-muted">
-              <span class="text-ink-secondary">{modelLabel}</span> — {modelNote}
+              <span class="text-ink-secondary">{modelLabel}</span>: {modelNote}
             </p>
             {#if modelSubstituted}
               <p class="mt-1.5 text-[0.6875rem] leading-relaxed text-status-estimated">
@@ -840,7 +840,7 @@
       </button>
       {#if disturbed}
         <span class="rounded-md border border-status-estimated/40 bg-status-estimated/10 px-2.5 py-1.5 text-xs">
-          A fan is running — the drag below is for this disturbed flow.
+          A fan is running, so the drag below is for this disturbed flow.
         </span>
       {/if}
       {#if stale}
@@ -871,7 +871,7 @@
       >
         <strong>The solve went unstable and has been stopped.</strong> A
         lattice-Boltzmann run can go non-finite, and when it does everything
-        downstream of it is meaningless — so the drag figure is withdrawn rather
+        downstream of it is meaningless, so the drag figure is withdrawn rather
         than left on screen. Reload the page to start a fresh run.
       </p>
     {/if}
@@ -883,7 +883,7 @@
           {variant === 'build' ? 'The build’s Cd' : 'Published Cd'}
         </p>
         <p class="type-data mt-1 text-2xl font-semibold tabular-nums">
-          {publishedCd !== null ? publishedCd.toFixed(2) : '—'}
+          {publishedCd !== null ? publishedCd.toFixed(2) : '·'}
         </p>
         <p class="mt-2 text-xs leading-relaxed text-ink-muted">
           {variant === 'build'
@@ -894,7 +894,7 @@
       <div class="min-w-0 rounded-lg border border-line bg-surface-1 p-4">
         <p class="text-xs uppercase tracking-wide text-ink-muted">This solver, on a fitted shape</p>
         <p class="type-data mt-1 flex flex-wrap items-baseline gap-x-3 text-2xl font-semibold tabular-nums">
-          <span>{solverCd !== null ? solverCd.toFixed(2) : '—'}</span>
+          <span>{solverCd !== null ? solverCd.toFixed(2) : '·'}</span>
           {#if solverAreaM2 !== null && solverAreaM2 > 0}
             <span class="text-sm font-normal text-ink-muted">
               over {solverAreaM2.toFixed(2)} m²
@@ -906,7 +906,7 @@
             Measured on a {modelLabel || 'representative shape'} fitted to the
             dimensions you set. Nobody has published a Cd for a shape you just
             invented, so there is nothing to validate it against and none is
-            claimed — it is what this solver, at this resolution, measured.
+            claimed. It is what this solver, at this resolution, measured.
           {:else}
             Measured on a {modelLabel || 'representative shape'}, not on {carName}.
             Not comparable with the figure on the left.
@@ -946,12 +946,12 @@
           {/if}
           {#if disturbed}
             <p class="mt-2 text-xs leading-relaxed text-ink-muted">
-              Turn the fans off first — drag measured in disturbed air describes
+              Turn the fans off first: drag measured in disturbed air describes
               the shape in that air, not on a road.
             </p>
           {:else if started && !settled && !diverged}
             <p class="mt-2 text-xs leading-relaxed text-ink-muted">
-              Still settling — {steps.toLocaleString('en-GB')} of about {SETTLED_STEPS.toLocaleString(
+              Still settling: {steps.toLocaleString('en-GB')} of about {SETTLED_STEPS.toLocaleString(
                 'en-GB',
               )} steps. The reading above is live and still moving; it can be
               handed to the build once the wake has developed.
@@ -964,14 +964,14 @@
     <div class="rounded-lg border border-line bg-surface-2 p-4">
       <p class="text-xs leading-relaxed text-ink-secondary">
         <strong class="text-ink">What you are looking at, stated plainly.</strong>
-        A real lattice-Boltzmann solver running on your GPU — the smoke is carried
+        A real lattice-Boltzmann solver running on your GPU. The smoke is carried
         by the velocity field it computes, not a decorative particle effect, and
         turning the car re-rasterises the body the fluid sees. But the body is a
         <strong class="text-ink">{modelLabel || 'representative shape'}</strong>
         stretched onto {variant === 'build'
           ? 'the dimensions you set'
           : `${carName}'s published dimensions`}, not a scan of a car. At
-        {cellSizeMm || '—'} mm per cell it resolves large-scale separation and the shape
+        {cellSizeMm || '·'} mm per cell it resolves large-scale separation and the shape
         of the wake; it does not resolve the near-wall boundary layer, the gap between
         tyre and arch, or absolute drag to engineering tolerance. Treat the number
         above as a property of the shape at this scale, not of a car.

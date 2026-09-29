@@ -32,7 +32,7 @@ const formulae = [
 <BaseLayout
   searchKind="About"
   title="Methodology"
-  description="Every formula Markey computes with, published rather than hidden — including where the model is weakest."
+  description="Every formula Markey computes with, published rather than hidden, including where the model is weakest."
 >
   <header>
     <h1 class="type-title text-[clamp(1.75rem,5vw,2.5rem)]">Methodology</h1>
@@ -49,7 +49,7 @@ const formulae = [
     <div class="type-body flex flex-col gap-3 py-5 text-sm text-ink-secondary">
       <p>
         Where a manufacturer published a figure, that is what the spec sheet
-        shows. A modelled figure never overwrites a real one — it appears
+        shows. A modelled figure never overwrites a real one. It appears
         alongside it, labelled as the model's output, which incidentally makes
         the comparison interesting in its own right. A car that beats its own
         published 0–100, or badly misses it, is telling you something.
@@ -139,7 +139,7 @@ const formulae = [
         recorded.</strong> Many EVs and most German cars are limited well below
         the speed the physics allows. Where a limiter is known it is used; where
         it is not, the figure shown is what the car could do unrestricted, and
-        it will exceed the published number — sometimes by a lot.
+        it will exceed the published number, sometimes by a lot.
       </li>
       <li>
         <strong class="text-ink">It has no torque curve.</strong> Acceleration
@@ -158,7 +158,7 @@ const formulae = [
         <strong class="text-ink">Braking is the physical floor.</strong> It
         assumes every tyre is at peak grip for the whole stop, and ignores fade,
         weight transfer and whether the brakes could actually reach the tyres'
-        limit — which for many older cars they could not.
+        limit, which for many older cars they could not.
       </li>
       <li>
         <strong class="text-ink">Air density is standard.</strong> No correction
@@ -209,7 +209,7 @@ const formulae = [
       }
     </dl>
     <p class="pb-5 text-xs leading-relaxed text-ink-muted">
-      Decay is exponential — a percentage of remaining value each year — because
+      Decay is exponential (a percentage of remaining value each year) because
       that is how cars actually behave. A linear model would reach zero on a
       specific date, which no car does. If you log real valuations against a car
       in your garage, they are plotted on the same chart as points, and the
@@ -248,12 +248,12 @@ const formulae = [
       <p class="text-ink">
         <strong>The obvious validation is a category error, and we nearly
         shipped it.</strong> The canonical shapes have published drag
-        coefficients — a sphere at 0.47, a cube at 1.05, a flat plate at 1.17,
+        coefficients: a sphere at 0.47, a cube at 1.05, a flat plate at 1.17,
         a streamlined teardrop at 0.04–0.05. Those figures describe flow at
         Reynolds numbers around 10⁴–10⁶. The CPU reference runs on grids small
         enough to finish inside a continuous-integration job, which puts it at
         <strong>Re ≈ 50</strong>. At Re 50 a sphere's real drag coefficient is
-        about 1.5, not 0.47 — the published number is not wrong, it simply
+        about 1.5, not 0.47. The published number is not wrong, it simply
         describes a different flow regime.
       </p>
       <p>
@@ -270,7 +270,7 @@ const formulae = [
       <div class="border-b border-line pb-3">
         <dt class="type-heading text-sm">Sphere, CPU reference</dt>
         <dd class="type-data mt-1 tabular-nums text-ink-secondary">
-          Cd 2.25 measured, against 1.52 from Clift–Gauvin at Re 51 — a ratio of
+          Cd 2.25 measured, against 1.52 from Clift–Gauvin at Re 51, a ratio of
           1.48.
         </dd>
       </div>
@@ -278,7 +278,7 @@ const formulae = [
         <dt class="type-heading text-sm">Is that bias a bug?</dt>
         <dd class="mt-1 leading-relaxed text-ink-secondary">
           It does not appear to be. Staircase bounce-back walls over-predict
-          drag at low resolution — the modelled wall is rougher than the shape
+          drag at low resolution: the modelled wall is rougher than the shape
           it stands for. Measured across two grid sizes the ratio held at 1.37
           and 1.41, and it is <em>resolution-insensitive</em>. A bug would move
           with the grid; a discretisation bias does not.
@@ -299,8 +299,8 @@ const formulae = [
     <p class="pb-5 text-xs leading-relaxed text-ink-muted">
       <strong class="text-ink-secondary">Not yet claimed:</strong> absolute
       agreement with the four published high-Reynolds figures. That needs the
-      GPU solver at full grid resolution, and the numbers will be published here
-      — whatever they turn out to be — when it can be measured. Until then no
+      GPU solver at full grid resolution, and the numbers will be published here,
+      whatever they turn out to be, when it can be measured. Until then no
       drag coefficient from this solver appears anywhere on the site as though
       it were a property of a real car. A car's published Cd remains the
       authoritative figure on its spec sheet.

@@ -189,7 +189,7 @@
 
   function render(row: Row, car: CatalogueCar): string {
     const raw = row.get(car);
-    if (raw === null) return '—';
+    if (raw === null) return '·';
     if (typeof raw === 'string') return raw;
     const decimals = row.decimals ?? 0;
     const formatted = raw.toLocaleString('en-GB', {
@@ -370,14 +370,14 @@
     </div>
 
     <p class="text-xs leading-relaxed text-ink-muted">
-      An em dash means we do not have that figure yet — it is not a zero, and a
+      A dot (·) means we do not have that figure yet. It is not a zero, and a
       car is never marked "best" on a row where it is the only one with data.
       Figures are the best available across each entry's trims.
       {#if build}
         A real car's performance figures are <strong class="text-ink-secondary"
           >published</strong
         >; your build's are <strong class="text-ink-secondary">modelled</strong>, so they
-        are marked and never win a row — a model that lands within about 20% of a
+        are marked and never win a row: a model that lands within about 20% of a
         manufacturer's own claim cannot settle which car is quicker. Consumption is
         blank for a build on purpose: the model can only give steady-state use at
         a chosen speed, and a published figure is a drive cycle. The two are not

@@ -300,7 +300,7 @@
       onkeydown={onKeyDown}
       role={multiple ? 'group' : undefined}
       tabindex={multiple ? 0 : undefined}
-      aria-label={multiple ? 'Featured cars — use the left and right arrow keys' : undefined}
+      aria-label={multiple ? 'Featured cars. Use the left and right arrow keys' : undefined}
       style="touch-action: pan-y;"
     >
       <div bind:this={track} class="flex" style="will-change: transform;">

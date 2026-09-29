@@ -46,7 +46,7 @@ const {
 } = Astro.props;
 
 const LICENSE_LABELS: Record<string, string> = {
-  cc0: 'CC0 1.0 — public domain dedication',
+  cc0: 'CC0 1.0, public domain dedication',
   'public-domain': 'Public domain',
   'cc-by': 'CC BY',
   'cc-by-sa': 'CC BY-SA',
@@ -87,7 +87,7 @@ const popoverId = `credit-${image.src.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|
     type="button"
     popovertarget={popoverId}
     class="credit-trigger absolute bottom-2 right-2 inline-flex size-6 items-center justify-center rounded-full border border-white/30 bg-black/55 text-[0.6875rem] font-semibold text-white backdrop-blur-sm transition-[background-color,transform] duration-150 hover:bg-black/75"
-    aria-label={`Image credit and licence${credit.author ? ` — ${credit.author}` : ''}`}
+    aria-label={`Image credit and licence${credit.author ? ` by ${credit.author}` : ''}`}
   >
     <span aria-hidden="true">i</span>
   </button>

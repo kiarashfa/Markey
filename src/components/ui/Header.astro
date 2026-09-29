@@ -11,11 +11,10 @@
  * *about* — and the tools you do something with. They were one undifferentiated
  * row of seven, which is where a visitor stops reading and starts scanning.
  *
- * The right cluster is search and theme, both reduced to a single icon each.
- * Between them they used to occupy four slots; Test Drive and My Garage now
- * have those, and neither was reachable from the chrome at all before.
+ * The right cluster is search, theme and about, one icon each. The search
+ * button grows into a field in the header itself, the section links making way
+ * for it, and the results drop below it; the full search page is one link on.
  */
-import SearchPopover from '../islands/SearchPopover.svelte';
 import ThemeToggle from '../islands/ThemeToggle.svelte';
 import { assetHref, href, taxonomyHref } from '../../lib/content/href.ts';
 import favicon from '../../../public/favicon.svg?raw';
@@ -57,6 +56,23 @@ const tools = [
 
 const current = Astro.url.pathname;
 
+/** What each first path segment holds, for the label beside a search result. */
+const kinds = {
+  cars: 'Car',
+  brands: 'Brand',
+  concepts: 'Concept',
+  'body-style': 'Body style',
+  era: 'Era',
+  drivetrain: 'Drivetrain',
+  powertrain: 'Powertrain',
+  segment: 'Segment',
+  positioning: 'Positioning',
+  origin: 'Origin',
+  tools: 'Tool',
+};
+const searchIcon =
+  '<circle cx="11" cy="11" r="6.5"></circle><line x1="15.8" y1="15.8" x2="20.5" y2="20.5"></line>';
+
 /**
  * Marks the section a page belongs to, not just an exact URL match.
  *
@@ -77,7 +93,7 @@ const isCurrent = (url: string) => url !== href() && current.startsWith(url);
   </a>
 
   <div class="mx-auto flex w-full max-w-(--layout-max) flex-wrap items-center gap-x-6 gap-y-2 px-(--layout-gutter) py-3.5">
-    <a href={href()} class="pressable flex shrink-0 items-center gap-2.5 text-ink">
+    <a href={href()} class="pressable flex shrink-0 items-center gap-2.5 text-ink" data-hs-logo>
       <Fragment set:html={markSvg} />
       <span class="type-title text-[1.4rem] leading-none tracking-tight">Markey</span>
     </a>
@@ -85,6 +101,7 @@ const isCurrent = (url: string) => url !== href() && current.startsWith(url);
     <nav
       aria-label="Primary"
       class="order-3 min-w-0 flex-1 basis-full sm:order-none sm:basis-auto"
+      data-hs-fade
     >
       <ul class="flex items-center gap-x-5 overflow-x-auto text-sm [scrollbar-width:none]">
         {
@@ -122,27 +139,52 @@ const isCurrent = (url: string) => url !== href() && current.startsWith(url);
     </nav>
 
     {/*
-      `client:load` on both. A theme control that only works after scrolling
-      would be worse than none, and it is the first thing some visitors reach
-      for; the search popover binds a global `/` shortcut, which has to exist
-      before the first keypress rather than after an observer fires.
-
-      Neither costs much: the theme island is tiny, and the search index — the
-      expensive part — is only fetched when the panel is opened.
+      The theme island is `client:load`: a theme control that only works after
+      scrolling would be worse than none. Search is plain markup and a module
+      script, and the index, the expensive part, is only fetched when it opens.
     */}
     <div class="ml-auto flex shrink-0 items-center gap-2 sm:ml-0">
-      <SearchPopover
-        client:load
-        indexUrl={assetHref('pagefind/pagefind.js')}
-        searchUrl={href('search')}
-      />
+      <div
+        class="hs"
+        data-hs
+        data-hs-base={import.meta.env.BASE_URL}
+        data-hs-bundle={assetHref('pagefind/pagefind.js')}
+        data-hs-all={href('search')}
+        data-hs-kinds={JSON.stringify(kinds)}
+      >
+        <div class="hs-field" data-hs-field>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" set:html={searchIcon} />
+          <input type="search" placeholder="Search cars, brands, concepts" aria-label="Search Markey" autocomplete="off" />
+          <button class="hs-close" type="button" data-hs-close aria-label="Close search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M7 7l10 10M17 7 7 17" stroke-linecap="round"></path>
+            </svg>
+          </button>
+        </div>
+        <button
+          type="button"
+          class="pressable inline-flex size-8 items-center justify-center rounded-full border border-line-strong text-ink-secondary transition-colors duration-150 hover:bg-surface-2 hover:text-ink"
+          data-hs-button
+          aria-label="Search"
+          aria-expanded="false"
+          aria-controls="site-search"
+          title="Search (press /)"
+        >
+          <svg viewBox="0 0 24 24" class="size-[15px]" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" set:html={searchIcon} />
+        </button>
+        <div class="hs-panel" id="site-search" data-hs-panel>
+          <div class="hs-results" data-hs-results aria-live="polite">
+            <p class="hs-status">Cars, brands, concepts and the methodology behind the modelled figures.</p>
+          </div>
+        </div>
+      </div>
       <ThemeToggle client:load />
       <a
         href={href('about')}
-        class="pressable inline-flex size-9 items-center justify-center rounded-full border border-line-strong text-ink-secondary transition-colors duration-150 hover:bg-surface-2 hover:text-ink"
+        class="pressable inline-flex size-8 items-center justify-center rounded-full border border-line-strong text-ink-secondary transition-colors duration-150 hover:bg-surface-2 hover:text-ink"
         aria-label="About Markey"
       >
-        <svg viewBox="0 0 24 24" class="size-[17px]" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <svg viewBox="0 0 24 24" class="size-[15px]" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
           <circle cx="12" cy="12" r="9"></circle>
           <path d="M12 11.2v5.1"></path>
           <path d="M12 7.9h.01" stroke-linecap="round"></path>
@@ -151,3 +193,8 @@ const isCurrent = (url: string) => url !== href() && current.startsWith(url);
     </div>
   </div>
 </header>
+
+<script>
+  import { initHeaderSearch } from '../../lib/header-search.ts';
+  initHeaderSearch();
+</script>

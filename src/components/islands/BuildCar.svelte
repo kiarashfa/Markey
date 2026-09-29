@@ -156,7 +156,7 @@
 
   const fmt = (value: number | null, digits = 0) =>
     value === null
-      ? '—'
+      ? '·'
       : value.toLocaleString('en-GB', {
           minimumFractionDigits: digits,
           maximumFractionDigits: digits,
@@ -200,7 +200,7 @@
         min="0"
         {step}
         value={value === 0 ? '' : value}
-        placeholder="—"
+        placeholder="·"
         oninput={(event) => set(num(event.currentTarget.value))}
         class={INPUT_CLASS}
       />
@@ -215,8 +215,8 @@
     <h2 class="type-heading text-sm">Start from</h2>
     <p class="mt-1.5 text-xs leading-relaxed text-ink-muted">
       Starting positions for a car you are inventing, not figures about a car
-      anyone built. Nothing here is sourced and nothing here is meant to be —
-      pick the nearest one and change all of it.
+      anyone built. Nothing here is sourced and nothing here is meant to be.
+      Pick the nearest one and change all of it.
       {#if !preset}
         <span class="text-ink-secondary">
           This build has drifted away from every preset, which is the point.
@@ -337,7 +337,7 @@
           {area.note}
         {:else if area}
           Frontal area {area.value.toFixed(2)} m², as given.
-          CdA {dragArea(spec.dragCoefficient, area.value).toFixed(3)} m² — the product
+          CdA {dragArea(spec.dragCoefficient, area.value).toFixed(3)} m², the product
           that actually sets drag, and the reason a low Cd on a large car is not
           the win it sounds like.
         {:else}
@@ -353,7 +353,7 @@
     <h2 class="type-heading text-sm">Gearing</h2>
     <p class="mt-1 text-xs leading-relaxed text-ink-secondary">
       Road speed at 1000 rpm in top gear, and the engine speed the run ends at.
-      One number each, both readable off a tachometer — which is why the model
+      One number each, both readable off a tachometer, which is why the model
       asks for these rather than for a ratio, a final drive and a tyre size.
       Leave them blank and the top speed is purely where power meets drag, which
       is what every car in the catalogue gets.
@@ -395,7 +395,7 @@
     <p class="mt-1 text-xs leading-relaxed text-ink-secondary">
       The dimensions above are a body, and the wind tunnel will run it and
       report what it measures. Send that back into the build and every figure
-      below recomputes from a Cd nobody typed — a lower roof, a tighter wake, a
+      below recomputes from a Cd nobody typed: a lower roof, a tighter wake, a
       higher top speed, each step computed rather than asserted. Set the
       dimensions first: the shape is built when the solver starts, and changing
       them afterwards means building it again.
@@ -437,7 +437,7 @@
 
     <p class="mt-2 text-xs leading-relaxed text-ink-muted">
       This build is written into the page's address as you type. Nothing is
-      saved anywhere, so the link is the only copy — and it is enough.
+      saved anywhere, so the link is the only copy, and it is enough.
     </p>
 
     <div class="mt-5">
@@ -455,7 +455,7 @@
           <h3 class="type-heading text-base">Not enough to model yet</h3>
           <p class="mt-2 text-sm text-ink-secondary">
             The physics needs a few more figures before it can say anything. It
-            will not fill them in for you — a defaulted number presented as a
+            will not fill them in for you: a defaulted number presented as a
             result is the one thing this site never does.
           </p>
           <p class="mt-3 text-sm">

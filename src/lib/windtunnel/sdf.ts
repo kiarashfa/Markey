@@ -115,7 +115,7 @@ export const CALIBRATION_SHAPES: CalibrationShape[] = [
     publishedCd: 0.47,
     tolerance: 0.14,
     publishedNote:
-      'Cd ≈ 0.47 in the subcritical regime. Strongly Reynolds-dependent — it collapses to ≈0.1 past the drag crisis — so the comparison is only meaningful below Re ≈ 2×10⁵.',
+      'Cd ≈ 0.47 in the subcritical regime. Strongly Reynolds-dependent: it collapses to ≈0.1 past the drag crisis, so the comparison is only meaningful below Re ≈ 2×10⁵.',
     frontalArea: Math.PI * R * R,
     sdf: sdSphere(R),
   },

@@ -143,7 +143,7 @@ export function runValidationGate(options: SolverOptions = CI_GRID, steps = 400)
   results.push({
     name: 'Sphere against Clift–Gauvin at the Reynolds number run',
     passed: ratio >= SPHERE_BIAS_BAND.low && ratio <= SPHERE_BIAS_BAND.high,
-    detail: `Cd ${sphere.cd?.toFixed(3) ?? '—'} against ${sphere.reference?.toFixed(3) ?? '—'} at Re ${sphere.reynolds.toFixed(0)} — ratio ${ratio.toFixed(2)}.`,
+    detail: `Cd ${sphere.cd?.toFixed(3) ?? '·'} against ${sphere.reference?.toFixed(3) ?? '·'} at Re ${sphere.reynolds.toFixed(0)}, a ratio of ${ratio.toFixed(2)}.`,
   });
 
   return results;
