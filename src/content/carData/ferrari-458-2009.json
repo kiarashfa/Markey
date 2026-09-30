@@ -61,7 +61,7 @@
       "status": "conflicting-sources",
       "source": "wikipedia-ferrari-458",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ferrari_458",
-      "sourceNote": "3,450 lb per the infobox, converted at 1 lb = 0.45359237 kg. NHTSA's Canadian Vehicle Specifications register instead gives 1,380 kg for the 2010 458 Italia coupe — a 13% gap, likely a dry-versus-kerb measurement difference common with Ferrari-published figures rather than a real disagreement about the car, but the article does not state which basis its own 3,450 lb figure uses. The manufacturer-facing Wikipedia figure is recorded as the primary value; the CVS figure is noted here rather than silently discarded."
+      "sourceNote": "3,450 lb per the infobox, converted at 1 lb = 0.45359237 kg. NHTSA's Canadian Vehicle Specifications register instead gives 1,380 kg for the 2010 458 Italia coupe (a 13% gap, likely a dry-versus-kerb measurement difference common with Ferrari-published figures rather than a real disagreement about the car), but the article does not state which basis its own 3,450 lb figure uses. The manufacturer-facing Wikipedia figure is recorded as the primary value; the CVS figure is noted here rather than silently discarded."
     }
   },
   "trims": [

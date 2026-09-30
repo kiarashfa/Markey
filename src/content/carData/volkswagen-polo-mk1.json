@@ -57,7 +57,7 @@
         "status": "verified",
         "source": "wikipedia-volkswagen-polo-mk1",
         "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk1",
-        "sourceNote": "Published as 40 bhp, converted at 1 hp = 0.745699872 kW. No torque figure, kerb weight or body dimensions besides wheelbase are given anywhere in the article for this generation — recorded as gaps rather than estimated."
+        "sourceNote": "Published as 40 bhp, converted at 1 hp = 0.745699872 kW. No torque figure, kerb weight or body dimensions besides wheelbase are given anywhere in the article for this generation. These are recorded as gaps rather than estimated."
       },
       "seats": 4,
       "prices": [],
@@ -90,7 +90,7 @@
         "status": "verified",
         "source": "wikipedia-volkswagen-polo-mk1",
         "sourceUrl": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk1",
-        "sourceNote": "Original launch-spec LS, published as 50 PS, converted at 1 PS = 0.73549875 kW — the same engine shared with the Audi 50. No torque figure is given in the article."
+        "sourceNote": "Original launch-spec LS, published as 50 PS, converted at 1 PS = 0.73549875 kW. The engine is the one shared with the Audi 50. No torque figure is given in the article."
       },
       "seats": 4,
       "prices": [],
@@ -102,7 +102,7 @@
     "alt": "Green Volkswagen Polo Mk1 hatchback photographed from the front three-quarter angle indoors",
     "width": 1600,
     "height": 1161,
-    "caption": "The original Polo — a rebadged Audi 50 hatchback, designed by Bertone and built at Wolfsburg from 1975.",
+    "caption": "The original Polo, a rebadged Audi 50 hatchback, designed by Bertone and built at Wolfsburg from 1975.",
     "credit": {
       "author": "Bruno Kussler Marques",
       "title": "File:Volkswagen Polo Mk1.jpg",

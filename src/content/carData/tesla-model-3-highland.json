@@ -157,7 +157,7 @@
         "status": "verified",
         "source": "nrcan-fcr-bev-2012-2026",
         "sourceUrl": "https://open.canada.ca/data/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64/resource/026e45b4-eb63-451f-b34f-d9308ea3a3d9/download/my2012-2026-battery-electric-vehicles.csv",
-        "sourceNote": "Natural Resources Canada rates the 2024 Model 3 Performance at 380 kW combined — a single regulator-published system output rather than a sum of motor ratings. Unchanged at 380 kW in the 2025 and 2026 tables."
+        "sourceNote": "Natural Resources Canada rates the 2024 Model 3 Performance at 380 kW combined: a single regulator-published system output rather than a sum of motor ratings. Unchanged at 380 kW in the 2025 and 2026 tables."
       },
       "mass": {
         "value": 1851,

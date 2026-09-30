@@ -101,7 +101,7 @@
         "status": "conflicting-sources",
         "source": "wikipedia-dmc-delorean",
         "sourceUrl": "https://en.wikipedia.org/wiki/DMC_DeLorean",
-        "sourceNote": "The article's body text and infobox both state 153 lb-ft at 2,750 rpm, citing Espey 2014 (207.4 N⋅m, rounded to 207) — the figure recorded here. The article's own technical-data table, citing period Road & Track and Car and Driver tests, separately states 162 lb-ft (219.6 N⋅m) at the same 2,750 rpm for the same engine. The two are not reconciled or averaged."
+        "sourceNote": "The article's body text and infobox both state 153 lb-ft at 2,750 rpm, citing Espey 2014 (207.4 N⋅m, rounded to 207), the figure recorded here. The article's own technical-data table, citing period Road & Track and Car and Driver tests, separately states 162 lb-ft (219.6 N⋅m) at the same 2,750 rpm for the same engine. The two are not reconciled or averaged."
       },
       "mass": {
         "value": 1233,
@@ -127,7 +127,7 @@
     "alt": "Stainless-steel DeLorean DMC-12 photographed head-on with both gull-wing doors raised",
     "width": 790,
     "height": 564,
-    "caption": "The gull-wing doors, raised on their cryogenically-treated torsion bars — one of the DMC-12's few genuinely novel features.",
+    "caption": "The gull-wing doors, raised on their cryogenically-treated torsion bars. They are one of the DMC-12's few genuinely novel features.",
     "credit": {
       "author": "Grenex",
       "title": "File:DeLorean DMC-12 with doors open.jpg",

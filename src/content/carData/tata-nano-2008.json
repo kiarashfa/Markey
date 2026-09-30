@@ -155,7 +155,7 @@
         "status": "verified",
         "source": "wikipedia-tata-nano",
         "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
-        "sourceNote": "Published directly in litres by the source (Autocar India, cited via Wikipedia), so no unit conversion was needed. On this trim the space is not an externally accessible boot at all — the rearmost panel does not open, and the article's own photo of the compartment shows the engine occupying much of it; the cargo space was reachable only by folding the rear seats until the 2015 GenX hatchback."
+        "sourceNote": "Published directly in litres by the source (Autocar India, cited via Wikipedia), so no unit conversion was needed. On this trim the space is not an externally accessible boot at all: the rearmost panel does not open, and the article's own photo of the compartment shows the engine occupying much of it; the cargo space was reachable only by folding the rear seats until the 2015 GenX hatchback."
       },
       "seats": 4,
       "prices": [
@@ -202,7 +202,7 @@
         "status": "estimated",
         "source": "wikipedia-tata-nano",
         "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
-        "sourceNote": "Wikipedia states 33 'horsepower' on CNG without specifying mechanical hp or metric PS. Every other power figure given for this engine family in the same article (the 38 PS petrol rating) is metric, so this is treated as 33 PS and converted at 1 PS = 0.73549875 kW = 24.3 kW. If it were actually 33 mechanical hp the figure would be 24.6 kW instead — about 1.4% higher, which is the size of the uncertainty being flagged here rather than silently resolved."
+        "sourceNote": "Wikipedia states 33 'horsepower' on CNG without specifying mechanical hp or metric PS. Every other power figure given for this engine family in the same article (the 38 PS petrol rating) is metric, so this is treated as 33 PS and converted at 1 PS = 0.73549875 kW = 24.3 kW. If it were actually 33 mechanical hp the figure would be 24.6 kW instead, about 1.4% higher, which is the size of the uncertainty being flagged here rather than silently resolved."
       },
       "torque": {
         "value": 45,
@@ -268,7 +268,7 @@
           "status": "verified",
           "source": "wikipedia-tata-nano",
           "sourceUrl": "https://en.wikipedia.org/wiki/Tata_Nano",
-          "sourceNote": "Starting ex-showroom price as of 2017, per Tata Motors' own online price list as cited by Wikipedia — more than double the 2008 launch price."
+          "sourceNote": "Starting ex-showroom price as of 2017, per Tata Motors' own online price list as cited by Wikipedia. The figure is more than double the 2008 launch price."
         }
       ],
       "marketVariants": []
@@ -310,7 +310,7 @@
       "alt": "Red 2015 GenX Tata Nano photographed from the front, showing the revised bumper, door mirrors on both sides and alloy wheels of the facelifted car",
       "width": 1200,
       "height": 800,
-      "caption": "The 2015 GenX facelift: a passenger-side mirror, alloy wheels and — for the first time — a rear hatch that actually opened.",
+      "caption": "The 2015 GenX facelift: a passenger-side mirror, alloy wheels and, for the first time, a rear hatch that actually opened.",
       "credit": {
         "author": "Alexander Gounder",
         "title": "File:Tata Nano - GenX 01.JPG",

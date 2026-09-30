@@ -76,7 +76,7 @@
       "alt": "Rear view of a dark grey BMW 6 Series E24 in a grass field at a car meet, with the driver's door open",
       "width": 1200,
       "height": 900,
-      "caption": "A European-specification car at a BMW meet in Toruń, Poland — note the shallower rear bumper compared with the US cars above.",
+      "caption": "A European-specification car at a BMW meet in Toruń, Poland. Note the shallower rear bumper compared with the US cars above.",
       "credit": {
         "author": "Beemwej",
         "title": "File:BMW 6-er rear PL.JPG",
@@ -94,7 +94,7 @@
       "status": "verified",
       "source": "wikipedia-bmw-6-series-e24",
       "sourceUrl": "https://en.wikipedia.org/wiki/BMW_6_Series_(E24)",
-      "sourceNote": "European specification. US-market cars were 4923 mm over larger impact bumpers — recorded as a market variant rather than overwriting this figure."
+      "sourceNote": "European specification. US-market cars were 4923 mm over larger impact bumpers. This is recorded as a market variant rather than overwriting this figure."
     },
     "width": {
       "value": 1725,
@@ -138,7 +138,7 @@
         "value": null,
         "unit": "kW",
         "status": "placeholder",
-        "sourceNote": "Output varied by market and model year across the M90/M30B34/M30B35 engines. Not yet sourced per variant — a single figure here would be a guess, so the field stays empty."
+        "sourceNote": "Output varied by market and model year across the M90/M30B34/M30B35 engines. Not yet sourced per variant: a single figure here would be a guess, so the field stays empty."
       },
       "torque": {
         "value": null,

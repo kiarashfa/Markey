@@ -120,7 +120,7 @@
         "status": "verified",
         "source": "wikipedia-ford-fiesta-first-generation",
         "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Fiesta_(first_generation)",
-        "sourceNote": "Published as 83 hp, converted at 1 hp = 0.745699872 kW. No torque figure is given in the article. Published 0-60 mph is 9.5 s, not converted here — see the base trim's note on why 0-60 mph is not stored as 0-100 km/h."
+        "sourceNote": "Published as 83 hp, converted at 1 hp = 0.745699872 kW. No torque figure is given in the article. Published 0-60 mph is 9.5 s, not converted here; see the base trim's note on why 0-60 mph is not stored as 0-100 km/h."
       },
       "seats": 4,
       "prices": [],

@@ -57,7 +57,7 @@
       "value": null,
       "unit": "mm",
       "status": "conflicting-sources",
-      "sourceNote": "The infobox states the short-wheelbase figure as 4,215 mm, identical to its own length figure for the same body — almost certainly a transcription error in the source (a wheelbase cannot equal a vehicle's overall length). The long-wheelbase figure of 2,785 mm is given separately and is itself shorter than this \"short\" wheelbase figure, which confirms the two values are swapped or mislabelled in the article. Left as `null` rather than guessing which of the two numbers is correct, since that would be inventing data."
+      "sourceNote": "The infobox states the short-wheelbase figure as 4,215 mm, identical to its own length figure for the same body. This is almost certainly a transcription error in the source (a wheelbase cannot equal a vehicle's overall length). The long-wheelbase figure of 2,785 mm is given separately and is itself shorter than this \"short\" wheelbase figure, which confirms the two values are swapped or mislabelled in the article. Left as `null` rather than guessing which of the two numbers is correct, since that would be inventing data."
     },
     "kerbWeight": {
       "value": 1025,

@@ -164,7 +164,7 @@
         "status": "verified",
         "source": "wikipedia-peugeot-205",
         "sourceUrl": "https://en.wikipedia.org/wiki/Peugeot_205",
-        "sourceNote": "Published as 200 PS at 6,750 rpm, converted at 1 PS = 0.73549875 kW — under half the output of the Group B rally car built from the same homologation base."
+        "sourceNote": "Published as 200 PS at 6,750 rpm, converted at 1 PS = 0.73549875 kW. The figure is under half the output of the Group B rally car built from the same homologation base."
       },
       "torque": {
         "value": 255,

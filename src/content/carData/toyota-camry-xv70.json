@@ -138,7 +138,7 @@
         "status": "conflicting-sources",
         "source": "wikipedia-toyota-camry-xv70",
         "sourceUrl": "https://en.wikipedia.org/wiki/Toyota_Camry_(XV70)",
-        "sourceNote": "The article's prose, citing a Car and Driver test, gives the Hybrid LE's combined system output as 208 hp (converted at 1 hp = 0.745699872 kW). The article's own trim table gives the same AXVH70 hybrid a combined figure of 131 kW (176 hp) instead — an internal contradiction of more than 15%, not two different markets. The prose figure is recorded here as it matches Toyota's own published US spec for the LE grade; the table figure is not discarded, just not used."
+        "sourceNote": "The article's prose, citing a Car and Driver test, gives the Hybrid LE's combined system output as 208 hp (converted at 1 hp = 0.745699872 kW). The article's own trim table gives the same AXVH70 hybrid a combined figure of 131 kW (176 hp) instead. That is an internal contradiction of more than 15%, not two different markets. The prose figure is recorded here as it matches Toyota's own published US spec for the LE grade; the table figure is not discarded, just not used."
       },
       "batteryCapacity": {
         "value": 1.0,
@@ -158,7 +158,7 @@
     "alt": "Black 2022 Toyota Camry Hybrid XLE saloon photographed from the front three-quarter angle in a car park",
     "width": 1600,
     "height": 785,
-    "caption": "The current Camry — sold only as a saloon in this generation, after Toyota dropped the wagon and coupe body styles entirely.",
+    "caption": "The current Camry, sold only as a saloon in this generation, after Toyota dropped the wagon and coupe body styles entirely.",
     "credit": {
       "author": "Elise240SX",
       "title": "File:2022 Toyota Camry Hybrid XLE in Midnight Black Metallic, Front Right, 12-25-2021.jpg",

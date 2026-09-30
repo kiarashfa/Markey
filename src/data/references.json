@@ -333,7 +333,7 @@
       "url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1995&Make=land%20rover&units=Metric&format=json",
       "accessed": "2026-08-18",
       "license": "Public domain (US Government work)",
-      "note": "Found during Phase 10 and not's survey. vPIC's Canadian Vehicle Specifications endpoint publishes curb weight, overall dimensions, track and front/rear weight distribution for cars from 1971 — the one free source found that carries kerb weight for vehicles Wikipedia leaves blank. Queried by model year 1995, which returns records stamped MYR 94 and 95; the County Classic record used here is MYR 94. Cross-checked against two cars with known weights (2004 Prius 1,335 kg, 1995 Discovery 1,990 kg) to confirm CW is curb weight in kilograms."
+      "note": "vPIC's Canadian Vehicle Specifications endpoint publishes curb weight, overall dimensions, track and front/rear weight distribution for cars from 1971. The endpoint is the one free source found that carries kerb weight for vehicles Wikipedia leaves blank. Queried by model year 1995, which returns records stamped MYR 94 and 95; the County Classic record used here is MYR 94. Cross-checked against two cars with known weights (2004 Prius 1,335 kg, 1995 Discovery 1,990 kg) to confirm CW is curb weight in kilograms."
     },
     {
       "key": "nrcan-fcr-bev-2012-2026",
@@ -343,7 +343,7 @@
       "url": "https://open.canada.ca/data/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64/resource/026e45b4-eb63-451f-b34f-d9308ea3a3d9/download/my2012-2026-battery-electric-vehicles.csv",
       "accessed": "2026-08-18",
       "license": "Open Government Licence – Canada",
-      "note": "Found during the Phase 10.5 source survey. Publishes a single combined motor output in kilowatts for dual-motor cars, which is exactly what EPA does not: EPA rates each motor separately and Tesla publishes nothing. Metric throughout (kW, km, kWh/100 km, g/km), so no conversion is needed. Canadian-market ratings, so the variant naming follows Canadian trim names."
+      "note": "Publishes a single combined motor output in kilowatts for dual-motor cars, which is exactly what EPA does not: EPA rates each motor separately and Tesla publishes nothing. Metric throughout (kW, km, kWh/100 km, g/km), so no conversion is needed. Canadian-market ratings, so the variant naming follows Canadian trim names."
     },
     {
       "key": "nhtsa-cvs-2004-toyota-prius",
@@ -353,7 +353,7 @@
       "url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2005&Make=toyota&units=Metric&format=json",
       "accessed": "2026-08-18",
       "license": "Public domain (US Government work)",
-      "note": "Queried by model year 2005; the record is stamped MYR 04. Publishes a 60/40 front/rear weight distribution, and a Canadian-market curb weight of 1,335 kg against the 1,317 kg Wikipedia gives — different market specification, not a contradiction."
+      "note": "Queried by model year 2005; the record is stamped MYR 04. Publishes a 60/40 front/rear weight distribution, and a Canadian-market curb weight of 1,335 kg against the 1,317 kg Wikipedia gives. This is a different market specification, not a contradiction."
     },
     {
       "key": "wikipedia-ford-model-t",
@@ -407,7 +407,7 @@
       "url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1974&Make=Volkswagen&units=Metric&format=json",
       "accessed": "2026-08-19",
       "license": "Public domain (US Government work)",
-      "note": "Queried by model year 1974. Returns separate 'Beetle' and 'Super Beetle' records with distinct curb weights and dimensions — a Canadian-market snapshot within Wikipedia's unattributed 730-930 kg range for the whole model line."
+      "note": "Queried by model year 1974. Returns separate 'Beetle' and 'Super Beetle' records with distinct curb weights and dimensions. This is a Canadian-market snapshot within Wikipedia's unattributed 730-930 kg range for the whole model line."
     },
     {
       "key": "rdw-volkswagen-kever",
@@ -736,7 +736,7 @@
       "url": "https://www.fueleconomy.gov/ws/rest/vehicle/38880",
       "accessed": "2026-09-03",
       "license": "Public domain (US Government work)",
-      "note": "Combined 34 mpg (US), 2.5 L A25A-FKS 8-speed automatic — the base US petrol trim."
+      "note": "Combined 34 mpg (US), 2.5 L A25A-FKS 8-speed automatic, the base US petrol trim."
     },
     {
       "key": "wikipedia-ford-fiesta",

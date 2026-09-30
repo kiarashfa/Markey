@@ -156,7 +156,7 @@
 
   const fmt = (value: number | null, digits = 0) =>
     value === null
-      ? '·'
+      ? '—'
       : value.toLocaleString('en-GB', {
           minimumFractionDigits: digits,
           maximumFractionDigits: digits,
@@ -200,7 +200,7 @@
         min="0"
         {step}
         value={value === 0 ? '' : value}
-        placeholder="·"
+        placeholder="—"
         oninput={(event) => set(num(event.currentTarget.value))}
         class={INPUT_CLASS}
       />

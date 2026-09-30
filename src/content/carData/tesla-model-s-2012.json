@@ -196,7 +196,7 @@
         "status": "verified",
         "source": "wikipedia-tesla-model-s",
         "sourceUrl": "https://en.wikipedia.org/wiki/Tesla_Model_S",
-        "sourceNote": "Published as 200 mph, converted at 1.609344 km/mi (321.9 km/h, rounded here to 322). The article's 0-60 mph time of 1.98 s is not recorded here — it is not the same quantity as a 0-100 km/h time and no 0-100 km/h figure is published."
+        "sourceNote": "Published as 200 mph, converted at 1.609344 km/mi (321.9 km/h, rounded here to 322). The article's 0-60 mph time of 1.98 s is not recorded here: it is not the same quantity as a 0-100 km/h time and no 0-100 km/h figure is published."
       },
       "dragCoefficient": {
         "value": 0.208,
@@ -232,7 +232,7 @@
       "alt": "Dark blue Tesla Model S photographed from the rear three-quarter angle on a paved street, showing the liftback's frameless glass roof and full-width tail light bar",
       "width": 1200,
       "height": 649,
-      "caption": "The liftback tailgate, one of the Model S's less obvious identity marks — it reads as a three-box saloon but opens like a hatchback.",
+      "caption": "The liftback tailgate, one of the Model S's less obvious identity marks: it reads as a three-box saloon but opens like a hatchback.",
       "credit": {
         "author": "Alexander-93",
         "title": "File:Tesla Model S Plaid Autofrühling Ulm IMG 9321 (cropped).jpg",

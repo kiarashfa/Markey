@@ -217,7 +217,7 @@
         "status": "verified",
         "source": "wikipedia-citroen-ds",
         "sourceUrl": "https://en.wikipedia.org/wiki/Citro%C3%ABn_DS",
-        "sourceNote": "The most powerful production DS: 130 hp DIN (metric PS), converted at 1 PS = 0.73549875 kW (95.6 kW, rounded to 96). The same engine is also quoted at 141 hp SAE gross, a different measurement standard for the same physical engine, not a disagreement between sources — the DIN figure is used here as the European home-market standard."
+        "sourceNote": "The most powerful production DS: 130 hp DIN (metric PS), converted at 1 PS = 0.73549875 kW (95.6 kW, rounded to 96). The same engine is also quoted at 141 hp SAE gross, a different measurement standard for the same physical engine, not a disagreement between sources; the DIN figure is used here as the European home-market standard."
       },
       "dragCoefficient": {
         "value": 0.36,

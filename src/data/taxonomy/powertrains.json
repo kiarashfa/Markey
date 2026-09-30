@@ -7,13 +7,13 @@
     { "id": "petrol", "label": "Petrol", "aka": ["Gasoline"], "description": "Spark-ignition internal combustion, no electric drive assistance." },
     { "id": "diesel", "label": "Diesel", "description": "Compression-ignition internal combustion." },
     { "id": "mild-hybrid", "label": "Mild hybrid", "aka": ["MHEV"], "description": "Belt or integrated starter-generator that assists but cannot drive the car alone." },
-    { "id": "hybrid", "label": "Hybrid", "aka": ["HEV"], "description": "Full hybrid — can move under electric power alone, charged only by the car itself." },
+    { "id": "hybrid", "label": "Hybrid", "aka": ["HEV"], "description": "Full hybrid: can move under electric power alone, charged only by the car itself." },
     { "id": "phev", "label": "Plug-in hybrid", "aka": ["PHEV"], "description": "Full hybrid with a plug-chargeable battery and meaningful electric-only range." },
     { "id": "bev", "label": "Battery electric", "aka": ["BEV", "EV"], "description": "Battery-electric only, no combustion engine." },
     { "id": "range-extender", "label": "Range extender", "aka": ["EREV"], "description": "Electric drive throughout, with a combustion engine used only as a generator." },
     { "id": "fcev", "label": "Hydrogen fuel cell", "aka": ["FCEV"], "description": "Electric drive fed by an onboard hydrogen fuel cell." },
     { "id": "lpg", "label": "LPG", "aka": ["Autogas"], "description": "Liquefied petroleum gas, factory-fitted or homologated." },
     { "id": "cng", "label": "CNG", "description": "Compressed natural gas, factory-fitted or homologated." },
-    { "id": "rotary", "label": "Rotary", "aka": ["Wankel"], "description": "Wankel rotary combustion — tracked separately because its consumption and output characteristics do not model like a reciprocating petrol engine." }
+    { "id": "rotary", "label": "Rotary", "aka": ["Wankel"], "description": "Wankel rotary combustion, tracked separately because its consumption and output characteristics do not model like a reciprocating petrol engine." }
   ]
 }

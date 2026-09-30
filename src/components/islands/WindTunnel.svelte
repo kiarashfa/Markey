@@ -883,7 +883,7 @@
           {variant === 'build' ? 'The build’s Cd' : 'Published Cd'}
         </p>
         <p class="type-data mt-1 text-2xl font-semibold tabular-nums">
-          {publishedCd !== null ? publishedCd.toFixed(2) : '·'}
+          {publishedCd !== null ? publishedCd.toFixed(2) : '—'}
         </p>
         <p class="mt-2 text-xs leading-relaxed text-ink-muted">
           {variant === 'build'
@@ -894,7 +894,7 @@
       <div class="min-w-0 rounded-lg border border-line bg-surface-1 p-4">
         <p class="text-xs uppercase tracking-wide text-ink-muted">This solver, on a fitted shape</p>
         <p class="type-data mt-1 flex flex-wrap items-baseline gap-x-3 text-2xl font-semibold tabular-nums">
-          <span>{solverCd !== null ? solverCd.toFixed(2) : '·'}</span>
+          <span>{solverCd !== null ? solverCd.toFixed(2) : '—'}</span>
           {#if solverAreaM2 !== null && solverAreaM2 > 0}
             <span class="text-sm font-normal text-ink-muted">
               over {solverAreaM2.toFixed(2)} m²
@@ -971,7 +971,7 @@
         stretched onto {variant === 'build'
           ? 'the dimensions you set'
           : `${carName}'s published dimensions`}, not a scan of a car. At
-        {cellSizeMm || '·'} mm per cell it resolves large-scale separation and the shape
+        {cellSizeMm || '—'} mm per cell it resolves large-scale separation and the shape
         of the wake; it does not resolve the near-wall boundary layer, the gap between
         tyre and arch, or absolute drag to engineering tolerance. Treat the number
         above as a property of the shape at this scale, not of a car.

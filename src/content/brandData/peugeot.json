@@ -17,7 +17,7 @@
     }
   },
   "accentColor": "#0d224a",
-  "accentColorNote": "Sampled from the dark navy fill (#0d224a) used for the wordmark text in the badge's own SVG source — no public brand-colour specification was found; the badge artwork is the only self-consistent source.",
+  "accentColorNote": "Sampled from the dark navy fill (#0d224a) used for the wordmark text in the badge's own SVG source. No public brand-colour specification was found; the badge artwork is the only self-consistent source.",
   "lastVerified": "2026-09-08",
   "reviewStatus": "agent-populated",
   "references": ["wikipedia-peugeot"]

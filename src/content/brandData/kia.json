@@ -18,7 +18,7 @@
     }
   },
   "accentColor": "#131e29",
-  "accentColorNote": "Sampled from the fill colour used for the wordmark in the badge's own SVG source (#131E29) — no public brand-colour specification was found; the badge artwork is the only self-consistent source.",
+  "accentColorNote": "Sampled from the fill colour used for the wordmark in the badge's own SVG source (#131E29). No public brand-colour specification was found; the badge artwork is the only self-consistent source.",
   "lastVerified": "2026-09-24",
   "reviewStatus": "agent-populated",
   "references": [

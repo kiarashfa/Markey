@@ -62,7 +62,7 @@
 
   const fmt = (value: number | null, digits = 0, unit = '') =>
     value === null
-      ? '·'
+      ? '—'
       : `${value.toLocaleString('en-GB', {
           minimumFractionDigits: digits,
           maximumFractionDigits: digits,

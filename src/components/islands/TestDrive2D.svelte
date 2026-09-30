@@ -120,7 +120,7 @@
   });
 
   const fmt = (v: number | null | undefined, digits = 0) =>
-    v === null || v === undefined ? '·' : v.toLocaleString('en-GB', { minimumFractionDigits: digits, maximumFractionDigits: digits });
+    v === null || v === undefined ? '—' : v.toLocaleString('en-GB', { minimumFractionDigits: digits, maximumFractionDigits: digits });
 
   /** Signed difference between a modelled and a published figure. */
   function delta(modelled: number | null, publishedValue: number | null) {

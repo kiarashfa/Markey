@@ -90,7 +90,7 @@
         "value": 142,
         "unit": "kW",
         "status": "estimated",
-        "sourceNote": "Published as 190 hp using Wikipedia's {{convert|190|hp}} template, which denotes mechanical (imperial) horsepower rather than metric PS, converted here at 1 hp = 0.745699872 kW. Read as metric PS instead, the same 190 figure would give 140 kW — a difference of about 2 kW, small enough not to change the rounded figure meaningfully, but the reading taken is stated here as the source itself does not disambiguate which horsepower unit its editors intended."
+        "sourceNote": "Published as 190 hp using Wikipedia's {{convert|190|hp}} template, which denotes mechanical (imperial) horsepower rather than metric PS, converted here at 1 hp = 0.745699872 kW. Read as metric PS instead, the same 190 figure would give 140 kW, which is a difference of about 2 kW, small enough not to change the rounded figure meaningfully, but the reading taken is stated here as the source itself does not disambiguate which horsepower unit its editors intended."
       },
       "torque": {
         "value": 320,

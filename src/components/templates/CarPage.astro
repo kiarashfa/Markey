@@ -60,6 +60,12 @@ const tags = aggregateTags(car, allCars);
 const entryEras = erasFor(car, allCars);
 
 const kindLabel = { model: 'Nameplate', generation: 'Generation', trim: 'Halo trim' }[data.kind];
+const reviewLabel = {
+  draft: 'Draft',
+  'agent-populated': 'Compiled from cited sources',
+  'spot-checked': 'Spot-checked by hand',
+  verified: 'Verified',
+}[data.reviewStatus];
 
 const crumbs = [
   { label: 'Cars', url: href('cars') },
@@ -390,7 +396,7 @@ const structuredData = serialiseJsonLd(
           </div>
           <div class="flex gap-2">
             <dt class="text-ink-secondary">Review status</dt>
-            <dd class="font-medium">{data.reviewStatus}</dd>
+            <dd class="font-medium">{reviewLabel}</dd>
           </div>
         </dl>
         {

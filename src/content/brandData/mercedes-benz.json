@@ -17,7 +17,7 @@
     }
   },
   "accentColor": "#71777a",
-  "accentColorNote": "Sampled from the single most frequently used fill colour (#71777a, used 947 times) in the badge's own SVG source — the artwork is a shaded chrome rendering rather than a flat brand colour, so no one hex is 'the' logo colour; this is the dominant grey among its many gradient stops. Mercedes-Benz publishes no public flat brand-colour specification for the star.",
+  "accentColorNote": "Sampled from the single most frequently used fill colour (#71777a, used 947 times) in the badge's own SVG source. The artwork is a shaded chrome rendering rather than a flat brand colour, so no one hex is 'the' logo colour; this is the dominant grey among its many gradient stops. Mercedes-Benz publishes no public flat brand-colour specification for the star.",
   "lastVerified": "2026-09-03",
   "reviewStatus": "agent-populated",
   "references": [

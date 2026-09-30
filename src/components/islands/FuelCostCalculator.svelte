@@ -187,7 +187,7 @@
           {@const payback = paybackYears(1000, comparison.saving)}
           <p class="mt-2 text-xs leading-relaxed text-ink-muted">
             At that rate every {money(1000)} of extra purchase price takes
-            {payback === null ? '·' : payback.toFixed(1)} years to repay in fuel
+            {payback === null ? '—' : payback.toFixed(1)} years to repay in fuel
             alone. This ignores depreciation, servicing, insurance, tax and
             interest. It is a fuel comparison, nothing more.
           </p>

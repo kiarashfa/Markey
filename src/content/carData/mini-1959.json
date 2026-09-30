@@ -48,7 +48,7 @@
       "status": "verified",
       "source": "wikipedia-mini",
       "sourceUrl": "https://en.wikipedia.org/wiki/Mini",
-      "sourceNote": "The infobox gives two figures, 1,410 mm and 1,530 mm, with the wider one qualified as \"up to, with widest 'sportspack' factory wheel-arches\" — not the standard car, so the narrower figure is recorded here."
+      "sourceNote": "The infobox gives two figures, 1,410 mm and 1,530 mm, with the wider one qualified as \"up to, with widest 'sportspack' factory wheel-arches\", not the standard car, so the narrower figure is recorded here."
     },
     "height": {
       "value": 1346,
@@ -63,7 +63,7 @@
       "status": "verified",
       "source": "wikipedia-mini",
       "sourceUrl": "https://en.wikipedia.org/wiki/Mini",
-      "sourceNote": "Saloon figure. The infobox gives 2,138 mm for the estate and commercial variants, recorded on the estate trim below — corroborated independently by a Dutch-registered 1966 Morris Mini estate at 2,140 mm (RDW)."
+      "sourceNote": "Saloon figure. The infobox gives 2,138 mm for the estate and commercial variants, recorded on the estate trim below, and corroborated independently by a Dutch-registered 1966 Morris Mini estate at 2,140 mm (RDW)."
     },
     "kerbWeight": {
       "value": 580,
@@ -71,7 +71,7 @@
       "status": "verified",
       "source": "wikipedia-mini",
       "sourceUrl": "https://en.wikipedia.org/wiki/Mini",
-      "sourceNote": "The infobox gives a single unattributed range, 580-686 kg, for the whole 1959-2000 model line and every trim — not a measurement of one car. Recorded here as the lower bound per project convention; per-trim figures sourced from Dutch registration records are recorded on individual trims below."
+      "sourceNote": "The infobox gives a single unattributed range, 580-686 kg, for the whole 1959-2000 model line and every trim. This is not a measurement of one car. Recorded here as the lower bound per project convention; per-trim figures sourced from Dutch registration records are recorded on individual trims below."
     }
   },
   "trims": [
@@ -113,13 +113,13 @@
         "status": "verified",
         "source": "rdw-mini",
         "sourceUrl": "https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-ebf2",
-        "sourceNote": "Dutch registration record for a 1974 Morris Mini 850 — an individual car, not a manufacturer specification, but the only per-trim figure available since Wikipedia gives only the model-wide 580-686 kg range."
+        "sourceNote": "Dutch registration record for a 1974 Morris Mini 850 (an individual car, not a manufacturer specification, but the only per-trim figure available since Wikipedia gives only the model-wide 580-686 kg range)."
       },
       "dragCoefficient": {
         "value": null,
         "unit": "",
         "status": "placeholder",
-        "sourceNote": "The Wikipedia drag-coefficients list gives 0.48 for the 'Rover Mini', dated 1998 — recorded on the 1990s Cooper trim below rather than here, since applying a figure explicitly dated to the car's last decade onto its 1959 launch spec would overstate how well this is sourced."
+        "sourceNote": "The Wikipedia drag-coefficients list gives 0.48 for the 'Rover Mini', dated 1998. This figure is recorded on the 1990s Cooper trim below rather than here, since applying a figure explicitly dated to the car's last decade onto its 1959 launch spec would overstate how well this is sourced."
       },
       "frontalArea": {
         "value": 1.61,
@@ -152,7 +152,7 @@
           "status": "verified",
           "source": "wikipedia-mini",
           "sourceUrl": "https://en.wikipedia.org/wiki/Mini",
-          "sourceNote": "Introduced in 1961 at 997 cc; replaced in 1964 by a longer-stroke 998 cc unit that remained until the Mark II Cooper was dropped in 1969. The longer-lived of the two displacements is recorded here — RDW's registration record for a 1968 car (below) confirms the 998 cc engine was current by then."
+          "sourceNote": "Introduced in 1961 at 997 cc; replaced in 1964 by a longer-stroke 998 cc unit that remained until the Mark II Cooper was dropped in 1969. The longer-lived of the two displacements is recorded here: RDW's registration record for a 1968 car (below) confirms the 998 cc engine was current by then."
         }
       },
       "power": {
@@ -169,7 +169,7 @@
         "status": "verified",
         "source": "rdw-mini",
         "sourceUrl": "https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-ebf2",
-        "sourceNote": "Dutch registration record for a 1968 Morris Mini Cooper Mark II, badge and 998 cc displacement matching this trim — an individual car, not a manufacturer specification."
+        "sourceNote": "Dutch registration record for a 1968 Morris Mini Cooper Mark II, badge and 998 cc displacement matching this trim. This is an individual car, not a manufacturer specification."
       },
       "seats": 4,
       "prices": [],
@@ -205,13 +205,13 @@
         "status": "verified",
         "source": "wikipedia-mini",
         "sourceUrl": "https://en.wikipedia.org/wiki/Mini",
-        "sourceNote": "76 bhp (SAE gross), converted at 1 bhp = 0.745699872 kW. This car won the Monte Carlo Rally outright in 1964, 1965 and 1967 — it also finished first, second and third in 1966 before being disqualified over a headlamp-circuit technicality."
+        "sourceNote": "76 bhp (SAE gross), converted at 1 bhp = 0.745699872 kW. This car won the Monte Carlo Rally outright in 1964, 1965 and 1967; it also finished first, second and third in 1966 before being disqualified over a headlamp-circuit technicality."
       },
       "mass": {
         "value": null,
         "unit": "kg",
         "status": "placeholder",
-        "sourceNote": "RDW's individual-car registration records for two 1963 Morris Mini Cooper S cars (1,071 cc, not this trim's 1,275 cc) disagree by 22% — 535 kg and 690 kg for the same badge and year — too wide a spread to trust as a figure for this trim, and no Dutch record exists for the 1,275 cc S specifically. Wikipedia gives only the model-wide 580-686 kg range."
+        "sourceNote": "RDW's individual-car registration records for two 1963 Morris Mini Cooper S cars (1,071 cc, not this trim's 1,275 cc) disagree by 22% (535 kg and 690 kg for the same badge and year), too wide a spread to trust as a figure for this trim, and no Dutch record exists for the 1,275 cc S specifically. Wikipedia gives only the model-wide 580-686 kg range."
       },
       "seats": 4,
       "prices": [],
@@ -238,7 +238,7 @@
           "status": "verified",
           "source": "wikipedia-mini",
           "sourceUrl": "https://en.wikipedia.org/wiki/Mini",
-          "sourceNote": "The Austin Seven Countryman and Morris Mini-Minor Traveller launched in 1960 with the same 848 cc engine as the saloon. Later cars badged '1000' carried the larger 998 cc engine — the RDW-sourced mass below is for a 1969 '1000 Estate' and likely reflects that heavier, later powertrain rather than the 1960 launch spec."
+          "sourceNote": "The Austin Seven Countryman and Morris Mini-Minor Traveller launched in 1960 with the same 848 cc engine as the saloon. Later cars badged '1000' carried the larger 998 cc engine; the RDW-sourced mass below is for a 1969 '1000 Estate' and likely reflects that heavier, later powertrain rather than the 1960 launch spec."
         }
       },
       "dimensions": {
@@ -265,7 +265,7 @@
         "status": "verified",
         "source": "rdw-mini",
         "sourceUrl": "https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-ebf2",
-        "sourceNote": "Dutch registration record for a 1969 Morris Mini 1000 Estate — an individual car, not a manufacturer specification, and the '1000' badge implies the larger 998 cc engine rather than this trim's 1960 launch-spec 848 cc unit."
+        "sourceNote": "Dutch registration record for a 1969 Morris Mini 1000 Estate. This is an individual car, not a manufacturer specification, and the '1000' badge implies the larger 998 cc engine rather than this trim's 1960 launch-spec 848 cc unit."
       },
       "seats": 4,
       "prices": [],
@@ -292,7 +292,7 @@
           "status": "verified",
           "source": "wikipedia-mini",
           "sourceUrl": "https://en.wikipedia.org/wiki/Mini",
-          "sourceNote": "The Cooper name was relaunched by Rover in 1990-91 and went into full production in late 1991, using the same 1,275 cc engine as the 1960s Cooper S, now fuel-injected and catalysed to meet emissions rules — a multi-point injection system replaced the earlier single-point system in 1997."
+          "sourceNote": "The Cooper name was relaunched by Rover in 1990-91 and went into full production in late 1991, using the same 1,275 cc engine as the 1960s Cooper S, now fuel-injected and catalysed to meet emissions rules; a multi-point injection system replaced the earlier single-point system in 1997."
         }
       },
       "dragCoefficient": {
@@ -313,7 +313,7 @@
     "alt": "Cream-coloured 1959 Morris Mini-Minor photographed from the front three-quarter angle, showing the round headlamps, full-width front grille and registration plate 621 AOK",
     "width": 1600,
     "height": 1001,
-    "caption": "621 AOK — the first Mini built, on display today at the Heritage Motor Centre. Round headlamps, sliding windows and external door hinges all mark it as a pre-1969 Mark I.",
+    "caption": "621 AOK, the first Mini built, on display today at the Heritage Motor Centre. Round headlamps, sliding windows and external door hinges all mark it as a pre-1969 Mark I.",
     "credit": {
       "author": "DeFacto",
       "title": "File:Morris Mini-Minor 1959 (621 AOK).jpg",
@@ -329,7 +329,7 @@
       "alt": "Red 1964 Mini Cooper S rally car with Monte Carlo Rally number 52 on the bonnet, four spotlights above the grille and the registration AJB 44B",
       "width": 1200,
       "height": 862,
-      "caption": "A 1964 Cooper S in rally trim — the car that won the Monte Carlo Rally outright three times in the 1960s.",
+      "caption": "A 1964 Cooper S in rally trim, the car that won the Monte Carlo Rally outright three times in the 1960s.",
       "credit": {
         "author": "DeFacto",
         "title": "File:Mini Cooper S 1964 (AJB 44B) - 2016.jpg",

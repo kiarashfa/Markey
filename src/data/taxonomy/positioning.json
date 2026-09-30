@@ -5,7 +5,7 @@
   "note": "The 5-tier market ladder. Deliberately independent of body style and size — a Camry, a Lexus ES and a Bentley Flying Spur can all be full-size saloons in very different tiers. `rank` exists so the ladder can be sorted without hardcoding the order in a template.",
   "terms": [
     { "id": "economy", "label": "Economy", "rank": 1, "description": "Sold primarily on purchase price and running cost." },
-    { "id": "mainstream", "label": "Mainstream", "rank": 2, "description": "The volume middle of the market — the default tier for most nameplates." },
+    { "id": "mainstream", "label": "Mainstream", "rank": 2, "description": "The volume middle of the market, the default tier for most nameplates." },
     { "id": "premium", "label": "Premium", "rank": 3, "description": "Positioned above mainstream on brand, materials and equipment rather than size." },
     { "id": "luxury", "label": "Luxury", "rank": 4, "description": "Flagship-tier brands and models where cost is subordinate to the result." },
     { "id": "ultra-luxury", "label": "Ultra-luxury & exotic", "rank": 5, "description": "Very low volume, coachbuilt, hypercar or bespoke-tier vehicles." }

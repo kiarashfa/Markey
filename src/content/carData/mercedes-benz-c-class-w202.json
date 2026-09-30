@@ -102,7 +102,7 @@
         "status": "verified",
         "source": "nhtsa-cvs-1995-mercedes-benz-c-class",
         "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=1995&Make=mercedes-benz&units=Metric&format=json",
-        "sourceNote": "NHTSA Canadian Vehicle Specifications curb weight for the C220 4DR sedan, model year 1994 — a Canadian-market figure, not a German factory spec."
+        "sourceNote": "NHTSA Canadian Vehicle Specifications curb weight for the C220 4DR sedan, model year 1994. This is a Canadian-market figure, not a German factory spec."
       },
       "zeroToHundredKph": {
         "value": 10.5,

@@ -17,7 +17,7 @@
     }
   },
   "accentColor": "#000000",
-  "accentColorNote": "Sampled from the badge's own SVG source, whose single background rectangle is filled solid black (#000000) — matching the real DMC badge, which is a black plate on the DeLorean's brushed-stainless bodywork. No separate published brand colour exists for a company that built and sold cars for barely a year and a half.",
+  "accentColorNote": "Sampled from the badge's own SVG source, whose single background rectangle is filled solid black (#000000), matching the real DMC badge, which is a black plate on the DeLorean's brushed-stainless bodywork. No separate published brand colour exists for a company that built and sold cars for barely a year and a half.",
   "lastVerified": "2026-09-24",
   "reviewStatus": "agent-populated",
   "references": [

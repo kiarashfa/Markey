@@ -131,7 +131,7 @@
         "status": "verified",
         "source": "nhtsa-cvs-2019-lamborghini-urus",
         "sourceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles/GetCanadianVehicleSpecifications/?Year=2019&Make=lamborghini&units=Metric&format=json",
-        "sourceNote": "Published as a 58/42 front/rear split for the 2019 model year — nose-heavy for a Lamborghini, consistent with its front-engine layout, unlike every mid-engined car in the range."
+        "sourceNote": "Published as a 58/42 front/rear split for the 2019 model year. The split is nose-heavy for a Lamborghini, consistent with its front-engine layout, unlike every mid-engined car in the range."
       },
       "seats": 5,
       "prices": [],
@@ -202,7 +202,7 @@
         "value": null,
         "unit": "kg",
         "status": "placeholder",
-        "sourceNote": "The article states only that the SE is \"roughly 300 kg\" heavier than the Urus S due to its 25.9 kWh battery pack — and the Urus S's own kerb weight is not independently stated in this article, only the original Urus's 2,200 kg. Adding 300 kg to a different trim's weight would be exactly the kind of invented arithmetic this site avoids, so the field is left as a placeholder instead."
+        "sourceNote": "The article states only that the SE is \"roughly 300 kg\" heavier than the Urus S due to its 25.9 kWh battery pack, and the Urus S's own kerb weight is not independently stated in this article, only the original Urus's 2,200 kg. Adding 300 kg to a different trim's weight would be exactly the kind of invented arithmetic this site avoids, so the field is left as a placeholder instead."
       },
       "seats": 5,
       "prices": [],

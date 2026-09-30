@@ -81,7 +81,7 @@
           "status": "verified",
           "source": "wikipedia-ford-mustang-seventh-generation",
           "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)",
-          "sourceNote": "Published as 137.5 cu in, converted at 16.3871 cc/cu in — matches the well-known '2.3-litre' description."
+          "sourceNote": "Published as 137.5 cu in, converted at 16.3871 cc/cu in, which matches the well-known '2.3-litre' description."
         },
         "aspiration": "turbocharged"
       },
@@ -123,7 +123,7 @@
           "status": "verified",
           "source": "wikipedia-ford-mustang-seventh-generation",
           "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)",
-          "sourceNote": "Published as 307.4 cu in, converted at 16.3871 cc/cu in — matches the well-known '5.0-litre' description."
+          "sourceNote": "Published as 307.4 cu in, converted at 16.3871 cc/cu in, which matches the well-known '5.0-litre' description."
         },
         "aspiration": "naturally-aspirated"
       },
@@ -133,7 +133,7 @@
         "status": "verified",
         "source": "wikipedia-ford-mustang-seventh-generation",
         "sourceUrl": "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)",
-        "sourceNote": "US-market GT with the active-exhaust option, published as 486 hp at 7,250 rpm, converted at 1 hp = 0.745699872 kW. The Europe-market GT and the US GT without active exhaust are both rated lower (448 hp and 480 hp respectively) — a market- and options-specific figure, not a universal GT spec."
+        "sourceNote": "US-market GT with the active-exhaust option, published as 486 hp at 7,250 rpm, converted at 1 hp = 0.745699872 kW. The Europe-market GT and the US GT without active exhaust are both rated lower (448 hp and 480 hp respectively). The figure recorded here is market- and options-specific, not a universal GT spec."
       },
       "torque": {
         "value": 566.8,
@@ -153,7 +153,7 @@
     "alt": "Red 2024 Ford Mustang EcoBoost coupe photographed from the front three-quarter angle in a showroom",
     "width": 1600,
     "height": 1200,
-    "caption": "The current, seventh-generation Mustang, launched in 2023 — still front-engine, rear-drive, and still offered with a manual gearbox on V8 models.",
+    "caption": "The current, seventh-generation Mustang, launched in 2023, still front-engine, rear-drive, and still offered with a manual gearbox on V8 models.",
     "credit": {
       "author": "Ethan Llamas",
       "title": "File:2024 Ford Mustang 2.3 EcoBoost in Race Red, front left, 06-26-2024.jpg",

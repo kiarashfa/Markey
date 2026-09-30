@@ -172,7 +172,7 @@
         "status": "verified",
         "source": "wikipedia-bmw-i3-hatchback",
         "sourceUrl": "https://en.wikipedia.org/wiki/BMW_i3_(hatchback)",
-        "sourceNote": "EPA all-electric range before the generator engages, published as 72 mi, converted at 1 mi = 1.609344 km. Total range with the petrol generator running was published as 150 mi (241.40 km) — a different, combined-mode figure, not stored here as the electric range."
+        "sourceNote": "EPA all-electric range before the generator engages, published as 72 mi, converted at 1 mi = 1.609344 km. Total range with the petrol generator running was published as 150 mi (241.40 km), a different, combined-mode figure, not stored here as the electric range."
       },
       "seats": 4,
       "prices": [],

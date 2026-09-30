@@ -181,7 +181,7 @@
         "status": "estimated",
         "source": "wikipedia-lamborghini-huracan",
         "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
-        "sourceNote": "Specifications table figure, explicitly 'without fluids' (dry weight) — the lightest Huracán variant, track-focused and rear-wheel drive only. No kerb-weight-with-fluids figure is published for this trim."
+        "sourceNote": "Specifications table figure, explicitly 'without fluids' (dry weight). This trim is the lightest Huracán variant, track-focused and rear-wheel drive only. No kerb-weight-with-fluids figure is published for this trim."
       },
       "zeroToHundredKph": {
         "value": 3,
@@ -196,7 +196,7 @@
         "status": "verified",
         "source": "wikipedia-lamborghini-huracan",
         "sourceUrl": "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
-        "sourceNote": "Lower than lighter, more aerodynamically efficient siblings despite more power — the STO's fixed rear wing and bodywork trade top speed for downforce."
+        "sourceNote": "Lower than lighter, more aerodynamically efficient siblings despite more power: the STO's fixed rear wing and bodywork trade top speed for downforce."
       },
       "seats": 2,
       "dimensions": {
@@ -242,7 +242,7 @@
       "alt": "Blue Lamborghini Huracán STO with a large fixed rear wing and prominent front splitter, photographed from the front three-quarter angle",
       "width": 1200,
       "height": 737,
-      "caption": "The STO — Super Trofeo Omologata — the rear-wheel-drive, track-focused final evolution of the Huracán, homologated from the Super Trofeo race car.",
+      "caption": "The STO (Super Trofeo Omologata), the rear-wheel-drive, track-focused final evolution of the Huracán, homologated from the Super Trofeo race car.",
       "credit": {
         "author": "MrWalkr",
         "title": "File:2021 Lamborghini Huracan STO Blue.jpg",

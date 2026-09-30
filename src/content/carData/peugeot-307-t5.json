@@ -111,7 +111,7 @@
         "status": "verified",
         "source": "rdw-peugeot-307",
         "sourceUrl": "https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-ebf2",
-        "sourceNote": "Netherlands RDW register entry for a first-registered 2002 five-door 1587 cc car — an individual registered car, not a manufacturer specification, but matched here on displacement and body to this trim."
+        "sourceNote": "Netherlands RDW register entry for a first-registered 2002 five-door 1587 cc car (an individual registered car, not a manufacturer specification), but matched here on displacement and body to this trim."
       },
       "seats": 5,
       "prices": [],

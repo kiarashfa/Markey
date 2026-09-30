@@ -17,7 +17,7 @@
     }
   },
   "accentColor": "#00095b",
-  "accentColorNote": "Sampled directly from the dominant pixel colour of the downloaded logo file (rgb(0,9,91), 740,390 of the opaque non-white pixels) rather than guessed — Ford does not publish a public brand-colour specification, so this is not presented as an official brand asset.",
+  "accentColorNote": "Sampled directly from the dominant pixel colour of the downloaded logo file (rgb(0,9,91), 740,390 of the opaque non-white pixels) rather than guessed. Ford does not publish a public brand-colour specification, so this is not presented as an official brand asset.",
   "lastVerified": "2026-08-19",
   "reviewStatus": "agent-populated",
   "references": ["wikipedia-ford-motor-company", "commons-file-ford-logo-flat-svg"]

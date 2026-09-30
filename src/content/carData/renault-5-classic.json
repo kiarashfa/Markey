@@ -237,7 +237,7 @@
         "status": "verified",
         "source": "wikipedia-renault-5",
         "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5",
-        "sourceNote": "110 PS, converted at 1 PS = 0.73549875 kW (80.9 kW, rounded to 81). Sold as the Renault 5 Alpine Turbo (Gordini Turbo in the UK), a conventional front-engine, front-wheel-drive hot hatch — distinct from the mid-engined, rear-drive Renault 5 Turbo homologation car."
+        "sourceNote": "110 PS, converted at 1 PS = 0.73549875 kW (80.9 kW, rounded to 81). Sold as the Renault 5 Alpine Turbo (Gordini Turbo in the UK), a conventional front-engine, front-wheel-drive hot hatch, distinct from the mid-engined, rear-drive Renault 5 Turbo homologation car."
       },
       "zeroToHundredKph": {
         "value": 9.1,
@@ -284,7 +284,7 @@
         "status": "verified",
         "source": "wikipedia-renault-5",
         "sourceUrl": "https://en.wikipedia.org/wiki/Renault_5",
-        "sourceNote": "160 PS, converted at 1 PS = 0.73549875 kW (117.7 kW, rounded to 118). The Group 4 homologation special: mid-engined and rear-wheel-drive, sharing only its door panels with the regular front-engined, front-wheel-drive 5 — the dimensions and drivetrain recorded elsewhere on this generation entry do not describe this trim."
+        "sourceNote": "160 PS, converted at 1 PS = 0.73549875 kW (117.7 kW, rounded to 118). The Group 4 homologation special: mid-engined and rear-wheel-drive, sharing only its door panels with the regular front-engined, front-wheel-drive 5. The dimensions and drivetrain recorded elsewhere on this generation entry do not describe this trim."
       },
       "zeroToHundredKph": {
         "value": 6.9,

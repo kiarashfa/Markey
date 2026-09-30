@@ -71,8 +71,8 @@
         const us = l100kmToMpgUs(value);
         const imp = l100kmToMpgImp(value);
         return [
-          { label: 'US miles per gallon', value: us === null ? '·' : `${fmt(us)} mpg` },
-          { label: 'Imperial miles per gallon', value: imp === null ? '·' : `${fmt(imp)} mpg` },
+          { label: 'US miles per gallon', value: us === null ? '—' : `${fmt(us)} mpg` },
+          { label: 'Imperial miles per gallon', value: imp === null ? '—' : `${fmt(imp)} mpg` },
           {
             label: 'Note',
             value: 'These are reciprocal scales',

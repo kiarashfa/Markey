@@ -237,7 +237,7 @@
 
   const num = (n: number | null, unit: string, decimals = 0) =>
     n === null
-      ? '·'
+      ? '—'
       : `${n.toLocaleString('en-GB', { minimumFractionDigits: decimals, maximumFractionDigits: decimals })} ${unit}`;
 </script>
 

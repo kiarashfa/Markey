@@ -142,7 +142,7 @@
         "status": "verified",
         "source": "wikipedia-mercedes-benz-g-class",
         "sourceUrl": "https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class#G_63",
-        "sourceNote": "Mercedes-AMG's claimed top speed of 149 mph with the optional Driver's Package, converted at 1.609344 km/mi (239.8 km/h, rounded to 240). The article's 0-60 mph claim of 4.4 s is not recorded here — it is not the same quantity as a 0-100 km/h time and no 0-100 km/h figure is published."
+        "sourceNote": "Mercedes-AMG's claimed top speed of 149 mph with the optional Driver's Package, converted at 1.609344 km/mi (239.8 km/h, rounded to 240). The article's 0-60 mph claim of 4.4 s is not recorded here; it is not the same quantity as a 0-100 km/h time and no 0-100 km/h figure is published."
       },
       "seats": 5,
       "prices": [],

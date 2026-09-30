@@ -189,7 +189,7 @@
 
   function render(row: Row, car: CatalogueCar): string {
     const raw = row.get(car);
-    if (raw === null) return '·';
+    if (raw === null) return '—';
     if (typeof raw === 'string') return raw;
     const decimals = row.decimals ?? 0;
     const formatted = raw.toLocaleString('en-GB', {
@@ -370,7 +370,7 @@
     </div>
 
     <p class="text-xs leading-relaxed text-ink-muted">
-      A dot (·) means we do not have that figure yet. It is not a zero, and a
+      A dash (—) means we do not have that figure yet. It is not a zero, and a
       car is never marked "best" on a row where it is the only one with data.
       Figures are the best available across each entry's trims.
       {#if build}

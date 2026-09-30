@@ -39,7 +39,7 @@ export const AXES: AxisConfig[] = [
     axis: 'body-style',
     title: 'Body style',
     description:
-      'The shape of the car. A generation can span more than one — a range sold as a saloon, an estate and a coupé appears under all three.',
+      'The shape of the car. A generation can span more than one: a range sold as a saloon, an estate and a coupé appears under all three.',
     authored: true,
   },
   {
@@ -58,7 +58,7 @@ export const AXES: AxisConfig[] = [
     axis: 'origin',
     title: 'Origin',
     description:
-      "The manufacturer's country. Computed from the brand, not authored per car — so it can never disagree with the brand page.",
+      "The manufacturer's country. Computed from the brand rather than set per car, so it can never disagree with the brand page.",
     authored: false,
   },
   {
@@ -72,7 +72,7 @@ export const AXES: AxisConfig[] = [
     axis: 'positioning',
     title: 'Market positioning',
     description:
-      'Where a car sat in the market, independent of its size — a full-size saloon can be mainstream or ultra-luxury.',
+      'Where a car sat in the market, independent of its size. A full-size saloon can be mainstream or ultra-luxury.',
     authored: true,
   },
   {

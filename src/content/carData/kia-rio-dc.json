@@ -150,7 +150,7 @@
         "value": 56,
         "unit": "kW",
         "status": "estimated",
-        "sourceNote": "Wikipedia gives this engine's UK/European output as '75 hp' with no PS/mechanical qualifier stated. Read here as imperial/mechanical horsepower (0.745699872 kW/hp, giving 55.9 kW, rounded to 56) by analogy with the North American engines in the same infobox, which the article's own conversion templates confirm are imperial hp. If the figure were instead metric PS, the result would be about 55.2 kW — a difference of under 2%."
+        "sourceNote": "Wikipedia gives this engine's UK/European output as '75 hp' with no PS/mechanical qualifier stated. Read here as imperial/mechanical horsepower (0.745699872 kW/hp, giving 55.9 kW, rounded to 56) by analogy with the North American engines in the same infobox, which the article's own conversion templates confirm are imperial hp. If the figure were instead metric PS, the result would be about 55.2 kW. That is a difference of under 2%."
       },
       "prices": [],
       "marketVariants": []

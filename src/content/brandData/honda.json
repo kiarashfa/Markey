@@ -17,7 +17,7 @@
     }
   },
   "accentColor": "#cc0000",
-  "accentColorNote": "Sampled from the fill colour used in the wordmark's own SVG source (#CC0000) rather than guessed — Honda does not publish a public brand-colour specification, so this is not presented as an official brand asset.",
+  "accentColorNote": "Sampled from the fill colour used in the wordmark's own SVG source (#CC0000) rather than guessed. Honda does not publish a public brand-colour specification, so this is not presented as an official brand asset.",
   "lastVerified": "2026-09-03",
   "reviewStatus": "agent-populated",
   "references": ["wikipedia-honda", "commons-file-honda-logo-svg"]
